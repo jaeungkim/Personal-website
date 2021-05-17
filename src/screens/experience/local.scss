@@ -1,0 +1,27 @@
+/*==========================
+        5. Experience
+============================*/
+.course_button{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    align-content: center;
+  }
+  .course_button >.btn {
+    color: white;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(16, 142, 180);
+  }
+  .course_button >.btn:hover{
+    color: rgb(16, 142, 180);
+    background-color: white;
+  }
+  .custom-modal{
+    text-align: left; 
+    font-size: 1rem;
+    position: absolute;
+  
+  }

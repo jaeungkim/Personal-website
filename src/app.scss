@@ -1,0 +1,30 @@
+@charset "utf-8";
+@import "../jae.scss";
+@import "assets/fonts/fonts.scss";
+
+body {
+  font-family: "ITCAvantGardeStd";
+  font-size: 1rem;
+  margin: 0 auto;
+  overflow-x: hidden;
+  text-align: left;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.custom_section{
+  height: 100%;
+  padding-top: 2em;
+  padding-bottom: 2em;
+  max-width: 1440px;
+  margin: auto auto;
+}
+.example{
+  position: absolute;
+}
+.title{
+  margin-bottom: 2rem;
+}
+.subtitle{
+  margin-bottom: 2rem;
+  text-align: center;
+}

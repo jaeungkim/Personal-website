@@ -1,0 +1,23 @@
+/* ITC Avant Garde Std.*/
+@font-face {
+  font-family: "ITCAvantGardeStd-bold";
+  src: url("/src/assets/fonts/ITCAvantGardeStd-Bold.otf") format("opentype");
+}
+@font-face {
+  font-family: "ITCAvantGardeStd-regular";
+  src: url("/src/assets/fonts/ITCAvantGardeStd-Demi.otf") format("opentype");
+}
+@font-face {
+  font-family: "ITCAvantGardeStd-medium";
+  src: url("/src/assets/fonts/ITCAvantGardeStd-Md.otf") format("opentype");
+}
+
+/* Helvetica Now Text */
+@font-face{
+  font-family: "HelveticaNowText-regular";
+  src: url("/src/assets/fonts/HelveticaNowText-Regular.ttf") format("opentype");
+}
+// @font-face{
+//   font-family: "HelveticaNowText-medium";
+//   src: url("/src/assets/fonts/fonts/HelveticaNowText-Medium.ttf") format("opentype");
+// }

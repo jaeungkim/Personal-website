@@ -1,0 +1,49 @@
+/*==========================
+        8. Contact
+============================*/
+.contact_form{
+    width: 50%; 
+    margin: auto auto;
+  }
+  .success_message{
+    color: #0073be;
+    box-sizing: border-box;
+    border: 1px solid #cadbe7;
+    background-color: #ebf5fb;
+    border-radius: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem;
+  }
+  
+  .error_message{
+    color: white;
+    box-sizing: border-box;
+    border: 1px solid #ffd2d6;
+    background-color: rgb(255, 191, 191);
+    border-radius: 15px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 1rem;
+  }
+  .btn-custom{
+    color: white !important;
+    border: none !important;
+    border-radius: 8px !important;
+    text-align: center !important;
+    text-decoration: none !important;
+    background-color: rgb(16, 142, 180) !important;
+  }
+  .btn-custom:hover{
+    color: rgb(16, 142, 180) !important;
+    background-color: white !important;
+  }
+
+@media (max-width: 768px) {
+    .contact_form{
+      width: 75%;
+      margin: auto auto;
+    }
+}
