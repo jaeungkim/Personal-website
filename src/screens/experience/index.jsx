@@ -5,7 +5,7 @@ import "./local.scss";
 const Experience = () => {
   return (
     <div className="grey_background">
-      <section className="custom_section" id="work">
+      {/* <section className="custom_section" id="work">
         <div className="text-center">
           <h1 className="title">Education &amp; Experience</h1>
         </div>
@@ -20,7 +20,7 @@ const Experience = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   );
 };
