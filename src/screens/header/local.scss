@@ -44,14 +44,18 @@
   margin-top: auto;
   margin-bottom: auto;
 }
+.collapsedMenu{
+  color: black !important;
+}
+.collapsedMenu2{
+  color: white !important;
+}
 @media (max-width: 768px) {
   .collapsedMenu{
-    color: black !important;
     margin: 0;
     padding: 0;
   }
   .collapsedMenu2{
-    color: white !important;
     margin: 0;
     padding: 0;
   }
