@@ -6,8 +6,7 @@ const fs = require("fs");
 const appDirectory = fs.realpathSync(process.cwd());
 
 module.exports = {
-    entry: ["@babel/polyfill", path.resolve(appDirectory, "src/index.js")],
-    mode: "production",
+    entry: './src/index.js',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
