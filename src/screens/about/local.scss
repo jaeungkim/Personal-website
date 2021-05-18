@@ -18,7 +18,7 @@
 }
 .about_explanation {
     font-family: "ITC Avant Garde Gothic Std Book";
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     margin: auto;
     padding: 10px;
@@ -32,4 +32,10 @@
 .catalyx_link:hover {
     text-decoration: none;
     color: #8234f8;
+}
+@media (max-width: 768px) {
+    .about_explanation{
+        font-size: 1rem;
+        padding: 15px;
+    }
 }

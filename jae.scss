@@ -4,23 +4,31 @@
 .body{
   font-family: "ITC Avant Garde Gothic Std Medium";
 }
-.white_background {
-  background-color: white;
-}
+// .white_background {
+//   background-color: white;
+// }
 // .grey_background {
 //   background-color: rgb(240, 240, 240);
 // }
 .custom_section {
-  padding-top: 2em;
-  padding-bottom: 2em;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   max-width: 1440px;
   margin: auto;
+  @media (max-width: 768px) {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
+
 .example {
   position: absolute;
 }
 .title {
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
+  @media (max-width: 768px) {
+    margin-bottom: 2rem;
+  }
 }
 .subtitle {
   margin-bottom: 2rem;

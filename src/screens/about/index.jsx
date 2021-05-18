@@ -69,13 +69,12 @@ const About = () => (
                     catalyx.io{" "}
                   </a>
                 </span>
-                as a software developer, but mostly working as a full stack web
-                developer. Catalyx is a trading platform customized for the
-                Canadian market, under license from Bittrex—the premier U.S.
-                based blockchain trading platform. Our mission is to be Canada’s
-                leading blockchain trading platform for virtual currencies and
-                digital assets, while fostering a new generation of investors
-                seeking to engage and manage their own financial future.
+                as a full stack developer. Catalyx is a trading platform
+                customized for the Canadian market. Our mission is to be
+                Canada’s leading blockchain trading platform for virtual
+                currencies and digital assets; while fostering a new generation
+                of investors seeking to engage and manage their own financial
+                future.
               </p>
             </div>
           </div>

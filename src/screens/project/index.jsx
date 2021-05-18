@@ -1,7 +1,7 @@
 import React from "react";
-import { Row, Col } from "react-bootstrap";
 import catalyxLogo from "../../assets/images/catalyx_web.png";
 import fastbitcashLogo from "../../assets/images/fbc_web.png";
+import foodverifyLogo from "../../assets/images/foodverify_web.png";
 import "./local.scss";
 
 const Project = () => {
@@ -12,9 +12,11 @@ const Project = () => {
           <h1 className="title">Projects</h1>
         </div>
         <div className="container">
-          <div className="row justify-content-md-center">
-            <div className="col-12">
-              <p>Catalyx</p>
+          <div className="row">
+
+            {/* Catalyx */}
+            <div className="col-12 col-lg-6">
+              <p className="project_title">Catalyx</p>
               <div className="project_card">
                 <a
                   href="https://catalyx.io"
@@ -25,8 +27,11 @@ const Project = () => {
                 </a>
               </div>
             </div>
-            <div className="col-12">
-              <p>FastBitCash</p>
+            {/* Catalyx */}
+
+            {/* FastBitCash */}
+            <div className="col-12 col-lg-6">
+              <p className="project_title">FastBitCash</p>
               <div className="project_card">
                 <a
                   href="https://fastbitcash.ca"
@@ -41,6 +46,27 @@ const Project = () => {
                 </a>
               </div>
             </div>
+            {/* FastBitCash */}
+
+            {/* FoodVerify */}
+            {/* <div className="col-12 col-lg-4">
+              <p className="project_title">FoodVerify</p>
+              <div className="project_card">
+                <a
+                  href="http://foodverify.io/"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  <img
+                    className="img-fluid rounded"
+                    src={foodverifyLogo}
+                    alt=""
+                  />
+                </a>
+              </div>
+            </div> */}
+            {/* FoodVerify */}
+
           </div>
         </div>
       </section>
