@@ -36,7 +36,23 @@
 }
 .font-white {
   color: white !important;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 .font-black {
   color: black !important;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+@media (max-width: 768px) {
+  .collapsedMenu{
+    color: black !important;
+    margin: 0;
+    padding: 0;
+  }
+  .collapsedMenu2{
+    color: white !important;
+    margin: 0;
+    padding: 0;
+  }
 }

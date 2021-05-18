@@ -66,7 +66,7 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>Home</p>
+              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>Home</p>
             </Link>
           </li>
           <li className="nav-item">
@@ -81,10 +81,10 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>About</p>
+              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>About</p>
             </Link>
           </li>
-          <li className="nav-item">
+          {/* <li className="nav-item">
             <Link
               className="active nav-link"
               to="work"
@@ -96,11 +96,11 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>
+              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
                 Experiences
               </p>
             </Link>
-          </li>
+          </li> */}
           <li className="nav-item">
             <Link
               className="active nav-link"
@@ -113,7 +113,7 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>
+              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
                 Skills
               </p>
             </Link>
@@ -130,7 +130,7 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>
+              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
                 Projects
               </p>
             </Link>
@@ -147,7 +147,7 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>
+              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
                 Contact
               </p>
             </Link>
