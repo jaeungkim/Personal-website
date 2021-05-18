@@ -17,12 +17,12 @@ const App = () => {
   return (
     <>
       <Header />
-      {/* <Profile />
+      <Profile />
       <About />
       <Experience />
       <Skills />
       <Project />
-      <ContactForm /> */}
+      <ContactForm />
       <Footer />
     </>
   );
