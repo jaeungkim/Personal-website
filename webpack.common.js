@@ -29,7 +29,7 @@ module.exports = {
         rules: [
             {
                 test: /\.svg$/,
-                use: ["@svgr/webpack"]
+                use: ["@svgr/webpack", "url-loader"]
             }, 
             {
                 test: /\.s[ac]ss$/i,
