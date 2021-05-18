@@ -1,15 +1,21 @@
 version: 1
 frontend:
+BUILD_FOLDER: app
+OUTPUT_FOLDER: dist
   phases:
     preBuild: 
       commands:
-        - cd build
-        - mkdir -p build
+        - cd ${BUILD_FOLDER}
+        - mkdir ./${OUTPUT_FOLDER}
         - npm install
         - npm audit fix
     build:
       commands:
         - npm run build
+    postBuild:
+    commands:
+      - pwd
+      - ls ${OUTPUT_FOLDER}
   artifacts:
     baseDirectory: /app/dist
     files:
