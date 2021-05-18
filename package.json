@@ -67,7 +67,6 @@
   },
   "scripts": {
     "start": "webpack serve --open",
-    "build": "webpack",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "serve -s build"
