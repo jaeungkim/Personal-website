@@ -54,7 +54,7 @@ const About = () => (
             <div>
               <p className="about_explanation">
                 I am a dedicated software developer who graduated with computer
-                science degree at the University of British Columbia.
+                science degree from the University of British Columbia.
                 <br />
                 <br />
                 Currently, I am working for
