@@ -1,6 +1,6 @@
 import React from "react";
 import screens from "../src/screens";
-import "./app.scss";
+import "./App.scss";
 
 const {
   Header,
