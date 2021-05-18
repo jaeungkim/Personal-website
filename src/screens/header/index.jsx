@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 import "./local.scss";
 
 const MainHeader = () => {
@@ -31,11 +31,10 @@ const MainHeader = () => {
         smooth={true}
         offset={-70}
         duration={500}
-        style={{ cursor: "pointer" }}
+        style={{ colorChange }}
         onClick={scroll.scrollToTop}
       >
-        {" "}
-        Jae Kim{" "}
+        <p className={colorChange ? "font-black" : "font-white"}>Jae Kim</p>
       </Link>
       <button
         className={
@@ -65,8 +64,7 @@ const MainHeader = () => {
               duration={500}
               style={{ cursor: "pointer" }}
             >
-              {" "}
-              Home{" "}
+              <p className={colorChange ? "font-black" : "font-white"}>Home</p>
             </Link>
           </li>
           <li className="nav-item">
@@ -79,8 +77,7 @@ const MainHeader = () => {
               duration={500}
               style={{ cursor: "pointer" }}
             >
-              {" "}
-              About{" "}
+              <p className={colorChange ? "font-black" : "font-white"}>About</p>
             </Link>
           </li>
           <li className="nav-item">
@@ -93,8 +90,7 @@ const MainHeader = () => {
               duration={500}
               style={{ cursor: "pointer" }}
             >
-              {" "}
-              Experiences{" "}
+              <p className={colorChange ? "font-black" : "font-white"}>Experiences</p>
             </Link>
           </li>
           <li className="nav-item">
@@ -107,8 +103,7 @@ const MainHeader = () => {
               duration={500}
               style={{ cursor: "pointer" }}
             >
-              {" "}
-              Skills
+              <p className={colorChange ? "font-black" : "font-white"}>Skills</p>
             </Link>
           </li>
           <li className="nav-item">
@@ -121,8 +116,7 @@ const MainHeader = () => {
               duration={500}
               style={{ cursor: "pointer" }}
             >
-              {" "}
-              Projects{" "}
+              <p className={colorChange ? "font-black" : "font-white"}>Projects</p>
             </Link>
           </li>
           <li className="nav-item">
@@ -135,8 +129,7 @@ const MainHeader = () => {
               duration={500}
               style={{ cursor: "pointer" }}
             >
-              {" "}
-              Contact{" "}
+              <p className={colorChange ? "font-black" : "font-white"}>Contact</p>
             </Link>
           </li>
         </ul>
