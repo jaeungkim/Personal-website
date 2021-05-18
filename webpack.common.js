@@ -8,6 +8,10 @@ const appDirectory = fs.realpathSync(process.cwd());
 module.exports = {
     entry: ["@babel/polyfill", path.resolve(appDirectory, "./src/index.js")],
     mode: "production",
+    devtool: false,
+    performance: {
+        hints: false,
+    },
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'dist'),
