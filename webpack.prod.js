@@ -3,6 +3,7 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'production',
+  devtool: "eval",
   performance: {
     hints: false,
     maxEntrypointSize: 512000,

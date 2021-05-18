@@ -13,7 +13,7 @@ const About = () => (
         <h1 className="title">About me</h1>
       </div>
       <div className="row">
-        <div className="col-md justify-content-center">
+        <div className="col-12 col-md-6">
           <Carousel className="profile_img_div">
             <Carousel.Item>
               <img
@@ -49,7 +49,7 @@ const About = () => (
           </Carousel>
         </div>
 
-        <div className="col-md">
+        <div className="col-12 col-md-6">
           <div>
             <p className="about_explanation">
               I am a dedicated software developer who graduated with computer
