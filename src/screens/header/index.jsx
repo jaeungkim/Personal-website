@@ -31,7 +31,7 @@ const MainHeader = () => {
         smooth={true}
         offset={-70}
         duration={500}
-        style={{ colorChange }}
+        style={{ cursor: "pointer" }}
         onClick={scroll.scrollToTop}
       >
         <p className={colorChange ? "font-black" : "font-white"}>Jae Kim</p>
@@ -63,6 +63,8 @@ const MainHeader = () => {
               offset={-70}
               duration={500}
               style={{ cursor: "pointer" }}
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
             >
               <p className={colorChange ? "font-black" : "font-white"}>Home</p>
             </Link>
@@ -76,6 +78,8 @@ const MainHeader = () => {
               offset={-70}
               duration={500}
               style={{ cursor: "pointer" }}
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
             >
               <p className={colorChange ? "font-black" : "font-white"}>About</p>
             </Link>
@@ -89,8 +93,12 @@ const MainHeader = () => {
               offset={-70}
               duration={500}
               style={{ cursor: "pointer" }}
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>Experiences</p>
+              <p className={colorChange ? "font-black" : "font-white"}>
+                Experiences
+              </p>
             </Link>
           </li>
           <li className="nav-item">
@@ -102,8 +110,12 @@ const MainHeader = () => {
               offset={-70}
               duration={500}
               style={{ cursor: "pointer" }}
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>Skills</p>
+              <p className={colorChange ? "font-black" : "font-white"}>
+                Skills
+              </p>
             </Link>
           </li>
           <li className="nav-item">
@@ -115,8 +127,12 @@ const MainHeader = () => {
               offset={-70}
               duration={500}
               style={{ cursor: "pointer" }}
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>Projects</p>
+              <p className={colorChange ? "font-black" : "font-white"}>
+                Projects
+              </p>
             </Link>
           </li>
           <li className="nav-item">
@@ -128,8 +144,12 @@ const MainHeader = () => {
               offset={-70}
               duration={500}
               style={{ cursor: "pointer" }}
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "font-black" : "font-white"}>Contact</p>
+              <p className={colorChange ? "font-black" : "font-white"}>
+                Contact
+              </p>
             </Link>
           </li>
         </ul>
