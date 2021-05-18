@@ -66,7 +66,8 @@
     "typescript": "^3.9.9"
   },
   "scripts": {
-    "start": "webpack serve --open",
+    "start": "webpack serve --open --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "deploy": "serve -s build"
@@ -115,6 +116,7 @@
     "url-loader": "^4.1.1",
     "webpack": "^5.37.0",
     "webpack-cli": "^4.7.0",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "webpack-merge": "^5.7.3"
   }
 }

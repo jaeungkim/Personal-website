@@ -6,7 +6,11 @@ const fs = require("fs");
 const appDirectory = fs.realpathSync(process.cwd());
 
 module.exports = {
-    mode: "development",
+    entry: './src/index.js',
+    output: {
+        filename: 'main.js',
+        path: path.resolve(__dirname, 'dist'),
+    },
     resolve: { // File extensions. Add others and needed (e.g. scss, json)
         extensions: [
             ".js", ".jsx"
