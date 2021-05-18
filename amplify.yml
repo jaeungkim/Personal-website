@@ -1,9 +1,12 @@
 version: 1
 frontend:
   phases:
-    preBuild: mkdir -p build
+    preBuild: 
       commands:
-        - npm ci
+        - cd build
+        - mkdir -p build
+        - npm install
+        - npm audit fix
     build:
       commands:
         - npm run build
