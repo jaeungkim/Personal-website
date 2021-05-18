@@ -136,7 +136,6 @@ const Skills = () => {
                       </h4>
                       <ProgressBar striped variant="info" animated now={70} />
                     </div>
-
                   </Tab>
                 </Tabs>
               </Container>
