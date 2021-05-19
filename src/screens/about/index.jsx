@@ -53,8 +53,9 @@ const About = () => (
           <div className="col-12 col-md-6">
             <div>
               <p className="about_explanation">
-                I am a dedicated software developer who graduated with computer
-                science degree from the University of British Columbia.
+                Hello! My name is Jae, and I am a dedicated software developer,
+                who graduated from University of British Columbia with BSc in
+                Computer Science.
                 <br />
                 <br />
                 Currently, I am working for
@@ -69,12 +70,9 @@ const About = () => (
                     catalyx.io{" "}
                   </a>
                 </span>
-                as a full stack developer. Catalyx is a trading platform
-                customized for the Canadian market. Our mission is to be
-                Canada’s leading blockchain trading platform for virtual
-                currencies and digital assets; while fostering a new generation
-                of investors seeking to engage and manage their own financial
-                future.
+                as a full stack developer. Catalyx is a blockchain trading
+                platform customized for the virtual currencies and digital
+                assets market.
               </p>
             </div>
           </div>
