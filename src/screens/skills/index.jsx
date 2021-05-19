@@ -11,7 +11,6 @@ import mysqlIcon from "@iconify/icons-logos/mysql";
 import angularIcon from "@iconify/icons-logos/angular-icon";
 import apolloIcon from "@iconify/icons-logos/apollostack";
 import graphQL from "@iconify/icons-logos/graphql";
-import elixrIcon from "../../assets/images/elixir.svg";
 import profileIllustrationimg from "../../assets/images/profile_illustration.png";
 import mongoDBIcon from "@iconify/icons-logos/mongodb";
 import meteorIcon from "@iconify/icons-logos/meteor-icon";
@@ -93,13 +92,6 @@ const Skills = () => {
                         NodeJs <Icon icon={nodejsIcon} />
                       </h4>
                       <ProgressBar striped variant="info" animated now={80} />
-                    </div>
-
-                    <div className="dev-icons">
-                      <h4 className="skill-name">
-                        Elixir <img src={elixrIcon} className="elixirIcon" />
-                      </h4>
-                      <ProgressBar striped variant="info" animated now={60} />
                     </div>
                   </Tab>
 
