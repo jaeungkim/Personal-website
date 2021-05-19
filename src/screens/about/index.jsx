@@ -51,30 +51,32 @@ const About = () => (
           </div>
 
           <div className="col-12 col-md-6">
-            <div>
-              <p className="about_explanation">
-                Hello! My name is Jae, and I am a dedicated software developer,
-                who graduated from University of British Columbia with BSc in
-                Computer Science.
-                <br />
-                <br />
-                Currently, I am working for
-                <span>
-                  <a
-                    className="catalyx_link"
-                    href="https://catalyx.io/home"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    {" "}
-                    catalyx.io{" "}
-                  </a>
-                </span>
-                as a full stack developer. Catalyx is a blockchain trading
-                platform customized for the virtual currencies and digital
-                assets market.
-              </p>
-            </div>
+            <p className="about_explanation">
+              Hello! My name is Jae, and I am a dedicated software developer who
+              graduated from the University of British Columbia with BSc in
+              Computer Science.
+              <br />
+              <br />
+              Currently, I am working for
+              <span>
+                <a
+                  className="catalyx_link"
+                  href="https://catalyx.io/home"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  catalyx.io{" "}
+                </a>
+              </span>
+              as a full stack developer. Catalyx is a blockchain trading
+              platform customized for the virtual currencies and digital assets.
+              Our mission is to be the leader in the Canadian digital asset
+              market space by providing Canadian customers a reliable, fast and
+              secure trading platform with access to some of the world's most
+              innovative blockchain projects, and the most extensive selection
+              of digital tokens in Canada.
+            </p>
           </div>
         </div>
       </div>

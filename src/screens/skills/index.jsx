@@ -15,6 +15,8 @@ import elixrIcon from "../../assets/images/elixir.svg";
 import profileIllustrationimg from "../../assets/images/profile_illustration.png";
 import mongoDBIcon from "@iconify/icons-logos/mongodb";
 import meteorIcon from "@iconify/icons-logos/meteor-icon";
+import postgreSQL from "@iconify/icons-logos/postgresql";
+import docker from "@iconify/icons-logos/docker";
 import "./local.scss";
 
 const Skills = () => {
@@ -110,9 +112,15 @@ const Skills = () => {
                     </div>
                     <div className="dev-icons">
                       <h4 className="skill-name">
-                        MongoDB <Icon icon={mongoDBIcon} />
+                        PostgreSQL <Icon icon={postgreSQL} />
                       </h4>
                       <ProgressBar striped variant="info" animated now={80} />
+                    </div>
+                    <div className="dev-icons">
+                      <h4 className="skill-name">
+                        MongoDB <Icon icon={mongoDBIcon} />
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={60} />
                     </div>
                   </Tab>
                   <Tab eventKey="others" title="Others">
@@ -126,6 +134,12 @@ const Skills = () => {
                     <div className="dev-icons">
                       <h4 className="skill-name">
                         GraphQL <Icon icon={graphQL} />
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={70} />
+                    </div>
+                    <div className="dev-icons">
+                      <h4 className="skill-name">
+                        Docker <Icon icon={docker} />
                       </h4>
                       <ProgressBar striped variant="info" animated now={70} />
                     </div>
