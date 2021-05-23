@@ -57,7 +57,7 @@ const About = () => (
               Computer Science.
               <br />
               <br />
-              Currently, I am working for
+              Currently, I am working at
               <span>
                 <a
                   className="catalyx_link"
@@ -74,8 +74,7 @@ const About = () => (
               Our mission is to be the leader in the Canadian digital asset
               market space by providing Canadian customers a reliable, fast and
               secure trading platform with access to some of the world's most
-              innovative blockchain projects, and the most extensive selection
-              of digital tokens in Canada.
+              innovative blockchain technology.
             </p>
           </div>
         </div>
