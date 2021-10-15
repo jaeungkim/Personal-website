@@ -69,7 +69,7 @@ const About = () => (
                   catalyx.io{" "}
                 </a>
               </span>
-              as a full stack developer. Catalyx is a blockchain trading
+              as a full stack developer. Catalyx is largest Canadian blockchain trading
               platform customized for the virtual currencies and digital assets.
               Our mission is to be the leader in the Canadian digital asset
               market space by providing Canadian customers a reliable, fast and
