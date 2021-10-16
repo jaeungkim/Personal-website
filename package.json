@@ -19,6 +19,7 @@
     "body-parser": "^1.19.0",
     "bootstrap": "^4.6.0",
     "classnames": "^2.3.1",
+    "copy-webpack-plugin": "^6.0.2",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "font-awesome": "^4.7.0",
@@ -27,6 +28,7 @@
     "imagemin-webp": "^6.0.0",
     "infinite-react-carousel": "^1.2.11",
     "jquery": "^3.6.0",
+    "jquery-particles": "^1.36.0",
     "nodemailer-mailgun-transport": "^2.1.3",
     "nodemon": "^2.0.7",
     "popper.js": "^1.16.1",
@@ -53,13 +55,16 @@
     "react-scripts": "^4.0.3",
     "react-scroll": "^1.8.2",
     "react-scroll-parallax": "^2.4.0",
+    "react-tsparticles": "^1.36.0",
     "react-typical": "^0.1.3",
     "react-typing-animation": "^1.6.2",
     "rellax": "^1.12.1",
     "scss-loader": "0.0.1",
     "smooth-scroll": "^16.1.3",
+    "webpack-cli": "^3.3.11",
     "tsparticles": "^1.36.0",
-    "typescript": "^3.9.9"
+    "typescript": "^3.9.9",
+    "webpack-subresource-integrity": "^1.4.0"
   },
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot --config webpack.dev.js --host 127.0.0.1",
