@@ -6,8 +6,8 @@ import "./local.scss";
 
 const Profile = () => {
   return (
-    <section className="custom-profile">
-      <div className="bg-overlay">
+    <section styleName="custom-profile">
+      <div styleName="bg-overlay">
         <Particles
           canvasClassName="example"
           params={{
@@ -121,14 +121,16 @@ const Profile = () => {
             retina_detect: true,
           }}
         />
-        <div className="home-table">
-          <div className="home-table-center">
+        <div styleName="home-table">
+          <div styleName="home-table-center">
             <div className="container">
               <div className="row justify-content-center">
                 <div className="col-lg-12">
                   <div className="text-white text-center">
-                    <h1 className="header_iam display-4">I am </h1>
-                    <h1 className="header_title">
+                    <h1 styleName="header_iam" className="display-4">
+                      I am{" "}
+                    </h1>
+                    <h1 styleName="header_title">
                       <Typical
                         loop={Infinity}
                         wrapper="b"
@@ -151,8 +153,8 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      <div className="social_bar">
-        <ul className="social_home">
+      <div styleName="social_bar">
+        <ul styleName="social_home">
           <li className="list-inline-item">
             <a href="https://www.facebook.com/kjw9149">
               <i className="fa fa-facebook"></i>
@@ -175,7 +177,7 @@ const Profile = () => {
           </li>
         </ul>
       </div>
-      <div className="scroll_down">
+      <div styleName="scroll_down">
         <Link
           className="scroll active nav-link"
           to="about"

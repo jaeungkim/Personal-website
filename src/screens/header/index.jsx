@@ -19,9 +19,10 @@ const MainHeader = () => {
     <nav
       className={
         colorChange
-          ? "navbar navbar-expand-lg colorChange fixed-top"
-          : "navbar navbar-expand-lg custom-nav fixed-top"
+          ? "navbar navbar-expand-lg fixed-top"
+          : "navbar navbar-expand-lg fixed-top"
       }
+      styleName={colorChange ? "colorChange" : "custom-nav"}
     >
       <Link
         activeClass="active"
@@ -34,14 +35,11 @@ const MainHeader = () => {
         style={{ cursor: "pointer" }}
         onClick={scroll.scrollToTop}
       >
-        <p className={colorChange ? "font-black" : "font-white"}>Jae Kim</p>
+        <p styleName={colorChange ? "font-black" : "font-white"}>Jae Kim</p>
       </Link>
       <button
-        className={
-          colorChange
-            ? "navbar-toggler font-black"
-            : "navbar-toggler font-white"
-        }
+        className={colorChange ? "navbar-toggler" : "navbar-toggler"}
+        styleName={colorChange ? "font-black" : "font-white"}
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -66,7 +64,9 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>Home</p>
+              <p styleName={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
+                Home
+              </p>
             </Link>
           </li>
           <li className="nav-item">
@@ -81,7 +81,9 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>About</p>
+              <p styleName={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
+                About
+              </p>
             </Link>
           </li>
           {/* <li className="nav-item">
@@ -113,7 +115,7 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
+              <p styleName={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
                 Skills
               </p>
             </Link>
@@ -130,7 +132,7 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
+              <p styleName={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
                 Projects
               </p>
             </Link>
@@ -147,7 +149,7 @@ const MainHeader = () => {
               data-toggle="collapse"
               data-target="#navbarSupportedContent"
             >
-              <p className={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
+              <p styleName={colorChange ? "collapsedMenu" : "collapsedMenu2"}>
                 Contact
               </p>
             </Link>

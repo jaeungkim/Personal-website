@@ -15,7 +15,7 @@ const About = () => (
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Carousel className="profile_img_div">
+            <Carousel styleName="profile_img_div">
               <Carousel.Item>
                 <img
                   className="profile_img d-block w-100"
@@ -51,7 +51,7 @@ const About = () => (
           </div>
 
           <div className="col-12 col-md-6">
-            <p className="about_explanation">
+            <p styleName="about_explanation">
               Hello! My name is Jae, and I am a dedicated software developer who
               graduated from the University of British Columbia with BSc in
               Computer Science.
@@ -60,7 +60,7 @@ const About = () => (
               Currently, I am working at
               <span>
                 <a
-                  className="catalyx_link"
+                  styleName="catalyx_link"
                   href="https://catalyx.io/home"
                   target="_blank"
                   rel="noreferrer"

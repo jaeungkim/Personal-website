@@ -35,7 +35,8 @@ const ContactForm = () => {
                 onSubmit={submitForm}
                 action="https://formspree.io/xayprage"
                 method="POST"
-                className="pt-2 contact_form"
+                className="pt-2"
+                styleName="contact_form"
               >
                 <div className="col-lg">
                   <div className="form-group mt-2">
@@ -85,14 +86,14 @@ const ContactForm = () => {
                 </div>
                 <div className="col-lg text-right">
                   {status === "SUCCESS" ? (
-                    <p className="success_message">
+                    <p styleName="success_message">
                       Your message has beent sent!
                     </p>
                   ) : (
                     ""
                   )}
                   {status === "FAIL" ? (
-                    <p className="error_message">
+                    <p styleName="error_message">
                       Oops! Try again! Make sure you entered info correctly
                     </p>
                   ) : (
@@ -102,7 +103,8 @@ const ContactForm = () => {
                     type="submit"
                     id="submit"
                     name="send"
-                    className="btn btn-custom"
+                    className="btn"
+                    styleName="btn-custom"
                     value="Send Message"
                   ></input>
                 </div>

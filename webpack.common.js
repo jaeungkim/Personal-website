@@ -1,22 +1,22 @@
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
-const InterpolateHtmlPlugin = require("interpolate-html-plugin");
-const CompressionPlugin = require("compression-webpack-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-
 const path = require("path");
 const fs = require("fs");
 
 const appDirectory = fs.realpathSync(process.cwd());
 
 module.exports = {
-  entry: ["@babel/polyfill", path.resolve(appDirectory, "./src/index.js")],
+  entry: ["@babel/polyfill", path.resolve(appDirectory, "src/index.js")],
   mode: "production",
-  devtool: "eval",
-  output: {
-    path: path.resolve(__dirname, "../dist"),
-    filename: "js/[name].[contenthash:8].js",
-  },
+  plugins: [
+    new CleanWebpackPlugin({
+      dry: false,
+      verbose: true,
+    }),
+    new webpack.ProvidePlugin({
+      classnames: "classnames",
+    }),
+  ],
   resolve: {
     // File extensions. Add others and needed (e.g. scss, json)
     extensions: [".js", ".jsx"],
@@ -32,16 +32,7 @@ module.exports = {
     rules: [
       {
         test: /\.svg$/,
-        use: ["@svgr/webpack", "url-loader"],
-      },
-      {
-        test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"],
-      },
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        use: ["babel-loader"],
+        use: ["@svgr/webpack"],
       },
       {
         test: /\.(png|jpe?g|webp|git|svg|)$/i,
@@ -58,41 +49,90 @@ module.exports = {
           },
         ],
       },
+
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
         use: ["file-loader"],
       },
+
       {
-        test: /\.jsx?$/,
+        test: /\.(js|jsx)$/,
+        include: [
+          path.resolve(appDirectory, "src"),
+          path.resolve(appDirectory, "src/assets/fonts"),
+        ],
         exclude: /node_modules/,
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"],
+            presets: ["@babel/react"],
           },
         },
       },
+      {
+        test: /\.?local.(sa|sc|c)ss$/,
+        use: [
+          {
+            loader: "style-loader",
+          },
+          {
+            loader: "css-loader",
+            options: {
+              //   discardDuplicates: true,
+              importLoaders: 2,
+              //   // This enables local scoped CSS based in CSS Modules spec
+              modules: {
+                //   // generates a unique name for each class (e.g. [name]_[local]_[hash:base64:5])
+                localIdentName: "[folder]_[local]_[hash:base64:5]",
+              },
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              plugins() {
+                // post css plugins, can be exported to postcss.config.js
+                return [require("precss"), require("autoprefixer")];
+              },
+            },
+          },
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        exclude: /\.?local.(sa|sc|c)ss$/,
+        loader: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+      },
+      {
+        test: /\.(sa|sc|c)ss$/,
+        include: path.resolve(appDirectory, "src/assets/fonts"),
+        exclude: /\.?local.(sa|sc|c)ss$/,
+        loader: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "sass-loader",
+            options: {
+              sourceMap: true,
+            },
+          },
+        ],
+      },
     ],
   },
-  plugins: [
-    new HtmlWebpackPlugin({
-      template: path.resolve(appDirectory, "public/index.html"),
-      filename: "index.html",
-      favicon: "./public/favicon.ico",
-    }),
-    new InterpolateHtmlPlugin({
-      PUBLIC_URL: "static", // can modify `static` to another name or get it from `process`
-    }),
-    new CleanWebpackPlugin({
-      dry: false,
-      verbose: true,
-    }),
-    new CompressionPlugin({
-      filename: "[path].gz[query]",
-      algorithm: "gzip",
-      test: new RegExp('\\.(js|css)$/'),
-      threshold: 10240,
-      minRatio: 0.8
-    }),
-  ],
 };

@@ -13,11 +13,10 @@ const Project = () => {
         </div>
         <div className="container">
           <div className="row">
-
             {/* Catalyx */}
-            <div className="col-12 col-lg-6">
-              <p className="project_title">Catalyx</p>
-              <div className="project_card">
+            <div className="col-12 col-lg-4">
+              <p styleName="titlee">Catalyx</p>
+              <div styleName="project_card">
                 <a
                   href="https://catalyx.io"
                   rel="noopener noreferrer"
@@ -30,9 +29,9 @@ const Project = () => {
             {/* Catalyx */}
 
             {/* FastBitCash */}
-            <div className="col-12 col-lg-6">
-              <p className="project_title">FastBitCash</p>
-              <div className="project_card">
+            <div className="col-12 col-lg-4">
+              <p styleName="titlee">FastBitCash</p>
+              <div styleName="project_card">
                 <a
                   href="https://fastbitcash.ca"
                   rel="noopener noreferrer"
@@ -49,24 +48,19 @@ const Project = () => {
             {/* FastBitCash */}
 
             {/* FoodVerify */}
-            {/* <div className="col-12 col-lg-4">
-              <p className="project_title">FoodVerify</p>
-              <div className="project_card">
+            <div className="col-12 col-lg-4">
+              <p styleName="titlee">FoodVerifys</p>
+              <div styleName="project_card">
                 <a
                   href="http://foodverify.io/"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  <img
-                    className="img-fluid rounded"
-                    src={foodverifyLogo}
-                    alt=""
-                  />
+                  <img className="img-fluid" src={foodverifyLogo} alt="" />
                 </a>
               </div>
-            </div> */}
+            </div>
             {/* FoodVerify */}
-
           </div>
         </div>
       </section>
