@@ -35,15 +35,35 @@ module.exports = {
         use: ["@svgr/webpack"],
       },
       {
-        test: /\.(png|jpe?g|webp|git|svg|)$/i,
+        test: /\.(gif|png|jpe?g|)$/i,
         use: [
+          "file-loader",
           {
-            loader: `img-optimize-loader`,
+            loader: "image-webpack-loader",
             options: {
-              compress: {
-                // This will transform your png/jpg into webp.
-                webp: true,
-                disableOnDevelopment: true,
+              name(file) {
+                if (process.env.NODE_ENV === "staging") {
+                  return "[path][name].[ext]";
+                }
+                return "[contenthash].[ext]";
+              },
+              outputpath: ".",
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              webp: {
+                quality: 75,
               },
             },
           },
