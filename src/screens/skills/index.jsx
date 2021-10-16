@@ -67,7 +67,7 @@ const Skills = () => {
                       <h4 styleName="skill-name">
                         React <Icon icon={fileTypeReactts} />
                       </h4>
-                      <ProgressBar striped variant="info" animated now={70} />
+                      <ProgressBar striped variant="info" animated now={90} />
                     </div>
 
                     <div styleName="dev-icons">
@@ -81,16 +81,16 @@ const Skills = () => {
                   <Tab eventKey="backend" title="Back-End">
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        PHP<Icon icon={phpIcon} />
-                      </h4>
-                      <ProgressBar striped variant="info" animated now={80} />
-                    </div>
-
-                    <div styleName="dev-icons">
-                      <h4 styleName="skill-name">
                         NodeJs <Icon icon={nodejsIcon} />
                       </h4>
                       <ProgressBar striped variant="info" animated now={80} />
+                    </div>
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        PHP
+                        <Icon icon={phpIcon} />
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={70} />
                     </div>
                   </Tab>
 

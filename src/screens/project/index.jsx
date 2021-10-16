@@ -49,7 +49,7 @@ const Project = () => {
 
             {/* FoodVerify */}
             <div className="col-12 col-lg-4">
-              <p styleName="titlee">FoodVerifys</p>
+              <p styleName="titlee">FoodVerify.io</p>
               <div styleName="project_card">
                 <a
                   href="http://foodverify.io/"
