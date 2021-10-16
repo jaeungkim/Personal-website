@@ -25,10 +25,6 @@ const Profile = () => {
                   enable: true,
                   mode: "repulse",
                 },
-                onclick: {
-                  enable: true,
-                  mode: "push",
-                },
               },
             },
           }}
