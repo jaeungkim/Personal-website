@@ -6,7 +6,7 @@ import "./local.scss";
 
 const Profile = () => {
   return (
-    <section styleName="custom-profile">
+    <section styleName="custom-profile" id="home">
       <div styleName="bg-overlay">
         <Particles
           canvasClassName="example"
