@@ -22,7 +22,7 @@ const Project = () => {
                   <p styleName="project_explanation">
                     Blockchain powered Canadian cryptocurrency trading platform
                   </p>
-                  <a href="https://catalyx.io" styleName="card_linktopage">Link</a>
+                  <a href="https://catalyx.io" styleName="card_linktopage" target="_blank">Link</a>
                 </div>
               </div>
             </div>
@@ -42,7 +42,7 @@ const Project = () => {
                   User friendly cryptocurrency platform for beginners - powered
                   by Catalyx.io
                 </p>
-                <a href="https://fastbitcash.ca" styleName="card_linktopage">Link</a>
+                <a href="https://fastbitcash.ca" styleName="card_linktopage" target="_blank">Link</a>
                 </div>
               </div>
             </div>
@@ -57,7 +57,7 @@ const Project = () => {
                 <p styleName="project_explanation">
                   Food Traceability project for Inno Foods Inc.
                 </p>
-                <a href="https://foodverify.io" styleName="card_linktopage">Link</a>
+                <a href="https://foodverify.io" styleName="card_linktopage" target="_blank">Link</a>
                 </div>
               </div>
             </div>
