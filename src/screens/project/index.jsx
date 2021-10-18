@@ -1,7 +1,7 @@
 import React from "react";
-import catalyxLogo from "../../assets/images/catalyx_web.png";
-import fastbitcashLogo from "../../assets/images/fbc_web.png";
-import foodverifyLogo from "../../assets/images/foodverify_web.png";
+import catalyxLogo from "../../assets/images/catalyxWebPage.png";
+import fastbitcashLogo from "../../assets/images/fastbitcashWeb.png";
+import foodverifyLogo from "../../assets/images/foodverifyWeb.png";
 import "./local.scss";
 
 const Project = () => {
@@ -14,50 +14,57 @@ const Project = () => {
         <div className="container">
           <div className="row">
             {/* Catalyx */}
-            <div className="col-12 col-lg-4">
-              <p styleName="titlee">Catalyx</p>
+            <div className="col-12">
+              <p styleName="card_title">Catalyx</p>
               <div styleName="project_card">
-                <a
-                  href="https://catalyx.io"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img className="img-fluid rounded" src={catalyxLogo} alt="" />
-                </a>
+                <img alt="" src={catalyxLogo} styleName="project_webImage" />
+                <div styleName="project_explanation_div">
+                  <p styleName="project_explanation">
+                    Blockchain powered Canadian cryptocurrency trading platform
+                  </p>
+                  <a href="https://catalyx.io" styleName="card_linktopage">
+                    Link
+                  </a>
+                </div>
               </div>
             </div>
             {/* Catalyx */}
 
             {/* FastBitCash */}
-            <div className="col-12 col-lg-4">
-              <p styleName="titlee">FastBitCash</p>
+            <div className="col-12">
+              <p styleName="card_title">FastBitCash</p>
               <div styleName="project_card">
-                <a
-                  href="https://fastbitcash.ca"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img
-                    className="img-fluid rounded"
-                    src={fastbitcashLogo}
-                    alt=""
-                  />
-                </a>
+                <img
+                  alt=""
+                  src={fastbitcashLogo}
+                  styleName="project_webImage"
+                />
+                <div styleName="project_explanation_div">
+                  <p styleName="project_explanation">
+                    User friendly cryptocurrency platform for beginners -
+                    powered by Catalyx.io
+                  </p>
+                  <a href="https://fastbitcash.ca" styleName="card_linktopage">
+                    Link
+                  </a>
+                </div>
               </div>
             </div>
             {/* FastBitCash */}
 
             {/* FoodVerify */}
-            <div className="col-12 col-lg-4">
-              <p styleName="titlee">FoodVerify.io</p>
+            <div className="col-12">
+              <p styleName="card_title">FoodVerify.io</p>
               <div styleName="project_card">
-                <a
-                  href="http://foodverify.io/"
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  <img className="img-fluid" src={foodverifyLogo} alt="" />
-                </a>
+                <img alt="" src={foodverifyLogo} styleName="project_webImage" />
+                <div styleName="project_explanation_div">
+                  <p styleName="project_explanation">
+                    Food Traceability project for Inno Foods Inc.
+                  </p>
+                  <a href="https://foodverify.io" styleName="card_linktopage">
+                    Link
+                  </a>
+                </div>
               </div>
             </div>
             {/* FoodVerify */}
