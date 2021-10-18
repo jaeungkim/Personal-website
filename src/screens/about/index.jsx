@@ -15,7 +15,7 @@ const About = () => (
       <div className="container">
         <div className="row">
           <div className="col-12 col-md-6">
-            <Carousel styleName="profile_img_div">
+            <Carousel styleName="profile_img_div" indicators={false}>
               <Carousel.Item>
                 <img
                   className="profile_img d-block w-100"
@@ -50,31 +50,54 @@ const About = () => (
             </Carousel>
           </div>
 
-          <div className="col-12 col-md-6">
+          <div className="col-12 col-md-6 my-auto">
             <p styleName="about_explanation">
-              Hello! My name is Jae, and I am a dedicated software developer who
-              graduated from the University of British Columbia with BSc in
-              Computer Science.
+              Hello &#128075; Welcome to my webiste!
               <br />
               <br />
-              Currently, I am working at
+              My name is Jae Woong, but I usually go by the name Jae.
+              <br />
+              <br />
+              When I was young, I always loved playing with legos. When I
+              finished building them I always loved the joy they brought. Just
+              staring at them made me happy. I guess from that point on, I
+              always enjoyed solving and building things. (I still collect lego
+              by the way.) And while studying at the
               <span>
                 <a
-                  styleName="catalyx_link"
-                  href="https://catalyx.io/home"
+                  styleName="ubc_link"
+                  href="https://www.ubc.ca/"
                   target="_blank"
                   rel="noreferrer"
                 >
                   {" "}
-                  catalyx.io{" "}
+                  University of British Columbia{" "}
                 </a>
               </span>
-              as a full stack developer. Catalyx is largest Canadian blockchain trading
-              platform customized for the virtual currencies and digital assets.
-              Our mission is to be the leader in the Canadian digital asset
-              market space by providing Canadian customers a reliable, fast and
-              secure trading platform with access to some of the world's most
-              innovative blockchain technology.
+              , I knew computer science was something that I had to go for. In
+              fact, I quickly fell in love with web development as it allowed me
+              to not only write code but also design as well.
+              {/* This was very exciting to me as I always
+              found designing essential. For example, while working for Catalyx,
+              I noticed that UI/UX was extremly important as users are reluctant
+              to use the service just based off of design. */}
+              <br />
+              <br />
+              Currently, I am Full-Stack Developer for
+              <span>
+                <a
+                  styleName="catalyx_link"
+                  href="https://catalyx.io"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  Catalyx.io{" "}
+                </a>
+              </span>
+              in Vancouver, BC. Catalyx is Canada's largest cryptocurrency
+              trading platforms. Here at Catalyx, I work with entrepreneurs to
+              build a blockchain powered web applications.
             </p>
           </div>
         </div>
