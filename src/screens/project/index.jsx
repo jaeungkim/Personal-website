@@ -22,9 +22,7 @@ const Project = () => {
                   <p styleName="project_explanation">
                     Blockchain powered Canadian cryptocurrency trading platform
                   </p>
-                  <a href="https://catalyx.io" styleName="card_linktopage">
-                    Link
-                  </a>
+                  <a href="https://catalyx.io" styleName="card_linktopage">Link</a>
                 </div>
               </div>
             </div>
@@ -40,13 +38,11 @@ const Project = () => {
                   styleName="project_webImage"
                 />
                 <div styleName="project_explanation_div">
-                  <p styleName="project_explanation">
-                    User friendly cryptocurrency platform for beginners -
-                    powered by Catalyx.io
-                  </p>
-                  <a href="https://fastbitcash.ca" styleName="card_linktopage">
-                    Link
-                  </a>
+                <p styleName="project_explanation">
+                  User friendly cryptocurrency platform for beginners - powered
+                  by Catalyx.io
+                </p>
+                <a href="https://fastbitcash.ca" styleName="card_linktopage">Link</a>
                 </div>
               </div>
             </div>
@@ -58,12 +54,10 @@ const Project = () => {
               <div styleName="project_card">
                 <img alt="" src={foodverifyLogo} styleName="project_webImage" />
                 <div styleName="project_explanation_div">
-                  <p styleName="project_explanation">
-                    Food Traceability project for Inno Foods Inc.
-                  </p>
-                  <a href="https://foodverify.io" styleName="card_linktopage">
-                    Link
-                  </a>
+                <p styleName="project_explanation">
+                  Food Traceability project for Inno Foods Inc.
+                </p>
+                <a href="https://foodverify.io" styleName="card_linktopage">Link</a>
                 </div>
               </div>
             </div>
