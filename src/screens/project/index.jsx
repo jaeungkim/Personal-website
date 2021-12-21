@@ -26,6 +26,7 @@ const Project = () => {
                     href="https://catalyx.io"
                     styleName="card_linktopage"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Link
                   </a>
@@ -52,6 +53,7 @@ const Project = () => {
                     href="https://fastbitcash.ca"
                     styleName="card_linktopage"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Link
                   </a>
@@ -73,6 +75,7 @@ const Project = () => {
                     href="https://foodverify.io"
                     styleName="card_linktopage"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Link
                   </a>

@@ -1,5 +1,5 @@
 import React from "react";
-import ubcLogo from "../../assets/images/ubc_logo3.png";
+// import ubcLogo from "../../assets/images/ubc_logo3.png";
 import "./local.scss";
 
 const Experience = () => {
