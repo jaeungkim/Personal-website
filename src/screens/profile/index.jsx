@@ -36,7 +36,7 @@ const Profile = () => {
                 <div className="col-lg-12">
                   <div className="text-white text-center">
                     <h1 styleName="header_iam" className="display-4">
-                      I aaaam{" "}
+                      I am{" "}
                     </h1>
                     <h1 styleName="header_title">
                       <Typical
