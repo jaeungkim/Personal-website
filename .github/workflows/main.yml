@@ -19,6 +19,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v2
       - run: npm install
       - run: npm run build
       - uses: aws-actions/configure-aws-credentials@v1
