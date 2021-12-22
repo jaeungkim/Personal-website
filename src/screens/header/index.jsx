@@ -35,7 +35,7 @@ const MainHeader = () => {
         style={{ cursor: "pointer" }}
         onClick={scroll.scrollToTop}
       >
-        <p styleName={colorChange ? "font-black" : "font-white"}>Jae Kiiiim</p>
+        <p styleName={colorChange ? "font-black" : "font-white"}>Jae Kism</p>
       </Link>
       <button
         className={colorChange ? "navbar-toggler" : "navbar-toggler"}
