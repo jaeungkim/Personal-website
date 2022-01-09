@@ -39,6 +39,7 @@
     "react-awesome-slider": "^4.1.0",
     "react-bootstrap": "^1.6.0",
     "react-css-modules": "^4.7.11",
+    "react-document-meta": "^3.0.0-beta.2",
     "react-dom": "^16.13.1",
     "react-fade-in": "^1.1.1",
     "react-helmet": "^6.1.0",

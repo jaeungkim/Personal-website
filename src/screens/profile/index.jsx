@@ -2,11 +2,27 @@ import React from "react";
 import Particles from "react-particles-js";
 import Typical from "react-typical";
 import { Link } from "react-scroll";
+import DocumentMeta from "react-document-meta";
 import "./local.scss";
+
+const meta = {
+  description: "I am a description, and I can create multiple tags",
+  meta: {
+    property: {
+      "og:title": "I am overriding!",
+      "og:image":
+        "https://www.jaeungkim.ca/src/assets/images/background_img3.png",
+    },
+    auto: {
+      ograph: true,
+    },
+  },
+};
 
 const Profile = () => {
   return (
     <section styleName="custom-profile" id="home">
+      <DocumentMeta {...meta} />
       <div styleName="bg-overlay">
         <Particles
           canvasClassName="example"
