@@ -71,7 +71,7 @@ const About = () => (
                   rel="noreferrer"
                 >
                   {" "}
-                  University of British Columbia{" "}
+                  University of British Columbiaa{" "}
                 </a>
               </span>
               , I knew computer science was something that I had to go for. In
