@@ -6,6 +6,7 @@ import Skills from "./skills";
 import Experience from "./experience";
 import Project from "./project";
 import ContactForm from "./contactForm";
+import Blog from "./blog";
 
 export default {
     Header,
@@ -16,4 +17,5 @@ export default {
     Experience,
     Project,
     ContactForm,
+    Blog,
 };
