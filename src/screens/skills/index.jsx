@@ -1,20 +1,31 @@
 import React from "react";
 import { Tab, Tabs, ProgressBar, Container, Row, Col } from "react-bootstrap";
 import { Icon } from "@iconify/react";
-import javascriptIcon from "@iconify/icons-logos/javascript";
-import fileTypeCss from "@iconify/icons-vscode-icons/file-type-css";
-import html5 from "@iconify/icons-logos/html-5";
+import java from "@iconify/icons-logos/java";
 import fileTypeReactts from "@iconify/icons-vscode-icons/file-type-reactts";
 import nodejsIcon from "@iconify/icons-logos/nodejs";
 import phpIcon from "@iconify/icons-logos/php";
 import mysqlIcon from "@iconify/icons-logos/mysql";
 import angularIcon from "@iconify/icons-logos/angular-icon";
-import apolloIcon from "@iconify/icons-logos/apollostack";
+import python from "@iconify/icons-logos/python";
 import graphQL from "@iconify/icons-logos/graphql";
 import profileIllustrationimg from "../../assets/images/profile_illustration.png";
-import mongoDBIcon from "@iconify/icons-logos/mongodb";
 import postgreSQL from "@iconify/icons-logos/postgresql";
-import docker from "@iconify/icons-logos/docker";
+import docker from "@iconify/icons-logos/docker-icon";
+import redux from "@iconify/icons-logos/redux";
+import jest from "@iconify/icons-logos/jest";
+import sass from "@iconify/icons-logos/sass";
+import aws from "@iconify/icons-logos/aws";
+import awsec2 from "@iconify/icons-logos/aws-ec2";
+import awslambda from "@iconify/icons-logos/aws-lambda";
+import awscloudformation from "@iconify/icons-logos/aws-cloudformation";
+import awss3 from "@iconify/icons-logos/aws-s3";
+import awsamplify from "@iconify/icons-logos/aws-amplify";
+import git from "@iconify/icons-logos/git-icon";
+import github from "@iconify/icons-logos/github-icon";
+import gitlab from "@iconify/icons-logos/gitlab";
+import jira from "@iconify/icons-logos/jira";
+import confluence from "@iconify/icons-logos/confluence";
 import "./local.scss";
 
 const Skills = () => {
@@ -44,35 +55,49 @@ const Skills = () => {
                   <Tab eventKey="frontend" title="Front-End">
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        Html <Icon icon={html5} />
+                        <Icon icon={fileTypeReactts} styleName="skills_icons" />
+                        React
                       </h4>
                       <ProgressBar striped variant="info" animated now={90} />
                     </div>
 
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        Css <Icon icon={fileTypeCss} />
+                        <Icon icon={redux} styleName="skills_icons" />
+                        Redux
                       </h4>
                       <ProgressBar striped variant="info" animated now={90} />
                     </div>
 
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        JavaScript <Icon icon={javascriptIcon} />
+                        <Icon icon={graphQL} styleName="skills_icons" />
+                        GraphQL
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={80} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={sass} styleName="skills_icons" />
+                        Sass
                       </h4>
                       <ProgressBar striped variant="info" animated now={90} />
                     </div>
 
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        React <Icon icon={fileTypeReactts} />
+                        <Icon icon={jest} styleName="skills_icons" />
+                        Jest
                       </h4>
-                      <ProgressBar striped variant="info" animated now={90} />
+                      <ProgressBar striped variant="info" animated now={70} />
                     </div>
 
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        Angular <Icon icon={angularIcon} />
+                        {" "}
+                        <Icon icon={angularIcon} styleName="skills_icons" />
+                        Angular
                       </h4>
                       <ProgressBar striped variant="info" animated now={70} />
                     </div>
@@ -81,58 +106,157 @@ const Skills = () => {
                   <Tab eventKey="backend" title="Back-End">
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        NodeJs <Icon icon={nodejsIcon} />
+                        {" "}
+                        <Icon icon={nodejsIcon} styleName="skills_icons" />
+                        NodeJs
                       </h4>
                       <ProgressBar striped variant="info" animated now={80} />
                     </div>
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
+                        <Icon icon={phpIcon} styleName="skills_icons" />
                         PHP
-                        <Icon icon={phpIcon} />
                       </h4>
                       <ProgressBar striped variant="info" animated now={70} />
                     </div>
                   </Tab>
 
-                  <Tab eventKey="database" title="Database">
+                  <Tab eventKey="database" title="Databases">
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        MySQL <Icon icon={mysqlIcon} />
+                        <Icon icon={mysqlIcon} styleName="skills_icons" />
+                        MySQL
                       </h4>
                       <ProgressBar striped variant="info" animated now={80} />
                     </div>
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        PostgreSQL <Icon icon={postgreSQL} />
+                        {" "}
+                        <Icon icon={postgreSQL} styleName="skills_icons" />
+                        PostgreSQL
                       </h4>
                       <ProgressBar striped variant="info" animated now={80} />
                     </div>
+                  </Tab>
+
+                  <Tab eventKey="devops" title="DevOps">
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        MongoDB <Icon icon={mongoDBIcon} />
+                        <Icon icon={aws} styleName="skills_icons" />
+                        AWS
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={80} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={awsec2} styleName="skills_icons" />
+                        EC2
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={80} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={awss3} styleName="skills_icons" />
+                        S3
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={80} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={awslambda} styleName="skills_icons" />
+                        Lambda
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={70} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon
+                          icon={awscloudformation}
+                          styleName="skills_icons"
+                        />
+                        CloudFormation
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={70} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={awsamplify} styleName="skills_icons" />
+                        Amplify
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={70} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={docker} styleName="skills_icons" />
+                        Docker
                       </h4>
                       <ProgressBar striped variant="info" animated now={60} />
                     </div>
                   </Tab>
-                  <Tab eventKey="others" title="Others">
+
+                  <Tab eventKey="management" title="Project Management">
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        Apollo <Icon icon={apolloIcon} />
+                        <Icon icon={git} styleName="skills_icons" />
+                        Git
                       </h4>
-                      <ProgressBar striped variant="info" animated now={70} />
+                      <ProgressBar striped variant="info" animated now={90} />
                     </div>
 
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        GraphQL <Icon icon={graphQL} />
+                        <Icon icon={github} styleName="skills_icons" />
+                        GitHub
                       </h4>
-                      <ProgressBar striped variant="info" animated now={70} />
+                      <ProgressBar striped variant="info" animated now={90} />
                     </div>
+
                     <div styleName="dev-icons">
                       <h4 styleName="skill-name">
-                        Docker <Icon icon={docker} />
+                        <Icon icon={gitlab} styleName="skills_icons" />
+                        GitLab
                       </h4>
-                      <ProgressBar striped variant="info" animated now={70} />
+                      <ProgressBar striped variant="info" animated now={90} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={jira} styleName="skills_icons" />
+                        Jira
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={90} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={confluence} styleName="skills_icons" />
+                        Confluence
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={90} />
+                    </div>
+                  </Tab>
+
+                  <Tab eventKey="language" title="Languages">
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={java} styleName="skills_icons" />
+                        Java
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={90} />
+                    </div>
+
+                    <div styleName="dev-icons">
+                      <h4 styleName="skill-name">
+                        <Icon icon={python} styleName="skills_icons" />
+                        Python
+                      </h4>
+                      <ProgressBar striped variant="info" animated now={80} />
                     </div>
                   </Tab>
                 </Tabs>

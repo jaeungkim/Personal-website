@@ -2,21 +2,10 @@ import React from "react";
 import Particles from "react-particles-js";
 import Typical from "react-typical";
 import { Link } from "react-scroll";
-import MetaDecorator from "../../components/Util/MetaDecorator";
-import metaThumbnail from "../../assets/images/background_img3.png";
 import "./local.scss";
-
-const content = require("../../components/Util/content.json");
-
 const Profile = () => {
   return (
     <>
-      <MetaDecorator
-        description={content.pageDescription}
-        title={content.pageTitle}
-        imageUrl={metaThumbnail}
-        imageAlt={content.metaImageAlt}
-      />
       <section styleName="custom-profile" id="home">
         <div styleName="bg-overlay">
           <Particles
