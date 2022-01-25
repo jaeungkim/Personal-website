@@ -40,14 +40,14 @@ exports.handler = function (event, context, callback) {
     const htmlCode = `<!DOCTYPE html>
           <html lang="en">
             <head>
-              <meta http-equiv=“Content-Type” content=“text/html; charset=utf-8”/>
-              <title>Inject social sharing tags test test</title>
-              <base href=“/” />
-              <meta name=“description” content=“This is a test for attaching og tags on sharing the referral links to social media”>
+              <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+              <title>Blog of Jaeung Kim</title>
+              <base href="/" />
+              <meta name="description" content="Daily Bloggings of Jaeung">
               <!-- Facebook Meta Tags -->
               <meta property="og:type" content="website" />
-              <meta property="og:title" content="OG tags sharing test" />
-              <meta property="og:description" content="This is a test for attaching og tags on sharing the referral links to social media" />
+              <meta property="og:title" content="Blog of Jaeung Kim" />
+              <meta property="og:description" content="Daily Bloggings of Jaeung" />
               <meta property="og:image" content="https://www.jaeungkim.ca/src/assets/images/blog.jpg"/>
               <meta
               property="og:url"
@@ -55,10 +55,10 @@ exports.handler = function (event, context, callback) {
               />
               <!-- Twitter Meta Tags -->
               <meta name="twitter:card" content="summary_large_image">
-              <meta property="twitter:domain" content=“jaeungkim.ca”>
+              <meta property="twitter:domain" content="jaeungkim.ca">
               <meta property="twitter:url" content="${url}">
-              <meta name="twitter:title" content="OG tags sharing test">
-              <meta name="twitter:description" content="This is a test for attaching og tags on sharing the referral links to social media">
+              <meta name="twitter:title" content="Blog of Jaeung Kim">
+              <meta name="twitter:description" content="Daily Bloggings of Jaeung">
               <meta name="twitter:image" content="https://jaeungkim.ca/src/assets/images/blog.jpg">
               <meta name="viewport" content="width=device-width, initial-scale=1" />
             </head>
