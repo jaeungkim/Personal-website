@@ -48,7 +48,7 @@ exports.handler = function (event, context, callback) {
               <meta property="og:type" content="website" />
               <meta property="og:title" content="OG tags sharing test" />
               <meta property="og:description" content="This is a test for attaching og tags on sharing the referral links to social media" />
-              <meta property="og:image" content="https://www.jaeungkim.ca/src/assets/images/background_img3.png"/>
+              <meta property="og:image" content="https://www.jaeungkim.ca/src/assets/images/blog.jpg"/>
               <meta
               property="og:url"
               content="${url}"
@@ -59,7 +59,7 @@ exports.handler = function (event, context, callback) {
               <meta property="twitter:url" content="${url}">
               <meta name="twitter:title" content="OG tags sharing test">
               <meta name="twitter:description" content="This is a test for attaching og tags on sharing the referral links to social media">
-              <meta name="twitter:image" content="https://jaeungkim.ca/src/assets/images/background_img3.png">
+              <meta name="twitter:image" content="https://jaeungkim.ca/src/assets/images/blog.jpg">
               <meta name="viewport" content="width=device-width, initial-scale=1" />
             </head>
             <body>
