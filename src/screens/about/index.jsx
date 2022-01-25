@@ -83,7 +83,7 @@ const About = () => (
               to use the service just based off of design. */}
               <br />
               <br />
-              Currently, I am Full-Stack Developer for
+              Currently, I am Front End Developer for
               <span>
                 <a
                   styleName="catalyx_link"
