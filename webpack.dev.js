@@ -16,6 +16,9 @@ module.exports = merge(common, {
   devServer: {
     historyApiFallback: true,
     port: 3000,
+    headers: {
+      'X-Frame-Options' : 'deny'
+    }
   },
   plugins: [
     new HtmlWebPackPlugin({

@@ -8,8 +8,6 @@ const Clickjacking = () => {
 
           <iframe
             src="https://www.youtube.com/embed/ZGejseN8P5s"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
             title="youtube video player"
 
           />
