@@ -6,7 +6,6 @@ import Skills from "./skills";
 import Experience from "./experience";
 import Project from "./project";
 import ContactForm from "./contactForm";
-import Clickjacking from "./clickjacking";
 import Blog from "./blog";
 
 export default {
@@ -19,5 +18,4 @@ export default {
     Project,
     ContactForm,
     Blog,
-    Clickjacking,
 };

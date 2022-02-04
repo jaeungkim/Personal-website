@@ -13,7 +13,6 @@ const {
   Project,
   ContactForm,
   Blog,
-  Clickjacking,
 } = screens;
 
 const App = () => {
@@ -31,7 +30,6 @@ const App = () => {
               <Experience />
               <Project />
               <ContactForm />
-              <Clickjacking />
               <Footer />
             </>
           }
