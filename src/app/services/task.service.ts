@@ -12,7 +12,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class TaskService {
-  private apiUrl = 'http://localhost:5000/tasks'
+  private apiUrl = 'https://62e406d13c89b95396d5df3e.mockapi.io/api/v1/tasks'
 
   constructor(private http:HttpClient) { }
 
