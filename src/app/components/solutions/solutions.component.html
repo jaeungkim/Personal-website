@@ -1,0 +1,40 @@
+<div class="solutions-container">
+    <div class="solutions-text-div">
+        <p class="title" [ngClass]="{
+        wc: textColorIndex === 0,
+        af: textColorIndex === 1,
+        cr: textColorIndex === 2,
+        crw: textColorIndex === 3,
+        lp: textColorIndex === 4,
+        hcm: textColorIndex === 5,
+        hf: textColorIndex === 6,
+        hfo: textColorIndex === 7,
+        scess: textColorIndex === 8,
+        sc: textColorIndex === 9,
+        fr: textColorIndex === 10,
+        pd: textColorIndex === 11,
+        ascopd: textColorIndex === 12
+      }">
+            <!-- <span class="mainTitle">{{ mainTitleInitial }}</span><br /> -->
+            {{ title }}
+        </p>
+        <p class="description" [innerText]="description"></p>
+    </div>
+    <div class="solutions-chart-div rotate">
+        <div class="main-chart-div">
+            <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
+                (chartHover)="chartHovered($event)" id="donutchart">
+            </canvas>
+        </div>
+        <div class="inner-chart-div">
+            <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
+                id="donutchart2">
+            </canvas>
+            <p class="cardiologylabel">Cardiology</p>
+            <p class="geriatricslabel">Geriatrics</p>
+            <p class="neurologylabel">Neurology</p>
+            <p class="respirologylabel">Respirology</p>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

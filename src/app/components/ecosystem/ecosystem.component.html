@@ -1,0 +1,157 @@
+<div class="ecosystem-container" #container>
+    <div class="gsap-container">
+        <!-- patient doctor merge animation div -->
+        <section class="patientDoctor-div">
+            <div class="patient-div">
+                <img src="./assets/images/ecosystem/patientplace.png" alt=" " class="patient-img" />
+                <div class="arrow-right">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="big-down-arrow">
+            </div>
+            <div class="doctor-div">
+                <div class="arrow-left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/images/ecosystem/femaledoctor.jpeg" alt=" " class="doctor-img" />
+            </div>
+        </section>
+        <section class="section-pad"></section>
+        <section class="section-pad"></section>
+        <!-- END patient doctor merge animation div -->
+
+        <div class="arrow-div">
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- CHART DIV -->
+        <section class="ecosystem-chart-div">
+            <div class="main-chart-div">
+                <div class="ecosystem-chart">
+                    <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
+                        id="donutchart">
+                    </canvas>
+                </div>
+
+
+                <!-- <div class="inner-chart-div">
+                <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
+                    id="donutchart2">
+                </canvas>
+                <p class="cardiologylabel">Cardiology</p>
+                <p class="geriatricslabel">Geriatrics</p>
+                <p class="neurologylabel">Neurology</p>
+                <p class="respirologylabel">Respirology</p>
+            </div> -->
+                <div class="chart-parts-div">
+                    <div class="chart-div-telephone">
+                        <div class="text-light telephone-text">Telephone</div>
+                        <svg class="double-arrow-svg-telephone arrow-path-rightleftanimation"
+                            viewBox="0 0 351.000000 150.000000">
+                            <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)" fill="white"
+                                stroke="none">
+                                <path fill="#bcdfff" stroke="#bcdfff" stroke-width="5%"
+                                    d="M1515 2115 c-370 -44 -696 -175 -995 -401 -52 -40 -111 -88 -129 -108 -19 -20 -39 -36 -43 -36 -4 0 -8 83 -8 184 0 101 -3 191 -6 200 -9 23 -50 19 -68 -6 -14 -19 -16 -63 -16 -275 0 -239 1 -253 19 -263 12 -6 116 -10 270 -10 239 0 250 1 256 20 3 10 2 28 -4 38 -8 16 -27 20 -117 25 -59 4 -141 7 -183 7 l-76 1 60 55 c65 61 215 169 310 226 334 199 749 288 1156 248 417 -41 791 -209 1123 -504 l50 -44 -192 -7 c-175 -7 -194 -9 -203 -27 -6 -10 -7 -28 -4 -38 6 -19 17 -20 256 -20 154 0 258 4 270 10 18 10 19 24 19 269 0 282 -1 286 -57 279 l-28 -3 -5 -193 -5 -193 -66 59 c-153 136 -306 238 -482 322 -351 168 -721 230 -1102 185z" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="chart-div-eHealthViewer">
+                        <p class="text-light eHealthViewer-text">eHealth Viewer</p>
+                        <svg class="double-arrow-svg-ehealth arrow-path-rightleftanimation"
+                            viewBox="0 0 351.000000 150.000000">
+                            <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)" fill="#bcdfff"
+                                stroke="none">
+                                <path fill="#bcdfff" stroke="#bcdfff" stroke-width="5%"
+                                    d="M1515 2115 c-370 -44 -696 -175 -995 -401 -52 -40 -111 -88 -129 -108 -19 -20 -39 -36 -43 -36 -4 0 -8 83 -8 184 0 101 -3 191 -6 200 -9 23 -50 19 -68 -6 -14 -19 -16 -63 -16 -275 0 -239 1 -253 19 -263 12 -6 116 -10 270 -10 239 0 250 1 256 20 3 10 2 28 -4 38 -8 16 -27 20 -117 25 -59 4 -141 7 -183 7 l-76 1 60 55 c65 61 215 169 310 226 334 199 749 288 1156 248 417 -41 791 -209 1123 -504 l50 -44 -192 -7 c-175 -7 -194 -9 -203 -27 -6 -10 -7 -28 -4 -38 6 -19 17 -20 256 -20 154 0 258 4 270 10 18 10 19 24 19 269 0 282 -1 286 -57 279 l-28 -3 -5 -193 -5 -193 -66 59 c-153 136 -306 238 -482 322 -351 168 -721 230 -1102 185z" />
+                            </g>
+                        </svg>
+                    </div>
+
+                    <div class="chart-div-pharmanet">
+                        <svg class="double-arrow-svg-pharmanet arrow-path-leftrightanimation"
+                            viewBox="0 0 351.000000 150.000000">
+                            <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)" fill="white"
+                                stroke="none">
+                                <path fill="#bcdfff" stroke="#bcdfff" stroke-width="5%"
+                                    d="M1515 2115 c-370 -44 -696 -175 -995 -401 -52 -40 -111 -88 -129 -108 -19 -20 -39 -36 -43 -36 -4 0 -8 83 -8 184 0 101 -3 191 -6 200 -9 23 -50 19 -68 -6 -14 -19 -16 -63 -16 -275 0 -239 1 -253 19 -263 12 -6 116 -10 270 -10 239 0 250 1 256 20 3 10 2 28 -4 38 -8 16 -27 20 -117 25 -59 4 -141 7 -183 7 l-76 1 60 55 c65 61 215 169 310 226 334 199 749 288 1156 248 417 -41 791 -209 1123 -504 l50 -44 -192 -7 c-175 -7 -194 -9 -203 -27 -6 -10 -7 -28 -4 -38 6 -19 17 -20 256 -20 154 0 258 4 270 10 18 10 19 24 19 269 0 282 -1 286 -57 279 l-28 -3 -5 -193 -5 -193 -66 59 c-153 136 -306 238 -482 322 -351 168 -721 230 -1102 185z" />
+                            </g>
+                        </svg>
+                        <p class="text-light pharmanet-text">Pharma Net</p>
+
+                    </div>
+
+                    <div class="chart-div-hospital">
+                        <svg class="double-arrow-svg-hospital arrow-path-leftrightanimation"
+                            viewBox="0 0 351.000000 150.000000">
+                            <g transform="translate(0.000000,250.000000) scale(0.100000,-0.100000)" fill="white"
+                                stroke="none">
+                                <path fill="#bcdfff" stroke="#bcdfff" stroke-width="5%"
+                                    d="M1515 2115 c-370 -44 -696 -175 -995 -401 -52 -40 -111 -88 -129 -108 -19 -20 -39 -36 -43 -36 -4 0 -8 83 -8 184 0 101 -3 191 -6 200 -9 23 -50 19 -68 -6 -14 -19 -16 -63 -16 -275 0 -239 1 -253 19 -263 12 -6 116 -10 270 -10 239 0 250 1 256 20 3 10 2 28 -4 38 -8 16 -27 20 -117 25 -59 4 -141 7 -183 7 l-76 1 60 55 c65 61 215 169 310 226 334 199 749 288 1156 248 417 -41 791 -209 1123 -504 l50 -44 -192 -7 c-175 -7 -194 -9 -203 -27 -6 -10 -7 -28 -4 -38 6 -19 17 -20 256 -20 154 0 258 4 270 10 18 10 19 24 19 269 0 282 -1 286 -57 279 l-28 -3 -5 -193 -5 -193 -66 59 c-153 136 -306 238 -482 322 -351 168 -721 230 -1102 185z" />
+                            </g>
+                        </svg>
+                        <p class="text-light hospital-text">Hospital</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="chart-section-pad"></section>
+        <!-- <section class="section-pad"></section> -->
+        <!-- END CHART DIV -->
+
+        <div class="arrow-div-2">
+            <div class="arrow-up">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="gapline"></div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- APP DIV -->
+        <div class="app-div">
+            <img src="./assets/images/ecosystem/phoneplace.png" alt=" " class="app-phone-img" />
+        </div>
+        <!-- END APP DIV -->
+
+        <div class="arrow-div-2">
+            <div class="arrow-up">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="gapline"></div>
+            <div class="arrow">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <!-- PATIENT DIV -->
+        <div class="endPatient-div">
+            <img src="./assets/images/ecosystem/patientplace.png" alt=" " class="endPatient-img" />
+        </div>
+        <!-- END PATIENT DIV -->
+    </div>
+</div>
+<app-footer></app-footer>

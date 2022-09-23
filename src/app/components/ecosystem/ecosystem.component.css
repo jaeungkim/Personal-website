@@ -1,0 +1,488 @@
+/*
+=============================================
+GENERAL CSS
+=============================================
+*/
+.ecosystem-container {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 100vh; */
+    max-width: 1300px;
+    /* position: absolute; */
+}
+
+.section-pad {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+/*
+=============================================
+PATIENT DOCTOR DIV CSS
+=============================================
+*/
+.patientDoctor-div {
+    display: flex;
+    justify-content: space-between;
+    /* padding-bottom: 250px; */
+    margin-top: 100px;
+    height: 100vh;
+    align-items: center;
+}
+
+.patient-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.doctor-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.patient-img {
+    width: 20vw;
+}
+
+.doctor-img {
+    width: 20vw;
+}
+
+/*
+=============================================
+CHART DIV CSS
+=============================================
+*/
+
+.chart-section-pad {
+    height: 1px;
+    display: flex;
+    justify-content: center;
+}
+
+.ecosystem-chart-div {
+    /* padding-bottom: 250px; */
+    padding-top: 100px;
+    height: 100vh;
+    /* align-items: center; */
+}
+
+.main-chart-div {
+    display: flex;
+}
+
+#donutchart {
+    height: 75%;
+    width: 100%;
+}
+
+.ecosystem-chart {
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chart-parts-div {
+    position: absolute;
+    height: 100vh;
+    width: 100%
+}
+
+.chart-div-telephone {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 37.5%;
+    left: 0%;
+    /* gap: 5%; */
+}
+
+.telephone-text {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #06A8FF;
+    border-radius: 15px;
+}
+
+.chart-div-eHealthViewer {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+    /* gap: 5%; */
+}
+
+.eHealthViewer-text {
+    width: 100px;
+    height: 100px;
+    background-color: #06A8FF;
+    border-radius: 15px;
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.chart-div-pharmanet {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 37.5%;
+    right: 0%;
+    /* gap: 5%; */
+}
+
+.pharmanet-text {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #06A8FF;
+    border-radius: 15px;
+}
+
+.chart-div-hospital {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20%;
+    right: 5%;
+    /* gap: 5%; */
+}
+
+.hospital-text {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    background-color: #06A8FF;
+    border-radius: 15px;
+}
+
+/* 
+=============================================
+APP DIV CSS
+=============================================
+*/
+.app-div {
+    display: flex;
+}
+
+.app-phone-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    align-items: center;
+    vertical-align: center;
+    text-align: center;
+}
+
+/* 
+=============================================
+BOTTOM PATIENT DIV CSS
+=============================================
+*/
+.endPatient-div {
+    display: flex;
+}
+
+.endPatient-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+}
+
+/*
+=============================================
+ARROW CSS
+=============================================
+*/
+/* .big-down-arrow {
+    margin-left: auto;
+    margin-right: auto;
+    color: #06A8FF;
+    transform: rotate(90deg) !important;
+    font-size: 10em;
+    animation: animate 4s infinite;
+} */
+.big-down-arrow {
+    position: relative;
+    margin-top: 300px;
+    width: 50%;
+    height: 40px;
+    transform: rotate(90deg);
+    display: flex;
+}
+
+.big-down-arrow:before {
+    content: "";
+    background: #06A8FF;
+    width: 15px;
+    clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
+    animation: a1 3s infinite linear normal;
+}
+
+@keyframes a1 {
+    0% {
+        opacity: 0;
+        stroke-dashoffset: 10;
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    90% {
+        flex-grow: 1
+    }
+
+    100% {
+        opacity: 0;
+        stroke-dashoffset: 22;
+        flex-grow: 1;
+
+    }
+}
+
+#animation-line {
+    animation: line-animation 5000ms linear infinite normal forwards;
+    color: white;
+}
+
+.arrow-div {
+    display: flex;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-div-2 {
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-path {
+    stroke-dasharray: 11000;
+    stroke-dashoffset: 11000;
+    animation: dash 5s linear alternate infinite;
+}
+
+@keyframes dash {
+    from {
+        stroke-dashoffset: 11000;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+.arrow-path-reverse {
+    stroke-dasharray: 11000;
+    stroke-dashoffset: 11000;
+    animation: dash 5s linear forwards infinite;
+}
+
+@keyframes reversedash {
+    from {
+        stroke-dashoffset: 0;
+    }
+
+    to {
+        stroke-dashoffset: 11000;
+    }
+}
+
+@keyframes line-animation {
+    0% {
+        stroke-dashoffset: 1;
+        animation-timing-function: cubic-bezier(0.420000, 0, 0.580000, 1)
+    }
+
+    40% {
+        stroke-dashoffset: 0
+    }
+
+    80% {
+        stroke-dashoffset: 0;
+        animation-timing-function: cubic-bezier(0.420000, 0, 0.580000, 1)
+    }
+
+    100% {
+        stroke-dashoffset: 1
+    }
+}
+
+.gapline {
+    border-left: 6px solid #06A8FF;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    animation: animate 2s infinite;
+    transform: rotate(0deg) !important;
+}
+
+.arrow {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.arrow-right {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+    transform: rotate(-90deg);
+}
+
+.arrow-left {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+    transform: rotate(90deg);
+}
+
+.arrow-up {
+    margin-left: auto;
+    margin-right: auto;
+    transform: translate(-50%, -50%);
+    transform: rotate(180deg);
+}
+
+.arrow span,
+.arrow-right span,
+.arrow-left span,
+.arrow-up span {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border-bottom: 5px solid #06A8FF;
+    border-right: 5px solid #06A8FF;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2),
+.arrow-right span:nth-child(2),
+.arrow-left span:nth-child(2),
+.arrow-up span:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.arrow span:nth-child(3),
+.arrow-right span:nth-child(3),
+.arrow-left span:nth-child(3),
+.arrow-up span:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+.arrow span:nth-child(4),
+.arrow-right span:nth-child(4),
+.arrow-left span:nth-child(4),
+.arrow-up span:nth-child(4) {
+    /* display: block;
+    width: 90px;
+    height: 90px;
+    animation: none !important; */
+    animation-delay: -0.6s;
+}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+}
+
+.double-arrow-svg-telephone {
+    width: 17vw;
+    rotate: 163deg;
+}
+
+.double-arrow-svg-ehealth {
+    width: 17vw;
+    rotate: 162deg;
+}
+
+.double-arrow-svg-pharmanet {
+    width: 17vw;
+    rotate: 195deg;
+}
+
+.double-arrow-svg-hospital {
+    width: 17vw;
+    rotate: 195deg;
+}
+
+.arrow-path-leftrightanimation {
+    animation: coming-in-left-right 4s infinite;
+}
+
+.arrow-path-rightleftanimation {
+    animation: coming-in-right-left 4s infinite;
+    /* animation-direction: alternate-reverse; */
+}
+
+@keyframes coming-in-left-right {
+    0% {
+        opacity: 0.5;
+        transform: translateX(15%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    /* 80% {
+        transform: translateX(10px);
+    }
+
+    100% {
+        transform: translateX(0);
+    } */
+
+}
+
+@keyframes coming-in-right-left {
+    0% {
+        opacity: 0.5;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(15%);
+    }
+
+    /* 80% {
+        transform: translateX(-30px);
+    }
+
+    100% {
+        transform: translateX(300px);
+    } */
+
+}

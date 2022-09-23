@@ -1,0 +1,74 @@
+<nav class="navbar navbar-custom bg-transparent fixed-top" [ngClass]="clicked ? 'open' : 'closed'">
+  <div class="w-100 d-flex bd-highlight justify-content-between">
+    <div class="bd-highlight my-auto">
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url !== '/'">
+        <a class="navbar-brand text-light">
+          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
+        </a>
+        <p class="aiclinictext text-light">iClinic</p>
+      </div>
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url === '/'">
+        <a class="navbar-brand text-light">
+          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
+        </a>
+        <p class="aiclinictext text-light">aiClinic</p>
+      </div>
+    </div>
+    <div class="right-nav-div ms-auto">
+      <div class="p-2 bd-higlight">
+        <button class="btn btn-dark text-light text-nowrap" type="button" data-bs-toggle="modal"
+          data-bs-target="#bookDemo">Book
+          Demo</button>
+      </div>
+      <div class="bd-higlight icon-div">
+        <mat-icon class="text-light language-icon" aria-hidden="false">language</mat-icon>
+      </div>
+      <div class="p-2 mb-2 bd-highlight">
+        <button class="navbar-toggler collapsed align-middle" (click)="changeBackground()" type="button"
+          data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="toggler-icon top-bar"></span>
+          <span class="toggler-icon middle-bar"></span>
+          <span class="toggler-icon bottom-bar"></span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav navbar-inner-custom">
+      <li class="nav-item">
+        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          routerLink="/aboutus">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          routerLink="/solutions">SOLUTIONS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          routerLink="/ecosystem">ECOSYSTEM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          routerLink="/support">SUPPORT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          routerLink="/resources">RESOURCES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          routerLink="/connect">CONNECT WITH US</a>
+      </li>
+    </ul>
+  </div>
+  <!-- </div> -->
+</nav>
+<app-modal [id]="bookDemoId" [title]="bookDemoTitle" [formCheck]="true" [modalSize]="bookDemoModalSize"></app-modal>
