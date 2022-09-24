@@ -79,13 +79,18 @@ export class HomeComponent implements OnInit {
   }
 
   public createScene(canvas: ElementRef<HTMLCanvasElement>): void {
+    let pixelRatio = window.devicePixelRatio;
+    let AA = true;
+    if (pixelRatio > 1) {
+      AA = false;
+    }
     this.renderer = new THREE.WebGLRenderer({
       canvas: canvas.nativeElement,
-      antialias: true,
-      alpha: true,
+      antialias: AA,
+      powerPreference: "high-performance",
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
-    this.renderer.setPixelRatio(window.devicePixelRatio > 1 ? 2 : 1);
+    this.renderer.setPixelRatio(window.devicePixelRatio);
     // this.renderer.setClearColor(new THREE.Color('#121212'));
 
     // create the scene

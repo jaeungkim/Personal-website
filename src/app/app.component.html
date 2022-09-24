@@ -1,12 +1,4 @@
-<!-- <a class="nav-link text-light"  routerLink="/login" *ngIf="!_authService.loggedIn()" rouetrLinkActive="active">Login</a> -->
-
-<div *ngIf="_authService.loggedIn()">
-
-  <app-navbar></app-navbar>
-  <a class="exex nav-link text-light" style="cursor:pointer" *ngIf="_authService.loggedIn()"
-    (click)="logoutUser()">Logout</a>
-</div>
 <div>
-
+  <app-navbar></app-navbar>
   <router-outlet></router-outlet>
 </div>

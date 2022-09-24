@@ -174,18 +174,19 @@
 }
 
 .cardiologylabel {
-  font-size: 2vw;
+  font-size: 1vw;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-weight: bold;
   position: absolute;
-  color: #121212;
-  top: 64%;
-  right: 44%;
+  color: rgba(255, 255, 255, 1);
+  top: 30%;
+  right: 40.5%;
   z-index: 5;
+  transform: rotate(100deg);
 }
 
 .cardiologylabel::first-letter {
-  font-size: 3.5vw;
+  font-size: 2vw;
 }
 
 .geriatricslabel {
@@ -193,11 +194,11 @@
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-weight: bold;
   position: absolute;
-  color: #121212;
-  top: 41%;
-  right: 65%;
+  color: rgba(206, 255, 173, 1);
+  top: 40.5%;
+  right: 63%;
   z-index: 5;
-  transform: rotate(18deg);
+  transform: rotate(15deg);
 }
 
 .geriatricslabel::first-letter {
@@ -209,11 +210,11 @@
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-weight: bold;
   position: absolute;
-  color: #121212;
-  top: 35.5%;
-  right: 61.5%;
+  color: rgba(201, 255, 251, 1);
+  top: 34%;
+  right: 58%;
   z-index: 5;
-  transform: rotate(36deg);
+  transform: rotate(45deg);
 }
 
 .neurologylabel::first-letter {
@@ -225,11 +226,16 @@
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-weight: bold;
   position: absolute;
-  color: #121212;
+  color: rgba(255, 218, 193, 1);
+  /* text-shadow:
+      0 0 7px #fff,
+      0 0 10px #fff,
+      0 0 21px #fff,
+      0 0 42px rgba(255, 218, 193, 1); */
   top: 30%;
-  right: 53.25%;
+  right: 49.5%;
   z-index: 5;
-  transform: rotate(63deg);
+  transform: rotate(70deg);
 }
 
 .respirologylabel::first-letter {
@@ -275,11 +281,11 @@
   }
 
   .cardiologylabel {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 
   .cardiologylabel::first-letter {
-    font-size: 3vw;
+    font-size: 1.5vw;
   }
 
   .geriatricslabel {
@@ -339,11 +345,11 @@
 /* extra wide screen */
 @media only screen and (min-width: 1800px) {
   .cardiologylabel {
-    font-size: 28px;
+    font-size: 16px;
   }
 
   .cardiologylabel::first-letter {
-    font-size: 36px;
+    font-size: 24px;
   }
 
   .geriatricslabel {
@@ -384,4 +390,16 @@
   to {
     transform: rotate(359deg);
   }
+} */
+
+
+/* .ring-div {
+  background-color: transparent;
+  border: 3px solid lightblue;
+  height: 36%;
+  border-radius: 50%;
+  width: 36%;
+  top: 32%;
+  left: 32%;
+  position: absolute;
 } */

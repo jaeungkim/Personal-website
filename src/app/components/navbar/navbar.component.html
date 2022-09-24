@@ -1,13 +1,13 @@
 <nav class="navbar navbar-custom bg-transparent fixed-top" [ngClass]="clicked ? 'open' : 'closed'">
   <div class="w-100 d-flex bd-highlight justify-content-between">
     <div class="bd-highlight my-auto">
-      <div class="aiclinicLogoDiv" role="button" routerLink="/home" *ngIf="router.url !== '/'">
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url !== '/'">
         <a class="navbar-brand text-light">
           <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
         </a>
         <p class="aiclinictext text-light">iClinic</p>
       </div>
-      <div class="aiclinicLogoDiv" role="button" routerLink="/home" *ngIf="router.url === '/'">
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url === '/'">
         <a class="navbar-brand text-light">
           <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
         </a>
