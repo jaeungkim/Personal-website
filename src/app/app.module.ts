@@ -10,7 +10,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { NgChartsModule } from 'ng2-charts';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 
 //Components
 import { HomeComponent } from './components/home/home.component';
@@ -25,6 +25,13 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ModalComponent } from './components/shared/modal/modal.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { TermsComponent } from './components/terms/terms.component';
+
+//AUTH
+import { AuthService } from './auth.service';
+import { TokenInterceptorService } from './token-interceptor.service';
+import { AuthGuard } from './auth.guard';
+import { LoginComponent } from './components/login/login.component';
+import { LogoutComponent } from './components/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -42,6 +49,8 @@ import { TermsComponent } from './components/terms/terms.component';
     ModalComponent,
     PrivacyComponent,
     TermsComponent,
+    LoginComponent,
+    LogoutComponent,
   ],
   imports: [
     BrowserModule,
@@ -55,7 +64,9 @@ import { TermsComponent } from './components/terms/terms.component';
     HttpClientModule,
     MatExpansionModule,
   ],
-  providers: [],
+  providers: [ AuthService, AuthGuard,
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }  
+  ],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
