@@ -62,33 +62,33 @@ export class EcosystemComponent implements OnInit {
       },
     });
 
-    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '50%' });
+    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '85%' });
     patientAnimationTimeline.to('.section-pad', { duration: 10 });
 
-    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-50%' });
+    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-85%' });
     doctorAnimationTimeline.to('.section-pad', { duration: 10 });
 
-    // chartAnimationTimeline.fromTo(
-    //   '.chart-div-telephone',
-    //   { opacity: 0, x: '-100%' },
-    //   { opacity: 1, x: '-10%', duration: 5 }
-    // );
-    // chartAnimationTimeline.fromTo(
-    //   '.chart-div-eHealthViewer',
-    //   { opacity: 0, x: '-100%' },
-    //   { opacity: 1, x: '5%', duration: 5 }
-    // );
-    // chartAnimationTimeline.fromTo(
-    //   '.chart-div-pharmanet',
-    //   { opacity: 0, x: '100%' },
-    //   { opacity: 1, x: '2.5%', duration: 5 }
-    // );
-    // chartAnimationTimeline.fromTo(
-    //   '.chart-div-hospital',
-    //   { opacity: 0, x: '100%' },
-    //   { opacity: 1, x: '5%', duration: 5 }
-    // );
-    // chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
+    chartAnimationTimeline.fromTo(
+      '.chart-div-telephone',
+      { opacity: 0, x: '-100%' },
+      { opacity: 1, x: '-10%', duration: 5 }
+    );
+    chartAnimationTimeline.fromTo(
+      '.chart-div-eHealthViewer',
+      { opacity: 0, x: '-100%' },
+      { opacity: 1, x: '5%', duration: 5 }
+    );
+    chartAnimationTimeline.fromTo(
+      '.chart-div-pharmanet',
+      { opacity: 0, x: '100%' },
+      { opacity: 1, x: '2.5%', duration: 5 }
+    );
+    chartAnimationTimeline.fromTo(
+      '.chart-div-hospital',
+      { opacity: 0, x: '100%' },
+      { opacity: 1, x: '5%', duration: 5 }
+    );
+    chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
     //END DOCTOR PATIENT ANIMATION
   }
 

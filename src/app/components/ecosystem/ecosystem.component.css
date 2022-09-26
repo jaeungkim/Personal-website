@@ -49,11 +49,11 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patient-img {
-    width: 15vw;
+    width: 10vw;
 }
 
 .doctor-img {
-    width: 15vw;
+    width: 10vw;
 }
 
 /*
@@ -168,7 +168,7 @@ APP DIV CSS
 .app-phone-img {
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 10vw;
     align-items: center;
     vertical-align: center;
     text-align: center;
@@ -186,7 +186,7 @@ BOTTOM PATIENT DIV CSS
 .endPatient-img {
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
+    width: 10vw;
 }
 
 /*
