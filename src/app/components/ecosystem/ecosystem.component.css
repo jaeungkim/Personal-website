@@ -213,7 +213,7 @@ ARROW CSS
 
 .big-down-arrow:before {
     content: "";
-    background: #06A8FF;
+    background: white;
     width: 15px;
     clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
     animation: a1 3s infinite linear normal;
@@ -317,7 +317,7 @@ ARROW CSS
 }
 
 .gapline {
-    border-left: 6px solid #06A8FF;
+    border-left: 6px solid white;
     height: 75px;
     margin-left: auto;
     margin-right: auto;
@@ -360,8 +360,8 @@ ARROW CSS
     display: block;
     width: 30px;
     height: 30px;
-    border-bottom: 5px solid #06A8FF;
-    border-right: 5px solid #06A8FF;
+    border-bottom: 5px solid white;
+    border-right: 5px solid white;
     transform: rotate(45deg);
     margin: -10px;
     animation: animate 2s infinite;
