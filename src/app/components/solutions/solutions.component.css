@@ -134,12 +134,12 @@
 @media only screen and (min-width: 768px) {
   .mainTitle {
     font-size: 36px;
-    padding-top: 10%;
+    /* padding-top: 10%; */
   }
 
   .title {
     font-size: 24px;
-    padding-top: 40%;
+    /* padding-top: 40%; */
   }
 
   .description {
@@ -155,7 +155,7 @@
   }
 
   .solutions-text-div {
-    padding-top: 10%;
+    padding-top: 30%;
     width: 30%;
     height: 50vh;
   }
@@ -223,21 +223,25 @@
   .mainTitle {
     font-size: 48px;
   }
+
   .title {
     font-size: 36px;
     width: 110%;
-    padding-top: 70%;
+    /* padding-top: 70%; */
   }
+
   .description {
     font-size: 14px;
     height: auto;
     margin: 0;
     margin-top: 15px;
   }
+
   .solutions-text-div {
-    padding-top: 15%;
+    padding-top: 37.5%;
     width: 20%;
   }
+
   .solutions-chart-div {
     width: 75%;
     position: relative;

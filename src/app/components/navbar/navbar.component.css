@@ -10,10 +10,12 @@
   padding-bottom: 1.5vh;
   backdrop-filter: blur(8px);
 }
-.navbar-brand{
+
+.navbar-brand {
   margin: 0;
   padding: 0;
 }
+
 .navbar-toggler {
   width: 20px;
   height: 20px;
@@ -24,6 +26,7 @@
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
+.navbar-toggler-icon-home:focus,
 .navbar-toggler-icon:focus {
   outline: none;
   box-shadow: none;
@@ -31,10 +34,12 @@
   position: relative;
 }
 
-.navbar-toggler span {
+.navbar-toggler span,
+.navbar-toggler-icon-home span {
   margin: 0;
   padding: 0;
 }
+
 .navbar-inner-custom {
   opacity: 0.8;
   border-radius: 20px;
@@ -44,7 +49,9 @@
   padding-bottom: 15px;
   background-color: #212121;
 }
-.toggler-icon {
+
+.toggler-icon,
+.toggler-icon-home {
   display: block;
   position: absolute;
   height: 3px;
@@ -56,22 +63,39 @@
   transform: rotate(0deg);
   transition: 0.25s ease-in-out;
 }
-.aiclinicLogoDiv{
+
+.aiclinicLogoDiv {
   display: flex;
   margin-top: auto;
   margin-bottom: auto;
 }
-.iclinicLogo{
+
+.iclinicLogo {
   width: 42px;
   margin: 0;
   padding: 0;
 }
-.aiclinictext{
+
+.aiclinictext {
   font-size: 2rem;
   padding-left: 0.5rem;
   margin-top: auto;
   margin-bottom: auto;
+  background: linear-gradient(90deg, rgba(222, 216, 250, 1) 16%, rgba(128, 116, 198, 1) 37%, rgba(222, 216, 250, 1) 67%, rgba(38, 29, 143, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
+
+.iclinictext {
+  font-size: 2rem;
+  padding-left: 0.5rem;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: linear-gradient(90deg, rgba(105, 180, 250, 1) 30%, rgba(255, 255, 255, 1) 62%, rgba(105, 180, 250, 1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .middle-bar {
   margin-top: #121212;
 }
@@ -122,7 +146,11 @@
 /* Color of 3 lines */
 
 .navbar-toggler.collapsed .toggler-icon {
-  background-image: linear-gradient(to right, #ded8fa, #322696);
+  background-image: linear-gradient(90deg, rgba(105, 180, 250, 1) 30%, rgba(255, 255, 255, 1) 62%, rgba(105, 180, 250, 1) 100%);
+}
+
+.navbar-toggler.collapsed .toggler-icon-home {
+  background-image: linear-gradient(90deg, rgba(50, 38, 150, 1) 30%, rgba(222, 216, 250, 1) 62%, rgba(50, 38, 150, 1) 100%);
 }
 
 .right-nav-div {
