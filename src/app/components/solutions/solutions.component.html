@@ -1,6 +1,20 @@
 <div class="solutions-container">
     <div class="solutions-text-div">
-        <p class="title" [ngClass]="{
+        <p class="mainTitle" [ngClass]="{
+            wc: textColorIndex === 0,
+            af: textColorIndex === 1,
+            cr: textColorIndex === 2,
+            crw: textColorIndex === 3,
+            lp: textColorIndex === 4,
+            hcm: textColorIndex === 5,
+            hf: textColorIndex === 6,
+            hfo: textColorIndex === 7,
+            scess: textColorIndex === 8,
+            sc: textColorIndex === 9,
+            fr: textColorIndex === 10,
+            pd: textColorIndex === 11,
+            ascopd: textColorIndex === 12}">{{ mainTitleInitial }}</p>
+        <p class=" title" [ngClass]="{
         wc: textColorIndex === 0,
         af: textColorIndex === 1,
         cr: textColorIndex === 2,
@@ -15,7 +29,6 @@
         pd: textColorIndex === 11,
         ascopd: textColorIndex === 12
       }">
-            <!-- <span class="mainTitle">{{ mainTitleInitial }}</span><br /> -->
             {{ title }}
         </p>
         <p class="description" [innerText]="description"></p>

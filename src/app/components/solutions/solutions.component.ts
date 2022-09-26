@@ -11,8 +11,8 @@ Chart.register(ChartDataLabels);
 })
 export class SolutionsComponent implements OnInit {
   title: any = 'Atrial Filbrillation';
-  // mainTitleInitial: any = 'Cardiology';
-  // mainTitle: any = ['Cardiology', 'Geriatrics', 'Neurology', 'Respirology'];
+  mainTitleInitial: any = 'Cardiology';
+  mainTitle: any = ['Cardiology', 'Geriatrics', 'Neurology', 'Respirology'];
   textColorIndex = 0;
   description: any = `The AF module is used in the clinical care of patients experiencing atrial fibrillation.\n\nHighlight features include organization of the clinical pathway into Rhythm and Rate control strategies.`;
   descriptionArray: any = [
@@ -487,67 +487,67 @@ export class SolutionsComponent implements OnInit {
     }
     if (eventIndex === 0) {
       this.title = `Atrial Filbrillation`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[0];
       this.textColorIndex = 0;
     } else if (eventIndex === 1) {
       this.title = `Cardiac Rehab`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[1];
       this.textColorIndex = 1;
     } else if (eventIndex === 2) {
       this.title = `Cardiac Rehab Workflow`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[2];
       this.textColorIndex = 2;
     } else if (eventIndex === 3) {
       this.title = `Hypertrophic Cardiomyopathy`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[3];
       this.textColorIndex = 3;
     } else if (eventIndex === 4) {
       this.title = `Heart Failure`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[4];
       this.textColorIndex = 4;
     } else if (eventIndex === 5) {
       this.title = `Heart Failure Oncology`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[5];
       this.textColorIndex = 5;
     } else if (eventIndex === 6) {
       this.title = `Lipid`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[6];
       this.textColorIndex = 6;
     } else if (eventIndex === 7) {
       this.title = `Sports Cardiology`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[7];
       this.textColorIndex = 7;
     } else if (eventIndex === 8) {
       this.title = `Smoking Cessation`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[8];
       this.textColorIndex = 8;
     } else if (eventIndex === 9) {
       this.title = `Women's Cardiology`;
-      // this.mainTitleInitial = this.mainTitle[0];
+      this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[9];
       this.textColorIndex = 9;
     } else if (eventIndex === 10) {
       this.title = `Frailty`;
-      // this.mainTitleInitial = this.mainTitle[1];
+      this.mainTitleInitial = this.mainTitle[1];
       this.description = this.descriptionArray[10];
       this.textColorIndex = 10;
     } else if (eventIndex === 11) {
       this.title = `Parkinson's Disease`;
-      // this.mainTitleInitial = this.mainTitle[2];
+      this.mainTitleInitial = this.mainTitle[2];
       this.description = this.descriptionArray[11];
       this.textColorIndex = 11;
     } else if (eventIndex === 12) {
       this.title = `Asthma/COPD`;
-      // this.mainTitleInitial = this.mainTitle[3];
+      this.mainTitleInitial = this.mainTitle[3];
       this.description = this.descriptionArray[12];
       this.textColorIndex = 12;
     }
