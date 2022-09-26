@@ -38,14 +38,14 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:5vw;
+    gap: 5vw;
 }
 
 .doctor-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap:5vw;
+    gap: 5vw;
 }
 
 .patient-img {
@@ -409,22 +409,24 @@ ARROW CSS
 }
 
 .double-arrow-svg-telephone {
-    width: 17vw;
+    width: 15vw;
     rotate: 163deg;
+    margin-left: 10%;
 }
 
 .double-arrow-svg-ehealth {
-    width: 17vw;
+    width: 15vw;
     rotate: 162deg;
+    margin-left: 10%;
 }
 
 .double-arrow-svg-pharmanet {
-    width: 17vw;
+    width: 15vw;
     rotate: 195deg;
 }
 
 .double-arrow-svg-hospital {
-    width: 17vw;
+    width: 15vw;
     rotate: 195deg;
 }
 
