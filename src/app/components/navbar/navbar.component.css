@@ -76,6 +76,12 @@
   padding: 0;
   fill:black;
 }
+.aiclinicLogo {
+  width: 20%;
+  margin: 0;
+  padding: 0;
+}
+
 
 .aiclinictext {
   font-size: 2rem;
