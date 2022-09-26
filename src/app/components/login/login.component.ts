@@ -21,11 +21,13 @@ export class LoginComponent implements OnInit {
       this.loginUserData!.username == this.allowedUsername &&
       this.loginUserData!.password == this.allowedPassword
     ) {
-      console.log('login success');
       localStorage.setItem('token', 'secretToken');
       localStorage.setItem('is_admin', 'true');
       this.router.navigate(['/home']);
+    } else {
+      alert("wrong credentials");
     }
+   
   }
 }
 export interface User {

@@ -71,8 +71,8 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   public ngOnInit(): void {
-    this.stats.showPanel(1); // 0: fps, 1: ms, 2: mb, 3+: custom
-    document.body.appendChild(this.stats.dom);
+    // this.stats.showPanel(1); 
+    // document.body.appendChild(this.stats.dom);
     // console.log(this.stats)
     this.createScene(this.rendererCanvas);
     this.render();
@@ -254,14 +254,14 @@ export class HomeComponent implements OnInit {
   }
 
   public render(): void {
-    this.stats.begin();
+    // this.stats.begin();
 
     this.animate();
 
     requestAnimationFrame(() => this.render());
 
     this.renderer.render(this.scene, this.camera);
-    this.stats.end();
+    // this.stats.end();
   }
 
   public onMouseMove(event) {
