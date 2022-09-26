@@ -312,79 +312,79 @@
 
 /* TITLE COLOR CHANGE */
 .af {
-  background: -webkit-linear-gradient(45deg, white, rgba(255, 247, 252, 1), rgba(255, 243, 251, 1));
+  background: -webkit-linear-gradient(90deg, rgba(255, 247, 252, 1) 0%, rgba(255, 243, 251, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .cr {
-  background: -webkit-linear-gradient(45deg, white, rgba(255, 239, 249, 1), rgba(255, 235, 248, 1));
+  background: -webkit-linear-gradient(90deg, rgba(255, 239, 249, 1) 0%, rgba(255, 235, 248, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .crw {
-  background: -webkit-linear-gradient(45deg, white, rgba(255, 236, 248, 1), rgba(255, 233, 247, 1));
+  background: -webkit-linear-gradient(90deg, rgba(255, 236, 248, 1) 0%, rgba(255, 233, 247, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hcm {
-  background: -webkit-linear-gradient(45deg, white, rgba(253, 234, 255, 1), rgba(249, 224, 251, 1));
+  background: -webkit-linear-gradient(90deg, rgba(253, 234, 255, 1) 0%, rgba(249, 224, 251, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hf {
-  background: -webkit-linear-gradient(45deg, white, rgba(253, 234, 255, 1), rgba(249, 224, 251, 1));
+  background: -webkit-linear-gradient(90deg, rgba(253, 234, 255, 1) 0%, rgba(249, 224, 251, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .hfo {
-  background: -webkit-linear-gradient(45deg, white, rgba(253, 230, 255, 1), rgba(253, 224, 255, 1));
+  background: -webkit-linear-gradient(90deg, rgba(253, 230, 255, 1) 0%, rgba(253, 224, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .lp {
-  background: -webkit-linear-gradient(45deg, white, rgba(253, 227, 255, 1), rgba(252, 216, 255, 1));
+  background: -webkit-linear-gradient(90deg, rgba(253, 227, 255, 1) 0%, rgba(252, 216, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .sc {
-  background: -webkit-linear-gradient(45deg, white, rgba(225, 225, 255, 1), rgba(213, 213, 255, 1));
+  background: -webkit-linear-gradient(90deg, white 0%, rgba(213, 213, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .scess {
-  background: -webkit-linear-gradient(45deg, white, rgba(215, 215, 255, 1), rgba(206, 206, 255, 1));
+  background: -webkit-linear-gradient(90deg, white 0%, rgba(206, 206, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .wc {
-  background: -webkit-linear-gradient(45deg, white, rgba(204, 204, 255, 1), rgba(192, 192, 255, 1));
+  background: -webkit-linear-gradient(90deg, white 0%, rgba(192, 192, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .fr {
-  background: -webkit-linear-gradient(45deg, white, rgba(211, 255, 182, 1), rgba(206, 255, 173, 1));
+  background: -webkit-linear-gradient(90deg, white 0%, rgba(206, 255, 173, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .pd {
-  background: -webkit-linear-gradient(45deg, white, rgba(214, 255, 252, 1), rgba(201, 255, 251, 1));
+  background: -webkit-linear-gradient(90deg, white 0%, rgba(201, 255, 251, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .ascopd {
-  background: -webkit-linear-gradient(45deg, white, rgba(255, 237, 252252, 1), rgba(255, 218, 193, 1));
+  background: -webkit-linear-gradient(90deg, white 0%, rgba(255, 218, 193, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
