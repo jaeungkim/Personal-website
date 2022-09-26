@@ -38,12 +38,14 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:5vw;
 }
 
 .doctor-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    gap:5vw;
 }
 
 .patient-img {
