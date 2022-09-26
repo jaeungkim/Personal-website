@@ -19,13 +19,13 @@
 .mainTitle {
   font-size: 38px;
   margin: 0;
+  font-weight: bold;
 }
 
 .title {
   color: #ffff;
   font-size: 24px;
   margin: 0;
-  font-weight: bold;
 }
 
 .description {
@@ -134,7 +134,7 @@
 @media only screen and (min-width: 768px) {
   .mainTitle {
     font-size: 36px;
-    /* padding-top: 10%; */
+    padding-bottom: 20%;
   }
 
   .title {
@@ -155,7 +155,7 @@
   }
 
   .solutions-text-div {
-    padding-top: 30%;
+    padding-top: 17.5%;
     width: 30%;
     height: 50vh;
   }
@@ -222,6 +222,7 @@
 @media only screen and (min-width: 1400px) {
   .mainTitle {
     font-size: 48px;
+    padding-bottom: 20%;
   }
 
   .title {
@@ -238,7 +239,7 @@
   }
 
   .solutions-text-div {
-    padding-top: 37.5%;
+    padding-top: 27.5%;
     width: 20%;
   }
 
@@ -317,10 +318,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+.mainaf {
+  color: rgba(255, 243, 251, 1);
+}
+
 .cr {
   background: -webkit-linear-gradient(90deg, rgba(255, 239, 249, 1) 0%, rgba(255, 235, 248, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.maincr {
+  color: rgba(255, 235, 248, 1);
 }
 
 .crw {
@@ -329,10 +338,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+.maincrw {
+  color: rgba(255, 233, 247, 1);
+}
+
 .hcm {
   background: -webkit-linear-gradient(90deg, rgba(253, 234, 255, 1) 0%, rgba(249, 224, 251, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.mainhcm {
+  color: rgba(249, 224, 251, 1);
 }
 
 .hf {
@@ -341,10 +358,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+.mainhf {
+  color: rgba(249, 224, 251, 1);
+}
+
 .hfo {
   background: -webkit-linear-gradient(90deg, rgba(253, 230, 255, 1) 0%, rgba(253, 224, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.mainhfo {
+  color: rgba(253, 224, 255, 1);
 }
 
 .lp {
@@ -353,10 +378,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+.mainlp {
+  color: rgba(252, 216, 255, 1);
+}
+
 .sc {
   background: -webkit-linear-gradient(90deg, white 0%, rgba(213, 213, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.mainsc {
+  color: rgba(213, 213, 255, 1);
 }
 
 .scess {
@@ -365,10 +398,18 @@
   -webkit-text-fill-color: transparent;
 }
 
+.mainscess {
+  color: rgba(206, 206, 255, 1);
+}
+
 .wc {
   background: -webkit-linear-gradient(90deg, white 0%, rgba(192, 192, 255, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.mainwc {
+  color: rgba(192, 192, 255, 1);
 }
 
 .fr {
@@ -377,14 +418,26 @@
   -webkit-text-fill-color: transparent;
 }
 
+.mainfr {
+  color: rgba(206, 255, 173, 1);
+}
+
 .pd {
   background: -webkit-linear-gradient(90deg, white 0%, rgba(201, 255, 251, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
+.mainpd {
+  color: rgba(201, 255, 251, 1);
+}
+
 .ascopd {
   background: -webkit-linear-gradient(90deg, white 0%, rgba(255, 218, 193, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.mainascopd {
+  color: rgba(255, 218, 193, 1);
 }
