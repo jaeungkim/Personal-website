@@ -105,12 +105,10 @@ CHART DIV CSS
     /* gap: 5%; */
 }
 
-.telephone-text {
+.teleplan-img {
     margin: 0;
     width: 100px;
     height: 100px;
-    background-color: #06A8FF;
-    border-radius: 15px;
 }
 
 .chart-div-eHealthViewer {
@@ -122,14 +120,10 @@ CHART DIV CSS
     /* gap: 5%; */
 }
 
-.eHealthViewer-text {
+.eHealth-img {
     width: 100px;
     height: 100px;
-    background-color: #06A8FF;
-    border-radius: 15px;
     margin: 0;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .chart-div-pharmanet {
@@ -141,12 +135,10 @@ CHART DIV CSS
     /* gap: 5%; */
 }
 
-.pharmanet-text {
+.pharmaNet-img {
     margin: 0;
     width: 100px;
     height: 100px;
-    background-color: #06A8FF;
-    border-radius: 15px;
 }
 
 .chart-div-hospital {
@@ -158,12 +150,10 @@ CHART DIV CSS
     /* gap: 5%; */
 }
 
-.hospital-text {
+.hospital-img {
     margin: 0;
     width: 100px;
     height: 100px;
-    background-color: #06A8FF;
-    border-radius: 15px;
 }
 
 /* 
