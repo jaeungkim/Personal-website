@@ -71,8 +71,8 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   public ngOnInit(): void {
-    // this.stats.showPanel(1); // 0: fps, 1: ms, 2: mb, 3+: custom
-    // document.body.appendChild(this.stats.dom);
+    this.stats.showPanel(1); // 0: fps, 1: ms, 2: mb, 3+: custom
+    document.body.appendChild(this.stats.dom);
     // console.log(this.stats)
     this.createScene(this.rendererCanvas);
     this.render();
@@ -87,7 +87,7 @@ export class HomeComponent implements OnInit {
     this.renderer = new THREE.WebGLRenderer({
       canvas: canvas.nativeElement,
       antialias: AA,
-      powerPreference: "high-performance",
+      powerPreference: 'high-performance',
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(window.devicePixelRatio);
@@ -161,11 +161,11 @@ export class HomeComponent implements OnInit {
       if (remainder === 0) {
         this.color.setHex(0xded8fa);
       } else if (remainder === 1) {
-        this.color.setHex(0x8074c6); 
+        this.color.setHex(0x8074c6);
       } else if (remainder === 2) {
-        this.color.setHex(0x261d8f); 
+        this.color.setHex(0x261d8f);
       } else {
-        this.color.setHex(0x322696); 
+        this.color.setHex(0x322696);
       }
       this.color.toArray(this.colors, i * 3);
 
@@ -254,14 +254,14 @@ export class HomeComponent implements OnInit {
   }
 
   public render(): void {
-    // this.stats.begin();
+    this.stats.begin();
 
     this.animate();
 
     requestAnimationFrame(() => this.render());
 
     this.renderer.render(this.scene, this.camera);
-    // this.stats.end();
+    this.stats.end();
   }
 
   public onMouseMove(event) {
