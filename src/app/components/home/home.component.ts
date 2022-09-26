@@ -159,13 +159,13 @@ export class HomeComponent implements OnInit {
       //COLORS
       let remainder = i % 4;
       if (remainder === 0) {
-        this.color.setHex(0xbf9b30); //bronze
+        this.color.setHex(0xded8fa);
       } else if (remainder === 1) {
-        this.color.setHex(0xa67c00); //copper
+        this.color.setHex(0x8074c6); 
       } else if (remainder === 2) {
-        this.color.setHex(0xffed8a); //gold
+        this.color.setHex(0x261d8f); 
       } else {
-        this.color.setHex(0xffffff); // white
+        this.color.setHex(0x322696); 
       }
       this.color.toArray(this.colors, i * 3);
 
