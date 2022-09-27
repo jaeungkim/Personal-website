@@ -102,7 +102,7 @@ CHART DIV CSS
     position: absolute;
     bottom: 37.5%;
     left: 0%;
-    /* gap: 5%; */
+    gap: 2.5vw;
 }
 
 .teleplan-img {
@@ -117,7 +117,7 @@ CHART DIV CSS
     position: absolute;
     bottom: 20%;
     left: 5%;
-    /* gap: 5%; */
+    gap: 2.5vw;
 }
 
 .eHealth-img {
@@ -132,7 +132,7 @@ CHART DIV CSS
     position: absolute;
     bottom: 37.5%;
     right: 0%;
-    /* gap: 5%; */
+    gap: 2.5vw;
 }
 
 .pharmaNet-img {
@@ -147,7 +147,7 @@ CHART DIV CSS
     position: absolute;
     bottom: 20%;
     right: 5%;
-    /* gap: 5%; */
+    gap: 2.5vw;
 }
 
 .hospital-img {
@@ -204,9 +204,9 @@ ARROW CSS
 } */
 .big-down-arrow {
     position: relative;
-    margin-top: 300px;
-    width: 50%;
-    height: 40px;
+    margin-top: 100px;
+    width: 30%;
+    height: 15px;
     transform: rotate(90deg);
     display: flex;
 }
@@ -214,7 +214,7 @@ ARROW CSS
 .big-down-arrow:before {
     content: "";
     background: white;
-    width: 15px;
+    width: 6px;
     clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
     animation: a1 3s infinite linear normal;
 }
@@ -248,8 +248,8 @@ ARROW CSS
 
 .arrow-div {
     display: flex;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 0;
+    padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -409,24 +409,24 @@ ARROW CSS
 }
 
 .double-arrow-svg-telephone {
-    width: 15vw;
+    width: 12.5vw;
     rotate: 163deg;
     margin-left: 10%;
 }
 
 .double-arrow-svg-ehealth {
-    width: 15vw;
+    width: 12.5vw;
     rotate: 162deg;
     margin-left: 10%;
 }
 
 .double-arrow-svg-pharmanet {
-    width: 15vw;
+    width: 12.5vw;
     rotate: 195deg;
 }
 
 .double-arrow-svg-hospital {
-    width: 15vw;
+    width: 12.5vw;
     rotate: 195deg;
 }
 
@@ -441,7 +441,7 @@ ARROW CSS
 
 @keyframes coming-in-left-right {
     0% {
-        opacity: 0.5;
+        /* opacity: 0.5; */
         transform: translateX(15%);
     }
 
@@ -462,7 +462,7 @@ ARROW CSS
 
 @keyframes coming-in-right-left {
     0% {
-        opacity: 0.5;
+        /* opacity: 0.5; */
         transform: translateX(0);
     }
 
