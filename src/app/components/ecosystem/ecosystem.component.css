@@ -55,7 +55,7 @@ PATIENT DOCTOR DIV CSS
 .doctor-img {
     width: 10vw;
 }
-
+.doctor2-img{width:5vw;}
 .doctor-patient-div {
     display: flex;
     justify-content: center;
