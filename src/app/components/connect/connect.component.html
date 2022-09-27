@@ -1,41 +1,94 @@
 <div class="custom-container text-light">
     <section class="contact-form-section" style="max-width:1200px">
-        <h2>Let’s Connect.</h2>
-        <p class="contact-form-description">See Why Clinics are Switching to iClinic.</p>
-        <form class="contact-form">
+        <p class="contact-form-title">Let’s Connect. See Why Clinics are Switching to iClinic.</p>
+        <p class="contact-form-description">placeholder</p>
+        <p class="contact-form-description">placeholder</p>
+        <form class="contact-form" [formGroup]="contactUsForm" (ngSubmit)="onSubmit()">
             <div class="contactform-individual-div">
-                <label class="contactform-label">FIRST NAME:</label>
-                <input type="text" class="contactform-input-box input-firstname" />
+                <label class="contactform-label">First Name *</label>
+                <input
+                    [class.invalid-form]="contactUsForm.controls['firstName'].touched && contactUsForm.controls['firstName'].errors?.required"
+                    type="text" id="firstName" class="contactform-input-box input-firstname" formControlName="firstName"
+                    required />
+            </div>
+            <div *ngIf="contactUsForm.controls['firstName'].invalid && (contactUsForm.controls['firstName'].dirty || contactUsForm.controls['firstName'].touched)"
+                class="validation-text">
+                <div *ngIf="contactUsForm.controls['firstName'].errors!.required">
+                    First Name is Required.
+                </div>
             </div>
 
             <div class="contactform-individual-div">
-                <label class="contactform-label">LAST NAME:</label>
-                <input type="text" class="contactform-input-box input-lastname" />
+                <label class="contactform-label">Last Name *</label>
+                <input
+                    [class.invalid-form]="contactUsForm.controls['lastName'].touched && contactUsForm.controls['lastName'].errors?.required"
+                    type="text" id="lastName" class="contactform-input-box input-lastName" formControlName="lastName"
+                    required />
+            </div>
+            <div *ngIf="contactUsForm.controls['lastName'].invalid && (contactUsForm.controls['lastName'].dirty || contactUsForm.controls['lastName'].touched)"
+                class="validation-text">
+                <div *ngIf="contactUsForm.controls['lastName'].errors!.required">
+                    Last Name is Required.
+                </div>
             </div>
 
             <div class="contactform-individual-div">
-                <label class="contactform-label">ORGANIZATION:</label>
-                <input type="text" class="contactform-input-box input-lastname" />
+                <label class="contactform-label">Organization *</label>
+                <input
+                    [class.invalid-form]="contactUsForm.controls['organization'].touched && contactUsForm.controls['organization'].errors?.required"
+                    type="text" id="organization" class="contactform-input-box input-organization"
+                    formControlName="organization" required />
+            </div>
+            <div *ngIf="contactUsForm.controls['organization'].invalid && (contactUsForm.controls['organization'].dirty || contactUsForm.controls['organization'].touched)"
+                class="validation-text">
+                <div *ngIf="contactUsForm.controls['organization'].errors!.required">
+                    Organization is Required.
+                </div>
             </div>
 
             <div class="contactform-individual-div">
-                <label class="contactform-label">POSITION:</label>
-                <input type="text" class="contactform-input-box input-lastname" />
+                <label class="contactform-label">Position *</label>
+                <input
+                    [class.invalid-form]="contactUsForm.controls['position'].touched && contactUsForm.controls['position'].errors?.required"
+                    type="text" id="position" class="contactform-input-box input-position" formControlName="position"
+                    required />
+            </div>
+            <div *ngIf="contactUsForm.controls['position'].invalid && (contactUsForm.controls['position'].dirty || contactUsForm.controls['position'].touched)"
+                class="validation-text">
+                <div *ngIf="contactUsForm.controls['position'].errors!.required">
+                    Position is Required.
+                </div>
             </div>
 
             <div class="contactform-individual-div">
-                <label class="contactform-label">EMAIL ADDRESS:</label>
-                <input type="text" class="contactform-input-box input-lastname" />
+                <label class="contactform-label">Email Address *</label>
+                <input
+                    [class.invalid-form]="contactUsForm.controls['email'].touched && contactUsForm.controls['email'].errors?.required"
+                    type="text" id="email" class="contactform-input-box input-email" formControlName="email" required />
+            </div>
+            <div *ngIf="contactUsForm.controls['email'].invalid && (contactUsForm.controls['email'].dirty || contactUsForm.controls['email'].touched)"
+                class="validation-text">
+                <div *ngIf="contactUsForm.controls['email'].errors!.required">
+                    Email Address is Required.
+                </div>
             </div>
 
             <div class="contactform-individual-div">
-                <label class="contactform-label">PHONE NUMBER:</label>
-                <input type="text" class="contactform-input-box input-lastname" />
+                <label class="contactform-label">Phone Number * </label>
+                <input
+                    [class.invalid-form]="contactUsForm.controls['phone'].touched && contactUsForm.controls['phone'].errors?.required"
+                    type="text" id="phone" class="contactform-input-box input-phone" formControlName="phone" required />
+            </div>
+            <div *ngIf="contactUsForm.controls['phone'].invalid && (contactUsForm.controls['phone'].dirty || contactUsForm.controls['phone'].touched)"
+                class="validation-text">
+                <div *ngIf="contactUsForm.controls['phone'].errors!.required">
+                    Phone Number is Required.
+                </div>
             </div>
 
             <div class="contactform-individual-div">
-                <label class="contactform-label">PROVINCE:</label>
-                <select class="contactform-input-box input-provice" id="selectprovince">
+                <label class="contactform-label">Province *</label>
+                <select [class.invalid-form]="contactUsForm.controls['province'].touched && contactUsForm.controls['province'].errors?.required" class="contactform-input-box input-provice" id="selectprovince" formControlName="province" required>
                     <option value="">Select...</option>
                     <option value="AB">Alberta</option>
                     <option value="BC">British Columbia</option>
@@ -52,14 +105,19 @@
                     <option value="YT">Yukon</option>
                 </select>
             </div>
-
+            <div *ngIf="contactUsForm.controls['province'].invalid && (contactUsForm.controls['province'].dirty || contactUsForm.controls['province'].touched)"
+            class="validation-text">
+            <div *ngIf="contactUsForm.controls['province'].errors!.required">
+                Province is Required.
+            </div>
+        </div>
             <div class="contactform-individual-div">
-                <label class="contactform-label">TELL US MORE ABOUT YOUR INQUIRY TODAY:</label>
-                <input type="text" class="contactform-input-box input-tellusmore" />
+                <label class="contactform-label">Tell Us More *</label>
+                <textarea class="contactform-input-box input-tellusmore"></textarea>
             </div>
 
             <div class="submit-button-div">
-                <button class="button-46" role="button">Submit</button>
+                <button [disabled]="!contactUsForm.valid" class="submit-button" role="button">Submit</button>
             </div>
         </form>
     </section>

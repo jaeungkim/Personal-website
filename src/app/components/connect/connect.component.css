@@ -14,6 +14,10 @@
     width: 100%;
 }
 
+.contact-form-title {
+    font-size: 36px;
+}
+
 .contact-form-description {
     font-size: 18px;
 }
@@ -40,9 +44,19 @@
     margin-bottom: 20px;
 }
 
+.invalid-form {
+    border: red 2px solid;
+}
+.validation-text{
+    color: red;
+    margin: 0;
+    padding: 0;
+    margin-top: -10px;
+    margin-bottom: 10px;
+}
 .contactform-input-box:focus-visible {
     border: 2px solid rgba(105, 180, 250, 1) !important;
-    outline: 1px solid rgba(105, 180, 250, 1) !important;
+    outline: none;
 }
 
 #selectprovince {
@@ -52,7 +66,7 @@
 }
 
 .input-tellusmore {
-    height: 200px;
+    height: 150px;
     padding: 12px;
 }
 
@@ -66,8 +80,26 @@
     width: 25%;
     color: white;
 }
-
-.button-46 {
+.submit-button{
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    color: #616161;
+    align-items: center;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    display: flex;
+    justify-content: center;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition: all .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    cursor:not-allowed;
+}
+.submit-button:not([disabled]) {
     background: #1a1a1a;
     border: 1px solid #3a3a3a;
     color: white;
@@ -87,6 +119,6 @@
     touch-action: manipulation;
 }
 
-.button-46:hover {
+.submit-button:hover:not([disabled]) {
     background-color: black;
 }
