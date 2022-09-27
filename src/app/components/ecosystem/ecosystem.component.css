@@ -56,6 +56,18 @@ PATIENT DOCTOR DIV CSS
     width: 10vw;
 }
 
+.doctor-patient-div {
+    display: flex;
+    margin-top: -150px;
+    margin-bottom: 100px;
+}
+
+.doctorpatient-img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 20vw;
+}
+
 /*
 =============================================
 CHART DIV CSS
@@ -264,10 +276,11 @@ ARROW CSS
     margin-right: auto;
 }
 
+/* 
 .arrow-path {
     stroke-dasharray: 11000;
     stroke-dashoffset: 11000;
-    animation: dash 5s linear alternate infinite;
+    animation: dash 5s linear alternate;
 }
 
 @keyframes dash {
@@ -283,7 +296,7 @@ ARROW CSS
 .arrow-path-reverse {
     stroke-dasharray: 11000;
     stroke-dashoffset: 11000;
-    animation: dash 5s linear forwards infinite;
+    animation: dash 5s linear forwards;
 }
 
 @keyframes reversedash {
@@ -294,7 +307,7 @@ ARROW CSS
     to {
         stroke-dashoffset: 11000;
     }
-}
+} */
 
 @keyframes line-animation {
     0% {
@@ -431,11 +444,11 @@ ARROW CSS
 }
 
 .arrow-path-leftrightanimation {
-    animation: coming-in-left-right 4s infinite;
+    animation: coming-in-left-right 10s normal forwards ease-in-out;
 }
 
 .arrow-path-rightleftanimation {
-    animation: coming-in-right-left 4s infinite;
+    animation: coming-in-right-left 10s normal forwards ease-in-out;
     /* animation-direction: alternate-reverse; */
 }
 
