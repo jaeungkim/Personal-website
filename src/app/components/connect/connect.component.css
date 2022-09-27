@@ -1,0 +1,86 @@
+.contact-form-section {
+    max-width: 900px;
+    color: white;
+    border: 1px solid #616161;
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    padding: 50px;
+}
+
+.contact-form {
+    max-width: 830px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.contact-form-description {
+    font-size: 18px;
+}
+
+.contactform-individual-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform-label {
+    margin-bottom: 5px;
+}
+
+.contactform-input-box {
+    color: white;
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    border-radius: 5px;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    padding: 12px;
+    margin-bottom: 20px;
+}
+
+.contactform-input-box:focus-visible {
+    border: 2px solid rgba(105, 180, 250, 1) !important;
+    outline: 1px solid rgba(105, 180, 250, 1) !important;
+}
+
+.input-tellusmore {
+    height: 200px;
+    padding: 12px;
+}
+
+
+/* CSS */
+
+
+
+/* CSS */
+.submit-button-div {
+    width: 25%;
+    color: white;
+}
+
+.button-46 {
+    background: #1a1a1a;
+    border: 1px solid #3a3a3a;
+    color: white;
+    align-items: center;
+    border: 1px solid #616161;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 12px 50px;
+    text-decoration: none;
+    transition: all .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-46:hover {
+    background-color: black;
+}

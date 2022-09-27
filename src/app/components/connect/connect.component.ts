@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./connect.component.css']
 })
 export class ConnectComponent implements OnInit {
-
+  btnclick: boolean = false;
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  btnclickEvent(){
+    this.btnclick = !this.btnclick;
+  }
 }
