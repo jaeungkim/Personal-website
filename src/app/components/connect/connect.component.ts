@@ -40,6 +40,6 @@ export class ConnectComponent implements OnInit {
     this.btnclick = !this.btnclick;
   }
   onSubmit() {
-    console.log('');
+    console.log(this.contactUsForm);
   }
 }
