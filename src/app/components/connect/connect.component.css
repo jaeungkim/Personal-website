@@ -45,6 +45,12 @@
     outline: 1px solid rgba(105, 180, 250, 1) !important;
 }
 
+#selectprovince {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
 .input-tellusmore {
     height: 200px;
     padding: 12px;
