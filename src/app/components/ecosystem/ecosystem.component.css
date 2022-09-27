@@ -55,7 +55,9 @@ PATIENT DOCTOR DIV CSS
 .doctor-img {
     width: 10vw;
 }
-.doctor2-img{width:5vw;}
+.doctor2-img{width:5vw;    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;}
 .doctor-patient-div {
     display: flex;
     justify-content: center;
@@ -63,10 +65,8 @@ PATIENT DOCTOR DIV CSS
     margin-bottom: 100px;
 }
 .teleplan2-img{
-    width: 5vw;
-    height: 50%;
-    margin-top: auto;
-    margin-bottom: auto;
+    width: 10vw;
+
 
 }
 
