@@ -127,10 +127,9 @@
 }
 
 .navbar-toggler.collapsed .middle-bar {
-  opacity: 1;
   position: absolute;
   top: 10px;
-  filter: alpha(opacity=100);
+  transform: rotate(0deg);
 }
 
 .navbar-toggler.collapsed .bottom-bar {
@@ -143,18 +142,17 @@
 
 .navbar-toggler .top-bar {
   top: inherit;
-  transform: rotate(135deg);
+  transform: rotate(90deg);
 }
 
 .navbar-toggler .middle-bar {
-  opacity: 0;
   top: inherit;
-  filter: alpha(opacity=0);
+  transform: rotate(90deg) translateY(10px);
 }
 
 .navbar-toggler .bottom-bar {
   top: inherit;
-  transform: rotate(-135deg);
+  transform: rotate(-90deg) translateY(10px);
 }
 
 /* Color of 3 lines */
