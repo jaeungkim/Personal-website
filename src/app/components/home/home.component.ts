@@ -76,9 +76,14 @@ export class HomeComponent implements OnInit {
   public ngOnInit(): void {
       setTimeout(() => {
         this.hideVideoAfterPlay = true;
+        // this.createScene();
+        // this.render();
+      }, 14000);
+      setTimeout(() => {
+        // this.hideVideoAfterPlay = true;
         this.createScene();
         this.render();
-      }, 12000);
+      }, 8000);
   }
 
   public createScene(): void {
