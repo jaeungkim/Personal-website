@@ -34,7 +34,17 @@
         <p class="description" [innerText]="description"></p>
     </div>
     <div class="solutions-chart-div rotate">
-        <div class="main-chart-div">
+        <div *ngIf="mobile" class="main-chart-div">
+            <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType" [options]="chartOptions"
+                (chartHover)="chartHovered($event)" id="donutchart">
+            </canvas>
+        </div>
+        <div *ngIf="tablet" class="main-chart-div">
+            <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType" [options]="chartOptions"
+                (chartHover)="chartHovered($event)" id="donutchart">
+            </canvas>
+        </div>
+        <div *ngIf="desktop" class="main-chart-div">
             <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
                 (chartHover)="chartHovered($event)" id="donutchart">
             </canvas>
@@ -44,7 +54,6 @@
                 id="donutchart2">
             </canvas>
             <div class="ring-div">
-
             </div>
             <!-- <p class="cardiologylabel">Cardiology</p>
             <p class="geriatricslabel">Geriatrics</p>

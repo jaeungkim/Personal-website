@@ -10,6 +10,9 @@ Chart.register(ChartDataLabels);
   styleUrls: ['./solutions.component.css'],
 })
 export class SolutionsComponent implements OnInit {
+  mobile: boolean = false;
+  tablet: boolean = false;
+  desktop: boolean = false;
   title: any = 'Atrial Filbrillation';
   mainTitleInitial: any = 'Cardiology';
   mainTitle: any = ['Cardiology', 'Geriatrics', 'Neurology', 'Respirology'];
@@ -30,6 +33,332 @@ export class SolutionsComponent implements OnInit {
     `The PD module is used in the clinical care of patients suffering from Parkinson’s Disease.\n\nHighlight features include the focus on medication titration auto-calculator.`,
     `The Asthma/COPD module is used in the clinical care of patients suffering from asthma or COPD.\n\nHighlight features include risk triaging based on aggravating factors and medications history.`,
   ];
+  public doughnutChartDataMobile: any = {
+    labels: [
+      `AF`,
+      `CR`,
+      'CRw',
+      `HCM`,
+      `HF`,
+      `HFO`,
+      'LP',
+      `SC`,
+      `SCESS`,
+      `WC`,
+      `FR`,
+      `PD`,
+      `AS/COPD`,
+    ],
+    datasets: [
+      {
+        data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        backgroundColor: function (context) {
+          const chart = context.chart;
+          const { ctx, chartArea } = chart;
+          if (chartArea !== undefined) {
+            if (context.dataIndex === 0) {
+              return getGradientAF(ctx, chartArea);
+            }
+            if (context.dataIndex === 1) {
+              return getGradientCR(ctx, chartArea);
+            }
+            if (context.dataIndex === 2) {
+              return getGradientCRw(ctx, chartArea);
+            }
+            if (context.dataIndex === 3) {
+              return getGradientHCM(ctx, chartArea);
+            }
+            if (context.dataIndex === 4) {
+              return getGradientHF(ctx, chartArea);
+            }
+            if (context.dataIndex === 5) {
+              return getGradientHFO(ctx, chartArea);
+            }
+            if (context.dataIndex === 6) {
+              return getGradientLipid(ctx, chartArea);
+            }
+            if (context.dataIndex === 7) {
+              return getGradientSC(ctx, chartArea);
+            }
+            if (context.dataIndex === 8) {
+              return getGradientSCESS(ctx, chartArea);
+            }
+            if (context.dataIndex === 9) {
+              return getGradientWC(ctx, chartArea);
+            }
+            if (context.dataIndex === 10) {
+              return getGradientFrailty(ctx, chartArea);
+            }
+            if (context.dataIndex === 11) {
+              return getGradientPD(ctx, chartArea);
+            }
+            if (context.dataIndex === 12) {
+              return getGradientAsthmaCOPD(ctx, chartArea);
+            }
+          }
+          return '#121212';
+        },
+        hoverBackgroundColor: function (context) {
+          const chart = context.chart;
+          const { ctx, chartArea } = chart;
+          if (chartArea !== undefined) {
+            if (context.dataIndex === 0) {
+              return 'rgba(255,255,255,1)';
+            }
+            if (context.dataIndex === 1) {
+              return 'rgba(255,235,248,1)';
+            }
+            if (context.dataIndex === 2) {
+              return 'rgba(255,233,247,1)';
+            }
+            if (context.dataIndex === 3) {
+              return 'rgba(249,224,251,1)';
+            }
+            if (context.dataIndex === 4) {
+              return 'rgba(249,224,251,1)';
+            }
+            if (context.dataIndex === 5) {
+              return 'rgba(253,224,255,1)';
+            }
+            if (context.dataIndex === 6) {
+              return 'rgba(252,216,255,1)';
+            }
+            if (context.dataIndex === 7) {
+              return 'rgba(213,213,255,1)';
+            }
+            if (context.dataIndex === 8) {
+              return 'rgba(206,206,255,1)';
+            }
+            if (context.dataIndex === 9) {
+              return 'rgba(192,192,255,1)';
+            }
+            if (context.dataIndex === 10) {
+              return 'rgba(206, 255, 173, 1)';
+            }
+            if (context.dataIndex === 11) {
+              return 'rgba(201, 255, 251, 1)';
+            }
+            if (context.dataIndex === 12) {
+              return 'rgba(255, 218, 193, 1)';
+            }
+          }
+          return '#121212';
+        },
+
+        borderWidth: function (chart) {
+          let width = chart.chart.width;
+          if (width < 500) {
+            return 2;
+          } else {
+            return 4;
+          }
+        },
+
+        borderColor: [
+          'rgba(255,255,255,1)',
+          'rgba(255,235,248,1)',
+          'rgba(255,233,247,1)',
+          'rgba(249,224,251,1)',
+          'rgba(249,224,251,1)',
+          'rgba(253,224,255,1)',
+          'rgba(252,216,255,1)',
+          'rgba(213,213,255,1)',
+          'rgba(206,206,255,1)',
+          'rgba(192,192,255,1)', //cardiology end
+          'rgba(206, 255, 173, 1)',
+          'rgba(201, 255, 251, 1)',
+          'rgba(255, 218, 193, 1)',
+        ],
+        hoverBorderColor: [
+          'rgba(255,255,255,1)',
+          'rgba(255,235,248,1)',
+          'rgba(255,233,247,1)',
+          'rgba(249,224,251,1)',
+          'rgba(249,224,251,1)',
+          'rgba(253,224,255,1)',
+          'rgba(252,216,255,1)',
+          'rgba(213,213,255,1)',
+          'rgba(206,206,255,1)',
+          'rgba(192,192,255,1)', //cardiology end
+          'rgba(206, 255, 173, 1)',
+          'rgba(201, 255, 251, 1)',
+          'rgba(255, 218, 193, 1)',
+        ],
+        borderRadius: 0,
+        spacing: 50,
+        hoverOffset: function (chart) {
+          let width = chart.chart.width;
+          if (width < 500) {
+            return 15;
+          }
+          return 50;
+        },
+      },
+    ],
+  };
+  public doughnutChartDataTablet: any = {
+    labels: [
+      `AF`,
+      `CR`,
+      'CRw',
+      `HCM`,
+      `HF`,
+      `HFO`,
+      'LP',
+      `SC`,
+      `SCESS`,
+      `WC`,
+      `FR`,
+      `PD`,
+      `AS/COPD`,
+    ],
+    datasets: [
+      {
+        data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        backgroundColor: function (context) {
+          const chart = context.chart;
+          const { ctx, chartArea } = chart;
+          if (chartArea !== undefined) {
+            if (context.dataIndex === 0) {
+              return getGradientAF(ctx, chartArea);
+            }
+            if (context.dataIndex === 1) {
+              return getGradientCR(ctx, chartArea);
+            }
+            if (context.dataIndex === 2) {
+              return getGradientCRw(ctx, chartArea);
+            }
+            if (context.dataIndex === 3) {
+              return getGradientHCM(ctx, chartArea);
+            }
+            if (context.dataIndex === 4) {
+              return getGradientHF(ctx, chartArea);
+            }
+            if (context.dataIndex === 5) {
+              return getGradientHFO(ctx, chartArea);
+            }
+            if (context.dataIndex === 6) {
+              return getGradientLipid(ctx, chartArea);
+            }
+            if (context.dataIndex === 7) {
+              return getGradientSC(ctx, chartArea);
+            }
+            if (context.dataIndex === 8) {
+              return getGradientSCESS(ctx, chartArea);
+            }
+            if (context.dataIndex === 9) {
+              return getGradientWC(ctx, chartArea);
+            }
+            if (context.dataIndex === 10) {
+              return getGradientFrailty(ctx, chartArea);
+            }
+            if (context.dataIndex === 11) {
+              return getGradientPD(ctx, chartArea);
+            }
+            if (context.dataIndex === 12) {
+              return getGradientAsthmaCOPD(ctx, chartArea);
+            }
+          }
+          return '#121212';
+        },
+        hoverBackgroundColor: function (context) {
+          const chart = context.chart;
+          const { ctx, chartArea } = chart;
+          if (chartArea !== undefined) {
+            if (context.dataIndex === 0) {
+              return 'rgba(255,255,255,1)';
+            }
+            if (context.dataIndex === 1) {
+              return 'rgba(255,235,248,1)';
+            }
+            if (context.dataIndex === 2) {
+              return 'rgba(255,233,247,1)';
+            }
+            if (context.dataIndex === 3) {
+              return 'rgba(249,224,251,1)';
+            }
+            if (context.dataIndex === 4) {
+              return 'rgba(249,224,251,1)';
+            }
+            if (context.dataIndex === 5) {
+              return 'rgba(253,224,255,1)';
+            }
+            if (context.dataIndex === 6) {
+              return 'rgba(252,216,255,1)';
+            }
+            if (context.dataIndex === 7) {
+              return 'rgba(213,213,255,1)';
+            }
+            if (context.dataIndex === 8) {
+              return 'rgba(206,206,255,1)';
+            }
+            if (context.dataIndex === 9) {
+              return 'rgba(192,192,255,1)';
+            }
+            if (context.dataIndex === 10) {
+              return 'rgba(206, 255, 173, 1)';
+            }
+            if (context.dataIndex === 11) {
+              return 'rgba(201, 255, 251, 1)';
+            }
+            if (context.dataIndex === 12) {
+              return 'rgba(255, 218, 193, 1)';
+            }
+          }
+          return '#121212';
+        },
+
+        borderWidth: function (chart) {
+          let width = chart.chart.width;
+          if (width < 500) {
+            return 2;
+          } else {
+            return 4;
+          }
+        },
+
+        borderColor: [
+          'rgba(255,255,255,1)',
+          'rgba(255,235,248,1)',
+          'rgba(255,233,247,1)',
+          'rgba(249,224,251,1)',
+          'rgba(249,224,251,1)',
+          'rgba(253,224,255,1)',
+          'rgba(252,216,255,1)',
+          'rgba(213,213,255,1)',
+          'rgba(206,206,255,1)',
+          'rgba(192,192,255,1)', //cardiology end
+          'rgba(206, 255, 173, 1)',
+          'rgba(201, 255, 251, 1)',
+          'rgba(255, 218, 193, 1)',
+        ],
+        hoverBorderColor: [
+          'rgba(255,255,255,1)',
+          'rgba(255,235,248,1)',
+          'rgba(255,233,247,1)',
+          'rgba(249,224,251,1)',
+          'rgba(249,224,251,1)',
+          'rgba(253,224,255,1)',
+          'rgba(252,216,255,1)',
+          'rgba(213,213,255,1)',
+          'rgba(206,206,255,1)',
+          'rgba(192,192,255,1)', //cardiology end
+          'rgba(206, 255, 173, 1)',
+          'rgba(201, 255, 251, 1)',
+          'rgba(255, 218, 193, 1)',
+        ],
+        borderRadius: 0,
+        spacing: 75,
+        hoverOffset: function (chart) {
+          let width = chart.chart.width;
+          if (width < 500) {
+            return 15;
+          }
+          return 50;
+        },
+      },
+    ],
+  };
   public doughnutChartData: any = {
     labels: [
       `AF`,
@@ -476,7 +805,15 @@ export class SolutionsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    // console.log(Chart)
+    if (window.innerWidth < 576) {
+      // 768px portrait
+      this.mobile = true;
+    } else if (window.innerWidth < 1200) {
+      this.tablet = true;
+    } else {
+      this.desktop = true;
+    }
+    console.log(this.mobile, this.tablet, this.desktop);
   }
 
   chartHovered(event: any): void {
