@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { SceneService } from './scene.service';
 import { Chart, ChartType } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
@@ -17,15 +16,10 @@ Chart.register(ChartDataLabels);
   selector: 'app-ecosystem',
   templateUrl: './ecosystem.component.html',
   styleUrls: ['./ecosystem.component.css'],
-  providers: [SceneService],
+  providers: [],
 })
 export class EcosystemComponent implements OnInit {
-  constructor(private scene: SceneService) {}
-
-  // @ViewChild('container')
-  // set container(container: ElementRef) {
-  //   this.scene.initialize(container.nativeElement);
-  // }
+  constructor() {}
 
   ngOnInit(): void {
     this.initScrollAnimations();

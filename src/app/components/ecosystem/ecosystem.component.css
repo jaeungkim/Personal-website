@@ -236,10 +236,10 @@ ARROW CSS
     background: white;
     width: 6px;
     clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
-    animation: a1 3s infinite linear normal;
+    animation: downarrow 3s infinite linear normal;
 }
 
-@keyframes a1 {
+@keyframes downarrow {
     0% {
         opacity: 0;
         stroke-dashoffset: 10;
@@ -261,19 +261,6 @@ ARROW CSS
     }
 }
 
-#animation-line {
-    animation: line-animation 5000ms linear infinite normal forwards;
-    color: white;
-}
-
-.arrow-div {
-    display: flex;
-    padding-top: 0;
-    padding-bottom: 50px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .arrow-div-2 {
     display: flex;
     flex-direction: column;
@@ -282,59 +269,6 @@ ARROW CSS
     padding-bottom: 100px;
     margin-left: auto;
     margin-right: auto;
-}
-
-/* 
-.arrow-path {
-    stroke-dasharray: 11000;
-    stroke-dashoffset: 11000;
-    animation: dash 5s linear alternate;
-}
-
-@keyframes dash {
-    from {
-        stroke-dashoffset: 11000;
-    }
-
-    to {
-        stroke-dashoffset: 0;
-    }
-}
-
-.arrow-path-reverse {
-    stroke-dasharray: 11000;
-    stroke-dashoffset: 11000;
-    animation: dash 5s linear forwards;
-}
-
-@keyframes reversedash {
-    from {
-        stroke-dashoffset: 0;
-    }
-
-    to {
-        stroke-dashoffset: 11000;
-    }
-} */
-
-@keyframes line-animation {
-    0% {
-        stroke-dashoffset: 1;
-        animation-timing-function: cubic-bezier(0.420000, 0, 0.580000, 1)
-    }
-
-    40% {
-        stroke-dashoffset: 0
-    }
-
-    80% {
-        stroke-dashoffset: 0;
-        animation-timing-function: cubic-bezier(0.420000, 0, 0.580000, 1)
-    }
-
-    100% {
-        stroke-dashoffset: 1
-    }
 }
 
 .gapline {
@@ -348,170 +282,26 @@ ARROW CSS
     transform: rotate(0deg) !important;
 }
 
-.arrow {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.arrow-right {
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(-50%, -50%);
-    transform: rotate(-90deg);
-}
-
-.arrow-left {
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(-50%, -50%);
-    transform: rotate(90deg);
-}
-
-.arrow-up {
-    margin-left: auto;
-    margin-right: auto;
-    transform: translate(-50%, -50%);
-    transform: rotate(180deg);
-}
-
-.arrow span,
-.arrow-right span,
-.arrow-left span,
-.arrow-up span {
-    display: block;
-    width: 30px;
-    height: 30px;
-    border-bottom: 5px solid white;
-    border-right: 5px solid white;
-    transform: rotate(45deg);
-    margin: -10px;
-    animation: animate 2s infinite;
-}
-
-.arrow span:nth-child(2),
-.arrow-right span:nth-child(2),
-.arrow-left span:nth-child(2),
-.arrow-up span:nth-child(2) {
-    animation-delay: -0.2s;
-}
-
-.arrow span:nth-child(3),
-.arrow-right span:nth-child(3),
-.arrow-left span:nth-child(3),
-.arrow-up span:nth-child(3) {
-    animation-delay: -0.4s;
-}
-
-.arrow span:nth-child(4),
-.arrow-right span:nth-child(4),
-.arrow-left span:nth-child(4),
-.arrow-up span:nth-child(4) {
-    /* display: block;
-    width: 90px;
-    height: 90px;
-    animation: none !important; */
-    animation-delay: -0.6s;
-}
-
-@keyframes animate {
-    0% {
-        opacity: 0;
-        transform: rotate(45deg) translate(-20px, -20px);
-    }
-
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: rotate(45deg) translate(20px, 20px);
-    }
-}
-
-.double-arrow-svg-telephone {
-    width: 12.5vw;
-    rotate: 163deg;
-    margin-left: 10%;
-}
-
-.double-arrow-svg-ehealth {
-    width: 12.5vw;
-    rotate: 162deg;
-    margin-left: 10%;
-}
-
-.double-arrow-svg-pharmanet {
-    width: 12.5vw;
-    rotate: 195deg;
-}
-
-.double-arrow-svg-hospital {
-    width: 12.5vw;
-    rotate: 195deg;
-}
-
-.arrow-path-leftrightanimation {
-    animation: coming-in-left-right 10s normal forwards ease-in-out;
-}
-
-.arrow-path-rightleftanimation {
-    animation: coming-in-right-left 10s normal forwards ease-in-out;
-    /* animation-direction: alternate-reverse; */
-}
-
-@keyframes coming-in-left-right {
-    0% {
-        /* opacity: 0.5; */
-        transform: translateX(15%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-
-    /* 80% {
-        transform: translateX(10px);
-    }
-
-    100% {
-        transform: translateX(0);
-    } */
-
-}
-
-@keyframes coming-in-right-left {
-    0% {
-        /* opacity: 0.5; */
-        transform: translateX(0);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(15%);
-    }
-
-    /* 80% {
-        transform: translateX(-30px);
-    }
-
-    100% {
-        transform: translateX(300px);
-    } */
-
-}
-
-
 /* TEST */
 .indicator {
     position: relative;
-    width: 50px;
-    height: 50px;
-    transform: rotate(45deg);
+    width: 2vw;
+    height: 2vw;
     margin-left: auto;
     margin-right: auto;
 }
+.rotate-down{
+    transform: rotate(45deg);
+}
+.rotate-right {
+    transform: rotate(-45deg);
+}
+
+.rotate-left {
+    transform: rotate(135deg);
+}
+
+.rotate-top {transform: rotate(225deg);}
 
 .indicator span {
     position: absolute;
@@ -556,10 +346,6 @@ ARROW CSS
     left: 30px;
     animation-delay: 0.8s;
 }
-
-
-
-
 
 
 @keyframes indicatoranimate {
