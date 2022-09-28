@@ -78,12 +78,12 @@ export class HomeComponent implements OnInit {
     // }, 1000);
     setTimeout(() => {
       this.hideVideoAfterPlay = true;
-    }, 15000);
-    setTimeout(()=>{
-      this.createScene();
+         this.createScene();
       this.render();
-    },13000)
-
+    }, 15000);
+    // setTimeout(() => {
+   
+    // }, 13000);
   }
 
   public createScene(): void {
