@@ -222,7 +222,7 @@
 @media only screen and (min-width: 1400px) {
   .mainTitle {
     font-size: 48px;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
   }
 
   .title {
@@ -239,7 +239,7 @@
   }
 
   .solutions-text-div {
-    padding-top: 27.5%;
+    padding-top: 22.5%;
     width: 35%;
   }
 

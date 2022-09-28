@@ -94,7 +94,7 @@
     }
 
     to {
-        margin-left: 0%;
+        margin-left: 25%;
     }
 }
 
@@ -104,7 +104,7 @@
     }
 
     to {
-        margin-left: 50%;
+        margin-left: 25%;
     }
 }
 
@@ -234,13 +234,16 @@
         height: 100%;
     }
 }
-.support-form-title{
+
+.support-form-title {
     font-size: 2vw;
 }
-.support-form-subtitle{
+
+.support-form-subtitle {
     font-size: 1.5vw;
     margin-left: 1vw;
 }
-.iclinicSupport-div{
+
+.iclinicSupport-div {
     margin-bottom: 1rem;
 }

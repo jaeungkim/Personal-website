@@ -104,13 +104,16 @@
 .middle-bar {
   margin-top: #121212;
 }
-.btn-custom-book-demo{
+
+.btn-custom-book-demo {
   border: 1px solid #a11f74;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
-.btn-custom-book-demo:hover{
+
+.btn-custom-book-demo:hover {
   background-color: #a11f74;
 }
+
 /* State when the navbar is collapsed */
 .open {
   background-color: #fff;
