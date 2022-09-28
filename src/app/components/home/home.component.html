@@ -6,7 +6,7 @@
 </div>
 
 <!-- BACKGROUND VIDEO -->
-<video autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true" id="myVideo">
+<video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true" id="myVideo">
 	<source [src]="video" type="video/mp4">
 </video>
 
