@@ -57,9 +57,10 @@
     width: 45vw;
     border-radius: 10px;
     padding: 25px;
-    animation: lefttoright 2s linear 1 normal forwards;
-    margin-left: -100%;
-    animation-delay: 0s;
+    animation: lefttoright 3s linear 1 normal forwards;
+    /* margin-left: -100%; */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-form-text-div-card2 {
@@ -72,8 +73,9 @@
     width: 45vw;
     border-radius: 10px;
     padding: 25px;
-    animation: righttoleft 2s linear 1 normal forwards;
-    animation-delay: 2s
+    animation: righttoleft 3s linear 1 normal forwards;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .contact-form-text-div-card3 {
@@ -83,28 +85,74 @@
     width: 45vw;
     border-radius: 10px;
     padding: 25px;
-    animation: lefttoright 2s linear 1 normal forwards;
-    animation-delay: 3s;
-    margin-left: -100%;
+    animation: lefttoright 3s linear 1 normal forwards;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @keyframes lefttoright {
-    from {
-        margin-left: -100%;
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0) scaleX(3);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0) scaleX(1);
+    }
+
+    75% {
+        transform: translate3d(-10px, 0, 0) scaleX(0.98);
+    }
+
+    90% {
+        transform: translate3d(5px, 0, 0) scaleX(0.995);
     }
 
     to {
-        margin-left: 25%;
+        transform: translate3d(0, 0, 0);
     }
 }
 
 @keyframes righttoleft {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+
     from {
-        margin-left: 100%;
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0) scaleX(3);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0) scaleX(1);
+    }
+
+    75% {
+        transform: translate3d(10px, 0, 0) scaleX(0.98);
+    }
+
+    90% {
+        transform: translate3d(-5px, 0, 0) scaleX(0.995);
     }
 
     to {
-        margin-left: 25%;
+        transform: translate3d(0, 0, 0);
     }
 }
 
