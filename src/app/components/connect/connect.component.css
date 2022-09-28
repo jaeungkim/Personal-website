@@ -1,4 +1,6 @@
 .contact-form-section {
+    position: relative;
+    /* margin-top: 50vh; */
     max-width: 900px;
     color: white;
     border: 1px solid #616161;
@@ -6,20 +8,106 @@
     background: black;
     box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
     padding: 50px;
+    width: 100%;
 }
-
+.support-form-section{
+    position: relative;
+    color: white;
+    border: 1px solid #616161;
+    border-radius: 10px;
+    background: black;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
 .contact-form {
     max-width: 830px;
     overflow-x: hidden;
     width: 100%;
 }
 
-.contact-form-title {
-    font-size: 36px;
+.contact-form-text-div {
+    margin-bottom: 25%;
+    position: relative;
+    font-size: 27px;
 }
 
-.contact-form-description {
-    font-size: 18px;
+.contact-form-text-div-title {
+    text-align: center;
+    color: white;
+    margin: 0;
+    margin-top: 15%;
+    margin-bottom: 10%;
+}
+
+.contact-form-text-div-subtitle {
+    margin: 0;
+    font-size: 2vw;
+}
+
+.contact-form-text-div-card {
+    margin-top: 25px;
+    background: black;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    width: 45vw;
+    border-radius: 10px;
+    padding: 25px;
+    animation: lefttoright 2s linear 1 normal forwards;
+    margin-left: -100%;
+    animation-delay: 0s;
+}
+
+.contact-form-text-div-card2 {
+    /* position:absolute; */
+    margin-left: -100%;
+    margin-top: 25px;
+    /* right: 0; */
+    background: black;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    width: 45vw;
+    border-radius: 10px;
+    padding: 25px;
+    animation: righttoleft 2s linear 1 normal forwards;
+    animation-delay: 2s
+}
+
+.contact-form-text-div-card3 {
+    margin-top: 25px;
+    background: black;
+    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
+    width: 45vw;
+    border-radius: 10px;
+    padding: 25px;
+    animation: lefttoright 2s linear 1 normal forwards;
+    animation-delay: 3s;
+    margin-left: -100%;
+}
+
+@keyframes lefttoright {
+    from {
+        margin-left: -100%;
+    }
+
+    to {
+        margin-left: 0%;
+    }
+}
+
+@keyframes righttoleft {
+    from {
+        margin-left: 100%;
+    }
+
+    to {
+        margin-left: 50%;
+    }
+}
+
+.contact-form-title {
+    font-size: 2vw;
 }
 
 .contactform-individual-div {
@@ -28,9 +116,9 @@
 }
 
 .contactform-label {
+    font-size: 1.5vw;
     margin-bottom: 5px;
 }
-
 .contactform-input-box {
     color: white;
     background: #1a1a1a;
@@ -43,17 +131,18 @@
     padding: 12px;
     margin-bottom: 20px;
 }
-
 .invalid-form {
-    border: red 2px solid;
+    border: 2px solid rgba(105, 180, 250, 1) !important;
+    outline: none;
 }
-.validation-text{
-    color: red;
+.validation-text {
+    color: rgba(105, 180, 250, 1);
     margin: 0;
     padding: 0;
     margin-top: -10px;
     margin-bottom: 10px;
 }
+
 .contactform-input-box:focus-visible {
     border: 2px solid rgba(105, 180, 250, 1) !important;
     outline: none;
@@ -80,7 +169,8 @@
     width: 25%;
     color: white;
 }
-.submit-button{
+
+.submit-button {
     background: #1a1a1a;
     border: 1px solid #3a3a3a;
     color: #616161;
@@ -97,8 +187,9 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    cursor:not-allowed;
+    cursor: not-allowed;
 }
+
 .submit-button:not([disabled]) {
     background: #1a1a1a;
     border: 1px solid #3a3a3a;
@@ -121,4 +212,18 @@
 
 .submit-button:hover:not([disabled]) {
     background-color: black;
+}
+
+@media only screen and (min-width: 768px) {
+    .sections-div{
+        display: flex;
+        gap: 5%;
+    }
+    .contact-form-section{
+        width: 55%;
+    }
+    .support-form-section{
+        width: 35%;
+        height: 100%;
+    }
 }

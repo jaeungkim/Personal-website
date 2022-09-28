@@ -1,10 +1,18 @@
 <div>
-  <p class="title"><span class="bg-color">aiClinic</span></p>
-  <p class="subtitle">
-    <span class="bg-color">Healthcare Powered By Data</span>
-  </p>
+	<p class="title"><span class="bg-color">aiClinic</span></p>
+	<p class="subtitle">
+		<span class="bg-color">Healthcare Powered By Data</span>
+	</p>
 </div>
-<canvas #rendererCanvas id="renderCanvas"></canvas>
+
+<!-- BACKGROUND VIDEO -->
+<video *ngIf="!hideVideoAfterPlay" autoplay muted id="myVideo">
+	<source src="./assets/images/home/videoBackground.mp4" type="video/mp4">
+</video>
+
+<canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
+
+
 
 <!-- <div class="cookie-container">
 	<p class="cookie-text">

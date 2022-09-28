@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import Stats from 'stats.js';
+// import Stats from 'stats.js';
 
 @Component({
   selector: 'app-home',
@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   // private galaxy: THREE.Group;
+  hideVideoAfterPlay = false;
+  displayAfterVideo = false;
   private points: any[] = [];
   private colors: any[] = [];
   private sizes: any[] = [];
@@ -41,7 +43,7 @@ export class HomeComponent implements OnInit {
   };
   raycaster: any = new THREE.Raycaster();
   mouse: any = new THREE.Vector2();
-  stats = new Stats();
+  // stats = new Stats();
 
   // loadingScreen = document.getElementById('loading-screen') as HTMLElement;
 
@@ -71,21 +73,27 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   public ngOnInit(): void {
-    // this.stats.showPanel(1); 
-    // document.body.appendChild(this.stats.dom);
-    // console.log(this.stats)
-    this.createScene(this.rendererCanvas);
-    this.render();
+    // setTimeout(() => {
+    //   this.hideVideoAfterPlay = true;
+    // }, 1000);
+    setTimeout(() => {
+      this.hideVideoAfterPlay = true;
+    }, 15000);
+    setTimeout(()=>{
+      this.createScene();
+      this.render();
+    },13000)
+
   }
 
-  public createScene(canvas: ElementRef<HTMLCanvasElement>): void {
+  public createScene(): void {
     let pixelRatio = window.devicePixelRatio;
     let AA = true;
     if (pixelRatio > 1) {
       AA = false;
     }
     this.renderer = new THREE.WebGLRenderer({
-      canvas: canvas.nativeElement,
+      canvas: this.rendererCanvas.nativeElement,
       antialias: AA,
       powerPreference: 'high-performance',
     });

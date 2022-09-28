@@ -1,5 +1,6 @@
 .title {
     position: absolute;
+    z-index: 1;
     margin: 0;
     font-size: 60px;
     display: flex;
@@ -22,6 +23,7 @@
     position: absolute;
     margin: 0;
     font-size: 30px;
+    z-index: 1;
     display: flex;
     align-items: center;
     color: white;
@@ -31,7 +33,6 @@
     width: 100%;
     text-align: center;
 }
-
 #renderCanvas {
     width: 100%;
     display: block;
@@ -187,3 +188,20 @@
     background: var(--button-background-hover);
     color: var(--white-text);
 }
+
+
+#myVideo {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/* @keyframes fadeOut {
+    from {opacity: 1;}
+    to {opacity: 0;}
+} */
