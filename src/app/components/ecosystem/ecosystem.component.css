@@ -290,9 +290,57 @@ ARROW CSS
     margin-left: auto;
     margin-right: auto;
 }
-.rotate-down{
+
+.smallindicator {
+    position: relative;
+    width: 1.5vw;
+    height: 1.5vw;
+    margin: auto auto;
+}
+
+.smallindicator span:nth-child(1) {
+    top: -25px;
+    left: -25px;
+    animation-delay: 0.2s;
+    transform: rotate(180deg);
+}
+
+.smallindicator span:nth-child(2) {
+    top: -15px;
+    left: -15px;
+    animation-delay: 0.4s;
+    transform: rotate(180deg);
+}
+
+.smallindicator span:nth-child(3) {
+    top: -5px;
+    left: -5px;
+    animation-delay: 0.6s;
+    transform: rotate(180deg);
+}
+
+.smallindicator span:nth-child(4) {
+    top: 5px;
+    left: 5px;
+    animation-delay: 0.8s;
+}
+
+.smallindicator span:nth-child(5) {
+    top: 15px;
+    left: 15px;
+    animation-delay: 1.0s;
+}
+
+.smallindicator span:nth-child(6) {
+    top: 25px;
+    left: 25px;
+    animation-delay: 1.2s;
+}
+
+.rotate-down {
     transform: rotate(45deg);
 }
+
 .rotate-right {
     transform: rotate(-45deg);
 }
@@ -301,7 +349,23 @@ ARROW CSS
     transform: rotate(135deg);
 }
 
-.rotate-top {transform: rotate(225deg);}
+.rotate-top {
+    transform: rotate(225deg);
+}
+
+.rotate-righttop {
+    transform: rotate(90deg);
+}
+
+.rotate-leftbottom {
+    transform: rotate(-60deg);
+    margin-bottom: 50px;
+}
+
+.rotate-rightbottom {
+    transform: rotate(-30deg);
+    margin-bottom: 50px;
+}
 
 .indicator span {
     position: absolute;
@@ -316,6 +380,25 @@ ARROW CSS
     animation: indicatoranimate 1s linear infinite;
 }
 
+.smallindicator span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    animation: doubleindicatoranimate 1s linear infinite;
+}
+
+.double-indicator-div {
+    display: flex;
+    width: 10vw;
+    height: 10vw;
+}
+
 .indicator span:nth-child(1) {
     top: -30px;
     left: -30px;
@@ -327,7 +410,6 @@ ARROW CSS
     left: -15px;
     animation-delay: 0.2s;
 }
-
 
 .indicator span:nth-child(3) {
     top: 0;
@@ -363,4 +445,17 @@ ARROW CSS
     100% {
         border-color: #ffd64a;
     }
+}
+
+@keyframes doubleindicatoranimate {
+    50% {
+        border-color: #fff;
+    }
+
+    0%,
+    100% {
+        border-color: #ffd64a;
+    }
+
+
 }
