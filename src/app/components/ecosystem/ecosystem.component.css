@@ -55,16 +55,22 @@ PATIENT DOCTOR DIV CSS
 .doctor-img {
     width: 10vw;
 }
-.doctor2-img{width:5vw;    height: 50%;
+
+.doctor2-img {
+    width: 5vw;
+    height: 50%;
     margin-top: auto;
-    margin-bottom: auto;}
+    margin-bottom: auto;
+}
+
 .doctor-patient-div {
     display: flex;
     justify-content: center;
     margin-top: -150px;
     margin-bottom: 100px;
 }
-.teleplan2-img{
+
+.teleplan2-img {
     width: 10vw;
     margin-left: 30px;
     margin-right: 30px;
@@ -498,72 +504,77 @@ ARROW CSS
 
 
 /* TEST */
-.indicator{
-    position:relative;
-    width:50px;
-    height:50px;
-    transform:rotate(45deg);
+.indicator {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    transform: rotate(45deg);
     margin-left: auto;
     margin-right: auto;
 }
-.indicator span{
-      position:absolute;
-      left:0;
-      top:0;
-      width:100%;
-      height:100%;
-      box-sizing:border-box;
-      border:none;
-      border-bottom:3px solid #fff;
-      border-right:3px solid #fff;
-      animation:indicatoranimate 1s linear infinite;
-}
-.indicator span:nth-child(1){
-    top:-30px;
-    left:-30px;
-    animation-delay:0s;
-}
-   
-.indicator span:nth-child(2){
-    top:-15px;
-    left:-15px;
-    animation-delay:0.2s;
+
+.indicator span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 3px solid #fff;
+    border-right: 3px solid #fff;
+    animation: indicatoranimate 1s linear infinite;
 }
 
-   
-.indicator span:nth-child(3){
-    top:0;
-    left:0;
-    animation-delay:0.4s;
+.indicator span:nth-child(1) {
+    top: -30px;
+    left: -30px;
+    animation-delay: 0s;
 }
 
-.indicator span:nth-child(4){
-    top:15px;
-    left:15px;
-    animation-delay:0.6s;
-}
-
-.indicator span:nth-child(5){
-    top:30px;
-    left:30px;
-    animation-delay:0.8s;
+.indicator span:nth-child(2) {
+    top: -15px;
+    left: -15px;
+    animation-delay: 0.2s;
 }
 
 
-     
-    
-  
+.indicator span:nth-child(3) {
+    top: 0;
+    left: 0;
+    animation-delay: 0.4s;
+}
 
-@keyframes indicatoranimate{
-  0%{
-    border-color:#fff;
-    transform:translate(0,0);
-  }
-   20%{
-    border-color:#fff;
-     transform:translate(15px,15px);
-  }
-   20.1%,100%{
-    border-color:#ffd64a;
-  }
+.indicator span:nth-child(4) {
+    top: 15px;
+    left: 15px;
+    animation-delay: 0.6s;
+}
+
+.indicator span:nth-child(5) {
+    top: 30px;
+    left: 30px;
+    animation-delay: 0.8s;
+}
+
+
+
+
+
+
+@keyframes indicatoranimate {
+    0% {
+        border-color: #fff;
+        transform: translate(0, 0);
+    }
+
+    20% {
+        border-color: #fff;
+        transform: translate(15px, 15px);
+    }
+
+    20.1%,
+    100% {
+        border-color: #ffd64a;
+    }
 }
