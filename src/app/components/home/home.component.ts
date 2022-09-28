@@ -76,13 +76,16 @@ export class HomeComponent implements OnInit {
     // setTimeout(() => {
     //   this.hideVideoAfterPlay = true;
     // }, 1000);
-    setTimeout(() => {
-      this.hideVideoAfterPlay = true;
-         this.createScene();
-      this.render();
-    }, 15000);
+    if(!this.hideVideoAfterPlay){
+      setTimeout(() => {
+        this.hideVideoAfterPlay = true;
+        this.createScene();
+        this.render();
+      }, 12000);
+    }
+
     // setTimeout(() => {
-   
+
     // }, 13000);
   }
 
