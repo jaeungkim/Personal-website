@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   // private galaxy: THREE.Group;
+  video = './assets/images/home/videoBackground.mp4';
   hideVideoAfterPlay = false;
   displayAfterVideo = false;
   private points: any[] = [];
@@ -73,20 +74,11 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   public ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.hideVideoAfterPlay = true;
-    // }, 1000);
-    if(!this.hideVideoAfterPlay){
       setTimeout(() => {
         this.hideVideoAfterPlay = true;
         this.createScene();
         this.render();
       }, 12000);
-    }
-
-    // setTimeout(() => {
-
-    // }, 13000);
   }
 
   public createScene(): void {
