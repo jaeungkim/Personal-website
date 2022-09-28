@@ -10,7 +10,8 @@
     padding: 50px;
     width: 100%;
 }
-.support-form-section{
+
+.support-form-section {
     position: relative;
     color: white;
     border: 1px solid #616161;
@@ -23,6 +24,7 @@
     padding-bottom: 50px;
     width: 100%;
 }
+
 .contact-form {
     max-width: 830px;
     overflow-x: hidden;
@@ -119,6 +121,7 @@
     font-size: 1.5vw;
     margin-bottom: 5px;
 }
+
 .contactform-input-box {
     color: white;
     background: #1a1a1a;
@@ -131,10 +134,12 @@
     padding: 12px;
     margin-bottom: 20px;
 }
+
 .invalid-form {
     border: 2px solid rgba(105, 180, 250, 1) !important;
     outline: none;
 }
+
 .validation-text {
     color: rgba(105, 180, 250, 1);
     margin: 0;
@@ -215,15 +220,27 @@
 }
 
 @media only screen and (min-width: 768px) {
-    .sections-div{
+    .sections-div {
         display: flex;
         gap: 5%;
     }
-    .contact-form-section{
+
+    .contact-form-section {
         width: 55%;
     }
-    .support-form-section{
+
+    .support-form-section {
         width: 35%;
         height: 100%;
     }
+}
+.support-form-title{
+    font-size: 2vw;
+}
+.support-form-subtitle{
+    font-size: 1.5vw;
+    margin-left: 1vw;
+}
+.iclinicSupport-div{
+    margin-bottom: 1rem;
 }

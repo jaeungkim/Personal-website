@@ -8,14 +8,15 @@ body {
     background-color: #151217;
 }
 
-body {
+body, p{
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
 .custom-container{
     max-width: 1300px;
     margin-top: 100px;
-    width: 90%;
+    width: 90%; 
     margin-left: auto;
     margin-right: auto;
 }
