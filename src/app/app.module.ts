@@ -64,9 +64,10 @@ import { LogoutComponent } from './components/logout/logout.component';
     HttpClientModule,
     MatExpansionModule,
   ],
-  providers: [ AuthService, AuthGuard,
-    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }  
-  ],
+  // providers: [ AuthService, AuthGuard,
+  //   { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }  
+  // ],
+  providers:[],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

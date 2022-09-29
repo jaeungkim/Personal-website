@@ -19,35 +19,49 @@ import { LogoutComponent } from './components/logout/logout.component';
 import { AuthGuard } from './auth.guard';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
-  { path: 'login', component: LoginComponent },
-  { path: 'logout', component: LogoutComponent },
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
-  { path: 'aboutus', component: AboutusComponent, canActivate: [AuthGuard] },
-  {
-    path: 'solutions',
-    component: SolutionsComponent,
-    canActivate: [AuthGuard],
-  },
-  {
-    path: 'ecosystem',
-    component: EcosystemComponent,
-    canActivate: [AuthGuard],
-  },
-  { path: 'support', component: SupportComponent, canActivate: [AuthGuard] },
-  {
-    path: 'resources',
-    component: ResourcesComponent,
-    canActivate: [AuthGuard],
-  },
-  { path: 'connect', component: ConnectComponent, canActivate: [AuthGuard] },
-  { path: 'privacy', component: PrivacyComponent, canActivate: [AuthGuard] },
-  {
-    path: 'termsofservice',
-    component: TermsComponent,
-    canActivate: [AuthGuard],
-  },
-  { path: '**', component: NotFoundComponent, canActivate: [AuthGuard] },
+
+  // REGULAR
+  { path: '', redirectTo: '', pathMatch: 'full', component: HomeComponent },
+  { path: 'aboutus', component: AboutusComponent },
+  { path: 'solutions', component: SolutionsComponent },
+  { path: 'ecosystem', component: EcosystemComponent },
+  { path: 'support', component: SupportComponent },
+  { path: 'resources', component: ResourcesComponent },
+  { path: 'connect', component: ConnectComponent },
+  { path: 'privacy', component: PrivacyComponent },
+  { path: 'termsofservice', component: TermsComponent },
+  { path: '**', component: NotFoundComponent },
+  // REGULAR
+
+  // { path: '', redirectTo: '/login', pathMatch: 'full' },
+  // { path: 'login', component: LoginComponent },
+  // { path: 'logout', component: LogoutComponent },
+  // { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
+  // { path: 'aboutus', component: AboutusComponent, canActivate: [AuthGuard] },
+  // {
+  //   path: 'solutions',
+  //   component: SolutionsComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // {
+  //   path: 'ecosystem',
+  //   component: EcosystemComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // { path: 'support', component: SupportComponent, canActivate: [AuthGuard] },
+  // {
+  //   path: 'resources',
+  //   component: ResourcesComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // { path: 'connect', component: ConnectComponent, canActivate: [AuthGuard] },
+  // { path: 'privacy', component: PrivacyComponent, canActivate: [AuthGuard] },
+  // {
+  //   path: 'termsofservice',
+  //   component: TermsComponent,
+  //   canActivate: [AuthGuard],
+  // },
+  // { path: '**', component: NotFoundComponent, canActivate: [AuthGuard] },
 ];
 
 @NgModule({
