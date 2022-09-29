@@ -38,22 +38,22 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5vw;
+    /* gap: 5vw; */
 }
 
 .doctor-div {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 5vw;
+    /* gap: 5vw; */
 }
 
 .patient-img {
-    width: 10vw;
+    width: 30%;
 }
 
 .doctor-img {
-    width: 10vw;
+    width: 30%;
 }
 
 .doctor2-img {
@@ -287,6 +287,8 @@ ARROW CSS
     position: relative;
     width: 2vw;
     height: 2vw;
+    max-width: 40px;
+    max-height: 40px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -295,6 +297,10 @@ ARROW CSS
     position: relative;
     width: 1.5vw;
     height: 1.5vw;
+    min-width: 15px;
+    min-width: 15px;
+    max-height: 30px;
+    max-height: 30px;
     margin: auto auto;
 }
 
@@ -369,12 +375,12 @@ ARROW CSS
 
 .rotate-leftbottom {
     transform: rotate(-60deg);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .rotate-rightbottom {
     transform: rotate(-30deg);
-    margin-bottom: 50px;
+    /* margin-bottom: 50px; */
 }
 
 .indicator span {
@@ -410,14 +416,14 @@ ARROW CSS
 }
 
 .indicator span:nth-child(1) {
-    top: -30px;
-    left: -30px;
+    top: -70%;
+    left: -70%;
     animation-delay: 0s;
 }
 
 .indicator span:nth-child(2) {
-    top: -15px;
-    left: -15px;
+    top: -35%;
+    left: -35%;
     animation-delay: 0.2s;
 }
 
@@ -428,14 +434,14 @@ ARROW CSS
 }
 
 .indicator span:nth-child(4) {
-    top: 15px;
-    left: 15px;
+    top: 35%;
+    left: 35%;
     animation-delay: 0.6s;
 }
 
 .indicator span:nth-child(5) {
-    top: 30px;
-    left: 30px;
+    top: 70%;
+    left: 70%;
     animation-delay: 0.8s;
 }
 
