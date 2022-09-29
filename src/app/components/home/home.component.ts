@@ -1,5 +1,6 @@
 import * as THREE from 'three';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -63,21 +64,22 @@ export class HomeComponent implements OnInit {
     if ( gl_FragColor.a < alphaTest ) discard;
   }
   `;
-  constructor() {}
+  constructor(private router: Router) {}
 
   public ngOnInit(): void {
     setTimeout(() => {
       this.hideVideoAfterPlay = true;
-    }, 14000);
+    }, 15000);
+
     setTimeout(() => {
-      this.hideVideoAfterPlay = true;
-      this.createScene();
-      this.render();
-    }, 8000);
+      if (this.router.url === '/') {
+        this.createScene();
+        this.render();
+      }
+    }, 13000);
   }
 
   public createScene(): void {
-    let pixelRatio = window.devicePixelRatio;
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.rendererCanvas.nativeElement,
       antialias: true,
@@ -92,7 +94,7 @@ export class HomeComponent implements OnInit {
       1000
     );
     this.camera.position.set(0, 0, 375);
-    this.camera.lookAt(0, 0, 0);
+    // this.camera.lookAt(0, 0, 0);
 
     this.createStrokes();
 
@@ -111,7 +113,7 @@ export class HomeComponent implements OnInit {
     //DOT MATERIAL DECLARATIONS
     this.dots = new THREE.BufferGeometry();
 
-    for (var i = 0; i < 3000; i++) {
+    for (var i = 0; i < 2000; i++) {
       let pos: posObject = {
         x: Math.random(),
         y: Math.random(),
