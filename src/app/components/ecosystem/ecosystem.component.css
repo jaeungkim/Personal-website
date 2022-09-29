@@ -281,16 +281,29 @@ ARROW CSS
     animation: gaplineanimate 3s ease infinite;
     transform: rotate(0deg) !important;
 }
+
 @keyframes gaplineanimate {
-    0%{background-position:0% 51%; border-color: #ffd64a}
-    50%{background-position:100% 50% ; border-color: #ffffff}
-    100%{background-position:0% 51%; border-color: #ffd64a}
+    0% {
+        background-position: 0% 51%;
+        border-color: #ffd64a
+    }
+
+    50% {
+        background-position: 100% 50%;
+        border-color: #ffffff
+    }
+
+    100% {
+        background-position: 0% 51%;
+        border-color: #ffd64a
+    }
 }
+
 /* TEST */
 .indicator {
     position: relative;
-    width: 1.75vw;
-    height: 1.75vw;
+    width: 1.25vw;
+    height: 1.25vw;
     max-width: 40px;
     max-height: 40px;
     margin-left: auto;
@@ -299,8 +312,8 @@ ARROW CSS
 
 .smallindicator {
     position: relative;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.25vw;
+    height: 1.25vw;
     min-width: 15px;
     min-width: 15px;
     max-height: 30px;
