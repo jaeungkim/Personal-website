@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 // import { DomSanitizer } from '@angular/platform-browser';
 @Component({
@@ -8,7 +8,8 @@ import { Router } from '@angular/router';
 })
 export class NavbarComponent implements OnInit {
   // clicked: boolean = false;
-
+  @ViewChild('logoDiv', { static: true })
+  logoDiv: ElementRef<HTMLDivElement>;
   //demo
   bookDemoId: string = 'bookDemo';
   bookDemoTitle: string = 'Book a Demo';
@@ -21,4 +22,7 @@ export class NavbarComponent implements OnInit {
   // changeBackground() {
   //   this.clicked = !this.clicked;
   // }
+  closeifopen(){
+    console.log(this.logoDiv)
+  }
 }

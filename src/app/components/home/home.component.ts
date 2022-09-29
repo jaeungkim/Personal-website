@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-// import Stats from 'stats.js';
 
 @Component({
   selector: 'app-home',
@@ -13,8 +12,6 @@ export class HomeComponent implements OnInit {
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
-  // private galaxy: THREE.Group;
-  // video = 'videoBackground.mp4';
   hideVideoAfterPlay = false;
   displayAfterVideo = false;
   private points: any[] = [];
@@ -44,11 +41,6 @@ export class HomeComponent implements OnInit {
   };
   raycaster: any = new THREE.Raycaster();
   mouse: any = new THREE.Vector2();
-  // stats = new Stats();
-
-  // loadingScreen = document.getElementById('loading-screen') as HTMLElement;
-
-  //SHADER
   vertexShader = `
   attribute float size;
   attribute vec3 customColor;
@@ -74,47 +66,33 @@ export class HomeComponent implements OnInit {
   constructor() {}
 
   public ngOnInit(): void {
-      setTimeout(() => {
-        this.hideVideoAfterPlay = true;
-        // this.createScene();
-        // this.render();
-      }, 14000);
-      setTimeout(() => {
-        // this.hideVideoAfterPlay = true;
-        this.createScene();
-        this.render();
-      }, 8000);
+    setTimeout(() => {
+      this.hideVideoAfterPlay = true;
+    }, 14000);
+    setTimeout(() => {
+      this.hideVideoAfterPlay = true;
+      this.createScene();
+      this.render();
+    }, 8000);
   }
 
   public createScene(): void {
     let pixelRatio = window.devicePixelRatio;
-    let AA = true;
-    if (pixelRatio > 1) {
-      AA = false;
-    }
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.rendererCanvas.nativeElement,
-      antialias: AA,
-      powerPreference: 'high-performance',
+      antialias: true,
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(window.devicePixelRatio);
-    // this.renderer.setClearColor(new THREE.Color('#121212'));
-
-    // create the scene
     this.scene = new THREE.Scene();
-    // this.galaxy = new THREE.Group();
-    // this.scene.add(this.galaxy);
     this.camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
       0.1,
       1000
     );
-    // const amount = parseInt( window.location.search.slice( 1 ) ) || 10;
     this.camera.position.set(0, 0, 375);
     this.camera.lookAt(0, 0, 0);
-    // this.scene.add(this.camera);
 
     this.createStrokes();
 
@@ -176,12 +154,8 @@ export class HomeComponent implements OnInit {
         this.color.setHex(0x322696);
       }
       this.color.toArray(this.colors, i * 3);
-
-      //SIZE
       this.sizes[i] = this.PARTICLE_SIZE;
     }
-
-    //CREATING SEGMENTS
     this.segments = new THREE.BufferGeometry();
     this.strokesMaterial = new THREE.LineBasicMaterial({
       color: '#f7eda4',
@@ -269,7 +243,6 @@ export class HomeComponent implements OnInit {
     requestAnimationFrame(() => this.render());
 
     this.renderer.render(this.scene, this.camera);
-    // this.stats.end();
   }
 
   public onMouseMove(event) {
