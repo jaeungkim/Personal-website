@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   // private galaxy: THREE.Group;
-  video = './assets/images/home/videoBackground.mp4';
+  video = '../../assets/images/home/videoBackground.mp4';
   hideVideoAfterPlay = false;
   displayAfterVideo = false;
   private points: any[] = [];
