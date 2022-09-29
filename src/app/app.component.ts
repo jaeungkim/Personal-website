@@ -35,4 +35,8 @@ export class AppComponent {
     return true;
   }
 
+  //REACAPTCHA
+  resolved(captchaResponse: string) {
+    console.log(`Resolved captcha with response: ${captchaResponse}`);
+  }
 }

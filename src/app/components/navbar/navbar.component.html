@@ -1,4 +1,4 @@
-<nav class="navbar navbar-custom bg-transparent fixed-top" [ngClass]="clicked ? 'open' : 'closed'">
+<nav class="navbar navbar-custom bg-transparent fixed-top">
   <div class="w-100 d-flex bd-highlight justify-content-between">
     <div class="bd-highlight my-auto">
       <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url !== '/'">
@@ -26,16 +26,15 @@
         <mat-icon class="text-light language-icon" aria-hidden="false">language</mat-icon>
       </div>
       <div class="p-2 mb-1 bd-highlight">
-        <button class="navbar-toggler collapsed align-middle" (click)="changeBackground()" type="button"
-          data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="toggler-icon-home top-bar-home" *ngIf="router.url === ''"></span>
-          <span class="toggler-icon-home middle-bar-home" *ngIf="router.url === ''"></span>
-          <span class="toggler-icon-home bottom-bar-home" *ngIf="router.url === ''"></span>
+        <button class="navbar-toggler collapsed align-middle" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-icon-home top-bar-home" *ngIf="router.url === '/'"></span>
+          <span class="toggler-icon-home middle-bar-home" *ngIf="router.url === '/'"></span>
+          <span class="toggler-icon-home bottom-bar-home" *ngIf="router.url === '/'"></span>
 
-          <span class="toggler-icon top-bar" *ngIf="router.url !== ''"></span>
-          <span class="toggler-icon middle-bar" *ngIf="router.url !== ''"></span>
-          <span class="toggler-icon bottom-bar" *ngIf="router.url !== ''"></span>
+          <span class="toggler-icon top-bar" *ngIf="router.url !== '/'"></span>
+          <span class="toggler-icon middle-bar" *ngIf="router.url !== '/'"></span>
+          <span class="toggler-icon bottom-bar" *ngIf="router.url !== '/'"></span>
         </button>
       </div>
     </div>
@@ -44,17 +43,17 @@
     <ul class="navbar-nav navbar-inner-custom">
       <li class="nav-item">
         <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
-          routerLink="/aboutus">About Us</a>
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/aboutus">About
+          Us</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
           routerLink="/solutions">Solutions</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
           routerLink="/ecosystem">Ecosystem</a>
       </li>
       <!-- <li class="nav-item">
@@ -69,14 +68,13 @@
       </li> -->
       <li class="nav-item">
         <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
-          routerLink="/connect">Connect With Us</a>
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Connect
+          With Us</a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
-          routerLink="/connect">Login</a>
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Login</a>
       </li>
     </ul>
   </div>

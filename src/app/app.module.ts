@@ -2,8 +2,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -11,8 +9,11 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { NgChartsModule } from 'ng2-charts';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha";
 
 //Components
+import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
@@ -63,9 +64,13 @@ import { LogoutComponent } from './components/logout/logout.component';
     NgChartsModule,
     HttpClientModule,
     MatExpansionModule,
+    RecaptchaModule,
+    RecaptchaFormsModule,
+
   ],
   providers: [ AuthService, AuthGuard,
-    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }  
+    { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }
+
   ],
   // providers:[],
   bootstrap: [AppComponent],

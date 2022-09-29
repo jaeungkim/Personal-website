@@ -233,7 +233,7 @@ ARROW CSS
 
 .big-down-arrow:before {
     content: "";
-    background: white;
+    background: #ffd64a;
     width: 6px;
     clip-path: polygon(0 10px, calc(100% - 15px) 10px, calc(100% - 15px) 0, 100% 50%, calc(100% - 15px) 100%, calc(100% - 15px) calc(100% - 10px), 0 calc(100% - 10px));
     animation: downarrow 3s infinite linear normal;
@@ -278,15 +278,19 @@ ARROW CSS
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 50px;
-    animation: animate 2s infinite;
+    animation: gaplineanimate 3s ease infinite;
     transform: rotate(0deg) !important;
 }
-
+@keyframes gaplineanimate {
+    0%{background-position:0% 51%; border-color: #ffd64a}
+    50%{background-position:100% 50% ; border-color: #ffffff}
+    100%{background-position:0% 51%; border-color: #ffd64a}
+}
 /* TEST */
 .indicator {
     position: relative;
-    width: 2vw;
-    height: 2vw;
+    width: 1.75vw;
+    height: 1.75vw;
     max-width: 40px;
     max-height: 40px;
     margin-left: auto;

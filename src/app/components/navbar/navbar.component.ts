@@ -7,9 +7,8 @@ import { Router } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent implements OnInit {
-  clicked: boolean = false;
+  // clicked: boolean = false;
 
-  
   //demo
   bookDemoId: string = 'bookDemo';
   bookDemoTitle: string = 'Book a Demo';
@@ -19,7 +18,7 @@ export class NavbarComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  changeBackground() {
-    this.clicked = !this.clicked;
-  }
+  // changeBackground() {
+  //   this.clicked = !this.clicked;
+  // }
 }

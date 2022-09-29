@@ -58,7 +58,6 @@
   position: absolute;
   height: 3px;
   width: 100%;
-  background: white;
   border-radius: 1px;
   opacity: 1;
   left: 0;
@@ -115,10 +114,10 @@
 }
 
 /* State when the navbar is collapsed */
-.open {
+/* .open {
   background-color: #fff;
   transition: 0.5s ease-in-out;
-}
+} */
 
 .navbar-toggler.collapsed .top-bar {
   position: absolute;
@@ -133,6 +132,24 @@
 }
 
 .navbar-toggler.collapsed .bottom-bar {
+  position: absolute;
+  top: 20px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .top-bar-home {
+  position: absolute;
+  top: 0px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .middle-bar-home {
+  position: absolute;
+  top: 10px;
+  transform: rotate(0deg);
+}
+
+.navbar-toggler.collapsed .bottom-bar-home {
   position: absolute;
   top: 20px;
   transform: rotate(0deg);
