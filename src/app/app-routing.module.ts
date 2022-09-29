@@ -33,10 +33,9 @@ const routes: Routes = [
   // { path: '**', component: NotFoundComponent },
   // REGULAR
 
-  { path: '', redirectTo: '/login', pathMatch: 'full' },
+  { path: '', redirectTo: '', pathMatch: 'full',component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'login', component: LoginComponent },
   { path: 'logout', component: LogoutComponent },
-  { path: 'home', component: HomeComponent, canActivate: [AuthGuard] },
   { path: 'aboutus', component: AboutusComponent, canActivate: [AuthGuard] },
   {
     path: 'solutions',

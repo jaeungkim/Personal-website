@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     ) {
       localStorage.setItem('token', 'secretToken');
       localStorage.setItem('is_admin', 'true');
-      this.router.navigate(['/home']);
+      this.router.navigate(['/']);
     } else {
       alert("wrong credentials");
     }
