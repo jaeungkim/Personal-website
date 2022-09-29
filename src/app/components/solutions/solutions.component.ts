@@ -813,7 +813,6 @@ export class SolutionsComponent implements OnInit {
     } else {
       this.desktop = true;
     }
-    console.log(this.mobile, this.tablet, this.desktop);
   }
 
   chartHovered(event: any): void {
