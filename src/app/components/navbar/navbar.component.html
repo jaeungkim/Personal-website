@@ -1,13 +1,13 @@
 <nav class="navbar navbar-custom bg-transparent fixed-top" [ngClass]="clicked ? 'open' : 'closed'">
   <div class="w-100 d-flex bd-highlight justify-content-between">
     <div class="bd-highlight my-auto">
-      <div class="aiclinicLogoDiv" role="button" routerLink="/home" *ngIf="router.url !== '/home'">
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url !== '/'">
         <a class="navbar-brand text-light">
           <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
         </a>
         <p class="iclinictext text-light">iClinic</p>
       </div>
-      <div class="aiclinicLogoDiv" role="button" routerLink="/home" *ngIf="router.url === '/home'">
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url === '/'">
         <a class="navbar-brand text-light">
           <!-- <img src="./assets/images/aboutus/aiClinic-test.png" alt=" " class="aiclinicLogo" /> -->
           <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
@@ -29,13 +29,13 @@
         <button class="navbar-toggler collapsed align-middle" (click)="changeBackground()" type="button"
           data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="toggler-icon-home top-bar" *ngIf="router.url === '/home'"></span>
-          <span class="toggler-icon-home middle-bar" *ngIf="router.url === '/home'"></span>
-          <span class="toggler-icon-home bottom-bar" *ngIf="router.url === '/home'"></span>
+          <span class="toggler-icon-home top-bar" *ngIf="router.url === '/'"></span>
+          <span class="toggler-icon-home middle-bar" *ngIf="router.url === '/'"></span>
+          <span class="toggler-icon-home bottom-bar" *ngIf="router.url === '/'"></span>
 
-          <span class="toggler-icon top-bar" *ngIf="router.url !== '/home'"></span>
-          <span class="toggler-icon middle-bar" *ngIf="router.url !== '/home'"></span>
-          <span class="toggler-icon bottom-bar" *ngIf="router.url !== '/home'"></span>
+          <span class="toggler-icon top-bar" *ngIf="router.url !== '/'"></span>
+          <span class="toggler-icon middle-bar" *ngIf="router.url !== '/'"></span>
+          <span class="toggler-icon bottom-bar" *ngIf="router.url !== '/'"></span>
         </button>
 
 
