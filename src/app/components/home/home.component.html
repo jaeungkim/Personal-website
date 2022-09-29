@@ -7,7 +7,7 @@
 
 <!-- BACKGROUND VIDEO -->
 <video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true" id="myVideo">
-	<source src="http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4" type="video/mp4">
+	<source src="https://storage.cloud.google.com/iclinic-video-background/videoBackground.mp4" type="video/mp4">
 </video>
 
 <canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
