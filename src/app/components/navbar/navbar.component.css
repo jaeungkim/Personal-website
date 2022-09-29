@@ -143,16 +143,19 @@
 .navbar-toggler .top-bar {
   top: inherit;
   transform: rotate(90deg);
+  background-image: linear-gradient(90deg, rgba(50, 38, 150, 1) 25%, rgba(222, 255, 255, 1) 50%, rgba(50, 38, 150, 1) 75%);
 }
 
 .navbar-toggler .middle-bar {
   top: inherit;
   transform: rotate(90deg) translateY(10px);
+  background-image: linear-gradient(90deg, rgba(50, 38, 150, 1) 25%, rgba(222, 255, 255, 1) 50%, rgba(50, 38, 150, 1) 75%);
 }
 
 .navbar-toggler .bottom-bar {
   top: inherit;
   transform: rotate(-90deg) translateY(10px);
+  background-image: linear-gradient(90deg, rgba(50, 38, 150, 1) 25%, rgba(222, 255, 255, 1) 50%, rgba(50, 38, 150, 1) 75%);
 }
 
 /* Color of 3 lines */
