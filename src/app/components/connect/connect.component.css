@@ -163,7 +163,10 @@
   display: flex;
   flex-direction: column;
 }
-
+.icons-div{
+  display: flex;
+  align-items: center;
+}
 .contactform-input-box {
   color: white;
   background: #1a1a1a;
@@ -254,12 +257,14 @@
   background-color: black;
 }
 .support-form-title {
-  font-size: 2vw;
+  font-size: 14px
 }
 
 .support-form-subtitle {
-  font-size: 1.5vw;
+  font-size: 12px;
   margin-left: 1vw;
+  margin-top: auto;
+  margin-bottom:auto;
 }
 
 .iclinicSupport-div {
