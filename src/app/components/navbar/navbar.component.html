@@ -10,7 +10,7 @@
       <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url === '/'">
         <a class="navbar-brand text-light">
           <!-- <img src="./assets/images/aboutus/aiClinic-test.png" alt=" " class="aiclinicLogo" /> -->
-          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
+          <img src="./assets/images/aboutus/aiClinic-home.svg" alt=" " class="iclinicLogo" />
           <!-- <img src="./assets/images/aboutus/aiClinic-test3.png" alt=" " class="aiclinicLogo" /> -->
         </a>
         <p class="iclinictext text-light">aiClinic</p>
@@ -18,9 +18,8 @@
     </div>
     <div class="right-nav-div ms-auto">
       <div class="p-2 bd-higlight">
-        <button class="btn btn-custom-book-demo text-light text-nowrap " type="button" data-bs-toggle="modal"
-          data-bs-target="#bookDemo">Start
-          Today!</button>
+        <button class="btn btn-custom-book-demo text-light text-nowrap " type="button" routerLink="/connect">Start
+          Today</button>
       </div>
       <div class="bd-higlight icon-div">
         <mat-icon class="text-light language-icon" aria-hidden="false">language</mat-icon>
