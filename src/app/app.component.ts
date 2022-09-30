@@ -9,26 +9,23 @@ import { AuthService } from './auth.service';
   styleUrls: ['./app.component.css'],
 })
 // export class AppComponent{}
-
 export class AppComponent {
   name = 'Angular';
 
-  constructor(public _authService: AuthService, private router: Router){}
+  constructor(public _authService: AuthService, private router: Router) {}
 
-  ngOnInit(){
-  
-  }
+  ngOnInit() {}
 
-  get isAdmin(){
+  get isAdmin() {
     let is_admin = localStorage.getItem('is_admin');
-    if(is_admin === 'on'){
+    if (is_admin === 'on') {
       return true;
-    }else{
+    } else {
       return false;
     }
   }
 
-  logoutUser(){
+  logoutUser() {
     localStorage.removeItem('token');
     localStorage.removeItem('is_admin');
     this.router.navigate(['/login']);
