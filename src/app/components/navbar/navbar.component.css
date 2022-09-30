@@ -87,14 +87,14 @@
 
 
 .aiclinictext {
-  font-size: 2rem;
+  font-size: 24px;
   padding-left: 0.5rem;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .iclinictext {
-  font-size: 2rem;
+  font-size: 24px;
   padding-left: 0.5rem;
   margin-top: auto;
   margin-bottom: auto;
@@ -106,7 +106,7 @@
 
 .btn-custom-book-demo {
   border: 1px solid #a11f74;
-  font-size: clamp(14px, 1.25vw, 18px);
+  font-size: 12px;
 }
 
 .btn-custom-book-demo:hover {
@@ -217,7 +217,19 @@
   cursor: pointer;
 }
 
-@media only screen and (min-width: 1300px) {
+@media only screen and (min-width: 1400px) {
+  .aiclinictext {
+    font-size: 28px;
+  }
+
+  .iclinictext {
+    font-size: 28px;
+  }
+
+  .btn-custom-book-demo {
+    font-size: 16px;
+  }
+
   .navbar-custom {
     padding-left: 0%;
     padding-right: 0%;

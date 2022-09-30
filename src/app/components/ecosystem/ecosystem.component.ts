@@ -465,8 +465,8 @@ export class EcosystemComponent implements OnInit {
         },
       },
     },
-    responsive: true,
-    maintainAspectRatio: true,
+    // responsive: true,
+    // maintainAspectRatio: true,
   };
 
   //2nd chart options
@@ -532,8 +532,8 @@ export class EcosystemComponent implements OnInit {
       },
     },
 
-    responsive: true,
-    maintainAspectRatio: true,
+    // responsive: true,
+    // maintainAspectRatio: true,
   };
 }
 //inside cardiology
