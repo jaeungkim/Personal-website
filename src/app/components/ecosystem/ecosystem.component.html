@@ -64,27 +64,40 @@
             <div class="main-chart-div">
                 <div *ngIf="mobile" class="ecosystem-chart">
                     <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType"
-                        [options]="chartOptions" id="donutchart">
-                    </canvas>
+                        [options]="chartOptions" id="donutchart"></canvas>
                 </div>
                 <div *ngIf="tablet" class="ecosystem-chart">
                     <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType"
-                        [options]="chartOptions" id="donutchart">
-                    </canvas>
+                        [options]="chartOptions" id="donutchart"></canvas>
                 </div>
                 <div *ngIf="desktop" class="ecosystem-chart">
                     <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
-                        id="donutchart">
-                    </canvas>
+                        id="donutchart"></canvas>
                 </div>
                 <div class="inner-chart">
                     <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
-                        id="donutchart2">
-                    </canvas>
+                        id="donutchart2"></canvas>
                 </div>
             </div>
             <div class="chart-parts-div">
-                <div class="chart-div-telephone">
+                <div class="chart-div-teleplan">
+                    <div *ngIf="!desktop" class="chart-arrow-div">
+                        <div class="indicator rotate-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="chart-gapline"></div>
+                        <div class="indicator rotate-down">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <img src="./assets/images/ecosystem/teleplan6.png" alt=" " class="teleplan-img" />
                     <div *ngIf="desktop" class="double-indicator-div rotate-leftbottom">
                         <div class="smallindicator">
@@ -100,9 +113,26 @@
                 </div>
 
                 <div class="chart-div-eHealthViewer">
+                    <div *ngIf="!desktop" class="chart-arrow-div">
+                        <div class="indicator rotate-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="chart-gapline"></div>
+                        <div class="indicator rotate-down">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
                     <img src="./assets/images/ecosystem/eHealth3.png" alt=" " class="eHealth-img" />
-                    <div class="double-indicator-div rotate-leftbottom">
-                        <div *ngIf="desktop" class="smallindicator">
+                    <div *ngIf="desktop" class="double-indicator-div rotate-leftbottom">
+                        <div class="smallindicator">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -115,8 +145,25 @@
                 </div>
 
                 <div class="chart-div-pharmanet">
-                    <div class="double-indicator-div rotate-rightbottom">
-                        <div *ngIf="desktop" class="smallindicator">
+                    <div *ngIf="!desktop" class="chart-arrow-div">
+                        <div class="indicator rotate-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="chart-gapline"></div>
+                        <div class="indicator rotate-down">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div *ngIf="desktop" class="double-indicator-div rotate-rightbottom">
+                        <div class="smallindicator">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -130,8 +177,25 @@
                 </div>
 
                 <div class="chart-div-hospital">
-                    <div class="double-indicator-div rotate-rightbottom">
-                        <div *ngIf="desktop" class="smallindicator">
+                    <div *ngIf="!desktop" class="chart-arrow-div">
+                        <div class="indicator rotate-top">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <div class="chart-gapline"></div>
+                        <div class="indicator rotate-down">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div *ngIf="desktop" class="double-indicator-div rotate-rightbottom">
+                        <div class="smallindicator">
                             <span></span>
                             <span></span>
                             <span></span>
