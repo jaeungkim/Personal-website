@@ -77,9 +77,9 @@ export class EcosystemComponent implements OnInit {
     doctorAnimationTimeline.to('.section-pad', { duration: 5 });
 
     chartAnimationTimeline.fromTo(
-      '.chart-div-telephone',
-      { opacity: 0, x: '-100%' },
-      { opacity: 1, x: '-10%', duration: 5 }
+      '.chart-div-teleplan',
+      { opacity: 0, x: '-100%', y: '-150%' },
+      { opacity: 1, x: '-10%', y: '0', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-eHealthViewer',
@@ -88,8 +88,8 @@ export class EcosystemComponent implements OnInit {
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-pharmanet',
-      { opacity: 0, x: '100%' },
-      { opacity: 1, x: '2.5%', duration: 5 }
+      { opacity: 0, x: '100%', y: '-150%' },
+      { opacity: 1, x: '2.5%', y: '0', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-hospital',
