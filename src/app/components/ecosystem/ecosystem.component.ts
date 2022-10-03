@@ -271,31 +271,13 @@ export class EcosystemComponent implements OnInit {
         weight: 1,
       },
       {
-        data: [17, 1, 2, 1],
+        data: [17, 1,2, 1],
         rotation: -8,
         // borderColor: '#121212',
-        borderWidth: function (context) {
-          const chart = context.chart;
-          const { ctx, chartArea } = chart;
-          if (chartArea !== undefined) {
-            if (context.dataIndex === 0) {
-              return 4;
-            }
-            if (context.dataIndex === 1) {
-              return 4;
-            }
-            if (context.dataIndex === 2) {
-              return 4;
-            }
-            if (context.dataIndex === 3) {
-              return 4;
-            }
-          }
-          return 0;
-        },
+        borderWidth: [4,4,4,4],
         // borderColor: 'rgba(255, 218, 193, 1)',
         backgroundColor: '#121212',
-
+        borderAlign: 'inner',
         hoverBackgroundColor: '#121212',
         borderColor: function (context) {
           const chart = context.chart;
@@ -316,7 +298,6 @@ export class EcosystemComponent implements OnInit {
           }
           return 'null';
         },
-        spacing: 2,
         hoverBorderColor: function (context) {
           const chart = context.chart;
           const { ctx, chartArea } = chart;
@@ -465,8 +446,8 @@ export class EcosystemComponent implements OnInit {
         },
       },
     },
-    // responsive: true,
-    // maintainAspectRatio: true,
+    responsive: true,
+    maintainAspectRatio: true,
   };
 
   //2nd chart options
@@ -532,59 +513,18 @@ export class EcosystemComponent implements OnInit {
       },
     },
 
-    // responsive: true,
-    // maintainAspectRatio: true,
+    responsive: true,
+    maintainAspectRatio: true,
   };
-}
-//inside cardiology
-function getGradientInsideCardiology(ctx, chartArea) {
-  if (!chartArea) {
-    return;
+  chartHovered(event: any): void {
+    let eventIndex;
+
+    if (event.active.length > 0 && event.active[0].index !== undefined) {
+      eventIndex = event.active[0].index;
+    }
   }
-  var gradient = ctx.createLinearGradient(500, 150, 100, 500);
-  gradient.addColorStop(0, '#ffffff');
-  gradient.addColorStop(0.2, '#ffebf8');
-  gradient.addColorStop(0.35, '#ffe4f6');
-  gradient.addColorStop(0.5, '#ffd8f0');
-  gradient.addColorStop(0.67, '#f0def2');
-  gradient.addColorStop(0.84, '#ecdefc');
-  gradient.addColorStop(1, '#c9c7fe');
-  return gradient;
 }
-//inside geriatrics
-function getGradientInsideGeriatrics(ctx, chartArea) {
-  if (!chartArea) {
-    return;
-  }
-  var gradient = ctx.createLinearGradient(170, 75, 75, 125);
-  gradient.addColorStop(0, '#f0ffe6');
-  gradient.addColorStop(0.5, '#ceffad');
-  gradient.addColorStop(1, '#acf07e');
-  // gradient.addColorStop(1, 'red'); f0ffe6
-  return gradient;
-}
-// //inside Neurology
-function getGradientInsideNeurology(ctx, chartArea) {
-  if (!chartArea) {
-    return;
-  }
-  var gradient = ctx.createLinearGradient(150, 75, 75, 125);
-  gradient.addColorStop(0, '#ffffff');
-  gradient.addColorStop(0.5, '#c9fffb');
-  gradient.addColorStop(1, '#87fff9');
-  return gradient;
-}
-// //inside Respirology
-function getGradientInsideRespirology(ctx, chartArea) {
-  if (!chartArea) {
-    return;
-  }
-  var gradient = ctx.createLinearGradient(100, 50, 50, 140);
-  gradient.addColorStop(0, '#fff3eb');
-  gradient.addColorStop(0.5, '#ffdac1');
-  gradient.addColorStop(1, '#faac77');
-  return gradient;
-}
+
 function getGradientAF(ctx, chartArea) {
   if (!chartArea) {
     return;

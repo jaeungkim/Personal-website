@@ -538,31 +538,13 @@ export class SolutionsComponent implements OnInit {
         weight: 1,
       },
       {
-        data: [17, 1, 2, 1],
+        data: [17, 1,2, 1],
         rotation: -8,
         // borderColor: '#121212',
-        borderWidth: function (context) {
-          const chart = context.chart;
-          const { ctx, chartArea } = chart;
-          if (chartArea !== undefined) {
-            if (context.dataIndex === 0) {
-              return 4;
-            }
-            if (context.dataIndex === 1) {
-              return 4;
-            }
-            if (context.dataIndex === 2) {
-              return 4;
-            }
-            if (context.dataIndex === 3) {
-              return 4;
-            }
-          }
-          return 0;
-        },
+        borderWidth: [4,4,4,4],
         // borderColor: 'rgba(255, 218, 193, 1)',
         backgroundColor: '#121212',
-
+        borderAlign: 'inner',
         hoverBackgroundColor: '#121212',
         borderColor: function (context) {
           const chart = context.chart;
@@ -583,7 +565,6 @@ export class SolutionsComponent implements OnInit {
           }
           return 'null';
         },
-        spacing: 2,
         hoverBorderColor: function (context) {
           const chart = context.chart;
           const { ctx, chartArea } = chart;
@@ -802,7 +783,8 @@ export class SolutionsComponent implements OnInit {
     responsive: true,
     maintainAspectRatio: true,
   };
-  constructor() {}
+  constructor() {
+  }
 
   ngOnInit(): void {
     if (window.innerWidth < 576) {
