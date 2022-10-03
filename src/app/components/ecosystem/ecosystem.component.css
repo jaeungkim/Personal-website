@@ -227,7 +227,7 @@ ARROW CSS
 }
 
 .rotate-teleplan {
-    transform: translateX(45px) translateY(-25px) rotate(55deg);
+    transform: translateX(45px) translateY(100px) rotate(-55deg);
 }
 
 .rotate-eHealth {
@@ -235,7 +235,7 @@ ARROW CSS
 }
 
 .rotate-pharmanet {
-    transform: translateX(-45px) translateY(-25px) rotate(-55deg);
+    transform: translateX(-45px) translateY(100px) rotate(55deg);
 }
 
 .rotate-hospital {
@@ -475,8 +475,8 @@ ARROW CSS
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: 25%;
-        left: 0%;
+        top: 10%;
+        left: 5%;
         gap: 2.5vw;
     }
 
@@ -493,8 +493,8 @@ ARROW CSS
         display: flex;
         align-items: center;
         position: absolute;
-        bottom: 25%;
-        right: 0%;
+        top: 10%;
+        right: 5%;
         gap: 2.5vw;
     }
 
