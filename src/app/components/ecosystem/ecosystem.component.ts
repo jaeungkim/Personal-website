@@ -22,6 +22,7 @@ export class EcosystemComponent implements OnInit {
   mobile: boolean = false;
   tablet: boolean = false;
   desktop: boolean = false;
+  largedesktop: boolean = false;
   constructor() {}
 
   ngOnInit(): void {
@@ -31,8 +32,10 @@ export class EcosystemComponent implements OnInit {
       this.mobile = true;
     } else if (window.innerWidth < 992) {
       this.tablet = true;
-    } else {
+    } else if (window.innerWidth < 1200){
       this.desktop = true;
+    } else {
+      this.largedesktop = true;
     }
   }
   initScrollAnimations(): void {

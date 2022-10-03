@@ -224,14 +224,16 @@ ARROW CSS
     animation: gaplineanimate 3s ease infinite;
     transform: rotate(0deg) !important;
 }
-.chart-arrow-div{
+
+.chart-arrow-div {
     display: flex;
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
 }
-.chart-gapline{
+
+.chart-gapline {
     border-left: 2px solid white;
     height: 20px;
     margin-left: auto;
@@ -241,6 +243,7 @@ ARROW CSS
     animation: gaplineanimate 3s ease infinite;
     transform: rotate(0deg) !important;
 }
+
 @keyframes gaplineanimate {
     0% {
         background-position: 0% 51%;
@@ -274,7 +277,7 @@ ARROW CSS
     bottom: 25%;
 }
 
-.smallindicator {
+/* .smallindicator {
     position: relative;
     width: 1.25vw;
     height: 1.25vw;
@@ -332,7 +335,7 @@ ARROW CSS
     top: 25px;
     left: 25px;
     animation-delay: 1.2s;
-}
+} */
 
 .rotate-down {
     transform: rotate(45deg);
@@ -350,18 +353,17 @@ ARROW CSS
     transform: rotate(225deg);
 }
 
-.rotate-righttop {
-    transform: rotate(90deg);
+.rotate-teleplan{
+    transform: translateX(45px) translateY(-25px) rotate(55deg);
 }
-
-.rotate-leftbottom {
-    transform: rotate(-60deg);
-    /* margin-bottom: 50px; */
+.rotate-eHealth{
+    transform: translateX(45px) translateY(-25px) rotate(55deg);
 }
-
-.rotate-rightbottom {
-    transform: rotate(-30deg);
-    /* margin-bottom: 50px; */
+.rotate-pharmanet{
+    transform: translateX(-45px) translateY(-25px) rotate(-55deg);
+}
+.rotate-hospital{
+    transform: translateX(-45px) translateY(-25px) rotate(-55deg);
 }
 
 .indicator span {
@@ -377,7 +379,7 @@ ARROW CSS
     animation: indicatoranimate 1s linear infinite;
 }
 
-.smallindicator span {
+/* .smallindicator span {
     position: absolute;
     left: 0;
     top: 0;
@@ -388,13 +390,13 @@ ARROW CSS
     border-bottom: 3px solid #fff;
     border-right: 3px solid #fff;
     animation: doubleindicatoranimate 1s linear infinite;
-}
+} */
 
-.double-indicator-div {
+/* .double-indicator-div {
     display: flex;
     width: 7.5vw;
     height: 7.5vw;
-}
+} */
 
 .indicator span:nth-child(1) {
     top: -70%;
@@ -444,7 +446,7 @@ ARROW CSS
     }
 }
 
-@keyframes doubleindicatoranimate {
+/* @keyframes doubleindicatoranimate {
     50% {
         border-color: #fff;
     }
@@ -453,7 +455,7 @@ ARROW CSS
     100% {
         border-color: #ffd64a;
     }
-}
+} */
 
 .chart-parts-div {
     position: absolute;
@@ -508,14 +510,24 @@ ARROW CSS
     .ecosystem-chart {
         width: 65%;
     }
-
     .inner-chart {
         width: 65%;
     }
+}
 
+/* bootstrap large */
+@media only screen and (min-width: 1200px) {
+    .ecosystem-chart {
+        width: 50%;
+    }
+
+    .inner-chart {
+        width: 50%;
+    }
     .chart-parts-div {
         height: 100vh;
         left: 0;
+        bottom: 0;
         display: block;
     }
 
@@ -573,16 +585,5 @@ ARROW CSS
     .hospital-img {
         width: 100px;
         height: 100px;
-    }
-}
-
-/* bootstrap large */
-@media only screen and (min-width: 1200px) {
-    .ecosystem-chart {
-        width: 50%;
-    }
-
-    .inner-chart {
-        width: 50%;
     }
 }
