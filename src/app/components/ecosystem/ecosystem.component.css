@@ -21,6 +21,7 @@ PATIENT DOCTOR DIV CSS
     height: 80vh;
     align-items: center;
 }
+
 .doctor-patient-div {
     display: flex;
     justify-content: center;
@@ -35,6 +36,7 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
     /* gap: 5vw; */
 }
+
 .doctor-div {
     width: 25%;
     display: flex;
@@ -42,6 +44,7 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
     /* gap: 5vw; */
 }
+
 .clinic-div {
     width: 25%;
     display: flex;
@@ -49,21 +52,25 @@ PATIENT DOCTOR DIV CSS
     justify-content: space-between;
     align-items: center;
 }
+
 .patient-img {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .doctor-img {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .clinic-img {
     width: 60%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .teleplan2-img {
     width: 15%;
     margin-left: auto;
@@ -91,7 +98,7 @@ CHART DIV CSS
 }
 
 .ecosystem-chart {
-    padding-top: 10vh;
+    padding-top: 7.5vh;
     position: absolute;
     z-index: 2;
     height: 100vh;
@@ -103,7 +110,7 @@ CHART DIV CSS
 }
 
 .inner-chart {
-    padding-top: 10vh;
+    padding-top: 7.5vh;
     position: absolute;
     z-index: 1;
     height: 100vh;
@@ -348,16 +355,19 @@ ARROW CSS
     transform: rotate(225deg);
 }
 
-.rotate-teleplan{
+.rotate-teleplan {
     transform: translateX(45px) translateY(-25px) rotate(55deg);
 }
-.rotate-eHealth{
+
+.rotate-eHealth {
     transform: translateX(45px) translateY(-25px) rotate(55deg);
 }
-.rotate-pharmanet{
+
+.rotate-pharmanet {
     transform: translateX(-45px) translateY(-25px) rotate(-55deg);
 }
-.rotate-hospital{
+
+.rotate-hospital {
     transform: translateX(-45px) translateY(-25px) rotate(-55deg);
 }
 
@@ -456,11 +466,8 @@ ARROW CSS
     position: absolute;
     width: 100%;
     display: flex;
-    gap: 5%;
     bottom: 10vh;
-    left: 10%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-content: space-evenly;
 }
 
 .teleplan-img {
@@ -491,40 +498,164 @@ ARROW CSS
     height: 15vw;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
+    .chart-arrow-div {
+        margin-bottom: 50%;
+    }
+
     .ecosystem-chart {
-        width: 90%;
+        width: 75%;
     }
 
     .inner-chart {
-        width: 90%;
+        width: 75%;
     }
+}
+
+@media only screen and (min-width: 768px) {
+    .chart-arrow-div {
+        margin-bottom: 150%;
+    }
+
+    .ecosystem-chart {
+        width: 55%;
+    }
+
+    .inner-chart {
+        width: 55%;
+    }
+
     .patient-img {
-        width: 40%;
+        width: 20%;
     }
+
     .doctor-img {
-        width: 40%;
+        width: 20%;
     }
+
     .clinic-img {
-        width: 40%;
+        width: 20%;
     }
+
     .teleplan2-img {
         width: 10%;
     }
+
     .app-phone-img {
         width: 10%;
     }
-    .endPatient-img{
+
+    .endPatient-img {
         width: 10%;
+    }
+
+    .teleplan-img {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .eHealth-img {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .pharmaNet-img {
+        width: 7.5vw;
+        height: 7.5vw;
+    }
+
+    .hospital-img {
+        width: 7.5vw;
+        height: 7.5vw;
     }
 }
 
 @media only screen and (min-width: 992px) {
-    .ecosystem-chart {
-        width: 65%;
+    .chart-arrow-div {
+        margin-bottom: 50%;
     }
+
+    .ecosystem-chart {
+        width: 55%;
+    }
+
     .inner-chart {
-        width: 65%;
+        width: 55%;
+    }
+
+    .chart-parts-div {
+        height: 100vh;
+        left: 0;
+        bottom: 0;
+        display: block;
+    }
+
+    .patient-img {
+        width: 30%;
+    }
+
+    .doctor-img {
+        width: 30%;
+    }
+
+    .clinic-img {
+        width: 30%;
+    }
+
+    .chart-div-teleplan {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 25%;
+        left: 0%;
+        gap: 2.5vw;
+    }
+
+    .chart-div-eHealthViewer {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 10%;
+        left: 5%;
+        gap: 2.5vw;
+    }
+
+    .chart-div-pharmanet {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 25%;
+        right: 0%;
+        gap: 2.5vw;
+    }
+
+    .chart-div-hospital {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 10%;
+        right: 5%;
+        gap: 2.5vw;
+    }
+
+    .teleplan-img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .eHealth-img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .pharmaNet-img {
+        width: 10vw;
+        height: 10vw;
+    }
+
+    .hospital-img {
+        width: 10vw;
+        height: 10vw;
     }
 }
 
@@ -536,48 +667,6 @@ ARROW CSS
 
     .inner-chart {
         width: 50%;
-    }
-    .chart-parts-div {
-        height: 75vh;
-        left: 0;
-        bottom: 0;
-        display: block;
-    }
-
-    .chart-div-teleplan {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 37.5%;
-        left: 0%;
-        gap: 2.5vw;
-    }
-
-    .chart-div-eHealthViewer {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 20%;
-        left: 5%;
-        gap: 2.5vw;
-    }
-
-    .chart-div-pharmanet {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 37.5%;
-        right: 0%;
-        gap: 2.5vw;
-    }
-
-    .chart-div-hospital {
-        display: flex;
-        align-items: center;
-        position: absolute;
-        bottom: 20%;
-        right: 5%;
-        gap: 2.5vw;
     }
 
     .teleplan-img {
@@ -599,4 +688,5 @@ ARROW CSS
         width: 100px;
         height: 100px;
     }
+
 }

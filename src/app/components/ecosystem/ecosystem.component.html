@@ -78,7 +78,8 @@
             </div>
             <div class="chart-parts-div">
                 <div class="chart-div-teleplan">
-                    <div class="chart-arrow-div" [ngClass]="largedesktop ? 'order-2 rotate-teleplan' : 'order-1'">
+                    <div class="chart-arrow-div"
+                        [ngClass]="desktop || largedesktop ? 'order-2 rotate-teleplan' : 'order-1'">
                         <div class="indicator rotate-top">
                             <span></span>
                             <span></span>
@@ -95,13 +96,14 @@
                             <span></span>
                         </div>
                     </div>
-                    <div [ngClass]="largedesktop ? 'order-1' : 'order-2'">
+                    <div [ngClass]="desktop || largedesktop ? 'order-1' : 'order-2'">
                         <img src="./assets/images/ecosystem/teleplanInit.png" alt=" " class="teleplan-img" />
                     </div>
                 </div>
 
                 <div class="chart-div-eHealthViewer">
-                    <div class="chart-arrow-div" [ngClass]="largedesktop ? 'order-2 rotate-eHealth' : 'order-1'">
+                    <div class="chart-arrow-div"
+                        [ngClass]="desktop  || largedesktop ? 'order-2 rotate-eHealth' : 'order-1'">
                         <div class="indicator rotate-top">
                             <span></span>
                             <span></span>
@@ -118,13 +120,13 @@
                             <span></span>
                         </div>
                     </div>
-                    <div [ngClass]="largedesktop ? 'order-1' : 'order-2'">
+                    <div [ngClass]="desktop || largedesktop ? 'order-1' : 'order-2'">
                         <img src="./assets/images/ecosystem/eHealth.png" alt=" " class="eHealth-img" />
                     </div>
                 </div>
 
                 <div class="chart-div-pharmanet">
-                    <div class="chart-arrow-div" [ngClass]="largedesktop ? 'rotate-pharmanet' : ''">
+                    <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-pharmanet' : ''">
                         <div class="indicator rotate-top">
                             <span></span>
                             <span></span>
@@ -147,7 +149,7 @@
                 </div>
 
                 <div class="chart-div-hospital">
-                    <div class="chart-arrow-div" [ngClass]="largedesktop ? 'rotate-hospital' : ''">
+                    <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-hospital' : ''">
                         <div class="indicator rotate-top">
                             <span></span>
                             <span></span>
