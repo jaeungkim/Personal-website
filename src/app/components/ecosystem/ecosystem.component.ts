@@ -26,10 +26,10 @@ export class EcosystemComponent implements OnInit {
 
   ngOnInit(): void {
     this.initScrollAnimations();
-    if (window.innerWidth < 576) {
+    if (window.innerWidth < 768) {
       // 768px portrait
       this.mobile = true;
-    } else if (window.innerWidth < 1170) {
+    } else if (window.innerWidth < 992) {
       this.tablet = true;
     } else {
       this.desktop = true;
@@ -285,7 +285,7 @@ export class EcosystemComponent implements OnInit {
           'rgba(255, 218, 193, 1)',
         ],
         borderRadius: 0,
-        spacing: 100,
+        spacing: 75,
       },
     ],
   };
@@ -432,7 +432,7 @@ export class EcosystemComponent implements OnInit {
   public doughnutChartType2: ChartType = 'doughnut';
 
   public chartOptions: any = {
-    hover: {mode: null},
+    hover: { mode: null },
     layout: {
       padding: function (chart, context) {
         let width = chart.chart.width;
@@ -445,19 +445,16 @@ export class EcosystemComponent implements OnInit {
     cutout: function (chart, context) {
       let width = chart.chart.width;
       // console.log(width);
-      if (width < 400) {
-        return width / 9;
+      if (width < 576) {
+        return width / 7;
       }
-      if (width < 500) {
-        return width / 7.5;
+      if (width < 768) {
+        return width / 7;
       }
-      if (width < 600) {
-        return width / 6.5;
+      if (width < 992) {
+        return width / 7;
       }
-      if (width < 750) {
-        return width / 6;
-      }
-      if (width < 1000) {
+      if (width < 1200) {
         return width / 5;
       }
       return width / 5;
@@ -557,7 +554,7 @@ export class EcosystemComponent implements OnInit {
 
   //2nd chart options
   public chartOptions2: any = {
-    hover: {mode: null},
+    hover: { mode: null },
     cutout: function (chart, context) {
       let width = chart.chart.width;
       let height = chart.chart.height;

@@ -3,17 +3,6 @@
 GENERAL CSS
 =============================================
 */
-.ecosystem-container {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    /* height: 100vh; */
-    max-width: 1300px;
-    /* position: absolute; */
-}
-
 .section-pad {
     height: 100vh;
     display: flex;
@@ -48,14 +37,17 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
     /* gap: 5vw; */
 }
+
 .patient-img {
     width: 40%;
     margin-left: auto;
     margin-right: auto;
 }
+
 .doctor-img {
     width: 40%;
 }
+
 .clinic-div {
     width: 25%;
     display: flex;
@@ -63,6 +55,7 @@ PATIENT DOCTOR DIV CSS
     justify-content: space-between;
     align-items: center;
 }
+
 .clinic-img {
     width: 40%;
     margin-left: auto;
@@ -331,10 +324,12 @@ ARROW CSS
     margin-left: auto;
     margin-right: auto;
 }
-.indicator-pad{
+
+.indicator-pad {
     position: absolute;
     bottom: 25%;
 }
+
 .smallindicator {
     position: relative;
     width: 1.25vw;
@@ -515,24 +510,38 @@ ARROW CSS
         border-color: #ffd64a;
     }
 }
-
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 576px) {
     .ecosystem-chart {
         width: 75%;
     }
-    
+
     .inner-chart {
         width: 75%;
     }
 }
-
-/* bootstrap large */
-@media only screen and (min-width: 1170px) {
+@media only screen and (min-width: 768px) {
     .ecosystem-chart {
-        width: 50%;
+        width: 75%;
     }
-    
+
     .inner-chart {
-        width: 50%;
+        width: 75%;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .ecosystem-chart {
+        width: 75%;
+    }
+    .inner-chart {
+        width: 75%;
+    }
+}
+/* bootstrap large */
+@media only screen and (min-width: 1200px) {
+    .ecosystem-chart {
+        width: 60%;
+    }
+    .inner-chart {
+        width: 60%;
     }
 }
