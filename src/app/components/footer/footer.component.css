@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     width: 90%;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     max-width: 1300px;
 }
@@ -21,14 +21,29 @@
     padding-top: 25px;
     padding-bottom: 25px;
     width: 90%;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
     max-width: 1300px;
 }
 
+.iclinicLogoDiv {
+    display: flex;
+    margin-bottom: 15px;
+}
+
 .iclinicLogo {
-    width: 50%;
-    min-width: 50%;
+    width: 43px;
+    height: 43px;
+    margin: 0;
+    padding: 0;
+}
+
+.iclinictext {
+    font-size: 16px;
+    font-weight: bold;
+    padding-left: 0.5rem;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .icons-div {
@@ -45,7 +60,7 @@
     float: left;
     width: 20px;
     height: 20px;
-    margin-right: 32px;
+    margin-right: 16px;
     position: relative;
     cursor: pointer;
     transition: all 0.5s linear;
@@ -65,13 +80,16 @@
 .icons-ul li:hover .fa {
     color: #77a5cb;
 }
-.iclinic-solutions{
+
+.iclinic-solutions {
     display: flex;
     justify-content: space-between;
 }
-.iclinic-solutions-lists{
+
+.iclinic-solutions-lists {
     margin-right: 36px;
 }
+
 .footer-link {
     list-style: none;
     margin: 0;
@@ -80,13 +98,41 @@
 
 .footer-link-title {
     margin: 0;
+    margin-top: 10px;
     margin-bottom: 15px;
     font-weight: bold;
-    font-size: 24px;
+    font-size: 16px;
     color: white;
 }
 
 .footer-link-item {
     margin-bottom: 10px;
     text-align: right;
+}
+.footer-subtitles{
+    font-size: 14px;
+}
+.text-pptos{
+    font-size: 10px;
+    opacity: 0.8;
+}
+@media only screen and (min-width: 768px) {
+    .icons-ul li {
+        width: 20px;
+        height: 20px;
+        margin-right: 32px;
+    }
+    .footer-link-title {
+        font-size: 24px;
+    }
+
+    .iclinictext {
+        font-size: 24px;
+    }
+    .footer-subtitles{
+        font-size: 16px;
+    }
+    .text-pptos{
+        font-size: 12px;
+    }
 }

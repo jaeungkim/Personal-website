@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-footer',
@@ -16,7 +17,7 @@ export class FooterComponent implements OnInit {
   termsTitle: string = 'Terms of Use';
   termsContent: string = 'Lorem Ipsum';
 
-  constructor() {}
+  constructor(public router: Router) {}
 
   ngOnInit(): void {}
 }

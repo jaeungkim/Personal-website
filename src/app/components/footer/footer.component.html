@@ -1,9 +1,14 @@
 <footer class="footer-container">
   <div class="footer-div">
     <div class="address-section">
-      <img src="./assets/images/aboutus/iclinicLogo.svg" alt=" " class="iclinicLogo mb-2" />
-      <p class="text-light mt-3 mb-0">210 - 1122 Mainland Street</p>
-      <p class="text-light m-0">Vancouver, BC&nbsp;&nbsp;V6B 5L1</p>
+      <div class="iclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url !== '/'">
+        <a class="text-light">
+          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
+        </a>
+        <p class="iclinictext text-light">iClinic</p>
+      </div>
+      <p class="footer-subtitles text-light">210 - 1122 Mainland Street</p>
+      <p class="footer-subtitles text-light">Vancouver, BC&nbsp;&nbsp;V6B 5L1</p>
       <div class="d-flex icons-div">
         <ul class="icons-ul">
           <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
@@ -68,19 +73,19 @@
       <p class="footer-link-title">Discover</p>
       <ul class="footer-link">
         <li class="footer-link-item">
-          <a class="text-light text-decoration-none" routerLink="/aboutus">About us</a>
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/aboutus">About us</a>
         </li>
         <li class="footer-link-item">
-          <a class="text-light text-decoration-none" routerLink="/ecosystem">Ecosystem</a>
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/ecosystem">Ecosystem</a>
         </li>
         <li class="footer-link-item">
-          <a class="text-light text-decoration-none" routerLink="/support">Support</a>
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/support">Support</a>
         </li>
         <li class="footer-link-item">
-          <a class="text-light text-decoration-none" routerLink="/resources">Resources</a>
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/resources">Resources</a>
         </li>
         <li class="footer-link-item text-right">
-          <a class="text-light text-decoration-none" routerLink="/connect">Connect</a>
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/connect">Connect</a>
         </li>
       </ul>
     </div>
@@ -90,13 +95,13 @@
 <div class="d-flex justify-content-between privacy-section ">
 
   <div>
-    <p class="text-light">© {{ currentYear }} iClinic Systems Inc.</p>
+    <p class="text-pptos text-light">© {{ currentYear }} iClinic Systems Inc.</p>
   </div>
   <div class="d-flex justify-content-end">
-    <a class="text-light text-decoration-none" type="button" routerLink="/privacy">
+    <a class="text-pptos text-light text-decoration-none" type="button" routerLink="/privacy">
       Privacy Policy
     </a>
-    <a class="text-light text-decoration-none" type="button" routerLink="/termsofservice">&nbsp;&nbsp;Terms of Use
+    <a class="text-pptos text-light text-decoration-none" type="button" routerLink="/termsofservice">&nbsp;&nbsp;Terms of Use
     </a>
   </div>
 

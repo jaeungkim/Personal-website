@@ -12,7 +12,8 @@
 
 .paragraph {
   margin-top: 20px;
-  color: grey;
+  margin-bottom: 24px;
+  color: white;
   font-size: 18px;
   line-height: 26px;
   font-weight: 300;
@@ -26,7 +27,7 @@
 }
 
 .card-text {
-  color: grey;
+  color: white;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
