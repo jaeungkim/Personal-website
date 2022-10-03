@@ -32,7 +32,7 @@ export class EcosystemComponent implements OnInit {
       this.mobile = true;
     } else if (window.innerWidth < 992) {
       this.tablet = true;
-    } else if (window.innerWidth < 1200){
+    } else if (window.innerWidth < 1200) {
       this.desktop = true;
     } else {
       this.largedesktop = true;
