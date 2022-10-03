@@ -39,8 +39,7 @@
 }
 
 .iclinictext {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: 24px;
     padding-left: 0.5rem;
     margin-top: auto;
     margin-bottom: auto;
@@ -100,8 +99,7 @@
     margin: 0;
     margin-top: 10px;
     margin-bottom: 15px;
-    font-weight: bold;
-    font-size: 16px;
+    font-size: 24px;
     color: white;
 }
 
@@ -134,5 +132,10 @@
     }
     .text-pptos{
         font-size: 12px;
+    }
+}
+@media only screen and (min-width: 1400px) {
+    .iclinictext {
+        font-size: 28px;
     }
 }
