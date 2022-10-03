@@ -104,10 +104,8 @@ CHART DIV CSS
 }
 
 .ecosystem-chart-div {
-    /* padding-bottom: 250px; */
-    padding-top: 100px;
+    position: relative;
     height: 100vh;
-    /* align-items: center; */
 }
 
 .main-chart-div {
@@ -120,23 +118,29 @@ CHART DIV CSS
 }
 
 .ecosystem-chart {
+    padding-top: 100px;
     position: absolute;
     z-index: 2;
     height: 100vh;
-    left: 30%;
-    width: 45%;
+    width: 100%;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
 }
-.inner-chart{
+
+.inner-chart {
+    padding-top: 100px;
     position: absolute;
     z-index: 1;
     height: 100vh;
-    left: 30%;
-    width: 45%;
+    width: 100%;
+    left: 0;
+    right: 0;
     margin-left: auto;
     margin-right: auto;
 }
+
 .chart-parts-div {
     position: absolute;
     height: 100vh;
@@ -516,6 +520,25 @@ ARROW CSS
     100% {
         border-color: #ffd64a;
     }
+}
 
+@media only screen and (min-width: 768px) {
+    .ecosystem-chart {
+        width: 75%;
+    }
+    
+    .inner-chart {
+        width: 75%;
+    }
+}
 
+/* bootstrap large */
+@media only screen and (min-width: 1170px) {
+    .ecosystem-chart {
+        width: 50%;
+    }
+    
+    .inner-chart {
+        width: 50%;
+    }
 }

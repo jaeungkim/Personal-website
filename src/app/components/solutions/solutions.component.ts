@@ -790,7 +790,7 @@ export class SolutionsComponent implements OnInit {
     if (window.innerWidth < 576) {
       // 768px portrait
       this.mobile = true;
-    } else if (window.innerWidth < 1200) {
+    } else if (window.innerWidth < 1170) {
       this.tablet = true;
     } else {
       this.desktop = true;

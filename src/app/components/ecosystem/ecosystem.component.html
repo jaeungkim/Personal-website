@@ -1,242 +1,216 @@
 <div class="ecosystem-container" #container>
-  <div class="gsap-container">
-    <!-- patient doctor merge animation div -->
-    <section class="patientDoctor-div">
-      <div class="patient-div">
-        <img
-          src="./assets/images/ecosystem/patient8.png"
-          alt=" "
-          class="patient-img"
-        />
-        <div class="indicator rotate-right">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="clinic-div">
-        <img
-          src="./assets/images/ecosystem/hospital4.png"
-          alt=" "
-          class="clinic-img"
-        />
-        <div class="indicator-pad indicator rotate-down">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="doctor-div">
-        <div class="indicator rotate-left">
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <img
-          src="./assets/images/ecosystem/doctor8.png"
-          alt=" "
-          class="doctor-img"
-        />
-      </div>
-    </section>
+    <div class="gsap-container">
+        <!-- patient doctor merge animation div -->
+        <section class="patientDoctor-div">
+            <div class="patient-div">
+                <img src="./assets/images/ecosystem/patient8.png" alt=" " class="patient-img" />
+                <div class="indicator rotate-right">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="clinic-div">
+                <img src="./assets/images/ecosystem/hospital4.png" alt=" " class="clinic-img" />
+                <div class="indicator-pad indicator rotate-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <div class="doctor-div">
+                <div class="indicator rotate-left">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <img src="./assets/images/ecosystem/doctor8.png" alt=" " class="doctor-img" />
+            </div>
+        </section>
 
-    <section class="section-pad"></section>
-    <section class="section-pad"></section>
-    <!-- END patient doctor merge animation div -->
-    <div class="doctor-patient-div">
-      <!-- <img src="./assets/images/ecosystem/doctorPatient.png" alt=" " class="doctorpatient-img" /> -->
-      <!-- <img src="./assets/images/ecosystem/patient7.png" alt=" " class="doctor2-img" /> -->
-      <img
-        src="./assets/images/ecosystem/teleplan7.png"
-        alt=" "
-        class="teleplan2-img"
-      />
-      <!-- <img src="./assets/images/ecosystem/doctor8.png" alt=" " class="doctor2-img" /> -->
-    </div>
-    <div class="arrow-div">
-      <!-- <div class="arrow">
+        <section class="section-pad"></section>
+        <section class="section-pad"></section>
+        <!-- END patient doctor merge animation div -->
+        <div class="doctor-patient-div">
+            <!-- <img src="./assets/images/ecosystem/doctorPatient.png" alt=" " class="doctorpatient-img" /> -->
+            <!-- <img src="./assets/images/ecosystem/patient7.png" alt=" " class="doctor2-img" /> -->
+            <img src="./assets/images/ecosystem/teleplan7.png" alt=" " class="teleplan2-img" />
+            <!-- <img src="./assets/images/ecosystem/doctor8.png" alt=" " class="doctor2-img" /> -->
+        </div>
+        <div class="arrow-div">
+            <!-- <div class="arrow">
                 <span></span>
                 <span></span>
                 <span></span>
                 <span></span>
             </div> -->
-      <div class="indicator rotate-down">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <!-- CHART DIV -->
-    <section class="ecosystem-chart-div">
-      <div class="main-chart-div">
-        <div class="ecosystem-chart">
-          <canvas
-            baseChart
-            [data]="doughnutChartData"
-            [type]="doughnutChartType"
-            [options]="chartOptions"
-            (chartHover)="chartHovered($event)"
-            id="donutchart"
-          >
-          </canvas>
+            <div class="indicator rotate-down">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="inner-chart">
-          <canvas
-            baseChart
-            [data]="doughnutChartData2"
-            [type]="doughnutChartType2"
-            [options]="chartOptions2"
-            id="donutchart2"
-          >
-          </canvas>
+
+        <!-- CHART DIV -->
+        <section class="ecosystem-chart-div">
+            <div class="main-chart-div">
+                <div *ngIf="mobile" class="ecosystem-chart">
+                    <canvas
+                      baseChart
+                      [data]="doughnutChartDataMobile"
+                      [type]="doughnutChartType"
+                      [options]="chartOptions"
+                      id="donutchart"
+                    >
+                    </canvas>
+                  </div>
+                  <div *ngIf="tablet" class="ecosystem-chart">
+                    <canvas
+                      baseChart
+                      [data]="doughnutChartDataTablet"
+                      [type]="doughnutChartType"
+                      [options]="chartOptions"
+                      id="donutchart"
+                    >
+                    </canvas>
+                  </div>
+                  <div *ngIf="desktop" class="ecosystem-chart">
+                    <canvas
+                      baseChart
+                      [data]="doughnutChartData"
+                      [type]="doughnutChartType"
+                      [options]="chartOptions"
+                      id="donutchart"
+                    >
+                    </canvas>
+                  </div>
+                <div class="inner-chart">
+                    <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
+                        id="donutchart2">
+                    </canvas>
+                </div>
+            </div>
+            <div class="chart-parts-div">
+                <div class="chart-div-telephone">
+                    <img src="./assets/images/ecosystem/teleplan6.png" alt=" " class="teleplan-img" />
+                    <div class="double-indicator-div rotate-leftbottom">
+                        <div class="smallindicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-div-eHealthViewer">
+                    <img src="./assets/images/ecosystem/eHealth3.png" alt=" " class="eHealth-img" />
+                    <div class="double-indicator-div rotate-leftbottom">
+                        <div class="smallindicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart-div-pharmanet">
+                    <div class="double-indicator-div rotate-rightbottom">
+                        <div class="smallindicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <img src="./assets/images/ecosystem/pharmaNet3.png" alt=" " class="pharmaNet-img" />
+                </div>
+
+                <div class="chart-div-hospital">
+                    <div class="double-indicator-div rotate-rightbottom">
+                        <div class="smallindicator">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <img src="./assets/images/ecosystem/hospital3.png" alt=" " class="hospital-img" />
+                </div>
+            </div>
+        </section>
+        <section class="chart-section-pad"></section>
+        <!-- <section class="section-pad"></section> -->
+        <!-- END CHART DIV -->
+
+        <div class="arrow-div-2">
+            <div class="indicator rotate-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="gapline"></div>
+            <div class="indicator rotate-down">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-        <div class="chart-parts-div">
-          <div class="chart-div-telephone">
-            <img
-              src="./assets/images/ecosystem/teleplan6.png"
-              alt=" "
-              class="teleplan-img"
-            />
-            <div class="double-indicator-div rotate-leftbottom">
-              <div class="smallindicator">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
 
-          <div class="chart-div-eHealthViewer">
-            <img
-              src="./assets/images/ecosystem/eHealth3.png"
-              alt=" "
-              class="eHealth-img"
-            />
-            <div class="double-indicator-div rotate-leftbottom">
-              <div class="smallindicator">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-
-          <div class="chart-div-pharmanet">
-            <div class="double-indicator-div rotate-rightbottom">
-              <div class="smallindicator">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <img
-              src="./assets/images/ecosystem/pharmaNet3.png"
-              alt=" "
-              class="pharmaNet-img"
-            />
-          </div>
-
-          <div class="chart-div-hospital">
-            <div class="double-indicator-div rotate-rightbottom">
-              <div class="smallindicator">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-            <img
-              src="./assets/images/ecosystem/hospital3.png"
-              alt=" "
-              class="hospital-img"
-            />
-          </div>
+        <!-- APP DIV -->
+        <div class="app-div">
+            <img src="./assets/images/ecosystem/app3.png" alt=" " class="app-phone-img" />
         </div>
-      </div>
-    </section>
-    <section class="chart-section-pad"></section>
-    <!-- <section class="section-pad"></section> -->
-    <!-- END CHART DIV -->
+        <!-- END APP DIV -->
 
-    <div class="arrow-div-2">
-      <div class="indicator rotate-top">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="gapline"></div>
-      <div class="indicator rotate-down">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
+        <div class="arrow-div-2">
+            <div class="indicator rotate-top">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="gapline"></div>
+            <div class="indicator rotate-down">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
 
-    <!-- APP DIV -->
-    <div class="app-div">
-      <img
-        src="./assets/images/ecosystem/app3.png"
-        alt=" "
-        class="app-phone-img"
-      />
+        <!-- PATIENT DIV -->
+        <div class="endPatient-div">
+            <img src="./assets/images/ecosystem/patient8.png" alt=" " class="endPatient-img" />
+        </div>
+        <!-- END PATIENT DIV -->
     </div>
-    <!-- END APP DIV -->
-
-    <div class="arrow-div-2">
-      <div class="indicator rotate-top">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="gapline"></div>
-      <div class="indicator rotate-down">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
-
-    <!-- PATIENT DIV -->
-    <div class="endPatient-div">
-      <img
-        src="./assets/images/ecosystem/patient8.png"
-        alt=" "
-        class="endPatient-img"
-      />
-    </div>
-    <!-- END PATIENT DIV -->
-  </div>
 </div>
 <app-footer></app-footer>

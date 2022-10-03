@@ -19,10 +19,21 @@ Chart.register(ChartDataLabels);
   providers: [],
 })
 export class EcosystemComponent implements OnInit {
+  mobile: boolean = false;
+  tablet: boolean = false;
+  desktop: boolean = false;
   constructor() {}
 
   ngOnInit(): void {
     this.initScrollAnimations();
+    if (window.innerWidth < 576) {
+      // 768px portrait
+      this.mobile = true;
+    } else if (window.innerWidth < 1170) {
+      this.tablet = true;
+    } else {
+      this.desktop = true;
+    }
   }
   initScrollAnimations(): void {
     //DOCTOR PATIENT ANIMATION
@@ -92,6 +103,192 @@ export class EcosystemComponent implements OnInit {
    *
    */
 
+  public doughnutChartDataMobile: any = {
+    labels: [
+      `AF`,
+      `CR`,
+      'CRw',
+      `HCM`,
+      `HF`,
+      `HFO`,
+      'LP',
+      `SC`,
+      `SCESS`,
+      `WC`,
+      `FR`,
+      `PD`,
+      `AS/COPD`,
+    ],
+    datasets: [
+      {
+        data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        backgroundColor: function (context) {
+          const chart = context.chart;
+          const { ctx, chartArea } = chart;
+          if (chartArea !== undefined) {
+            if (context.dataIndex === 0) {
+              return getGradientAF(ctx, chartArea);
+            }
+            if (context.dataIndex === 1) {
+              return getGradientCR(ctx, chartArea);
+            }
+            if (context.dataIndex === 2) {
+              return getGradientCRw(ctx, chartArea);
+            }
+            if (context.dataIndex === 3) {
+              return getGradientHCM(ctx, chartArea);
+            }
+            if (context.dataIndex === 4) {
+              return getGradientHF(ctx, chartArea);
+            }
+            if (context.dataIndex === 5) {
+              return getGradientHFO(ctx, chartArea);
+            }
+            if (context.dataIndex === 6) {
+              return getGradientLipid(ctx, chartArea);
+            }
+            if (context.dataIndex === 7) {
+              return getGradientSC(ctx, chartArea);
+            }
+            if (context.dataIndex === 8) {
+              return getGradientSCESS(ctx, chartArea);
+            }
+            if (context.dataIndex === 9) {
+              return getGradientWC(ctx, chartArea);
+            }
+            if (context.dataIndex === 10) {
+              return getGradientFrailty(ctx, chartArea);
+            }
+            if (context.dataIndex === 11) {
+              return getGradientPD(ctx, chartArea);
+            }
+            if (context.dataIndex === 12) {
+              return getGradientAsthmaCOPD(ctx, chartArea);
+            }
+          }
+          return '#121212';
+        },
+        borderWidth: function (chart) {
+          let width = chart.chart.width;
+          if (width < 500) {
+            return 2;
+          } else {
+            return 4;
+          }
+        },
+        borderColor: [
+          'rgba(255,255,255,1)',
+          'rgba(255,235,248,1)',
+          'rgba(255,233,247,1)',
+          'rgba(249,224,251,1)',
+          'rgba(249,224,251,1)',
+          'rgba(253,224,255,1)',
+          'rgba(252,216,255,1)',
+          'rgba(213,213,255,1)',
+          'rgba(206,206,255,1)',
+          'rgba(192,192,255,1)', //cardiology end
+          'rgba(206, 255, 173, 1)',
+          'rgba(201, 255, 251, 1)',
+          'rgba(255, 218, 193, 1)',
+        ],
+        borderRadius: 0,
+        spacing: 50,
+      },
+    ],
+  };
+  public doughnutChartDataTablet: any = {
+    labels: [
+      `AF`,
+      `CR`,
+      'CRw',
+      `HCM`,
+      `HF`,
+      `HFO`,
+      'LP',
+      `SC`,
+      `SCESS`,
+      `WC`,
+      `FR`,
+      `PD`,
+      `AS/COPD`,
+    ],
+    datasets: [
+      {
+        data: [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
+        backgroundColor: function (context) {
+          const chart = context.chart;
+          const { ctx, chartArea } = chart;
+          if (chartArea !== undefined) {
+            if (context.dataIndex === 0) {
+              return getGradientAF(ctx, chartArea);
+            }
+            if (context.dataIndex === 1) {
+              return getGradientCR(ctx, chartArea);
+            }
+            if (context.dataIndex === 2) {
+              return getGradientCRw(ctx, chartArea);
+            }
+            if (context.dataIndex === 3) {
+              return getGradientHCM(ctx, chartArea);
+            }
+            if (context.dataIndex === 4) {
+              return getGradientHF(ctx, chartArea);
+            }
+            if (context.dataIndex === 5) {
+              return getGradientHFO(ctx, chartArea);
+            }
+            if (context.dataIndex === 6) {
+              return getGradientLipid(ctx, chartArea);
+            }
+            if (context.dataIndex === 7) {
+              return getGradientSC(ctx, chartArea);
+            }
+            if (context.dataIndex === 8) {
+              return getGradientSCESS(ctx, chartArea);
+            }
+            if (context.dataIndex === 9) {
+              return getGradientWC(ctx, chartArea);
+            }
+            if (context.dataIndex === 10) {
+              return getGradientFrailty(ctx, chartArea);
+            }
+            if (context.dataIndex === 11) {
+              return getGradientPD(ctx, chartArea);
+            }
+            if (context.dataIndex === 12) {
+              return getGradientAsthmaCOPD(ctx, chartArea);
+            }
+          }
+          return '#121212';
+        },
+        borderWidth: function (chart) {
+          let width = chart.chart.width;
+          if (width < 500) {
+            return 2;
+          } else {
+            return 4;
+          }
+        },
+        borderColor: [
+          'rgba(255,255,255,1)',
+          'rgba(255,235,248,1)',
+          'rgba(255,233,247,1)',
+          'rgba(249,224,251,1)',
+          'rgba(249,224,251,1)',
+          'rgba(253,224,255,1)',
+          'rgba(252,216,255,1)',
+          'rgba(213,213,255,1)',
+          'rgba(206,206,255,1)',
+          'rgba(192,192,255,1)', //cardiology end
+          'rgba(206, 255, 173, 1)',
+          'rgba(201, 255, 251, 1)',
+          'rgba(255, 218, 193, 1)',
+        ],
+        borderRadius: 0,
+        spacing: 100,
+      },
+    ],
+  };
   public doughnutChartData: any = {
     labels: [
       `AF`,
@@ -157,53 +354,6 @@ export class EcosystemComponent implements OnInit {
           }
           return '#121212';
         },
-        hoverBackgroundColor: function (context) {
-          const chart = context.chart;
-          const { ctx, chartArea } = chart;
-          if (chartArea !== undefined) {
-            if (context.dataIndex === 0) {
-              return 'rgba(255,255,255,1)';
-            }
-            if (context.dataIndex === 1) {
-              return 'rgba(255,235,248,1)';
-            }
-            if (context.dataIndex === 2) {
-              return 'rgba(255,233,247,1)';
-            }
-            if (context.dataIndex === 3) {
-              return 'rgba(249,224,251,1)';
-            }
-            if (context.dataIndex === 4) {
-              return 'rgba(249,224,251,1)';
-            }
-            if (context.dataIndex === 5) {
-              return 'rgba(253,224,255,1)';
-            }
-            if (context.dataIndex === 6) {
-              return 'rgba(252,216,255,1)';
-            }
-            if (context.dataIndex === 7) {
-              return 'rgba(213,213,255,1)';
-            }
-            if (context.dataIndex === 8) {
-              return 'rgba(206,206,255,1)';
-            }
-            if (context.dataIndex === 9) {
-              return 'rgba(192,192,255,1)';
-            }
-            if (context.dataIndex === 10) {
-              return 'rgba(206, 255, 173, 1)';
-            }
-            if (context.dataIndex === 11) {
-              return 'rgba(201, 255, 251, 1)';
-            }
-            if (context.dataIndex === 12) {
-              return 'rgba(255, 218, 193, 1)';
-            }
-          }
-          return '#121212';
-        },
-
         borderWidth: function (chart) {
           let width = chart.chart.width;
           if (width < 500) {
@@ -212,23 +362,7 @@ export class EcosystemComponent implements OnInit {
             return 4;
           }
         },
-
         borderColor: [
-          'rgba(255,255,255,1)',
-          'rgba(255,235,248,1)',
-          'rgba(255,233,247,1)',
-          'rgba(249,224,251,1)',
-          'rgba(249,224,251,1)',
-          'rgba(253,224,255,1)',
-          'rgba(252,216,255,1)',
-          'rgba(213,213,255,1)',
-          'rgba(206,206,255,1)',
-          'rgba(192,192,255,1)', //cardiology end
-          'rgba(206, 255, 173, 1)',
-          'rgba(201, 255, 251, 1)',
-          'rgba(255, 218, 193, 1)',
-        ],
-        hoverBorderColor: [
           'rgba(255,255,255,1)',
           'rgba(255,235,248,1)',
           'rgba(255,233,247,1)',
@@ -245,13 +379,6 @@ export class EcosystemComponent implements OnInit {
         ],
         borderRadius: 0,
         spacing: 100,
-        hoverOffset: function (chart) {
-          let width = chart.chart.width;
-          if (width < 500) {
-            return 15;
-          }
-          return 50;
-        },
       },
     ],
   };
@@ -271,34 +398,14 @@ export class EcosystemComponent implements OnInit {
         weight: 1,
       },
       {
-        data: [17, 1,2, 1],
+        data: [17, 1, 2, 1],
         rotation: -8,
         // borderColor: '#121212',
-        borderWidth: [4,4,4,4],
+        borderWidth: [4, 4, 4, 4],
         // borderColor: 'rgba(255, 218, 193, 1)',
         backgroundColor: '#121212',
         borderAlign: 'inner',
-        hoverBackgroundColor: '#121212',
         borderColor: function (context) {
-          const chart = context.chart;
-          const { ctx, chartArea } = chart;
-          if (chartArea !== undefined) {
-            if (context.dataIndex === 0) {
-              return 'rgba(192,192,255,1)';
-            }
-            if (context.dataIndex === 1) {
-              return 'rgba(206, 255, 173, 1)';
-            }
-            if (context.dataIndex === 2) {
-              return 'rgba(201, 255, 251, 1)';
-            }
-            if (context.dataIndex === 3) {
-              return 'rgba(255, 218, 193, 1)';
-            }
-          }
-          return 'null';
-        },
-        hoverBorderColor: function (context) {
           const chart = context.chart;
           const { ctx, chartArea } = chart;
           if (chartArea !== undefined) {
@@ -325,6 +432,7 @@ export class EcosystemComponent implements OnInit {
   public doughnutChartType2: ChartType = 'doughnut';
 
   public chartOptions: any = {
+    hover: {mode: null},
     layout: {
       padding: function (chart, context) {
         let width = chart.chart.width;
@@ -353,9 +461,6 @@ export class EcosystemComponent implements OnInit {
         return width / 5;
       }
       return width / 5;
-    },
-    hover: {
-      mode: 'nearest',
     },
     animation: {
       onProgress: function (chart) {
@@ -452,13 +557,11 @@ export class EcosystemComponent implements OnInit {
 
   //2nd chart options
   public chartOptions2: any = {
+    hover: {mode: null},
     cutout: function (chart, context) {
       let width = chart.chart.width;
       let height = chart.chart.height;
       return width / 8;
-    },
-    hover: {
-      mode: 'nearest',
     },
     plugins: {
       legend: {
@@ -516,13 +619,6 @@ export class EcosystemComponent implements OnInit {
     responsive: true,
     maintainAspectRatio: true,
   };
-  chartHovered(event: any): void {
-    let eventIndex;
-
-    if (event.active.length > 0 && event.active[0].index !== undefined) {
-      eventIndex = event.active[0].index;
-    }
-  }
 }
 
 function getGradientAF(ctx, chartArea) {
