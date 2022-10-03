@@ -96,11 +96,6 @@ CHART DIV CSS
     display: flex;
 }
 
-#donutchart {
-    height: 75%;
-    width: 100%;
-}
-
 .ecosystem-chart {
     padding-top: 10vh;
     position: absolute;
@@ -125,71 +120,7 @@ CHART DIV CSS
     margin-right: auto;
 }
 
-.chart-parts-div {
-    position: absolute;
-    height: 100vh;
-    width: 100%
-}
 
-.chart-div-telephone {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 37.5%;
-    left: 0%;
-    gap: 2.5vw;
-}
-
-.teleplan-img {
-    margin: 0;
-    width: 100px;
-    height: 100px;
-}
-
-.chart-div-eHealthViewer {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 20%;
-    left: 5%;
-    gap: 2.5vw;
-}
-
-.eHealth-img {
-    width: 100px;
-    height: 100px;
-    margin: 0;
-}
-
-.chart-div-pharmanet {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 37.5%;
-    right: 0%;
-    gap: 2.5vw;
-}
-
-.pharmaNet-img {
-    margin: 0;
-    width: 100px;
-    height: 100px;
-}
-
-.chart-div-hospital {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 20%;
-    right: 5%;
-    gap: 2.5vw;
-}
-
-.hospital-img {
-    margin: 0;
-    width: 100px;
-    height: 100px;
-}
 
 /* 
 =============================================
@@ -510,38 +441,99 @@ ARROW CSS
         border-color: #ffd64a;
     }
 }
-@media only screen and (min-width: 576px) {
-    .ecosystem-chart {
-        width: 75%;
-    }
-
-    .inner-chart {
-        width: 75%;
-    }
+.chart-parts-div {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+.teleplan-img {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+}
+.eHealth-img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+.pharmaNet-img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
+}
+.hospital-img {
+    width: 100px;
+    height: 100px;
+    margin: 0;
 }
 @media only screen and (min-width: 768px) {
     .ecosystem-chart {
-        width: 75%;
+        width: 90%;
     }
 
     .inner-chart {
-        width: 75%;
+        width: 90%;
     }
 }
+
 @media only screen and (min-width: 992px) {
     .ecosystem-chart {
-        width: 75%;
+        width: 65%;
     }
+
     .inner-chart {
-        width: 75%;
+        width: 65%;
     }
 }
+
 /* bootstrap large */
 @media only screen and (min-width: 1200px) {
     .ecosystem-chart {
         width: 60%;
     }
+
     .inner-chart {
         width: 60%;
+    }
+
+    .chart-parts-div {
+        display: block;
+    }
+    
+    .chart-div-telephone {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 37.5%;
+        left: 0%;
+        gap: 2.5vw;
+    }
+    .chart-div-eHealthViewer {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 20%;
+        left: 5%;
+        gap: 2.5vw;
+    }
+    .chart-div-pharmanet {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 37.5%;
+        right: 0%;
+        gap: 2.5vw;
+    }
+    .chart-div-hospital {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 20%;
+        right: 5%;
+        gap: 2.5vw;
     }
 }

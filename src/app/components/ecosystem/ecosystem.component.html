@@ -63,35 +63,20 @@
         <section class="ecosystem-chart-div">
             <div class="main-chart-div">
                 <div *ngIf="mobile" class="ecosystem-chart">
-                    <canvas
-                      baseChart
-                      [data]="doughnutChartDataMobile"
-                      [type]="doughnutChartType"
-                      [options]="chartOptions"
-                      id="donutchart"
-                    >
+                    <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType"
+                        [options]="chartOptions" id="donutchart">
                     </canvas>
-                  </div>
-                  <div *ngIf="tablet" class="ecosystem-chart">
-                    <canvas
-                      baseChart
-                      [data]="doughnutChartDataTablet"
-                      [type]="doughnutChartType"
-                      [options]="chartOptions"
-                      id="donutchart"
-                    >
+                </div>
+                <div *ngIf="tablet" class="ecosystem-chart">
+                    <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType"
+                        [options]="chartOptions" id="donutchart">
                     </canvas>
-                  </div>
-                  <div *ngIf="desktop" class="ecosystem-chart">
-                    <canvas
-                      baseChart
-                      [data]="doughnutChartData"
-                      [type]="doughnutChartType"
-                      [options]="chartOptions"
-                      id="donutchart"
-                    >
+                </div>
+                <div *ngIf="desktop" class="ecosystem-chart">
+                    <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
+                        id="donutchart">
                     </canvas>
-                  </div>
+                </div>
                 <div class="inner-chart">
                     <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
                         id="donutchart2">
@@ -101,7 +86,7 @@
             <div class="chart-parts-div">
                 <div class="chart-div-telephone">
                     <img src="./assets/images/ecosystem/teleplan6.png" alt=" " class="teleplan-img" />
-                    <div class="double-indicator-div rotate-leftbottom">
+                    <div *ngIf="desktop" class="double-indicator-div rotate-leftbottom">
                         <div class="smallindicator">
                             <span></span>
                             <span></span>
@@ -117,7 +102,7 @@
                 <div class="chart-div-eHealthViewer">
                     <img src="./assets/images/ecosystem/eHealth3.png" alt=" " class="eHealth-img" />
                     <div class="double-indicator-div rotate-leftbottom">
-                        <div class="smallindicator">
+                        <div *ngIf="desktop" class="smallindicator">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -131,7 +116,7 @@
 
                 <div class="chart-div-pharmanet">
                     <div class="double-indicator-div rotate-rightbottom">
-                        <div class="smallindicator">
+                        <div *ngIf="desktop" class="smallindicator">
                             <span></span>
                             <span></span>
                             <span></span>
@@ -146,7 +131,7 @@
 
                 <div class="chart-div-hospital">
                     <div class="double-indicator-div rotate-rightbottom">
-                        <div class="smallindicator">
+                        <div *ngIf="desktop" class="smallindicator">
                             <span></span>
                             <span></span>
                             <span></span>
