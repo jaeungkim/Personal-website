@@ -81,7 +81,7 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       this.aiclinictextappear = true;
-    }, 9990);
+    }, 9000);
   }
 
   public createScene(): void {
