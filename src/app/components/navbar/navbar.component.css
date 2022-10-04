@@ -4,11 +4,10 @@
   backdrop-filter: blur(8px);
   padding-top: 1vh;
   padding-bottom: 1vh;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
-.navbar{
-
-}
 .navbar-brand {
   margin: 0;
   padding: 0;
