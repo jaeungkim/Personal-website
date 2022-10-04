@@ -22,11 +22,11 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
 }
 
-.doctor-patient-div {
+.patientchart-div {
     display: flex;
-    justify-content: center;
-    /* margin-top: -150px; */
-    margin-bottom: 100px;
+    width: 25%;
+    position: absolute;
+    bottom: 5%;
 }
 
 .patient-div {
@@ -34,6 +34,7 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 12.5%;
     /* gap: 5vw; */
 }
 
@@ -42,6 +43,7 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 12.5%;
     /* gap: 5vw; */
 }
 
@@ -51,6 +53,10 @@ PATIENT DOCTOR DIV CSS
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 12.5%;
+}
+.chart-div-teleplan {
+    transform: translate(5%,0px) !important;
 }
 
 .patient-img {
@@ -72,7 +78,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .teleplan2-img {
-    width: 17.5%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -134,6 +140,8 @@ CHART DIV CSS
     padding: 0;
     width: 15vw;
     height: 15vw;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .eHealth-img {
@@ -141,6 +149,8 @@ CHART DIV CSS
     padding: 0;
     width: 15vw;
     height: 15vw;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .pharmaNet-img {
@@ -148,6 +158,8 @@ CHART DIV CSS
     padding: 0;
     width: 15vw;
     height: 15vw;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 .hospital-img {
@@ -155,8 +167,17 @@ CHART DIV CSS
     padding: 0;
     width: 15vw;
     height: 15vw;
+    margin-left:auto;
+    margin-right:auto;
 }
-
+.external-label{
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    text-align: center;
+    padding-top: 8px;
+}
 /* 
 =============================================
 APP DIV CSS
@@ -207,7 +228,7 @@ ARROW CSS
 
 .indicator-pad {
     position: absolute;
-    bottom: 20%;
+    bottom: 40%;
 }
 
 .rotate-down {
@@ -302,13 +323,15 @@ ARROW CSS
         border-color: #ffd64a;
     }
 }
-
+.arrow-div{
+    padding-top: 75px;
+}
 .arrow-div-2 {
     display: flex;
     flex-direction: column;
     gap: 5%;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -329,7 +352,7 @@ ARROW CSS
     flex-direction: column;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 75%;
+    margin-bottom: 50px;
 }
 
 .chart-gapline {
@@ -362,7 +385,7 @@ ARROW CSS
 
 @media only screen and (min-width: 576px) {
     .chart-arrow-div {
-        margin-bottom: 50%;
+        margin-bottom: 50px;
     }
 
     .ecosystem-chart {
@@ -376,7 +399,7 @@ ARROW CSS
 
 @media only screen and (min-width: 768px) {
     .chart-arrow-div {
-        margin-bottom: 100%;
+        margin-bottom: 50px;
     }
 
     .ecosystem-chart {
@@ -400,7 +423,7 @@ ARROW CSS
     }
 
     .teleplan2-img {
-        width: 15%;
+        width: 60%;
     }
 
     .app-phone-img {
@@ -441,16 +464,18 @@ ARROW CSS
     }
 
     .chart-arrow-div {
-        margin-bottom: 50%;
+        margin-bottom: 50px;
     }
-
+    .external-label{
+        font-size: 16px;
+    }
     .ecosystem-chart {
-        top: 15%;
+        top: 10%;
         width: 55%;
     }
 
     .inner-chart {
-        top: 15%;
+        top: 10%;
         width: 55%;
     }
 
@@ -474,7 +499,7 @@ ARROW CSS
     }
 
     .teleplan2-img {
-        width: 10%;
+        width: 40%;
     }
 
     .app-phone-img {
@@ -553,23 +578,23 @@ ARROW CSS
     }
 
     .teleplan-img {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
     }
 
     .eHealth-img {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
     }
 
     .pharmaNet-img {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
     }
 
     .hospital-img {
-        width: 125px;
-        height: 125px;
+        width: 120px;
+        height: 120px;
     }
 
 }

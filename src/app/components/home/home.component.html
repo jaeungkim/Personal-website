@@ -1,18 +1,23 @@
-<div>
-	<p class="title"><span class="bg-color">aiClinic</span></p>
-	<p class="subtitle">
-		<span class="bg-color">Healthcare Powered By Data</span>
-	</p>
+<div class="background-regular">
+	<div *ngIf="!aiclinictextappear">
+		<p class="title"><span class="bg-color">Imagine</span></p>
+		<p class="subtitle">
+			<span class="bg-color">The Future of Healthcare</span>
+		</p>
+	</div>
+	<div *ngIf="aiclinictextappear" class="title-div">
+		<span class="title">aiClinic</span>
+		<span class="subtitle">Healthcare Powered By Data</span>
+	</div>
+
+	<video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
+		id="myVideo">
+		<source src="https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4" type="video/mp4">
+	</video>
+
+	<canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
+
 </div>
-
-<video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
-	id="myVideo">
-	<source src="https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4" type="video/mp4">
-</video>
-
-<canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
-
-
 <!-- <div class="cookie-container">
 	<p class="cookie-text">
 		We use cookies and similar technologies that are necessary to operate the website. Additional cookies are used to perform analysis of website usage. By continuing to use our website, consent to our use of cookies. For more information, please read our <a href="#"> Privacy Policy.</a>

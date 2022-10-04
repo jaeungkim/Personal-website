@@ -1,16 +1,14 @@
 .navbar-custom {
   z-index: 100;
-  width: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  max-width: 1300px;
-  padding-top: 1.5vh;
-  padding-left: 5%;
-  padding-right: 5%;
-  padding-bottom: 1.5vh;
+  width: 100%; 
   backdrop-filter: blur(8px);
+  padding-top: 1vh;
+  padding-bottom: 1vh;
 }
 
+.navbar{
+
+}
 .navbar-brand {
   margin: 0;
   padding: 0;

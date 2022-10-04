@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Router } from '@angular/router';
+import { NavigationEnd, Router } from '@angular/router';
 
 import { AuthService } from './auth.service';
 
@@ -10,9 +10,18 @@ import { AuthService } from './auth.service';
 })
 // export class AppComponent{}
 export class AppComponent {
-  name = 'Angular';
+  activePath: string = '';
+  activeClassName: string = '';
 
-  constructor(public _authService: AuthService, private router: Router) {}
+  constructor(public _authService: AuthService, private router: Router) {
+    this.router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activePath = event.url.split('/')[1] || 'default';
+        this.activeClassName = this.activePath + 'PageClass';
+        console.log(this.activeClassName);
+      }
+    });
+  }
 
   ngOnInit() {}
 

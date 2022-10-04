@@ -14,6 +14,7 @@ export class HomeComponent implements OnInit {
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   hideVideoAfterPlay = false;
+  aiclinictextappear = false;
   displayAfterVideo = false;
   private points: any[] = [];
   private colors: any[] = [];
@@ -77,6 +78,10 @@ export class HomeComponent implements OnInit {
         this.render();
       }
     }, 10000);
+
+    setTimeout(() => {
+      this.aiclinictextappear = true;
+    }, 9990);
   }
 
   public createScene(): void {
@@ -86,7 +91,9 @@ export class HomeComponent implements OnInit {
     });
     this.renderer.setSize(window.innerWidth, window.innerHeight);
     this.renderer.setPixelRatio(window.devicePixelRatio);
+
     this.scene = new THREE.Scene();
+    this.scene.background = new THREE.Color(0x151217);
     this.camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,

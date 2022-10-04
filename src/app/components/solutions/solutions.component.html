@@ -1,8 +1,7 @@
-<div class="solutions-container">
-  <div class="solutions-text-div">
-    <p
-      class="mainTitle"
-      [ngClass]="{
+<div class="content-background">
+  <div class="solutions-container">
+    <div class="solutions-text-div">
+      <p class="mainTitle" [ngClass]="{
         mainaf: textColorIndex === 0,
         maincr: textColorIndex === 1,
         maincrw: textColorIndex === 2,
@@ -16,13 +15,10 @@
         mainfr: textColorIndex === 10,
         mainpd: textColorIndex === 11,
         mainascopd: textColorIndex === 12
-      }"
-    >
-      {{ mainTitleInitial }}
-    </p>
-    <p
-      class="title"
-      [ngClass]="{
+      }">
+        {{ mainTitleInitial }}
+      </p>
+      <p class="title" [ngClass]="{
         af: textColorIndex === 0,
         cr: textColorIndex === 1,
         crw: textColorIndex === 2,
@@ -36,61 +32,38 @@
         fr: textColorIndex === 10,
         pd: textColorIndex === 11,
         ascopd: textColorIndex === 12
-      }"
-    >
-      {{ title }}
-    </p>
-    <p class="description" [innerText]="description"></p>
-  </div>
-  <div class="solutions-chart-div rotate">
-    <div *ngIf="mobile" class="main-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartDataMobile"
-        [type]="doughnutChartType"
-        [options]="chartOptions"
-        (chartHover)="chartHovered($event)"
-        id="donutchart"
-      >
-      </canvas>
+      }">
+        {{ title }}
+      </p>
+      <p class="description" [innerText]="description"></p>
     </div>
-    <div *ngIf="tablet" class="main-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartDataTablet"
-        [type]="doughnutChartType"
-        [options]="chartOptions"
-        (chartHover)="chartHovered($event)"
-        id="donutchart"
-      >
-      </canvas>
-    </div>
-    <div *ngIf="desktop" class="main-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartData"
-        [type]="doughnutChartType"
-        [options]="chartOptions"
-        (chartHover)="chartHovered($event)"
-        id="donutchart"
-      >
-      </canvas>
-    </div>
-    <div class="inner-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartData2"
-        [type]="doughnutChartType2"
-        [options]="chartOptions2"
-        id="donutchart2"
-      >
-      </canvas>
-      <div class="ring-div"></div>
-      <!-- <p class="cardiologylabel">Cardiology</p>
+    <div class="solutions-chart-div rotate">
+      <div *ngIf="mobile" class="main-chart-div">
+        <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType" [options]="chartOptions"
+          (chartHover)="chartHovered($event)" id="donutchart">
+        </canvas>
+      </div>
+      <div *ngIf="tablet" class="main-chart-div">
+        <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType" [options]="chartOptions"
+          (chartHover)="chartHovered($event)" id="donutchart">
+        </canvas>
+      </div>
+      <div *ngIf="desktop" class="main-chart-div">
+        <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
+          (chartHover)="chartHovered($event)" id="donutchart">
+        </canvas>
+      </div>
+      <div class="inner-chart-div">
+        <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
+          id="donutchart2">
+        </canvas>
+        <div class="ring-div"></div>
+        <!-- <p class="cardiologylabel">Cardiology</p>
             <p class="geriatricslabel">Geriatrics</p>
             <p class="neurologylabel">Neurology</p>
             <p class="respirologylabel">Respirology</p> -->
+      </div>
     </div>
   </div>
+  <app-footer></app-footer>
 </div>
-<app-footer></app-footer>

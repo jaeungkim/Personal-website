@@ -12,12 +12,6 @@
     width: 100%;
     line-height: 1;
 }
-
-.bg-color {
-    background-color: #000b13b5;
-    border-radius: 10px;
-}
-
 .subtitle {
     font-size: 24px;
     position: absolute;

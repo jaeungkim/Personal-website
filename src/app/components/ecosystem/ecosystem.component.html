@@ -1,10 +1,50 @@
-<div class="custom-container" #container>
-    <div class="gsap-container">
-        <!-- patient doctor merge animation div -->
-        <section class="patientDoctor-div">
-            <div class="patient-div">
-                <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img" />
-                <div class="indicator rotate-right">
+<div class="background-regular">
+    <div class="custom-container" #container>
+        <div class="gsap-container">
+            <!-- patient doctor merge animation div -->
+            <section class="patientDoctor-div">
+                <div class="patient-div">
+                    <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img" />
+                    <div class="indicator rotate-right">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                    </div>
+                </div>
+                <div class="clinic-div">
+                    <img src="./assets/images/ecosystem/clinicWhite.png" alt=" " class="clinic-img" />
+                    <div class="indicator-pad indicator rotate-down">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                    </div>
+                    <div class="patientchart-div">
+                        <img src="./assets/images/ecosystem/patientchart-iclinicblue.png" alt=" "
+                            class="teleplan2-img" />
+                    </div>
+                </div>
+                <div class="doctor-div">
+                    <div class="indicator rotate-left">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                    </div>
+                    <img src="./assets/images/ecosystem/doctor.png" alt=" " class="doctor-img" />
+                </div>
+            </section>
+
+            <section class="section-pad"></section>
+            <section class="section-pad"></section>
+            <!-- END patient doctor merge animation div -->
+
+            <div class="arrow-div">
+                <div class="indicator rotate-down">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -12,9 +52,141 @@
                     <span *ngIf="desktop || largedesktop"></span>
                 </div>
             </div>
-            <div class="clinic-div">
-                <img src="./assets/images/ecosystem/clinicWhite.png" alt=" " class="clinic-img" />
-                <div class="indicator-pad indicator rotate-down">
+
+            <!-- CHART DIV -->
+            <section class="ecosystem-chart-div">
+                <div class="main-chart-div">
+                    <div *ngIf="mobile" class="ecosystem-chart">
+                        <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType"
+                            [options]="chartOptions" id="donutchart"></canvas>
+                    </div>
+                    <div *ngIf="tablet" class="ecosystem-chart">
+                        <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType"
+                            [options]="chartOptions" id="donutchart"></canvas>
+                    </div>
+                    <div *ngIf="desktop || largedesktop" class="ecosystem-chart">
+                        <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
+                            id="donutchart"></canvas>
+                    </div>
+                    <div class="inner-chart">
+                        <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2"
+                            [options]="chartOptions2" id="donutchart2"></canvas>
+                    </div>
+                </div>
+                <div class="chart-parts-div">
+                    <div class="chart-div-teleplan">
+                        <div class="chart-arrow-div"
+                            [ngClass]="desktop || largedesktop ? 'order-2 rotate-teleplan' : 'order-1'">
+                            <div class="indicator rotate-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                            <div class="chart-gapline"></div>
+                            <div class="indicator rotate-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                        </div>
+                        <div [ngClass]="desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'">
+                            <img src="./assets/images/ecosystem/teleplan2.png" alt=" " class="teleplan-img" />
+                            <p class="external-label">Teleplan</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-div-eHealthViewer">
+                        <div class="chart-arrow-div"
+                            [ngClass]="desktop  || largedesktop ? 'order-2 rotate-eHealth' : 'order-1'">
+                            <div class="indicator rotate-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                            <div class="chart-gapline"></div>
+                            <div class="indicator rotate-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                        </div>
+                        <div [ngClass]="desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'">
+                            <img src="./assets/images/ecosystem/eHealth.png" alt=" " class="eHealth-img" />
+                            <p class="external-label">eHealth Viewer</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-div-pharmanet">
+                        <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-pharmanet' : ''">
+                            <div class="indicator rotate-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                            <div class="chart-gapline"></div>
+                            <div class="indicator rotate-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                        </div>
+                        <div [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
+                            <img src="./assets/images/ecosystem/pharmaNet.png" alt=" " class="pharmaNet-img" />
+                            <p class="external-label">PharmaNet</p>
+                        </div>
+                    </div>
+
+                    <div class="chart-div-hospital">
+                        <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-hospital' : ''">
+                            <div class="indicator rotate-top">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                            <div class="chart-gapline"></div>
+                            <div class="indicator rotate-down">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                                <span *ngIf="desktop || largedesktop"></span>
+                            </div>
+                        </div>
+                        <div [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
+                            <img src="./assets/images/ecosystem/hospital.png" alt=" " class="hospital-img" />
+                            <p class="external-label">Hospital</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="chart-section-pad"></section>
+            <!-- <section class="section-pad"></section> -->
+            <!-- END CHART DIV -->
+
+            <div class="arrow-div-2">
+                <div class="indicator rotate-top">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span *ngIf="desktop || largedesktop"></span>
+                    <span *ngIf="desktop || largedesktop"></span>
+                </div>
+                <div class="gapline"></div>
+                <div class="indicator rotate-down">
                     <span></span>
                     <span></span>
                     <span></span>
@@ -22,201 +194,37 @@
                     <span *ngIf="desktop || largedesktop"></span>
                 </div>
             </div>
-            <div class="doctor-div">
-                <div class="indicator rotate-left">
+
+            <!-- APP DIV -->
+            <div class="app-div">
+                <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img" />
+            </div>
+            <!-- END APP DIV -->
+
+            <div class="arrow-div-2">
+                <div class="indicator rotate-top">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span *ngIf="desktop || largedesktop"></span>
                     <span *ngIf="desktop || largedesktop"></span>
                 </div>
-                <img src="./assets/images/ecosystem/doctor.png" alt=" " class="doctor-img" />
+                <div class="gapline"></div>
+                <div class="indicator rotate-down">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span *ngIf="desktop || largedesktop"></span>
+                    <span *ngIf="desktop || largedesktop"></span>
+                </div>
             </div>
-        </section>
 
-        <section class="section-pad"></section>
-        <section class="section-pad"></section>
-        <!-- END patient doctor merge animation div -->
-        <div class="doctor-patient-div">
-            <img src="./assets/images/ecosystem/patientchart-iclinicblue.png" alt=" " class="teleplan2-img" />
+            <!-- PATIENT DIV -->
+            <div class="endPatient-div">
+                <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="endPatient-img" />
+            </div>
+            <!-- END PATIENT DIV -->
         </div>
-        <div class="arrow-div">
-            <div class="indicator rotate-down">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span *ngIf="desktop || largedesktop"></span>
-                <span *ngIf="desktop || largedesktop"></span>
-            </div>
-        </div>
-
-        <!-- CHART DIV -->
-        <section class="ecosystem-chart-div">
-            <div class="main-chart-div">
-                <div *ngIf="mobile" class="ecosystem-chart">
-                    <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType"
-                        [options]="chartOptions" id="donutchart"></canvas>
-                </div>
-                <div *ngIf="tablet" class="ecosystem-chart">
-                    <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType"
-                        [options]="chartOptions" id="donutchart"></canvas>
-                </div>
-                <div *ngIf="desktop || largedesktop" class="ecosystem-chart">
-                    <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
-                        id="donutchart"></canvas>
-                </div>
-                <div class="inner-chart">
-                    <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
-                        id="donutchart2"></canvas>
-                </div>
-            </div>
-            <div class="chart-parts-div">
-                <div class="chart-div-teleplan">
-                    <div class="chart-arrow-div"
-                        [ngClass]="desktop || largedesktop ? 'order-2 rotate-teleplan' : 'order-1'">
-                        <div class="indicator rotate-top">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                        <div class="chart-gapline"></div>
-                        <div class="indicator rotate-down">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                    </div>
-                    <div [ngClass]="desktop || largedesktop ? 'order-1' : 'order-2'">
-                        <img src="./assets/images/ecosystem/teleplan2.png" alt=" " class="teleplan-img" />
-                    </div>
-                </div>
-
-                <div class="chart-div-eHealthViewer">
-                    <div class="chart-arrow-div"
-                        [ngClass]="desktop  || largedesktop ? 'order-2 rotate-eHealth' : 'order-1'">
-                        <div class="indicator rotate-top">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                        <div class="chart-gapline"></div>
-                        <div class="indicator rotate-down">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                    </div>
-                    <div [ngClass]="desktop || largedesktop ? 'order-1' : 'order-2'">
-                        <img src="./assets/images/ecosystem/eHealth.png" alt=" " class="eHealth-img" />
-                    </div>
-                </div>
-
-                <div class="chart-div-pharmanet">
-                    <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-pharmanet' : ''">
-                        <div class="indicator rotate-top">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                        <div class="chart-gapline"></div>
-                        <div class="indicator rotate-down">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/ecosystem/pharmaNet.png" alt=" " class="pharmaNet-img" />
-                    </div>
-                </div>
-
-                <div class="chart-div-hospital">
-                    <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-hospital' : ''">
-                        <div class="indicator rotate-top">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                        <div class="chart-gapline"></div>
-                        <div class="indicator rotate-down">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                            <span *ngIf="desktop || largedesktop"></span>
-                        </div>
-                    </div>
-                    <div>
-                        <img src="./assets/images/ecosystem/hospital.png" alt=" " class="hospital-img" />
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="chart-section-pad"></section>
-        <!-- <section class="section-pad"></section> -->
-        <!-- END CHART DIV -->
-
-        <div class="arrow-div-2">
-            <div class="indicator rotate-top">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span *ngIf="desktop || largedesktop"></span>
-                <span *ngIf="desktop || largedesktop"></span>
-            </div>
-            <div class="gapline"></div>
-            <div class="indicator rotate-down">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span *ngIf="desktop || largedesktop"></span>
-                <span *ngIf="desktop || largedesktop"></span>
-            </div>
-        </div>
-
-        <!-- APP DIV -->
-        <div class="app-div">
-            <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img" />
-        </div>
-        <!-- END APP DIV -->
-
-        <div class="arrow-div-2">
-            <div class="indicator rotate-top">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span *ngIf="desktop || largedesktop"></span>
-                <span *ngIf="desktop || largedesktop"></span>
-            </div>
-            <div class="gapline"></div>
-            <div class="indicator rotate-down">
-                <span></span>
-                <span></span>
-                <span></span>
-                <span *ngIf="desktop || largedesktop"></span>
-                <span *ngIf="desktop || largedesktop"></span>
-            </div>
-        </div>
-
-        <!-- PATIENT DIV -->
-        <div class="endPatient-div">
-            <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="endPatient-img" />
-        </div>
-        <!-- END PATIENT DIV -->
     </div>
+    <app-footer></app-footer>
 </div>
-<app-footer></app-footer>

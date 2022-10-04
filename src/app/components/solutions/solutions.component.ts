@@ -538,10 +538,10 @@ export class SolutionsComponent implements OnInit {
         weight: 1,
       },
       {
-        data: [17, 1,2, 1],
+        data: [17, 1, 2, 1],
         rotation: -8,
         // borderColor: '#121212',
-        borderWidth: [4,4,4,4],
+        borderWidth: [4, 4, 4, 4],
         // borderColor: 'rgba(255, 218, 193, 1)',
         backgroundColor: '#121212',
         borderAlign: 'inner',
@@ -783,8 +783,7 @@ export class SolutionsComponent implements OnInit {
     responsive: true,
     maintainAspectRatio: true,
   };
-  constructor() {
-  }
+  constructor() {}
 
   ngOnInit(): void {
     if (window.innerWidth < 576) {
