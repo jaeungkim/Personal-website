@@ -189,12 +189,12 @@
 }
 
 .invalid-form {
-    border: 2px solid rgba(105, 180, 250, 1) !important;
+    border: 2px solid var(--iclinic-blue) !important;
     outline: none;
 }
 
 .validation-text {
-    color: rgba(105, 180, 250, 1);
+    color: var(--iclinic-blue);
     margin: 0;
     padding: 0;
     margin-top: -10px;
@@ -202,7 +202,7 @@
 }
 
 .contactform-input-box:focus-visible {
-    border: 2px solid rgba(105, 180, 250, 1) !important;
+    border: 2px solid var(--iclinic-blue) !important;
     outline: none;
 }
 
@@ -223,7 +223,7 @@
 }
 
 .submit-button {
-    background: #1a1a1a;
+    background: var(--iclinic-blue);
     border: 1px solid #3a3a3a;
     color: #616161;
     align-items: center;
@@ -243,7 +243,7 @@
 }
 
 .submit-button:not([disabled]) {
-    background: #1a1a1a;
+    background: var(--iclinic-blue);
     border: 1px solid #3a3a3a;
     color: white;
     align-items: center;
@@ -263,7 +263,7 @@
 }
 
 .submit-button:hover:not([disabled]) {
-    background-color: black;
+    background-color: rgba(105, 180, 250, 1);
 }
 
 .support-form-title {
@@ -308,12 +308,15 @@
         width: 35%;
         height: 100%;
     }
-    .contact-form-text-div-title{
+
+    .contact-form-text-div-title {
         font-size: 18px;
     }
-    .contact-form-text-div-subtitle{
+
+    .contact-form-text-div-subtitle {
         font-size: 18px;
     }
+
     .contact-form-title {
         font-size: 18px;
     }
@@ -332,12 +335,14 @@
 }
 
 @media only screen and (min-width: 1200px) {
-    .contact-form-text-div-title{
+    .contact-form-text-div-title {
         font-size: 24px;
     }
-    .contact-form-text-div-subtitle{
+
+    .contact-form-text-div-subtitle {
         font-size: 24px;
     }
+
     .contact-form-title {
         font-size: 24px;
     }
