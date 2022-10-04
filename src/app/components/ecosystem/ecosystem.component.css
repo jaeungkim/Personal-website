@@ -54,29 +54,28 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patient-img {
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .doctor-img {
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .clinic-img {
-    width: 60%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
 }
 
 .teleplan2-img {
-    width: 15%;
+    width: 17.5%;
     margin-left: auto;
     margin-right: auto;
 }
-
 /*
 =============================================
 CHART DIV CSS
@@ -169,7 +168,7 @@ APP DIV CSS
 .app-phone-img {
     margin-left: auto;
     margin-right: auto;
-    width: 20%;
+    width: 17.5%;
     align-items: center;
     vertical-align: center;
     text-align: center;
@@ -187,7 +186,7 @@ BOTTOM PATIENT DIV CSS
 .endPatient-img {
     margin-left: auto;
     margin-right: auto;
-    width: 20%
+    width: 17.5%
 }
 
 /*
@@ -376,7 +375,7 @@ ARROW CSS
 
 @media only screen and (min-width: 768px) {
     .chart-arrow-div {
-        margin-bottom: 150%;
+        margin-bottom: 100%;
     }
 
     .ecosystem-chart {
@@ -388,27 +387,27 @@ ARROW CSS
     }
 
     .patient-img {
-        width: 40%;
+        width: 60%;
     }
 
     .doctor-img {
-        width: 40%;
+        width: 60%;
     }
 
     .clinic-img {
-        width: 40%;
+        width: 60%;
     }
 
     .teleplan2-img {
-        width: 10%;
+        width: 15%;
     }
 
     .app-phone-img {
-        width: 10%;
+        width: 15%;
     }
 
     .endPatient-img {
-        width: 10%;
+        width: 15%;
     }
 
     .teleplan-img {
@@ -445,10 +444,12 @@ ARROW CSS
     }
 
     .ecosystem-chart {
+        top: 15%;
         width: 55%;
     }
 
     .inner-chart {
+        top: 15%;
         width: 55%;
     }
 
@@ -460,17 +461,19 @@ ARROW CSS
     }
 
     .patient-img {
-        width: 30%;
+        width: 40%;
     }
 
     .doctor-img {
-        width: 30%;
+        width: 40%;
     }
 
     .clinic-img {
-        width: 30%;
+        width: 40%;
     }
-
+    .teleplan2-img{
+        width: 10%;
+    }
     .chart-div-teleplan {
         display: flex;
         align-items: center;
@@ -531,31 +534,30 @@ ARROW CSS
 /* bootstrap large */
 @media only screen and (min-width: 1200px) {
     .ecosystem-chart {
-        width: 50%;
+        width: 40%;
     }
 
     .inner-chart {
-        width: 50%;
+        width: 40%;
     }
 
     .teleplan-img {
-        width: 100px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
     }
-
     .eHealth-img {
-        width: 100px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
     }
 
     .pharmaNet-img {
-        width: 100px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
     }
 
     .hospital-img {
-        width: 100px;
-        height: 100px;
+        width: 125px;
+        height: 125px;
     }
 
 }
