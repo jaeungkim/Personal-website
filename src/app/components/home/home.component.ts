@@ -113,7 +113,7 @@ export class HomeComponent implements OnInit {
     //DOT MATERIAL DECLARATIONS
     this.dots = new THREE.BufferGeometry();
 
-    for (var i = 0; i < 2000; i++) {
+    for (var i = 0; i < 2500; i++) {
       let pos: posObject = {
         x: Math.random(),
         y: Math.random(),
