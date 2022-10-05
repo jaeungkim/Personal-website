@@ -1,22 +1,33 @@
 <div class="background-regular">
-	<div *ngIf="!aiclinictextappear">
-		<p class="title"><span class="bg-color">Imagine</span></p>
-		<p class="subtitle">
-			<span class="bg-color">The Future of Healthcare</span>
-		</p>
-	</div>
-	<div *ngIf="aiclinictextappear" class="title-div">
-		<span class="title-aiclinic">aiClinic</span>
-		<span class="subtitle-aiclinic">Healthcare Powered By Data</span>
-	</div>
+  <div *ngIf="!aiclinictextappear">
+    <p class="title">Imagine</p>
+    <p class="subtitle">The Future of Healthcare</p>
+  </div>
+  <div *ngIf="aiclinictextappear" class="title-div">
+    <span class="title-aiclinic">aiClinic</span>
+    <span class="subtitle-aiclinic">Healthcare Powered By Data</span>
+  </div>
 
-	<video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
-		id="myVideo">
-		<source src="https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4" type="video/mp4">
-	</video>
+  <video
+    *ngIf="!hideVideoAfterPlay"
+    autoplay
+    muted
+    playsinline
+    preload="auto"
+    onloadedmetadata="this.muted = true"
+    id="myVideo"
+  >
+    <source
+      src="https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4"
+      type="video/mp4"
+    />
+  </video>
 
-	<canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
-
+  <canvas
+    #rendererCanvas
+    id="renderCanvas"
+    [hidden]="displayAfterVideo"
+  ></canvas>
 </div>
 <!-- <div class="cookie-container">
 	<p class="cookie-text">
@@ -26,6 +37,6 @@
 	<button>Sounds good!</button>
 		</div>
 </div> -->
-<div id="repulse-div" class="d-block"></div>
+<!-- <div id="repulse-div" class="d-block"></div>
 <ng-particles class='particles' *ngIf="hideVideoAfterPlay" [id]="id" [options]="particlesOptions"
-	[particlesInit]="particlesInit"></ng-particles>
+	[particlesInit]="particlesInit"></ng-particles> -->

@@ -11,8 +11,7 @@
     justify-content: center;
     width: 100%;
     line-height: 1;
-    animation: fadeOut ease-in 5s;
-    animation-delay: 5s;
+    animation: fadeIn ease-in 3s;
 }
 
 .title-aiclinic {
@@ -29,16 +28,6 @@
     width: 100%;
     line-height: 1;
     animation: fadeIn ease-in 3s;
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
 }
 
 @keyframes fadeIn {
@@ -65,8 +54,8 @@
     justify-content: center;
     width: 100%;
     text-align: center;
-    animation: fadeOut ease-in 5s;
-    animation-delay: 5s;
+    opacity: 1;
+    animation: fadeIn ease-in 8s;
 }
 
 .subtitle-aiclinic {
