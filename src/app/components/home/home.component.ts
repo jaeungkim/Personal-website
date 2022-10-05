@@ -1,13 +1,119 @@
 import * as THREE from 'three';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
-
+import {
+  Container,
+  Engine,
+} from 'tsparticles-engine';
+import { loadFull } from 'tsparticles';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  id = 'tsparticles';
+
+  particlesOptions = {
+    detectRetina: true,
+    interactivity: {
+      events: {
+        onClick: {
+          enable: true,
+          mode: 'push',
+        },
+        onDiv:{
+          elementId: "repulse-div",
+          enable: true,
+          mode: "repulse"
+        },
+        resize: true,
+      },
+    },
+    particles: {
+      color: {
+        value: '#ffffff',
+      },
+      rotate: {
+        value: 0,
+        random: true,
+        direction: 'clockwise',
+        animation: {
+          enable: true,
+          speed: 5,
+          sync: false,
+        },
+      },
+      move: {
+        attract: {
+          enable: false,
+          rotateX: 600,
+          rotateY: 1200,
+        },
+        bounce: false,
+        enable: true,
+        random: false,
+        speed: 2,
+        straight: false,
+      },
+      number: {
+        density: {
+          enable: true,
+          area: 800,
+        },
+        limit: 0,
+        value: 80,
+      },
+      opacity: {
+        animation: {
+          enable: false,
+          minimumValue: 0.1,
+          speed: 1,
+          sync: false,
+        },
+        random: false,
+        value: 0.8,
+      },
+      shape: {
+        image: [
+          {
+            src: './assets/images/ecosystem/teleplan2.png',
+            width: 8,
+            height: 8,
+          },
+          {
+            src: 'https://particles.js.org/images/fruits/avocado.png',
+            width: 8,
+            height: 8,
+          },
+        ],
+        type: 'image',
+      },
+      size: {
+        animation: {
+          enable: false,
+          minimumValue: 0.1,
+          speed: 40,
+          sync: false,
+        },
+        random: false,
+        value: 6,
+      },
+    },
+  };
+  particlesLoaded(container: Container): void {
+    console.log(container);
+  }
+
+  async particlesInit(engine: Engine): Promise<void> {
+    console.log(engine);
+
+    // Starting from 1.19.0 you can add custom presets or shape here, using the current tsParticles instance (main)
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  }
+  //====================================================================
   @ViewChild('rendererCanvas', { static: true })
   public rendererCanvas: ElementRef<HTMLCanvasElement>;
   private renderer: THREE.WebGLRenderer;
@@ -81,7 +187,7 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       this.aiclinictextappear = true;
-    }, 9000);
+    }, 9750);
   }
 
   public createScene(): void {
@@ -119,7 +225,6 @@ export class HomeComponent implements OnInit {
     };
     //DOT MATERIAL DECLARATIONS
     this.dots = new THREE.BufferGeometry();
-
     for (var i = 0; i < 2500; i++) {
       let pos: posObject = {
         x: Math.random(),

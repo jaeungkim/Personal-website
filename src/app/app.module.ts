@@ -10,6 +10,7 @@ import { MatExpansionModule } from '@angular/material/expansion';
 import { NgChartsModule } from 'ng2-charts';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RecaptchaModule, RecaptchaFormsModule } from "ng-recaptcha";
+import { NgParticlesModule } from "ng-particles";
 
 //Components
 import { AppComponent } from './app.component';
@@ -66,7 +67,7 @@ import { LogoutComponent } from './components/logout/logout.component';
     MatExpansionModule,
     RecaptchaModule,
     RecaptchaFormsModule,
-
+    NgParticlesModule
   ],
   providers: [ AuthService, AuthGuard,
     { provide: HTTP_INTERCEPTORS, useClass: TokenInterceptorService, multi: true }
