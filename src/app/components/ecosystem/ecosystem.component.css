@@ -77,7 +77,7 @@ PATIENT DOCTOR DIV CSS
     margin-right: auto;
 }
 
-.teleplan2-img {
+.patientchart-img {
     width: 70%;
     margin-left: auto;
     margin-right: auto;
@@ -422,7 +422,7 @@ ARROW CSS
         width: 60%;
     }
 
-    .teleplan2-img {
+    .patientchart-img {
         width: 60%;
     }
 
@@ -498,7 +498,7 @@ ARROW CSS
         width: 40%;
     }
 
-    .teleplan2-img {
+    .patientchart-img {
         width: 40%;
     }
 
@@ -569,6 +569,7 @@ ARROW CSS
 
 /* bootstrap large */
 @media only screen and (min-width: 1200px) {
+    
     .ecosystem-chart {
         width: 40%;
     }
@@ -597,4 +598,27 @@ ARROW CSS
         height: 120px;
     }
 
+    .patient-img {
+        width: 30%;
+    }
+
+    .doctor-img {
+        width: 30%;
+    }
+
+    .clinic-img {
+        width: 30%;
+    }
+
+    .patientchart-img {
+        width: 30%;
+    }
+
+    .app-phone-img {
+        width: 7.5%;
+    }
+
+    .endPatient-img {
+        width: 7.5%;
+    }
 }
