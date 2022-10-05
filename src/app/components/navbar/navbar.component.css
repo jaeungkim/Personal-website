@@ -7,7 +7,15 @@
   padding-left: 5%;
   padding-right: 5%;
 }
-
+.navbar-custom-home {
+  z-index: 100;
+  width: 100%; 
+  /* backdrop-filter: blur(8px); */
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  padding-left: 5%;
+  padding-right: 5%;
+}
 .navbar-brand {
   margin: 0;
   padding: 0;

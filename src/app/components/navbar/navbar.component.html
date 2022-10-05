@@ -1,4 +1,4 @@
-<nav class="navbar navbar-custom bg-transparent fixed-top">
+<nav class="navbar bg-transparent fixed-top" [ngClass]="router.url === '/' ? 'navbar-custom-home':'navbar-custom'">
   <div class="max-width-custom w-100 d-flex bd-highlight justify-content-between">
     <div class="bd-highlight my-auto">
       <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url !== '/'">
@@ -9,9 +9,7 @@
       </div>
       <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url === '/'">
         <a class="navbar-brand text-light">
-          <!-- <img src="./assets/images/aboutus/aiClinic-test.png" alt=" " class="aiclinicLogo" /> -->
           <img src="./assets/images/aboutus/aiClinic-home.svg" alt=" " class="iclinicLogo" />
-          <!-- <img src="./assets/images/aboutus/aiClinic-test3.png" alt=" " class="aiclinicLogo" /> -->
         </a>
         <p class="iclinictext text-light">aiClinic</p>
       </div>
@@ -55,16 +53,6 @@
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
           routerLink="/ecosystem">Ecosystem</a>
       </li>
-      <!-- <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
-          routerLink="/support">Support</a>
-      </li> -->
-      <!-- <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="changeBackground()"
-          routerLink="/resources">Resources</a>
-      </li> -->
       <li class="nav-item">
         <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Connect
@@ -77,6 +65,5 @@
       </li>
     </ul>
   </div>
-  <!-- </div> -->
 </nav>
 <app-modal [id]="bookDemoId" [title]="bookDemoTitle" [formCheck]="true" [modalSize]="bookDemoModalSize"></app-modal>
