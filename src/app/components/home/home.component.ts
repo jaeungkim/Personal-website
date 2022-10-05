@@ -1,115 +1,12 @@
 import * as THREE from 'three';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
-// import {
-//   Container,
-//   Engine,
-// } from 'tsparticles-engine';
-// import { loadFull } from 'tsparticles';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
-  // id = 'tsparticles';
-
-  // particlesOptions = {
-  //   detectRetina: true,
-  //   interactivity: {
-  //     events: {
-  //       onClick: {
-  //         enable: true,
-  //         mode: 'push',
-  //       },
-  //       onDiv:{
-  //         elementId: "repulse-div",
-  //         enable: true,
-  //         mode: "repulse"
-  //       },
-  //       resize: true,
-  //     },
-  //   },
-  //   particles: {
-  //     color: {
-  //       value: '#ffffff',
-  //     },
-  //     rotate: {
-  //       value: 0,
-  //       random: true,
-  //       direction: 'clockwise',
-  //       animation: {
-  //         enable: true,
-  //         speed: 5,
-  //         sync: false,
-  //       },
-  //     },
-  //     move: {
-  //       attract: {
-  //         enable: false,
-  //         rotateX: 600,
-  //         rotateY: 1200,
-  //       },
-  //       bounce: false,
-  //       enable: true,
-  //       random: false,
-  //       speed: 2,
-  //       straight: false,
-  //     },
-  //     number: {
-  //       density: {
-  //         enable: true,
-  //         area: 800,
-  //       },
-  //       limit: 0,
-  //       value: 80,
-  //     },
-  //     opacity: {
-  //       animation: {
-  //         enable: false,
-  //         minimumValue: 0.1,
-  //         speed: 1,
-  //         sync: false,
-  //       },
-  //       random: false,
-  //       value: 0.8,
-  //     },
-  //     shape: {
-  //       image: [
-  //         {
-  //           src: './assets/images/ecosystem/teleplan2.png',
-  //           width: 8,
-  //           height: 8,
-  //         },
-  //         {
-  //           src: 'https://particles.js.org/images/fruits/avocado.png',
-  //           width: 8,
-  //           height: 8,
-  //         },
-  //       ],
-  //       type: 'image',
-  //     },
-  //     size: {
-  //       animation: {
-  //         enable: false,
-  //         minimumValue: 0.1,
-  //         speed: 40,
-  //         sync: false,
-  //       },
-  //       random: false,
-  //       value: 6,
-  //     },
-  //   },
-  // };
-  // particlesLoaded(container: Container): void {
-  //   console.log(container);
-  // }
-
-  // async particlesInit(engine: Engine): Promise<void> {
-  //   console.log(engine);
-  //   await loadFull(engine);
-  // }
-  //====================================================================
   @ViewChild('rendererCanvas', { static: true })
   public rendererCanvas: ElementRef<HTMLCanvasElement>;
   private renderer: THREE.WebGLRenderer;
@@ -216,7 +113,7 @@ export class HomeComponent implements OnInit {
     });
   }
   public createStrokes() {
-    // ===========================================================
+    // =====================OUT GALAXY PARTICLES===============================
     const loader = new THREE.TextureLoader();
     const cross = loader.load('./assets/images/home/cross2.png')
     const particlesGeometry = new THREE.BufferGeometry;
@@ -237,7 +134,7 @@ export class HomeComponent implements OnInit {
 
     const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial)
     this.scene.add(particlesMesh)
-    // ===========================================================
+    // =====================OUT GALAXY PARTICLES===============================
     type posObject = {
       [key: string]: any;
     };
