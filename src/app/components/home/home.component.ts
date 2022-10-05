@@ -176,8 +176,8 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       if (this.router.url === '/') {
-        this.createScene();
-        this.render();
+    this.createScene();
+    this.render();
       }
     }, 10000);
 
@@ -216,6 +216,28 @@ export class HomeComponent implements OnInit {
     });
   }
   public createStrokes() {
+    // ===========================================================
+    const loader = new THREE.TextureLoader();
+    const cross = loader.load('./assets/images/home/cross2.png')
+    const particlesGeometry = new THREE.BufferGeometry;
+    const particlesCnt = 2000;
+
+    const posArray = new Float32Array(particlesCnt * 3);
+    for(let i = 0; i < particlesCnt * 3; i++){
+      posArray[i] = (Math.random() - 0.5) * 500
+    }
+
+    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3))
+    
+    const particlesMaterial = new THREE.PointsMaterial({
+      size: 7,
+      map: cross,
+      transparent: true,
+    })
+
+    const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial)
+    this.scene.add(particlesMesh)
+    // ===========================================================
     type posObject = {
       [key: string]: any;
     };
@@ -319,24 +341,26 @@ export class HomeComponent implements OnInit {
     this.dotsStrokes.geometry = this.dots;
     this.strokes.geometry = this.segments;
 
-    this.scene.add(this.strokes);
-    this.scene.add(this.dotsStrokes);
+    // this.scene.add(this.strokes);
+    this.scene.add(this.strokes, this.dotsStrokes);
   }
 
   public animate(): void {
     let count = this.segments.attributes.position.count;
     let now = Date.now() / 3000;
     for (let i = 0; i < count; i++) {
-      const x = this.segments.attributes.position.getX(i);
+      // const x = this.segments.attributes.position.getX(i);
       const y = this.segments.attributes.position.getY(i);
-      const x2 = this.dots.attributes.position.getX(i);
+      // const x2 = this.dots.attributes.position.getX(i);
       const y2 = this.dots.attributes.position.getY(i);
-      const xsin = Math.sin(x + now);
+      // const xsin = Math.sin(x + now);
       const ycos = Math.cos(y + now);
-      const xsin2 = Math.sin(x2 + now);
+      // const xsin2 = Math.sin(x2 + now);
       const ycos2 = Math.cos(y2 + now);
-      this.segments.attributes.position.setZ(i, xsin + ycos * 25);
-      this.dots.attributes.position.setZ(i, xsin2 + ycos2 * 25);
+      // this.segments.attributes.position.setZ(i, xsin + ycos * 25);
+      // this.dots.attributes.position.setZ(i, xsin2 + ycos2 * 25);
+      this.segments.attributes.position.setZ(i, ycos * 25);
+      this.dots.attributes.position.setZ(i, ycos2 * 25);
     }
     this.segments.computeVertexNormals();
     this.segments.attributes.position.needsUpdate = true;
@@ -347,11 +371,8 @@ export class HomeComponent implements OnInit {
 
   public render(): void {
     // this.stats.begin();
-
     this.animate();
-
     requestAnimationFrame(() => this.render());
-
     this.renderer.render(this.scene, this.camera);
   }
 
