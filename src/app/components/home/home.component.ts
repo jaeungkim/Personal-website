@@ -31,6 +31,7 @@ export class HomeComponent implements OnInit {
   private segments: any;
   private strokes: any;
   private strokesMaterial: any;
+  private particlesMesh: any;
   //RayCasting
   private INTERSECTED: any;
   hoveredObjects: any = [];
@@ -132,8 +133,8 @@ export class HomeComponent implements OnInit {
       transparent: true,
     })
 
-    const particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial)
-    this.scene.add(particlesMesh)
+    this.particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial)
+    this.scene.add(this.particlesMesh)
     // =====================OUT GALAXY PARTICLES===============================
     type posObject = {
       [key: string]: any;
@@ -244,6 +245,8 @@ export class HomeComponent implements OnInit {
 
   public animate(): void {
     let count = this.segments.attributes.position.count;
+    this.particlesMesh.rotation.y += 0.0005;
+    this.particlesMesh.rotation.x += 0.0005;
     let now = Date.now() / 3000;
     for (let i = 0; i < count; i++) {
       // const x = this.segments.attributes.position.getX(i);
@@ -276,6 +279,10 @@ export class HomeComponent implements OnInit {
   public onMouseMove(event) {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    //particles
+    // this.particlesMesh.rotation.x = -this.mouse.y * 0.1;
+    // this.particlesMesh.rotation.y = -this.mouse.x * 0.1;
+    //particles
     const geometry = this.dotsStrokes.geometry;
     const attributes = geometry.attributes;
     this.raycaster.setFromCamera(this.mouse, this.camera);

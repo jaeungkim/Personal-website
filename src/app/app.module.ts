@@ -14,7 +14,7 @@ import {
   NgcCookieConsentModule,
   NgcCookieConsentConfig,
 } from 'ngx-cookieconsent';
-
+import {EmailService} from './services/email.service'
 //Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -112,6 +112,7 @@ const cookieConfig: NgcCookieConsentConfig = {
   providers: [
     AuthService,
     AuthGuard,
+    EmailService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInterceptorService,

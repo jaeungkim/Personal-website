@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { EmailService } from '../../services/email.service';
 
 @Component({
   selector: 'app-connect',
@@ -9,7 +10,8 @@ import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 export class ConnectComponent implements OnInit {
   contactUsForm: FormGroup;
   btnclick: boolean = false;
-  constructor(private fb: FormBuilder) {
+  buttonerror: boolean = false;
+  constructor(private fb: FormBuilder, private emailService: EmailService) {
     this.createForm();
   }
 
@@ -34,12 +36,23 @@ export class ConnectComponent implements OnInit {
         ],
       ],
       province: ['', Validators.required],
+      tellusmore: ['']
     });
   }
   btnclickEvent() {
     this.btnclick = !this.btnclick;
   }
-  onSubmit() {
-    console.log(this.contactUsForm);
+  onSubmit(FormData) {
+    console.log(FormData);
+
+    this.emailService.sendEmail(FormData).subscribe(
+      (response) => {
+        console.log(response);
+      },
+      (error) => {
+        this.buttonerror = true;
+        console.log({ error });
+      }
+    );
   }
 }

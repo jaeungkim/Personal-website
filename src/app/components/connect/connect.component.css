@@ -196,6 +196,19 @@
     touch-action: manipulation;
 }
 
+.button-error {
+    border: 1px solid red !important;
+    background: #1a1a1a !important;
+    color: red !important;
+    cursor: not-allowed !important;
+
+}
+
+.button-error-text {
+    color: red !important;
+    white-space: nowrap;
+}
+
 .submit-button:hover:not([disabled]) {
     background-color: rgba(105, 180, 250, 1);
 }
