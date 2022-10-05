@@ -12,6 +12,8 @@
     width: 100%;
     line-height: 1;
     animation: fadeIn ease-in 3s;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    background: transparent;
 }
 
 .title-aiclinic {
@@ -28,6 +30,8 @@
     width: 100%;
     line-height: 1;
     animation: fadeIn ease-in 3s;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    background: transparent;
 }
 
 @keyframes fadeIn {
@@ -56,6 +60,8 @@
     text-align: center;
     opacity: 1;
     animation: fadeIn ease-in 8s;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    background: transparent;
 }
 
 .subtitle-aiclinic {
@@ -73,6 +79,8 @@
     width: 100%;
     text-align: center;
     animation: fadeIn ease-in 3s;
+    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    background: transparent;
 }
 
 #renderCanvas {

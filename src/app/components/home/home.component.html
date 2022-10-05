@@ -1,12 +1,11 @@
 <div class="background-regular">
 	<div *ngIf="!aiclinictextappear">
 		<p class="title">Imagine</p>
-		<p class="subtitle">The Future of Healthcare
-		</p>
+		<p class="subtitle">The Future of Healthcare</p>
 	</div>
 	<div *ngIf="aiclinictextappear" class="title-div">
-		<span class="title-aiclinic">aiClinic</span>
-		<span class="subtitle-aiclinic">Healthcare Powered By Data</span>
+		<p class="title-aiclinic">aiClinic</p>
+		<p class="subtitle-aiclinic">Healthcare Powered By Data</p>
 	</div>
 	<video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
 		id="myVideo">
