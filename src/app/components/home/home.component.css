@@ -5,14 +5,14 @@
     font-size: 60px;
     display: flex;
     align-items: center;
-    color: white;
+	color: transparent;
     top: 45%;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     line-height: 1;
-    animation: fadeIn ease-in 2s;
-    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    animation: fadeInOut 10s ease-in backwards;
+    animation-delay: 1s;
     background: transparent;
 }
 
@@ -43,7 +43,23 @@
         opacity: 1;
     }
 }
-
+@keyframes fadeInOut {
+    0% {
+        opacity: 0;
+        color: white;
+        text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+       
+    }
+    20%,75% {
+        opacity: 1;
+        
+    }
+    100% {
+        opacity: 0;
+        color: white;
+        text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    }
+}
 .subtitle {
     font-size: 24px;
     position: absolute;
@@ -52,15 +68,15 @@
     z-index: 1;
     display: flex;
     align-items: center;
-    color: white;
+    color: transparent;
     top: 57%;
     flex-direction: column;
     justify-content: center;
     width: 100%;
     text-align: center;
     opacity: 1;
-    animation: fadeIn ease-in 5s;
-    text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
+    animation: fadeInOut 8s ease-in backwards;
+    animation-delay: 3s;
     background: transparent;
 }
 
