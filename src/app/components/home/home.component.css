@@ -11,7 +11,7 @@
     justify-content: center;
     width: 100%;
     line-height: 1;
-    animation: fadeIn ease-in 3s;
+    animation: fadeIn ease-in 2s;
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
     background: transparent;
 }
