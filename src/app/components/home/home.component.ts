@@ -74,8 +74,8 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       if (this.router.url === '/') {
-    this.createScene();
-    this.render();
+        this.createScene();
+        this.render();
       }
     }, 10000);
 
@@ -101,8 +101,6 @@ export class HomeComponent implements OnInit {
       1000
     );
     this.camera.position.set(0, 0, 375);
-    // this.camera.lookAt(0, 0, 0);
-
     this.createStrokes();
 
     window.addEventListener('resize', () => {
@@ -116,25 +114,29 @@ export class HomeComponent implements OnInit {
   public createStrokes() {
     // =====================OUT GALAXY PARTICLES===============================
     const loader = new THREE.TextureLoader();
-    const cross = loader.load('./assets/images/home/cross2.png')
-    const particlesGeometry = new THREE.BufferGeometry;
+    const cross = loader.load('./assets/images/home/cross3.png');
+    const particlesGeometry = new THREE.BufferGeometry();
     const particlesCnt = 2000;
 
     const posArray = new Float32Array(particlesCnt * 3);
-    for(let i = 0; i < particlesCnt * 3; i++){
-      posArray[i] = (Math.random() - 0.5) * 500
+    for (let i = 0; i < particlesCnt * 3; i++) {
+      posArray[i] = (Math.random() - 0.5) * 500;
     }
 
-    particlesGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3))
-    
-    const particlesMaterial = new THREE.PointsMaterial({
-      size: 7,
-      map: cross,
-      transparent: true,
-    })
+    particlesGeometry.setAttribute(
+      'position',
+      new THREE.BufferAttribute(posArray, 3)
+    );
 
-    this.particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial)
-    this.scene.add(this.particlesMesh)
+    const particlesMaterial = new THREE.PointsMaterial({
+      size: 5,
+      map: cross,
+      depthTest: false,
+      transparent: true,
+    });
+
+    this.particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+    this.scene.add(this.particlesMesh);
     // =====================OUT GALAXY PARTICLES===============================
     type posObject = {
       [key: string]: any;
@@ -270,7 +272,6 @@ export class HomeComponent implements OnInit {
   }
 
   public render(): void {
-    // this.stats.begin();
     this.animate();
     requestAnimationFrame(() => this.render());
     this.renderer.render(this.scene, this.camera);
@@ -279,10 +280,6 @@ export class HomeComponent implements OnInit {
   public onMouseMove(event) {
     this.mouse.x = (event.clientX / window.innerWidth) * 2 - 1;
     this.mouse.y = -(event.clientY / window.innerHeight) * 2 + 1;
-    //particles
-    // this.particlesMesh.rotation.x = -this.mouse.y * 0.1;
-    // this.particlesMesh.rotation.y = -this.mouse.x * 0.1;
-    //particles
     const geometry = this.dotsStrokes.geometry;
     const attributes = geometry.attributes;
     this.raycaster.setFromCamera(this.mouse, this.camera);
