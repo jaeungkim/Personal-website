@@ -33,7 +33,6 @@
     "gsap": "^3.10.4",
     "ng-recaptcha": "^10.0.0",
     "ng2-charts": "^4.0.0",
-    "ngx-cookieconsent": "^2.2.3",
     "rxjs": "~7.5.0",
     "save": "^2.5.0",
     "stats.js": "^0.17.0",
