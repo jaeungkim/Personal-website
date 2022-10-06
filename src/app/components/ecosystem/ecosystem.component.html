@@ -43,18 +43,19 @@
             <section class="section-pad"></section>
             <!-- END patient doctor merge animation div -->
 
-            <div class="arrow-div">
-                <div class="indicator rotate-down">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span *ngIf="desktop || largedesktop"></span>
-                    <span *ngIf="desktop || largedesktop"></span>
-                </div>
-            </div>
+       
 
             <!-- CHART DIV -->
             <section class="ecosystem-chart-div">
+                <div class="arrow-div">
+                    <div class="indicator rotate-down">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                    </div>
+                </div>
                 <div class="main-chart-div">
                     <div *ngIf="mobile" class="ecosystem-chart">
                         <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType"
@@ -76,7 +77,7 @@
                 <div class="chart-parts-div">
                     <div class="chart-div-teleplan">
                         <div class="chart-arrow-div"
-                            [ngClass]="desktop || largedesktop ? 'order-2 rotate-teleplan' : 'order-1'">
+                            [ngClass]="tablet || desktop || largedesktop ? 'order-2 rotate-teleplan' : 'order-1'">
                             <div class="indicator rotate-top">
                                 <span></span>
                                 <span></span>
@@ -93,7 +94,7 @@
                                 <span *ngIf="desktop || largedesktop"></span>
                             </div>
                         </div>
-                        <div [ngClass]="desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'">
+                        <div class="teleplan-img-div" [ngClass]="tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'">
                             <img src="./assets/images/ecosystem/teleplan2.png" alt=" " class="teleplan-img" />
                             <p class="external-label">Teleplan</p>
                         </div>
@@ -101,7 +102,7 @@
 
                     <div class="chart-div-eHealthViewer">
                         <div class="chart-arrow-div"
-                            [ngClass]="desktop  || largedesktop ? 'order-2 rotate-eHealth' : 'order-1'">
+                            [ngClass]="tablet || desktop  || largedesktop ? 'order-2 rotate-eHealth' : 'order-1'">
                             <div class="indicator rotate-top">
                                 <span></span>
                                 <span></span>
@@ -118,14 +119,14 @@
                                 <span *ngIf="desktop || largedesktop"></span>
                             </div>
                         </div>
-                        <div [ngClass]="desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'">
+                        <div class="eHealth-img-div" [ngClass]="tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'">
                             <img src="./assets/images/ecosystem/eHealth.png" alt=" " class="eHealth-img" />
                             <p class="external-label">eHealth Viewer</p>
                         </div>
                     </div>
 
                     <div class="chart-div-pharmanet">
-                        <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-pharmanet' : ''">
+                        <div class="chart-arrow-div" [ngClass]="tablet || desktop || largedesktop ? 'rotate-pharmanet' : ''">
                             <div class="indicator rotate-top">
                                 <span></span>
                                 <span></span>
@@ -142,14 +143,14 @@
                                 <span *ngIf="desktop || largedesktop"></span>
                             </div>
                         </div>
-                        <div [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
+                        <div class="pharmanet-img-div" [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
                             <img src="./assets/images/ecosystem/pharmaNet.png" alt=" " class="pharmaNet-img" />
                             <p class="external-label">PharmaNet</p>
                         </div>
                     </div>
 
                     <div class="chart-div-hospital">
-                        <div class="chart-arrow-div" [ngClass]="desktop || largedesktop ? 'rotate-hospital' : ''">
+                        <div class="chart-arrow-div" [ngClass]="tablet || desktop || largedesktop ? 'rotate-hospital' : ''">
                             <div class="indicator rotate-top">
                                 <span></span>
                                 <span></span>
@@ -166,10 +167,19 @@
                                 <span *ngIf="desktop || largedesktop"></span>
                             </div>
                         </div>
-                        <div [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
+                        <div class="hospital-img-div" [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
                             <img src="./assets/images/ecosystem/hospital.png" alt=" " class="hospital-img" />
                             <p class="external-label">Hospital</p>
                         </div>
+                    </div>
+                </div>
+                <div [ngClass]="desktop || largedesktop ? 'belowchart-arrow-div' : 'd-none'">
+                    <div class="indicator rotate-down">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span *ngIf="desktop || largedesktop"></span>
+                        <span *ngIf="desktop || largedesktop"></span>
                     </div>
                 </div>
             </section>
