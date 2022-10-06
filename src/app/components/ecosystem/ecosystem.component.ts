@@ -78,23 +78,23 @@ export class EcosystemComponent implements OnInit {
 
     chartAnimationTimeline.fromTo(
       '.chart-div-teleplan',
-      { opacity: 0, x: '-100%', y: '-150%' },
-      { opacity: 1, x: '-10%', y: '0', duration: 5 }
+      { opacity: 0, x: '0%', y: '-150%' },
+      { opacity: 1, x: '10%', y: '0', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-eHealthViewer',
-      { opacity: 0, x: '-100%' },
-      { opacity: 1, x: '5%', duration: 5 }
+      { opacity: 0, x: '0%', y: '100%' },
+      { opacity: 1, x: '5%', y: '0%', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-pharmanet',
-      { opacity: 0, x: '100%', y: '-150%' },
-      { opacity: 1, x: '2.5%', y: '0', duration: 5 }
+      { opacity: 0, x: '0%', y: '-150%' },
+      { opacity: 1, x: '10%', y: '0', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-hospital',
-      { opacity: 0, x: '100%' },
-      { opacity: 1, x: '5%', duration: 5 }
+      { opacity: 0, x: '0%', y: '100%' },
+      { opacity: 1, x: '5%', y: '0%', duration: 5 }
     );
     chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
     //END DOCTOR PATIENT ANIMATION
@@ -536,7 +536,13 @@ export class EcosystemComponent implements OnInit {
         align: 'end',
         offset: function (context) {
           let width = context.chart.width;
-          if (width < 500) {
+          console.log(width);
+          if (width < 300){
+            return 27.5;
+          }
+          if (width < 400) {
+            return 35;
+          } else if (width < 500) {
             return 40;
           }
           return 50;

@@ -47,7 +47,7 @@
 
             <!-- CHART DIV -->
             <section class="ecosystem-chart-div">
-                <div class="arrow-div">
+                <div class="abovechart-arrow-div">
                     <div class="indicator rotate-down">
                         <span></span>
                         <span></span>
@@ -172,16 +172,17 @@
                             <p class="external-label">Hospital</p>
                         </div>
                     </div>
-                </div>
-                <div [ngClass]="desktop || largedesktop ? 'belowchart-arrow-div' : 'd-none'">
-                    <div class="indicator rotate-down">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span *ngIf="desktop || largedesktop"></span>
-                        <span *ngIf="desktop || largedesktop"></span>
+                    <div [ngClass]="tablet || desktop || largedesktop ? 'belowchart-arrow-div' : 'd-none'">
+                        <div class="indicator rotate-down">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span *ngIf="desktop || largedesktop"></span>
+                            <span *ngIf="desktop || largedesktop"></span>
+                        </div>
                     </div>
                 </div>
+            
             </section>
             <section class="chart-section-pad"></section>
             <!-- <section class="section-pad"></section> -->
