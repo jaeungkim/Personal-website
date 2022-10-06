@@ -109,18 +109,21 @@ CHART DIV CSS
     margin-right: auto;
     width: 90%;
 }
-#donutchart{
+
+#donutchart {
     position: absolute;
     z-index: 2;
     top: 25%;
     transform: translate(0, -25%);
 }
-#donutchart2{
+
+#donutchart2 {
     position: absolute;
     z-index: 1;
     top: 25%;
     transform: translate(0, -25%);
 }
+
 .inner-chart {
     margin-left: auto;
     margin-right: auto;
@@ -136,6 +139,7 @@ CHART DIV CSS
 }
 
 .teleplan-img {
+    width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -143,6 +147,7 @@ CHART DIV CSS
 }
 
 .eHealth-img {
+    width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -150,6 +155,7 @@ CHART DIV CSS
 }
 
 .pharmaNet-img {
+    width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -157,6 +163,7 @@ CHART DIV CSS
 }
 
 .hospital-img {
+    width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -212,8 +219,8 @@ ARROW CSS
 */
 .indicator {
     position: relative;
-    width: 3vw;
-    height: 3vw;
+    width: 2vw;
+    height: 2vw;
     max-width: 40px;
     max-height: 40px;
     margin-left: auto;
@@ -265,8 +272,8 @@ ARROW CSS
     height: 100%;
     box-sizing: border-box;
     border: none;
-    border-bottom: 3px solid #fff;
-    border-right: 3px solid #fff;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
     animation: indicatoranimate 1s linear infinite;
 }
 
@@ -321,9 +328,11 @@ ARROW CSS
 .arrow-div {
     padding-top: 75px;
 }
-.abovechart-arrow-div{
+
+.abovechart-arrow-div {
     padding-top: 10vh;
 }
+
 .belowchart-arrow-div {
     padding-top: 85vh;
 }
@@ -368,21 +377,6 @@ ARROW CSS
     transform: rotate(0deg) !important;
 }
 
-.teleplan-img {
-    width: 50%;
-}
-
-.eHealth-img {
-    width: 50%;
-}
-
-.pharmaNet-img {
-    width: 50%;
-}
-
-.hospital-img {
-    width: 50%;
-}
 
 @keyframes gaplineanimate {
     0% {
@@ -401,6 +395,11 @@ ARROW CSS
     }
 }
 
+/*
+=============================================
+MOBILE
+=============================================
+*/
 @media only screen and (min-width: 576px) {
     .chart-arrow-div {
         margin-bottom: 50px;
@@ -415,26 +414,34 @@ ARROW CSS
     }
 }
 
+/*
+=============================================
+TABLET
+=============================================
+*/
 @media only screen and (min-width: 768px) {
     .chart-arrow-div {
         margin-bottom: 50px;
     }
 
     .ecosystem-chart {
-        width: 62.5%;
+        width: 60%;
     }
 
     .inner-chart {
-        width: 62.5%;
+        width: 60%;
     }
-    #donutchart{
+
+    #donutchart {
         top: 50%;
         transform: translate(0, -50%);
     }
-    #donutchart2{
+
+    #donutchart2 {
         top: 50%;
         transform: translate(0, -50%);
     }
+
     .chart-parts-div {
         height: 100vh;
         left: 0;
@@ -479,32 +486,33 @@ ARROW CSS
     }
 
     .patient-img {
-        width: 60%;
+        width: 50%;
     }
 
     .doctor-img {
-        width: 60%;
+        width: 50%;
     }
 
     .clinic-img {
-        width: 60%;
+        width: 50%;
     }
 
     .patientchart-img {
-        width: 60%;
+        width: 50%;
     }
 
     .app-phone-img {
-        width: 15%;
+        width: 12.5%;
     }
 
     .endPatient-img {
-        width: 15%;
+        width: 12.5%;
     }
 
     .teleplan-img-div {
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
 
     .teleplan-img {
@@ -514,6 +522,7 @@ ARROW CSS
     .eHealth-img-div {
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
 
     .eHealth-img {
@@ -523,6 +532,7 @@ ARROW CSS
     .pharmanet-img-div {
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
 
     .pharmaNet-img {
@@ -532,20 +542,28 @@ ARROW CSS
     .hospital-img-div {
         display: flex;
         flex-direction: column;
+        width: 80%;
     }
 
     .hospital-img {
         width: 50%;
     }
-
 }
 
+/*
+=============================================
+SMALL DESKTOP
+=============================================
+*/
 @media only screen and (min-width: 992px) {
     .indicator {
         width: 1.25vw;
         height: 1.25vw;
-        max-width: 40px;
-        max-height: 40px;
+    }
+
+    .indicator span {
+        border-bottom: 3px solid #fff;
+        border-right: 3px solid #fff;
     }
 
     .chart-arrow-div {
@@ -557,12 +575,10 @@ ARROW CSS
     }
 
     .ecosystem-chart {
-        /* padding-top: 10%; */
         width: 50%;
     }
 
     .inner-chart {
-        /* padding-top: 10%; */
         width: 50%;
     }
 
@@ -607,15 +623,17 @@ ARROW CSS
     }
 }
 
-/* bootstrap large */
+/*
+=============================================
+DESKTOP
+=============================================
+*/
 @media only screen and (min-width: 1200px) {
     .ecosystem-chart {
-        /* padding-top: 10vh; */
         width: 40%;
     }
 
     .inner-chart {
-        /* padding-top: 10vh; */
         width: 40%;
     }
 

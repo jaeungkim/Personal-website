@@ -536,7 +536,6 @@ export class EcosystemComponent implements OnInit {
         align: 'end',
         offset: function (context) {
           let width = context.chart.width;
-          console.log(width);
           if (width < 300) {
             return 27.5;
           }
