@@ -59,7 +59,7 @@
     width: 100%;
     text-align: center;
     opacity: 1;
-    animation: fadeIn ease-in 8s;
+    animation: fadeIn ease-in 5s;
     text-shadow: 5px 2px #222324, 2px 4px #222324, 3px 5px #222324;
     background: transparent;
 }
