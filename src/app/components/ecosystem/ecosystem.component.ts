@@ -70,10 +70,10 @@ export class EcosystemComponent implements OnInit {
       },
     });
 
-    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '60%' });
+    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '50%' });
     patientAnimationTimeline.to('.section-pad', { duration: 5 });
 
-    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-60%' });
+    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-50%' });
     doctorAnimationTimeline.to('.section-pad', { duration: 5 });
 
     chartAnimationTimeline.fromTo(

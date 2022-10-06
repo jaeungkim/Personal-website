@@ -8,7 +8,6 @@ GENERAL CSS
     display: flex;
     justify-content: center;
 }
-
 /*
 =============================================
 PATIENT DOCTOR DIV CSS
@@ -35,7 +34,6 @@ PATIENT DOCTOR DIV CSS
     justify-content: space-between;
     align-items: center;
     padding-bottom: 12.5%;
-    /* gap: 5vw; */
 }
 
 .doctor-div {
@@ -44,7 +42,6 @@ PATIENT DOCTOR DIV CSS
     justify-content: space-between;
     align-items: center;
     padding-bottom: 12.5%;
-    /* gap: 5vw; */
 }
 
 .clinic-div {
@@ -54,10 +51,6 @@ PATIENT DOCTOR DIV CSS
     justify-content: space-between;
     align-items: center;
     padding-bottom: 12.5%;
-}
-
-.chart-div-teleplan {
-    transform: translate(5%, 0px) !important;
 }
 
 .patient-img {
@@ -253,7 +246,7 @@ ARROW CSS
 }
 
 .rotate-eHealth {
-    transform: translateX(0) translateY(-25px) rotate(55deg);
+    transform: translateX(0) translateY(-55px) rotate(55deg);
 }
 
 .rotate-pharmanet {
@@ -261,7 +254,7 @@ ARROW CSS
 }
 
 .rotate-hospital {
-    transform: translateX(0) translateY(-25px) rotate(-55deg);
+    transform: translateX(0) translateY(-55px) rotate(-55deg);
 }
 
 .indicator span {
@@ -632,7 +625,6 @@ DESKTOP
     .ecosystem-chart {
         width: 40%;
     }
-
     .inner-chart {
         width: 40%;
     }
