@@ -247,8 +247,8 @@ export class HomeComponent implements OnInit {
 
   public animate(): void {
     let count = this.segments.attributes.position.count;
-    this.particlesMesh.rotation.x += 0.0005;
-    this.particlesMesh.rotation.y += 0.0005;
+    this.particlesMesh.rotation.x += 0.0001;
+    this.particlesMesh.rotation.y += 0.0001;
     let now = Date.now() / 3000;
     for (let i = 0; i < count; i++) {
       // const x = this.segments.attributes.position.getX(i);
