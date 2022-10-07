@@ -7,6 +7,7 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./home.component.css'],
 })
 export class HomeComponent implements OnInit {
+  private acceptCookie = false;
   @ViewChild('rendererCanvas', { static: true })
   public rendererCanvas: ElementRef<HTMLCanvasElement>;
   private renderer: THREE.WebGLRenderer;
@@ -66,7 +67,12 @@ export class HomeComponent implements OnInit {
   }
   `;
   constructor(private router: Router) {}
-
+  /*====================================COOKIE==========================================*/
+  accpetCookie(){
+    this.acceptCookie = true;
+    console.log(this.acceptCookie);
+  }
+  /*====================================COOKIE==========================================*/
   public ngOnInit(): void {
     setTimeout(() => {
       this.hideVideoAfterPlay = true;
