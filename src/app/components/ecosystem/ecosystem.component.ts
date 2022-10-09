@@ -78,23 +78,23 @@ export class EcosystemComponent implements OnInit {
 
     chartAnimationTimeline.fromTo(
       '.chart-div-teleplan',
-      { opacity: 0, x: '0%', y: '-150%' },
-      { opacity: 1, x: '10%', y: '0', duration: 5 }
+      { opacity: 0, y: '-150%' },
+      { opacity: 1, y: '0', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-eHealthViewer',
-      { opacity: 0, x: '0%', y: '100%' },
-      { opacity: 1, x: '5%', y: '0%', duration: 5 }
+      { opacity: 0, y: '100%' },
+      { opacity: 1, y: '0%', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-pharmanet',
-      { opacity: 0, x: '0%', y: '-150%' },
-      { opacity: 1, x: '10%', y: '0', duration: 5 }
+      { opacity: 0, y: '-150%' },
+      { opacity: 1, y: '0', duration: 5 }
     );
     chartAnimationTimeline.fromTo(
       '.chart-div-hospital',
-      { opacity: 0, x: '0%', y: '100%' },
-      { opacity: 1, x: '5%', y: '0%', duration: 5 }
+      { opacity: 0, y: '100%' },
+      { opacity: 1, y: '0%', duration: 5 }
     );
     chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
     //END DOCTOR PATIENT ANIMATION
