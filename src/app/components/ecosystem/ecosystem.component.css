@@ -17,15 +17,18 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 80vh;
+    height: 100vh;
     align-items: center;
 }
 
 .patientchart-div {
     display: flex;
+    flex-direction: row;
     width: 25%;
     position: absolute;
-    bottom: 5%;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .patient-div {
@@ -33,7 +36,7 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 12.5%;
+    padding-bottom: 15%;
 }
 
 .doctor-div {
@@ -41,7 +44,7 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 12.5%;
+    padding-bottom: 15%;
 }
 
 .clinic-div {
@@ -50,7 +53,7 @@ PATIENT DOCTOR DIV CSS
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 12.5%;
+    padding-bottom: 15%;
 }
 
 .patient-img {
