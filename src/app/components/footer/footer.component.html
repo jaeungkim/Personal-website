@@ -1,7 +1,7 @@
-<footer class="footer-container">
+<footer class="footer-container" *ngIf="!(router.url === '/solutions' || router.url ==='/ecosystem')">
   <div class="footer-div">
     <div class="address-section">
-      <div class="iclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url !== '/'">
+      <div class="iclinicLogoDiv" aria-expanded="false" role="button" routerLink="/">
         <a class="text-light">
           <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
         </a>
@@ -18,57 +18,6 @@
         </ul>
       </div>
     </div>
-
-    <!-- <div class="solutions-section">
-      <p class="footer-link-title">Solutions</p>
-      <div class="iclinic-solutions">
-        <div class="iclinic-solutions-lists">
-          <ul class="footer-link">
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic MD</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic AF</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic CR</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic CRw</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic HF</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic AC</a>
-            </li>
-          </ul>
-        </div>
-        <div class="iclinic-solutions-lists">
-          <ul class="footer-link">
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic ONC</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic ICU</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic SC</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic SPC</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic WC</a>
-            </li>
-            <li class="footer-link-item">
-              <a class="text-light text-decoration-none text-center" routerLink="/solutions">iClinic PN</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div> -->
-
     <div class="discover-section">
       <p class="footer-link-title">Discover</p>
       <ul class="footer-link">
@@ -81,9 +30,6 @@
         <li class="footer-link-item">
           <a class="footer-subtitles text-light text-decoration-none" routerLink="/ecosystem">Ecosystem</a>
         </li>
-        <!-- <li class="footer-link-item">
-          <a class="footer-subtitles text-light text-decoration-none" routerLink="/resources">Resources</a>
-        </li> -->
         <li class="footer-link-item text-right">
           <a class="footer-subtitles text-light text-decoration-none" routerLink="/connect">Connect</a>
         </li>
@@ -92,8 +38,7 @@
   </div>
 </footer>
 
-<div class="d-flex justify-content-between privacy-section ">
-
+<div class="d-flex justify-content-between privacy-section"*ngIf="!(router.url === '/solutions' || router.url ==='/ecosystem')">
   <div>
     <p class="text-pptos text-light">© {{ currentYear }} iClinic Systems Inc.</p>
   </div>
@@ -104,7 +49,63 @@
     <a class="text-pptos text-light text-decoration-none" type="button" routerLink="/termsofservice">&nbsp;&nbsp;Terms of Use
     </a>
   </div>
+</div>
 
+<footer class="footer-container-test text-light bg-dark" *ngIf="(router.url === '/solutions' || router.url ==='/ecosystem')">
+  <div class="footer-div text-light">
+    <div class="address-section text-light">
+      <div class="iclinicLogoDiv text-light" aria-expanded="false" role="button" routerLink="/">
+        <a class="text-light">
+          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
+        </a>
+        <p class="iclinictext text-light">iClinic</p>
+      </div>
+      <p class="footer-subtitles text-light">210 - 1122 Mainland Street</p>
+      <p class="footer-subtitles text-light">Vancouver, BC&nbsp;&nbsp;V6B 5L1</p>
+      <div class="d-flex icons-div">
+        <ul class="icons-ul">
+          <li><i class="fa fa-linkedin" aria-hidden="true"></i></li>
+          <li><i class="fa fa-facebook" aria-hidden="true"></i></li>
+          <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+          <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+        </ul>
+      </div>
+    </div>
+    <div class="discover-section">
+      <p class="footer-link-title-solutions text-light">Discover</p>
+      <ul class="footer-link">
+        <li class="footer-link-item">
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/aboutus">About us</a>
+        </li>
+        <li class="footer-link-item">
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/solutions">Solutions</a>
+        </li>
+        <li class="footer-link-item">
+          <a class="footer-subtitles text-light text-decoration-none" routerLink="/ecosystem">Ecosystem</a>
+        </li>
+        <li class="footer-link-item text-light text-right">
+          <a class="footer-subtitles  text-light text-decoration-none" routerLink="/connect">Connect</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<div class="d-flex justify-content-between privacy-section-test bg-dark" *ngIf="(router.url === '/solutions' || router.url ==='/ecosystem')">
+  <div class="testtest">
+
+
+  <div>
+    <p class="text-pptos text-light">© {{ currentYear }} iClinic Systems Inc.</p>
+  </div>
+  <div class="d-flex justify-content-end">
+    <a class="text-pptos text-decoration-none text-light" type="button" routerLink="/privacy">
+      Privacy Policy
+    </a>
+    <a class="text-pptos text-decoration-none text-light" type="button" routerLink="/termsofservice">&nbsp;&nbsp;Terms of Use
+    </a>
+  </div>
+</div>
 </div>
 <!-- <app-modal
   [id]="privacyId"

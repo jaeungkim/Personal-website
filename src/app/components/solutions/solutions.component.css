@@ -1,5 +1,5 @@
 .content-background{
-  background: black;
+  background: white;
 }
 .solutions-container {
   width: 90%;
@@ -26,13 +26,12 @@
 }
 
 .title {
-  color: #ffff;
   font-size: 24px;
   margin: 0;
 }
 
 .description {
-  color: #ffff;
+  color: black;
   font-size: 14px;
   text-align: justify;
   margin: 0;
@@ -252,7 +251,7 @@
   }
 
   .solutions-chart-div {
-    width: 55%;
+    width: 50%;
     position: relative;
   }
 

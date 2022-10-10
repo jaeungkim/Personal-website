@@ -406,7 +406,7 @@ export class EcosystemComponent implements OnInit {
         // borderColor: '#121212',
         borderWidth: [4, 4, 4, 4],
         // borderColor: 'rgba(255, 218, 193, 1)',
-        backgroundColor: '#121212',
+        backgroundColor: 'white',
         borderAlign: 'inner',
         borderColor: function (context) {
           const chart = context.chart;

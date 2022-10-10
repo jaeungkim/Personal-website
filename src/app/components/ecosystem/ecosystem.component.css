@@ -3,6 +3,9 @@
 GENERAL CSS
 =============================================
 */
+.background-ecosystem{
+    background: white;
+}
 .section-pad {
     /* height: 100vh; */
     display: flex;
@@ -26,7 +29,7 @@ PATIENT DOCTOR DIV CSS
     flex-direction: row;
     width: 25%;
     position: absolute;
-    bottom: 10%;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -224,7 +227,7 @@ ARROW CSS
 
 .indicator-pad {
     position: absolute;
-    bottom: 40%;
+    bottom: 35%;
 }
 
 .rotate-down {
@@ -555,7 +558,9 @@ SMALL DESKTOP
         width: 1.25vw;
         height: 1.25vw;
     }
-
+    .indicator-pad {
+        bottom: 40%;
+    }
     .indicator span {
         border-bottom: 3px solid #fff;
         border-right: 3px solid #fff;

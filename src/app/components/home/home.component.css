@@ -138,7 +138,12 @@
     box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
     font-size: 12px;
 }
-
+.minimized-cookie-bar{
+    position: fixed;
+    z-index: 100;
+    width: 130px;
+    background-color: black;
+}
 .cookie-text {
     margin-top: auto;
     margin-bottom: 12px;

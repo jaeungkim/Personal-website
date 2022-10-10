@@ -1,7 +1,9 @@
 <div class="content-background">
   <div class="solutions-container">
     <div class="solutions-text-div">
-      <p class="mainTitle" [ngClass]="{
+      <p class="mainTitle">{{mainTitleInitial}}</p>
+      <p class="title">{{ title }}</p>
+      <!-- <p class="mainTitle" [ngClass]="{
         mainaf: textColorIndex === 0,
         maincr: textColorIndex === 1,
         maincrw: textColorIndex === 2,
@@ -34,10 +36,10 @@
         ascopd: textColorIndex === 12
       }">
         {{ title }}
-      </p>
+      </p> -->
       <p class="description" [innerText]="description"></p>
     </div>
-    <div class="solutions-chart-div rotate">
+    <div class="solutions-chart-div">
       <div *ngIf="mobile" class="main-chart-div">
         <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType" [options]="chartOptions"
           (chartHover)="chartHovered($event)" id="donutchart">
