@@ -5,13 +5,13 @@ import {
   OnInit,
   ViewChild,
 } from '@angular/core';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Chart, ChartType } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 
 Chart.register(ChartDataLabels);
-
+gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-ecosystem',
   templateUrl: './ecosystem.component.html',
@@ -42,17 +42,17 @@ export class EcosystemComponent implements OnInit {
     //DOCTOR PATIENT ANIMATION
     let patientAnimationTimeline = gsap.timeline({
       scrollTrigger: {
-        trigger: '.patientDoctor-div',
+        trigger: '.patientDoctor-division',
         start: 'top top',
         end: '+=200%',
         scrub: 2,
-        pin: true,
+        // pin: true,
       },
     });
 
     let doctorAnimationTimeline = gsap.timeline({
       scrollTrigger: {
-        trigger: '.patientDoctor-div',
+        trigger: '.patientDoctor-division',
         start: 'top top',
         end: '+=200%',
         scrub: 2,
@@ -71,10 +71,10 @@ export class EcosystemComponent implements OnInit {
     });
 
     patientAnimationTimeline.to('.patient-div', { duration: 1, x: '50%' });
-    patientAnimationTimeline.to('.section-pad', { duration: 10 });
+    patientAnimationTimeline.to('.section-pad', { duration: 5 });
 
     doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-50%' });
-    doctorAnimationTimeline.to('.section-pad', { duration: 10 });
+    doctorAnimationTimeline.to('.section-pad', { duration: 5 });
 
     chartAnimationTimeline.fromTo(
       '.chart-div-teleplan',

@@ -4,7 +4,7 @@ GENERAL CSS
 =============================================
 */
 .section-pad {
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: center;
 }
@@ -13,7 +13,7 @@ GENERAL CSS
 PATIENT DOCTOR DIV CSS
 =============================================
 */
-.patientDoctor-div {
+.patientDoctor-division {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -86,7 +86,6 @@ CHART DIV CSS
 =============================================
 */
 .chart-section-pad {
-    height: 1px;
     display: flex;
     justify-content: center;
 }
