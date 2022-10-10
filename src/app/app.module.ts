@@ -3,14 +3,13 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatNativeDateModule } from '@angular/material/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { MatIconModule } from '@angular/material/icon';
-import { MatExpansionModule } from '@angular/material/expansion';
 import { NgChartsModule } from 'ng2-charts';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { RecaptchaModule, RecaptchaFormsModule } from 'ng-recaptcha';
 import { EmailService } from './services/email.service';
+import { MatModule } from './mat.module';
+
 //Components
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
@@ -26,7 +25,7 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { ModalComponent } from './components/shared/modal/modal.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { TermsComponent } from './components/terms/terms.component';
-
+import { SettingChangeColorSchemeComponent } from './components/setting-change-color-scheme/setting-change-color-scheme.component';
 //AUTH
 import { AuthService } from './auth.service';
 import { TokenInterceptorService } from './token-interceptor.service';
@@ -52,18 +51,17 @@ import { LogoutComponent } from './components/logout/logout.component';
     TermsComponent,
     LoginComponent,
     LogoutComponent,
+    SettingChangeColorSchemeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatModule,
     FormsModule,
     ReactiveFormsModule,
-    MatNativeDateModule,
-    MatIconModule,
     NgChartsModule,
     HttpClientModule,
-    MatExpansionModule,
     RecaptchaModule,
     RecaptchaFormsModule,
   ],

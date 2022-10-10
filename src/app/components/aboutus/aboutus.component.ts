@@ -7,14 +7,14 @@ import {
 } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { DOCUMENT } from '@angular/common';
+import { ColorSchemeService } from '../../services/color-scheme.service';
 
 gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-aboutus',
   templateUrl: './aboutus.component.html',
-  styleUrls: ['./aboutus.component.css'],
+  styleUrls: ['./aboutus.component.scss'],
 })
 export class AboutusComponent implements OnInit {
   @ViewChild('secondSection', { static: true })
@@ -26,7 +26,9 @@ export class AboutusComponent implements OnInit {
   imageFirst: ElementRef<HTMLDivElement>;
   @ViewChild('imageSecond', { static: true })
   imageSecond: ElementRef<HTMLDivElement>;
-  constructor(@Inject(DOCUMENT) private document: Document) {}
+  constructor(private colorSchemeService: ColorSchemeService) {
+    this.colorSchemeService.load();
+  }
 
   ngOnInit(): void {
     this.initialAnimations();
@@ -44,9 +46,8 @@ export class AboutusComponent implements OnInit {
       duration: 1.1,
       y: 20,
       opacity: 0.3,
-      stagger: 0.15
+      stagger: 0.15,
     });
-   
   }
 
   initialAnimations(): void {

@@ -1,37 +1,99 @@
-<nav class="navbar bg-transparent fixed-top" *ngIf="!(router.url === '/solutions' || router.url ==='/ecosystem')" [ngClass]="router.url === '/' ? 'navbar-custom-home':'navbar-custom'">
-  <div class="max-width-custom w-100 d-flex bd-highlight justify-content-between">
+<nav
+  class="navbar bg-transparent fixed-top"
+  [ngClass]="router.url === '/' ? 'navbar-custom-home' : 'navbar-custom'"
+>
+  <div
+    class="max-width-custom w-100 d-flex bd-highlight justify-content-between"
+  >
     <div class="bd-highlight my-auto">
-      <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url !== '/'">
-        <a class="navbar-brand text-light">
-          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
+      <div
+        class="aiclinicLogoDiv"
+        aria-expanded="false"
+        role="button"
+        routerLink="/"
+        *ngIf="router.url !== '/'"
+      >
+        <a class="navbar-brand">
+          <img
+            src="./assets/images/aboutus/aiClinic.svg"
+            alt=" "
+            class="iclinicLogo"
+          />
         </a>
-        <p class="iclinictext text-light">iClinic</p>
+        <p class="iclinictext">iClinic</p>
       </div>
-      <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url === '/'">
-        <a class="navbar-brand text-light">
-          <img src="./assets/images/aboutus/aiClinic-home.svg" alt=" " class="iclinicLogo" />
+      <div
+        class="aiclinicLogoDiv"
+        aria-expanded="false"
+        role="button"
+        routerLink="/"
+        *ngIf="router.url === '/'"
+      >
+        <a class="navbar-brand">
+          <img
+            src="./assets/images/aboutus/aiClinic-home.svg"
+            alt=" "
+            class="iclinicLogo"
+          />
         </a>
         <p class="iclinictext text-light">aiClinic</p>
       </div>
     </div>
     <div class="right-nav-div ms-auto">
+      <app-setting-change-color-scheme
+        *ngIf="router.url !== '/'"
+        class="d-flex"
+      ></app-setting-change-color-scheme>
       <div class="p-2 bd-higlight">
-        <button class="btn btn-custom-book-demo text-light text-nowrap " type="button" routerLink="/connect">Start
-          Today</button>
+        <button
+          class="btn btn-custom-book-demo text-nowrap"
+          type="button"
+          routerLink="/connect"
+          [ngClass]="router.url === '/' ? 'text-light' : ''"
+        >
+          Start Today
+        </button>
       </div>
       <div class="bd-higlight icon-div">
-        <mat-icon class="text-light language-icon" aria-hidden="false">language</mat-icon>
+        <mat-icon
+          class="language-icon"
+          aria-hidden="false"
+          [ngClass]="router.url === '/' ? 'text-light' : ''"
+          >language</mat-icon
+        >
       </div>
       <div class="p-2 mb-1 bd-highlight">
-        <button class="navbar-toggler collapsed align-middle" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="toggler-icon-home top-bar-home" *ngIf="router.url === '/'"></span>
-          <span class="toggler-icon-home middle-bar-home" *ngIf="router.url === '/'"></span>
-          <span class="toggler-icon-home bottom-bar-home" *ngIf="router.url === '/'"></span>
+        <button
+          class="navbar-toggler collapsed align-middle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="toggler-icon-home top-bar-home"
+            *ngIf="router.url === '/'"
+          ></span>
+          <span
+            class="toggler-icon-home middle-bar-home"
+            *ngIf="router.url === '/'"
+          ></span>
+          <span
+            class="toggler-icon-home bottom-bar-home"
+            *ngIf="router.url === '/'"
+          ></span>
 
           <span class="toggler-icon top-bar" *ngIf="router.url !== '/'"></span>
-          <span class="toggler-icon middle-bar" *ngIf="router.url !== '/'"></span>
-          <span class="toggler-icon bottom-bar" *ngIf="router.url !== '/'"></span>
+          <span
+            class="toggler-icon middle-bar"
+            *ngIf="router.url !== '/'"
+          ></span>
+          <span
+            class="toggler-icon bottom-bar"
+            *ngIf="router.url !== '/'"
+          ></span>
         </button>
       </div>
     </div>
@@ -39,94 +101,66 @@
   <div class="collapse navbar-collapse" id="navbarNav">
     <ul class="navbar-nav navbar-inner-custom">
       <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/aboutus">About
-          Us</a>
+        <a
+          class="nav-link text-center custom-nav-link"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          routerLink="/aboutus"
+          >About Us</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-          routerLink="/solutions">Solutions</a>
+        <a
+          class="nav-link text-center custom-nav-link"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          routerLink="/solutions"
+          >Solutions</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-          routerLink="/ecosystem">Ecosystem</a>
+        <a
+          class="nav-link text-center custom-nav-link"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          routerLink="/ecosystem"
+          >Ecosystem</a
+        >
       </li>
       <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Connect
-          With Us</a>
+        <a
+          class="nav-link text-center custom-nav-link"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          routerLink="/connect"
+          >Connect With Us</a
+        >
       </li>
 
       <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Login</a>
+        <a
+          class="nav-link text-center custom-nav-link"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          routerLink="/connect"
+          >Login</a
+        >
       </li>
     </ul>
   </div>
 </nav>
-
-<!-- 
-SOLUTIONS ECOSYSTEM TEST -->
-<nav class="navbar navbar-custom bg-dark fixed-top" *ngIf="(router.url === '/solutions' || router.url ==='/ecosystem')">
-  <div class="max-width-custom w-100 d-flex bd-highlight justify-content-between">
-    <div class="bd-highlight my-auto">
-      <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" >
-        <a class="navbar-brand text-light">
-          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
-        </a>
-        <p class="iclinictext text-light">iClinic</p>
-      </div>
-    </div>
-    <div class="right-nav-div ms-auto">
-      <div class="p-2 bd-higlight">
-        <button class="btn btn-custom-book-demo text-light text-nowrap " type="button" routerLink="/connect">Start
-          Today</button>
-      </div>
-      <div class="bd-higlight icon-div">
-        <mat-icon class="text-light language-icon" aria-hidden="false">language</mat-icon>
-      </div>
-      <div class="p-2 mb-1 bd-highlight">
-        <button class="navbar-toggler collapsed align-middle" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-
-
-          <span class="toggler-icon top-bar"  ></span>
-          <span class="toggler-icon middle-bar" ></span>
-          <span class="toggler-icon bottom-bar"></span>
-        </button>
-      </div>
-    </div>
-  </div>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav navbar-inner-custom">
-      <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/aboutus">About
-          Us</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-          routerLink="/solutions">Solutions</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
-          routerLink="/ecosystem">Ecosystem</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Connect
-          With Us</a>
-      </li>
-
-      <li class="nav-item">
-        <a class="nav-link text-center text-light" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Login</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!-- <app-modal [id]="bookDemoId" [title]="bookDemoTitle" [formCheck]="true" [modalSize]="bookDemoModalSize"></app-modal> -->

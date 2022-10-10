@@ -7,7 +7,7 @@ Chart.register(ChartDataLabels);
 @Component({
   selector: 'app-solutions',
   templateUrl: './solutions.component.html',
-  styleUrls: ['./solutions.component.css'],
+  styleUrls: ['./solutions.component.scss'],
 })
 export class SolutionsComponent implements OnInit {
   mobile: boolean = false;

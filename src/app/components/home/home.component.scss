@@ -109,12 +109,6 @@
     z-index: 2;
 }
 
-@media only screen and (min-width: 576px) {
-    #renderCanvas {
-        padding-top: 25px;
-    }
-}
-
 #myVideo {
     position: absolute;
     z-index: 0;

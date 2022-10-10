@@ -15,7 +15,7 @@ gsap.registerPlugin(ScrollTrigger);
 @Component({
   selector: 'app-ecosystem',
   templateUrl: './ecosystem.component.html',
-  styleUrls: ['./ecosystem.component.css'],
+  styleUrls: ['./ecosystem.component.scss'],
   providers: [],
 })
 export class EcosystemComponent implements OnInit {

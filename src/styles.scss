@@ -1,0 +1,122 @@
+/* angular ui material */
+/* @import '~@angular/material/prebuilt-themes/indigo-pink.css'; */
+/* @import "~bootstrap/dist/css/bootstrap.css"; */
+@use "@angular/material" as mat;
+@include mat.core();
+
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+}
+.custom-container {
+  width: 90%;
+  padding-top: 100px;
+  max-width: 1300px !important;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+.max-width-custom {
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/*
+=============================================
+GLOBAL VARIABLES
+=============================================
+*/
+:root {
+  --iclinic-blue: rgb(128, 182, 222); /* #80B6DE */
+  --pd-blue: rgba(201, 255, 251, 1); /* #C9FFFB */
+  --fr-green: rgba(206, 255, 173, 1); /* #CEFFAD */
+  --ascopd-beige: rgba(255, 218, 193, 1); /* #FFDAC1 */
+}
+// $inside-primary: mat-palette($mat-light-blue);
+// $inside-accent: mat-palette($mat-light-blue);
+// $inside-warn: mat-palette($mat-red);
+// $inside-theme-dark: mat-dark-theme($inside-primary, $inside-accent, $inside-warn);
+// $inside-theme-light: mat-light-theme($inside-primary, $inside-accent, $inside-warn);
+
+// Define a light theme
+$light-primary: mat.define-palette(mat.$indigo-palette);
+$light-accent: mat.define-palette(mat.$pink-palette);
+$light-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $light-primary,
+      accent: $light-accent,
+    ),
+  )
+);
+
+// Define a dark theme
+$dark-primary: mat.define-palette(mat.$pink-palette);
+$dark-accent: mat.define-palette(mat.$blue-gray-palette);
+$dark-theme: mat.define-dark-theme(
+  (
+    color: (
+      primary: $dark-primary,
+      accent: $dark-accent,
+    ),
+  )
+);
+
+.color-scheme-dark {
+  //   @include mat.core-color($dark-theme);
+  //   @include mat.button-color($dark-theme);
+  //   @include mat.icon-color($dark-theme);
+  //   @include mat.list-color($dark-theme);
+  //   @include mat.sidenav-color($dark-theme);
+  //   @include mat.toolbar-color($dark-theme);
+  //   @include mat.card-color($dark-theme);
+  // Example how you can easy add own custom styles
+  background-color: #151217;
+  color: white;
+  button{
+    color: white;
+  }
+  .inverse-font-color{
+    color: black;
+  }
+  .card-div {
+    background-color: #151217;
+  }
+  //footer
+  .link{
+    color: white;
+  }
+}
+
+.color-scheme-light {
+  //   @include mat.core-color($light-theme);
+  //   @include mat.button-color($light-theme);
+  //   @include mat.icon-color($light-theme);
+  //   @include mat.list-color($light-theme);
+  //   @include mat.sidenav-color($light-theme);
+  //   @include mat.toolbar-color($light-theme);
+  //   @include mat.card-color($light-theme);
+  // Example how you can easy add own custom styles
+  background-color: white;
+  color: black;
+  button{
+    color: black;
+  }
+  .inverse-font-color{
+    color: white;
+  }
+  .card-div {
+    background-color: white;
+  }
+  //footer
+  .link{
+    color: black;
+  }
+  .custom-nav-link{
+    color: white;
+  }
+}

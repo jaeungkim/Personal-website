@@ -3,7 +3,7 @@
 <div *ngIf="_authService.loggedIn()">
 
   <app-navbar></app-navbar>
-  <a class="exex nav-link text-light" style="cursor:pointer" *ngIf="_authService.loggedIn()"
+  <a class="exex nav-link" style="cursor:pointer" *ngIf="_authService.loggedIn()"
     (click)="logoutUser()">Logout</a>
 </div>
 

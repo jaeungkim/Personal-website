@@ -4,7 +4,7 @@ import { MatAccordion } from '@angular/material/expansion';
 @Component({
   selector: 'app-terms',
   templateUrl: './terms.component.html',
-  styleUrls: ['./terms.component.css']
+  styleUrls: ['./terms.component.scss']
 })
 export class TermsComponent implements OnInit {
   @ViewChild(MatAccordion) accordion: MatAccordion;

@@ -1,18 +1,19 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { AuthService } from './auth.service';
+import { ColorSchemeService } from './services/color-scheme.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
+  styleUrls: ['./app.component.scss'],
 })
 // export class AppComponent{}
 export class AppComponent implements OnInit, OnDestroy {
   // activePath: string = '';
   // activeClassName: string = '';
 
-  constructor(public _authService: AuthService, private router: Router) {
+  constructor(private colorSchemeService: ColorSchemeService, public _authService: AuthService, private router: Router) {
     // this.router.events.subscribe((event) => {
     //   if (event instanceof NavigationEnd) {
     //     this.activePath = event.url.split('/')[1] || 'default';
@@ -20,6 +21,7 @@ export class AppComponent implements OnInit, OnDestroy {
     //     console.log(this.activeClassName);
     //   }
     // });
+    this.colorSchemeService.load();
   }
 
   ngOnInit() {}

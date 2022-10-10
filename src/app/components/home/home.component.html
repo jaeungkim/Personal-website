@@ -1,32 +1,26 @@
-<div class="background-regular">
-  <div *ngIf="!aiclinictextappear">
-    <p class="title">Imagine</p>
-    <p class="subtitle">The Future of Healthcare</p>
-  </div>
-  <div *ngIf="aiclinictextappear" class="title-div">
-    <p class="title-aiclinic">aiClinic</p>
-    <p class="subtitle-aiclinic">Healthcare Powered By Data</p>
-  </div>
-  <video
-    *ngIf="!hideVideoAfterPlay"
-    autoplay
-    muted
-    playsinline
-    preload="auto"
-    onloadedmetadata="this.muted = true"
-    id="myVideo"
-  >
-    <source
-      src="https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4"
-      type="video/mp4"
-    />
-  </video>
-  <canvas
-    #rendererCanvas
-    id="renderCanvas"
-    [hidden]="displayAfterVideo"
-  ></canvas>
+<div *ngIf="!aiclinictextappear">
+  <p class="title">Imagine</p>
+  <p class="subtitle">The Future of Healthcare</p>
 </div>
+<div *ngIf="aiclinictextappear" class="title-div">
+  <p class="title-aiclinic">aiClinic</p>
+  <p class="subtitle-aiclinic">Healthcare Powered By Data</p>
+</div>
+<video
+  *ngIf="!hideVideoAfterPlay"
+  autoplay
+  muted
+  playsinline
+  preload="auto"
+  onloadedmetadata="this.muted = true"
+  id="myVideo"
+>
+  <source
+    src="https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4"
+    type="video/mp4"
+  />
+</video>
+<canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
 
 <div class="cookie-bar">
   <p class="cookie-text">
@@ -38,8 +32,8 @@
 </div>
 
 <div class="minimized-cookie-bar">
-	<p class="cookie-text">
-		This website uses cookies to improve your experience. We'll assume you're ok
-		with this, but you can opt-out if you wish.
-	  </p>
+  <p class="cookie-text">
+    This website uses cookies to improve your experience. We'll assume you're ok
+    with this, but you can opt-out if you wish.
+  </p>
 </div>
