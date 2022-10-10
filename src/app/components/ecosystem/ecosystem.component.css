@@ -26,7 +26,7 @@ PATIENT DOCTOR DIV CSS
     flex-direction: row;
     width: 25%;
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
