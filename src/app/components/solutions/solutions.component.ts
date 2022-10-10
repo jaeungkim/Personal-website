@@ -543,7 +543,7 @@ export class SolutionsComponent implements OnInit {
         // borderColor: '#121212',
         borderWidth: [4, 4, 4, 4],
         // borderColor: 'rgba(255, 218, 193, 1)',
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
         borderAlign: 'inner',
         hoverBackgroundColor: '#121212',
         borderColor: function (context) {

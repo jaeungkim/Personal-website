@@ -9,6 +9,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Chart, ChartType } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { ColorSchemeService } from '../../services/color-scheme.service';
 
 Chart.register(ChartDataLabels);
 gsap.registerPlugin(ScrollTrigger);
@@ -23,6 +24,7 @@ export class EcosystemComponent implements OnInit {
   tablet: boolean = false;
   desktop: boolean = false;
   largedesktop: boolean = false;
+  public colorSchemeService: ColorSchemeService
   constructor() {}
 
   ngOnInit(): void {
@@ -406,7 +408,7 @@ export class EcosystemComponent implements OnInit {
         // borderColor: '#121212',
         borderWidth: [4, 4, 4, 4],
         // borderColor: 'rgba(255, 218, 193, 1)',
-        backgroundColor: 'white',
+        backgroundColor: 'transparent',
         borderAlign: 'inner',
         borderColor: function (context) {
           const chart = context.chart;

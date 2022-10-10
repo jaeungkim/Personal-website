@@ -6,7 +6,7 @@ import {Injectable, Renderer2, RendererFactory2} from '@angular/core';
 export class ColorSchemeService {
 
     private renderer: Renderer2;
-    private colorScheme: string;
+    public colorScheme: string;
     // Define prefix for clearer and more readable class names in scss files
     private colorSchemePrefix = 'color-scheme-';
 

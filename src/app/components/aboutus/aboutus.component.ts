@@ -7,7 +7,6 @@ import {
 } from '@angular/core';
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { ColorSchemeService } from '../../services/color-scheme.service';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -26,9 +25,7 @@ export class AboutusComponent implements OnInit {
   imageFirst: ElementRef<HTMLDivElement>;
   @ViewChild('imageSecond', { static: true })
   imageSecond: ElementRef<HTMLDivElement>;
-  constructor(private colorSchemeService: ColorSchemeService) {
-    this.colorSchemeService.load();
-  }
+  constructor() {}
 
   ngOnInit(): void {
     this.initialAnimations();
