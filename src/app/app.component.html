@@ -8,7 +8,8 @@
     This website uses cookies to improve your experience. We'll assume you're ok
     with this, but you can opt-out if you wish.
   </p>
-  <button class="btn btn-cookie-settings">Cookie settings</button>
+  <button class="btn btn-cookie-settings" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cookie
+    settings</button>
   <button class="btn btn-cookie-accept" (click)="accpetCookie()">Accept</button>
 </div>
 
@@ -16,4 +17,51 @@
   <p class="minimized-cookie-text">
     Cookie Policy
   </p>
+</div>
+
+<!-- MODAL -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Privacy Overview</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="modal-body-text">This website uses cookies to improve your experience while you navigate through the website. Out of these
+        cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the
+        working of basic functionalities of the website. We also use third-party cookies that help us analyze and
+        understand how you use this website. These cookies will be stored in your browser only with your consent. You
+        also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on
+        your browsing experience.</p>
+        <mat-accordion>
+          <mat-expansion-panel class="collapsible-individual-div">
+            <mat-expansion-panel-header class="collapsible-div">
+              <mat-panel-title class="collapsible-title">
+                Necessary
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="collapsible-content">
+              Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.
+            </p>
+          </mat-expansion-panel>
+
+          <mat-expansion-panel class="collapsible-individual-div">
+            <mat-expansion-panel-header class="collapsible-div">
+              <mat-panel-title class="collapsible-title">
+                Non-Necessary
+              </mat-panel-title>
+            </mat-expansion-panel-header>
+            <p class="collapsible-content">
+              Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.
+            </p>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn cookie-btn" data-bs-dismiss="modal">Understood</button>
+      </div>
+    </div>
+  </div>
 </div>

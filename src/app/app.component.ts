@@ -39,10 +39,7 @@ const fadeOut = trigger('fadeOut', [leaveTrans]);
   styleUrls: ['./app.component.scss'],
   animations: [fadeIn, fadeOut],
 })
-// export class AppComponent{}
 export class AppComponent implements OnInit, OnDestroy {
-  // activePath: string = '';
-  // activeClassName: string = '';
   public acceptCookie = false;
   public minimizedCookieBar = false;
   cookieValue: string = '';
@@ -53,13 +50,6 @@ export class AppComponent implements OnInit, OnDestroy {
     private router: Router,
     public cookieService: CookieService
   ) {
-    // this.router.events.subscribe((event) => {
-    //   if (event instanceof NavigationEnd) {
-    //     this.activePath = event.url.split('/')[1] || 'default';
-    //     this.activeClassName = this.activePath + 'PageClass';
-    //     console.log(this.activeClassName);
-    //   }
-    // });
     this.colorSchemeService.load();
     this.cookieValue = this.cookieService.get('X-Auth-Token');
     this.viewed_cookie_policy = this.cookieService.get('viewed_cookie_policy');
