@@ -1,23 +1,25 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { ColorSchemeService } from '../../services/color-scheme.service';
 
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
   styleUrls: ['./footer.component.scss'],
 })
-export class FooterComponent implements OnInit {
+export class FooterComponent {
   currentYear: number = new Date().getFullYear();
 
-  privacyId: string =  'privacyPolicy';
-  privacyTitle: string = 'Privacy Policy';
-  privacyContent: string = 'Lorem Ipsum';
-
-  termsId: string = 'termsOfUse';
-  termsTitle: string = 'Terms of Use';
-  termsContent: string = 'Lorem Ipsum';
-
-  constructor(public router: Router) {}
-
-  ngOnInit(): void {}
+  public isitdarkmode: boolean = false;
+  constructor(
+    public colorSchemeService: ColorSchemeService,
+    public router: Router
+  ) {
+    this.colorSchemeService.load();
+  }
+  themeIconChange() {
+    return this.colorSchemeService.currentActive() === 'dark'
+      ? '../assets/images/aboutus/aiClinic.svg'
+      : '../assets/images/aboutus/aiClinic-white.svg';
+  }
 }

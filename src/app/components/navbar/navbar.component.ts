@@ -15,16 +15,9 @@ export class NavbarComponent {
   ) {
     this.colorSchemeService.load();
   }
-  // ngOnInit(): void {
-  //   if (this.colorSchemeService.colorScheme === 'dark') {
-  //     this.isitdarkmode = !this.isitdarkmode;
-  //   }
-  //   this.isitdarkmode = !this.isitdarkmode;
-  //   console.log(this.isitdarkmode)
-  // }
   themeIconChange() {
     return this.colorSchemeService.currentActive() === 'dark'
       ? '../assets/images/aboutus/aiClinic.svg'
-      :  '../assets/images/aboutus/aiClinic-white.svg';
+      : '../assets/images/aboutus/aiClinic-white.svg';
   }
 }
