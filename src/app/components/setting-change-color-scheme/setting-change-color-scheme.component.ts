@@ -1,5 +1,5 @@
 import { Component, Input, OnDestroy, OnInit } from '@angular/core';
-import { ColorSchemeService } from '../../services/color-scheme.service';
+import { ColorSchemeService } from '../../services/theme/theme.service';
 
 @Component({
   selector: 'app-setting-change-color-scheme',

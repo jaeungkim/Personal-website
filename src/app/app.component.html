@@ -1,14 +1,24 @@
 <!-- <a class="nav-link text-light"  routerLink="/login" *ngIf="!_authService.loggedIn()" rouetrLinkActive="active">Login</a> -->
 
 <div *ngIf="_authService.loggedIn()">
-
   <app-navbar></app-navbar>
-  <a class="exex nav-link" style="cursor:pointer" *ngIf="_authService.loggedIn()"
-    (click)="logoutUser()">Logout</a>
+  <a class="exex nav-link" style="cursor:pointer" *ngIf="_authService.loggedIn()" (click)="logoutUser()">Logout</a>
+</div>
+<router-outlet></router-outlet>
+<div *ngIf="!minimizedCookieBar" class="cookie-bar">
+  <p class="cookie-text">
+    This website uses cookies to improve your experience. We'll assume you're ok
+    with this, but you can opt-out if you wish.
+  </p>
+  <button class="btn btn-cookie-settings">Cookie settings</button>
+  <button class="btn btn-cookie-accept" (click)="accpetCookie()">Accept</button>
 </div>
 
-  <router-outlet></router-outlet>
-
+<div *ngIf="minimizedCookieBar" (click)="minimizeCookie()" class="minimized-cookie-bar">
+  <p class="minimized-cookie-text">
+    Cookie Policy
+  </p>
+</div>
 <!-- REGULAR -->
 <!-- <div>
   <app-navbar></app-navbar>

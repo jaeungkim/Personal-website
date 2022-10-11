@@ -9,7 +9,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Chart, ChartType } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import { ColorSchemeService } from '../../services/color-scheme.service';
+import { ColorSchemeService } from '../../services/theme/theme.service';
 
 Chart.register(ChartDataLabels);
 gsap.registerPlugin(ScrollTrigger);

@@ -1,7 +1,9 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { AuthService } from './auth.service';
-import { ColorSchemeService } from './services/color-scheme.service';
+import { ColorSchemeService } from './services/theme/theme.service';
+import { CookieService } from 'ngx-cookie-service';
+import { v4 as uuidv4 } from 'uuid';
 
 @Component({
   selector: 'app-root',
@@ -12,8 +14,16 @@ import { ColorSchemeService } from './services/color-scheme.service';
 export class AppComponent implements OnInit, OnDestroy {
   // activePath: string = '';
   // activeClassName: string = '';
-
-  constructor(private colorSchemeService: ColorSchemeService, public _authService: AuthService, private router: Router) {
+  public acceptCookie = false;
+  public minimizedCookieBar = false;
+  cookieValue: string = '';
+  viewed_cookie_policy: string = 'yes';
+  constructor(
+    private colorSchemeService: ColorSchemeService,
+    public _authService: AuthService,
+    private router: Router,
+    public cookieService: CookieService
+  ) {
     // this.router.events.subscribe((event) => {
     //   if (event instanceof NavigationEnd) {
     //     this.activePath = event.url.split('/')[1] || 'default';
@@ -22,9 +32,30 @@ export class AppComponent implements OnInit, OnDestroy {
     //   }
     // });
     this.colorSchemeService.load();
+    this.cookieValue = this.cookieService.get('X-Auth-Token');
+    this.viewed_cookie_policy = this.cookieService.get('viewed_cookie_policy');
+    // this.cookieService.set('X-Auth-Token', uuidv4());
+    // this.cookieService.set('cookie-general-consent', 'false');
+  
   }
+  /*====================================COOKIE==========================================*/
+  accpetCookie() {
+    // this.acceptCookie = true;
+    // this.minimizedCookieBar = true;
+    this.cookieService.set('viewed_cookie_policy', 'yes');
+    this.minimizedCookieBar = true;
+    
+  }
+  minimizeCookie() {
+    this.minimizedCookieBar = false;
+  }
+  /*====================================COOKIE==========================================*/
+  ngOnInit() {
+    if(this.viewed_cookie_policy === 'yes'){
+      this.minimizedCookieBar = true;
+    }
 
-  ngOnInit() {}
+  }
 
   ngOnDestroy() {}
 

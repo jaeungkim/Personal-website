@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ColorSchemeService } from '../../services/color-scheme.service';
+import { ColorSchemeService } from '../../services/theme/theme.service';
 
 @Component({
   selector: 'app-footer',

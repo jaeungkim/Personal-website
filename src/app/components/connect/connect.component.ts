@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
-import { EmailService } from '../../services/email.service';
+import { EmailService } from '../../services/email/email.service';
 
 @Component({
   selector: 'app-connect',
