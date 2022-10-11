@@ -39,45 +39,17 @@ GLOBAL VARIABLES
 */
 :root {
   --iclinic-blue: rgb(128, 182, 222);
-  /* #80B6DE */
   --light-iclinic-blue: rgb(203, 223, 237);
   --pd-blue: rgba(201, 255, 251, 1);
-  /* #C9FFFB */
   --fr-green: rgba(206, 255, 173, 1);
-  /* #CEFFAD */
   --ascopd-beige: rgba(255, 218, 193, 1);
-  /* #FFDAC1 */
+
+  // LIGHT THEME
+  --light-bg-primary: white;
+
+  // DARK THEME
+  --dark-bg-primary: #151217;
 }
-
-// $inside-primary: mat-palette($mat-light-blue);
-// $inside-accent: mat-palette($mat-light-blue);
-// $inside-warn: mat-palette($mat-red);
-// $inside-theme-dark: mat-dark-theme($inside-primary, $inside-accent, $inside-warn);
-// $inside-theme-light: mat-light-theme($inside-primary, $inside-accent, $inside-warn);
-
-// Define a light theme
-// $light-primary: mat.define-palette(mat.$indigo-palette);
-// $light-accent: mat.define-palette(mat.$pink-palette);
-// $light-theme: mat.define-light-theme(
-//   (
-//     color: (
-//       primary: $light-primary,
-//       accent: $light-accent,
-//     ),
-//   )
-// );
-
-// Define a dark theme
-// $dark-primary: mat.define-palette(mat.$pink-palette);
-// $dark-accent: mat.define-palette(mat.$blue-gray-palette);
-// $dark-theme: mat.define-dark-theme(
-//   (
-//     color: (
-//       primary: $dark-primary,
-//       accent: $dark-accent,
-//     ),
-//   )
-// );
 
 .color-scheme-dark {
   //   @include mat.core-color($dark-theme);
@@ -88,20 +60,22 @@ GLOBAL VARIABLES
   //   @include mat.toolbar-color($dark-theme);
   //   @include mat.card-color($dark-theme);
   // Example how you can easy add own custom styles
-  background-color: #151217;
-  .cookie-bar{
-    background-color: #151217;
-  }
-  .minimized-cookie-bar{
-    background-color: #151217;
-  }
-  .modal-content{
-    background-color: #151217;
-  }
   color: white;
-
   button {
     color: white;
+  }
+  background-color: var(--dark-bg-primary);
+
+  .cookie-bar {
+    background-color: var(--dark-bg-primary);
+  }
+
+  .minimized-cookie-bar {
+    background-color: var(--dark-bg-primary);
+  }
+
+  .modal-content {
+    background-color: var(--dark-bg-primary);
   }
 
   .inverse-font-color {
@@ -109,7 +83,7 @@ GLOBAL VARIABLES
   }
 
   .card-div {
-    background-color: #151217;
+    background-color: var(--dark-bg-primary);
   }
 
   //footer
@@ -122,7 +96,7 @@ GLOBAL VARIABLES
   }
 
   .footer-big-div {
-    background-color: #151217;
+    background-color: var(--dark-bg-primary);
   }
 }
 
@@ -137,18 +111,22 @@ GLOBAL VARIABLES
   // Example how you can easy add own custom styles
   background-color: white;
   color: black;
-  .modal-content{
-    background-color: white;
-  }
-  .cookie-bar{
-    background-color: white;
-  }
-  .minimized-cookie-bar{
-    background-color: white;
-  }
   button {
     color: black;
   }
+
+  .modal-content {
+    background-color: white;
+  }
+
+  .cookie-bar {
+    background-color: white;
+  }
+
+  .minimized-cookie-bar {
+    background-color: white;
+  }
+
 
   .inverse-font-color {
     color: white;
@@ -173,5 +151,14 @@ GLOBAL VARIABLES
 
   .footer-big-div {
     background-color: var(--light-iclinic-blue) !important;
+  }
+
+  //CHANGE? TODO
+  .solutions-title{
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+  }
+  .solutions-mainTitle{
+    color: black !important;
   }
 }

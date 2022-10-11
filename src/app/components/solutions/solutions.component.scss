@@ -16,13 +16,13 @@
   height: 100%;
 }
 
-.mainTitle {
+.solutions-mainTitle {
   font-size: 38px;
   margin: 0;
   /* font-weight: bold; */
 }
 
-.title {
+.solutions-title {
   font-size: 24px;
   margin: 0;
 }
@@ -135,12 +135,12 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .mainTitle {
+  .solutions-mainTitle {
     font-size: 36px;
     padding-bottom: 20%;
   }
 
-  .title {
+  .solutions-title {
     font-size: 24px;
     /* padding-top: 40%; */
   }
@@ -223,12 +223,12 @@
 } */
 
 @media only screen and (min-width: 1400px) {
-  .mainTitle {
+  .solutions-mainTitle {
     font-size: 48px;
     padding-bottom: 10%;
   }
 
-  .title {
+  .solutions-title {
     font-size: 36px;
     width: 110%;
     /* padding-top: 70%; */
