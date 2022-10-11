@@ -229,7 +229,7 @@ export class HomeComponent implements OnInit {
             'assets/images/home/dotTexture.png'
           ),
         },
-        alphaTest: { value: 0.5 },
+        alphaTest: { value: 0.8 },
       },
       vertexShader: this.vertexShader,
       fragmentShader: this.fratmentShader,
