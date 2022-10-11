@@ -51,7 +51,10 @@ export class AppComponent implements OnInit, OnDestroy {
     private router: Router,
     public cookieService: CookieService
   ) {
-    this.colorSchemeService.load();
+    if(router.url !== '/'){
+      this.colorSchemeService.load();
+    }
+   
     this.cookieValue = this.cookieService.get('X-Auth-Token');
     this.viewed_cookie_policy = this.cookieService.get('viewed_cookie_policy');
     // this.cookieService.set('X-Auth-Token', uuidv4());

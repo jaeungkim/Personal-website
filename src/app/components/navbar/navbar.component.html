@@ -17,8 +17,7 @@
     <div class="right-nav-div ms-auto">
       <app-setting-change-color-scheme *ngIf="router.url !== '/'" class="d-flex"></app-setting-change-color-scheme>
       <div class="p-2 bd-higlight">
-        <button class="btn btn-custom-book-demo text-nowrap" type="button" routerLink="/connect"
-          [ngClass]="router.url === '/' ? 'text-light' : ''">
+        <button class="btn btn-custom-book-demo text-nowrap text-light" type="button" routerLink="/connect">
           Start Today
         </button>
       </div>
