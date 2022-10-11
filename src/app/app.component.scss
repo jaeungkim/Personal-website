@@ -131,6 +131,13 @@
 
 .modal-body-text {
     font-size: 14px;
+}
+
+.show-more-text {
+    cursor: pointer;
+    margin-top: 14px;
+    font-size: 14px;
+    text-decoration: underline;
     margin-bottom: 14px;
 }
 
@@ -152,10 +159,12 @@
     font-size: 1em;
     line-height: 1.6;
 }
-.cookie-btn{
+
+.cookie-btn {
     border: 1px solid var(--iclinic-blue);
-    font-size: 12px;
-    &:hover{
+    font-size: 14px;
+
+    &:hover {
         background-color: var(--iclinic-blue);
         color: white;
     }

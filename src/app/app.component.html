@@ -31,10 +31,15 @@
       <div class="modal-body">
         <p class="modal-body-text">This website uses cookies to improve your experience while you navigate through the website. Out of these
         cookies, the cookies that are categorized as necessary are stored on your browser as they are essential for the
-        working of basic functionalities of the website. We also use third-party cookies that help us analyze and
-        understand how you use this website. These cookies will be stored in your browser only with your consent. You
-        also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on
-        your browsing experience.</p>
+        working of basic functionalities of the website.
+        <span *ngIf="showmoretext">
+          We also use third-party cookies that help us analyze and
+          understand how you use this website. These cookies will be stored in your browser only with your consent. You
+          also have the option to opt-out of these cookies. But opting out of some of these cookies may have an effect on
+          your browsing experience.
+        </span>
+      </p>
+      <p class="show-more-text" (click)="showmoretext = !showmoretext">Show <span *ngIf="!showmoretext">more</span><span *ngIf="showmoretext">less</span></p>
         <mat-accordion>
           <mat-expansion-panel class="collapsible-individual-div">
             <mat-expansion-panel-header class="collapsible-div">

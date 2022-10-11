@@ -42,6 +42,7 @@ const fadeOut = trigger('fadeOut', [leaveTrans]);
 export class AppComponent implements OnInit, OnDestroy {
   public acceptCookie = false;
   public minimizedCookieBar = false;
+  public showmoretext = false;
   cookieValue: string = '';
   viewed_cookie_policy: string = 'yes';
   constructor(
@@ -66,7 +67,6 @@ export class AppComponent implements OnInit, OnDestroy {
   minimizeCookie() {
     this.minimizedCookieBar = false;
   }
-
   /*====================================COOKIE==========================================*/
   ngOnInit() {
     if (this.viewed_cookie_policy === 'yes') {
