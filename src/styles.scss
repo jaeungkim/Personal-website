@@ -89,6 +89,12 @@ GLOBAL VARIABLES
   //   @include mat.card-color($dark-theme);
   // Example how you can easy add own custom styles
   background-color: #151217;
+  .cookie-bar{
+    background-color: #151217;
+  }
+  .minimized-cookie-bar{
+    background-color: #151217;
+  }
   .modal-content{
     background-color: #151217;
   }
@@ -132,6 +138,12 @@ GLOBAL VARIABLES
   background-color: white;
   color: black;
   .modal-content{
+    background-color: white;
+  }
+  .cookie-bar{
+    background-color: white;
+  }
+  .minimized-cookie-bar{
     background-color: white;
   }
   button {
