@@ -3,9 +3,9 @@
     <div class="bd-highlight my-auto">
       <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url !== '/'">
         <a class="navbar-brand">
-          <img src="./assets/images/aboutus/aiClinic.svg" alt=" " class="iclinicLogo" />
+          <img [src]="this.themeIconChange()" alt=" " class="iclinicLogo" />
         </a>
-        <p class="iclinictext">iClinic</p>
+        <p class="iclinictext text-light">iClinic</p>
       </div>
       <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url === '/'">
         <a class="navbar-brand">
@@ -23,7 +23,8 @@
         </button>
       </div>
       <div class="bd-higlight icon-div">
-        <mat-icon class="language-icon" aria-hidden="false" [ngClass]="router.url === '/' ? 'text-light' : ''">language
+        <mat-icon class="language-icon text-light" aria-hidden="false"
+          [ngClass]="router.url === '/' ? 'text-light' : ''">language
         </mat-icon>
       </div>
       <div class="p-2 mb-1 bd-highlight">

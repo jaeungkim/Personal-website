@@ -4,14 +4,19 @@
 @use "@angular/material" as mat;
 @include mat.core();
 
+html,
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
 }
+
 p {
   margin: 0;
   padding: 0;
   line-height: 1.5;
 }
+
 .custom-container {
   width: 90%;
   padding-top: 100px;
@@ -20,22 +25,30 @@ p {
   margin-right: auto;
   height: 100%;
 }
+
 .max-width-custom {
   max-width: 1300px;
   margin-left: auto;
   margin-right: auto;
 }
+
 /*
 =============================================
 GLOBAL VARIABLES
 =============================================
 */
 :root {
-  --iclinic-blue: rgb(128, 182, 222); /* #80B6DE */
-  --pd-blue: rgba(201, 255, 251, 1); /* #C9FFFB */
-  --fr-green: rgba(206, 255, 173, 1); /* #CEFFAD */
-  --ascopd-beige: rgba(255, 218, 193, 1); /* #FFDAC1 */
+  --iclinic-blue: rgb(128, 182, 222);
+  /* #80B6DE */
+  --light-iclinic-blue: rgb(181, 207, 224);
+  --pd-blue: rgba(201, 255, 251, 1);
+  /* #C9FFFB */
+  --fr-green: rgba(206, 255, 173, 1);
+  /* #CEFFAD */
+  --ascopd-beige: rgba(255, 218, 193, 1);
+  /* #FFDAC1 */
 }
+
 // $inside-primary: mat-palette($mat-light-blue);
 // $inside-accent: mat-palette($mat-light-blue);
 // $inside-warn: mat-palette($mat-red);
@@ -77,21 +90,30 @@ GLOBAL VARIABLES
   // Example how you can easy add own custom styles
   background-color: #151217;
   color: white;
-  button{
+
+  button {
     color: white;
   }
-  .inverse-font-color{
+
+  .inverse-font-color {
     color: black;
   }
+
   .card-div {
     background-color: #151217;
   }
+
   //footer
-  .link{
+  .link {
     color: white;
   }
-  .custom-nav-link{
+
+  .custom-nav-link {
     color: white;
+  }
+
+  .footer-big-div {
+    background-color: #151217;
   }
 }
 
@@ -106,23 +128,33 @@ GLOBAL VARIABLES
   // Example how you can easy add own custom styles
   background-color: white;
   color: black;
-  button{
+
+  button {
     color: black;
   }
-  .inverse-font-color{
+
+  .inverse-font-color {
     color: white;
   }
+
   .card-div {
     background-color: white;
   }
+
   //footer
-  .link{
+  .link {
     color: black;
   }
-  .custom-nav-link{
+
+  .custom-nav-link {
     color: white;
   }
-  .navbar-custom{
-    background-color: var(--iclinic-blue) !important;
+
+  .navbar-custom {
+    background-color: var(--light-iclinic-blue) !important;
+  }
+
+  .footer-big-div {
+    background-color: var(--light-iclinic-blue) !important;
   }
 }

@@ -60,5 +60,10 @@ export class ColorSchemeService {
     currentActive() {
         return this.colorScheme;
     }
-
+    currentActiveIcon(){
+        if(this.colorScheme === 'light'){
+            return 'brightness_3'
+        }
+        return 'wb_sunny';
+    }
 }

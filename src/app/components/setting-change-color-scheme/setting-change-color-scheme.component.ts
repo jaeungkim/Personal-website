@@ -1,29 +1,30 @@
-import {Component, Input, OnDestroy, OnInit} from '@angular/core';
-import {ColorSchemeService} from '../../services/color-scheme.service';
+import { Component, Input, OnDestroy, OnInit } from '@angular/core';
+import { ColorSchemeService } from '../../services/color-scheme.service';
 
 @Component({
-    selector: 'app-setting-change-color-scheme',
-    templateUrl: './setting-change-color-scheme.component.html',
-    styleUrls: ['./setting-change-color-scheme.component.scss']
+  selector: 'app-setting-change-color-scheme',
+  templateUrl: './setting-change-color-scheme.component.html',
+  styleUrls: ['./setting-change-color-scheme.component.scss'],
 })
 export class SettingChangeColorSchemeComponent {
+  public currentThemeDark: boolean = true;
+  public icon: any;
 
-    public themes = [
-        {
-            name: 'dark',
-            icon: 'brightness_3'
-        },
-        {
-            name: 'light',
-            icon: 'wb_sunny'
-        }
-    ];
-
-    constructor(public colorSchemeService: ColorSchemeService) {
+  constructor(public colorSchemeService: ColorSchemeService) {
+    this.colorSchemeService.load();
+  }
+  ngOnInit() {
+    this.icon = this.colorSchemeService.currentActiveIcon();
+  }
+  setTheme() {
+    if (this.currentThemeDark) {
+      this.colorSchemeService.update('light');
+      this.icon = this.colorSchemeService.currentActiveIcon();
     }
-
-    setTheme(theme: string) {
-        this.colorSchemeService.update(theme);
+    if (!this.currentThemeDark) {
+      this.colorSchemeService.update('dark');
+      this.icon = this.colorSchemeService.currentActiveIcon();
     }
-
+    this.currentThemeDark = !this.currentThemeDark;
+  }
 }

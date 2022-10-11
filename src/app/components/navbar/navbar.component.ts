@@ -1,28 +1,30 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
-// import { DomSanitizer } from '@angular/platform-browser';
+import { ColorSchemeService } from '../../services/color-scheme.service';
+
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
   styleUrls: ['./navbar.component.scss'],
 })
-export class NavbarComponent implements OnInit {
-  // clicked: boolean = false;
-  @ViewChild('logoDiv', { static: true })
-  logoDiv: ElementRef<HTMLDivElement>;
-  //demo
-  bookDemoId: string = 'bookDemo';
-  bookDemoTitle: string = 'Book a Demo';
-  bookDemoContent: string = 'book a demo content';
-  bookDemoModalSize: string = 'lg';
-  constructor(public router: Router) {}
-
-  ngOnInit(): void {}
-
-  // changeBackground() {
-  //   this.clicked = !this.clicked;
+export class NavbarComponent {
+  public isitdarkmode: boolean = false;
+  constructor(
+    public colorSchemeService: ColorSchemeService,
+    public router: Router
+  ) {
+    this.colorSchemeService.load();
+  }
+  // ngOnInit(): void {
+  //   if (this.colorSchemeService.colorScheme === 'dark') {
+  //     this.isitdarkmode = !this.isitdarkmode;
+  //   }
+  //   this.isitdarkmode = !this.isitdarkmode;
+  //   console.log(this.isitdarkmode)
   // }
-  closeifopen(){
-    console.log(this.logoDiv)
+  themeIconChange() {
+    return this.colorSchemeService.currentActive() === 'dark'
+      ? '../assets/images/aboutus/aiClinic.svg'
+      :  '../assets/images/aboutus/aiClinic-white.svg';
   }
 }
