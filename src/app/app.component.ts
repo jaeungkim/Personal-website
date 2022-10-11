@@ -1,14 +1,43 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
+import { transition, style, animate, trigger } from '@angular/animations';
 import { AuthService } from './auth.service';
 import { ColorSchemeService } from './services/theme/theme.service';
 import { CookieService } from 'ngx-cookie-service';
 import { v4 as uuidv4 } from 'uuid';
 
+const enterTransition = transition(':enter', [
+  style({
+    opacity: 0,
+  }),
+  animate(
+    '1s ease-in',
+    style({
+      opacity: 1,
+    })
+  ),
+]);
+
+const leaveTrans = transition(':leave', [
+  style({
+    opacity: 1,
+  }),
+  animate(
+    '1s ease-out',
+    style({
+      opacity: 0,
+    })
+  ),
+]);
+
+const fadeIn = trigger('fadeIn', [enterTransition]);
+const fadeOut = trigger('fadeOut', [leaveTrans]);
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
+  animations: [fadeIn, fadeOut],
 })
 // export class AppComponent{}
 export class AppComponent implements OnInit, OnDestroy {
@@ -36,7 +65,6 @@ export class AppComponent implements OnInit, OnDestroy {
     this.viewed_cookie_policy = this.cookieService.get('viewed_cookie_policy');
     // this.cookieService.set('X-Auth-Token', uuidv4());
     // this.cookieService.set('cookie-general-consent', 'false');
-  
   }
   /*====================================COOKIE==========================================*/
   accpetCookie() {
@@ -44,17 +72,16 @@ export class AppComponent implements OnInit, OnDestroy {
     // this.minimizedCookieBar = true;
     this.cookieService.set('viewed_cookie_policy', 'yes');
     this.minimizedCookieBar = true;
-    
   }
   minimizeCookie() {
     this.minimizedCookieBar = false;
   }
+
   /*====================================COOKIE==========================================*/
   ngOnInit() {
-    if(this.viewed_cookie_policy === 'yes'){
+    if (this.viewed_cookie_policy === 'yes') {
       this.minimizedCookieBar = true;
     }
-
   }
 
   ngOnDestroy() {}

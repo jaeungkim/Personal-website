@@ -7,8 +7,6 @@ import { Router, RouterLink, RouterLinkActive } from '@angular/router';
   styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent implements OnInit {
-  public acceptCookie = false;
-  public minimizedCookieBar = false;
   @ViewChild('rendererCanvas', { static: true })
   public rendererCanvas: ElementRef<HTMLCanvasElement>;
   private renderer: THREE.WebGLRenderer;
