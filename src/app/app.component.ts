@@ -45,16 +45,18 @@ export class AppComponent implements OnInit, OnDestroy {
   public showmoretext = false;
   cookieValue: string = '';
   viewed_cookie_policy: string = 'yes';
+  non_necessary_cookie: boolean = false;
+  selected: boolean = true;
   constructor(
     private colorSchemeService: ColorSchemeService,
     public _authService: AuthService,
     private router: Router,
     public cookieService: CookieService
   ) {
-    if(router.url !== '/'){
+    if (router.url !== '/') {
       this.colorSchemeService.load();
     }
-   
+
     this.cookieValue = this.cookieService.get('X-Auth-Token');
     this.viewed_cookie_policy = this.cookieService.get('viewed_cookie_policy');
     // this.cookieService.set('X-Auth-Token', uuidv4());

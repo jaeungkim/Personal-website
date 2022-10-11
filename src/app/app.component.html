@@ -64,8 +64,16 @@
               <mat-panel-title class="collapsible-title">
                 Non-Necessary
               </mat-panel-title>
+              <div class="toggle-switch-div">
+                <p class="toggle-switch-text">{{selected ? "Enabled" : "Disabled"}}</p>
+                <label class="toggle-switch">
+                  <input type="checkbox" [(ngModel)]="selected" checked>
+                  <div class="slider"></div>
+                </label>
+              </div>
             </mat-expansion-panel-header>
             <p class="collapsible-content">
+
               Any cookies that may not be particularly necessary for the website to function and is used specifically to
               collect user personal data via analytics, ads, other embedded contents are termed as non-necessary
               cookies. It is mandatory to procure user consent prior to running these cookies on your website.
@@ -74,6 +82,7 @@
         </mat-accordion>
       </div>
       <div class="modal-footer">
+
         <button type="button" class="btn cookie-btn" data-bs-dismiss="modal">Understood</button>
       </div>
     </div>
