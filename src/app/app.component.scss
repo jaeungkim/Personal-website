@@ -170,14 +170,16 @@
     }
 }
 
-.toggle-switch-div{
+.toggle-switch-div {
     display: flex;
 }
-.toggle-switch-text{
+
+.toggle-switch-text {
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 16px;
 }
+
 .toggle-switch {
     height: 24px;
     width: 48px;
@@ -187,17 +189,19 @@
     margin-top: auto;
     margin-bottom: auto;
     margin-right: 36px;
+
     input {
         display: none;
+
         &:checked+.slider {
             background-color: var(--iclinic-blue);
         }
+
         &:checked+.slider::after {
-            -webkit-transform: translateX(26px);
-            -ms-transform: translateX(26px);
-            transform: translateX(26px);
+            transform: translateX(100%);
         }
     }
+
     .slider {
         position: absolute;
         left: 0;
@@ -207,6 +211,7 @@
         background-color: grey;
         border-radius: 25px;
         transition: 0.5s;
+
         &::after {
             position: absolute;
             content: '';
@@ -214,7 +219,7 @@
             width: 16px;
             border-radius: 50%;
             background-color: white;
-            left: 4px;
+            right: 50%;
             bottom: 4px;
             transition: 0.5s;
         }
