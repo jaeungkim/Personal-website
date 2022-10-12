@@ -43,9 +43,10 @@ export class ConnectComponent implements OnInit {
     this.btnclick = !this.btnclick;
   }
   onSubmit(FormData) {
+    // console.log(FormData)
     this.emailService.sendEmail(FormData).subscribe(
       (response) => {
-        console.log("success");
+        console.log('success');
       },
       (error) => {
         this.buttonerror = true;
