@@ -50,7 +50,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: lefttoright 2s linear 1 normal forwards;
+    animation: lefttoright 2s linear forwards;
     /* margin-left: -100%; */
     margin-left: auto;
     margin-right: auto;
@@ -65,7 +65,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: righttoleft 2s linear 1 normal forwards;
+    animation: righttoleft 2s linear backwards;
     margin-left: auto;
     margin-right: auto;
 }
@@ -76,7 +76,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: lefttoright 2s linear 1 normal forwards;
+    animation: lefttoright 2s linear forwards;
     margin-left: auto;
     margin-right: auto;
 }
@@ -241,7 +241,7 @@ MOBILE
 
     .sections-div {
         display: flex;
-        gap: 5%;
+        justify-content: space-between;
     }
 
     .contact-form-section {
