@@ -36,22 +36,20 @@ export class ConnectComponent implements OnInit {
         ],
       ],
       province: ['', Validators.required],
-      tellusmore: ['']
+      tellusmore: [''],
     });
   }
   btnclickEvent() {
     this.btnclick = !this.btnclick;
   }
   onSubmit(FormData) {
-    console.log(FormData);
-
     this.emailService.sendEmail(FormData).subscribe(
       (response) => {
-        console.log(response);
+        console.log("success");
       },
       (error) => {
         this.buttonerror = true;
-        console.log({ error });
+        console.log(error);
       }
     );
   }
