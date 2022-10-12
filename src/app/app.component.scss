@@ -198,7 +198,7 @@
         }
 
         &:checked+.slider::after {
-            transform: translateX(100%);
+            transform: translateX(150%);
         }
     }
 
@@ -219,7 +219,7 @@
             width: 16px;
             border-radius: 50%;
             background-color: white;
-            right: 50%;
+            left: 4px;
             bottom: 4px;
             transition: 0.5s;
         }
