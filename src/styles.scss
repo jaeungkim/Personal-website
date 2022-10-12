@@ -50,6 +50,7 @@ GLOBAL VARIABLES
 
 .color-scheme-dark {
   color: white;
+
   button {
     color: white;
   }
@@ -89,13 +90,18 @@ GLOBAL VARIABLES
     background-color: var(--dark-bg-primary);
   }
 
+  .footer-container {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+  }
+
   .navbar-inner-custom {
     background-color: #212121;
   }
 }
 
 .color-scheme-light {
-  background-color: white;
+  background-color: #f6f6f6;
   color: black;
 
   button {
@@ -142,6 +148,11 @@ GLOBAL VARIABLES
 
   .footer-big-div {
     background-color: var(--light-iclinic-blue) !important;
+  }
+
+  .footer-container {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
   }
 
   //CHANGE? TODO
