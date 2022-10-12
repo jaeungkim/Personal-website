@@ -9,7 +9,7 @@ export class EmailService {
 
   sendEmail(input: any) {
     return this.httpreq
-      .post('http://localhost:300/email', input, { responseType: 'text' })
+      .post('https://0ffpeiwy24.execute-api.us-east-1.amazonaws.com/default/ContactFormLambda', input, { responseType: 'text' })
       .pipe(
         map(
           (response) => {

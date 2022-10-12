@@ -1,21 +1,23 @@
 .navbar-custom {
   z-index: 100;
-  width: 100%; 
+  width: 100%;
   backdrop-filter: blur(8px);
   padding-top: 1vh;
   padding-bottom: 1vh;
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .navbar-custom-home {
   z-index: 100;
-  width: 100%; 
+  width: 100%;
   /* backdrop-filter: blur(8px); */
   padding-top: 1vh;
   padding-bottom: 1vh;
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .navbar-brand {
   margin: 0;
   padding: 0;
@@ -47,6 +49,16 @@
   padding: 0;
 }
 
+.navbar-inner-custom-home {
+  opacity: 0.8;
+  border-radius: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #212121 !important;
+}
+
 .navbar-inner-custom {
   opacity: 0.8;
   border-radius: 20px;
@@ -54,7 +66,6 @@
   margin-bottom: 15px;
   padding-top: 15px;
   padding-bottom: 15px;
-  background-color: #212121;
 }
 
 .toggler-icon,
@@ -220,6 +231,7 @@
   width: 100%;
   cursor: pointer;
 }
+
 @media only screen and (min-width: 768px) {
   .aiclinictext {
     font-size: 24px;
@@ -229,6 +241,7 @@
     font-size: 24px;
   }
 }
+
 @media only screen and (min-width: 1400px) {
   .aiclinictext {
     font-size: 28px;

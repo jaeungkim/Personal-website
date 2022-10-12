@@ -49,16 +49,7 @@ GLOBAL VARIABLES
 }
 
 .color-scheme-dark {
-  //   @include mat.core-color($dark-theme);
-  //   @include mat.button-color($dark-theme);
-  //   @include mat.icon-color($dark-theme);
-  //   @include mat.list-color($dark-theme);
-  //   @include mat.sidenav-color($dark-theme);
-  //   @include mat.toolbar-color($dark-theme);
-  //   @include mat.card-color($dark-theme);
-  // Example how you can easy add own custom styles
   color: white;
-
   button {
     color: white;
   }
@@ -97,17 +88,13 @@ GLOBAL VARIABLES
   .footer-big-div {
     background-color: var(--dark-bg-primary);
   }
+
+  .navbar-inner-custom {
+    background-color: #212121;
+  }
 }
 
 .color-scheme-light {
-  //   @include mat.core-color($light-theme);
-  //   @include mat.button-color($light-theme);
-  //   @include mat.icon-color($light-theme);
-  //   @include mat.list-color($light-theme);
-  //   @include mat.sidenav-color($light-theme);
-  //   @include mat.toolbar-color($light-theme);
-  //   @include mat.card-color($light-theme);
-  // Example how you can easy add own custom styles
   background-color: white;
   color: black;
 
@@ -147,6 +134,10 @@ GLOBAL VARIABLES
 
   .navbar-custom {
     background-color: var(--light-iclinic-blue) !important;
+  }
+
+  .navbar-inner-custom {
+    background-color: var(--iclinic-blue);
   }
 
   .footer-big-div {
