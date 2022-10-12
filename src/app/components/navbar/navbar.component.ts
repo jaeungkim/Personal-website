@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
 import { ColorSchemeService } from '../../services/theme/theme.service';
 
@@ -9,12 +9,14 @@ import { ColorSchemeService } from '../../services/theme/theme.service';
 })
 export class NavbarComponent {
   public isitdarkmode: boolean = false;
+
   constructor(
     public colorSchemeService: ColorSchemeService,
     public router: Router
   ) {
     this.colorSchemeService.load();
   }
+
   themeIconChange() {
     return this.colorSchemeService.currentActive() === 'dark'
       ? '../assets/images/aboutus/aiClinic.svg'

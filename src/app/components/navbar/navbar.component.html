@@ -1,13 +1,13 @@
 <nav class="navbar bg-transparent fixed-top" [ngClass]="router.url === '/' ? 'navbar-custom-home' : 'navbar-custom'">
   <div class="max-width-custom w-100 d-flex bd-highlight justify-content-between">
     <div class="bd-highlight my-auto">
-      <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url !== '/'">
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url !== '/'">
         <a class="navbar-brand">
           <img [src]="this.themeIconChange()" alt=" " class="iclinicLogo" />
         </a>
         <p class="iclinictext text-light">iClinic</p>
       </div>
-      <div class="aiclinicLogoDiv" aria-expanded="false" role="button" routerLink="/" *ngIf="router.url === '/'">
+      <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url === '/'">
         <a class="navbar-brand">
           <img src="./assets/images/aboutus/aiClinic-home.svg" alt=" " class="iclinicLogo" />
         </a>
@@ -28,7 +28,8 @@
       </div>
       <div class="p-2 mb-1 bd-highlight">
         <button class="navbar-toggler collapsed align-middle" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          data-bs-target="#navbarNav" aria-controls="navbarNav" [attr.aria-expanded]="false"
+          aria-label="Toggle navigation">
           <span class="toggler-icon-home top-bar-home" *ngIf="router.url === '/'"></span>
           <span class="toggler-icon-home middle-bar-home" *ngIf="router.url === '/'"></span>
           <span class="toggler-icon-home bottom-bar-home" *ngIf="router.url === '/'"></span>
@@ -40,32 +41,35 @@
       </div>
     </div>
   </div>
-  <div class="collapse navbar-collapse" id="navbarNav">
+  <div class="collapse navbar-collapse" id="navbarNav" #navbarNav>
     <ul class="navbar-nav" [ngClass]="router.url === '/' ? 'navbar-inner-custom-home' : 'navbar-inner-custom'">
       <li class="nav-item">
         <a class="nav-link text-center custom-nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/aboutus">About
+          aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
+          routerLink="/aboutus">About
           Us</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center custom-nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
           routerLink="/solutions">Solutions</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center custom-nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+          aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
           routerLink="/ecosystem">Ecosystem</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center custom-nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Connect
+          aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
+          routerLink="/connect">Connect
           With Us</a>
       </li>
 
       <li class="nav-item">
         <a class="nav-link text-center custom-nav-link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" routerLink="/connect">Login</a>
+          aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
+          routerLink="/connect">Login</a>
       </li>
     </ul>
   </div>
