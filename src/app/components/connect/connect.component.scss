@@ -190,8 +190,13 @@
     cursor: not-allowed !important;
 
 }
-
+.button-alert-text{
+    margin-top: 16px;
+    color: var(--iclinic-blue);
+    white-space: nowrap;
+}
 .button-error-text {
+    margin-top: 16px;
     color: red !important;
     white-space: nowrap;
 }

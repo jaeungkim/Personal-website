@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { runInThisContext } from 'vm';
 import { EmailService } from '../../services/email/email.service';
 
 @Component({
@@ -11,6 +12,7 @@ export class ConnectComponent implements OnInit {
   contactUsForm: FormGroup;
   btnclick: boolean = false;
   buttonerror: boolean = false;
+  buttonsuccess: boolean = false;
   constructor(private fb: FormBuilder, private emailService: EmailService) {
     this.createForm();
   }
@@ -47,6 +49,8 @@ export class ConnectComponent implements OnInit {
     this.emailService.sendEmail(FormData).subscribe(
       (response) => {
         console.log('success');
+        this.buttonsuccess = true;
+        this.contactUsForm.reset();
       },
       (error) => {
         this.buttonerror = true;
