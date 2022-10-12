@@ -48,7 +48,6 @@ export class ColorSchemeService {
 
   load() {
     this._getColorScheme();
-    console.log(this.colorScheme);
     this.renderer.addClass(
       document.body,
       this.colorSchemePrefix + this.colorScheme

@@ -54,7 +54,6 @@ export class ConnectComponent implements OnInit {
       },
       (error) => {
         this.buttonerror = true;
-        console.log(error);
       }
     );
   }
