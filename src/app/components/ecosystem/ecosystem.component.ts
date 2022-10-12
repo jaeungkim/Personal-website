@@ -24,8 +24,11 @@ export class EcosystemComponent implements OnInit {
   tablet: boolean = false;
   desktop: boolean = false;
   largedesktop: boolean = false;
-  public colorSchemeService: ColorSchemeService
-  constructor() {}
+
+  constructor(public colorSchemeService: ColorSchemeService) {
+    this.colorSchemeService.load();
+    console.log(this.colorSchemeService.colorScheme)
+  }
 
   ngOnInit(): void {
     this.initScrollAnimations();
