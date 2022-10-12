@@ -27,7 +27,6 @@ export class EcosystemComponent implements OnInit {
 
   constructor(public colorSchemeService: ColorSchemeService) {
     this.colorSchemeService.load();
-    console.log(this.colorSchemeService.colorScheme)
   }
 
   ngOnInit(): void {
