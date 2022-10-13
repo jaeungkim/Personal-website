@@ -3,7 +3,7 @@
   <a class="exex nav-link" style="cursor:pointer" *ngIf="_authService.loggedIn()" (click)="logoutUser()">Logout</a>
 </div>
 <router-outlet></router-outlet>
-<div *ngIf="!minimizedCookieBar" class="cookie-bar" @fadeIn @fadeOut>
+<div *ngIf="!minimizedCookieBar && _authService.loggedIn()" class="cookie-bar" @fadeIn @fadeOut>
   <p class="cookie-text">
     This website uses cookies to improve your experience. We'll assume you're ok
     with this, but you can opt-out if you wish.
@@ -13,7 +13,7 @@
   <button class="btn btn-cookie-accept" (click)="accpetCookie()">Accept</button>
 </div>
 
-<div *ngIf="minimizedCookieBar" (click)="minimizeCookie()" class="minimized-cookie-bar">
+<div *ngIf="minimizedCookieBar && _authService.loggedIn()" (click)="minimizeCookie()" class="minimized-cookie-bar">
   <p class="minimized-cookie-text">
     Cookie Policy
   </p>
