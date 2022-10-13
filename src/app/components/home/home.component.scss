@@ -117,17 +117,21 @@
     height: 100%;
     object-fit: cover;
 }
+
 @media only screen and (min-width: 768px) {
     .title {
         font-size: 60px;
     }
-    .title-aiclinic{
+
+    .title-aiclinic {
         font-size: 60px;
     }
-    .subtitle{
+
+    .subtitle {
         font-size: 60px;
     }
-    .subtitle-aiclinic{
+
+    .subtitle-aiclinic {
         font-size: 30px;
     }
-  }
+}

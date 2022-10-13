@@ -80,7 +80,16 @@ DARK THEME VARIABLES
   .black-text{
     color: black;
   }
+
+  .inverse-font-color {
+    color: black;
+  }
   
+  .custom-nav-link {
+    color: white;
+  }
+
+  /* HOME */
   .cookie-bar {
     background-color: var(--dark-bg-primary);
   }
@@ -93,18 +102,17 @@ DARK THEME VARIABLES
     background-color: var(--dark-bg-primary);
   }
 
-  .inverse-font-color {
-    color: black;
+  /* NAVBAR */
+  .navbar-inner-custom {
+    background-color: #212121;
   }
 
+  /* ABOUT US */
   .card-div {
     background-color: var(--dark-bg-primary);
   }
 
-  .custom-nav-link {
-    color: white;
-  }
-
+  /* FOOTER */
   .footer-big-div {
     background-color: var(--dark-bg-primary);
   }
@@ -114,9 +122,6 @@ DARK THEME VARIABLES
     border-bottom: 1px solid grey;
   }
 
-  .navbar-inner-custom {
-    background-color: #212121;
-  }
 }
 /*
 =============================================
@@ -139,6 +144,7 @@ LIGHT THEME VARIABLES
     color: black;
   }
 
+  /* HOME */
   .modal-content {
     background-color: white;
   }
@@ -162,6 +168,7 @@ LIGHT THEME VARIABLES
     color: white;
   }
 
+  /* NAVBAR */
   .navbar-custom {
     background-color: var(--light-iclinic-blue) !important;
   }
@@ -170,6 +177,7 @@ LIGHT THEME VARIABLES
     background-color: white;
   }
 
+  /* FOOTER */
   .footer-big-div {
     background-color: var(--light-iclinic-blue) !important;
   }

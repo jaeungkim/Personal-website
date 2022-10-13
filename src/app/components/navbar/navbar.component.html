@@ -46,23 +46,23 @@
       <li class="nav-item">
         <a class="nav-link text-center link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
-          routerLink="/aboutus">About
+          routerLink="/aboutus" [ngClass]="router.url === '/' ? 'text-light' : ''">About
           Us</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
-          routerLink="/solutions">Solutions</a>
+          routerLink="/solutions" [ngClass]="router.url === '/' ? 'text-light' : ''">Solutions</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
-          routerLink="/ecosystem">Ecosystem</a>
+          routerLink="/ecosystem" [ngClass]="router.url === '/' ? 'text-light' : ''">Ecosystem</a>
       </li>
       <li class="nav-item">
         <a class="nav-link text-center link" data-bs-toggle="collapse" data-bs-target="#navbarNav"
           aria-controls="navbarNav" [attr.aria-expanded]="false" aria-label="Toggle navigation"
-          routerLink="/connect">Connect
+          routerLink="/connect" [ngClass]="router.url === '/' ? 'text-light' : ''">Connect
           With Us</a>
       </li>
 
