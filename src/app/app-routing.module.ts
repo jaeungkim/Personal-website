@@ -14,28 +14,17 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 
 //LOGIN
 import { LoginComponent } from './components/login/login.component';
-import { LogoutComponent } from './components/logout/logout.component';
-
-import { AuthGuard } from './auth.guard';
+import { AuthGuard } from './services/auth/auth.guard';
 
 const routes: Routes = [
-
-  // REGULAR
-  // { path: '', redirectTo: '', pathMatch: 'full', component: HomeComponent },
-  // { path: 'aboutus', component: AboutusComponent },
-  // { path: 'solutions', component: SolutionsComponent },
-  // { path: 'ecosystem', component: EcosystemComponent },
-  // { path: 'support', component: SupportComponent },
-  // { path: 'resources', component: ResourcesComponent },
-  // { path: 'connect', component: ConnectComponent },
-  // { path: 'privacy', component: PrivacyComponent },
-  // { path: 'termsofservice', component: TermsComponent },
-  // { path: '**', component: NotFoundComponent },
-  // REGULAR
-
-  { path: '', redirectTo: '', pathMatch: 'full',component: HomeComponent, canActivate: [AuthGuard] },
+  {
+    path: '',
+    redirectTo: '',
+    pathMatch: 'full',
+    component: HomeComponent,
+    canActivate: [AuthGuard],
+  },
   { path: 'login', component: LoginComponent },
-  { path: 'logout', component: LogoutComponent },
   { path: 'aboutus', component: AboutusComponent, canActivate: [AuthGuard] },
   {
     path: 'solutions',
@@ -64,14 +53,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [
-    RouterModule.forRoot(
-      routes
-      // {
-      // scrollPositionRestoration: 'top',
-      // }
-    ),
-  ],
+  imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

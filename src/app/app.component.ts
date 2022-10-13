@@ -1,7 +1,8 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { transition, style, animate, trigger } from '@angular/animations';
-import { AuthService } from './auth.service';
+import { AuthService } from './services/auth/auth.service';
+import { StorageService } from './services/storage/storage.service';
 import { ColorSchemeService } from './services/theme/theme.service';
 import { CookieService } from 'ngx-cookie-service';
 import { v4 as uuidv4 } from 'uuid';
@@ -51,7 +52,8 @@ export class AppComponent implements OnInit, OnDestroy {
     private colorSchemeService: ColorSchemeService,
     public _authService: AuthService,
     private router: Router,
-    public cookieService: CookieService
+    public cookieService: CookieService,
+    public storageService: StorageService
   ) {
     this.colorSchemeService.load();
     this.cookieValue = this.cookieService.get('X-Auth-Token');
@@ -78,18 +80,19 @@ export class AppComponent implements OnInit, OnDestroy {
 
   ngOnDestroy() {}
 
-  get isAdmin() {
-    let is_admin = localStorage.getItem('is_admin');
-    if (is_admin === 'on') {
-      return true;
-    } else {
-      return false;
-    }
-  }
+  // get isAdmin() {
+  //   let is_admin = localStorage.getItem('is_admin');
+  //   if (is_admin === 'on') {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
 
   logoutUser() {
-    localStorage.removeItem('token');
-    localStorage.removeItem('is_admin');
+    this.storageService.clean();
+    // localStorage.removeItem('token');
+    // localStorage.removeItem('is_admin');
     this.router.navigate(['/login']);
     return true;
   }

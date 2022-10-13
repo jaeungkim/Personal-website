@@ -27,11 +27,9 @@ import { PrivacyComponent } from './components/privacy/privacy.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { SettingChangeColorSchemeComponent } from './components/setting-change-color-scheme/setting-change-color-scheme.component';
 //AUTH
-import { AuthService } from './auth.service';
-import { TokenInterceptorService } from './token-interceptor.service';
-import { AuthGuard } from './auth.guard';
+import { AuthService } from './services/auth/auth.service';
+import { AuthGuard } from './services/auth/auth.guard';
 import { LoginComponent } from './components/login/login.component';
-import { LogoutComponent } from './components/logout/logout.component';
 
 @NgModule({
   declarations: [
@@ -50,8 +48,7 @@ import { LogoutComponent } from './components/logout/logout.component';
     PrivacyComponent,
     TermsComponent,
     LoginComponent,
-    LogoutComponent,
-    SettingChangeColorSchemeComponent
+    SettingChangeColorSchemeComponent,
   ],
   imports: [
     BrowserModule,
@@ -65,16 +62,7 @@ import { LogoutComponent } from './components/logout/logout.component';
     RecaptchaModule,
     RecaptchaFormsModule,
   ],
-  providers: [
-    AuthService,
-    AuthGuard,
-    EmailService,
-    {
-      provide: HTTP_INTERCEPTORS,
-      useClass: TokenInterceptorService,
-      multi: true,
-    },
-  ],
+  providers: [AuthService, AuthGuard, EmailService],
   // providers:[],
   bootstrap: [AppComponent],
 })

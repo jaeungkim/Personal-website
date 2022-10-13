@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-
-import { AuthService } from '../../auth.service';
+import { FormGroup, FormBuilder, Validators } from '@angular/forms';
+import { StorageService } from '../../services/storage/storage.service';
+import { AuthService } from '../../services/auth/auth.service';
 
 @Component({
   selector: 'app-login',
@@ -9,28 +10,69 @@ import { AuthService } from '../../auth.service';
   styleUrls: ['./login.component.scss'],
 })
 export class LoginComponent implements OnInit {
-  loginUserData: User = { username: '', password: '' };
+  loginUserData: any = { username: '', password: '' };
+  isLoggedIn = false;
+  isLoginFailed = false;
+  errorMessage = '';
+  roles: string[] = [];
+  loginForm: FormGroup;
+  //TEMPORARY
   allowedUsername:any = 'Tristin';
   allowedPassword:any = '123';
-  constructor(private _auth: AuthService, private router: Router) {}
+  constructor(private fb: FormBuilder, private authService: AuthService, private router: Router, private storageService: StorageService) {
+    this.createForm();
+  }
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    if (this.storageService.isLoggedIn()) {
+      this.isLoggedIn = true;
+      this.roles = this.storageService.getUser().roles;
+    }
+  }
 
-  loginUser() {
+  createForm() {
+    this.loginForm = this.fb.group({
+      username: ['', Validators.required],
+      password: ['', Validators.required],
+    });
+  }
+
+  onSubmit(FormData) {
+    //===================TEMPORARY
     if (
-      this.loginUserData!.username == this.allowedUsername &&
-      this.loginUserData!.password == this.allowedPassword
+      FormData.username == this.allowedUsername &&
+      FormData.password == this.allowedPassword
     ) {
-      localStorage.setItem('token', 'secretToken');
-      localStorage.setItem('is_admin', 'true');
+      // localStorage.setItem('token', 'secretToken');
+      // localStorage.setItem('is_admin', 'true');
+      this.storageService.saveUser({FormData});
+      this.isLoginFailed = false;
+      this.isLoggedIn = true;
+      this.roles = this.storageService.getUser().roles;
       this.router.navigate(['/']);
     } else {
       alert("wrong credentials");
     }
-   
+    //===================TEMPORARY
+
+    // this.authService.login(FormData.username, FormData.password).subscribe({
+    //   next: data => {
+    //     this.storageService.saveUser(data);
+
+    //     this.isLoginFailed = false;
+    //     this.isLoggedIn = true;
+    //     this.roles = this.storageService.getUser().roles;
+    //     this.reloadPage();
+    //   },
+    //   error: err => {
+    //     this.errorMessage = err.error.message;
+    //     this.isLoginFailed = true;
+    //   }
+    // });
+
   }
-}
-export interface User {
-  username: any;
-  password: any;
+
+  // reloadPage(): void {
+  //   window.location.reload();
+  // }
 }
