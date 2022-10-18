@@ -10,6 +10,16 @@
     height: 100%;
     justify-content: center;
     align-items: center;
+
+    &:hover {
+        .moon {
+            transform: rotate(180deg);
+        }
+
+        .sun {
+            transform: rotate(180deg);
+        }
+    }
 }
 
 .theme-switch .checkbox {
@@ -48,8 +58,8 @@ input[type="checkbox" i] {
     -webkit-transition: all .5s cubic-bezier(.76, 0, .24, 1);
     transition: all .5s cubic-bezier(.76, 0, .24, 1);
     -webkit-transform: rotate(0);
-    transform: rotate(0);
     color: #f1c40f;
+
 }
 
 .theme-switch .sun {
@@ -77,9 +87,11 @@ input[type="checkbox" i] {
 input[type="checkbox" i]:focus-visible {
     outline-offset: 2px;
 }
-.translate-dark{
+
+.translate-dark {
     transform: translateX(40px);
 }
-.translate-light{
+
+.translate-light {
     transform: translateX(0px);
 }
