@@ -49,7 +49,7 @@ export class AppComponent implements OnInit, OnDestroy {
   non_necessary_cookie: boolean = false;
   selected: boolean = true;
   constructor(
-    private colorSchemeService: ColorSchemeService,
+    public colorSchemeService: ColorSchemeService,
     public _authService: AuthService,
     private router: Router,
     public cookieService: CookieService,

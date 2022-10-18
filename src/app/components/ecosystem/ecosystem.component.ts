@@ -74,10 +74,10 @@ export class EcosystemComponent implements OnInit {
       },
     });
 
-    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '50%' });
+    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '100%' });
     patientAnimationTimeline.to('.section-pad', { duration: 5 });
 
-    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-50%' });
+    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-100%' });
     doctorAnimationTimeline.to('.section-pad', { duration: 5 });
 
     chartAnimationTimeline.fromTo(
@@ -102,6 +102,14 @@ export class EcosystemComponent implements OnInit {
     );
     chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
     //END DOCTOR PATIENT ANIMATION
+
+
+    gsap.to(".dotted-path", {
+      strokeDashoffset: -390,
+      repeat: -1,
+      ease: "none",
+      duration: 3
+    });
   }
 
   /*

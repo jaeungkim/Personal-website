@@ -1,10 +1,7 @@
 .contact-form-section {
     position: relative;
-    /* margin-top: 50vh; */
     max-width: 900px;
-    // border: 1px solid #616161;
     border-radius: 10px;
-    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
     padding: 25px;
     margin-bottom: 16px;
     width: 100%;
@@ -12,9 +9,7 @@
 
 .support-form-section {
     position: relative;
-    // border: 1px solid #616161;
     border-radius: 10px;
-    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
     padding: 25px;
     width: 100%;
 }
@@ -26,17 +21,25 @@
 }
 
 .contact-form-text-div {
-    margin-bottom: 25%;
+    padding-top: 10%;
+    padding-bottom: 12.5%;
     position: relative;
     font-size: 27px;
+    // height: 75vh;
 }
 
-.contact-form-text-div-title {
+.contact-form-title-div {
+    padding-bottom: 2.5%;
+}
+
+.contact-form-text-title {
     font-size: 14px;
     text-align: center;
-    margin: 0;
-    margin-top: 15%;
-    margin-bottom: 10%;
+}
+
+.contact-form-text-subtitle {
+    font-size: 14px;
+    text-align: center;
 }
 
 .contact-form-text-div-subtitle {
@@ -46,7 +49,6 @@
 
 .contact-form-text-div-card {
     margin-top: 25px;
-    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
     width: 75%;
     border-radius: 10px;
     padding: 25px;
@@ -61,7 +63,6 @@
     margin-left: -100%;
     margin-top: 25px;
     /* right: 0; */
-    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
     width: 75%;
     border-radius: 10px;
     padding: 25px;
@@ -72,7 +73,6 @@
 
 .contact-form-text-div-card3 {
     margin-top: 25px;
-    box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
     width: 75%;
     border-radius: 10px;
     padding: 25px;
@@ -124,7 +124,9 @@
     margin-top: -10px;
     margin-bottom: 10px;
 }
-
+.customized-width{
+    width: 47.5%;
+}
 .contactform-input-box:focus-visible {
     border: 2px solid var(--iclinic-blue) !important;
     outline: none;
@@ -137,7 +139,7 @@
 }
 
 .input-tellusmore {
-    height: 150px;
+    height: 86px;
     padding: 12px;
 }
 
@@ -162,6 +164,7 @@
     -webkit-user-select: none;
     touch-action: manipulation;
     cursor: not-allowed;
+    height: 43px;
 }
 
 .submit-button:not([disabled]) {
@@ -193,7 +196,7 @@
 
 .button-alert-text {
     margin-top: 16px;
-    color: var(--iclinic-blue);
+    color: white;
     white-space: nowrap;
 }
 
@@ -208,7 +211,7 @@
 }
 
 .support-form-title {
-    font-size: 14px
+    font-size: 14px;
 }
 
 .support-form-subtitle {
@@ -248,11 +251,11 @@ MOBILE
 
     .contact-form-section {
         margin-bottom: 0;
-        width: 55%;
+        width: 63%;
     }
 
     .support-form-section {
-        width: 35%;
+        width: 28%;
         height: 100%;
     }
 
@@ -288,8 +291,17 @@ DESKTOP
 */
 
 @media only screen and (min-width: 1200px) {
-    .contact-form-text-div-title {
-        font-size: 24px;
+    .contact-form-text-title {
+        font-size: 36px;
+    }
+
+    .contact-form-text-subtitle {
+        font-size: 36px;
+        padding-bottom: 5%;
+    }
+
+    .contact-form-text-div {
+        // height: 100vh;
     }
 
     .contact-form-text-div-subtitle {

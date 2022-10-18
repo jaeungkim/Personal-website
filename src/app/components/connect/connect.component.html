@@ -1,9 +1,14 @@
-<div class="custom-container">
+<div class="custom-container d-flex align-content-stretch flex-column">
   <div class="contact-form-text-div">
-    <p class="contact-form-text-div-title">
-      Let's Connect. Users are Switching to iClinic for
-    </p>
-
+    <div class="contact-form-title-div">
+      <p class="contact-form-text-title">
+        Let's Connect.
+      </p>
+      <br>
+      <p class="contact-form-text-subtitle">
+        Find Out Why Users are Switching to iClinic!
+      </p>
+    </div>
     <div class="contact-form-text-div-card">
       <p class="contact-form-text-div-subtitle text-center">
         Improved Accuracy and Efficiency
@@ -16,7 +21,7 @@
     </div>
     <div class="contact-form-text-div-card3">
       <p class="contact-form-text-div-subtitle text-center">
-        Greater Time Save For More Profit
+        Greater Time Save for More Profit
       </p>
     </div>
   </div>
@@ -26,119 +31,138 @@
         Connect with Us. We want to hear from You!
       </p>
       <form class="contact-form" [formGroup]="contactUsForm" (ngSubmit)="onSubmit(contactUsForm.value)">
-        <div class="contactform-individual-div">
-          <label class="contactform-label">First Name *</label>
-          <input [class.invalid-form]="
-              contactUsForm.controls['firstName'].touched &&
-              contactUsForm.controls['firstName'].errors?.required
-            " type="text" id="firstName" class="contactform-input-box input-firstname" formControlName="firstName"
-            required #firstName />
-        </div>
-        <div *ngIf="
-            contactUsForm.controls['firstName'].invalid &&
-            (contactUsForm.controls['firstName'].dirty ||
-              contactUsForm.controls['firstName'].touched)
-          " class="validation-text">
-          <div *ngIf="contactUsForm.controls['firstName'].errors!.required">
-            Required
+        <div class="d-flex flex-row justify-content-between">
+          <div class="customized-width d-flex flex-column">
+            <div class="contactform-individual-div">
+              <label class="contactform-label">Last Name *</label>
+              <input [class.invalid-form]="
+                  contactUsForm.controls['lastName'].touched &&
+                  contactUsForm.controls['lastName'].errors?.required
+                " type="text" id="lastName" class="contactform-input-box input-lastName" formControlName="lastName"
+                required #lastName
+                [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'text-light bg-dark':''" />
+            </div>
+            <div *ngIf="
+                contactUsForm.controls['lastName'].invalid &&
+                (contactUsForm.controls['lastName'].dirty ||
+                  contactUsForm.controls['lastName'].touched)
+              " class="validation-text">
+              <div *ngIf="contactUsForm.controls['lastName'].errors!.required">
+                Required
+              </div>
+            </div>
+          </div>
+          <div class="customized-width d-flex flex-column">
+            <div class="contactform-individual-div">
+              <label class="contactform-label">First Name *</label>
+              <input [class.invalid-form]="
+                contactUsForm.controls['firstName'].touched &&
+                contactUsForm.controls['firstName'].errors?.required
+              " type="text" id="firstName" class="contactform-input-box input-firstname" formControlName="firstName"
+                required #firstName
+                [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'text-light bg-dark':''" />
+            </div>
+            <div *ngIf="
+              contactUsForm.controls['firstName'].invalid &&
+              (contactUsForm.controls['firstName'].dirty ||
+                contactUsForm.controls['firstName'].touched)
+            " class="validation-text">
+              <div *ngIf="contactUsForm.controls['firstName'].errors!.required">
+                Required
+              </div>
+            </div>
           </div>
         </div>
 
-        <div class="contactform-individual-div">
-          <label class="contactform-label">Last Name *</label>
-          <input [class.invalid-form]="
-              contactUsForm.controls['lastName'].touched &&
-              contactUsForm.controls['lastName'].errors?.required
-            " type="text" id="lastName" class="contactform-input-box input-lastName" formControlName="lastName"
-            required #lastName />
-        </div>
-        <div *ngIf="
-            contactUsForm.controls['lastName'].invalid &&
-            (contactUsForm.controls['lastName'].dirty ||
-              contactUsForm.controls['lastName'].touched)
-          " class="validation-text">
-          <div *ngIf="contactUsForm.controls['lastName'].errors!.required">
-            Required
+        <div class="d-flex flex-row justify-content-between">
+          <div class="customized-width d-flex flex-column">
+            <div class="contactform-individual-div">
+              <label class="contactform-label">Organization *</label>
+              <input [class.invalid-form]="
+                  contactUsForm.controls['organization'].touched &&
+                  contactUsForm.controls['organization'].errors?.required
+                " type="text" id="organization" class="contactform-input-box input-organization"
+                formControlName="organization"
+                [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'text-light bg-dark':''" required />
+            </div>
+            <div *ngIf="
+                contactUsForm.controls['organization'].invalid &&
+                (contactUsForm.controls['organization'].dirty ||
+                  contactUsForm.controls['organization'].touched)
+              " class="validation-text">
+              <div *ngIf="contactUsForm.controls['organization'].errors!.required">
+                Required
+              </div>
+            </div>
           </div>
-        </div>
 
-        <div class="contactform-individual-div">
-          <label class="contactform-label">Organization *</label>
-          <input [class.invalid-form]="
-              contactUsForm.controls['organization'].touched &&
-              contactUsForm.controls['organization'].errors?.required
-            " type="text" id="organization" class="contactform-input-box input-organization"
-            formControlName="organization" required />
-        </div>
-        <div *ngIf="
-            contactUsForm.controls['organization'].invalid &&
-            (contactUsForm.controls['organization'].dirty ||
-              contactUsForm.controls['organization'].touched)
-          " class="validation-text">
-          <div *ngIf="contactUsForm.controls['organization'].errors!.required">
-            Required
-          </div>
-        </div>
-
-        <div class="contactform-individual-div">
-          <label class="contactform-label">Position *</label>
-          <input [class.invalid-form]="
+          <div class="customized-width d-flex flex-column">
+            <div class="contactform-individual-div">
+              <label class="contactform-label">Position *</label>
+              <input [class.invalid-form]="
               contactUsForm.controls['position'].touched &&
               contactUsForm.controls['position'].errors?.required
             " type="text" id="position" class="contactform-input-box input-position" formControlName="position"
-            required />
-        </div>
-        <div *ngIf="
+                required [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'text-light bg-dark':''" />
+            </div>
+            <div *ngIf="
             contactUsForm.controls['position'].invalid &&
             (contactUsForm.controls['position'].dirty ||
               contactUsForm.controls['position'].touched)
           " class="validation-text">
-          <div *ngIf="contactUsForm.controls['position'].errors!.required">
-            Required
+              <div *ngIf="contactUsForm.controls['position'].errors!.required">
+                Required
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="contactform-individual-div">
-          <label class="contactform-label">Email Address *</label>
-          <input [class.invalid-form]="
-              contactUsForm.controls['email'].touched &&
-              contactUsForm.controls['email'].errors?.required
-            " type="text" id="email" class="contactform-input-box input-email" formControlName="email" required
-            #email />
-        </div>
-        <div *ngIf="
-            contactUsForm.controls['email'].invalid &&
-            (contactUsForm.controls['email'].dirty ||
-              contactUsForm.controls['email'].touched)
-          " class="validation-text">
-          <div *ngIf="contactUsForm.controls['email'].errors!.required">
-            Required
+        <div class="d-flex flex-row justify-content-between">
+          <div class="customized-width d-flex flex-column">
+            <div class="contactform-individual-div">
+              <label class="contactform-label">Email Address *</label>
+              <input [class.invalid-form]="
+                  contactUsForm.controls['email'].touched &&
+                  contactUsForm.controls['email'].errors?.required
+                " type="text" id="email" class="contactform-input-box input-email" formControlName="email" required
+                #email [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'text-light bg-dark':''" />
+            </div>
+            <div *ngIf="
+                contactUsForm.controls['email'].invalid &&
+                (contactUsForm.controls['email'].dirty ||
+                  contactUsForm.controls['email'].touched)
+              " class="validation-text">
+              <div *ngIf="contactUsForm.controls['email'].errors!.required">
+                Required
+              </div>
+            </div>
+          </div>
+          <div class="customized-width d-flex flex-column">
+            <div class="contactform-individual-div">
+              <label class="contactform-label">Phone Number *</label>
+              <input [class.invalid-form]="
+                  contactUsForm.controls['phone'].touched &&
+                  contactUsForm.controls['phone'].errors?.required
+                " type="text" id="phone" class="contactform-input-box input-phone" formControlName="phone" required
+                [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'text-light bg-dark':''" />
+            </div>
+            <div *ngIf="
+                contactUsForm.controls['phone'].invalid &&
+                (contactUsForm.controls['phone'].dirty ||
+                  contactUsForm.controls['phone'].touched)
+              " class="validation-text">
+              <div *ngIf="contactUsForm.controls['phone'].errors!.required">
+                Required
+              </div>
+            </div>
           </div>
         </div>
-
-        <div class="contactform-individual-div">
-          <label class="contactform-label">Phone Number *</label>
-          <input [class.invalid-form]="
-              contactUsForm.controls['phone'].touched &&
-              contactUsForm.controls['phone'].errors?.required
-            " type="text" id="phone" class="contactform-input-box input-phone" formControlName="phone" required />
-        </div>
-        <div *ngIf="
-            contactUsForm.controls['phone'].invalid &&
-            (contactUsForm.controls['phone'].dirty ||
-              contactUsForm.controls['phone'].touched)
-          " class="validation-text">
-          <div *ngIf="contactUsForm.controls['phone'].errors!.required">
-            Required
-          </div>
-        </div>
-
-        <div class="contactform-individual-div">
+        <!-- <div class="contactform-individual-div">
           <label class="contactform-label">Province *</label>
           <select [class.invalid-form]="
               contactUsForm.controls['province'].touched &&
               contactUsForm.controls['province'].errors?.required
-            " class="contactform-input-box input-provice" id="selectprovince" formControlName="province" required>
+            " class="contactform-input-box input-provice" id="selectprovince" formControlName="province" required
+            [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'bg-dark text-light':''">
             <option value="">Select...</option>
             <option value="AB">Alberta</option>
             <option value="BC">British Columbia</option>
@@ -163,13 +187,12 @@
           <div *ngIf="contactUsForm.controls['province'].errors!.required">
             Required
           </div>
-        </div>
+        </div> -->
         <div class="contactform-individual-div">
-          <label class="contactform-label">Tell Us More *</label>
-          <textarea id="tellusmore" formControlName="tellusmore"
-            class="contactform-input-box input-tellusmore"></textarea>
+          <label class="contactform-label">Tell Us More</label>
+          <textarea id="tellusmore" formControlName="tellusmore" class="contactform-input-box input-tellusmore"
+            [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'text-light bg-dark':''"></textarea>
         </div>
-
         <div class="submit-button-div">
           <button [disabled]="!contactUsForm.valid" class="submit-button" [ngClass]="buttonerror ? 'button-error' : ''"
             role="button">
@@ -191,19 +214,17 @@
           <mat-icon class="email-icon" aria-hidden="false"> email </mat-icon>
           <p class="support-form-subtitle">support@iclinicemr.com</p>
         </div>
-
         <div class="icons-div">
           <mat-icon class="email-icon" aria-hidden="false"> phone </mat-icon>
           <p class="support-form-subtitle">1-778-000-0000</p>
         </div>
       </div>
       <div clas="iclinicSalesInquiries-div">
-        <p class="font-weight-bold support-form-title pb-4">Sales Inquiries</p>
+        <p class="font-weight-bold support-form-title py-4">Sales Inquiries</p>
         <div class="icons-div">
           <mat-icon class="email-icon" aria-hidden="false"> email </mat-icon>
           <p class="support-form-subtitle">help@iclinicemr.com</p>
         </div>
-
         <div class="icons-div">
           <mat-icon class="email-icon" aria-hidden="false"> phone </mat-icon>
           <p class="support-form-subtitle">1-778-000-0000</p>

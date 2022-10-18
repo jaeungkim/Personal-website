@@ -1,8 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, ChartType } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { gsap } from "gsap";
 
 Chart.register(ChartDataLabels);
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-solutions',
@@ -10,6 +13,16 @@ Chart.register(ChartDataLabels);
   styleUrls: ['./solutions.component.scss'],
 })
 export class SolutionsComponent implements OnInit {
+
+  //GSAP 
+  // initScrollAnimations(): void {
+  //   gsap.from("mainaf", {
+  //     opacity: 0,
+  //     y: 200,
+  //     duration: 5
+  //   });
+  // }
+  //GSAP
   mobile: boolean = false;
   tablet: boolean = false;
   desktop: boolean = false;
@@ -786,6 +799,7 @@ export class SolutionsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
+    // this.initScrollAnimations();
     if (window.innerWidth < 576) {
       // 768px portrait
       this.mobile = true;

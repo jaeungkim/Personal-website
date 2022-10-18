@@ -40,7 +40,7 @@ GLOBAL VARIABLES
   --fr-green: rgba(206, 255, 173, 1);
   --ascopd-beige: rgba(255, 218, 193, 1);
 
-/*
+  /*
 =============================================
 LIGHT THEME GLOBAL VARIABLES
 =============================================
@@ -51,13 +51,16 @@ LIGHT THEME GLOBAL VARIABLES
   --light-bg-four: #3F72AF;
   --light-bg-fifth: #112D4E;
   --light-iclinic-blue: rgb(203, 223, 237);
+  --light-box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
 
-/*
+  /*
 =============================================
 DARK THEME GLOBAL VARIABLES
 =============================================
 */
-  --dark-bg-primary: #151217;
+  // --dark-bg-primary: #151217;
+  --dark-bg-primary: black;
+  --dark-box-shadow-white: 0px 0px 12px 0px #fff;
 }
 
 /*
@@ -77,14 +80,14 @@ DARK THEME VARIABLES
     color: white;
   }
 
-  .black-text{
+  .black-text {
     color: black;
   }
 
   .inverse-font-color {
     color: black;
   }
-  
+
   .custom-nav-link {
     color: white;
   }
@@ -121,8 +124,12 @@ DARK THEME VARIABLES
     border-top: 1px solid grey;
     border-bottom: 1px solid grey;
   }
-
+  /*CONTACT*/
+  .contact-form-section, .support-form-section, .contact-form-text-div-card, .contact-form-text-div-card2, .contact-form-text-div-card3{
+    box-shadow: var(--dark-box-shadow-white);
+  }
 }
+
 /*
 =============================================
 LIGHT THEME VARIABLES
@@ -140,7 +147,7 @@ LIGHT THEME VARIABLES
     color: black;
   }
 
-  .black-text{
+  .black-text {
     color: black;
   }
 
@@ -164,6 +171,7 @@ LIGHT THEME VARIABLES
   .card-div {
     background-color: white;
   }
+
   .custom-nav-link {
     color: white;
   }
@@ -197,23 +205,8 @@ LIGHT THEME VARIABLES
     color: black !important;
   }
 
-  .contact-form-section {
-    background-color: white;
-  }
-
-  .support-form-section {
-    background-color: white;
-  }
-
-  .contact-form-text-div-card {
-    background-color: white;
-  }
-
-  .contact-form-text-div-card2 {
-    background-color: white;
-  }
-
-  .contact-form-text-div-card3 {
-    background-color: white;
-  }
+  .contact-form-section, .support-form-section, .contact-form-text-div-card, .contact-form-text-div-card2, .contact-form-text-div-card3{
+    box-shadow: var(--light-box-shadow);
+    background: white;
+  } 
 }

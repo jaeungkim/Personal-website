@@ -3,48 +3,66 @@
     <!-- patient doctor merge animation div -->
     <section class="patientDoctor-division">
       <div class="patient-div">
-        <img src="./assets/images/ecosystem/patient-light.png" alt=" " class="patient-img"
+        <img src="./assets/images/ecosystem/revised-patient-light.png" alt=" " class="patient-img"
           *ngIf="colorSchemeService.colorScheme === 'light'" />
-        <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img"
+        <img src="./assets/images/ecosystem/revised-patient-pd.png" alt=" " class="patient-img"
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
-        <div class="indicator rotate-right">
+
+        <!-- <div class="indicator rotate-right">
           <span></span>
           <span></span>
           <span></span>
           <span *ngIf="desktop || largedesktop"></span>
           <span *ngIf="desktop || largedesktop"></span>
-        </div>
+        </div> -->
+        <!-- <svg id="demo" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 800 600">
+          <path id="base-path" d="M 50 300 Q 300 300 750 300 " />
+          <path class="dotted-path dotted-path-base" d="M 50 300 Q 300 300 750 300 " />
+          <path class="dotted-path dotted-path-middle" d="M 50 300 Q 300 300 750 300 " />
+          <path class="dotted-path dotted-path-upper" d="M 50 300 Q 300 300 750 300 " />
+        </svg> -->
+
       </div>
+      <img src="./assets/images/ecosystem/arrow-right-pincaigreen.png" alt=" " class="arrow-img" />
       <div class="clinic-div">
-        <img src="./assets/images/ecosystem/clinicWhite.png" alt=" " class="clinic-img"
+        <img src="./assets/images/ecosystem/revised-clinic.png" alt=" " class="clinic-img"
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
-        <img src="./assets/images/ecosystem/clinic-light.png" alt=" " class="clinic-img"
+        <img src="./assets/images/ecosystem/revised-clinic-light.png" alt=" " class="clinic-img"
           *ngIf="colorSchemeService.colorScheme === 'light'" />
-        <div class="indicator-pad indicator rotate-down">
+        <!-- <div class="indicator-pad indicator rotate-down">
           <span></span>
           <span></span>
           <span></span>
           <span *ngIf="desktop || largedesktop"></span>
           <span *ngIf="desktop || largedesktop"></span>
-        </div>
+        </div> -->
+        <div class="d-flex svg-div">
+          <svg class="svg-icon">
+          <g stroke="white">
+              <path class="dotted-path" d="M0,300 C0,300 0,-300 0,-300"></path>
+          </g>
+        </svg>
+    </div>
       </div>
+      <img src="./assets/images/ecosystem/arrow-right-pincaigreen.png" alt=" "
+        class="arrow-img-right rotate-right-two " />
       <div class="doctor-div">
-        <div class="indicator rotate-left">
+        <!-- <div class="indicator rotate-left">
           <span></span>
           <span></span>
           <span></span>
           <span *ngIf="desktop || largedesktop"></span>
           <span *ngIf="desktop || largedesktop"></span>
-        </div>
+        </div> -->
         <img src="./assets/images/ecosystem/doctor.png" alt=" " class="doctor-img"
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
         <img src="./assets/images/ecosystem/doctor-light.png" alt=" " class="doctor-img"
           *ngIf="colorSchemeService.colorScheme === 'light'" />
       </div>
       <div class="patientchart-div">
-        <img src="./assets/images/ecosystem/patientchart-iclinicblue.png" alt=" " class="patientchart-img"
+        <img src="./assets/images/ecosystem/revised-patientchart-iclinicblue.png" alt=" " class="patientchart-img"
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
-        <img src="./assets/images/ecosystem/patientchart-light.png" alt=" " class="patientchart-img"
+        <img src="./assets/images/ecosystem/revised-patient-chart-light.png" alt=" " class="patientchart-img"
           *ngIf="colorSchemeService.colorScheme === 'light'" />
       </div>
     </section>
@@ -278,9 +296,9 @@
 
     <!-- PATIENT DIV -->
     <div class="endPatient-div">
-      <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="endPatient-img"
+      <img src="./assets/images/ecosystem/revised-patient-pd.png" alt=" " class="endPatient-img"
         *ngIf="colorSchemeService.colorScheme === 'dark'" />
-      <img src="./assets/images/ecosystem/patient-light.png" alt=" " class="endPatient-img"
+      <img src="./assets/images/ecosystem/revised-patient-light.png" alt=" " class="endPatient-img"
         *ngIf="colorSchemeService.colorScheme === 'light'" />
     </div>
     <!-- END PATIENT DIV -->

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 import { EmailService } from '../../services/email/email.service';
+import { ColorSchemeService } from '../../services/theme/theme.service';
 
 @Component({
   selector: 'app-connect',
@@ -12,8 +13,9 @@ export class ConnectComponent implements OnInit {
   btnclick: boolean = false;
   buttonerror: boolean = false;
   buttonsuccess: boolean = false;
-  constructor(private fb: FormBuilder, private emailService: EmailService) {
+  constructor(private fb: FormBuilder, private emailService: EmailService, public colorSchemeService: ColorSchemeService) {
     this.createForm();
+    this.colorSchemeService.load();
   }
 
   ngOnInit(): void {
@@ -36,7 +38,6 @@ export class ConnectComponent implements OnInit {
           Validators.maxLength(10),
         ],
       ],
-      province: ['', Validators.required],
       tellusmore: [''],
     });
   }

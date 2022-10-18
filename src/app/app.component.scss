@@ -3,7 +3,6 @@
     position: absolute;
     top: 0%;
 }
-
 .cookie-bar {
     // background-color: black;
     padding-top: 12px;
@@ -73,7 +72,9 @@
     background-color: var(--iclinic-blue);
     // color: white;
 }
-
+.btn-close-white{
+    opacity: 1.0;
+}
 .btn-cookie-accept {
     margin-left: 12px;
     margin-right: 12px;
@@ -131,6 +132,7 @@
 
 .modal-body-text {
     font-size: 14px;
+    text-align: justify;
 }
 
 .show-more-text {
