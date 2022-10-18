@@ -10,7 +10,6 @@
     height: 100%;
     justify-content: center;
     align-items: center;
-
     &:hover {
         .moon {
             transform: rotate(180deg);
@@ -42,13 +41,14 @@ input[type="checkbox" i] {
     align-items: center;
     -webkit-box-pack: justify;
     justify-content: space-between;
-    padding: 10px;
+    padding: 8px;
     border-radius: 50px;
     position: relative;
-    height: 40px;
-    width: 80px;
+    height: 30px;
+    width: 60px;
     cursor: pointer;
-    box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5) inset;
+    // box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: var(--box-shadow);
     transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
@@ -59,7 +59,6 @@ input[type="checkbox" i] {
     transition: all .5s cubic-bezier(.76, 0, .24, 1);
     -webkit-transform: rotate(0);
     color: #f1c40f;
-
 }
 
 .theme-switch .sun {
@@ -76,10 +75,10 @@ input[type="checkbox" i] {
     background-color: #ebeaf7;
     position: absolute;
     border-radius: 50%;
-    top: 5px;
-    left: 5px;
-    height: 30px;
-    width: 30px;
+    top: 3px;
+    left: 3px;
+    height: 25px;
+    width: 25px;
     -webkit-transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
     transition: all 0.3s cubic-bezier(0.76, 0, 0.24, 1);
 }
@@ -89,7 +88,7 @@ input[type="checkbox" i]:focus-visible {
 }
 
 .translate-dark {
-    transform: translateX(40px);
+    transform: translateX(30px);
 }
 
 .translate-light {

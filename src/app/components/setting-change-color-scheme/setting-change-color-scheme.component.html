@@ -6,14 +6,14 @@
 <div class="theme-switch">
   <input type="checkbox" class="checkbox" id="theme-switch" (click)="setTheme()">
   <label for="theme-switch" class="label">
-    <svg class="moon" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+    <svg class="moon" width="18" height="18" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <title>Switch light/dark mode</title>
       <path
         d="M3 11.5066C3 16.7497 7.25034 21 12.4934 21c3.7275.0 6.9532-2.1482 8.5066-5.2741C12.4934 15.7259 8.27411 11.5066 8.27411 3 5.14821 4.55344 3 7.77915 3 11.5066z"
         stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
-    <svg class="sun" width="24" height="24" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
+    <svg class="sun" width="18" height="18" stroke-width="1.5" viewBox="0 0 24 24" fill="none"
       xmlns="http://www.w3.org/2000/svg">
       <title>Switch light/dark mode</title>
       <path d="M12 18c3.3137.0 6-2.6863 6-6 0-3.31371-2.6863-6-6-6-3.31371.0-6 2.68629-6 6 0 3.3137 2.68629 6 6 6z"
@@ -27,6 +27,7 @@
       <path d="M4 4 5 5" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"></path>
       <path d="M1 12H2" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round"></path>
     </svg>
-    <div class="ball" [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'translate-dark':'translate-light'"></div>
+    <div class="ball" [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'translate-dark':'translate-light'">
+    </div>
   </label>
 </div>
