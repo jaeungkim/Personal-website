@@ -21,7 +21,9 @@ PATIENT DOCTOR DIV CSS
     height: 100vh;
     align-items: center;
 }
-
+.clinic-image-div{
+    display: flex;
+}
 .img-div {
     width: 100%;
 }
@@ -65,11 +67,13 @@ PATIENT DOCTOR DIV CSS
     position: relative;
     width: 100%;
 }
-.svg-div-chart{
+
+.svg-div-chart {
     position: relative;
     align-items: center;
     width: 100%;
 }
+
 .svg-icon {
     position: absolute;
     margin-top: 15%;
@@ -77,17 +81,18 @@ PATIENT DOCTOR DIV CSS
     height: 300px;
 }
 
-.svg-icon-patientchart{
+.svg-icon-patientchart {
     position: absolute;
     margin-top: 15%;
     width: 100%;
     height: 300px;
 }
+
 .svg-icon-linear {
     // position: absolute;
     // top: 30%;
     // right: -70%;
-    margin-top:auto;
+    margin-top: auto;
     margin-bottom: auto;
 }
 
@@ -190,7 +195,7 @@ CHART DIV CSS
 }
 
 .teleplan-img {
-    // width: 50%;
+    width: 25%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -198,7 +203,7 @@ CHART DIV CSS
 }
 
 .eHealth-img {
-    // width: 50%;
+    width: 25%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -206,7 +211,7 @@ CHART DIV CSS
 }
 
 .pharmaNet-img {
-    // width: 50%;
+    width: 25%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -214,7 +219,7 @@ CHART DIV CSS
 }
 
 .hospital-img {
-    // width: 50%;
+    width: 25%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -269,49 +274,54 @@ ARROW CSS
 */
 .dotted-path {
     stroke-dasharray: 3px 7px;
-    fill: none;
-    stroke: rgb(88, 194, 183);
+    fill: white;
+    // stroke: rgb(88, 194, 183);
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 35;
     animation: dash 30s linear infinite;
 }
-.linear-path-chart{
+
+.linear-path-chart {
     stroke-dasharray: 3px 5px;
-    fill: none;
-    stroke: rgb(88, 194, 183);
+    fill: white;
+    stroke: white;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 25;
     animation: reverse-dash 30s linear infinite;
 }
-.linear-path-chart-reverse{
+
+.linear-path-chart-reverse {
     stroke-dasharray: 3px 5px;
-    fill: none;
-    stroke: rgb(88, 194, 183);
+    fill: white;
+    stroke: white;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 25;
     animation: dash 30s linear infinite;
 }
+
 .dotted-chart-path {
     stroke-dasharray: 3px 5px;
-    fill: none;
-    // stroke: rgb(88, 194, 183);
+    fill: white;
+    stroke: white;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 10;
     animation: dash 30s linear infinite;
 }
+
 .dotted-chart-path-reverse {
     stroke-dasharray: 3px 5px;
-    fill: none;
-    // stroke: rgb(88, 194, 183);
+    fill: white;
+    stroke: white;
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 10;
     animation: reverse-dash 30s linear infinite;
 }
+
 .linear-path {
     // stroke-dasharray: 3px 10px;
     // fill: none;
@@ -319,14 +329,16 @@ ARROW CSS
     // stroke-linecap: butt;
     // stroke-linejoin: round;
     // stroke-width: 5;
+    fill: white;
     stroke-linecap: round;
     stroke-linejoin: miter;
     stroke-miterlimit: 4;
     stroke-dasharray: 1, 15;
-    stroke:rgb(88, 194, 183);
+    stroke: white;
     stroke-width: 10;
     animation: dash 30s linear infinite;
 }
+
 .linear-path-reverse {
     // stroke-dasharray: 3px 10px;
     // fill: none;
@@ -334,11 +346,12 @@ ARROW CSS
     // stroke-linecap: butt;
     // stroke-linejoin: round;
     // stroke-width: 1;
+    fill: white;
     stroke-linecap: round;
     stroke-linejoin: miter;
     stroke-miterlimit: 4;
     stroke-dasharray: 1, 15;
-    stroke:rgb(88, 194, 183);
+    stroke: white;
     stroke-width: 10;
     animation: reverse-dash 30s linear infinite;
 }
@@ -368,7 +381,7 @@ ARROW CSS
     width: 2.5%;
     margin: 0;
     left: 41%;
-    bottom: 57.5%;
+    transform: translateY(250%);
     padding: 0;
 }
 
@@ -377,7 +390,7 @@ ARROW CSS
     width: 2.5%;
     margin: 0;
     right: 41%;
-    bottom: 57.5%;
+    transform: translateY(250%) rotate(180deg);
     padding: 0;
 }
 
@@ -421,6 +434,7 @@ ARROW CSS
     height: 100%;
     align-items: center;
 }
+
 .chart-gapline {
     border-left: 2px solid white;
     height: 20px;
@@ -460,12 +474,15 @@ MOBILE
         margin-top: 15%;
         height: 150px;
     }
-    .svg-icon-down{
+
+    .svg-icon-down {
         height: 75px;
     }
-    .svg-icon-patientchart{
+
+    .svg-icon-patientchart {
         height: 150px;
     }
+
     .chart-arrow-div {
         // margin-bottom: 50px;
     }
@@ -486,7 +503,7 @@ TABLET
 */
 @media only screen and (min-width: 768px) {
     .chart-arrow-div {
-        // margin-bottom: 50px;
+        width: 50%;
     }
 
     .ecosystem-chart {
@@ -520,6 +537,7 @@ TABLET
         position: absolute;
         top: 40%;
         left: 0;
+        width: 30%;
     }
 
     .chart-div-eHealthViewer {
@@ -528,6 +546,7 @@ TABLET
         position: absolute;
         bottom: 10%;
         left: 0;
+        width: 30%;
     }
 
     .chart-div-pharmanet {
@@ -537,6 +556,7 @@ TABLET
         position: absolute;
         top: 40%;
         right: 0;
+        width: 30%;
     }
 
     .chart-div-hospital {
@@ -546,6 +566,7 @@ TABLET
         position: absolute;
         bottom: 10%;
         right: 0%;
+        width: 30%;
     }
 
     .patient-img {
@@ -575,41 +596,41 @@ TABLET
     .teleplan-img-div {
         display: flex;
         flex-direction: column;
-        width: 100%
-    }
-
-    .teleplan-img {
-        // width: 50%;
+        // width: 100%
     }
 
     .eHealth-img-div {
         display: flex;
         flex-direction: column;
-        width: 100%
-    }
-
-    .eHealth-img {
-        // width: 50%;
+        // width: 100%
     }
 
     .pharmanet-img-div {
         display: flex;
         flex-direction: column;
-        width: 100%
-    }
-
-    .pharmaNet-img {
-        // width: 50%;
+        // width: 100%
     }
 
     .hospital-img-div {
         display: flex;
         flex-direction: column;
-        width: 100%
+        // width: 100%
+    }
+
+    .teleplan-img {
+        width: 75px;
+    }
+
+    .eHealth-img {
+        width: 75px;
+    }
+
+    .pharmaNet-img {
+        width: 75px;
     }
 
     .hospital-img {
-        // width: 50%;
+        width: 75px;
     }
 }
 
@@ -620,7 +641,7 @@ SMALL DESKTOP
 */
 @media only screen and (min-width: 992px) {
     .chart-arrow-div {
-        // margin-bottom: 50px;
+       width: 75%;
     }
 
     .external-label {
@@ -660,19 +681,20 @@ SMALL DESKTOP
     }
 
     .teleplan-img {
-        // width: 40%;
+        width: 106.19px;
     }
 
     .eHealth-img {
-        // width: 40%;
+        width: 106.19px;
+
     }
 
     .pharmaNet-img {
-        // width: 40%;
+        width: 106.19px;
     }
 
     .hospital-img {
-        // width: 40%;
+        width: 106.19px;
     }
 }
 
