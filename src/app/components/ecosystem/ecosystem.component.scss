@@ -267,7 +267,7 @@ BOTTOM PATIENT DIV CSS
 .endPatient-img {
     margin-left: auto;
     margin-right: auto;
-    width: 15%
+    width: 15%;
 }
 
 /*
@@ -407,8 +407,6 @@ ARROW CSS
     padding: 0;
 }
 
-
-
 .arrow-div {
     padding-top: 75px;
 }
@@ -459,21 +457,20 @@ ARROW CSS
     transform: rotate(0deg) !important;
 }
 
-
 @keyframes gaplineanimate {
     0% {
         background-position: 0% 51%;
-        border-color: #ffd64a
+        border-color: #ffd64a;
     }
 
     50% {
         background-position: 100% 50%;
-        border-color: #ffffff
+        border-color: #ffffff;
     }
 
     100% {
         background-position: 0% 51%;
-        border-color: #ffd64a
+        border-color: #ffd64a;
     }
 }
 
@@ -699,7 +696,6 @@ SMALL DESKTOP
 
     .eHealth-img {
         width: 106.19px;
-
     }
 
     .pharmaNet-img {

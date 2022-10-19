@@ -55,8 +55,8 @@ input[type="checkbox" i] {
 .theme-switch .moon {
     -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-transition: all .5s cubic-bezier(.76, 0, .24, 1);
-    transition: all .5s cubic-bezier(.76, 0, .24, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
     -webkit-transform: rotate(0);
     color: #f1c40f;
 }
@@ -64,15 +64,15 @@ input[type="checkbox" i] {
 .theme-switch .sun {
     -webkit-transform-origin: center center;
     transform-origin: center center;
-    -webkit-transition: all .5s cubic-bezier(.76, 0, .24, 1);
-    transition: all .5s cubic-bezier(.76, 0, .24, 1);
+    -webkit-transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+    transition: all 0.5s cubic-bezier(0.76, 0, 0.24, 1);
     -webkit-transform: rotate(0);
     transform: rotate(0);
     color: #ff6b00;
 }
 
 .theme-switch .ball {
-    background: linear-gradient(135deg, rgb(205, 231, 255) 40%, rgba(255,255,255,1) 50%, rgb(215, 236, 255) 70%);;
+    background: linear-gradient(135deg, rgb(205, 231, 255) 40%, rgba(255, 255, 255, 1) 50%, rgb(215, 236, 255) 70%);
     position: absolute;
     border-radius: 50%;
     top: 3px;
