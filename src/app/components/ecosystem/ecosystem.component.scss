@@ -303,22 +303,22 @@ ARROW CSS
 }
 
 .dotted-chart-path {
-    stroke-dasharray: 3px 5px;
+    stroke-dasharray: 2px 3px;
     fill: white;
     stroke: white;
     stroke-linecap: butt;
     stroke-linejoin: miter;
-    stroke-width: 10;
+    stroke-width: 15;
     animation: dash 30s linear infinite;
 }
 
 .dotted-chart-path-reverse {
-    stroke-dasharray: 3px 5px;
+    stroke-dasharray: 2px 3px;
     fill: white;
     stroke: white;
     stroke-linecap: butt;
     stroke-linejoin: miter;
-    stroke-width: 10;
+    stroke-width: 15;
     animation: reverse-dash 30s linear infinite;
 }
 
