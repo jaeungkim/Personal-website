@@ -16,8 +16,8 @@
           *ngIf="colorSchemeService.colorScheme === 'light'" />
         <div class="d-flex svg-div">
           <svg class="svg-icon" viewBox="0 0 300 300">
-            <g transform="translate(100,65)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
-              <path class="dotted-path" d="M50,200 C50,200 50,-200 50,-200"></path>
+            <g transform="translate(150,65)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+              <path class="dotted-path" d="M0,200 C0,200 0,-200 0,-200"></path>
             </g>
             <g transform="translate(150,275)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
               <path
@@ -27,8 +27,8 @@
           </svg>
         </div>
       </div>
-      <img src="./assets/images/ecosystem/arrow-right-pincaigreen.png" alt=" "
-        class="arrow-img-right rotate-right-two " />
+      <img src="./assets/images/ecosystem/arrow-right-pincaigreen.png" alt=" " class="arrow-img-right"
+        style="transform:rotate(180deg)" />
       <div class="doctor-div">
         <img src="./assets/images/ecosystem/doctor.png" alt=" " class="doctor-img"
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
@@ -43,11 +43,11 @@
             *ngIf="colorSchemeService.colorScheme === 'light'" />
         </div>
         <div class="d-flex svg-div">
-          <svg class="svg-icon-chart" viewBox="0 0 100 100">
-            <g transform="translate(0,0)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
-              <path class="dotted-chart-path"  d="M50,75 C50,75 50,-75 50,-75"></path>
+          <svg class="svg-icon-patientchart" viewBox="0 0 300 300">
+            <g transform="translate(150,-50)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+              <path class="dotted-path" d="M0,200 C0,200 0,-200 0,-200"></path>
             </g>
-            <g transform="translate(50,75)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+            <g transform="translate(150,150)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
               <path
                 d=" M0,10.875 C0,10.875 -27.71299934387207,-10.875 -27.71299934387207,-10.875 C-27.71299934387207,-10.875 27.71299934387207,-10.875 27.71299934387207,-10.875 C27.71299934387207,-10.875 0,10.875 0,10.875z">
               </path>
@@ -83,32 +83,20 @@
       </div>
       <div class="chart-parts-div">
         <div class="chart-div-teleplan">
-          <svg class="svg-icon-linear">
-            <g fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
-              <path class="linear-path" d="M0 0 150 0" />
-            </g>
-          </svg>
-          <!-- <div class="chart-arrow-div" [ngClass]="
+          <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop
-                ? 'order-2 rotate-teleplan'
+                ? 'order-2'
                 : 'order-1'
             ">
-            <div class="indicator rotate-top">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-            <div class="chart-gapline"></div>
-            <div class="indicator rotate-down">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-          </div> -->
+            <svg class="svg-icon-linear">
+              <g transform="translate(0 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="linear-path" d="M0 0 100 0" />
+              </g>
+              <g transform="translate(110 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="linear-path-reverse" d="M0 0 100 0" />
+              </g>
+            </svg>
+          </div>
           <div class="teleplan-img-div" [ngClass]="
               tablet || desktop || largedesktop
                 ? 'order-1'
@@ -123,27 +111,20 @@
         </div>
 
         <div class="chart-div-eHealthViewer">
-          <!-- <div class="chart-arrow-div" [ngClass]="
+          <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop
                 ? 'order-2 rotate-eHealth'
                 : 'order-1'
             ">
-            <div class="indicator rotate-top">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-            <div class="chart-gapline"></div>
-            <div class="indicator rotate-down">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-          </div> -->
+            <svg class="svg-icon-linear" style="transform: translate(-70px, -150px) rotate(145deg)">
+              <g transform="translate(0 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="linear-path" d="M0 0 100 0" />
+              </g>
+              <g transform="translate(110 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="linear-path-reverse" d="M0 0 100 0" />
+              </g>
+            </svg>
+          </div>
           <div class="eHealth-img-div" [ngClass]="
               tablet || desktop || largedesktop
                 ? 'order-1'
@@ -158,31 +139,17 @@
         </div>
 
         <div class="chart-div-pharmanet">
-          <!-- <div class="chart-arrow-div" [ngClass]="
-              tablet || desktop || largedesktop ? 'rotate-pharmanet' : ''
-            ">
-            <div class="indicator rotate-top">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-            <div class="chart-gapline"></div>
-            <div class="indicator rotate-down">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-          </div> -->
-          <svg class="svg-icon-linear-reverse">
-            <g fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
-              <path class="linear-path-reverse" d="M0 0 150 0" />
-            </g>
-          </svg>
-          <div class="pharmanet-img-div" [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
+          <div class="chart-arrow-div">
+            <svg class="svg-icon-linear">
+              <g transform="translate(50 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="dotted-chart-path" d="M0 0 100 0" />
+              </g>
+              <g transform="translate(150 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="dotted-chart-path-reverse" d="M0 0 100 0" />
+              </g>
+            </svg>
+          </div>
+          <div class="pharmanet-img-div">
             <img src="./assets/images/ecosystem/pharmaNet.png" alt=" " class="pharmaNet-img"
               *ngIf="colorSchemeService.colorScheme === 'dark'" />
             <img src="./assets/images/ecosystem/pharmaNet-light.png" alt=" " class="pharmaNet-img"
@@ -192,30 +159,16 @@
         </div>
 
         <div class="chart-div-hospital">
-          <!-- <div class="chart-arrow-div" [ngClass]="
-              tablet || desktop || largedesktop ? 'rotate-hospital' : ''
-            ">
-            <div class="indicator rotate-top">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-            <div class="chart-gapline"></div>
-            <div class="indicator rotate-down">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span *ngIf="desktop || largedesktop"></span>
-              <span *ngIf="desktop || largedesktop"></span>
-            </div>
-          </div> -->
-          <svg class="svg-icon-linear-reverse-hospital">
-            <g class="rotate-hospital" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
-              <path class="linear-path-reverse" d="M0 0 500 0" />
-            </g>
-          </svg>
+          <div class="chart-arrow-div" [ngClass]="tablet || desktop || largedesktop ? 'rotate-hospital' : '' ">
+            <svg class="svg-icon-linear" style="transform: translate(-50px, -130px) rotate(35deg);">
+              <g transform="translate(50 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="dotted-chart-path" d="M0 0 100 0" />
+              </g>
+              <g transform="translate(150 45)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="dotted-chart-path-reverse" d="M0 0 100 0" />
+              </g>
+            </svg>
+          </div>
           <div class="hospital-img-div" [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
             <img src="./assets/images/ecosystem/hospital.png" alt=" " class="hospital-img"
               *ngIf="colorSchemeService.colorScheme === 'dark'" />
@@ -229,12 +182,22 @@
               ? 'belowchart-arrow-div'
               : 'd-none'
           ">
-          <div class="d-flex svg-div">
-            <svg class="svg-icon-chart" viewBox="0 0 300 300">
-              <g transform="translate(100,65)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
-                <path class="dotted-path" d="M50,200 C50,200 50,-200 50,-200"></path>
+          <div class="d-flex flex-column svg-div-chart">
+            <svg class="svg-icon-down" viewBox="0 0 150 150">
+              <g transform="translate(75,90)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="dotted-path" d="M0,35 C0,35 0,-35 0,-35"></path>
               </g>
-              <g transform="translate(150,275)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+              <g transform="translate(75,50) rotate(180)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path
+                  d=" M0,10.875 C0,10.875 -27.71299934387207,-10.875 -27.71299934387207,-10.875 C-27.71299934387207,-10.875 27.71299934387207,-10.875 27.71299934387207,-10.875 C27.71299934387207,-10.875 0,10.875 0,10.875z">
+                </path>
+              </g>
+            </svg>
+            <svg class="svg-icon-down" viewBox="0 0 150 150">
+              <g transform="translate(75,50)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+                <path class="dotted-path" d="M0,35 C0,35 0,-35 0,-35"></path>
+              </g>
+              <g transform="translate(75,90)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
                 <path
                   d=" M0,10.875 C0,10.875 -27.71299934387207,-10.875 -27.71299934387207,-10.875 C-27.71299934387207,-10.875 27.71299934387207,-10.875 27.71299934387207,-10.875 C27.71299934387207,-10.875 0,10.875 0,10.875z">
                 </path>
@@ -248,24 +211,6 @@
     <!-- <section class="section-pad"></section> -->
     <!-- END CHART DIV -->
 
-    <div class="arrow-div-2">
-      <div class="indicator rotate-top">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span *ngIf="desktop || largedesktop"></span>
-        <span *ngIf="desktop || largedesktop"></span>
-      </div>
-      <div class="gapline"></div>
-      <div class="indicator rotate-down">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span *ngIf="desktop || largedesktop"></span>
-        <span *ngIf="desktop || largedesktop"></span>
-      </div>
-    </div>
-
     <!-- APP DIV -->
     <div class="app-div">
       <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img"
@@ -276,20 +221,27 @@
     <!-- END APP DIV -->
 
     <div class="arrow-div-2">
-      <div class="indicator rotate-top">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span *ngIf="desktop || largedesktop"></span>
-        <span *ngIf="desktop || largedesktop"></span>
-      </div>
-      <div class="gapline"></div>
-      <div class="indicator rotate-down">
-        <span></span>
-        <span></span>
-        <span></span>
-        <span *ngIf="desktop || largedesktop"></span>
-        <span *ngIf="desktop || largedesktop"></span>
+      <div class="d-flex flex-column svg-div-chart">
+        <svg class="svg-icon-down" viewBox="0 0 150 150">
+          <g transform="translate(75,90)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+            <path class="dotted-path" d="M0,35 C0,35 0,-35 0,-35"></path>
+          </g>
+          <g transform="translate(75,50) rotate(180)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+            <path
+              d=" M0,10.875 C0,10.875 -27.71299934387207,-10.875 -27.71299934387207,-10.875 C-27.71299934387207,-10.875 27.71299934387207,-10.875 27.71299934387207,-10.875 C27.71299934387207,-10.875 0,10.875 0,10.875z">
+            </path>
+          </g>
+        </svg>
+        <svg class="svg-icon-down" viewBox="0 0 150 150">
+          <g transform="translate(75,50)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+            <path class="dotted-path" d="M0,35 C0,35 0,-35 0,-35"></path>
+          </g>
+          <g transform="translate(75,90)" fill="rgb(88,194,183)" stroke="rgb(88,194,183)">
+            <path
+              d=" M0,10.875 C0,10.875 -27.71299934387207,-10.875 -27.71299934387207,-10.875 C-27.71299934387207,-10.875 27.71299934387207,-10.875 27.71299934387207,-10.875 C27.71299934387207,-10.875 0,10.875 0,10.875z">
+            </path>
+          </g>
+        </svg>
       </div>
     </div>
 

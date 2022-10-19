@@ -21,9 +21,11 @@ PATIENT DOCTOR DIV CSS
     height: 100vh;
     align-items: center;
 }
-.img-div{
+
+.img-div {
     width: 100%;
 }
+
 .patientchart-div {
     display: flex;
     flex-direction: column;
@@ -63,7 +65,12 @@ PATIENT DOCTOR DIV CSS
     position: relative;
     width: 100%;
 }
-
+.svg-div-chart{
+    position: relative;
+    align-items: center;
+    margin-top: 3%;
+    width: 100%;
+}
 .svg-icon {
     position: absolute;
     margin-top: 15%;
@@ -71,20 +78,30 @@ PATIENT DOCTOR DIV CSS
     height: 300px;
 }
 
+.svg-icon-patientchart{
+    position: absolute;
+    margin-top: 15%;
+    width: 100%;
+    height: 300px;
+}
 .svg-icon-linear {
-    position: absolute;
-    top: 30%;
-    right: -70%;
+    // position: absolute;
+    // top: 30%;
+    // right: -70%;
+    margin-top:auto;
+    margin-bottom: auto;
 }
-.svg-icon-linear-reverse{
+
+.svg-icon-linear-reverse {
     position: absolute;
     top: 30%;
     right: 10%;
 }
-.svg-icon-linear-reverse-hospital{
+
+.svg-icon-linear-reverse-hospital {
     position: absolute;
-    bottom: 130%;
-    right: 10%;
+    bottom: 150%;
+    right: 18%;
 }
 
 .svg-icon-chart {
@@ -113,7 +130,6 @@ PATIENT DOCTOR DIV CSS
 
 .patientchart-img {
     position: absolute;
-   
     left: 38.5%;
     margin-top: -35%;
     width: 60%;
@@ -175,7 +191,7 @@ CHART DIV CSS
 }
 
 .teleplan-img {
-    width: 50%;
+    // width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -183,7 +199,7 @@ CHART DIV CSS
 }
 
 .eHealth-img {
-    width: 50%;
+    // width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -191,7 +207,7 @@ CHART DIV CSS
 }
 
 .pharmaNet-img {
-    width: 50%;
+    // width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -199,7 +215,7 @@ CHART DIV CSS
 }
 
 .hospital-img {
-    width: 50%;
+    // width: 50%;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -259,47 +275,88 @@ ARROW CSS
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 35;
-    stroke-dashoffset: -475;
+    animation: dash 30s linear infinite;
 }
-.dotted-chart-path{
+.linear-path-chart{
     stroke-dasharray: 3px 5px;
     fill: none;
     stroke: rgb(88, 194, 183);
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 25;
-    animation: reverse-dash 30s linear alternate infinite;
+    animation: reverse-dash 30s linear infinite;
+}
+.linear-path-chart-reverse{
+    stroke-dasharray: 3px 5px;
+    fill: none;
+    stroke: rgb(88, 194, 183);
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 25;
+    animation: dash 30s linear infinite;
+}
+.dotted-chart-path {
+    stroke-dasharray: 3px 5px;
+    fill: none;
+    stroke: rgb(88, 194, 183);
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 10;
+    animation: dash 30s linear infinite;
+}
+.dotted-chart-path-reverse {
+    stroke-dasharray: 3px 5px;
+    fill: none;
+    stroke: rgb(88, 194, 183);
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 10;
+    animation: reverse-dash 30s linear infinite;
 }
 .linear-path {
-    stroke-dasharray: 3px 10px;
-    fill: none;
-    stroke: rgb(88, 194, 183);
-    stroke-linecap:butt;
-    stroke-linejoin: round;
-    stroke-width: 5;
-    animation: dash 30s linear alternate infinite;
+    // stroke-dasharray: 3px 10px;
+    // fill: none;
+    // stroke: rgb(88, 194, 183);
+    // stroke-linecap: butt;
+    // stroke-linejoin: round;
+    // stroke-width: 5;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: 1, 15;
+    stroke:rgb(88, 194, 183);
+    stroke-width: 10;
+    animation: dash 30s linear infinite;
 }
-.linear-path-reverse{
-    stroke-dasharray: 3px 10px;
-    fill: none;
-    stroke: rgb(88, 194, 183);
-    stroke-linecap:butt;
-    stroke-linejoin: round;
-    stroke-width: 5;
-    animation: reverse-dash 30s linear alternate infinite;
+.linear-path-reverse {
+    // stroke-dasharray: 3px 10px;
+    // fill: none;
+    // stroke: rgb(88, 194, 183);
+    // stroke-linecap: butt;
+    // stroke-linejoin: round;
+    // stroke-width: 1;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: 1, 15;
+    stroke:rgb(88, 194, 183);
+    stroke-width: 10;
+    animation: reverse-dash 30s linear infinite;
 }
+
 @keyframes dash {
     from {
-        stroke-dashoffset: 500;
+        stroke-dashoffset: 0;
     }
 
     to {
-        stroke-dashoffset: 0;
+        stroke-dashoffset: 600;
     }
 }
-@keyframes reverse-dash{
+
+@keyframes reverse-dash {
     from {
-        stroke-dashoffset: -500;
+        stroke-dashoffset: 600;
     }
 
     to {
@@ -325,117 +382,7 @@ ARROW CSS
     padding: 0;
 }
 
-.rotate-right-two {
-    transform: rotate(180deg);
-}
 
-.indicator {
-    position: relative;
-    width: 2vw;
-    height: 2vw;
-    max-width: 40px;
-    max-height: 40px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.indicator-pad {
-    position: absolute;
-    bottom: 35%;
-}
-
-.rotate-down {
-    transform: rotate(45deg);
-}
-
-.rotate-right {
-    transform: rotate(-45deg);
-}
-
-.rotate-left {
-    transform: rotate(135deg);
-}
-
-.rotate-top {
-    transform: rotate(225deg);
-}
-
-.rotate-teleplan {
-    transform: translateX(0) translateY(100px) rotate(-55deg);
-}
-
-.rotate-eHealth {
-    transform: translateX(0) translateY(-55px) rotate(55deg);
-}
-
-.rotate-pharmanet {
-    transform: translateX(0) translateY(100px) rotate(55deg);
-}
-
-.rotate-hospital {
-    transform: rotate(45deg);
-}
-
-.indicator span {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
-    border: none;
-    border-bottom: 1px solid #fff;
-    border-right: 1px solid #fff;
-    animation: indicatoranimate 1s linear infinite;
-}
-
-.indicator span:nth-child(1) {
-    top: -70%;
-    left: -70%;
-    animation-delay: 0s;
-}
-
-.indicator span:nth-child(2) {
-    top: -35%;
-    left: -35%;
-    animation-delay: 0.2s;
-}
-
-.indicator span:nth-child(3) {
-    top: 0;
-    left: 0;
-    animation-delay: 0.4s;
-}
-
-.indicator span:nth-child(4) {
-    top: 35%;
-    left: 35%;
-    animation-delay: 0.6s;
-}
-
-.indicator span:nth-child(5) {
-    top: 70%;
-    left: 70%;
-    animation-delay: 0.8s;
-}
-
-
-@keyframes indicatoranimate {
-    0% {
-        border-color: #fff;
-        transform: translate(0, 0);
-    }
-
-    20% {
-        border-color: #fff;
-        transform: translate(15px, 15px);
-    }
-
-    20.1%,
-    100% {
-        border-color: #ffd64a;
-    }
-}
 
 .arrow-div {
     padding-top: 75px;
@@ -446,14 +393,13 @@ ARROW CSS
 }
 
 .belowchart-arrow-div {
-    padding-top: 85vh;
+    padding-top: 75vh;
 }
 
 .arrow-div-2 {
     display: flex;
     flex-direction: column;
     gap: 5%;
-    padding-top: 50px;
     padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
@@ -472,12 +418,10 @@ ARROW CSS
 
 .chart-arrow-div {
     display: flex;
-    flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+    width: 65%;
+    height: 100%;
+    align-items: center;
 }
-
 .chart-gapline {
     border-left: 2px solid white;
     height: 20px;
@@ -514,17 +458,17 @@ MOBILE
 */
 @media only screen and (min-width: 576px) {
     .svg-icon {
-        margin-top: 10%;
-        height: 175px;
+        margin-top: 15%;
+        height: 150px;
     }
-
-    .svg-icon-chart {
-        margin-top: 10%;
+    .svg-icon-down{
         height: 75px;
     }
-
+    .svg-icon-patientchart{
+        height: 150px;
+    }
     .chart-arrow-div {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
 
     .ecosystem-chart {
@@ -543,7 +487,7 @@ TABLET
 */
 @media only screen and (min-width: 768px) {
     .chart-arrow-div {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
 
     .ecosystem-chart {
@@ -576,7 +520,6 @@ TABLET
         align-items: center;
         position: absolute;
         top: 40%;
-        width: 25%;
         left: 0;
     }
 
@@ -585,7 +528,6 @@ TABLET
         align-items: center;
         position: absolute;
         bottom: 10%;
-        width: 25%;
         left: 0;
     }
 
@@ -596,7 +538,6 @@ TABLET
         position: absolute;
         top: 40%;
         right: 0;
-        width: 25%;
     }
 
     .chart-div-hospital {
@@ -606,7 +547,6 @@ TABLET
         position: absolute;
         bottom: 10%;
         right: 0%;
-        width: 25%;
     }
 
     .patient-img {
@@ -636,41 +576,41 @@ TABLET
     .teleplan-img-div {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%
     }
 
     .teleplan-img {
-        width: 50%;
+        // width: 50%;
     }
 
     .eHealth-img-div {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%
     }
 
     .eHealth-img {
-        width: 50%;
+        // width: 50%;
     }
 
     .pharmanet-img-div {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%
     }
 
     .pharmaNet-img {
-        width: 50%;
+        // width: 50%;
     }
 
     .hospital-img-div {
         display: flex;
         flex-direction: column;
-        width: 80%;
+        width: 100%
     }
 
     .hospital-img {
-        width: 50%;
+        // width: 50%;
     }
 }
 
@@ -680,22 +620,8 @@ SMALL DESKTOP
 =============================================
 */
 @media only screen and (min-width: 992px) {
-    .indicator {
-        width: 1.25vw;
-        height: 1.25vw;
-    }
-
-    .indicator-pad {
-        bottom: 40%;
-    }
-
-    .indicator span {
-        border-bottom: 3px solid #fff;
-        border-right: 3px solid #fff;
-    }
-
     .chart-arrow-div {
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
 
     .external-label {
@@ -735,19 +661,19 @@ SMALL DESKTOP
     }
 
     .teleplan-img {
-        width: 40%;
+        // width: 40%;
     }
 
     .eHealth-img {
-        width: 40%;
+        // width: 40%;
     }
 
     .pharmaNet-img {
-        width: 40%;
+        // width: 40%;
     }
 
     .hospital-img {
-        width: 40%;
+        // width: 40%;
     }
 }
 
@@ -766,19 +692,23 @@ DESKTOP
     }
 
     .teleplan-img {
-        width: 30%;
+        width: 90px;
+        height: 90px;
     }
 
     .eHealth-img {
-        width: 30%;
+        width: 90px;
+        height: 90px;
     }
 
     .pharmaNet-img {
-        width: 30%;
+        width: 90px;
+        height: 90px;
     }
 
     .hospital-img {
-        width: 30%;
+        width: 90px;
+        height: 90px;
     }
 
     .patient-img {
