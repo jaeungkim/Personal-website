@@ -21,13 +21,15 @@ PATIENT DOCTOR DIV CSS
     height: 100vh;
     align-items: center;
 }
-
+.img-div{
+    width: 100%;
+}
 .patientchart-div {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     width: 25%;
     position: absolute;
-    bottom: 10%;
+    bottom: 15%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
@@ -62,13 +64,27 @@ PATIENT DOCTOR DIV CSS
     width: 100%;
 }
 
-.test {}
-
 .svg-icon {
     position: absolute;
     margin-top: 15%;
     width: 100%;
     height: 300px;
+}
+
+.svg-icon-linear {
+    position: absolute;
+    top: 30%;
+    right: -70%;
+}
+.svg-icon-linear-reverse{
+    position: absolute;
+    top: 30%;
+    right: 10%;
+}
+.svg-icon-linear-reverse-hospital{
+    position: absolute;
+    bottom: 130%;
+    right: 10%;
 }
 
 .svg-icon-chart {
@@ -96,8 +112,9 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-img {
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    bottom:0 ;
+    left: 38.5%;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -243,6 +260,51 @@ ARROW CSS
     stroke-width: 35;
     stroke-dashoffset: -475;
 }
+.dotted-chart-path{
+    stroke-dasharray: 3px 5px;
+    fill: none;
+    stroke: rgb(88, 194, 183);
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 25;
+    animation: reverse-dash 30s linear alternate infinite;
+}
+.linear-path {
+    stroke-dasharray: 3px 10px;
+    fill: none;
+    stroke: rgb(88, 194, 183);
+    stroke-linecap:butt;
+    stroke-linejoin: round;
+    stroke-width: 5;
+    animation: dash 30s linear alternate infinite;
+}
+.linear-path-reverse{
+    stroke-dasharray: 3px 10px;
+    fill: none;
+    stroke: rgb(88, 194, 183);
+    stroke-linecap:butt;
+    stroke-linejoin: round;
+    stroke-width: 5;
+    animation: reverse-dash 30s linear alternate infinite;
+}
+@keyframes dash {
+    from {
+        stroke-dashoffset: 500;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes reverse-dash{
+    from {
+        stroke-dashoffset: -500;
+    }
+
+    to {
+        stroke-dashoffset: 0;
+    }
+}
 
 .arrow-img {
     position: absolute;
@@ -310,7 +372,7 @@ ARROW CSS
 }
 
 .rotate-hospital {
-    transform: translateX(0) translateY(-55px) rotate(-55deg);
+    transform: rotate(45deg);
 }
 
 .indicator span {
@@ -456,8 +518,8 @@ MOBILE
     }
 
     .svg-icon-chart {
-        margin-top: -5%;
-        height: 175px;
+        margin-top: 20%;
+        height: 75px;
     }
 
     .chart-arrow-div {
@@ -492,12 +554,12 @@ TABLET
     }
 
     #donutchart {
-        top: 50%;
+        top: 40%;
         transform: translate(0, -50%);
     }
 
     #donutchart2 {
-        top: 50%;
+        top: 40%;
         transform: translate(0, -50%);
     }
 
@@ -528,6 +590,7 @@ TABLET
 
     .chart-div-pharmanet {
         display: flex;
+        justify-content: flex-end;
         align-items: center;
         position: absolute;
         top: 40%;
@@ -537,6 +600,7 @@ TABLET
 
     .chart-div-hospital {
         display: flex;
+        justify-content: flex-end;
         align-items: center;
         position: absolute;
         bottom: 10%;
