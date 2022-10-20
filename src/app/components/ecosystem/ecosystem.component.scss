@@ -15,45 +15,59 @@ PATIENT DOCTOR DIV CSS
 =============================================
 */
 .patientDoctor-division {
+    height: 100vh;
+}
+
+.patientDoctor-first-div {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    height: 100vh;
+    width: 100%;
+    justify-content: space-evenly;
     align-items: center;
+    padding-top: 20%;
 }
 
 .clinic-image-div {
-    display: flex;
+    // display: flex;
 }
 
-.img-div {
-    width: 100%;
+.patientchart-img-div {
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .patientchart-div {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    position: absolute;
-    bottom: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 2.5%;
+    // display: flex;
+    // flex-direction: column;
+    // width: 25%;
+    // // position: absolute;
+    // bottom: 15%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 }
 
 .patient-div {
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15%;
+    // width: 25%;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding-bottom: 15%;
 }
 
 .doctor-div {
-    width: 25%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 15%;
+    // width: 25%;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding-bottom: 15%;
 }
 
 .clinic-div {
@@ -66,6 +80,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .svg-div {
+    margin-top: 2.5%;
     position: relative;
     width: 100%;
 }
@@ -78,15 +93,15 @@ PATIENT DOCTOR DIV CSS
 }
 
 .svg-icon {
-    position: absolute;
-    margin-top: 15%;
+    // position: absolute;
+    // margin-top: 15%;
     width: 100%;
     height: 300px;
 }
 
 .svg-icon-patientchart {
-    position: absolute;
-    margin-top: 15%;
+    // position: absolute;
+    // margin-top: 15%;
     width: 100%;
     height: 300px;
 }
@@ -136,15 +151,10 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-img {
-    position: absolute;
-    left: 30%;
-    box-shadow: var(--box-shadow);
-    border-radius: 10px;
-    padding: 25px;
-    margin-top: -37.5%;
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
+    // position: absolute;
+    // left: 30%;
+    // margin-top: -37.5%;
+    // width: 60%;
 }
 
 /*
@@ -247,18 +257,21 @@ APP DIV CSS
 */
 .app-div {
     display: flex;
-}
-
-.app-phone-img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 15%;
-    align-items: center;
-    vertical-align: center;
-    text-align: center;
     box-shadow: var(--box-shadow);
     border-radius: 10px;
     padding: 25px;
+    width: 125px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-phone-img {
+
+    // width: 15%;
+
 }
 
 /*
@@ -273,7 +286,7 @@ BOTTOM PATIENT DIV CSS
 .endPatient-img {
     margin-left: auto;
     margin-right: auto;
-    width: 15%;
+    // width: 15%;
 }
 
 /*
@@ -487,7 +500,7 @@ MOBILE
 */
 @media only screen and (min-width: 576px) {
     .svg-icon {
-        margin-top: 15%;
+        // margin-top: 15%;
         height: 150px;
     }
 
@@ -602,7 +615,7 @@ TABLET
     }
 
     .patientchart-img {
-        width: 50%;
+        // width: 50%;
     }
 
     .app-phone-img {
@@ -610,31 +623,64 @@ TABLET
     }
 
     .endPatient-img {
-        width: 12.5%;
+        // width: 12.5%;
     }
 
     .teleplan-img-div {
         display: flex;
         flex-direction: column;
-        // width: 100%
+        box-shadow: var(--box-shadow);
+        padding: 25px;
+        width: 145px;
+        height: 145px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .eHealth-img-div {
         display: flex;
         flex-direction: column;
-        // width: 100%
+        box-shadow: var(--box-shadow);
+        padding: 25px;
+        width: 145px;
+        height: 145px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .pharmanet-img-div {
         display: flex;
         flex-direction: column;
+        box-shadow: var(--box-shadow);
+        padding: 25px;
+        width: 145px;
+        height: 145px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
         // width: 100%
     }
 
     .hospital-img-div {
         display: flex;
         flex-direction: column;
-        // width: 100%
+        box-shadow: var(--box-shadow);
+        padding: 25px;
+        width: 145px;
+        height: 145px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
     }
 
     .teleplan-img {
@@ -689,7 +735,7 @@ SMALL DESKTOP
     }
 
     .patientchart-img {
-        width: 80%;
+        // width: 80%;
     }
 
     .app-phone-img {
@@ -697,7 +743,7 @@ SMALL DESKTOP
     }
 
     .endPatient-img {
-        width: 10%;
+        // width: 10%;
     }
 
     .teleplan-img {
@@ -752,26 +798,32 @@ DESKTOP
     }
 
     .patient-img {
-        width: 30%;
+        width: 100px;
+        height: 100px;
     }
 
     .doctor-img {
-        width: 30%;
+        width: 100px;
+        height: 100px;
     }
 
     .clinic-img {
-        width: 45%;
+        width: 150px;
+        height: 150px;
     }
 
     .patientchart-img {
-        width: 45%;
+        width: 100px;
+        height: 100px;
     }
 
     .app-phone-img {
-        width: 11.5%;
+        width: 100px;
+        height: 100px;
     }
 
     .endPatient-img {
-        width: 7.5%;
+        width: 100px;
+        height: 100px;
     }
 }
