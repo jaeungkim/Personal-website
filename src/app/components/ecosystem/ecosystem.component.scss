@@ -326,7 +326,7 @@ ARROW CSS
     stroke-dasharray: 3px 7px;
     stroke-linecap: butt;
     stroke-linejoin: miter;
-    stroke-width: 25;
+    stroke-width: 15;
     animation: dash 30s linear infinite;
 }
 
@@ -334,7 +334,7 @@ ARROW CSS
     stroke-dasharray: 3px 7px;
     stroke-linecap: butt;
     stroke-linejoin: miter;
-    stroke-width: 25;
+    stroke-width: 15;
     animation: reverse-dash 30s linear infinite;
 }
 
@@ -536,8 +536,8 @@ TABLET
         position: absolute;
         top: 40%;
         left: 0;
-        width: 30%;
-        gap: 5%;
+        width: 27.5%;
+        gap: 15%;
     }
 
     .chart-div-eHealthViewer {
@@ -546,8 +546,8 @@ TABLET
         position: absolute;
         bottom: 10%;
         left: 6%;
-        width: 30%;
-        gap: 5%;
+        width: 27.5%;
+        gap: 15%;
     }
 
     .chart-div-pharmanet {
@@ -557,8 +557,8 @@ TABLET
         position: absolute;
         top: 40%;
         right: 0;
-        width: 30%;
-        gap: 5%;
+        width: 27.5%;
+        gap: 15%;
     }
 
     .chart-div-hospital {
@@ -568,8 +568,8 @@ TABLET
         position: absolute;
         bottom: 10%;
         right: 6%;
-        width: 30%;
-        gap: 5%;
+        width: 27.5%;
+        gap: 15%;
     }
 
     .patient-img {
@@ -600,9 +600,9 @@ TABLET
         display: flex;
         flex-direction: column;
         box-shadow: var(--box-shadow);
-        padding: 25px;
-        width: 145px;
-        height: 145px;
+        padding: 10px 15px;
+        // width: 145px;
+        // height: 145px;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -614,9 +614,9 @@ TABLET
         display: flex;
         flex-direction: column;
         box-shadow: var(--box-shadow);
-        padding: 25px;
-        width: 145px;
-        height: 145px;
+        padding: 10px 15px;
+        // width: 145px;
+        // height: 145px;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -628,9 +628,9 @@ TABLET
         display: flex;
         flex-direction: column;
         box-shadow: var(--box-shadow);
-        padding: 25px;
-        width: 145px;
-        height: 145px;
+        padding: 10px 15px;
+        // width: 145px;
+        // height: 145px;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;
@@ -643,9 +643,9 @@ TABLET
         display: flex;
         flex-direction: column;
         box-shadow: var(--box-shadow);
-        padding: 25px;
-        width: 145px;
-        height: 145px;
+        padding: 10px 15px;
+        // width: 145px;
+        // height: 145px;
         border-radius: 10px;
         margin-left: auto;
         margin-right: auto;

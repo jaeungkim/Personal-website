@@ -127,12 +127,12 @@
         <div class="chart-div-eHealthViewer">
           <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop
-                ? 'order-2 rotate-eHealth'
+                ? 'order-2'
                 : 'order-1'
             ">
             <svg viewBox="0 0 300 50" width=100% height=35px class="svg-icon-linear"
-              style="transform: translate(-35px, -100px) rotate(-40deg)" preserveAspectRatio="none">
-              <g transform="translate(0 25) rotate(90) scale(1.5)" stroke="rgb(128, 182, 222)">
+              style="transform: translate(-25px, -100px) rotate(-40deg)" preserveAspectRatio="none">
+              <g transform="translate(0 25) rotate(90) scale(1.5)" stroke="rgb(203, 223, 237)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
               <g transform="translate(15 25)">
@@ -141,7 +141,7 @@
               <g transform="translate(160 25)">
                 <path class="linear-path-reverse" d="M0 0 125 0" />
               </g>
-              <g transform="translate(300 25) rotate(-90) scale(1.5)" stroke="rgb(128, 182, 222)">
+              <g transform="translate(300 25) rotate(-90) scale(1.5)" stroke="rgb(203, 223, 237)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
             </svg>
@@ -149,13 +149,13 @@
           <div class="eHealth-img-div" [ngClass]="
               tablet || desktop || largedesktop
                 ? 'order-1'
-                : 'd-flex flex-column order-2'
+                : 'order-2'
             ">
             <img src="./assets/images/ecosystem/eHealth-white.png" alt=" " class="eHealth-img"
               *ngIf="colorSchemeService.colorScheme === 'dark'" />
             <img src="./assets/images/ecosystem/eHealth-light.png" alt=" " class="eHealth-img"
               *ngIf="colorSchemeService.colorScheme === 'light'" />
-            <p class="external-label text-nowrap">eHealth Viewer</p>
+            <p class="external-label">eHealth</p>
           </div>
         </div>
 
@@ -205,7 +205,7 @@
               </g>
             </svg>
           </div>
-          <div class="hospital-img-div" [ngClass]="desktop || largedesktop ? '' : 'd-flex flex-column'">
+          <div class="hospital-img-div">
             <img src="./assets/images/ecosystem/hospital-white.png" alt=" " class="hospital-img"
               *ngIf="colorSchemeService.colorScheme === 'dark'" />
             <img src="./assets/images/ecosystem/hospital-light.png" alt=" " class="hospital-img"
