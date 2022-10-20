@@ -93,12 +93,13 @@ PATIENT DOCTOR DIV CSS
     width: 100%;
 }
 
-.svg-div-chart-inside{
+.svg-div-chart-inside {
     position: absolute;
     bottom: 0;
     align-items: center;
     width: 100%;
 }
+
 .svg-div-chart {
     position: relative;
     align-items: center;
@@ -143,6 +144,16 @@ PATIENT DOCTOR DIV CSS
     position: absolute;
     width: 100%;
     height: 300px;
+}
+
+.svg-div-onchart {
+    display: flex;
+    padding-top: 8.5%;
+}
+
+.svg-icon-onchart {
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .patient-img {
@@ -519,6 +530,8 @@ MOBILE
     }
 
     .svg-icon-down {
+        margin-left: auto;
+        margin-right: auto;
         height: 75px;
     }
 

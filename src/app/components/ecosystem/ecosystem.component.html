@@ -26,11 +26,11 @@
       </div>
 
       <div class="svg-div">
-        <svg class="svg-icon" viewBox="0 0 300 300">
-          <g transform="translate(150,65)" fill="white" stroke="white">
+        <svg class="svg-icon" viewBox="0 0 50 300">
+          <g transform="translate(25,65)" fill="white" stroke="white">
             <path class="dotted-path" d="M0,200 C0,200 0,-200 0,-200"></path>
           </g>
-          <g transform="translate(150,285) scale(3)" stroke="white">
+          <g transform="translate(25,285) scale(3)" stroke="white">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
@@ -46,24 +46,34 @@
       </div>
 
       <div class="svg-div">
-        <svg class="svg-icon" viewBox="0 0 300 300">
-          <g transform="translate(150,65)" fill="white" stroke="white">
-            <path class="dotted-path" d="M0,200 C0,200 0,-200 0,-200"></path>
+        <svg class="svg-icon" viewBox="0 0 50 300">
+          <g transform="translate(25,65)" fill="white" stroke="white">
+            <path class="dotted-path" d="M0,175 C0,175 0,-175 0,-175"></path>
           </g>
-          <g transform="translate(150,285) scale(3)" stroke="white">
+          <g transform="translate(25,260) scale(3)" stroke="white">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
       </div>
     </section>
 
-    <section class="section-pad"></section>
-    <section class="section-pad"></section>
+    <!-- <section class="section-pad"></section>
+    <section class="section-pad"></section> -->
     <!-- END patient doctor merge animation div -->
 
     <!-- CHART DIV -->
-    <section class="ecosystem-chart-div">
+    <section class="ecosystem-chart-div"> 
       <div class="main-chart-div">
+        <div class="svg-div-onchart">
+          <svg class="svg-icon-down" viewBox="0 0 150 150">
+            <g transform="translate(75,50)" stroke="white">
+              <path class="dotted-path" d="M0,50 C0,50 0,-50 0,-50"></path>
+            </g>
+            <g transform="translate(75,125) scale(3)" stroke="white">
+              <path d="M0 0 9-11 0-8-9-11 0 0"></path>
+            </g>
+          </svg>
+        </div>
         <div *ngIf="mobile" class="ecosystem-chart">
           <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType" [options]="chartOptions"
             id="donutchart"></canvas>
