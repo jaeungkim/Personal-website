@@ -93,11 +93,16 @@ PATIENT DOCTOR DIV CSS
     width: 100%;
 }
 
+.svg-div-chart-inside{
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    width: 100%;
+}
 .svg-div-chart {
     position: relative;
     align-items: center;
     width: 100%;
-    margin-top: 2.5%;
 }
 
 .svg-icon {
@@ -274,6 +279,8 @@ APP DIV CSS
     margin-right: auto;
     justify-content: center;
     align-items: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .app-phone-img {
@@ -288,6 +295,7 @@ BOTTOM PATIENT DIV CSS
 =============================================
 */
 .endPatient-div {
+    margin-top: 2.5%;
     display: flex;
 }
 
@@ -449,8 +457,6 @@ ARROW CSS
 .arrow-div-2 {
     display: flex;
     flex-direction: column;
-    gap: 5%;
-    padding-bottom: 50px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -552,12 +558,12 @@ TABLET
     }
 
     #donutchart {
-        top: 40%;
+        top: 50%;
         transform: translate(0, -50%);
     }
 
     #donutchart2 {
-        top: 40%;
+        top: 50%;
         transform: translate(0, -50%);
     }
 
@@ -575,7 +581,7 @@ TABLET
         top: 40%;
         left: 0;
         width: 30%;
-        gap: 8.5%;
+        gap: 5%;
     }
 
     .chart-div-eHealthViewer {
@@ -583,9 +589,9 @@ TABLET
         align-items: center;
         position: absolute;
         bottom: 10%;
-        left: 9%;
+        left: 6%;
         width: 30%;
-        gap: 8.5%;
+        gap: 5%;
     }
 
     .chart-div-pharmanet {
@@ -596,7 +602,7 @@ TABLET
         top: 40%;
         right: 0;
         width: 30%;
-        gap: 8.5%;
+        gap: 5%;
     }
 
     .chart-div-hospital {
@@ -605,9 +611,9 @@ TABLET
         align-items: center;
         position: absolute;
         bottom: 10%;
-        right: 9%;
+        right: 6%;
         width: 30%;
-        gap: 8.5%;
+        gap: 5%;
     }
 
     .patient-img {
