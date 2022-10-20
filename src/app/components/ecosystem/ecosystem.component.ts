@@ -50,8 +50,6 @@ export class EcosystemComponent implements OnInit {
         start: 'top top',
         end: '+=200%',
         scrub: 2,
-        markers: true,
-        // pin: true,
       },
     });
 
@@ -81,6 +79,11 @@ export class EcosystemComponent implements OnInit {
     doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-375%' });
     doctorAnimationTimeline.to('.section-pad', { duration: 5 });
 
+    chartAnimationTimeline.fromTo(
+      '.svg-div-onchart',
+      { opacity: 0, y: '-150%' },
+      { opacity: 1, y: '0', duration: 5 }
+    );
     chartAnimationTimeline.fromTo(
       '.chart-div-teleplan',
       { opacity: 0, y: '-150%' },

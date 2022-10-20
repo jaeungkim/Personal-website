@@ -53,7 +53,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-div {
-    margin-top: 2.5%;
+    // margin-top: 2.5%;
     // display: flex;
     // flex-direction: column;
     // width: 25%;
@@ -89,6 +89,7 @@ PATIENT DOCTOR DIV CSS
 
 .svg-div {
     margin-top: 2.5%;
+    margin-bottom: 2.5%;
     position: relative;
     width: 100%;
 }
@@ -323,8 +324,6 @@ ARROW CSS
 */
 .dotted-path {
     stroke-dasharray: 3px 7px;
-    // fill: rgb(88, 194, 183);
-    // stroke: rgb(88, 194, 183);
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 25;
@@ -333,85 +332,29 @@ ARROW CSS
 
 .dotted-path-reverse {
     stroke-dasharray: 3px 7px;
-    // fill: rgb(88, 194, 183);
-    // stroke: rgb(88, 194, 183);
     stroke-linecap: butt;
     stroke-linejoin: miter;
     stroke-width: 25;
     animation: reverse-dash 30s linear infinite;
 }
 
-// .linear-path-chart {
-//     stroke-dasharray: 3px 5px;
-//     fill: rgb(88, 194, 183);
-//     stroke: rgb(88, 194, 183);
-//     stroke-linecap: butt;
-//     stroke-linejoin: miter;
-//     stroke-width: 25;
-//     animation: reverse-dash 30s linear infinite;
-// }
-
-// .linear-path-chart-reverse {
-//     stroke-dasharray: 3px 5px;
-//     fill: rgb(88, 194, 183);
-//     stroke: rgb(88, 194, 183);
-//     stroke-linecap: butt;
-//     stroke-linejoin: miter;
-//     stroke-width: 25;
-//     animation: dash 30s linear infinite;
-// }
-
-.dotted-chart-path {
-    stroke-dasharray: 2px 10px;
-    fill: rgb(88, 194, 183);
-    stroke: rgb(88, 194, 183);
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-width: 15;
-    animation: dash 50s linear infinite;
-}
-
-.dotted-chart-path-reverse {
-    stroke-dasharray: 2px 10px;
-    fill: rgb(88, 194, 183);
-    stroke: rgb(88, 194, 183);
-    stroke-linecap: butt;
-    stroke-linejoin: miter;
-    stroke-width: 15;
-    animation: reverse-dash 50s linear infinite;
-}
-
 .linear-path {
-    // stroke-dasharray: 3px 10px;
-    // fill: none;
-    // stroke: rgb(88, 194, 183);
-    // stroke-linecap: butt;
-    // stroke-linejoin: round;
-    // stroke-width: 5;
-    // fill: rgb(88, 194, 183);
     stroke-linecap: round;
     stroke-linejoin: miter;
     stroke-miterlimit: 4;
     stroke-dasharray: 1, 15;
     stroke: rgb(203, 223, 237);
-    stroke-width: 7;
+    stroke-width: 3;
     animation: dash 30s linear infinite;
 }
 
 .linear-path-reverse {
-    // stroke-dasharray: 3px 10px;
-    // fill: none;
-    // stroke: rgb(88, 194, 183);
-    // stroke-linecap: butt;
-    // stroke-linejoin: round;
-    // stroke-width: 1;
-    // fill: rgb(88, 194, 183);
     stroke-linecap: round;
     stroke-linejoin: miter;
     stroke-miterlimit: 4;
     stroke-dasharray: 1, 15;
     stroke: rgb(203, 223, 237);
-    stroke-width: 7;
+    stroke-width: 3;
     animation: reverse-dash 30s linear infinite;
 }
 
