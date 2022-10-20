@@ -24,11 +24,19 @@ PATIENT DOCTOR DIV CSS
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 20%;
+    padding-top: 16%;
 }
 
 .clinic-image-div {
-    // display: flex;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .patientchart-img-div {
@@ -412,8 +420,8 @@ ARROW CSS
     position: absolute;
     width: 2.5%;
     margin: 0;
-    left: 41%;
-    transform: translateY(250%);
+    left: 38%;
+    transform: translateY(10%);
     padding: 0;
 }
 
@@ -421,8 +429,8 @@ ARROW CSS
     position: absolute;
     width: 2.5%;
     margin: 0;
-    right: 41%;
-    transform: translateY(250%) rotate(180deg);
+    right: 38%;
+    transform: translateY(10%) rotate(180deg);
     padding: 0;
 }
 
