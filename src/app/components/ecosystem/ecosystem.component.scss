@@ -348,7 +348,7 @@ ARROW CSS
     stroke-miterlimit: 4;
     stroke-dasharray: 1, 15;
     stroke: rgb(88, 194, 183);
-    stroke-width: 10;
+    stroke-width: 7;
     animation: dash 30s linear infinite;
 }
 
@@ -365,7 +365,7 @@ ARROW CSS
     stroke-miterlimit: 4;
     stroke-dasharray: 1, 15;
     stroke: rgb(88, 194, 183);
-    stroke-width: 10;
+    stroke-width: 7;
     animation: reverse-dash 30s linear infinite;
 }
 
@@ -547,7 +547,7 @@ TABLET
         position: absolute;
         top: 40%;
         left: 0;
-        width: 30%;
+        width: 40%;
     }
 
     .chart-div-eHealthViewer {
@@ -556,7 +556,7 @@ TABLET
         position: absolute;
         bottom: 10%;
         left: 0;
-        width: 30%;
+        width: 40%;
     }
 
     .chart-div-pharmanet {
@@ -566,7 +566,7 @@ TABLET
         position: absolute;
         top: 40%;
         right: 0;
-        width: 30%;
+        width: 35%;
     }
 
     .chart-div-hospital {
@@ -576,7 +576,7 @@ TABLET
         position: absolute;
         bottom: 10%;
         right: 0%;
-        width: 30%;
+        width: 40%;
     }
 
     .patient-img {
