@@ -137,8 +137,11 @@ PATIENT DOCTOR DIV CSS
 
 .patientchart-img {
     position: absolute;
-    left: 38.5%;
-    margin-top: -35%;
+    left: 30%;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: -37.5%;
     width: 60%;
     margin-left: auto;
     margin-right: auto;
@@ -253,6 +256,9 @@ APP DIV CSS
     align-items: center;
     vertical-align: center;
     text-align: center;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 25px;
 }
 
 /*
@@ -683,7 +689,7 @@ SMALL DESKTOP
     }
 
     .patientchart-img {
-        width: 40%;
+        width: 80%;
     }
 
     .app-phone-img {
@@ -758,11 +764,11 @@ DESKTOP
     }
 
     .patientchart-img {
-        width: 30%;
+        width: 45%;
     }
 
     .app-phone-img {
-        width: 7.5%;
+        width: 11.5%;
     }
 
     .endPatient-img {
