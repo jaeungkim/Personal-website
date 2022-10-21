@@ -1,11 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Chart, ChartType } from 'chart.js';
 import ChartDataLabels from 'chartjs-plugin-datalabels';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { gsap } from "gsap";
 
 Chart.register(ChartDataLabels);
-gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-solutions',
@@ -13,16 +10,6 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./solutions.component.scss'],
 })
 export class SolutionsComponent implements OnInit {
-
-  //GSAP 
-  // initScrollAnimations(): void {
-  //   gsap.from("mainaf", {
-  //     opacity: 0,
-  //     y: 200,
-  //     duration: 5
-  //   });
-  // }
-  //GSAP
   mobile: boolean = false;
   tablet: boolean = false;
   desktop: boolean = false;
@@ -158,14 +145,7 @@ export class SolutionsComponent implements OnInit {
           return '#121212';
         },
 
-        borderWidth: function (chart) {
-          let width = chart.chart.width;
-          if (width < 500) {
-            return 2;
-          } else {
-            return 4;
-          }
-        },
+        borderWidth: null,
 
         // borderColor: [
         //   'rgba(255,255,255,1)',
@@ -323,14 +303,7 @@ export class SolutionsComponent implements OnInit {
           return '#121212';
         },
 
-        borderWidth: function (chart) {
-          let width = chart.chart.width;
-          if (width < 500) {
-            return 2;
-          } else {
-            return 4;
-          }
-        },
+        borderWidth: null,
 
         borderColor: [
           'rgba(255,255,255,1)',
@@ -502,10 +475,7 @@ export class SolutionsComponent implements OnInit {
         //   'rgba(201, 255, 251, 1)',
         //   'rgba(255, 218, 193, 1)',
         // ],
-        borderColor:[
-        null
-
-        ],
+        borderColor: [null],
         hoverBorderColor: [
           'rgba(255,255,255,1)',
           'rgba(255,235,248,1)',
@@ -899,7 +869,6 @@ export class SolutionsComponent implements OnInit {
 //   return gradient;
 // }
 
-
 // function getGradientInsideGeriatrics(ctx, chartArea) {
 //   if (!chartArea) {
 //     return;
@@ -956,8 +925,8 @@ function getGradientAF(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,247,252,1)');
   // gradient.addColorStop(0.95, 'rgba(255,243,251,1)');
 
-  gradient.addColorStop(0.65, 'rgba(253,232,235,255)');
-  gradient.addColorStop(0.75, 'rgba(251,218,222,255)');
+  gradient.addColorStop(0.75, 'rgba(253,232,235,255)');
+  gradient.addColorStop(0.85, 'rgba(251,218,222,255)');
   gradient.addColorStop(0.95, 'rgba(248,203,208,255)');
 
   return gradient;
@@ -985,9 +954,8 @@ function getGradientCR(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,239,249,1)');
   // gradient.addColorStop(0.95, 'rgba(255,235,248,1)');
 
-
-  gradient.addColorStop(0.65, 'rgba(252,231,240,255)');
-  gradient.addColorStop(0.75, 'rgba(250,208,224,255)');
+  gradient.addColorStop(0.75, 'rgba(252,231,240,255)');
+  gradient.addColorStop(0.85, 'rgba(250,208,224,255)');
   gradient.addColorStop(0.95, 'rgba(245,188,209,255)');
   return gradient;
 }
@@ -1014,8 +982,8 @@ function getGradientCRw(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,236,248,1)');
   // gradient.addColorStop(0.95, 'rgba(255,233,247,1)');
 
-  gradient.addColorStop(0.65, 'rgba(244,221,235,255)');
-  gradient.addColorStop(0.75, 'rgba(223,184,215,255)');
+  gradient.addColorStop(0.75, 'rgba(244,221,235,255)');
+  gradient.addColorStop(0.85, 'rgba(223,184,215,255)');
   gradient.addColorStop(0.95, 'rgba(205,156,199,255)');
   return gradient;
 }
@@ -1042,8 +1010,8 @@ function getGradientHCM(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,234,255,1)');
   // gradient.addColorStop(0.95, 'rgba(249,224,251,1)');
 
-  gradient.addColorStop(0.65, 'rgba(240,230,241,255)');
-  gradient.addColorStop(0.75, 'rgba(216,201,226,255)');
+  gradient.addColorStop(0.75, 'rgba(240,230,241,255)');
+  gradient.addColorStop(0.85, 'rgba(216,201,226,255)');
   gradient.addColorStop(0.95, 'rgba(189,168,208,255)');
   return gradient;
 }
@@ -1070,8 +1038,8 @@ function getGradientHF(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,234,255,1)');
   // gradient.addColorStop(0.95, 'rgba(249,224,251,1)');
 
-  gradient.addColorStop(0.65, 'rgba(233,236,246,255)');
-  gradient.addColorStop(0.75, 'rgba(190,194,226,255)');
+  gradient.addColorStop(0.75, 'rgba(233,236,246,255)');
+  gradient.addColorStop(0.85, 'rgba(190,194,226,255)');
   gradient.addColorStop(0.95, 'rgba(164,172,215,255)');
   return gradient;
 }
@@ -1098,8 +1066,8 @@ function getGradientHFO(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,230,255,1)');
   // gradient.addColorStop(0.95, 'rgba(253,224,255,1)');
 
-  gradient.addColorStop(0.65, 'rgba(217,236,250,255)');
-  gradient.addColorStop(0.75, 'rgba(186,215,241,255)');
+  gradient.addColorStop(0.75, 'rgba(217,236,250,255)');
+  gradient.addColorStop(0.85, 'rgba(186,215,241,255)');
   gradient.addColorStop(0.95, 'rgba(156,193,231,255)');
   return gradient;
 }
@@ -1126,8 +1094,8 @@ function getGradientLipid(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,227,255,1)');
   // gradient.addColorStop(0.95, 'rgba(252,216,255,1)');
 
-  gradient.addColorStop(0.65, 'rgba(215,240,253,255)');
-  gradient.addColorStop(0.75, 'rgba(179,224,244,255)');
+  gradient.addColorStop(0.75, 'rgba(215,240,253,255)');
+  gradient.addColorStop(0.85, 'rgba(179,224,244,255)');
   gradient.addColorStop(0.95, 'rgba(151,207,235,255)');
   return gradient;
 }
@@ -1154,8 +1122,8 @@ function getGradientSC(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(225,225,255,1)');
   // gradient.addColorStop(0.95, 'rgba(213,213,255,1)');
 
-  gradient.addColorStop(0.65, 'rgba(198,233,244,255)');
-  gradient.addColorStop(0.75, 'rgba(172,224,236,255)');
+  gradient.addColorStop(0.75, 'rgba(198,233,244,255)');
+  gradient.addColorStop(0.85, 'rgba(172,224,236,255)');
   gradient.addColorStop(0.95, 'rgba(150,216,231,255)');
   return gradient;
 }
@@ -1182,8 +1150,8 @@ function getGradientSCESS(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(215,215,255,1)');
   // gradient.addColorStop(0.95, 'rgba(206,206,255,1)');
 
-  gradient.addColorStop(0.65, 'rgba(219,241,244,255)');
-  gradient.addColorStop(0.75, 'rgba(198,232,234,255)');
+  gradient.addColorStop(0.75, 'rgba(219,241,244,255)');
+  gradient.addColorStop(0.85, 'rgba(198,232,234,255)');
   gradient.addColorStop(0.95, 'rgba(165,219,220,255)');
   return gradient;
 }
@@ -1213,9 +1181,9 @@ function getGradientWC(ctx, chartArea) {
   // gradient.addColorStop(0.65, 'rgba(189,223,183,255)');
   // gradient.addColorStop(0.75, 'rgba(207,232,203,255)');
   // gradient.addColorStop(0.95, 'rgba(230,243,226,255)');
-  
-  gradient.addColorStop(0.65, 'rgba(214,255,252,1)');
-  gradient.addColorStop(0.75, 'rgba(201, 255, 251, 1)');
+
+  gradient.addColorStop(0.75, 'rgba(214,255,252,1)');
+  gradient.addColorStop(0.85, 'rgba(201, 255, 251, 1)');
   gradient.addColorStop(0.95, 'rgba(201, 255, 251, 1)');
   return gradient;
 }
@@ -1248,8 +1216,8 @@ function getGradientFrailty(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(202,226,166,255)');
   // gradient.addColorStop(0.95, 'rgba(179,215,133,255)');
 
-  gradient.addColorStop(0.65, 'rgba(230,243,226,255)');
-  gradient.addColorStop(0.75, 'rgba(207,232,203,255)');
+  gradient.addColorStop(0.75, 'rgba(230,243,226,255)');
+  gradient.addColorStop(0.85, 'rgba(207,232,203,255)');
   gradient.addColorStop(0.95, 'rgba(189,223,183,255)');
   return gradient;
 }
@@ -1281,7 +1249,7 @@ function getGradientPD(ctx, chartArea) {
   // gradient.addColorStop(0.95, 'rgba(225,232,141,255)');
 
   gradient.addColorStop(0.65, 'rgba(224,238,199,255)');
-  gradient.addColorStop(0.75, 'rgba(202,226,166,255)');
+  gradient.addColorStop(0.85, 'rgba(202,226,166,255)');
   gradient.addColorStop(0.95, 'rgba(179,215,133,255)');
   return gradient;
 }
@@ -1308,10 +1276,10 @@ function getGradientAsthmaCOPD(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,237,225,1)');
   // gradient.addColorStop(0.95, 'rgba(255, 218, 193, 1)');
 
-  gradient.addColorStop(0.65, 'rgba(242,246,202,255)');
-  gradient.addColorStop(0.75, 'rgba(232,238,169,255)');
+  gradient.addColorStop(0.75, 'rgba(242,246,202,255)');
+  gradient.addColorStop(0.85, 'rgba(232,238,169,255)');
   gradient.addColorStop(0.95, 'rgba(225,232,141,255)');
-  
+
   return gradient;
 }
 // OUTSIDE CHART GRADIENT OPTIONS ==========================================
