@@ -1244,9 +1244,13 @@ function getGradientFrailty(ctx, chartArea) {
   // gradient.addColorStop(0.95, 'rgba(211,255,182,1)');
   // gradient.addColorStop(1, 'rgba(206,255,173,1)');
 
-  gradient.addColorStop(0.65, 'rgba(224,238,199,255)');
-  gradient.addColorStop(0.75, 'rgba(202,226,166,255)');
-  gradient.addColorStop(0.95, 'rgba(179,215,133,255)');
+  // gradient.addColorStop(0.65, 'rgba(224,238,199,255)');
+  // gradient.addColorStop(0.75, 'rgba(202,226,166,255)');
+  // gradient.addColorStop(0.95, 'rgba(179,215,133,255)');
+
+  gradient.addColorStop(0.65, 'rgba(230,243,226,255)');
+  gradient.addColorStop(0.75, 'rgba(207,232,203,255)');
+  gradient.addColorStop(0.95, 'rgba(189,223,183,255)');
   return gradient;
 }
 //gradient PD
@@ -1272,9 +1276,13 @@ function getGradientPD(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(214,255,252,1)');
   // gradient.addColorStop(0.95, 'rgba(201, 255, 251, 1)');
 
-  gradient.addColorStop(0.65, 'rgba(242,246,202,255)');
-  gradient.addColorStop(0.75, 'rgba(232,238,169,255)');
-  gradient.addColorStop(0.95, 'rgba(225,232,141,255)');
+  // gradient.addColorStop(0.65, 'rgba(242,246,202,255)');
+  // gradient.addColorStop(0.75, 'rgba(232,238,169,255)');
+  // gradient.addColorStop(0.95, 'rgba(225,232,141,255)');
+
+  gradient.addColorStop(0.65, 'rgba(224,238,199,255)');
+  gradient.addColorStop(0.75, 'rgba(202,226,166,255)');
+  gradient.addColorStop(0.95, 'rgba(179,215,133,255)');
   return gradient;
 }
 //gradient Asthma/COPD
@@ -1296,9 +1304,13 @@ function getGradientAsthmaCOPD(ctx, chartArea) {
     centerY,
     r
   );
-  gradient.addColorStop(0.65, 'rgba(255,237,225,1)');
-  gradient.addColorStop(0.75, 'rgba(255,237,225,1)');
-  gradient.addColorStop(0.95, 'rgba(255, 218, 193, 1)');
+  // gradient.addColorStop(0.65, 'rgba(255,237,225,1)');
+  // gradient.addColorStop(0.75, 'rgba(255,237,225,1)');
+  // gradient.addColorStop(0.95, 'rgba(255, 218, 193, 1)');
+
+  gradient.addColorStop(0.65, 'rgba(242,246,202,255)');
+  gradient.addColorStop(0.75, 'rgba(232,238,169,255)');
+  gradient.addColorStop(0.95, 'rgba(225,232,141,255)');
   
   return gradient;
 }
