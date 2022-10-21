@@ -113,13 +113,13 @@ export class HomeComponent implements OnInit {
   public createStrokes() {
     // =====================OUT GALAXY PARTICLES===============================
     const loader = new THREE.TextureLoader();
-    const cross = loader.load('./assets/images/home/cross3.png');
+    const cross = loader.load('./assets/images/home/cross2.png');
     const particlesGeometry = new THREE.BufferGeometry();
     const particlesCnt = 2000;
 
     const posArray = new Float32Array(particlesCnt * 3);
     for (let i = 0; i < particlesCnt * 3; i++) {
-      posArray[i] = (Math.random() - 0.5) * 500;
+      posArray[i] = (Math.random() - 0.5) * 1000;
     }
 
     particlesGeometry.setAttribute(
@@ -128,7 +128,7 @@ export class HomeComponent implements OnInit {
     );
 
     const particlesMaterial = new THREE.PointsMaterial({
-      size: 5,
+      size: 7.5,
       map: cross,
       depthTest: false,
       transparent: true,
@@ -246,8 +246,8 @@ export class HomeComponent implements OnInit {
 
   public animate(): void {
     let count = this.segments.attributes.position.count;
-    this.particlesMesh.rotation.x += 0.0001;
-    this.particlesMesh.rotation.y += 0.0001;
+    // this.particlesMesh.rotation.x += 0.0001;
+    // this.particlesMesh.rotation.y += 0.0001;
     let now = Date.now() / 3000;
     for (let i = 0; i < count; i++) {
       // const x = this.segments.attributes.position.getX(i);

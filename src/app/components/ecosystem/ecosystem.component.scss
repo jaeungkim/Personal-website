@@ -64,14 +64,14 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patient-div {
-    // width: 25%;
+    width: 35%;
     // justify-content: space-between;
     // align-items: center;
     // padding-bottom: 15%;
 }
 
 .doctor-div {
-    // width: 25%;
+    width: 35%;
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
@@ -165,8 +165,9 @@ PATIENT DOCTOR DIV CSS
 
 .doctor-img {
     width: 60%;
+    display: flex;
     margin-left: auto;
-    margin-right: auto;
+    // margin-right: auto;
 }
 
 .clinic-img {
