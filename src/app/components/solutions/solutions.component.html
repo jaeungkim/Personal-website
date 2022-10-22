@@ -13,12 +13,13 @@
         mainwc: textColorIndex === 9,
         mainfr: textColorIndex === 10,
         mainpd: textColorIndex === 11,
-        mainascopd: textColorIndex === 12
+        mainascopd: textColorIndex === 12,
+        mainiclinicmd: textColorIndex === 13
       }">
-        {{ mainTitleInitial }}
-      </p>
-      <div class="solutions-title-div">
-        <p class="solutions-title" [ngClass]="{
+      {{ mainTitleInitial }}
+    </p>
+    <div class="solutions-title-div">
+      <p class="solutions-title" [ngClass]="{
           af: textColorIndex === 0,
           cr: textColorIndex === 1,
           crw: textColorIndex === 2,
@@ -31,57 +32,35 @@
           wc: textColorIndex === 9,
           fr: textColorIndex === 10,
           pd: textColorIndex === 11,
-          ascopd: textColorIndex === 12
+          ascopd: textColorIndex === 12,
+          iclinicmd: textColorIndex === 13
         }">
-          {{ title }}
-        </p>
-      </div>
+        {{ title }}
+      </p>
+    </div>
     <div class="d-flex description-div">
       <p class="description" [innerText]="description"></p>
     </div>
   </div>
   <div class="solutions-chart-div">
     <div *ngIf="mobile" class="main-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartDataMobile"
-        [type]="doughnutChartType"
-        [options]="chartOptions"
-        (chartHover)="chartHovered($event)"
-        id="donutchart"
-      >
+      <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType" [options]="chartOptions"
+        (chartHover)="chartHovered($event)" id="donutchart">
       </canvas>
     </div>
     <div *ngIf="tablet" class="main-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartDataTablet"
-        [type]="doughnutChartType"
-        [options]="chartOptions"
-        (chartHover)="chartHovered($event)"
-        id="donutchart"
-      >
+      <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType" [options]="chartOptions"
+        (chartHover)="chartHovered($event)" id="donutchart">
       </canvas>
     </div>
     <div *ngIf="desktop" class="main-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartData"
-        [type]="doughnutChartType"
-        [options]="chartOptions"
-        (chartHover)="chartHovered($event)"
-        id="donutchart"
-      >
+      <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
+        (chartHover)="chartHovered($event)" id="donutchart">
       </canvas>
     </div>
     <div class="inner-chart-div">
-      <canvas
-        baseChart
-        [data]="doughnutChartData2"
-        [type]="doughnutChartType2"
-        [options]="chartOptions2"
-        id="donutchart2"
-      >
+      <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
+        id="donutchart2">
       </canvas>
       <div class="ring-div"></div>
       <div class="ring-div2"></div>

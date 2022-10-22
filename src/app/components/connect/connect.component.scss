@@ -7,6 +7,10 @@
     width: 100%;
 }
 
+.second-section-div{
+    width: 100%;
+}
+
 .support-form-section {
     position: relative;
     border-radius: 10px;
@@ -14,6 +18,12 @@
     width: 100%;
 }
 
+.address-form-section{
+    position: relative;
+    border-radius: 10px;
+    padding: 25px;
+    width: 100%;
+}
 .contact-form {
     max-width: 830px;
     overflow-x: hidden;
@@ -254,11 +264,19 @@ MOBILE
         width: 63%;
     }
 
-    .support-form-section {
+    .second-section-div{
         width: 28%;
-        height: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10%;
+    }
+    .support-form-section {
+        height: 60%;
     }
 
+    .address-form-section{
+        height: 40%;
+    }
     .contact-form-text-div-title {
         font-size: 18px;
     }
@@ -397,3 +415,4 @@ ANIMATION
         transform: translate3d(0, 0, 0);
     }
 }
+

@@ -16,7 +16,7 @@ export class SolutionsComponent implements OnInit {
   showTitle: boolean;
   title: any = 'Atrial Filbrillation';
   mainTitleInitial: any = 'Cardiology';
-  mainTitle: any = ['Cardiology', 'Geriatrics', 'Neurology', 'Respirology'];
+  mainTitle: any = ['Cardiology', 'Geriatrics', 'Neurology', 'Respirology','iClinic MD'];
   textColorIndex = 0;
   description: any = `The AF module is used in the clinical care of patients experiencing atrial fibrillation.\n\nHighlight features include organization of the clinical pathway into Rhythm and Rate control strategies.`;
   descriptionArray: any = [
@@ -104,82 +104,48 @@ export class SolutionsComponent implements OnInit {
           const { ctx, chartArea } = chart;
           if (chartArea !== undefined) {
             if (context.dataIndex === 0) {
-              return 'rgba(255,255,255,1)';
+              return 'rgba(248,203,208,255)';
             }
             if (context.dataIndex === 1) {
-              return 'rgba(255,235,248,1)';
+              return 'rgba(245,188,209,255)';
             }
             if (context.dataIndex === 2) {
-              return 'rgba(255,233,247,1)';
+              return 'rgba(205,156,199,255)';
             }
             if (context.dataIndex === 3) {
-              return 'rgba(249,224,251,1)';
+              return 'rgba(189,168,208,255)';
             }
             if (context.dataIndex === 4) {
-              return 'rgba(249,224,251,1)';
+              return 'rgba(164,172,215,255)';
             }
             if (context.dataIndex === 5) {
-              return 'rgba(253,224,255,1)';
+              return 'rgba(156,193,231,255)';
             }
             if (context.dataIndex === 6) {
-              return 'rgba(252,216,255,1)';
+              return 'rgba(151,207,235,255)';
             }
             if (context.dataIndex === 7) {
-              return 'rgba(213,213,255,1)';
+              return 'rgba(150,216,231,255)';
             }
             if (context.dataIndex === 8) {
-              return 'rgba(206,206,255,1)';
+              return 'rgba(165,219,220,255)';
             }
             if (context.dataIndex === 9) {
-              return 'rgba(192,192,255,1)';
-            }
-            if (context.dataIndex === 10) {
-              return 'rgba(206, 255, 173, 1)';
-            }
-            if (context.dataIndex === 11) {
               return 'rgba(201, 255, 251, 1)';
             }
+            if (context.dataIndex === 10) {
+              return 'rgba(189,223,183,255)';
+            }
+            if (context.dataIndex === 11) {
+              return 'rgba(179,215,133,255)';
+            }
             if (context.dataIndex === 12) {
-              return 'rgba(255, 218, 193, 1)';
+              return 'rgba(225,232,141,255)';
             }
           }
           return '#121212';
         },
-
         borderWidth: null,
-
-        // borderColor: [
-        //   'rgba(255,255,255,1)',
-        //   'rgba(255,235,248,1)',
-        //   'rgba(255,233,247,1)',
-        //   'rgba(249,224,251,1)',
-        //   'rgba(249,224,251,1)',
-        //   'rgba(253,224,255,1)',
-        //   'rgba(252,216,255,1)',
-        //   'rgba(213,213,255,1)',
-        //   'rgba(206,206,255,1)',
-        //   'rgba(192,192,255,1)', //cardiology end
-        //   'rgba(206, 255, 173, 1)',
-        //   'rgba(201, 255, 251, 1)',
-        //   'rgba(255, 218, 193, 1)',
-        // ],
-        borderColor: null,
-        hoverBorderColor: null,
-        // hoverBorderColor: [
-        //   'rgba(255,255,255,1)',
-        //   'rgba(255,235,248,1)',
-        //   'rgba(255,233,247,1)',
-        //   'rgba(249,224,251,1)',
-        //   'rgba(249,224,251,1)',
-        //   'rgba(253,224,255,1)',
-        //   'rgba(252,216,255,1)',
-        //   'rgba(213,213,255,1)',
-        //   'rgba(206,206,255,1)',
-        //   'rgba(192,192,255,1)', //cardiology end
-        //   'rgba(206, 255, 173, 1)',
-        //   'rgba(201, 255, 251, 1)',
-        //   'rgba(255, 218, 193, 1)',
-        // ],
         borderRadius: 0,
         spacing: 50,
         hoverOffset: function (chart) {
@@ -262,80 +228,48 @@ export class SolutionsComponent implements OnInit {
           const { ctx, chartArea } = chart;
           if (chartArea !== undefined) {
             if (context.dataIndex === 0) {
-              return 'rgba(255,255,255,1)';
+              return 'rgba(248,203,208,255)';
             }
             if (context.dataIndex === 1) {
-              return 'rgba(255,235,248,1)';
+              return 'rgba(245,188,209,255)';
             }
             if (context.dataIndex === 2) {
-              return 'rgba(255,233,247,1)';
+              return 'rgba(205,156,199,255)';
             }
             if (context.dataIndex === 3) {
-              return 'rgba(249,224,251,1)';
+              return 'rgba(189,168,208,255)';
             }
             if (context.dataIndex === 4) {
-              return 'rgba(249,224,251,1)';
+              return 'rgba(164,172,215,255)';
             }
             if (context.dataIndex === 5) {
-              return 'rgba(253,224,255,1)';
+              return 'rgba(156,193,231,255)';
             }
             if (context.dataIndex === 6) {
-              return 'rgba(252,216,255,1)';
+              return 'rgba(151,207,235,255)';
             }
             if (context.dataIndex === 7) {
-              return 'rgba(213,213,255,1)';
+              return 'rgba(150,216,231,255)';
             }
             if (context.dataIndex === 8) {
-              return 'rgba(206,206,255,1)';
+              return 'rgba(165,219,220,255)';
             }
             if (context.dataIndex === 9) {
-              return 'rgba(192,192,255,1)';
-            }
-            if (context.dataIndex === 10) {
-              return 'rgba(206, 255, 173, 1)';
-            }
-            if (context.dataIndex === 11) {
               return 'rgba(201, 255, 251, 1)';
             }
+            if (context.dataIndex === 10) {
+              return 'rgba(189,223,183,255)';
+            }
+            if (context.dataIndex === 11) {
+              return 'rgba(179,215,133,255)';
+            }
             if (context.dataIndex === 12) {
-              return 'rgba(255, 218, 193, 1)';
+              return 'rgba(225,232,141,255)';
             }
           }
           return '#121212';
         },
-
         borderWidth: null,
-
-        borderColor: [
-          'rgba(255,255,255,1)',
-          'rgba(255,235,248,1)',
-          'rgba(255,233,247,1)',
-          'rgba(249,224,251,1)',
-          'rgba(249,224,251,1)',
-          'rgba(253,224,255,1)',
-          'rgba(252,216,255,1)',
-          'rgba(213,213,255,1)',
-          'rgba(206,206,255,1)',
-          'rgba(192,192,255,1)', //cardiology end
-          'rgba(206, 255, 173, 1)',
-          'rgba(201, 255, 251, 1)',
-          'rgba(255, 218, 193, 1)',
-        ],
-        hoverBorderColor: [
-          'rgba(255,255,255,1)',
-          'rgba(255,235,248,1)',
-          'rgba(255,233,247,1)',
-          'rgba(249,224,251,1)',
-          'rgba(249,224,251,1)',
-          'rgba(253,224,255,1)',
-          'rgba(252,216,255,1)',
-          'rgba(213,213,255,1)',
-          'rgba(206,206,255,1)',
-          'rgba(192,192,255,1)', //cardiology end
-          'rgba(206, 255, 173, 1)',
-          'rgba(201, 255, 251, 1)',
-          'rgba(255, 218, 193, 1)',
-        ],
         borderRadius: 0,
         spacing: 75,
         hoverOffset: function (chart) {
@@ -418,80 +352,49 @@ export class SolutionsComponent implements OnInit {
           const { ctx, chartArea } = chart;
           if (chartArea !== undefined) {
             if (context.dataIndex === 0) {
-              return 'rgba(255,255,255,1)';
+              return 'rgba(248,203,208,255)';
             }
             if (context.dataIndex === 1) {
-              return 'rgba(255,235,248,1)';
+              return 'rgba(245,188,209,255)';
             }
             if (context.dataIndex === 2) {
-              return 'rgba(255,233,247,1)';
+              return 'rgba(205,156,199,255)';
             }
             if (context.dataIndex === 3) {
-              return 'rgba(249,224,251,1)';
+              return 'rgba(189,168,208,255)';
             }
             if (context.dataIndex === 4) {
-              return 'rgba(249,224,251,1)';
+              return 'rgba(164,172,215,255)';
             }
             if (context.dataIndex === 5) {
-              return 'rgba(253,224,255,1)';
+              return 'rgba(156,193,231,255)';
             }
             if (context.dataIndex === 6) {
-              return 'rgba(252,216,255,1)';
+              return 'rgba(151,207,235,255)';
             }
             if (context.dataIndex === 7) {
-              return 'rgba(213,213,255,1)';
+              return 'rgba(150,216,231,255)';
             }
             if (context.dataIndex === 8) {
-              return 'rgba(206,206,255,1)';
+              return 'rgba(165,219,220,255)';
             }
             if (context.dataIndex === 9) {
-              return 'rgba(192,192,255,1)';
-            }
-            if (context.dataIndex === 10) {
-              return 'rgba(206, 255, 173, 1)';
-            }
-            if (context.dataIndex === 11) {
               return 'rgba(201, 255, 251, 1)';
             }
+            if (context.dataIndex === 10) {
+              return 'rgba(189,223,183,255)';
+            }
+            if (context.dataIndex === 11) {
+              return 'rgba(179,215,133,255)';
+            }
             if (context.dataIndex === 12) {
-              return 'rgba(255, 218, 193, 1)';
+              return 'rgba(225,232,141,255)';
             }
           }
           return '#121212';
         },
 
         borderWidth: null,
-        // borderColor: [
-        //   'rgba(255,255,255,1)',
-        //   'rgba(255,235,248,1)',
-        //   'rgba(255,233,247,1)',
-        //   'rgba(249,224,251,1)',
-        //   'rgba(249,224,251,1)',
-        //   'rgba(253,224,255,1)',
-        //   'rgba(252,216,255,1)',
-        //   'rgba(213,213,255,1)',
-        //   'rgba(206,206,255,1)',
-        //   'rgba(192,192,255,1)', //cardiology end
-        //   'rgba(206, 255, 173, 1)',
-        //   'rgba(201, 255, 251, 1)',
-        //   'rgba(255, 218, 193, 1)',
-        // ],
-        borderColor: [null],
-        hoverBorderColor: [
-          'rgba(255,255,255,1)',
-          'rgba(255,235,248,1)',
-          'rgba(255,233,247,1)',
-          'rgba(249,224,251,1)',
-          'rgba(249,224,251,1)',
-          'rgba(253,224,255,1)',
-          'rgba(252,216,255,1)',
-          'rgba(213,213,255,1)',
-          'rgba(206,206,255,1)',
-          'rgba(192,192,255,1)', //cardiology end
-          'rgba(206, 255, 173, 1)',
-          'rgba(201, 255, 251, 1)',
-          'rgba(255, 218, 193, 1)',
-        ],
         borderRadius: 0,
         spacing: 100,
         hoverOffset: function (chart) {
@@ -505,71 +408,16 @@ export class SolutionsComponent implements OnInit {
     ],
   };
   public doughnutChartData2: any = {
-    // labels: [
-    //   `Cardiology`, //cardiology
-    //   null,
-    //   `Geriatrics`, //geriatrics
-    //   null,
-    //   `Neurology`, //neurology
-    //   null,
-    //   `Respirology`, //respirology
-    //   null,
-    // ],
     datasets: [
       {
         weight: 1,
       },
       {
-        // data: [17, 1, 2, 1],
         data: [1],
-        // rotation: -8,
-        // borderColor: '#121212',
-        // borderWidth: [4, 4, 4, 4],
         borderWidth: [0],
-        // borderColor: 'rgba(255, 218, 193, 1)',
         backgroundColor: 'transparent',
         spacing: 0,
-        // borderAlign: 'inner',
-        // hoverBackgroundColor: '#121212',
-        // borderColor: function (context) {
-        //   const chart = context.chart;
-        //   const { ctx, chartArea } = chart;
-        //   if (chartArea !== undefined) {
-        //     if (context.dataIndex === 0) {
-        //       return 'rgba(192,192,255,1)';
-        //     }
-        //     if (context.dataIndex === 1) {
-        //       return 'rgba(206, 255, 173, 1)';
-        //     }
-        //     if (context.dataIndex === 2) {
-        //       return 'rgba(201, 255, 251, 1)';
-        //     }
-        //     if (context.dataIndex === 3) {
-        //       return 'rgba(255, 218, 193, 1)';
-        //     }
-        //   }
-        //   return 'null';
-        // },
         borderColor: 'rgba(192,192,255,1)',
-        // hoverBorderColor: function (context) {
-        //   const chart = context.chart;
-        //   const { ctx, chartArea } = chart;
-        //   if (chartArea !== undefined) {
-        //     if (context.dataIndex === 0) {
-        //       return 'rgba(192,192,255,1)';
-        //     }
-        //     if (context.dataIndex === 1) {
-        //       return 'rgba(206, 255, 173, 1)';
-        //     }
-        //     if (context.dataIndex === 2) {
-        //       return 'rgba(201, 255, 251, 1)';
-        //     }
-        //     if (context.dataIndex === 3) {
-        //       return 'rgba(255, 218, 193, 1)';
-        //     }
-        //   }
-        //   return 'null';
-        // },
       },
     ],
   };
@@ -625,9 +473,7 @@ export class SolutionsComponent implements OnInit {
         grd.addColorStop(0.4, 'rgba(105,180,250,1)');
         grd.addColorStop(0.5, 'rgba(255,255,255,1)');
         grd.addColorStop(0.7, 'rgba(105,180,250,1)');
-
         ctx.fillStyle = grd;
-
         ctx.fill();
         ctx.font = fontSize + 'em sans-serif';
         ctx.textBaseline = 'middle';
@@ -775,8 +621,9 @@ export class SolutionsComponent implements OnInit {
   showtitlee(show: boolean){
     this.showTitle = show;
     this.title = `iClinic MD`;
-    this.mainTitleInitial = `iClinic MD`;
+    this.mainTitleInitial = this.mainTitle[4];
     this.description = `iClinic MD`;
+    this.textColorIndex = 13;
   }
   ngOnInit(): void {
     // this.initScrollAnimations();
@@ -862,55 +709,6 @@ export class SolutionsComponent implements OnInit {
     }
   }
 }
-
-// ==================================================== INSIDE DEPRECATED
-// function getGradientInsideCardiology(ctx, chartArea) {
-//   if (!chartArea) {
-//     return;
-//   }
-//   var gradient = ctx.createLinearGradient(500, 150, 100, 500);
-//   gradient.addColorStop(0, '#ffffff');
-//   gradient.addColorStop(0.2, '#ffebf8');
-//   gradient.addColorStop(0.35, '#ffe4f6');
-//   gradient.addColorStop(0.5, '#ffd8f0');
-//   gradient.addColorStop(0.67, '#f0def2');
-//   gradient.addColorStop(0.84, '#ecdefc');
-//   gradient.addColorStop(1, '#c9c7fe');
-//   return gradient;
-// }
-
-// function getGradientInsideGeriatrics(ctx, chartArea) {
-//   if (!chartArea) {
-//     return;
-//   }
-//   var gradient = ctx.createLinearGradient(170, 75, 75, 125);
-//   gradient.addColorStop(0, '#f0ffe6');
-//   gradient.addColorStop(0.5, '#ceffad');
-//   gradient.addColorStop(1, '#acf07e');
-//   return gradient;
-// }
-// function getGradientInsideNeurology(ctx, chartArea) {
-//   if (!chartArea) {
-//     return;
-//   }
-//   var gradient = ctx.createLinearGradient(150, 75, 75, 125);
-//   gradient.addColorStop(0, '#ffffff');
-//   gradient.addColorStop(0.5, '#c9fffb');
-//   gradient.addColorStop(1, '#87fff9');
-//   return gradient;
-// }
-// function getGradientInsideRespirology(ctx, chartArea) {
-//   if (!chartArea) {
-//     return;
-//   }
-//   var gradient = ctx.createLinearGradient(100, 50, 50, 140);
-//   gradient.addColorStop(0, '#fff3eb');
-//   gradient.addColorStop(0.5, '#ffdac1');
-//   gradient.addColorStop(1, '#faac77');
-//   return gradient;
-// }
-
-// END==================================================== INSIDE DEPRECATED
 
 // OUTSIDE CHART GRADIENT OPTIONS ==========================================
 function getGradientAF(ctx, chartArea) {

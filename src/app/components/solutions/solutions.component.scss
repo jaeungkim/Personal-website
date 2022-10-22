@@ -28,7 +28,7 @@
   margin-right: auto;
   border-radius: 10px;
   margin-bottom: 10%;
-  width: 80%;
+  width: 97%;
   box-shadow: var(--box-shadow);
 }
 .solutions-title {
@@ -152,7 +152,6 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  
   box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
   border: 3px solid rgba(192,192,255,1);
   border-radius: 50%;
@@ -208,56 +207,7 @@
   .main-chart-div {
     margin-top: 0;
   }
-
-  /* .cardiologylabel {
-    font-size: 1vw;
-  }
-
-  .cardiologylabel::first-letter {
-    font-size: 1.5vw;
-  }
-
-  .geriatricslabel {
-    font-size: 1vw;
-  }
-
-  .geriatricslabel::first-letter {
-    font-size: 1.5vw;
-  }
-
-  .neurologylabel {
-    font-size: 1vw;
-  }
-
-  .neurologylabel::first-letter {
-    font-size: 1.5vw;
-  }
-
-  .respirologylabel {
-    font-size: 1vw;
-  }
-
-  .respirologylabel::first-letter {
-    font-size: 1.5vw;
-  } */
 }
-
-/* @media only screen and (min-width: 992px) {
-  .mainTitle {
-    font-size: 36px;
-  }
-
-  .title {
-    font-size: 36px;
-  }
-
-  .description {
-    font-size: 16px;
-  }
-
-  .solutions-text-div {
-  }
-} */
 
 @media only screen and (min-width: 1400px) {
   .solutions-mainTitle {
@@ -292,42 +242,6 @@
   }
 
 }
-
-/* extra wide screen */
-@media only screen and (min-width: 1800px) {
-  /* .cardiologylabel {
-    font-size: 16px;
-  }
-
-  .cardiologylabel::first-letter {
-    font-size: 24px;
-  }
-
-  .geriatricslabel {
-    font-size: 16px;
-  }
-
-  .geriatricslabel::first-letter {
-    font-size: 24px;
-  }
-
-  .neurologylabel {
-    font-size: 16px;
-  }
-
-  .neurologylabel::first-letter {
-    font-size: 24px;
-  }
-
-  .respirologylabel {
-    font-size: 16px;
-  }
-
-  .respirologylabel::first-letter {
-    font-size: 24px;
-  } */
-}
-
 .ring-div {
   background-color: transparent;
   border: 3px solid rgba(192,192,255,1);
@@ -353,133 +267,143 @@
 
 /* TITLE COLOR CHANGE */
 .af {
-  background: -webkit-linear-gradient(90deg, rgba(255, 247, 252, 1) 0%, rgba(255, 243, 251, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(253,232,235,255) 0%, rgba(248,203,208,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainaf {
-  color: rgba(255, 243, 251, 1);
+  color: rgba(248,203,208,255);
 }
 
 .cr {
-  background: -webkit-linear-gradient(90deg, rgba(255, 239, 249, 1) 0%, rgba(255, 235, 248, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(252,231,240,255) 0%, rgba(245,188,209,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .maincr {
-  color: rgba(255, 235, 248, 1);
+  color: rgba(245,188,209,255);
 }
 
 .crw {
-  background: -webkit-linear-gradient(90deg, rgba(255, 236, 248, 1) 0%, rgba(255, 233, 247, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(244,221,235,255) 0%, rgba(205,156,199,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .maincrw {
-  color: rgba(255, 233, 247, 1);
+  color: rgba(205,156,199,255);
 }
 
 .hcm {
-  background: -webkit-linear-gradient(90deg, rgba(253, 234, 255, 1) 0%, rgba(249, 224, 251, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(240,230,241,255) 0%, rgba(189,168,208,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainhcm {
-  color: rgba(249, 224, 251, 1);
+  color: rgba(189,168,208,255);
 }
 
 .hf {
-  background: -webkit-linear-gradient(90deg, rgba(253, 234, 255, 1) 0%, rgba(249, 224, 251, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(233,236,246,255) 0%, rgba(164,172,215,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainhf {
-  color: rgba(249, 224, 251, 1);
+  color: rgba(164,172,215,255);
 }
 
 .hfo {
-  background: -webkit-linear-gradient(90deg, rgba(253, 230, 255, 1) 0%, rgba(253, 224, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(217,236,250,255) 0%, rgba(156,193,231,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainhfo {
-  color: rgba(253, 224, 255, 1);
+  color: rgba(156,193,231,255);
 }
 
 .lp {
-  background: -webkit-linear-gradient(90deg, rgba(253, 227, 255, 1) 0%, rgba(252, 216, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(215,240,253,255) 0%, rgba(151,207,235,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainlp {
-  color: rgba(252, 216, 255, 1);
+  color: rgba(151,207,235,255);
 }
 
 .sc {
-  background: -webkit-linear-gradient(90deg, white 0%, rgba(213, 213, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(198,233,244,255) 0%, rgba(150,216,231,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainsc {
-  color: rgba(213, 213, 255, 1);
+  color: rgba(150,216,231,255);
 }
 
 .scess {
-  background: -webkit-linear-gradient(90deg, white 0%, rgba(206, 206, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(219,241,244,255) 0%, rgba(165,219,220,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainscess {
-  color: rgba(206, 206, 255, 1);
+  color: rgba(165,219,220,255);
 }
 
 .wc {
-  background: -webkit-linear-gradient(90deg, white 0%, rgba(192, 192, 255, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(214,255,252,1) 0%, rgba(201, 255, 251, 1) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainwc {
-  color: rgba(192, 192, 255, 1);
+  color: rgba(201, 255, 251, 1);
 }
 
 .fr {
-  background: -webkit-linear-gradient(90deg, white 0%, rgba(206, 255, 173, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(230,243,226,255) 0%, rgba(189,223,183,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainfr {
-  color: rgba(206, 255, 173, 1);
+  color: rgba(189,223,183,255);
 }
 
 .pd {
-  background: -webkit-linear-gradient(90deg, white 0%, rgba(201, 255, 251, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(224,238,199,255) 0%, rgba(179,215,133,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainpd {
-  color: rgba(201, 255, 251, 1);
+  color: rgba(179,215,133,255);
 }
 
 .ascopd {
-  background: -webkit-linear-gradient(90deg, white 0%, rgba(255, 218, 193, 1) 100%);
+  background: -webkit-linear-gradient(90deg, rgba(242,246,202,255) 0%, rgba(225,232,141,255) 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .mainascopd {
-  color: rgba(255, 218, 193, 1);
+  color: rgba(225,232,141,255);
+}
+
+.iclinicmd{
+  background: -webkit-linear-gradient(90deg,white 0%, rgb(203, 223, 237) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.mainiclinicmd{
+  color: var(--light-iclinic-blue);
 }
 
 .iclinic-button-inner{
