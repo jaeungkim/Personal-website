@@ -477,7 +477,7 @@ export class EcosystemComponent implements OnInit {
         ctx.fill();
         ctx.font = fontSize + 'em sans-serif';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = '#450159';
         let text = 'iClinic MD',
           textX = Math.round((width - ctx.measureText(text).width) / 2),
           textY = height / 2;
@@ -503,7 +503,7 @@ export class EcosystemComponent implements OnInit {
         ctx.fill();
         ctx.font = fontSize + 'em sans-serif';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = '#450159';
         let text = 'iClinic MD',
           textX = Math.round((width - ctx.measureText(text).width) / 2),
           textY = height / 2;
