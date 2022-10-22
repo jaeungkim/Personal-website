@@ -17,23 +17,25 @@
       }">
         {{ mainTitleInitial }}
       </p>
-      <p class="solutions-title" [ngClass]="{
-        af: textColorIndex === 0,
-        cr: textColorIndex === 1,
-        crw: textColorIndex === 2,
-        hcm: textColorIndex === 3,
-        hf: textColorIndex === 4,
-        hfo: textColorIndex === 5,
-        lp: textColorIndex === 6,
-        sc: textColorIndex === 7,
-        scess: textColorIndex === 8,
-        wc: textColorIndex === 9,
-        fr: textColorIndex === 10,
-        pd: textColorIndex === 11,
-        ascopd: textColorIndex === 12
-      }">
-        {{ title }}
-      </p>
+      <div class="solutions-title-div">
+        <p class="solutions-title" [ngClass]="{
+          af: textColorIndex === 0,
+          cr: textColorIndex === 1,
+          crw: textColorIndex === 2,
+          hcm: textColorIndex === 3,
+          hf: textColorIndex === 4,
+          hfo: textColorIndex === 5,
+          lp: textColorIndex === 6,
+          sc: textColorIndex === 7,
+          scess: textColorIndex === 8,
+          wc: textColorIndex === 9,
+          fr: textColorIndex === 10,
+          pd: textColorIndex === 11,
+          ascopd: textColorIndex === 12
+        }">
+          {{ title }}
+        </p>
+      </div>
     <div class="d-flex description-div">
       <p class="description" [innerText]="description"></p>
     </div>

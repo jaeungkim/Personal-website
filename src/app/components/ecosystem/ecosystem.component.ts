@@ -539,7 +539,7 @@ export class EcosystemComponent implements OnInit {
           }
           return 50;
         },
-        color: 'black',
+        color: '#450159',
         formatter: (value, context) => {
           if (value !== 0) {
             return context.chart.data.labels![context.dataIndex];
