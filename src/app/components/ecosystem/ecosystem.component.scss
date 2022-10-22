@@ -195,6 +195,8 @@ CHART DIV CSS
 */
 
 .inner-chart {
+  display: absolute;
+  width: 90%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -202,25 +204,23 @@ CHART DIV CSS
   background-color: transparent;
   border: 3px solid rgba(192,192,255,1);
   box-shadow: 0px 0px 10px 0px rgba(192,192,255,1);
+  height: 15%;
   border-radius: 50%;
-  width: 275px;
-  height: 275px;
-  margin: auto auto;
-  left: 38%;
-  // padding-top: 10vh;
-  top: 33%;
+  width: 10%;
+  top: 42.5%;
+  left: 45%;
   position: absolute;
 } 
 .ring-div2 {
   background-color: transparent;
   border: 3px solid rgba(192,192,255,1);
   box-shadow: 0px 0px 10px 0px rgba(192,192,255,1);
-  height: 125px;
+  height: 36.5%;
   border-radius: 50%;
-  width: 125px;
+  width: 25%;
+  top: 32%;
+  left: 37.5%;
   position: absolute;
-  left: 44.5%;
-  top: 42.5%;
 } 
 .chart-section-pad {
   display: flex;
@@ -237,13 +237,8 @@ CHART DIV CSS
 }
 
 .ecosystem-chart {
-  display: flex;
-  // display: flex;
-  align-items: center;
-  // position: relative;
   margin-left: auto;
   margin-right: auto;
-  width: 90%;
 }
 
 #donutchart {
@@ -639,11 +634,10 @@ TABLET
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow);
-     // padding: 10px 15px;
-     padding: 20px 35px;
-     // width: 145px;
-     // height: 145px;
-     border-radius: 50%;
+    padding: 10px 15px;
+    // width: 145px;
+    // height: 145px;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -654,11 +648,10 @@ TABLET
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow);
-    // padding: 10px 15px;
-    padding: 20px 35px;
+    padding: 10px 15px;
     // width: 145px;
     // height: 145px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -669,10 +662,10 @@ TABLET
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow);
-    padding: 20px 35px;
+    padding: 10px 15px;
     // width: 145px;
     // height: 145px;
-    border-radius: 50%;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
@@ -684,11 +677,10 @@ TABLET
     display: flex;
     flex-direction: column;
     box-shadow: var(--box-shadow);
-     // padding: 10px 15px;
-     padding: 20px 35px;
-     // width: 145px;
-     // height: 145px;
-     border-radius: 50%;
+    padding: 10px 15px;
+    // width: 145px;
+    // height: 145px;
+    border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;

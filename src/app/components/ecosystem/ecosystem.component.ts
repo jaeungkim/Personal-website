@@ -466,7 +466,6 @@ export class EcosystemComponent implements OnInit {
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 10, 0, 2 * Math.PI);
-
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, width, height);
         grd.addColorStop(0.4, 'rgba(105,180,250,1)');
@@ -488,7 +487,6 @@ export class EcosystemComponent implements OnInit {
         let width = chart.chart.width,
           height = chart.chart.height,
           ctx = chart.chart.ctx;
-
         ctx.restore();
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();

@@ -77,25 +77,20 @@
         <div *ngIf="mobile" class="ecosystem-chart">
           <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType" [options]="chartOptions"
             id="donutchart"></canvas>
-            <div class="ring-div"></div>
-            <div class="ring-div2"></div>
         </div>
         <div *ngIf="tablet" class="ecosystem-chart">
           <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType" [options]="chartOptions"
             id="donutchart"></canvas>
-            <div class="ring-div"></div>
-            <div class="ring-div2"></div>
         </div>
         <div *ngIf="desktop || largedesktop" class="ecosystem-chart">
           <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
             id="donutchart"></canvas>
-            <div class="ring-div"></div>
-            <div class="ring-div2"></div>
         </div>
         <div class="inner-chart">
           <!-- <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
             id="donutchart2"></canvas> -->
-   
+            <div class="ring-div"></div>
+            <div class="ring-div2"></div>
         </div>
       </div>
       <div class="chart-parts-div">
