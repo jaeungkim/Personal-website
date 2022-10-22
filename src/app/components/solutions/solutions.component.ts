@@ -774,9 +774,9 @@ export class SolutionsComponent implements OnInit {
 
   showtitlee(show: boolean){
     this.showTitle = show;
-    this.title = `placeholder for iclinic MD`;
-    this.mainTitleInitial = `placeholder for iclinic MD`;
-    this.description = `placeholder for iclinic MD`;
+    this.title = `iClinic MD`;
+    this.mainTitleInitial = `iClinic MD`;
+    this.description = `iClinic MD`;
   }
   ngOnInit(): void {
     // this.initScrollAnimations();
