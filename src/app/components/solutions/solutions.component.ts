@@ -13,6 +13,7 @@ export class SolutionsComponent implements OnInit {
   mobile: boolean = false;
   tablet: boolean = false;
   desktop: boolean = false;
+  showTitle: boolean;
   title: any = 'Atrial Filbrillation';
   mainTitleInitial: any = 'Cardiology';
   mainTitle: any = ['Cardiology', 'Geriatrics', 'Neurology', 'Respirology'];
@@ -504,67 +505,71 @@ export class SolutionsComponent implements OnInit {
     ],
   };
   public doughnutChartData2: any = {
-    labels: [
-      `Cardiology`, //cardiology
-      null,
-      `Geriatrics`, //geriatrics
-      null,
-      `Neurology`, //neurology
-      null,
-      `Respirology`, //respirology
-      null,
-    ],
+    // labels: [
+    //   `Cardiology`, //cardiology
+    //   null,
+    //   `Geriatrics`, //geriatrics
+    //   null,
+    //   `Neurology`, //neurology
+    //   null,
+    //   `Respirology`, //respirology
+    //   null,
+    // ],
     datasets: [
       {
         weight: 1,
       },
       {
-        data: [17, 1, 2, 1],
-        rotation: -8,
+        // data: [17, 1, 2, 1],
+        data: [1],
+        // rotation: -8,
         // borderColor: '#121212',
-        borderWidth: [4, 4, 4, 4],
+        // borderWidth: [4, 4, 4, 4],
+        borderWidth: [0],
         // borderColor: 'rgba(255, 218, 193, 1)',
         backgroundColor: 'transparent',
-        borderAlign: 'inner',
-        hoverBackgroundColor: '#121212',
-        borderColor: function (context) {
-          const chart = context.chart;
-          const { ctx, chartArea } = chart;
-          if (chartArea !== undefined) {
-            if (context.dataIndex === 0) {
-              return 'rgba(192,192,255,1)';
-            }
-            if (context.dataIndex === 1) {
-              return 'rgba(206, 255, 173, 1)';
-            }
-            if (context.dataIndex === 2) {
-              return 'rgba(201, 255, 251, 1)';
-            }
-            if (context.dataIndex === 3) {
-              return 'rgba(255, 218, 193, 1)';
-            }
-          }
-          return 'null';
-        },
-        hoverBorderColor: function (context) {
-          const chart = context.chart;
-          const { ctx, chartArea } = chart;
-          if (chartArea !== undefined) {
-            if (context.dataIndex === 0) {
-              return 'rgba(192,192,255,1)';
-            }
-            if (context.dataIndex === 1) {
-              return 'rgba(206, 255, 173, 1)';
-            }
-            if (context.dataIndex === 2) {
-              return 'rgba(201, 255, 251, 1)';
-            }
-            if (context.dataIndex === 3) {
-              return 'rgba(255, 218, 193, 1)';
-            }
-          }
-          return 'null';
-        },
+        spacing: 0,
+        // borderAlign: 'inner',
+        // hoverBackgroundColor: '#121212',
+        // borderColor: function (context) {
+        //   const chart = context.chart;
+        //   const { ctx, chartArea } = chart;
+        //   if (chartArea !== undefined) {
+        //     if (context.dataIndex === 0) {
+        //       return 'rgba(192,192,255,1)';
+        //     }
+        //     if (context.dataIndex === 1) {
+        //       return 'rgba(206, 255, 173, 1)';
+        //     }
+        //     if (context.dataIndex === 2) {
+        //       return 'rgba(201, 255, 251, 1)';
+        //     }
+        //     if (context.dataIndex === 3) {
+        //       return 'rgba(255, 218, 193, 1)';
+        //     }
+        //   }
+        //   return 'null';
+        // },
+        borderColor: 'rgba(192,192,255,1)',
+        // hoverBorderColor: function (context) {
+        //   const chart = context.chart;
+        //   const { ctx, chartArea } = chart;
+        //   if (chartArea !== undefined) {
+        //     if (context.dataIndex === 0) {
+        //       return 'rgba(192,192,255,1)';
+        //     }
+        //     if (context.dataIndex === 1) {
+        //       return 'rgba(206, 255, 173, 1)';
+        //     }
+        //     if (context.dataIndex === 2) {
+        //       return 'rgba(201, 255, 251, 1)';
+        //     }
+        //     if (context.dataIndex === 3) {
+        //       return 'rgba(255, 218, 193, 1)';
+        //     }
+        //   }
+        //   return 'null';
+        // },
       },
     ],
   };
@@ -625,7 +630,7 @@ export class SolutionsComponent implements OnInit {
         ctx.fill();
         ctx.font = fontSize + 'em sans-serif';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = '#450159';
         let text = 'iClinic MD',
           textX = Math.round((width - ctx.measureText(text).width) / 2),
           textY = height / 2;
@@ -641,7 +646,6 @@ export class SolutionsComponent implements OnInit {
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 10, 0, 2 * Math.PI);
-        // ctx.arc(width / 2, height / 2, chart.chart.width / 5, 0, 3 * Math.PI);
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, width, height);
         grd.addColorStop(0.4, 'rgba(105,180,250,1)');
@@ -651,7 +655,7 @@ export class SolutionsComponent implements OnInit {
         ctx.fill();
         ctx.font = fontSize + 'em sans-serif';
         ctx.textBaseline = 'middle';
-        ctx.fillStyle = 'black';
+        ctx.fillStyle = '#450159';
         let text = 'iClinic MD',
           textX = Math.round((width - ctx.measureText(text).width) / 2),
           textY = height / 2;
@@ -684,7 +688,7 @@ export class SolutionsComponent implements OnInit {
           }
           return 50;
         },
-        color: 'black',
+        color: '#450159',
         formatter: (value, context) => {
           if (value !== 0) {
             return context.chart.data.labels![context.dataIndex];
@@ -716,56 +720,64 @@ export class SolutionsComponent implements OnInit {
         enabled: false,
         display: false,
       },
+      datalabels: null,
+      // datalabels: {
+      //   font: function (context) {
+      //     var width = context.chart.width;
+      //     var size = Math.round(width / 60);
+      //     return {
+      //       size: size,
+      //       weight: 'bold',
+      //       family: "Roboto, 'Helvetica Neue', sans-serif",
+      //     };
+      //   },
+      //   align: function (context) {
+      //     if (context.dataIndex === 0) {
+      //       return 'left';
+      //     }
+      //     return 'center';
+      //   },
+      //   offset: function (context) {
+      //     if (context.dataIndex === 0) {
+      //       return 80;
+      //     }
+      //     return 0;
+      //   },
+      //   rotation: function (context) {
+      //     if (context.dataIndex === 2) {
+      //       return 20;
+      //     } else if (context.dataIndex === 4) {
+      //       return 35;
+      //     } else if (context.dataIndex === 6) {
+      //       return 62;
+      //     }
+      //     return 0;
+      //   },
+      //   color: 'transparent', //hide
 
-      datalabels: {
-        font: function (context) {
-          var width = context.chart.width;
-          var size = Math.round(width / 60);
-          return {
-            size: size,
-            weight: 'bold',
-            family: "Roboto, 'Helvetica Neue', sans-serif",
-          };
-        },
-        align: function (context) {
-          if (context.dataIndex === 0) {
-            return 'left';
-          }
-          return 'center';
-        },
-        offset: function (context) {
-          if (context.dataIndex === 0) {
-            return 80;
-          }
-          return 0;
-        },
-        rotation: function (context) {
-          if (context.dataIndex === 2) {
-            return 20;
-          } else if (context.dataIndex === 4) {
-            return 35;
-          } else if (context.dataIndex === 6) {
-            return 62;
-          }
-          return 0;
-        },
-        color: 'transparent', //hide
-
-        formatter: (value, context) => {
-          if (value !== 0) {
-            return context.chart.data.labels![context.dataIndex];
-          } else {
-            return null;
-          }
-        },
-      },
+      //   formatter: (value, context) => {
+      //     if (value !== 0) {
+      //       return context.chart.data.labels![context.dataIndex];
+      //     } else {
+      //       return null;
+      //     }
+      //   },
+      // },
     },
 
     responsive: true,
     maintainAspectRatio: true,
   };
-  constructor() {}
+  constructor() {
+    this.showTitle=false;
+  }
 
+  showtitlee(show: boolean){
+    this.showTitle = show;
+    this.title = `placeholder for iclinic MD`;
+    this.mainTitleInitial = `placeholder for iclinic MD`;
+    this.description = `placeholder for iclinic MD`;
+  }
   ngOnInit(): void {
     // this.initScrollAnimations();
     if (window.innerWidth < 576) {
@@ -777,10 +789,8 @@ export class SolutionsComponent implements OnInit {
       this.desktop = true;
     }
   }
-
   chartHovered(event: any): void {
     let eventIndex;
-
     if (event.active.length > 0 && event.active[0].index !== undefined) {
       eventIndex = event.active[0].index;
     }
@@ -925,8 +935,8 @@ function getGradientAF(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,247,252,1)');
   // gradient.addColorStop(0.95, 'rgba(255,243,251,1)');
 
-  gradient.addColorStop(0.75, 'rgba(253,232,235,255)');
-  gradient.addColorStop(0.85, 'rgba(251,218,222,255)');
+  gradient.addColorStop(0.80, 'rgba(253,232,235,255)');
+  gradient.addColorStop(0.90, 'rgba(251,218,222,255)');
   gradient.addColorStop(0.95, 'rgba(248,203,208,255)');
 
   return gradient;
@@ -954,8 +964,8 @@ function getGradientCR(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,239,249,1)');
   // gradient.addColorStop(0.95, 'rgba(255,235,248,1)');
 
-  gradient.addColorStop(0.75, 'rgba(252,231,240,255)');
-  gradient.addColorStop(0.85, 'rgba(250,208,224,255)');
+  gradient.addColorStop(0.80, 'rgba(252,231,240,255)');
+  gradient.addColorStop(0.90, 'rgba(250,208,224,255)');
   gradient.addColorStop(0.95, 'rgba(245,188,209,255)');
   return gradient;
 }
@@ -982,8 +992,8 @@ function getGradientCRw(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,236,248,1)');
   // gradient.addColorStop(0.95, 'rgba(255,233,247,1)');
 
-  gradient.addColorStop(0.75, 'rgba(244,221,235,255)');
-  gradient.addColorStop(0.85, 'rgba(223,184,215,255)');
+  gradient.addColorStop(0.80, 'rgba(244,221,235,255)');
+  gradient.addColorStop(0.90, 'rgba(223,184,215,255)');
   gradient.addColorStop(0.95, 'rgba(205,156,199,255)');
   return gradient;
 }
@@ -1010,8 +1020,8 @@ function getGradientHCM(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,234,255,1)');
   // gradient.addColorStop(0.95, 'rgba(249,224,251,1)');
 
-  gradient.addColorStop(0.75, 'rgba(240,230,241,255)');
-  gradient.addColorStop(0.85, 'rgba(216,201,226,255)');
+  gradient.addColorStop(0.80, 'rgba(240,230,241,255)');
+  gradient.addColorStop(0.90, 'rgba(216,201,226,255)');
   gradient.addColorStop(0.95, 'rgba(189,168,208,255)');
   return gradient;
 }
@@ -1038,8 +1048,8 @@ function getGradientHF(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,234,255,1)');
   // gradient.addColorStop(0.95, 'rgba(249,224,251,1)');
 
-  gradient.addColorStop(0.75, 'rgba(233,236,246,255)');
-  gradient.addColorStop(0.85, 'rgba(190,194,226,255)');
+  gradient.addColorStop(0.80, 'rgba(233,236,246,255)');
+  gradient.addColorStop(0.90, 'rgba(190,194,226,255)');
   gradient.addColorStop(0.95, 'rgba(164,172,215,255)');
   return gradient;
 }
@@ -1066,8 +1076,8 @@ function getGradientHFO(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,230,255,1)');
   // gradient.addColorStop(0.95, 'rgba(253,224,255,1)');
 
-  gradient.addColorStop(0.75, 'rgba(217,236,250,255)');
-  gradient.addColorStop(0.85, 'rgba(186,215,241,255)');
+  gradient.addColorStop(0.80, 'rgba(217,236,250,255)');
+  gradient.addColorStop(0.90, 'rgba(186,215,241,255)');
   gradient.addColorStop(0.95, 'rgba(156,193,231,255)');
   return gradient;
 }
@@ -1094,8 +1104,8 @@ function getGradientLipid(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(253,227,255,1)');
   // gradient.addColorStop(0.95, 'rgba(252,216,255,1)');
 
-  gradient.addColorStop(0.75, 'rgba(215,240,253,255)');
-  gradient.addColorStop(0.85, 'rgba(179,224,244,255)');
+  gradient.addColorStop(0.80, 'rgba(215,240,253,255)');
+  gradient.addColorStop(0.90, 'rgba(179,224,244,255)');
   gradient.addColorStop(0.95, 'rgba(151,207,235,255)');
   return gradient;
 }
@@ -1122,8 +1132,8 @@ function getGradientSC(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(225,225,255,1)');
   // gradient.addColorStop(0.95, 'rgba(213,213,255,1)');
 
-  gradient.addColorStop(0.75, 'rgba(198,233,244,255)');
-  gradient.addColorStop(0.85, 'rgba(172,224,236,255)');
+  gradient.addColorStop(0.80, 'rgba(198,233,244,255)');
+  gradient.addColorStop(0.90, 'rgba(172,224,236,255)');
   gradient.addColorStop(0.95, 'rgba(150,216,231,255)');
   return gradient;
 }
@@ -1150,8 +1160,8 @@ function getGradientSCESS(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(215,215,255,1)');
   // gradient.addColorStop(0.95, 'rgba(206,206,255,1)');
 
-  gradient.addColorStop(0.75, 'rgba(219,241,244,255)');
-  gradient.addColorStop(0.85, 'rgba(198,232,234,255)');
+  gradient.addColorStop(0.80, 'rgba(219,241,244,255)');
+  gradient.addColorStop(0.90, 'rgba(198,232,234,255)');
   gradient.addColorStop(0.95, 'rgba(165,219,220,255)');
   return gradient;
 }
@@ -1182,8 +1192,8 @@ function getGradientWC(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(207,232,203,255)');
   // gradient.addColorStop(0.95, 'rgba(230,243,226,255)');
 
-  gradient.addColorStop(0.75, 'rgba(214,255,252,1)');
-  gradient.addColorStop(0.85, 'rgba(201, 255, 251, 1)');
+  gradient.addColorStop(0.80, 'rgba(214,255,252,1)');
+  gradient.addColorStop(0.90, 'rgba(201, 255, 251, 1)');
   gradient.addColorStop(0.95, 'rgba(201, 255, 251, 1)');
   return gradient;
 }
@@ -1216,8 +1226,8 @@ function getGradientFrailty(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(202,226,166,255)');
   // gradient.addColorStop(0.95, 'rgba(179,215,133,255)');
 
-  gradient.addColorStop(0.75, 'rgba(230,243,226,255)');
-  gradient.addColorStop(0.85, 'rgba(207,232,203,255)');
+  gradient.addColorStop(0.80, 'rgba(230,243,226,255)');
+  gradient.addColorStop(0.90, 'rgba(207,232,203,255)');
   gradient.addColorStop(0.95, 'rgba(189,223,183,255)');
   return gradient;
 }
@@ -1248,8 +1258,8 @@ function getGradientPD(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(232,238,169,255)');
   // gradient.addColorStop(0.95, 'rgba(225,232,141,255)');
 
-  gradient.addColorStop(0.65, 'rgba(224,238,199,255)');
-  gradient.addColorStop(0.85, 'rgba(202,226,166,255)');
+  gradient.addColorStop(0.80, 'rgba(224,238,199,255)');
+  gradient.addColorStop(0.90, 'rgba(202,226,166,255)');
   gradient.addColorStop(0.95, 'rgba(179,215,133,255)');
   return gradient;
 }
@@ -1276,8 +1286,8 @@ function getGradientAsthmaCOPD(ctx, chartArea) {
   // gradient.addColorStop(0.75, 'rgba(255,237,225,1)');
   // gradient.addColorStop(0.95, 'rgba(255, 218, 193, 1)');
 
-  gradient.addColorStop(0.75, 'rgba(242,246,202,255)');
-  gradient.addColorStop(0.85, 'rgba(232,238,169,255)');
+  gradient.addColorStop(0.80, 'rgba(242,246,202,255)');
+  gradient.addColorStop(0.90, 'rgba(232,238,169,255)');
   gradient.addColorStop(0.95, 'rgba(225,232,141,255)');
 
   return gradient;
