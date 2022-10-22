@@ -62,7 +62,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: lefttoright 3s linear forwards;
+    animation: lefttoright 2s linear forwards;
     /* margin-left: -100%; */
     margin-left: auto;
     margin-right: auto;
@@ -77,7 +77,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: righttoleft 3s linear 2s forwards;
+    animation: righttoleft 2s linear 1s forwards;
     margin-left: auto;
     margin-right: auto;
     opacity: 0;
@@ -89,7 +89,7 @@
     border-radius: 10px;
     padding: 25px;
     opacity: 0;
-    animation: lefttoright 3s linear 4s forwards;
+    animation: lefttoright 2s linear 2s forwards;
     margin-left: auto;
     margin-right: auto;
 
