@@ -113,9 +113,10 @@ export class HomeComponent implements OnInit {
   public createStrokes() {
     // =====================OUT GALAXY PARTICLES===============================
     const loader = new THREE.TextureLoader();
+    
     const cross = loader.load('./assets/images/home/cross2.png');
     const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCnt = 2000;
+    const particlesCnt = 1000;
 
     const posArray = new Float32Array(particlesCnt * 3);
     for (let i = 0; i < particlesCnt * 3; i++) {
