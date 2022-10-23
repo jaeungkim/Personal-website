@@ -64,7 +64,7 @@ DARK THEME VARIABLES
 .color-scheme-dark {
   --bg-primary: black;
   --box-shadow: 0px 0px 12px 0px #fff;
-
+  --text-primary: white;
   --iclinic-blue-white: white;
   color: white;
   background-color: var(--bg-primary);
@@ -73,9 +73,9 @@ DARK THEME VARIABLES
     color: white;
   }
 
-  .link {
-    color: white;
-  }
+  // .link {
+  //   color: white;
+  // }
 
   .black-text {
     color: black;
@@ -83,10 +83,6 @@ DARK THEME VARIABLES
 
   .inverse-font-color {
     color: black;
-  }
-
-  .custom-nav-link {
-    color: white;
   }
 
   /* HOME */
@@ -143,8 +139,8 @@ LIGHT THEME VARIABLES
   --light-bg-four: #3F72AF;
   --light-bg-fifth: #112D4E;
   --light-iclinic-blue: rgb(203, 223, 237);
-
   --iclinic-blue-white: rgb(128, 182, 222);
+  --text-primary: black;
   --box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
   background-color: var(--light-bg-secondary);
   color: black;
@@ -182,21 +178,19 @@ LIGHT THEME VARIABLES
     background-color: white;
   }
 
-  .custom-nav-link {
-    color: white;
-  }
-
   /* NAVBAR */
   .navbar-custom, .footer-big-div {
     background-color: transparent !important;
     border-top: 3px solid var(--iclinic-blue);
     border-bottom: 3px solid var(--iclinic-blue);
     
-    > &, * {
+  }
+
+  .footer-big-div {
+    > &, *{
       color: var(--iclinic-blue) !important;
     }
   }
-
   .navbar-inner-custom {
     background-color: white;
   }

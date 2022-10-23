@@ -50,6 +50,10 @@
   padding: 0;
 }
 
+.nav-link{
+  color: var(--iclinic-blue-white);
+}
+
 .navbar-inner-custom-home {
   opacity: 0.8;
   border-radius: 20px;
@@ -124,6 +128,7 @@
 .btn-custom-book-demo {
   border: 1px solid #a11f74;
   font-size: 12px;
+  
 }
 
 .btn-custom-book-demo:hover {
@@ -232,6 +237,7 @@
   height: 100%;
   width: 100%;
   cursor: pointer;
+  color: var(--iclinic-blue-white);
 }
 
 @media only screen and (min-width: 768px) {

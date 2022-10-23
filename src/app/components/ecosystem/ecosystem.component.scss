@@ -370,7 +370,26 @@ ARROW CSS
   stroke-width: 15;
   animation: reverse-dash 30s linear infinite;
 }
-
+.linear-path-test{
+  stroke-linecap: round;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: 1, 15;
+  stroke: var(--text-primary);
+  fill: transparent;
+  stroke-width: 3;
+  animation: dash 30s linear infinite;
+}
+.linear-path-reverse-test{
+  stroke-linecap: round;
+  stroke-linejoin: miter;
+  stroke-miterlimit: 4;
+  stroke-dasharray: 1, 15;
+  stroke: var(--text-primary);
+  fill: transparent;
+  stroke-width: 3;
+  animation: reverse-dash 30s linear infinite;
+}
 .linear-path {
   stroke-linecap: round;
   stroke-linejoin: miter;
