@@ -62,11 +62,12 @@ DARK THEME VARIABLES
 =============================================
 */
 .color-scheme-dark {
-  --dark-bg-primary: black;
+  --bg-primary: black;
   --box-shadow: 0px 0px 12px 0px #fff;
 
+  --iclinic-blue-white: white;
   color: white;
-  background-color: var(--dark-bg-primary);
+  background-color: var(--bg-primary);
 
   button {
     color: white;
@@ -90,15 +91,15 @@ DARK THEME VARIABLES
 
   /* HOME */
   .cookie-bar {
-    background-color: var(--dark-bg-primary);
+    background-color: var(--bg-primary);
   }
 
   .minimized-cookie-bar {
-    background-color: var(--dark-bg-primary);
+    background-color: var(--bg-primary);
   }
 
   .modal-content {
-    background-color: var(--dark-bg-primary);
+    background-color: var(--bg-primary);
   }
 
   /* NAVBAR */
@@ -108,12 +109,12 @@ DARK THEME VARIABLES
 
   /* ABOUT US */
   .card-div {
-    background-color: var(--dark-bg-primary);
+    background-color: var(--bg-primary);
   }
 
   /* FOOTER */
   .footer-big-div {
-    background-color: var(--dark-bg-primary);
+    background-color: var(--bg-primary);
   }
 
   .footer-container {
@@ -136,12 +137,14 @@ LIGHT THEME VARIABLES
 =============================================
 */
 .color-scheme-light {
-  --light-bg-primary: white;
+  --bg-primary: white;
   --light-bg-secondary: #F9F7F7;
   --light-bg-third: #DBE2EF;
   --light-bg-four: #3F72AF;
   --light-bg-fifth: #112D4E;
   --light-iclinic-blue: rgb(203, 223, 237);
+
+  --iclinic-blue-white: rgb(128, 182, 222);
   --box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
   background-color: var(--light-bg-secondary);
   color: black;

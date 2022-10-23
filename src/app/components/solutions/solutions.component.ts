@@ -143,7 +143,7 @@ export class SolutionsComponent implements OnInit {
               return 'rgba(225,232,141,255)';
             }
           }
-          return '#121212';
+          return null;
         },
         borderWidth: null,
         borderRadius: 0,
@@ -393,7 +393,6 @@ export class SolutionsComponent implements OnInit {
           }
           return '#121212';
         },
-
         borderWidth: null,
         borderRadius: 0,
         spacing: 100,
@@ -464,11 +463,11 @@ export class SolutionsComponent implements OnInit {
         let width = chart.chart.width,
           height = chart.chart.height,
           ctx = chart.chart.ctx;
-       
+          ctx.restore();
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 10, 0, 2 * Math.PI);
-        ctx.restore();
+
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, width, height);
         grd.addColorStop(0.4, 'rgba(105,180,250,1)');
@@ -489,8 +488,8 @@ export class SolutionsComponent implements OnInit {
         let width = chart.chart.width,
           height = chart.chart.height,
           ctx = chart.chart.ctx;
+
         ctx.restore();
-        
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 10, 0, 2 * Math.PI);
@@ -499,7 +498,8 @@ export class SolutionsComponent implements OnInit {
         grd.addColorStop(0.4, 'rgba(105,180,250,1)');
         grd.addColorStop(0.5, 'rgba(255,255,255,1)');
         grd.addColorStop(0.7, 'rgba(105,180,250,1)');
-        ctx.fillStyle = grd;     
+        ctx.fillStyle = grd;   
+        ctx.fill();  
         ctx.font = fontSize + 'em sans-serif';
         ctx.textBaseline = 'middle';
         ctx.fillStyle = '#450159';

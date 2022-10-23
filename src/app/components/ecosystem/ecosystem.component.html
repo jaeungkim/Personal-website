@@ -4,33 +4,42 @@
     <section class="patientDoctor-division">
       <div class="patientDoctor-first-div">
         <div class="patient-div">
-          <img src="./assets/images/ecosystem/revised-patient-light.png" alt=" " class="patient-img"
+          <img src="./assets/images/ecosystem/patient-ascopd.png" alt=" " class="patient-img"
             *ngIf="colorSchemeService.colorScheme === 'light'" />
           <img src="./assets/images/ecosystem/patient-ascopd.png" alt=" " class="patient-img"
             *ngIf="colorSchemeService.colorScheme === 'dark'" />
         </div>
         <div class="clinic-image-div">
-          <img src="./assets/images/ecosystem/arrow-right-white.png" alt=" " class="arrow-img" />
-          <img src="./assets/images/ecosystem/revised-clinic.png" alt=" " class="clinic-img"
-            *ngIf="colorSchemeService.colorScheme === 'dark'" />
+
+          <img src="./assets/images/ecosystem/arrow-right-iclinic-blue.png" alt=" " class="arrow-img"
+            *ngIf="colorSchemeService.colorScheme === 'light'" />
           <img src="./assets/images/ecosystem/revised-clinic-light.png" alt=" " class="clinic-img"
             *ngIf="colorSchemeService.colorScheme === 'light'" />
-          <img src="./assets/images/ecosystem/arrow-right-white.png" alt=" " class="arrow-img-right" />
+            <img src="./assets/images/ecosystem/arrow-right-iclinic-blue.png" alt=" " class="arrow-img-right"
+            *ngIf="colorSchemeService.colorScheme === 'light'" />
+          <img src="./assets/images/ecosystem/arrow-right-white.png" alt=" " class="arrow-img"
+            *ngIf="colorSchemeService.colorScheme === 'dark'" />
+          <img src="./assets/images/ecosystem/revised-clinic.png" alt=" " class="clinic-img"
+            *ngIf="colorSchemeService.colorScheme === 'dark'" />
+            <img src="./assets/images/ecosystem/arrow-right-white.png" alt=" " class="arrow-img-right"
+            *ngIf="colorSchemeService.colorScheme === 'dark'" />
+
+          
         </div>
         <div class="doctor-div">
           <img src="./assets/images/ecosystem/doctor.png" alt=" " class="doctor-img"
             *ngIf="colorSchemeService.colorScheme === 'dark'" />
-          <img src="./assets/images/ecosystem/doctor-light.png" alt=" " class="doctor-img"
+          <img src="./assets/images/ecosystem/doctor.png" alt=" " class="doctor-img"
             *ngIf="colorSchemeService.colorScheme === 'light'" />
         </div>
       </div>
 
       <div class="svg-div">
         <svg class="svg-icon" viewBox="0 0 50 300">
-          <g transform="translate(25,65)" fill="white" stroke="white">
+          <g transform="translate(25,65)" style="stroke:var(--iclinic-blue-white)">
             <path class="dotted-path" d="M0,200 C0,200 0,-200 0,-200"></path>
           </g>
-          <g transform="translate(25,285) scale(3)" stroke="white">
+          <g transform="translate(25,290) scale(3)" fill="none" style="stroke:var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
@@ -40,17 +49,17 @@
         <div class="patientchart-img-div">
           <img src="./assets/images/ecosystem/patientchart-newWC.png" alt=" " class="patientchart-img"
             *ngIf="colorSchemeService.colorScheme === 'dark'" />
-          <img src="./assets/images/ecosystem/revised-patient-chart-light.png" alt=" " class="patientchart-img"
+          <img src="./assets/images/ecosystem/patientchart-newWC.png" alt=" " class="patientchart-img"
             *ngIf="colorSchemeService.colorScheme === 'light'" />
         </div>
       </div>
 
       <div class="svg-div">
         <svg class="svg-icon" viewBox="0 0 50 300">
-          <g transform="translate(25,65)" fill="white" stroke="white">
+          <g transform="translate(25,65)" style="stroke:var(--iclinic-blue-white)">
             <path class="dotted-path" d="M0,175 C0,175 0,-175 0,-175"></path>
           </g>
-          <g transform="translate(25,260) scale(3)" stroke="white">
+          <g transform="translate(25,260) scale(3)" fill="none" style="stroke:var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
@@ -66,10 +75,10 @@
       <div class="main-chart-div">
         <div class="svg-div-onchart">
           <svg class="svg-icon-down" viewBox="0 0 150 150">
-            <g transform="translate(75,50)" stroke="white">
+            <g transform="translate(75,50)" style="stroke:var(--iclinic-blue-white)">
               <path class="dotted-path" d="M0,50 C0,50 0,-50 0,-50"></path>
             </g>
-            <g transform="translate(75,125) scale(3)" stroke="white">
+            <g transform="translate(75,125) scale(3)" fill="none" style="stroke:var(--iclinic-blue-white)">
               <path d="M0 0 9-11 0-8-9-11 0 0"></path>
             </g>
           </svg>
@@ -89,8 +98,8 @@
         <div class="inner-chart">
           <!-- <canvas baseChart [data]="doughnutChartData2" [type]="doughnutChartType2" [options]="chartOptions2"
             id="donutchart2"></canvas> -->
-            <div class="ring-div"></div>
-            <div class="ring-div2"></div>
+          <div class="ring-div"></div>
+          <div class="ring-div2"></div>
         </div>
       </div>
       <div class="chart-parts-div">
@@ -99,7 +108,7 @@
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
-              <g transform="translate(0 25) rotate(90) scale(1.5)" stroke="rgb(203, 223, 237)">
+              <g transform="translate(0 25) rotate(90) scale(1.5)" fill="none" stroke="rgb(203, 223, 237)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
               <g transform="translate(15 25)">
@@ -108,7 +117,7 @@
               <g transform="translate(160 25)">
                 <path class="linear-path-reverse" d="M0 0 125 0" />
               </g>
-              <g transform="translate(300 25) rotate(-90) scale(1.5)" stroke="rgb(203, 223, 237)">
+              <g transform="translate(300 25) rotate(-90) scale(1.5)" fill="none" stroke="rgb(203, 223, 237)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
             </svg>
@@ -132,7 +141,7 @@
             ">
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear"
               style="transform: translate(-25px, -100px) rotate(-40deg)" preserveAspectRatio="none">
-              <g transform="translate(0 25) rotate(90) scale(1.5)" stroke="rgb(203, 223, 237)">
+              <g transform="translate(0 25) rotate(90) scale(1.5)" fill="none" stroke="rgb(203, 223, 237)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
               <g transform="translate(15 25)">
@@ -141,7 +150,7 @@
               <g transform="translate(160 25)">
                 <path class="linear-path-reverse" d="M0 0 125 0" />
               </g>
-              <g transform="translate(300 25) rotate(-90) scale(1.5)" stroke="rgb(203, 223, 237)">
+              <g transform="translate(300 25) rotate(-90) scale(1.5)" fill="none" stroke="rgb(203, 223, 237)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
             </svg>
@@ -160,7 +169,7 @@
         <div class="chart-div-pharmanet">
           <div class="chart-arrow-div">
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
-              <g transform="translate(0 25) rotate(90) scale(1.5)" stroke="rgb(128, 182, 222)">
+              <g transform="translate(0 25) rotate(90) scale(1.5)" fill="none" stroke="rgb(128, 182, 222)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
               <g transform="translate(15 25)">
@@ -169,7 +178,7 @@
               <g transform="translate(160 25)">
                 <path class="linear-path-reverse" d="M0 0 125 0" />
               </g>
-              <g transform="translate(300 25) rotate(-90) scale(1.5)" stroke="rgb(128, 182, 222)">
+              <g transform="translate(300 25) rotate(-90) scale(1.5)" fill="none" stroke="rgb(128, 182, 222)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
             </svg>
@@ -189,7 +198,7 @@
             ">
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear"
               style="transform: translate(25px, -100px) rotate(40deg)" preserveAspectRatio="none">
-              <g transform="translate(0 25) rotate(90) scale(1.5)" stroke="rgb(128, 182, 222)">
+              <g transform="translate(0 25) rotate(90) scale(1.5)" fill="none" stroke="rgb(128, 182, 222)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
               <g transform="translate(15 25)">
@@ -198,7 +207,7 @@
               <g transform="translate(160 25)">
                 <path class="linear-path-reverse" d="M0 0 125 0" />
               </g>
-              <g transform="translate(300 25) rotate(-90) scale(1.5)" stroke="rgb(128, 182, 222)">
+              <g transform="translate(300 25) rotate(-90) scale(1.5)" fill="none" stroke="rgb(128, 182, 222)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
               </g>
             </svg>
@@ -211,20 +220,20 @@
             <p class="external-label">Hospital</p>
           </div>
         </div>
-        <div *ngIf="tablet || desktop || largedesktop"class="d-flex flex-column svg-div-chart-inside">
+        <div *ngIf="tablet || desktop || largedesktop" class="d-flex flex-column svg-div-chart-inside">
           <svg class="svg-icon-down" viewBox="0 0 150 150">
-            <g transform="translate(75,90)" stroke="white">
+            <g transform="translate(75,90)" fill="none" style="stroke:var(--iclinic-blue-white)">
               <path class="dotted-path-reverse" d="M0,50 C0,50 0,-50 0,-50"></path>
             </g>
-            <g transform="translate(75,15) rotate(180) scale(3)" stroke="white">
+            <g transform="translate(75,15) rotate(180) scale(3)" fill="none" style="stroke:var(--iclinic-blue-white)">
               <path d="M0 0 9-11 0-8-9-11 0 0"></path>
             </g>
           </svg>
           <svg class="svg-icon-down" viewBox="0 0 150 150">
-            <g transform="translate(75,50)" stroke="white">
+            <g transform="translate(75,50)" style="stroke:var(--iclinic-blue-white)">
               <path class="dotted-path" d="M0,50 C0,50 0,-50 0,-50"></path>
             </g>
-            <g transform="translate(75,125) scale(3)" stroke="white">
+            <g transform="translate(75,125) scale(3)" fill="none" style="stroke:var(--iclinic-blue-white)">
               <path d="M0 0 9-11 0-8-9-11 0 0"></path>
             </g>
           </svg>
@@ -239,7 +248,7 @@
     <div class="app-div">
       <img src="./assets/images/ecosystem/app-newWC.png" alt=" " class="app-phone-img"
         *ngIf="colorSchemeService.colorScheme === 'dark'" />
-      <img src="./assets/images/ecosystem/app-light.png" alt=" " class="app-phone-img"
+      <img src="./assets/images/ecosystem/app-newWC.png" alt=" " class="app-phone-img"
         *ngIf="colorSchemeService.colorScheme === 'light'" />
     </div>
     <!-- END APP DIV -->
@@ -247,18 +256,18 @@
     <div class="arrow-div-2">
       <div class="d-flex flex-column svg-div-chart">
         <svg class="svg-icon-down" viewBox="0 0 150 150">
-          <g transform="translate(75,90)" stroke="white">
+          <g transform="translate(75,90)" style="stroke:var(--iclinic-blue-white)">
             <path class="dotted-path-reverse" d="M0,50 C0,50 0,-50 0,-50"></path>
           </g>
-          <g transform="translate(75,15) rotate(180) scale(3)" stroke="white">
+          <g transform="translate(75,15) rotate(180) scale(3)" fill="none" style="stroke:var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
         <svg class="svg-icon-down" viewBox="0 0 150 150">
-          <g transform="translate(75,50)" stroke="white">
+          <g transform="translate(75,50)" style="stroke:var(--iclinic-blue-white)">
             <path class="dotted-path" d="M0,50 C0,50 0,-50 0,-50"></path>
           </g>
-          <g transform="translate(75,125) scale(3)" stroke="white">
+          <g transform="translate(75,125) scale(3)" fill="none" style="stroke:var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
@@ -269,7 +278,7 @@
     <div class="endPatient-div">
       <img src="./assets/images/ecosystem/patient-ascopd.png" alt=" " class="endPatient-img"
         *ngIf="colorSchemeService.colorScheme === 'dark'" />
-      <img src="./assets/images/ecosystem/revised-patient-light.png" alt=" " class="endPatient-img"
+      <img src="./assets/images/ecosystem/patient-ascopd.png" alt=" " class="endPatient-img"
         *ngIf="colorSchemeService.colorScheme === 'light'" />
     </div>
     <!-- END PATIENTc DIV -->
