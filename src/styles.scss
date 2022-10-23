@@ -190,7 +190,7 @@ LIGHT THEME VARIABLES
     border-bottom: 3px solid var(--iclinic-blue);
     
     > &, * {
-      color: #450159 !important;
+      color: var(--iclinic-blue) !important;
     }
   }
 
@@ -224,6 +224,9 @@ LIGHT THEME VARIABLES
   } 
 
   .btn-custom-book-demo, .iclinictext{
-    color: #450159;
+    color: var(--iclinic-blue);
+  }
+  .description-solutions{
+    color: #450159 !important;
   }
 }
