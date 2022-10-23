@@ -476,7 +476,7 @@ export class SolutionsComponent implements OnInit {
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, width, height);
         grd.addColorStop(9 / 20, 'rgb(128, 182, 222)');
-        grd.addColorStop(0.5, 'white');
+        grd.addColorStop(0.5, 'rgb(223, 228, 232)');
         grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
         ctx.fillStyle = grd;
         ctx.fill();
@@ -505,7 +505,7 @@ export class SolutionsComponent implements OnInit {
         // grd.addColorStop(0.7, 'rgba(105,180,250,1)');
 
         grd.addColorStop(9 / 20, 'rgb(128, 182, 222)');
-        grd.addColorStop(0.5, 'white');
+        grd.addColorStop(0.5, 'rgb(223, 228, 232)');
         grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
 
         ctx.fillStyle = grd;

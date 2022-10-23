@@ -43,11 +43,11 @@
       <p class="text-pptos">© {{ currentYear }} iClinic Systems Inc.</p>
     </div>
     <div class="d-flex justify-content-end">
-      <a class="text-pptos text-decoration-none" type="button" routerLink="/privacy">
+      <a class="text-pptos text-decoration-none" type="button" routerLink="/privacy" [ngClass]="colorSchemeService.currentActive() === 'dark' ? '':''">
         Privacy Policy
       </a>
       <a class="text-pptos text-decoration-none" type="button"
-        routerLink="/termsofservice">&nbsp;&nbsp;Terms of
+        routerLink="/termsofservice" [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'purple-text':''">&nbsp;&nbsp;Terms of
         Use
       </a>
     </div>

@@ -66,6 +66,7 @@ DARK THEME VARIABLES
   --box-shadow: 0px 0px 12px 0px #fff;
   --text-primary: white;
   --iclinic-blue-white: white;
+  --light-iclinic-blue: rgb(203, 223, 237);
   color: white;
   background-color: var(--bg-primary);
 
@@ -118,13 +119,6 @@ DARK THEME VARIABLES
     border-bottom: 1px solid grey;
   }
   /*CONTACT*/
-  .contact-form-section, .support-form-section, .address-form-section{
-    box-shadow: var(--box-shadow);
-  }
-  .contact-form-text-div-card, .contact-form-text-div-card2, .contact-form-text-div-card3{
-    box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
-    border: 3px solid rgba(192,192,255,1);
-  }
 }
 
 /*
@@ -214,11 +208,6 @@ LIGHT THEME VARIABLES
   // .solutions-mainTitle {
   //   color: black !important;
   // }
-
-  .contact-form-section, .support-form-section, .contact-form-text-div-card, .contact-form-text-div-card2, .contact-form-text-div-card3{
-    box-shadow: var(--box-shadow);
-    background: white;
-  } 
 
   .btn-custom-book-demo, .iclinictext{
     color: var(--iclinic-blue);

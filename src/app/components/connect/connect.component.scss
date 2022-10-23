@@ -5,6 +5,7 @@
     padding: 25px;
     margin-bottom: 16px;
     width: 100%;
+    box-shadow: var(--box-shadow);
 }
 
 .second-section-div{
@@ -16,6 +17,7 @@
     border-radius: 10px;
     padding: 25px;
     width: 100%;
+    box-shadow: var(--box-shadow);
 }
 
 .address-form-section{
@@ -23,6 +25,10 @@
     border-radius: 10px;
     padding: 25px;
     width: 100%;
+    box-shadow: var(--box-shadow);
+}
+.address-form-subtitle{
+    color: #450159;
 }
 .contact-form {
     max-width: 830px;
@@ -43,16 +49,19 @@
 }
 
 .contact-form-text-title {
+    color: #450159;
     font-size: 14px;
     text-align: center;
 }
 
 .contact-form-text-subtitle {
+    color: #450159;
     font-size: 14px;
     text-align: center;
 }
 
 .contact-form-text-div-subtitle {
+    color: #450159;
     margin: 0;
     font-size: 14px;
 }
@@ -66,6 +75,8 @@
     /* margin-left: -100%; */
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
+    border: 3px solid rgba(192,192,255,1);
     opacity: 0;
 }
 
@@ -80,6 +91,8 @@
     animation: righttoleft 2s linear 1s forwards;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
+    border: 3px solid rgba(192,192,255,1);
     opacity: 0;
 }
 
@@ -88,18 +101,21 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    opacity: 0;
     animation: lefttoright 2s linear 2s forwards;
     margin-left: auto;
     margin-right: auto;
-
+    box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
+    border: 3px solid rgba(192,192,255,1);
+    opacity: 0;
 }
 
 .contact-form-title {
+    color: #450159;
     font-size: 14px;
 }
 
 .contactform-label {
+    color: #450159;
     font-size: 12px;
     margin-bottom: 5px;
 }
@@ -179,6 +195,8 @@
     touch-action: manipulation;
     cursor: not-allowed;
     height: 43px;
+    color: #450159;
+    // background-color: var(--iclinic-blue);
 }
 
 .submit-button:not([disabled]) {
@@ -198,6 +216,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    // background-color: var(--light-iclinic-blue);
 }
 
 .button-error {
@@ -225,10 +244,12 @@
 }
 
 .support-form-title {
+    color: #450159;
     font-size: 14px;
 }
 
 .support-form-subtitle {
+    color: #450159;
     font-size: 12px;
     margin-left: 1vw;
     margin-top: auto;

@@ -112,31 +112,31 @@ export class HomeComponent implements OnInit {
   }
   public createStrokes() {
     // =====================OUT GALAXY PARTICLES===============================
-    const loader = new THREE.TextureLoader();
+    // const loader = new THREE.TextureLoader();
     
-    const cross = loader.load('./assets/images/home/cross2.png');
-    const particlesGeometry = new THREE.BufferGeometry();
-    const particlesCnt = 1000;
+    // const cross = loader.load('./assets/images/home/cross2.png');
+    // const particlesGeometry = new THREE.BufferGeometry();
+    // const particlesCnt = 1000;
 
-    const posArray = new Float32Array(particlesCnt * 3);
-    for (let i = 0; i < particlesCnt * 3; i++) {
-      posArray[i] = (Math.random() - 0.5) * 1000;
-    }
+    // const posArray = new Float32Array(particlesCnt * 3);
+    // for (let i = 0; i < particlesCnt * 3; i++) {
+    //   posArray[i] = (Math.random() - 0.5) * 1000;
+    // }
 
-    particlesGeometry.setAttribute(
-      'position',
-      new THREE.BufferAttribute(posArray, 3)
-    );
+    // particlesGeometry.setAttribute(
+    //   'position',
+    //   new THREE.BufferAttribute(posArray, 3)
+    // );
 
-    const particlesMaterial = new THREE.PointsMaterial({
-      size: 7.5,
-      map: cross,
-      depthTest: false,
-      transparent: true,
-    });
+    // const particlesMaterial = new THREE.PointsMaterial({
+    //   size: 7.5,
+    //   map: cross,
+    //   depthTest: false,
+    //   transparent: true,
+    // });
 
-    this.particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-    this.scene.add(this.particlesMesh);
+    // this.particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+    // this.scene.add(this.particlesMesh);
     // =====================OUT GALAXY PARTICLES===============================
     type posObject = {
       [key: string]: any;
@@ -251,16 +251,10 @@ export class HomeComponent implements OnInit {
     // this.particlesMesh.rotation.y += 0.0001;
     let now = Date.now() / 3000;
     for (let i = 0; i < count; i++) {
-      // const x = this.segments.attributes.position.getX(i);
       const y = this.segments.attributes.position.getY(i);
-      // const x2 = this.dots.attributes.position.getX(i);
       const y2 = this.dots.attributes.position.getY(i);
-      // const xsin = Math.sin(x + now);
       const ycos = Math.cos(y + now);
-      // const xsin2 = Math.sin(x2 + now);
       const ycos2 = Math.cos(y2 + now);
-      // this.segments.attributes.position.setZ(i, xsin + ycos * 25);
-      // this.dots.attributes.position.setZ(i, xsin2 + ycos2 * 25);
       this.segments.attributes.position.setZ(i, ycos * 25);
       this.dots.attributes.position.setZ(i, ycos2 * 25);
     }
