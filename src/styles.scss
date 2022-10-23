@@ -184,8 +184,14 @@ LIGHT THEME VARIABLES
   }
 
   /* NAVBAR */
-  .navbar-custom {
-    background-color: var(--light-iclinic-blue) !important;
+  .navbar-custom, .footer-big-div {
+    background-color: transparent !important;
+    border-top: 3px solid var(--light-bg-four);
+    border-bottom: 3px solid var(--light-bg-four);
+    
+    > &, * {
+      color: var(--light-bg-four) !important;
+    }
   }
 
   .navbar-inner-custom {
@@ -193,9 +199,9 @@ LIGHT THEME VARIABLES
   }
 
   /* FOOTER */
-  .footer-big-div {
-    background-color: var(--light-iclinic-blue) !important;
-  }
+  // .footer-big-div {
+  //   background-color: var(--light-iclinic-blue) !important;
+  // }
 
   .footer-container {
     border-top: 1px solid white;
@@ -203,17 +209,21 @@ LIGHT THEME VARIABLES
   }
 
   //CHANGE? TODO
-  .solutions-title {
-    color: black !important;
-    -webkit-text-fill-color: black !important;
-  }
+  // .solutions-title {
+  //   color: black !important;
+  //   -webkit-text-fill-color: black !important;
+  // }
 
-  .solutions-mainTitle {
-    color: black !important;
-  }
+  // .solutions-mainTitle {
+  //   color: black !important;
+  // }
 
   .contact-form-section, .support-form-section, .contact-form-text-div-card, .contact-form-text-div-card2, .contact-form-text-div-card3{
     box-shadow: var(--box-shadow);
     background: white;
   } 
+
+  .btn-custom-book-demo, .iclinictext{
+    color: var(--light-bg-four);
+  }
 }

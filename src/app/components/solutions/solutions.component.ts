@@ -426,6 +426,7 @@ export class SolutionsComponent implements OnInit {
   public doughnutChartType2: ChartType = 'doughnut';
 
   public chartOptions: any = {
+    rotation: 14,
     layout: {
       padding: function (chart, context) {
         let width = chart.chart.width;

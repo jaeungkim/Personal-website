@@ -5,7 +5,7 @@
         <a class="navbar-brand">
           <img [src]="this.themeIconChange()" alt=" " class="iclinicLogo" />
         </a>
-        <p class="iclinictext text-light">iClinic</p>
+        <p class="iclinictext">iClinic</p>
       </div>
       <div class="aiclinicLogoDiv" role="button" routerLink="/" *ngIf="router.url === '/'">
         <a class="navbar-brand">
@@ -17,7 +17,7 @@
     <div class="right-nav-div ms-auto">
       <app-setting-change-color-scheme *ngIf="router.url !== '/'" class="d-flex"></app-setting-change-color-scheme>
       <div class="p-2 bd-higlight">
-        <button class="btn btn-custom-book-demo text-nowrap text-light" type="button" routerLink="/connect">
+        <button class="btn btn-custom-book-demo text-nowrap" type="button" routerLink="/connect">
           Start Today
         </button>
       </div>
