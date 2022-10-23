@@ -476,9 +476,9 @@ export class SolutionsComponent implements OnInit {
 
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, width, height);
-        grd.addColorStop(9/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(9 / 20, 'rgb(128, 182, 222)');
         grd.addColorStop(0.5, 'white');
-        grd.addColorStop(11/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
         ctx.fillStyle = grd;
         ctx.fill();
         ctx.font = fontSize + 'em sans-serif';
@@ -505,9 +505,9 @@ export class SolutionsComponent implements OnInit {
         // grd.addColorStop(0.5, 'rgba(255,255,255,1)');
         // grd.addColorStop(0.7, 'rgba(105,180,250,1)');
 
-        grd.addColorStop(9/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(9 / 20, 'rgb(128, 182, 222)');
         grd.addColorStop(0.5, 'white');
-        grd.addColorStop(11/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
 
         ctx.fillStyle = grd;
         ctx.fill();
@@ -627,16 +627,16 @@ export class SolutionsComponent implements OnInit {
     maintainAspectRatio: true,
   };
   constructor() {
-    this.showTitle = false;
+    // this.showTitle = false;
   }
 
-  showtitlee(show: boolean) {
-    this.showTitle = show;
-    this.title = `iClinic MD`;
-    this.mainTitleInitial = this.mainTitle[4];
-    this.description = `iClinic MD`;
-    this.textColorIndex = 13;
-  }
+  // showtitlee(show: boolean) {
+  //   this.showTitle = show;
+  //   this.title = `iClinic MD`;
+  //   this.mainTitleInitial = this.mainTitle[4];
+  //   this.description = `iClinic MD`;
+  //   this.textColorIndex = 13;
+  // }
   ngOnInit(): void {
     // this.initScrollAnimations();
     if (window.innerWidth < 576) {

@@ -20,6 +20,6 @@ export class FooterComponent {
   themeIconChange() {
     return this.colorSchemeService.currentActive() === 'dark'
       ? '../assets/images/aboutus/aiClinic.svg'
-      : '../assets/images/aboutus/aiClinic-white.svg';
+      : '../assets/images/aboutus/aiClinic.svg';
   }
 }
