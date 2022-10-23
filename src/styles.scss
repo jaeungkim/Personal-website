@@ -186,11 +186,11 @@ LIGHT THEME VARIABLES
   /* NAVBAR */
   .navbar-custom, .footer-big-div {
     background-color: transparent !important;
-    border-top: 3px solid var(--light-bg-four);
-    border-bottom: 3px solid var(--light-bg-four);
+    border-top: 3px solid var(--iclinic-blue);
+    border-bottom: 3px solid var(--iclinic-blue);
     
     > &, * {
-      color: var(--light-bg-four) !important;
+      color: var(--iclinic-blue) !important;
     }
   }
 
@@ -224,6 +224,6 @@ LIGHT THEME VARIABLES
   } 
 
   .btn-custom-book-demo, .iclinictext{
-    color: var(--light-bg-four);
+    color: var(--iclinic-blue);
   }
 }
