@@ -442,24 +442,23 @@ export class SolutionsComponent implements OnInit {
       },
     },
     cutout: function (chart, context) {
-      let width = chart.chart.width;
-      // console.log(width);
+      let width = chart.chart.width;;
       if (width < 400) {
         return width / 9;
       }
       if (width < 500) {
-        return width / 7.5;
+        return width / 7;
       }
       if (width < 600) {
-        return width / 6.5;
+        return width / 7;
       }
       if (width < 750) {
-        return width / 6;
+        return width / 7;
       }
       if (width < 1000) {
-        return width / 5;
+        return width / 7;
       }
-      return width / 5;
+      return width / 8;
     },
     hover: {
       mode: 'nearest',
@@ -698,7 +697,7 @@ export class SolutionsComponent implements OnInit {
       this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[8];
       this.textColorIndex = 8;
-    } else if (eventIndex === 9) {
+    } else if (eventIndex == 9) {
       this.title = `Women's Cardiology`;
       this.mainTitleInitial = this.mainTitle[0];
       this.description = this.descriptionArray[9];
