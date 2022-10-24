@@ -51,7 +51,7 @@ export class AppComponent implements OnInit, OnDestroy {
   constructor(
     public colorSchemeService: ColorSchemeService,
     public _authService: AuthService,
-    private router: Router,
+    public router: Router,
     public cookieService: CookieService,
     public storageService: StorageService
   ) {

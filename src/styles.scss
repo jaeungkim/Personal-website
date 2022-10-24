@@ -28,7 +28,10 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
-
+.dark-setting-home{
+  background-color: black !important;
+  color: white !important;
+}
 /*
 =============================================
 GLOBAL VARIABLES
@@ -88,14 +91,6 @@ DARK THEME VARIABLES
   }
 
   /* HOME */
-  .cookie-bar {
-    background-color: var(--bg-primary);
-  }
-
-  .minimized-cookie-bar {
-    background-color: var(--bg-primary);
-  }
-
   .modal-content {
     background-color: var(--bg-primary);
   }
@@ -151,14 +146,6 @@ LIGHT THEME VARIABLES
 
   /* HOME */
   .modal-content {
-    background-color: white;
-  }
-
-  .cookie-bar {
-    background-color: white;
-  }
-
-  .minimized-cookie-bar {
     background-color: white;
   }
 

@@ -6,7 +6,6 @@ import { AboutusComponent } from './components/aboutus/aboutus.component';
 import { SolutionsComponent } from './components/solutions/solutions.component';
 import { EcosystemComponent } from './components/ecosystem/ecosystem.component';
 import { SupportComponent } from './components/support/support.component';
-import { ResourcesComponent } from './components/resources/resources.component';
 import { ConnectComponent } from './components/connect/connect.component';
 import { PrivacyComponent } from './components/privacy/privacy.component';
 import { TermsComponent } from './components/terms/terms.component';
@@ -37,11 +36,6 @@ const routes: Routes = [
     canActivate: [AuthGuard],
   },
   { path: 'support', component: SupportComponent, canActivate: [AuthGuard] },
-  {
-    path: 'resources',
-    component: ResourcesComponent,
-    canActivate: [AuthGuard],
-  },
   { path: 'connect', component: ConnectComponent, canActivate: [AuthGuard] },
   { path: 'privacy', component: PrivacyComponent, canActivate: [AuthGuard] },
   {

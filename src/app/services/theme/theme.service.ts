@@ -1,5 +1,5 @@
 import { Injectable, Renderer2, RendererFactory2 } from '@angular/core';
-
+import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root',
 })
@@ -9,7 +9,7 @@ export class ColorSchemeService {
   // Define prefix for clearer and more readable class names in scss files
   private colorSchemePrefix = 'color-scheme-';
 
-  constructor(rendererFactory: RendererFactory2) {
+  constructor(rendererFactory: RendererFactory2, private router: Router,) {
     // Create new renderer from renderFactory, to make it possible to use renderer2 in a service
     this.renderer = rendererFactory.createRenderer(null, null);
   }

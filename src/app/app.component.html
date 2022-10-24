@@ -3,17 +3,17 @@
   <a class="exex nav-link" style="cursor:pointer" *ngIf="storageService.isLoggedIn()" (click)="logoutUser()">Logout</a>
 </div>
 <router-outlet></router-outlet>
-<div *ngIf="!minimizedCookieBar && storageService.isLoggedIn()" class="cookie-bar" @fadeIn @fadeOut>
+<div *ngIf="!minimizedCookieBar && storageService.isLoggedIn()" class="cookie-bar" [ngClass]="router.url === '/' ? 'dark-setting-home':''" @fadeIn @fadeOut>
   <p class="cookie-text">
     This website uses cookies to improve your experience. We wll assume you are ok
     with this, but you can opt-out if you wish.
   </p>
-  <button class="btn btn-cookie-settings" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cookie
+  <button [ngClass]="router.url === '/' ? 'dark-setting-home':''" class="btn btn-cookie-settings" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Cookie
     Settings</button>
-  <button class="btn btn-cookie-accept" (click)="accpetCookie()">Accept</button>
+  <button [ngClass]="router.url === '/' ? 'dark-setting-home':''" class="btn btn-cookie-accept" (click)="accpetCookie()">Accept</button>
 </div>
 
-<div *ngIf="minimizedCookieBar && storageService.isLoggedIn()" (click)="minimizeCookie()" class="minimized-cookie-bar">
+<div *ngIf="minimizedCookieBar && storageService.isLoggedIn()" (click)="minimizeCookie()" class="minimized-cookie-bar" [ngClass]="router.url === '/' ? 'dark-setting-home':''">
   <p class="minimized-cookie-text">
     Cookie Policy
   </p>
@@ -23,7 +23,7 @@
 <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
   aria-labelledby="staticBackdropLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-    <div class="modal-content">
+    <div [ngClass]="router.url === '/' ? 'dark-setting-home':''"  class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="staticBackdropLabel">Privacy Overview</h5>
         <button type="button" [ngClass]="colorSchemeService.currentActive() === 'dark' ? 'btn-close-white':''" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -82,7 +82,7 @@
       </div>
       <div class="modal-footer">
 
-        <button type="button" class="btn cookie-btn" data-bs-dismiss="modal">Understood</button>
+        <button [ngClass]="router.url === '/' ? 'dark-setting-home':''"  type="button" class="btn cookie-btn" data-bs-dismiss="modal">Understood</button>
       </div>
     </div>
   </div>
