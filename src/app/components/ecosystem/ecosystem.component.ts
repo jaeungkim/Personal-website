@@ -466,9 +466,9 @@ export class EcosystemComponent implements OnInit {
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
         //GRADIENT
-        var grd = ctx.createLinearGradient(0, 0, width, height);
+        var grd = ctx.createLinearGradient(0, 0, 0, width);
         grd.addColorStop(9/20, 'rgb(128, 182, 222)');
-        grd.addColorStop(0.5, 'white');
+        grd.addColorStop(0.5, 'rgb(223, 228, 232)');
         grd.addColorStop(11/20, 'rgb(128, 182, 222)');
 
         ctx.fillStyle = grd;
@@ -492,9 +492,9 @@ export class EcosystemComponent implements OnInit {
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
         
         //GRADIENT
-        var grd = ctx.createLinearGradient(0, 0, width, height);
+        var grd = ctx.createLinearGradient(0, 0, 0, width);
         grd.addColorStop(9/20, 'rgb(128, 182, 222)');
-        grd.addColorStop(0.5, 'white');
+        grd.addColorStop(0.5, 'rgb(223, 228, 232)');
         grd.addColorStop(11/20, 'rgb(128, 182, 222)');
         ctx.fillStyle = grd;
         ctx.fill();

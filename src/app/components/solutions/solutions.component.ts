@@ -474,7 +474,7 @@ export class SolutionsComponent implements OnInit {
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
 
         //GRADIENT
-        var grd = ctx.createLinearGradient(0, 0, width, height);
+        var grd = ctx.createLinearGradient(0, 0, 0, width);
         grd.addColorStop(9 / 20, 'rgb(128, 182, 222)');
         grd.addColorStop(0.5, 'rgb(223, 228, 232)');
         grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
@@ -497,9 +497,11 @@ export class SolutionsComponent implements OnInit {
         ctx.restore();
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();
+        
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
+ 
         //GRADIENT
-        var grd = ctx.createLinearGradient(0, 0, width, height);
+        var grd = ctx.createLinearGradient(0, 0, 0, width);
         // grd.addColorStop(0.4, 'rgba(105,180,250,1)');
         // grd.addColorStop(0.5, 'rgba(255,255,255,1)');
         // grd.addColorStop(0.7, 'rgba(105,180,250,1)');
