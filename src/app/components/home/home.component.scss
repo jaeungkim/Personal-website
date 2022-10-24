@@ -139,7 +139,7 @@
 }
 
 .bgtext {
-    font-size: 12px;
+    font-size: 10px;
     margin: 3rem;
     position: absolute;
     color: white;
@@ -157,7 +157,7 @@
     z-index: 100;
 }
 .bgtext3 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 3rem;
     position: absolute;
     color: rgb(187, 182, 182);
@@ -175,7 +175,7 @@
     z-index: 100;
 }
 .bgtext5 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 3rem;
     position: absolute;
     color: rgb(187, 182, 182);
@@ -193,7 +193,7 @@
     z-index: 100;
 }
 .bgtext7 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 3rem;
     position: absolute;
     color: rgb(187, 182, 182);
@@ -220,7 +220,7 @@
     z-index: 100;
 }
 .bgtext10 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 3rem;
     position: absolute;
     color: rgb(187, 182, 182);
@@ -247,7 +247,7 @@
     z-index: 100;
 }
 .bgtext13 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 3rem;
     position: absolute;
     color: rgb(187, 182, 182);
@@ -278,12 +278,12 @@
     margin: 3rem;
     position: absolute;
     color: rgb(187, 182, 182);
-    top: 2%;
+    top: 0%;
     left: 50%;
     z-index: 100;
 }
 .bgtext17 {
-    font-size: 12px;
+    font-size: 10px;
     margin: 3rem;
     position: absolute;
     color: rgb(187, 182, 182);
@@ -292,15 +292,41 @@
     z-index: 100;
 }
 
+.bgtext18 {
+    font-size: 10px;
+    margin: 3rem;
+    position: absolute;
+    color: rgb(187, 182, 182);
+    top: 50%;
+    left: 60%;
+    z-index: 100;
+}
+.bgtext19 {
+    font-size: 10px;
+    margin: 3rem;
+    position: absolute;
+    color: rgb(187, 182, 182);
+    top: 20%;
+    left: 40%;
+    z-index: 100;
+}
+.bgtext20 {
+    font-size: 10px;
+    margin: 3rem;
+    position: absolute;
+    color: rgb(187, 182, 182);
+    top: 60%;
+    left: 40%;
+    z-index: 100;
+}
 .faeInAnimation{
     opacity: 1;
-    animation: fadeIn 1s linear;
+    animation: fadeIn 3s linear;
 }
 @keyframes fadeIn {
     0%{
         opacity: 0;
     }
-  
     100%{
         opacity: 1;
     }

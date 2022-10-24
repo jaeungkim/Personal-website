@@ -8,13 +8,13 @@
 </div>
 <video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
   id="myVideo">
-  <source src="https://storage.googleapis.com/video-background-iclinic/landing_WIP_star_outline.mp4" type="video/mp4" />
+  <source src="https://storage.googleapis.com/video-background-iclinic/Untitled%20(1).mp4" type="video/mp4" />
 </video>
 
 <canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
 
 <!-- TEST -->
-<div *ngIf="hideVideoAfterPlay" class="faeInAnimation">
+<div class="faeInAnimation" *ngIf="hideVideoAfterPlay">
   <div class="bgtext">
     <p>STEMI</p>
   </div>
@@ -70,5 +70,17 @@
   </div>
   <div class="bgtext17">
     <p>HbA1c</p>
+  </div>
+
+  <div class="bgtext18">
+    <p>NT-proBNP</p>
+  </div>
+
+  <div class="bgtext19">
+    <p>Entresto</p>
+  </div>
+
+  <div class="bgtext20">
+    <p>Eliquis</p>
   </div>
 </div>
