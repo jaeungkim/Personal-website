@@ -10,11 +10,11 @@
   id="myVideo">
   <source src="https://storage.googleapis.com/video-background-iclinic/landing_WIP_star_outline.mp4" type="video/mp4" />
 </video>
+
 <canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
 
-
 <!-- TEST -->
-<div [hidden]="displayAfterVideo">
+<div *ngIf="hideVideoAfterPlay" class="faeInAnimation">
   <div class="bgtext">
     <p>STEMI</p>
   </div>

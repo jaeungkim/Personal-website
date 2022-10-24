@@ -4,9 +4,9 @@ GENERAL CSS
 =============================================
 */
 .section-pad {
-  /* height: 100vh; */
-  display: flex;
-  justify-content: center;
+    /* height: 100vh; */
+    display: flex;
+    justify-content: center;
 }
 
 /*
@@ -15,177 +15,179 @@ PATIENT DOCTOR DIV CSS
 =============================================
 */
 .patientDoctor-division {
-  height: 100vh;
+    height: 100vh;
 }
 
 .patientDoctor-first-div {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  justify-content: space-evenly;
-  align-items: center;
-  padding-top: 16%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 16%;
 }
 
 .clinic-image-div {
-  display: flex;
-  flex-direction: column;
-  box-shadow: var(--box-shadow);
-  padding: 25px;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    flex-direction: column;
+    box-shadow: var(--box-shadow);
+    padding: 25px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .patientchart-img-div {
-  box-shadow: var(--box-shadow);
-  padding: 25px;
-  width: 125px;
-  height: 125px;
-  border-radius: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    // box-shadow: var(--box-shadow);
+    box-shadow: 0px 0px 12px 0px var(--iclinic-blue);
+    border: 1px solid var(--iclinic-blue);
+    padding: 25px;
+    width: 125px;
+    height: 125px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .patientchart-div {
-  // margin-top: 2.5%;
-  // display: flex;
-  // flex-direction: column;
-  // width: 25%;
-  // // position: absolute;
-  // bottom: 15%;
-  // left: 50%;
-  // transform: translate(-50%, -50%);
+    // margin-top: 2.5%;
+    // display: flex;
+    // flex-direction: column;
+    // width: 25%;
+    // // position: absolute;
+    // bottom: 15%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
 }
 
 .patient-div {
-  width: 35%;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding-bottom: 15%;
+    width: 35%;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding-bottom: 15%;
 }
 
 .doctor-div {
-  width: 35%;
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding-bottom: 15%;
+    width: 35%;
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    // padding-bottom: 15%;
 }
 
 .clinic-div {
-  width: 25%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding-bottom: 15%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15%;
 }
 
 .svg-div {
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
-  position: relative;
-  width: 100%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+    position: relative;
+    width: 100%;
 }
 
 .svg-div-chart-inside {
-  position: absolute;
-  bottom: 0;
-  align-items: center;
-  width: 100%;
+    position: absolute;
+    bottom: 0;
+    align-items: center;
+    width: 100%;
 }
 
 .svg-div-chart {
-  position: relative;
-  align-items: center;
-  width: 100%;
+    position: relative;
+    align-items: center;
+    width: 100%;
 }
 
 .svg-icon {
-  // position: absolute;
-  // margin-top: 15%;
-  width: 100%;
-  height: 300px;
+    // position: absolute;
+    // margin-top: 15%;
+    width: 100%;
+    height: 300px;
 }
 
 .svg-icon-patientchart {
-  // position: absolute;
-  // margin-top: 15%;
-  width: 100%;
-  height: 300px;
+    // position: absolute;
+    // margin-top: 15%;
+    width: 100%;
+    height: 300px;
 }
 
 .svg-icon-linear {
-  // position: absolute;
-  // top: 30%;
-  // right: -70%;
-  margin-top: auto;
-  margin-bottom: auto;
+    // position: absolute;
+    // top: 30%;
+    // right: -70%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .svg-icon-linear-reverse {
-  position: absolute;
-  top: 30%;
-  right: 10%;
+    position: absolute;
+    top: 30%;
+    right: 10%;
 }
 
 .svg-icon-linear-reverse-hospital {
-  position: absolute;
-  bottom: 150%;
-  right: 18%;
+    position: absolute;
+    bottom: 150%;
+    right: 18%;
 }
 
 .svg-icon-chart {
-  position: absolute;
-  width: 100%;
-  height: 300px;
+    position: absolute;
+    width: 100%;
+    height: 300px;
 }
 
 .svg-div-onchart {
-  display: flex;
-  padding-top: 8.5%;
+    display: flex;
+    padding-top: 6.5%;
 }
 
 .svg-icon-onchart {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .patient-img {
-  width: 75px;
-  height: 75px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .doctor-img {
-  width: 75px;
-  width: 75px;
-  display: flex;
-  margin-left: auto;
-  // margin-right: auto;
+    width: 75px;
+    width: 75px;
+    display: flex;
+    margin-left: auto;
+    // margin-right: auto;
 }
 
 .clinic-img {
-  width: 90px;
-  height: 90px;
-  margin-left: auto;
-  margin-right: auto;
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .patientchart-img {
-  // position: absolute;
-  // left: 30%;
-  // margin-top: -37.5%;
-  // width: 60%;
-  width: 90px;
-  height: 90px;
+    // position: absolute;
+    // left: 30%;
+    // margin-top: -37.5%;
+    // width: 60%;
+    width: 90px;
+    height: 90px;
 }
 
 /*
@@ -195,116 +197,120 @@ CHART DIV CSS
 */
 
 .ring-div {
-  background-color: transparent;
-  border: 3px solid rgba(192, 192, 255, 1);
-  box-shadow: 0px 0px 10px 0px rgba(192, 192, 255, 1);
-  height: 33%;
-  border-radius: 50%;
-  width: 33%;
-  top: 33.5%;
-  left: 33.5%;
-  position: absolute;
+    background-color: transparent;
+    border: 3px solid rgba(192, 192, 255, 1);
+    box-shadow: 0px 0px 10px 0px rgba(192, 192, 255, 1);
+    height: 33%;
+    border-radius: 50%;
+    width: 33%;
+    top: 33.5%;
+    left: 33.5%;
+    position: absolute;
+    z-index: -1;
 }
 
 .ring-div2 {
-  background-color: transparent;
-  border: 3px solid rgba(192, 192, 255, 1);
-  box-shadow: 0px 0px 10px 0px rgba(192, 192, 255, 1);
-  height: 75%;
-  border-radius: 50%;
-  width: 75%;
-  top: 12.5%;
-  left: 12.5%;
-  position: absolute;
+    background-color: transparent;
+    border: 3px solid rgb(192, 192, 255);
+    box-shadow: 0px 0px 10px 0px rgb(192 192 255);
+    height: 75%;
+    border-radius: 50%;
+    width: 75%;
+    top: 12.5%;
+    left: 12.5%;
+    position: absolute;
+    z-index: -1;
 }
 
 .chart-section-pad {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .ecosystem-chart-div {
-  position: relative;
-  height: 100vh;
+    position: relative;
+    height: 100vh;
 }
 
 .main-chart-div {
-  height: 100vh;
+    position: relative;
+    height: 100%;
+    // padding-top: 15%;
 }
 
 .ecosystem-chart {
-  margin-left: auto;
-  margin-right: auto;
-  padding: 10px;
-  box-shadow: var(--box-shadow);
-  border: 1.5px solid rgba(192,192,255,1);
-  border-radius: 50%;
-  height: 58%;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    box-shadow: var(--box-shadow);
+    border: 1.5px solid rgba(192, 192, 255, 1);
+    border-radius: 50%;
+    z-index: 2;
+    overflow: visible !important;
 }
 
 #donutchart {
-  position: absolute;
-  z-index: 2;
-  top: 25%;
-  transform: translate(0, -25%);
-  box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
-  border: 3px solid rgba(192,192,255,1);
-  border-radius: 50%;
+    // top: 25%;
+    // transform: translate(0, -25%);
+    box-shadow: 0px 0px 12px 0px rgba(192, 192, 255, 1);
+    border: 3px solid rgba(192, 192, 255, 1);
+    border-radius: 50%;
 }
 
 #donutchart2 {
-  position: absolute;
-  z-index: 1;
-  top: 25%;
-  transform: translate(0, -25%);
+    // position: absolute;
+    // z-index: 1;
+    // top: 25%;
+    // transform: translate(0, -25%);
 }
 
 .chart-parts-div {
-  position: absolute;
-  width: 100%;
-  display: flex;
-  bottom: 10vh;
-  justify-content: space-evenly;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    bottom: 10vh;
+    justify-content: space-evenly;
 }
 
 .teleplan-img {
-  width: 50px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .eHealth-img {
-  width: 50px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .pharmaNet-img {
-  width: 50px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hospital-img {
-  width: 50px;
-  margin: 0;
-  padding: 0;
-  margin-left: auto;
-  margin-right: auto;
+    width: 50px;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .external-label {
-  font-size: 12px;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  padding-top: 8px;
+    font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-top: 8px;
 }
 
 /*
@@ -313,23 +319,23 @@ APP DIV CSS
 =============================================
 */
 .app-div {
-  display: flex;
-  box-shadow: var(--box-shadow);
-  border-radius: 10px;
-  padding: 25px;
-  width: 125px;
-  height: 125px;
-  margin-left: auto;
-  margin-right: auto;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2.5%;
-  margin-bottom: 2.5%;
+    display: flex;
+    box-shadow: var(--box-shadow);
+    border-radius: 10px;
+    padding: 25px;
+    width: 125px;
+    height: 125px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
 }
 
 .app-phone-img {
-  width: 90px;
-  height: 90px;
+    width: 90px;
+    height: 90px;
 }
 
 /*
@@ -338,16 +344,16 @@ BOTTOM PATIENT DIV CSS
 =============================================
 */
 .endPatient-div {
-  margin-top: 2.5%;
-  display: flex;
+    margin-top: 2.5%;
+    display: flex;
 }
 
 .endPatient-img {
-  width: 90px;
-  height: 90px;
-  margin-left: auto;
-  margin-right: auto;
-  // width: 15%;
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    // width: 15%;
 }
 
 /*
@@ -356,163 +362,173 @@ ARROW CSS
 =============================================
 */
 .dotted-path {
-  stroke-dasharray: 3px 7px;
-  stroke-linecap: butt;
-  stroke-linejoin: miter;
-  stroke-width: 15;
-  animation: dash 30s linear infinite;
+    stroke-dasharray: 3px 14px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 15;
+    animation: dash 30s linear infinite;
 }
 
 .dotted-path-reverse {
-  stroke-dasharray: 3px 7px;
-  stroke-linecap: butt;
-  stroke-linejoin: miter;
-  stroke-width: 15;
-  animation: reverse-dash 30s linear infinite;
+    stroke-dasharray: 3px 14px;
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 15;
+    animation: reverse-dash 30s linear infinite;
 }
-.linear-path-test{
-  stroke-linecap: round;
-  stroke-linejoin: miter;
-  stroke-miterlimit: 4;
-  stroke-dasharray: 1, 15;
-  stroke: var(--text-primary);
-  fill: transparent;
-  stroke-width: 3;
-  animation: dash 30s linear infinite;
+
+.linear-path-test {
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: 1, 15;
+    stroke: var(--text-primary);
+    fill: transparent;
+    stroke-width: 3;
+    animation: dash 30s linear infinite;
 }
-.linear-path-reverse-test{
-  stroke-linecap: round;
-  stroke-linejoin: miter;
-  stroke-miterlimit: 4;
-  stroke-dasharray: 1, 15;
-  stroke: var(--text-primary);
-  fill: transparent;
-  stroke-width: 3;
-  animation: reverse-dash 30s linear infinite;
+
+.linear-path-reverse-test {
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: 1, 15;
+    stroke: var(--text-primary);
+    fill: transparent;
+    stroke-width: 3;
+    animation: reverse-dash 30s linear infinite;
 }
+
 .linear-path {
-  stroke-linecap: round;
-  stroke-linejoin: miter;
-  stroke-miterlimit: 4;
-  stroke-dasharray: 1, 15;
-  stroke: rgb(203, 223, 237);
-  fill: transparent;
-  stroke-width: 3;
-  animation: dash 30s linear infinite;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: 1, 15;
+    stroke: rgb(203, 223, 237);
+    fill: transparent;
+    stroke-width: 3;
+    animation: dash 30s linear infinite;
 }
 
 .linear-path-reverse {
-  stroke-linecap: round;
-  stroke-linejoin: miter;
-  stroke-miterlimit: 4;
-  stroke-dasharray: 1, 15;
-  stroke: rgb(203, 223, 237);
-  fill: transparent;
-  stroke-width: 3;
-  animation: reverse-dash 30s linear infinite;
+    stroke-linecap: round;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 4;
+    stroke-dasharray: 1, 15;
+    stroke: rgb(203, 223, 237);
+    fill: transparent;
+    stroke-width: 3;
+    animation: reverse-dash 30s linear infinite;
 }
 
 @keyframes dash {
-  from {
-    stroke-dashoffset: 0;
-  }
+    from {
+        stroke-dashoffset: 0;
+    }
 
-  to {
-    stroke-dashoffset: 600;
-  }
+    to {
+        stroke-dashoffset: 600;
+    }
 }
 
 @keyframes reverse-dash {
-  from {
-    stroke-dashoffset: 600;
-  }
+    from {
+        stroke-dashoffset: 600;
+    }
 
-  to {
-    stroke-dashoffset: 0;
-  }
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 .arrow-img {
-  position: absolute;
-  width: 2.5%;
-  margin: 0;
-  left: 38%;
-  transform: translateY(10%);
-  padding: 0;
+    position: absolute;
+    width: 2.5%;
+    margin: 0;
+    left: 38%;
+    transform: translateY(10%);
+    padding: 0;
 }
-
-.arrow-img-right {
-  position: absolute;
-  width: 2.5%;
-  margin: 0;
-  right: 38%;
-  transform: translateY(10%) rotate(180deg);
-  padding: 0;
+.arrow-left-svg{
+    position: absolute;
+    left: 40%;
 }
+.arrow-right-svg{
+   position: absolute;
+   right: 40%;
+}
+// .arrow-img-right {
+//     position: absolute;
+//     width: 2.5%;
+//     margin: 0;
+//     right: 38%;
+//     transform: translateY(10%) rotate(180deg);
+//     padding: 0;
+// }
 
 .arrow-div {
-  padding-top: 75px;
+    padding-top: 75px;
 }
 
 .abovechart-arrow-div {
-  padding-top: 10vh;
+    padding-top: 10vh;
 }
 
 .belowchart-arrow-div {
-  padding-top: 75vh;
+    padding-top: 75vh;
 }
 
 .arrow-div-2 {
-  display: flex;
-  flex-direction: column;
-  margin-left: auto;
-  margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .gapline {
-  border-left: 2px solid white;
-  height: 75px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  animation: gaplineanimate 3s ease infinite;
-  transform: rotate(0deg) !important;
+    border-left: 2px solid white;
+    height: 75px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    animation: gaplineanimate 3s ease infinite;
+    transform: rotate(0deg) !important;
 }
 
 .chart-arrow-div {
-  display: flex;
-  width: 65%;
-  // height: 100%;
-  align-items: center;
+    display: flex;
+    width: 65%;
+    // height: 100%;
+    align-items: center;
 }
 
 .chart-gapline {
-  border-left: 2px solid white;
-  height: 20px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  animation: gaplineanimate 3s ease infinite;
-  transform: rotate(0deg) !important;
+    border-left: 2px solid white;
+    height: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: gaplineanimate 3s ease infinite;
+    transform: rotate(0deg) !important;
 }
 
 @keyframes gaplineanimate {
-  0% {
-    background-position: 0% 51%;
-    border-color: #ffd64a;
-  }
+    0% {
+        background-position: 0% 51%;
+        border-color: #ffd64a;
+    }
 
-  50% {
-    background-position: 100% 50%;
-    border-color: #ffffff;
-  }
+    50% {
+        background-position: 100% 50%;
+        border-color: #ffffff;
+    }
 
-  100% {
-    background-position: 0% 51%;
-    border-color: #ffd64a;
-  }
+    100% {
+        background-position: 0% 51%;
+        border-color: #ffd64a;
+    }
 }
 
 /*
@@ -521,37 +537,38 @@ MOBILE
 =============================================
 */
 @media only screen and (min-width: 576px) {
-  .svg-icon {
-    // margin-top: 15%;
-    height: 150px;
-  }
+    .svg-icon {
+        // margin-top: 15%;
+        height: 150px;
+    }
 
-  .svg-icon-down {
-    margin-left: auto;
-    margin-right: auto;
-    height: 75px;
-  }
+    .svg-icon-down {
+        margin-left: auto;
+        margin-right: auto;
+        height: 75px;
+    }
 
-  .svg-icon-patientchart {
-    height: 150px;
-  }
+    .svg-icon-patientchart {
+        height: 150px;
+    }
 
-  .chart-arrow-div {
-    // margin-bottom: 50px;
-  }
+    .chart-arrow-div {
+        // margin-bottom: 50px;
+    }
 
-  .ecosystem-chart {
-    width: 62.5%;
-  }
+    .ecosystem-chart {
+        width: 62.5%;
+    }
 
-  .inner-chart {
-    width: 62.5%;
-    transform: translate(0,-100%);
-    margin-bottom: 40%;
-    padding-bottom: 40%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+    .inner-chart {
+        // width: 62.5%;
+        // transform: translate(0, -100%);
+        // margin-bottom: 40%;
+        // padding-bottom: 40%;
+
+        // margin-left: auto;
+        // margin-right: auto;
+    }
 }
 
 /*
@@ -560,173 +577,174 @@ TABLET
 =============================================
 */
 @media only screen and (min-width: 768px) {
-  .chart-arrow-div {
-    // width: 50%;
-  }
+    .chart-arrow-div {
+        // width: 50%;
+    }
 
-  .ecosystem-chart {
-    width: 60%;
-  }
+    .ecosystem-chart {
+        width: 60%;
+    }
 
-  .inner-chart {
-    width: 60%;
-  }
+    .inner-chart {
+        // width: 60%;
+    }
 
-  #donutchart {
-    top: 50%;
-    transform: translate(0, -50%);
-  }
+    #donutchart {
+        // top: 50%;
+        // transform: translate(0, -50%);
+    }
 
-  #donutchart2 {
-    top: 50%;
-    transform: translate(0, -50%);
-  }
+    #donutchart2 {
+        // top: 50%;
+        // transform: translate(0, -50%);
+    }
 
-  .chart-parts-div {
-    height: 100vh;
-    left: 0;
-    bottom: 0;
-    display: block;
-  }
+    .chart-parts-div {
+        height: 100vh;
+        left: 0;
+        bottom: 0;
+        display: block;
+    }
 
-  .chart-div-teleplan {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    top: 40%;
-    left: 0;
-    width: 27.5%;
-    gap: 15%;
-  }
+    .chart-div-teleplan {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+        left: 0;
+        width: 27.5%;
+        gap: 15%;
+    }
 
-  .chart-div-eHealthViewer {
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 10%;
-    left: 6%;
-    width: 27.5%;
-    gap: 15%;
-  }
+    .chart-div-eHealthViewer {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        bottom: 10%;
+        left: 6%;
+        width: 27.5%;
+        gap: 15%;
+    }
 
-  .chart-div-pharmanet {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    top: 40%;
-    right: 0;
-    width: 27.5%;
-    gap: 15%;
-  }
+    .chart-div-pharmanet {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        top: 40%;
+        right: 0;
+        width: 27.5%;
+        gap: 15%;
+    }
 
-  .chart-div-hospital {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    position: absolute;
-    bottom: 10%;
-    right: 6%;
-    width: 27.5%;
-    gap: 15%;
-  }
+    .chart-div-hospital {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: absolute;
+        bottom: 10%;
+        right: 6%;
+        width: 27.5%;
+        gap: 15%;
+    }
 
-  .patient-img {
-    width: 75px;
-    height: 75px;
-  }
+    .patient-img {
+        width: 75px;
+        height: 75px;
+    }
 
-  .doctor-img {
-    width: 75px;
-    height: 75px;
-  }
+    .doctor-img {
+        width: 75px;
+        height: 75px;
+    }
 
-  .clinic-img {
-    width: 90px;
-    height: 90px;
-  }
+    .clinic-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .patientchart-img {
-    width: 75px;
-    height: 75px;
-  }
+    .patientchart-img {
+        width: 75px;
+        height: 75px;
+    }
 
-  .app-phone-img {
-    width: 75px;
-    height: 75px;
-  }
-  .endPatient-img {
-    width: 75px;
-    height: 75px;
-  }
+    .app-phone-img {
+        width: 75px;
+        height: 75px;
+    }
 
-  .teleplan-img-div {
-    display: flex;
-    flex-direction: column;
-    box-shadow: var(--box-shadow);
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-  }
+    .endPatient-img {
+        width: 75px;
+        height: 75px;
+    }
 
-  .eHealth-img-div {
-    display: flex;
-    flex-direction: column;
-    box-shadow: var(--box-shadow);
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-  }
+    .teleplan-img-div {
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--box-shadow);
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .pharmanet-img-div {
-    display: flex;
-    flex-direction: column;
-    box-shadow: var(--box-shadow);
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-  }
+    .eHealth-img-div {
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--box-shadow);
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .hospital-img-div {
-    display: flex;
-    flex-direction: column;
-    box-shadow: var(--box-shadow);
-    padding: 10px 15px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
-  }
+    .pharmanet-img-div {
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--box-shadow);
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .teleplan-img {
-    width: 50px;
-    height: 50px;
-  }
+    .hospital-img-div {
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--box-shadow);
+        padding: 10px 15px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        align-items: center;
+    }
 
-  .eHealth-img {
-    width: 50px;
-    height: 50px;
-  }
+    .teleplan-img {
+        width: 50px;
+        height: 50px;
+    }
 
-  .pharmaNet-img {
-    width: 50px;
-    height: 50px;
-  }
+    .eHealth-img {
+        width: 50px;
+        height: 50px;
+    }
 
-  .hospital-img {
-    width: 50px;
-    height: 50px;
-  }
+    .pharmaNet-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hospital-img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /*
@@ -735,72 +753,72 @@ SMALL DESKTOP
 =============================================
 */
 @media only screen and (min-width: 992px) {
-  .chart-arrow-div {
-    // width: 75%;
-  }
+    .chart-arrow-div {
+        // width: 75%;
+    }
 
-  .external-label {
-    font-size: 16px;
-  }
+    .external-label {
+        font-size: 16px;
+    }
 
-  .ecosystem-chart {
-    
-    width: 50%;
-  }
+    .ecosystem-chart {
 
-  .inner-chart {
-    width: 50%;
-  }
+        width: 50%;
+    }
 
-  .patient-img {
-    width: 90px;
-    height: 90px;
-  }
+    .inner-chart {
+        // width: 50%;
+    }
 
-  .doctor-img {
-    width: 90px;
-    height: 90px;
-  }
+    .patient-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .clinic-img {
-    width: 105px;
-    height: 105px;
-  }
+    .doctor-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .patientchart-img {
-    width: 90px;
-    height: 90px;
-  }
+    .clinic-img {
+        width: 105px;
+        height: 105px;
+    }
 
-  .app-phone-img {
-    width: 90px;
-    height: 90px;
-  }
+    .patientchart-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .endPatient-img {
-    width: 90px;
-    height: 90px;
-  }
+    .app-phone-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .teleplan-img {
-    width: 50px;
-    height: 50px;
-  }
+    .endPatient-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .eHealth-img {
-    width: 50px;
-    height: 50px;
-  }
+    .teleplan-img {
+        width: 50px;
+        height: 50px;
+    }
 
-  .pharmaNet-img {
-    width: 50px;
-    height: 50px;
-  }
+    .eHealth-img {
+        width: 50px;
+        height: 50px;
+    }
 
-  .hospital-img {
-    width: 50px;
-    height: 50px;
-  }
+    .pharmaNet-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .hospital-img {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 /*
@@ -809,61 +827,61 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
-  .ecosystem-chart {
-    width: 40%;
-  }
+    .ecosystem-chart {
+        width: 40%;
+    }
 
-  .inner-chart {
-    width: 40%;
-  }
-  .patient-img {
-    width: 100px;
-    height: 100px;
-  }
+    .inner-chart {
+        // width: 40%;
+    }
 
-  .doctor-img {
-    width: 100px;
-    height: 100px;
-  }
+    .patient-img {
+        width: 100px;
+        height: 100px;
+    }
 
-  .clinic-img {
-    width: 125px;
-    height: 125px;
-  }
+    .doctor-img {
+        width: 100px;
+        height: 100px;
+    }
 
-  .patientchart-img {
-    width: 100px;
-    height: 100px;
-  }
+    .clinic-img {
+        width: 125px;
+        height: 125px;
+    }
 
-  .teleplan-img {
-    width: 90px;
-    height: 90px;
-  }
+    .patientchart-img {
+        width: 100px;
+        height: 100px;
+    }
 
-  .eHealth-img {
-    width: 90px;
-    height: 90px;
-  }
+    .teleplan-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .pharmaNet-img {
-    width: 90px;
-    height: 90px;
-  }
+    .eHealth-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .hospital-img {
-    width: 90px;
-    height: 90px;
-  }
+    .pharmaNet-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .app-phone-img {
-    width: 100px;
-    height: 100px;
-  }
+    .hospital-img {
+        width: 90px;
+        height: 90px;
+    }
 
-  .endPatient-img {
-    width: 100px;
-    height: 100px;
-  }
+    .app-phone-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .endPatient-img {
+        width: 100px;
+        height: 100px;
+    }
 }
-

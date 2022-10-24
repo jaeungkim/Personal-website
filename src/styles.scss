@@ -65,6 +65,7 @@ DARK THEME VARIABLES
   --bg-primary: black;
   --box-shadow: 0px 0px 12px 0px #fff;
   --text-primary: white;
+  --text-thirtiary: white;
   --iclinic-blue-white: white;
   --light-iclinic-blue: rgb(203, 223, 237);
   color: white;
@@ -113,12 +114,6 @@ DARK THEME VARIABLES
   .footer-big-div {
     background-color: var(--bg-primary);
   }
-
-  .footer-container {
-    border-top: 1px solid grey;
-    border-bottom: 1px solid grey;
-  }
-  /*CONTACT*/
 }
 
 /*
@@ -134,7 +129,10 @@ LIGHT THEME VARIABLES
   --light-bg-fifth: #112D4E;
   --light-iclinic-blue: rgb(203, 223, 237);
   --iclinic-blue-white: rgb(128, 182, 222);
+
   --text-primary: black;
+  --text-thirtiary: #450159;
+  // --text-thirtiary: black;
   --box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
   background-color: var(--light-bg-secondary);
   color: black;
@@ -177,7 +175,6 @@ LIGHT THEME VARIABLES
     background-color: transparent !important;
     border-top: 3px solid var(--iclinic-blue);
     border-bottom: 3px solid var(--iclinic-blue);
-    
   }
 
   .footer-big-div {
@@ -188,26 +185,6 @@ LIGHT THEME VARIABLES
   .navbar-inner-custom {
     background-color: white;
   }
-
-  /* FOOTER */
-  // .footer-big-div {
-  //   background-color: var(--light-iclinic-blue) !important;
-  // }
-
-  .footer-container {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white;
-  }
-
-  //CHANGE? TODO
-  // .solutions-title {
-  //   color: black !important;
-  //   -webkit-text-fill-color: black !important;
-  // }
-
-  // .solutions-mainTitle {
-  //   color: black !important;
-  // }
 
   .btn-custom-book-demo, .iclinictext{
     color: var(--iclinic-blue);

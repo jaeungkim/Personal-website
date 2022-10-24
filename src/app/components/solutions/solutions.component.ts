@@ -122,22 +122,22 @@ export class SolutionsComponent implements OnInit {
               return 'rgba(189,168,208,255)';
             }
             if (context.dataIndex === 4) {
-              return 'rgba(164,172,215,255)';
+              return 'rgba(213,213,255,1)';
             }
             if (context.dataIndex === 5) {
-              return 'rgba(156,193,231,255)';
+              return 'rgba(192,192,255,1)';
             }
             if (context.dataIndex === 6) {
-              return 'rgba(151,207,235,255)';
+              return 'rgba(164,172,215,255)';
             }
             if (context.dataIndex === 7) {
-              return 'rgba(150,216,231,255)';
+              return 'rgba(151,207,235,255)';
             }
             if (context.dataIndex === 8) {
-              return 'rgba(165,219,220,255)';
+              return 'rgba(150,216,231,255)';
             }
             if (context.dataIndex === 9) {
-              return 'rgba(201, 255, 251, 1)';
+              return 'rgba(165,219,220,255)';
             }
             if (context.dataIndex === 10) {
               return 'rgba(189,223,183,255)';
@@ -246,22 +246,22 @@ export class SolutionsComponent implements OnInit {
               return 'rgba(189,168,208,255)';
             }
             if (context.dataIndex === 4) {
-              return 'rgba(164,172,215,255)';
+              return 'rgba(213,213,255,1)';
             }
             if (context.dataIndex === 5) {
-              return 'rgba(156,193,231,255)';
+              return 'rgba(192,192,255,1)';
             }
             if (context.dataIndex === 6) {
-              return 'rgba(151,207,235,255)';
+              return 'rgba(164,172,215,255)';
             }
             if (context.dataIndex === 7) {
-              return 'rgba(150,216,231,255)';
+              return 'rgba(151,207,235,255)';
             }
             if (context.dataIndex === 8) {
-              return 'rgba(165,219,220,255)';
+              return 'rgba(150,216,231,255)';
             }
             if (context.dataIndex === 9) {
-              return 'rgba(201, 255, 251, 1)';
+              return 'rgba(165,219,220,255)';
             }
             if (context.dataIndex === 10) {
               return 'rgba(189,223,183,255)';
@@ -370,22 +370,22 @@ export class SolutionsComponent implements OnInit {
               return 'rgba(189,168,208,255)';
             }
             if (context.dataIndex === 4) {
-              return 'rgba(164,172,215,255)';
+              return 'rgba(213,213,255,1)';
             }
             if (context.dataIndex === 5) {
-              return 'rgba(156,193,231,255)';
+              return 'rgba(192,192,255,1)';
             }
             if (context.dataIndex === 6) {
-              return 'rgba(151,207,235,255)';
+              return 'rgba(164,172,215,255)';
             }
             if (context.dataIndex === 7) {
-              return 'rgba(150,216,231,255)';
+              return 'rgba(151,207,235,255)';
             }
             if (context.dataIndex === 8) {
-              return 'rgba(165,219,220,255)';
+              return 'rgba(150,216,231,255)';
             }
             if (context.dataIndex === 9) {
-              return 'rgba(201, 255, 251, 1)';
+              return 'rgba(165,219,220,255)';
             }
             if (context.dataIndex === 10) {
               return 'rgba(189,223,183,255)';
@@ -497,7 +497,6 @@ export class SolutionsComponent implements OnInit {
         ctx.restore();
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();
-        
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
  
         //GRADIENT

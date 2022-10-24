@@ -28,7 +28,7 @@
     box-shadow: var(--box-shadow);
 }
 .address-form-subtitle{
-    color: #450159;
+    color: var(--text-thirtiary);
 }
 .contact-form {
     max-width: 830px;
@@ -49,19 +49,19 @@
 }
 
 .contact-form-text-title {
-    color: #450159;
+    color: var(--text-thirtiary);
     font-size: 14px;
     text-align: center;
 }
 
 .contact-form-text-subtitle {
-    color: #450159;
+    color: var(--text-thirtiary);
     font-size: 14px;
     text-align: center;
 }
 
 .contact-form-text-div-subtitle {
-    color: #450159;
+    color: var(--text-thirtiary);
     margin: 0;
     font-size: 14px;
 }
@@ -110,12 +110,12 @@
 }
 
 .contact-form-title {
-    color: #450159;
+    color: var(--text-thirtiary);
     font-size: 14px;
 }
 
 .contactform-label {
-    color: #450159;
+    color: var(--text-thirtiary);
     font-size: 12px;
     margin-bottom: 5px;
 }
@@ -195,7 +195,7 @@
     touch-action: manipulation;
     cursor: not-allowed;
     height: 43px;
-    color: #450159;
+    color: var(--text-thirtiary);
     // background-color: var(--iclinic-blue);
 }
 
@@ -244,12 +244,12 @@
 }
 
 .support-form-title {
-    color: #450159;
+    color: var(--text-thirtiary);
     font-size: 14px;
 }
 
 .support-form-subtitle {
-    color: #450159;
+    color: var(--text-thirtiary);
     font-size: 12px;
     margin-left: 1vw;
     margin-top: auto;

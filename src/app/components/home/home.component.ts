@@ -112,31 +112,30 @@ export class HomeComponent implements OnInit {
   }
   public createStrokes() {
     // =====================OUT GALAXY PARTICLES===============================
-    // const loader = new THREE.TextureLoader();
-    
-    // const cross = loader.load('./assets/images/home/cross2.png');
-    // const particlesGeometry = new THREE.BufferGeometry();
-    // const particlesCnt = 1000;
+    const loader = new THREE.TextureLoader();
+    const cross = loader.load('./assets/images/home/cross2.png');
+    const particlesGeometry = new THREE.BufferGeometry();
+    const particlesCnt = 1000;
 
-    // const posArray = new Float32Array(particlesCnt * 3);
-    // for (let i = 0; i < particlesCnt * 3; i++) {
-    //   posArray[i] = (Math.random() - 0.5) * 1000;
-    // }
+    const posArray = new Float32Array(particlesCnt * 3);
+    for (let i = 0; i < particlesCnt * 3; i++) {
+      posArray[i] = (Math.random() - 0.5) * 1000;
+    }
 
-    // particlesGeometry.setAttribute(
-    //   'position',
-    //   new THREE.BufferAttribute(posArray, 3)
-    // );
+    particlesGeometry.setAttribute(
+      'position',
+      new THREE.BufferAttribute(posArray, 3)
+    );
 
-    // const particlesMaterial = new THREE.PointsMaterial({
-    //   size: 7.5,
-    //   map: cross,
-    //   depthTest: false,
-    //   transparent: true,
-    // });
+    const particlesMaterial = new THREE.PointsMaterial({
+      size: 7.5,
+      map: cross,
+      depthTest: false,
+      transparent: true,
+    });
 
-    // this.particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
-    // this.scene.add(this.particlesMesh);
+    this.particlesMesh = new THREE.Points(particlesGeometry, particlesMaterial);
+    this.scene.add(this.particlesMesh);
     // =====================OUT GALAXY PARTICLES===============================
     type posObject = {
       [key: string]: any;
