@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   color = new THREE.Color();
   private positions: any[] = [];
   private segmentPoints: any[] = [];
-  private radius: number = 215;
+  private radius: number = 240;
   private dots: any;
   private dotsStrokes: any;
   private dotsMaterial: any;
