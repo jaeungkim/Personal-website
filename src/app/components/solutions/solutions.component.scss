@@ -28,6 +28,7 @@
   margin-left: auto;
   margin-right: auto;
   border-radius: 10px;
+  margin-top: 10%;
   margin-bottom: 10%;
   width: 97%;
   box-shadow: var(--box-shadow);
@@ -36,8 +37,8 @@
 .solutions-title {
   width: 100%;
   text-align: center;
-
   font-size: 24px;
+  padding: 8px;
 }
 
 .description-div {
@@ -105,12 +106,12 @@
     // padding: 12px;
   }
 
+  .solutions-title-div {
+    margin-top: 0;
+  }
+
   .solutions-title {
     font-size: 24px;
-    /* padding-top: 40%; */
-
-    // border-radius: 10px;
-    // padding: 12px;
   }
 
   .description-solutions {
@@ -128,8 +129,8 @@
   }
 
   .solutions-text-div {
-    padding-top: 17.5%;
-    width: 25%;
+    padding-top: 10%;
+    width: 35%;
     height: 50vh;
   }
 
@@ -144,6 +145,20 @@
   }
 }
 
+@media only screen and (min-width: 992px) {
+  .solutions-text-div {
+    padding-top: 20%;
+  }
+
+  .solutions-title {
+    font-size: 32px;
+  }
+
+  .description-solutions {
+    font-size: 16px;
+  }
+}
+
 @media only screen and (min-width: 1400px) {
   .solutions-mainTitle {
     font-size: 40px;
@@ -154,7 +169,6 @@
     font-size: 36px;
     white-space: nowrap;
     overflow: visible;
-    padding: 8px;
     // width: 115%;
     /* padding-top: 70%; */
   }
@@ -167,7 +181,7 @@
   }
 
   .solutions-text-div {
-    padding-top: 17.5%;
+    padding-top: 15%;
     width: 40%;
   }
 

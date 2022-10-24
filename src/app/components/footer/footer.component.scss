@@ -1,13 +1,15 @@
 @import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
-.footer-big-div{
+.footer-big-div {
     margin-top: 100px;
+    border-top: 1px solid var(--iclinic-blue-grey);
+    border-bottom: 1px solid var(--iclinic-blue-grey);
 }
+
 .footer-container {
     padding-top: 50px;
     padding-bottom: 50px;
-    // border-top: 1px solid var(--iclinic-blue-white);
-    border-bottom: 3px solid var(--iclinic-blue-white);
+    border-bottom: 1px solid var(--iclinic-blue-grey);
 }
 
 .footer-div {
@@ -103,25 +105,30 @@
     margin-bottom: 15px;
     font-size: 24px;
 }
+
 .footer-link-item {
     margin-bottom: 10px;
     text-align: right;
 }
-.footer-subtitles{
+
+.footer-subtitles {
     font-size: 14px;
     color: var(--iclinic-blue-white);
 }
-.text-pptos{
+
+.text-pptos {
     font-size: 10px;
     opacity: 0.8;
     color: var(--iclinic-blue-white);
 }
+
 @media only screen and (min-width: 768px) {
     .icons-ul li {
         width: 20px;
         height: 20px;
         margin-right: 18px;
     }
+
     .footer-link-title {
         font-size: 24px;
     }
@@ -129,13 +136,16 @@
     .iclinictext {
         font-size: 24px;
     }
-    .footer-subtitles{
+
+    .footer-subtitles {
         font-size: 16px;
     }
-    .text-pptos{
+
+    .text-pptos {
         font-size: 12px;
     }
 }
+
 @media only screen and (min-width: 1400px) {
     .iclinictext {
         font-size: 28px;
