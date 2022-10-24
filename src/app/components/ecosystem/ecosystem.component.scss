@@ -39,10 +39,24 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
 }
 
+.patientchart-outer-img-div {
+    // box-shadow: 0px 0px 12px 0px var(--iclinic-blue);
+    border: 1px solid var(--iclinic-blue);
+    padding: 25px;
+    width: 145px;
+    height: 145px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .patientchart-img-div {
     // box-shadow: var(--box-shadow);
     box-shadow: 0px 0px 12px 0px var(--iclinic-blue);
-    border: 1px solid var(--iclinic-blue);
+    border: 3px solid var(--iclinic-blue);
     padding: 25px;
     width: 125px;
     height: 125px;
@@ -318,9 +332,27 @@ CHART DIV CSS
 APP DIV CSS
 =============================================
 */
+.app-outer-div {
+
+    // box-shadow: var(--box-shadow);
+
+    border: 1px solid rgb(192 192 255);
+    padding: 25px;
+    width: 145px;
+    height: 145px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .app-div {
     display: flex;
-    box-shadow: var(--box-shadow);
+    box-shadow: 0px 0px 12px 0px rgb(192 192 255);
+    border: 3px solid rgb(192 192 255);
     border-radius: 10px;
     padding: 25px;
     width: 125px;
@@ -449,14 +481,17 @@ ARROW CSS
     transform: translateY(10%);
     padding: 0;
 }
-.arrow-left-svg{
+
+.arrow-left-svg {
     position: absolute;
     left: 40%;
 }
-.arrow-right-svg{
-   position: absolute;
-   right: 40%;
+
+.arrow-right-svg {
+    position: absolute;
+    right: 40%;
 }
+
 // .arrow-img-right {
 //     position: absolute;
 //     width: 2.5%;

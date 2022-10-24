@@ -45,11 +45,13 @@
       </div>
 
       <div class="patientchart-div">
-        <div class="patientchart-img-div">
-          <img src="./assets/images/ecosystem/patientchart.png" alt=" " class="patientchart-img"
-            *ngIf="colorSchemeService.colorScheme === 'dark'" />
-          <img src="./assets/images/ecosystem/patientchart.png" alt=" " class="patientchart-img"
-            *ngIf="colorSchemeService.colorScheme === 'light'" />
+        <div class="patientchart-outer-img-div">
+          <div class="patientchart-img-div">
+            <img src="./assets/images/ecosystem/patientchart.png" alt=" " class="patientchart-img"
+              *ngIf="colorSchemeService.colorScheme === 'dark'" />
+            <img src="./assets/images/ecosystem/patientchart.png" alt=" " class="patientchart-img"
+              *ngIf="colorSchemeService.colorScheme === 'light'" />
+          </div>
         </div>
       </div>
 
@@ -240,12 +242,14 @@
     <!-- END CHART DIV -->
 
     <!-- APP DIV -->
+    <div class="app-outer-div">
     <div class="app-div">
       <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img"
         *ngIf="colorSchemeService.colorScheme === 'dark'" />
       <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img"
         *ngIf="colorSchemeService.colorScheme === 'light'" />
     </div>
+  </div>
     <!-- END APP DIV -->
 
     <div class="arrow-div-2">
