@@ -104,6 +104,16 @@ PATIENT DOCTOR DIV CSS
     padding-bottom: 15%;
 }
 
+.arrow-left-svg {
+    position: absolute;
+    left: 30%;
+}
+
+.arrow-right-svg {
+    position: absolute;
+    right: 30%;
+}
+
 .svg-div {
     margin-top: 2.5%;
     margin-bottom: 2.5%;
@@ -130,11 +140,13 @@ PATIENT DOCTOR DIV CSS
     width: 100%;
     height: 150px;
 }
+
 .svg-icon-down {
     margin-left: auto;
     margin-right: auto;
     height: 75px;
 }
+
 .svg-icon-patientchart {
     // position: absolute;
     // margin-top: 15%;
@@ -292,25 +304,31 @@ CHART DIV CSS
     bottom: 10vh;
     justify-content: space-evenly;
 }
+
 .chart-div-teleplan {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    ;
 }
 
 .chart-div-eHealthViewer {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    ;
 }
 
 .chart-div-pharmanet {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    ;
 }
 
 .chart-div-hospital {
     display: flex;
-    flex-direction: column;;
+    flex-direction: column;
+    ;
 }
+
 .teleplan-img {
     width: 50px;
     margin: 0;
@@ -505,12 +523,12 @@ ARROW CSS
 
 .arrow-left-svg {
     position: absolute;
-    left: 40%;
+    left: 37.5%;
 }
 
 .arrow-right-svg {
     position: absolute;
-    right: 40%;
+    right: 37.5%;
 }
 
 .arrow-div-2 {
@@ -835,6 +853,7 @@ DESKTOP
         width: 27.5%;
         gap: 15%;
     }
+
     .ecosystem-chart {
         margin-top: 0;
         width: 40%;
