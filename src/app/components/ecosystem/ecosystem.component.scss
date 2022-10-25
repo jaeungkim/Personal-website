@@ -3,11 +3,6 @@
 GENERAL CSS
 =============================================
 */
-.section-pad {
-    /* height: 100vh; */
-    display: flex;
-    justify-content: center;
-}
 
 /*
 =============================================
@@ -40,7 +35,6 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-outer-img-div {
-    // box-shadow: 0px 0px 12px 0px var(--iclinic-blue);
     box-shadow: var(--box-shadow);
     border: 1.5px solid rgb(192 192 255);
     padding: 15px;
@@ -55,7 +49,6 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-img-div {
-    // box-shadow: var(--box-shadow);
     box-shadow: 0px 0px 12px 0px rgb(192 192 255);
     border: 3px solid rgb(192 192 255);
     padding: 15px;
@@ -70,29 +63,14 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-div {
-    // margin-top: 2.5%;
-    // display: flex;
-    // flex-direction: column;
-    // width: 25%;
-    // // position: absolute;
-    // bottom: 15%;
-    // left: 50%;
-    // transform: translate(-50%, -50%);
 }
 
 .patient-div {
     width: 35%;
-    // justify-content: space-between;
-    // align-items: center;
-    // padding-bottom: 15%;
 }
 
 .doctor-div {
     width: 35%;
-    // display: flex;
-    // justify-content: space-between;
-    // align-items: center;
-    // padding-bottom: 15%;
 }
 
 .clinic-div {
@@ -135,8 +113,6 @@ PATIENT DOCTOR DIV CSS
 }
 
 .svg-icon {
-    // position: absolute;
-    // margin-top: 15%;
     width: 100%;
     height: 150px;
 }
@@ -148,16 +124,11 @@ PATIENT DOCTOR DIV CSS
 }
 
 .svg-icon-patientchart {
-    // position: absolute;
-    // margin-top: 15%;
     width: 100%;
     height: 150px;
 }
 
 .svg-icon-linear {
-    // position: absolute;
-    // top: 30%;
-    // right: -70%;
     margin-top: auto;
     margin-bottom: auto;
 }
@@ -213,10 +184,6 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-img {
-    // position: absolute;
-    // left: 30%;
-    // margin-top: -37.5%;
-    // width: 60%;
     width: 75px;
     height: 75px;
 }
@@ -266,7 +233,6 @@ CHART DIV CSS
 .main-chart-div {
     position: relative;
     height: 100%;
-    // padding-top: 15%;
 }
 
 .ecosystem-chart {
@@ -283,18 +249,9 @@ CHART DIV CSS
 }
 
 #donutchart {
-    // top: 25%;
-    // transform: translate(0, -25%);
     box-shadow: 0px 0px 12px 0px rgba(192, 192, 255, 1);
     border: 3px solid rgba(192, 192, 255, 1);
     border-radius: 50%;
-}
-
-#donutchart2 {
-    // position: absolute;
-    // z-index: 1;
-    // top: 25%;
-    // transform: translate(0, -25%);
 }
 
 .chart-parts-div {
@@ -370,7 +327,7 @@ CHART DIV CSS
 }
 
 .flip-card {
-    width: 100px;
+    width: 85px;
     height: 100px;
     cursor: pointer;
     perspective: 1000px;
@@ -414,6 +371,7 @@ CHART DIV CSS
     background-color: none;
     transform: rotateY(180deg);
 }
+
 /*
 =============================================
 APP DIV CSS
@@ -587,12 +545,6 @@ Mobile
 =============================================
 */
 @media only screen and (min-width: 576px) {
-    .flip-card {
-        width: 200px;
-        height: 150px;
-        cursor: pointer;
-        perspective: 1000px;
-    }
     .chart-arrow-div {
         width: 65%;
         margin-bottom: 75px;
@@ -641,6 +593,16 @@ Mobile
         width: 145px;
         height: 145px;
     }
+    .flip-card-front,
+    .flip-card-back {
+        padding: 15px;
+    }
+    .flip-card {
+        width: 100px;
+        height: 100px;
+        cursor: pointer;
+        perspective: 1000px;
+    }
 }
 
 /*
@@ -672,16 +634,7 @@ TABLET
         width: 45%;
     }
 
-    .inner-chart {
-        // width: 60%;
-    }
-
     #donutchart {
-        // top: 50%;
-        // transform: translate(0, -50%);
-    }
-
-    #donutchart2 {
         // top: 50%;
         // transform: translate(0, -50%);
     }
@@ -789,37 +742,16 @@ TABLET
     .eHealth-img-div {
         display: flex;
         flex-direction: column;
-        // box-shadow: var(--box-shadow);
-        // padding: 10px 15px;
-        // border-radius: 10px;
-        // margin-left: auto;
-        // margin-right: auto;
-        // justify-content: center;
-        // align-items: center;
     }
 
     .pharmanet-img-div {
         display: flex;
         flex-direction: column;
-        // box-shadow: var(--box-shadow);
-        // padding: 10px 15px;
-        // border-radius: 10px;
-        // margin-left: auto;
-        // margin-right: auto;
-        // justify-content: center;
-        // align-items: center;
     }
 
     .hospital-img-div {
         display: flex;
         flex-direction: column;
-        // box-shadow: var(--box-shadow);
-        // padding: 10px 15px;
-        // border-radius: 10px;
-        // margin-left: auto;
-        // margin-right: auto;
-        // justify-content: center;
-        // align-items: center;
     }
 
     .teleplan-img {
@@ -841,6 +773,16 @@ TABLET
         width: 50px;
         height: 50px;
     }
+    .flip-card-front,
+    .flip-card-back {
+        padding: 20px;
+    }
+    .flip-card {
+        width: 150px;
+        height: 125px;
+        cursor: pointer;
+        perspective: 1000px;
+    }
 }
 
 /*
@@ -848,6 +790,7 @@ TABLET
 SMALL DESKTOP
 =============================================
 */
+
 @media only screen and (min-width: 992px) {
     .chart-div-teleplan {
         width: 25%;
@@ -1036,5 +979,15 @@ DESKTOP
     .endPatient-img {
         width: 100px;
         height: 100px;
+    }
+    .flip-card-front,
+    .flip-card-back {
+        padding: 15px;
+    }
+    .flip-card {
+        width: 200px;
+        height: 150px;
+        cursor: pointer;
+        perspective: 1000px;
     }
 }
