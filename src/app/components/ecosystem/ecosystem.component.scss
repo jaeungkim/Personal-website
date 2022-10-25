@@ -62,8 +62,7 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
 }
 
-.patientchart-div {
-}
+.patientchart-div {}
 
 .patient-div {
     width: 35%;
@@ -593,10 +592,12 @@ Mobile
         width: 145px;
         height: 145px;
     }
+
     .flip-card-front,
     .flip-card-back {
         padding: 15px;
     }
+
     .flip-card {
         width: 100px;
         height: 100px;
@@ -773,10 +774,12 @@ TABLET
         width: 50px;
         height: 50px;
     }
+
     .flip-card-front,
     .flip-card-back {
         padding: 20px;
     }
+
     .flip-card {
         width: 150px;
         height: 125px;
@@ -980,10 +983,12 @@ DESKTOP
         width: 100px;
         height: 100px;
     }
+
     .flip-card-front,
     .flip-card-back {
         padding: 15px;
     }
+
     .flip-card {
         width: 200px;
         height: 150px;
