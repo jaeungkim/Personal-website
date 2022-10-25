@@ -73,10 +73,10 @@ export class EcosystemComponent implements OnInit {
       },
     });
 
-    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '85%' });
+    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '65%' });
     // patientAnimationTimeline.to('.section-pad', { duration: 5 });
 
-    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-85%' });
+    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-65%' });
     // doctorAnimationTimeline.to('.section-pad', { duration: 5 });
 
     chartAnimationTimeline.fromTo(
@@ -467,9 +467,9 @@ export class EcosystemComponent implements OnInit {
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, 0, width);
-        grd.addColorStop(9/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(9 / 20, 'rgb(128, 182, 222)');
         grd.addColorStop(0.5, 'rgb(223, 228, 232)');
-        grd.addColorStop(11/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
 
         ctx.fillStyle = grd;
         ctx.fill();
@@ -490,12 +490,12 @@ export class EcosystemComponent implements OnInit {
         let fontSize = (height / 550).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
-        
+
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, 0, width);
-        grd.addColorStop(9/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(9 / 20, 'rgb(128, 182, 222)');
         grd.addColorStop(0.5, 'rgb(223, 228, 232)');
-        grd.addColorStop(11/20, 'rgb(128, 182, 222)');
+        grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
         ctx.fillStyle = grd;
         ctx.fill();
         ctx.font = fontSize + 'em sans-serif';
