@@ -370,9 +370,11 @@
     opacity: 0;
     animation: fadeInText 10s reverse infinite ease-out;
 }
-.insideglobe{
+
+.insideglobe {
     font-size: 14px !important;
 }
+
 @keyframes fadeInText {
     25% {
         opacity: 0;

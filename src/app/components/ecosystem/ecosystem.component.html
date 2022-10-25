@@ -124,16 +124,23 @@
               </g>
             </svg>
           </div>
-          <div class="teleplan-img-div" [ngClass]="
-              tablet || desktop || largedesktop
-                ? 'order-1'
-                : 'd-flex flex-column order-2'
-            ">
-            <img src="./assets/images/ecosystem/teleplan-white.png" alt=" " class="teleplan-img"
-              *ngIf="colorSchemeService.colorScheme === 'dark'" />
-            <img src="./assets/images/ecosystem/teleplan-light.png" alt=" " class="teleplan-img"
-              *ngIf="colorSchemeService.colorScheme === 'light'" />
-            <p class="external-label">Teleplan</p>
+          <div class="teleplan-img-div flip-card" [ngClass]="
+                        tablet || desktop || largedesktop
+                          ? 'order-1'
+                          : 'd-flex flex-column order-2'
+                      ">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/images/ecosystem/teleplan-white.png" alt=" " class="teleplan-img"
+                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                <img src="./assets/images/ecosystem/teleplan-light.png" alt=" " class="teleplan-img"
+                  *ngIf="colorSchemeService.colorScheme === 'light'" />
+                <p class="external-label">Teleplan</p>
+              </div>
+              <div class="flip-card-back">
+                <p>Architect & Engineer</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -159,14 +166,18 @@
               </g>
             </svg>
           </div>
-          <div class="eHealth-img-div" [ngClass]="
+          <div class="eHealth-img-div flip-card" [ngClass]="
               tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
             ">
-            <img src="./assets/images/ecosystem/eHealth-white.png" alt=" " class="eHealth-img"
-              *ngIf="colorSchemeService.colorScheme === 'dark'" />
-            <img src="./assets/images/ecosystem/eHealth-light.png" alt=" " class="eHealth-img"
-              *ngIf="colorSchemeService.colorScheme === 'light'" />
-            <p class="external-label text-nowrap">eHealth <span *ngIf="largedesktop">Viewer</span></p>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/images/ecosystem/eHealth-white.png" alt=" " class="eHealth-img"
+                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                <img src="./assets/images/ecosystem/eHealth-light.png" alt=" " class="eHealth-img"
+                  *ngIf="colorSchemeService.colorScheme === 'light'" />
+                <p class="external-label text-nowrap">eHealth <span *ngIf="largedesktop">Viewer</span></p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -189,14 +200,18 @@
               </g>
             </svg>
           </div>
-          <div class="pharmanet-img-div" [ngClass]="
+          <div class="pharmanet-img-div flip-card" [ngClass]="
           tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
         ">
-            <img src="./assets/images/ecosystem/pharmaNet-white.png" alt=" " class="pharmaNet-img"
-              *ngIf="colorSchemeService.colorScheme === 'dark'" />
-            <img src="./assets/images/ecosystem/pharmaNet-light.png" alt=" " class="pharmaNet-img"
-              *ngIf="colorSchemeService.colorScheme === 'light'" />
-            <p class="external-label">PharmaNet</p>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/images/ecosystem/pharmaNet-white.png" alt=" " class="pharmaNet-img"
+                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                <img src="./assets/images/ecosystem/pharmaNet-light.png" alt=" " class="pharmaNet-img"
+                  *ngIf="colorSchemeService.colorScheme === 'light'" />
+                <p class="external-label">PharmaNet</p>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -220,14 +235,18 @@
               </g>
             </svg>
           </div>
-          <div class="hospital-img-div" [ngClass]="
+          <div class="hospital-img-div flip-card" [ngClass]="
               tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
             ">
-            <img src="./assets/images/ecosystem/hospital-white.png" alt=" " class="hospital-img"
-              *ngIf="colorSchemeService.colorScheme === 'dark'" />
-            <img src="./assets/images/ecosystem/hospital-light.png" alt=" " class="hospital-img"
-              *ngIf="colorSchemeService.colorScheme === 'light'" />
-            <p class="external-label">Hospital</p>
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./assets/images/ecosystem/hospital-white.png" alt=" " class="hospital-img"
+                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                <img src="./assets/images/ecosystem/hospital-light.png" alt=" " class="hospital-img"
+                  *ngIf="colorSchemeService.colorScheme === 'light'" />
+                <p class="external-label">Hospital</p>
+              </div>
+            </div>
           </div>
         </div>
         <div *ngIf="tablet || desktop || largedesktop" class="d-flex flex-column svg-div-chart-inside">

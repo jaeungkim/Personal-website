@@ -73,11 +73,19 @@ export class EcosystemComponent implements OnInit {
       },
     });
 
-    patientAnimationTimeline.to('.patient-div', { duration: 1, x: '65%' });
-    // patientAnimationTimeline.to('.section-pad', { duration: 5 });
-
-    doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-65%' });
-    // doctorAnimationTimeline.to('.section-pad', { duration: 5 });
+    if (window.innerWidth < 768) {
+      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '50%' });
+      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-50%' });
+    } else if (window.innerWidth < 992) {
+      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '60%' });
+      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-60%' });
+    } else if (window.innerWidth < 1200) {
+      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '70%' });
+      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-70%' });
+    } else {
+      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '75%' });
+      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-75%' });
+    }
 
     chartAnimationTimeline.fromTo(
       '.svg-div-onchart',
