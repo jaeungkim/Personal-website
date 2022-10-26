@@ -71,6 +71,7 @@ PATIENT DOCTOR DIV CSS
     // justify-content: center;
     // align-items: center;
 }
+
 .flip-card-back-img {
     position: relative;
     height: 100%;
@@ -105,39 +106,48 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
 }
 
-.top-div-description-div{
+.top-div-description-div {
     position: absolute;
     height: 100px;
     width: 100%;
-    .top-div-description-text{
+
+    .top-div-description-text {
         position: absolute;
         width: 200px;
         display: flex;
-        align-items: center; /** Y-axis align **/
-        justify-content: center; /** X-axis align **/
+        align-items: center;
+        /** Y-axis align **/
+        justify-content: center;
+        /** X-axis align **/
         text-align: center;
     }
-    :nth-child(1){
+
+    :nth-child(1) {
         top: 33%;
-       left: 30%;
+        left: 30%;
     }
-    :nth-child(2){
+
+    :nth-child(2) {
         top: 66%;
         left: 30%;
     }
-    :nth-child(3){
+
+    :nth-child(3) {
         top: 99%;
         left: 30%;
     }
-    :nth-child(4){
+
+    :nth-child(4) {
         top: 33%;
         right: 30%;
     }
-    :nth-child(5){
+
+    :nth-child(5) {
         top: 66%;
         right: 30%;
     }
-    :nth-child(6){
+
+    :nth-child(6) {
         top: 99%;
         right: 30%;
     }
@@ -252,13 +262,15 @@ PATIENT DOCTOR DIV CSS
     margin-left: auto;
     margin-right: auto;
 }
-.patient-img-hospital{
+
+.patient-img-hospital {
     position: absolute;
     width: 75px;
     height: 75px;
     right: -100px;
     bottom: 50px;
 }
+
 .doctor-img {
     width: 75px;
     width: 75px;
@@ -266,11 +278,13 @@ PATIENT DOCTOR DIV CSS
     margin-left: auto;
     // margin-right: auto;
 }
+
 .doctor-img-hospital {
     width: 75px;
     height: 75px;
     margin-top: 10px;
 }
+
 .clinic-img {
     width: 75px;
     height: 75px;
@@ -288,16 +302,47 @@ PATIENT DOCTOR DIV CSS
 CHART DIV CSS
 =============================================
 */
-.chart-div-text-ontop{
+.chart-div-text-onbackground-div{
+    top: 15%;
     position: absolute;
-    top: -45px;
+    width: 100%;
+    height: 100px;
+    .chart-div-text-onbackground-text{
+        position: absolute;
+    }
+    :nth-child(1){
+        top: 0%;
+        left: 10%;
+    }
+    :nth-child(2){
+        top: 50%;
+        left: 15%;
+    }
+    :nth-child(3){
+        top: 0%;
+        right: 10%;
+    }
+    :nth-child(4){
+        top: 50%;
+        right: 15%;
+    }
 }
-.negative-left{
-    left: -20px;
+.chart-div-text-ontop {
+    position: absolute;
+    top: -50px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
 }
-.negative-right{
-    right: -20px;
+
+.negative-left {
+    left: -25px;
 }
+
+.negative-right {
+    right: -27.5px;
+}
+
 .ring-div {
     background-color: transparent;
     border: 3px solid rgba(192, 192, 255, 1);
@@ -481,38 +526,47 @@ CHART DIV CSS
 APP DIV CSS
 =============================================
 */
-.app-description-div{
+.app-description-div {
     position: absolute;
     height: 100px;
     width: 100%;
-    .top-div-description-text{
+
+    .top-div-description-text {
         position: absolute;
         width: 200px;
         display: flex;
-        align-items: center; /** Y-axis align **/
-        justify-content: center; /** X-axis align **/
+        align-items: center;
+        /** Y-axis align **/
+        justify-content: center;
+        /** X-axis align **/
         text-align: center;
     }
-    :nth-child(1){
-        left: 30%;
+
+    :nth-child(1) {
+        left: 35%;
         top: 25%;
     }
-    :nth-child(2){
-        left: 30%;
+
+    :nth-child(2) {
+        left: 35%;
         top: 75%;
     }
-    :nth-child(3){
-        right: 30%;
+
+    :nth-child(3) {
+        right: 35%;
         top: 25%;
     }
-    :nth-child(4){
-        right: 30%;
+
+    :nth-child(4) {
+        right: 35%;
         top: 75%;
     }
 }
-.app-description-text{
+
+.app-description-text {
     position: absolute;
 }
+
 .app-outer-div {
     box-shadow: var(--box-shadow);
     border: 1.5px solid rgb(192, 192, 255);
@@ -1139,9 +1193,14 @@ DESKTOP
 Animation
 =============================================
 */
-.clinic-visit-gsap, .fadein-gsap, .fadein-gsap2, .fadein-gsap3, .fadein-gsap4{
+.clinic-visit-gsap,
+.fadein-gsap,
+.fadein-gsap2,
+.fadein-gsap3,
+.fadein-gsap4 {
     opacity: 0;
 }
+
 @keyframes fadeIn {
     0% {
         opacity: 0;
