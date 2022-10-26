@@ -34,7 +34,7 @@ PATIENT DOCTOR DIV CSS
 
 .iclinicmd-text-inside {
     position: absolute;
-    color: var(--light-iclinic-blue);
+    color: white;
     z-index: 2;
     font-size: 14px;
     left: 35%;
@@ -252,7 +252,13 @@ PATIENT DOCTOR DIV CSS
     margin-left: auto;
     margin-right: auto;
 }
-
+.patient-img-hospital{
+    position: absolute;
+    width: 75px;
+    height: 75px;
+    right: -100px;
+    bottom: 50px;
+}
 .doctor-img {
     width: 75px;
     width: 75px;
@@ -260,7 +266,11 @@ PATIENT DOCTOR DIV CSS
     margin-left: auto;
     // margin-right: auto;
 }
-
+.doctor-img-hospital {
+    width: 75px;
+    height: 75px;
+    margin-top: 10px;
+}
 .clinic-img {
     width: 75px;
     height: 75px;
@@ -278,7 +288,16 @@ PATIENT DOCTOR DIV CSS
 CHART DIV CSS
 =============================================
 */
-
+.chart-div-text-ontop{
+    position: absolute;
+    top: -45px;
+}
+.negative-left{
+    left: -20px;
+}
+.negative-right{
+    right: -20px;
+}
 .ring-div {
     background-color: transparent;
     border: 3px solid rgba(192, 192, 255, 1);

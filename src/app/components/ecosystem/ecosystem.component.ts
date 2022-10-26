@@ -141,8 +141,6 @@ export class EcosystemComponent implements OnInit {
       duration: 0.5,
     });
 
-
-
     chartAnimationTimeline.fromTo(
       '.svg-div-onchart',
       { opacity: 0, y: '-150%' },
