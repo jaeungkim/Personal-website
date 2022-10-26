@@ -83,7 +83,7 @@ export class EcosystemComponent implements OnInit {
       scrollTrigger: {
         trigger: '.patientDoctor-division',
         start: 'top top',
-        end: '+=75%',
+        end: '+=67.5%',
         scrub: 2,
       },
     });
@@ -110,36 +110,38 @@ export class EcosystemComponent implements OnInit {
     } else {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '75%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-75%' });
-      clinicVisitTextTimeline.to('.clinic-visit-gsap', {
-        duration: 1,
-        opacity: 1,
-      });
-      patientAnimationTimeline.to('.gsap-card', {
-        rotationY: '+=180',
-        duration: timing,
-      });
-      patientAnimationTimeline.to(
-        '.gsap-card-inner',
-        { z: 50, duration: timing / 2, yoyo: true, repeat: 1 },
-        0
-      );
-      patientAnimationTimeline.to('.fadein-gsap', {
-        opacity: 1,
-        duration: 0.5,
-      });
-      patientAnimationTimeline.to('.fadein-gsap2', {
-        opacity: 1,
-        duration: 0.5,
-      });
-      patientAnimationTimeline.to('.fadein-gsap3', {
-        opacity: 1,
-        duration: 0.5,
-      });
-      patientAnimationTimeline.to('.fadein-gsap4', {
-        opacity: 1,
-        duration: 0.5,
-      });
     }
+    clinicVisitTextTimeline.to('.clinic-visit-gsap', {
+      duration: 1,
+      opacity: 1,
+    });
+    patientAnimationTimeline.to('.gsap-card', {
+      rotationY: '+=180',
+      duration: timing,
+    });
+    patientAnimationTimeline.to(
+      '.gsap-card-inner',
+      { z: 50, duration: timing / 2, yoyo: true, repeat: 1 },
+      0
+    );
+    patientAnimationTimeline.to('.fadein-gsap', {
+      opacity: 1,
+      duration: 0.5,
+    });
+    patientAnimationTimeline.to('.fadein-gsap2', {
+      opacity: 1,
+      duration: 0.5,
+    });
+    patientAnimationTimeline.to('.fadein-gsap3', {
+      opacity: 1,
+      duration: 0.5,
+    });
+    patientAnimationTimeline.to('.fadein-gsap4', {
+      opacity: 1,
+      duration: 0.5,
+    });
+
+
 
     chartAnimationTimeline.fromTo(
       '.svg-div-onchart',
