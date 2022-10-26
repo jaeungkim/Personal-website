@@ -48,15 +48,15 @@ export class EcosystemComponent implements OnInit {
   }
   initScrollAnimations(): void {
     //DOCTOR PATIENT ANIMATION
-    gsap.set('.flip-card', {
+    gsap.set('.gsap-card', {
       transformStyle: 'preserve-3d',
       transformPerspective: 1000,
     });
-    gsap.set('.flip-card-inner', {
+    gsap.set('.gsap-card-inner', {
       transformStyle: 'preserve-3d',
       transformOrigin: '50% 50% 0',
     });
-    gsap.set('.flip-card-back', {
+    gsap.set('.gsap-card-back', {
       rotationY: 180,
     });
     const timing = 1;
@@ -116,12 +116,12 @@ export class EcosystemComponent implements OnInit {
         duration: 1,
         opacity: 1,
       });
-      patientAnimationTimeline.to('.flip-card', {
+      patientAnimationTimeline.to('.gsap-card', {
         rotationY: '+=180',
         duration: timing,
       });
       patientAnimationTimeline.to(
-        '.flip-card-inner',
+        '.gsap-card-inner',
         { z: 50, duration: timing / 2, yoyo: true, repeat: 1 },
         0
       );

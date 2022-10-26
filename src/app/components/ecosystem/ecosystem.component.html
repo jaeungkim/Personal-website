@@ -20,15 +20,15 @@
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
-        <div class="flip-card">
-          <div class="flip-card-inner">
+        <div class="flip-card gsap-card">
+          <div class="flip-card-inner gsap-card-inner">
             <div class="flip-card-front clinic-image-div">
               <img src="./assets/images/ecosystem/revised-clinic-light.png" alt=" " class="clinic-img"
                 *ngIf="colorSchemeService.colorScheme === 'light'" />
               <img src="./assets/images/ecosystem/revised-clinic.png" alt=" " class="clinic-img"
                 *ngIf="colorSchemeService.colorScheme === 'dark'" />
             </div>
-            <div class="flip-card-back">
+            <div class="flip-card-back gsap-card-back">
               <p class="iclinicmd-text-inside">iClinic MD</p>
               <img class="flip-card-back-img" src="./assets/images/ecosystem/laptop.png" alt=" " />
             </div>
