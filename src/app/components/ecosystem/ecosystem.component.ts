@@ -61,6 +61,14 @@ export class EcosystemComponent implements OnInit {
     });
     const timing = 1;
 
+    let clinicVisitTextTimeline = gsap.timeline({
+      scrollTrigger: {
+        trigger: '.patientDoctor-division',
+        start: 'top top',
+        end: '+=50%',
+        scrub: 2,
+      },
+    });
     let patientAnimationTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: '.patientDoctor-division',
@@ -104,6 +112,10 @@ export class EcosystemComponent implements OnInit {
     } else {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '75%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-75%' });
+      clinicVisitTextTimeline.to('.clinic-visit-gsap', {
+        duration: 1,
+        opacity: 1,
+      });
       patientAnimationTimeline.to('.flip-card', {
         rotationY: '+=180',
         duration: timing,
