@@ -25,8 +25,12 @@ export class EcosystemComponent implements OnInit {
   desktop: boolean = false;
   largedesktop: boolean = false;
 
-  constructor(public colorSchemeService: ColorSchemeService) {
+  constructor(
+    public colorSchemeService: ColorSchemeService,
+    private el: ElementRef
+  ) {
     this.colorSchemeService.load();
+    // this.q = gsap.utils.selector(el);
   }
 
   ngOnInit(): void {
@@ -44,12 +48,27 @@ export class EcosystemComponent implements OnInit {
   }
   initScrollAnimations(): void {
     //DOCTOR PATIENT ANIMATION
+    gsap.set('.flip-card', {
+      transformStyle: 'preserve-3d',
+      transformPerspective: 1000,
+    });
+    gsap.set('.flip-card-inner', {
+      transformStyle: 'preserve-3d',
+      transformOrigin: '50% 50% 0',
+    });
+    gsap.set('.flip-card-back', {
+      rotationY: 180,
+    });
+    const timing = 1;
+
     let patientAnimationTimeline = gsap.timeline({
       scrollTrigger: {
         trigger: '.patientDoctor-division',
         start: 'top top',
         end: '+=200%',
         scrub: 2,
+        markers: true,
+        pin: true,
       },
     });
 
@@ -57,9 +76,9 @@ export class EcosystemComponent implements OnInit {
       scrollTrigger: {
         trigger: '.patientDoctor-division',
         start: 'top top',
-        end: '+=200%',
+        end: '+=75%',
         scrub: 2,
-        pin: true,
+        markers: true,
       },
     });
 
@@ -85,6 +104,31 @@ export class EcosystemComponent implements OnInit {
     } else {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '75%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-75%' });
+      patientAnimationTimeline.to('.flip-card', {
+        rotationY: '+=180',
+        duration: timing,
+      });
+      patientAnimationTimeline.to(
+        '.flip-card-inner',
+        { z: 50, duration: timing / 2, yoyo: true, repeat: 1 },
+        0
+      );
+      patientAnimationTimeline.to('.fadein-gsap', {
+        opacity: 1,
+        duration: 0.5,
+      });
+      patientAnimationTimeline.to('.fadein-gsap2', {
+        opacity: 1,
+        duration: 0.5,
+      });
+      patientAnimationTimeline.to('.fadein-gsap3', {
+        opacity: 1,
+        duration: 0.5,
+      });
+      patientAnimationTimeline.to('.fadein-gsap4', {
+        opacity: 1,
+        duration: 0.5,
+      });
     }
 
     chartAnimationTimeline.fromTo(
@@ -112,15 +156,15 @@ export class EcosystemComponent implements OnInit {
       { opacity: 0, y: '100%' },
       { opacity: 1, y: '0%', duration: 5 }
     );
-    chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
+    // chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
     //END DOCTOR PATIENT ANIMATION
 
-    gsap.to('.dotted-path', {
-      strokeDashoffset: -390,
-      repeat: -1,
-      ease: 'none',
-      duration: 3,
-    });
+    // gsap.to('.dotted-path', {
+    //   strokeDashoffset: -390,
+    //   repeat: -1,
+    //   ease: 'none',
+    //   duration: 3,
+    // });
   }
 
   /*

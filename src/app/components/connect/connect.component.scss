@@ -71,7 +71,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: lefttoright 2s linear forwards;
+    animation: fadeIn 2s linear forwards;
     /* margin-left: -100%; */
     margin-left: auto;
     margin-right: auto;
@@ -88,7 +88,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: righttoleft 2s linear 1s forwards;
+    animation: fadeIn 2s linear 1s forwards;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
@@ -101,7 +101,7 @@
     width: 75%;
     border-radius: 10px;
     padding: 25px;
-    animation: lefttoright 2s linear 2s forwards;
+    animation: fadeIn 2s linear 2s forwards;
     margin-left: auto;
     margin-right: auto;
     box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
@@ -369,7 +369,14 @@ DESKTOP
     }
 }
 
-@keyframes lefttoright {
+
+/*
+=============================================
+ANIMATION
+=============================================
+*/
+
+@keyframes fadeIn {
     0% {
         opacity: 0;
         // transform: translate3d(-2000px, 0, 0);
@@ -379,21 +386,3 @@ DESKTOP
         // transform: translate(0,0);
     }
 }
-
-/*
-=============================================
-ANIMATION
-=============================================
-*/
-
-@keyframes righttoleft {
-    0% {
-        opacity: 0;
-        // transform: translate3d(2000px, 0, 0);
-    }
-    100% {
-        opacity: 1;
-        // transform: translate(0,0);
-    }
-}
-

@@ -1,6 +1,8 @@
 import * as THREE from 'three';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
+import { DATAPOINTS } from './datapoints';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -13,8 +15,9 @@ export class HomeComponent implements OnInit {
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   hideVideoAfterPlay = false;
-  aiclinictextappear = false;
+  aiclinictextappear = true;
   displayAfterVideo = false;
+  datapoints = DATAPOINTS;
   private points: any[] = [];
   private colors: any[] = [];
   private sizes: any[] = [];
@@ -67,20 +70,20 @@ export class HomeComponent implements OnInit {
   `;
   constructor(private router: Router) {}
   public ngOnInit(): void {
-    setTimeout(() => {
-      this.hideVideoAfterPlay = true;
-    }, 13000);
+    // setTimeout(() => {
+    //   this.hideVideoAfterPlay = true;
+    // }, 13000);
 
-    setTimeout(() => {
-      if (this.router.url === '/') {
+    // setTimeout(() => {
+    //   if (this.router.url === '/') {
         this.createScene();
         this.render();
-      }
-    }, 10000);
+    //   }
+    // }, 10000);
 
-    setTimeout(() => {
-      this.aiclinictextappear = true;
-    }, 9750);
+    // setTimeout(() => {
+    //   this.aiclinictextappear = true;
+    // }, 9750);
   }
 
   public createScene(): void {

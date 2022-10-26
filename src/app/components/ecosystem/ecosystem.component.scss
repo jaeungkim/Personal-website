@@ -9,6 +9,43 @@ GENERAL CSS
 PATIENT DOCTOR DIV CSS
 =============================================
 */
+.ecosystem-top-content-div {
+    :nth-child(2) {
+        animation: fadeIn 2s linear forwards;
+    }
+
+    :nth-child(3) {
+        animation: fadeIn 2s linear 1s forwards;
+    }
+}
+
+.ecosystem-top-content-title {
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 36px;
+}
+
+.ecosystem-top-content-subtitle {
+    opacity: 0;
+    font-size: 26px;
+    text-align: center;
+    animation: fadeIn 2s forwards;
+}
+
+.iclinicmd-text-inside {
+    position: absolute;
+    color: white;
+    z-index: 2;
+    font-size: 14px;
+    left: 35%;
+    top: 32.5%;
+}
+
+.care-starts-with {
+    margin-top: 1.5%;
+    text-align: center;
+}
+
 .patientDoctor-division {
     height: 100vh;
 }
@@ -25,13 +62,18 @@ PATIENT DOCTOR DIV CSS
 .clinic-image-div {
     display: flex;
     flex-direction: column;
-    box-shadow: var(--box-shadow);
-    padding: 15px;
-    border-radius: 10px;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-    align-items: center;
+    // box-shadow: var(--box-shadow);
+    // padding: 15px;
+    // border-radius: 10px;
+    // margin-left: auto;
+    // margin-right: auto;
+    // justify-content: center;
+    // align-items: center;
+}
+.flip-card-back-img {
+    position: relative;
+    height: 100%;
+    // width: 100%;
 }
 
 .patientchart-outer-img-div {
@@ -62,10 +104,53 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
 }
 
-.patientchart-div {}
+.top-div-description-div{
+    position: absolute;
+    height: 100px;
+    width: 100%;
+    .top-div-description-text{
+        position: absolute;
+        width: 200px;
+        display: flex;
+        align-items: center; /** Y-axis align **/
+        justify-content: center; /** X-axis align **/
+        text-align: center;
+    }
+    :nth-child(1){
+        top: 33%;
+       left: 30%;
+    }
+    :nth-child(2){
+        top: 66%;
+        left: 30%;
+    }
+    :nth-child(3){
+        top: 99%;
+        left: 30%;
+    }
+    :nth-child(4){
+        top: 33%;
+        right: 30%;
+    }
+    :nth-child(5){
+        top: 66%;
+        right: 30%;
+    }
+    :nth-child(6){
+        top: 99%;
+        right: 30%;
+    }
+}
 
 .patient-div {
     width: 35%;
+}
+
+.patient-text {
+    font-size: 16px;
+    position: absolute;
+    top: 50%;
+    left: -20%;
 }
 
 .doctor-div {
@@ -92,8 +177,8 @@ PATIENT DOCTOR DIV CSS
 }
 
 .svg-div {
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
     position: relative;
     width: 100%;
 }
@@ -376,6 +461,36 @@ CHART DIV CSS
 APP DIV CSS
 =============================================
 */
+.app-description-div{
+    position: relative;
+    :nth-child(1){
+        left: 30%;
+        top: 57.5%;
+    }
+    :nth-child(2){
+        left: 30%;
+        top: 60%;
+    }
+    :nth-child(3){
+        left: 30%;
+        top: 62.5%;
+    }
+    :nth-child(4){
+        right: 30%;
+        top: 57.5%;
+    }
+    :nth-child(5){
+        right: 30%;
+        top: 60%;
+    }
+    :nth-child(6){
+        right: 30%;
+        top: 62.5%;
+    }
+}
+.app-description-text{
+    position: absolute;
+}
 .app-outer-div {
     box-shadow: var(--box-shadow);
     border: 1.5px solid rgb(192, 192, 255);
@@ -801,7 +916,7 @@ SMALL DESKTOP
     }
 
     .patientDoctor-first-div {
-        padding-top: 16%;
+        padding-top: 5%;
     }
 
     .chart-div-eHealthViewer {
@@ -994,5 +1109,23 @@ DESKTOP
         height: 150px;
         cursor: pointer;
         perspective: 1000px;
+    }
+}
+
+/*
+=============================================
+Animation
+=============================================
+*/
+.fadein-gsap, .fadein-gsap2, .fadein-gsap3, .fadein-gsap4{
+    opacity: 0;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

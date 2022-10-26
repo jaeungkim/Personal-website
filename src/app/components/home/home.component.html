@@ -6,84 +6,14 @@
   <p class="title-aiclinic">aiClinic</p>
   <p class="subtitle-aiclinic">Data Driven Healthcare</p>
 </div>
-<video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
+<!-- <video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
   id="myVideo">
   <source src="https://storage.googleapis.com/iclinic-website-aiclinicca/aicliniccaVideoBackground.mp4" type="video/mp4" />
-</video>
+</video> -->
 
 <canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
 
 <!-- TEST -->
-<div *ngIf="hideVideoAfterPlay">
-  <div class="bgtext">
-    <p>STEMI</p>
-  </div>
-
-  <div class="bgtext2">
-    <p>Echocardiogram</p>
-  </div>
-
-  <div class="bgtext3">
-    <p>CHADS2</p>
-  </div>
-
-  <div class="bgtext4">
-    <p>HASBLED</p>
-  </div>
-
-  <div class="bgtext5">
-    <p>Altace</p>
-  </div>
-
-  <!-- <div class="bgtext6">
-    <p>Lancora</p>
-  </div> -->
-
-  <div class="bgtext7">
-    <p>BNP</p>
-  </div>
-  
-  <!-- <div class="bgtext8">
-    <p>Lixiana</p>
-  </div> -->
-
-  <div class="bgtext9">
-    <p>CCS-SAF Score</p>
-  </div>
-  <div class="bgtext10">
-    <p>Creatinine</p>
-  </div>
-  <div class="bgtext11">
-    <p>QTC Interval</p>
-  </div>
-  <div class="bgtext12">
-    <p>Xarelto</p>
-  </div>
-  <div class="bgtext13">
-    <p>NYHA I</p>
-  </div>
-  <div class="bgtext14">
-    <p>INR</p>
-  </div>
-  <div class="bgtext15">
-    <p>LVEF %</p>
-  </div>
-  <div class="bgtext16 insideglobe">
-    <p>Aortic Stenosis Severity</p>
-  </div>
-  <div class="bgtext17 insideglobe">
-    <p>HbA1c</p>
-  </div>
-
-  <div class="bgtext18 insideglobe">
-    <p>NT-proBNP</p>
-  </div>
-
-  <div class="bgtext19 insideglobe">
-    <p>Entresto</p>
-  </div>
-
-  <div class="bgtext20 insideglobe">
-    <p>Eliquis</p>
-  </div>
+<div class="datapoints-div">
+  <p *ngFor="let datapoint of datapoints">{{datapoint.name}}</p>
 </div>
