@@ -75,7 +75,6 @@ export class EcosystemComponent implements OnInit {
         start: 'top top',
         end: '+=200%',
         scrub: 2,
-        markers: true,
         pin: true,
       },
     });
@@ -86,7 +85,6 @@ export class EcosystemComponent implements OnInit {
         start: 'top top',
         end: '+=75%',
         scrub: 2,
-        markers: true,
       },
     });
 
