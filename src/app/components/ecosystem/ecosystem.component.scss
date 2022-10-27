@@ -817,18 +817,6 @@ Mobile
         height: 125px;
     }
 
-    .app-div {
-        padding: 25px;
-        width: 125px;
-        height: 125px;
-    }
-
-    .app-outer-div {
-        padding: 25px;
-        width: 145px;
-        height: 145px;
-    }
-
     .patientDoctor-first-div {
         padding-top: 20%;
     }
@@ -1111,6 +1099,27 @@ TABLET
         height: 75px;
     }
 
+    .patientchart-outer-img-div {
+        width: 125px;
+        height: 125px;
+    }
+
+    .patientchart-img-div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .app-div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .app-outer-div {
+        padding: 25px;
+        width: 125px;
+        height: 125px;
+    }
+
     .gsap-card {
         width: 125px;
         height: 125px;
@@ -1310,9 +1319,30 @@ SMALL DESKTOP
         height: 75px;
     }
 
-    .gsap-card {
+    .patientchart-outer-img-div {
+        width: 150px;
+        height: 150px;
+    }
+
+    .patientchart-img-div {
         width: 125px;
         height: 125px;
+    }
+
+    .app-div {
+        width: 125px;
+        height: 125px;
+    }
+
+    .app-outer-div {
+        padding: 25px;
+        width: 150px;
+        height: 150px;
+    }
+
+    .gsap-card {
+        width: 150px;
+        height: 150px;
     }
 
     .gsap-card-front,
@@ -1445,13 +1475,13 @@ DESKTOP
     }
 
     .clinic-img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
 
     .patientchart-img {
-        width: 90px;
-        height: 90px;
+        width: 100px;
+        height: 100px;
     }
 
     .teleplan-img {
@@ -1492,8 +1522,6 @@ DESKTOP
     .flip-card {
         width: 200px;
         height: 150px;
-        cursor: pointer;
-        perspective: 1000px;
     }
 
     .arrow-right-svg {
@@ -1505,23 +1533,13 @@ DESKTOP
     }
 
     .gsap-card {
-        width: 125px;
-        height: 125px;
+        width: 150px;
+        height: 150px;
     }
 
     .gsap-card-front,
     .gsap-card-back {
         padding: 15px;
-    }
-
-    .flip-card-front,
-    .flip-card-back {
-        padding: 15px;
-    }
-
-    .flip-card {
-        width: 125px;
-        height: 125px;
     }
 
     .top-div-description-div {
