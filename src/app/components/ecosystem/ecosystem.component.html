@@ -15,26 +15,26 @@
           <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img"
             *ngIf="colorSchemeService.colorScheme === 'dark'" />
         </div>
-        <svg class="arrow-left-svg" viewBox="0 0 30 20" width="45px" height="30px" preserveAspectRatio="none">
+        <svg *ngIf="!mobile" class="arrow-left-svg" viewBox="0 0 30 20" width="45px" height="30px" preserveAspectRatio="none">
           <g transform="translate(15 10) rotate(270)" fill="var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
         </svg>
-        <div class="flip-card gsap-card">
-          <div class="flip-card-inner gsap-card-inner">
-            <div class="flip-card-front clinic-image-div">
+        <div class="gsap-card">
+          <div class="gsap-card-inner">
+            <div class="gsap-card-front clinic-image-div">
               <img src="./assets/images/ecosystem/revised-clinic-light.png" alt=" " class="clinic-img"
                 *ngIf="colorSchemeService.colorScheme === 'light'" />
               <img src="./assets/images/ecosystem/revised-clinic.png" alt=" " class="clinic-img"
                 *ngIf="colorSchemeService.colorScheme === 'dark'" />
             </div>
-            <div class="flip-card-back gsap-card-back">
+            <div class="gsap-card-back">
               <p class="iclinicmd-text-inside">iClinic MD</p>
               <img class="flip-card-back-img" src="./assets/images/ecosystem/iclinic-laptop.png" alt=" " />
             </div>
           </div>
         </div>
-        <svg class="arrow-right-svg" viewBox="0 0 30 20" width="45px" height="30px" preserveAspectRatio="none">
+        <svg *ngIf="!mobile" class="arrow-right-svg" viewBox="0 0 30 20" width="45px" height="30px" preserveAspectRatio="none">
           <g transform="translate(15 10) rotate(90)" fill="var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
@@ -128,7 +128,7 @@
           <p class="chart-div-text-onbackground-text2">Interoperability</p>
         </div>
         <div class="chart-div-teleplan">
-          <p class="chart-div-text-ontop negative-left">Provincial Data Repository</p>
+          <p class="chart-div-text-ontop negative-left" *ngIf="largedesktop">Provincial Data Repository</p>
           <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
@@ -170,7 +170,7 @@
         </div>
 
         <div class="chart-div-eHealthViewer">
-          <p class="chart-div-text-ontop negative-left">Provincial Data Repository</p>
+          <p class="chart-div-text-ontop negative-left" *ngIf="largedesktop">Provincial Data Repository</p>
           <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
@@ -211,7 +211,7 @@
         </div>
 
         <div class="chart-div-pharmanet">
-          <p class="chart-div-text-ontop negative-right">Provincial Data Repository</p>
+          <p class="chart-div-text-ontop negative-right" *ngIf="largedesktop">Provincial Data Repository</p>
           <div class="chart-arrow-div">
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
@@ -249,8 +249,8 @@
         </div>
 
         <div class="chart-div-hospital">
-          <p class="chart-div-text-ontop negative-right">Provincial Data Repository</p>
-          <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img-hospital" />
+          <p class="chart-div-text-ontop negative-right" *ngIf="largedesktop">Provincial Data Repository</p>
+          <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img-hospital" *ngIf="largedesktop"/>
           <div class="chart-arrow-div">
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear rotate-hospital"
               preserveAspectRatio="none">

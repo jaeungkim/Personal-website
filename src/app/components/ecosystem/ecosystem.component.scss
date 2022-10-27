@@ -37,10 +37,11 @@ PATIENT DOCTOR DIV CSS
     height: 100%;
     left: 28%;
     top: 30%;
-    color: black;
+    color: white;
     z-index: 2;
     font-size: 10px;
 }
+
 .top-div-description-div {
     position: absolute;
     height: 100px;
@@ -55,42 +56,45 @@ PATIENT DOCTOR DIV CSS
         justify-content: center;
         /** X-axis align **/
         text-align: center;
+        font-size: 12px;
     }
 
     :nth-child(1) {
         top: 33%;
-        left: 0%;
+        left: -10%;
     }
 
     :nth-child(2) {
         top: 66%;
-        left: 0%;
+        left: -10%;
     }
 
     :nth-child(3) {
         top: 99%;
-        left: 0%;
+        left: -10%;
     }
 
     :nth-child(4) {
         top: 33%;
-        right: 0%;
+        right: -10%;
     }
 
     :nth-child(5) {
         top: 66%;
-        right: 0%;
+        right: -10%;
     }
 
     :nth-child(6) {
         top: 99%;
-        right: 0%;
+        right: -10%;
     }
 }
+
 .care-starts-with {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
     text-align: center;
+    font-size: 14px;
 }
 
 .patientDoctor-division {
@@ -121,15 +125,15 @@ PATIENT DOCTOR DIV CSS
 .flip-card-back-img {
     position: relative;
     height: 100%;
-    // width: 100%;
+    width: 100%;
 }
 
 .patientchart-outer-img-div {
     box-shadow: var(--box-shadow);
     border: 1.5px solid rgb(192 192 255);
     padding: 15px;
-    width: 125px;
-    height: 125px;
+    width: 100px;
+    height: 100px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -142,8 +146,8 @@ PATIENT DOCTOR DIV CSS
     box-shadow: 0px 0px 12px 0px rgb(192 192 255);
     border: 3px solid rgb(192 192 255);
     padding: 15px;
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
@@ -157,10 +161,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patient-text {
-    font-size: 16px;
-    position: absolute;
-    top: 50%;
-    left: -50%;
+    font-size: 12px;
 }
 
 .doctor-div {
@@ -178,12 +179,12 @@ PATIENT DOCTOR DIV CSS
 
 .arrow-left-svg {
     position: absolute;
-    left: 32.5%;
+    left: 27.5%;
 }
 
 .arrow-right-svg {
     position: absolute;
-    right: 32.5%;
+    right: 27.5%;
 }
 
 .svg-div {
@@ -275,7 +276,6 @@ PATIENT DOCTOR DIV CSS
     width: 75px;
     display: flex;
     margin-left: auto;
-    // margin-right: auto;
 }
 
 .doctor-img-hospital {
@@ -306,10 +306,12 @@ CHART DIV CSS
     position: absolute;
     width: 100%;
     height: 100px;
+
     .chart-div-text-onbackground-text {
         position: absolute;
         opacity: 0;
     }
+
     .chart-div-text-onbackground-text2 {
         position: absolute;
         opacity: 0;
@@ -404,7 +406,7 @@ CHART DIV CSS
     border-radius: 50%;
     z-index: 2;
     overflow: visible !important;
-    width: 80%;
+    width: 90%;
 }
 
 #donutchart {
@@ -485,6 +487,37 @@ CHART DIV CSS
     padding-top: 8px;
 }
 
+.gsap-card {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    perspective: 1000px;
+}
+
+.gsap-card-inner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.gsap-card-front,
+.gsap-card-back {
+    padding: 10px;
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
 .flip-card {
     width: 100px;
     height: 100px;
@@ -516,8 +549,6 @@ CHART DIV CSS
 .flip-card-back {
     padding: 10px;
     position: absolute;
-    width: 100%;
-    height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -541,7 +572,7 @@ APP DIV CSS
     height: 100px;
     width: 100%;
 
-    .top-div-description-text {
+    .app-div-description-text {
         position: absolute;
         width: 200px;
         display: flex;
@@ -735,7 +766,7 @@ ARROW CSS
     display: flex;
     width: 100%;
     transform: rotate(90deg);
-    margin-bottom: 100px;
+    margin-bottom: 75px;
     // height: 100%;
 }
 
@@ -751,11 +782,11 @@ Mobile
     }
 
     .arrow-left-svg {
-        left: 32.5%;
+        left: 35%;
     }
 
     .arrow-right-svg {
-        right: 32.5%;
+        right: 35%;
     }
 
     .ecosystem-chart {
@@ -772,14 +803,14 @@ Mobile
 
     .patientchart-img-div {
         padding: 25px;
-        width: 125px;
-        height: 125px;
+        width: 100px;
+        height: 100px;
     }
 
     .patientchart-outer-img-div {
         padding: 25px;
-        width: 145px;
-        height: 145px;
+        width: 125px;
+        height: 125px;
     }
 
     .app-div {
@@ -794,72 +825,97 @@ Mobile
         height: 145px;
     }
 
+    .patientDoctor-first-div {
+        padding-top: 20%;
+    }
+
+    .gsap-card {
+        width: 125px;
+        height: 125px;
+    }
+
+    .gsap-card-front,
+    .gsap-card-back {
+        padding: 15px;
+    }
+
     .flip-card-front,
     .flip-card-back {
         padding: 15px;
     }
 
     .flip-card {
-        width: 100px;
-        height: 100px;
-        cursor: pointer;
-        perspective: 1000px;
+        width: 125px;
+        height: 125px;
     }
 
     .top-div-description-div {
         position: absolute;
         height: 100px;
         width: 100%;
-    
+
         .top-div-description-text {
             position: absolute;
             width: 200px;
             display: flex;
             align-items: center;
-            /** Y-axis align **/
             justify-content: center;
-            /** X-axis align **/
             text-align: center;
+            font-size: 14px;
         }
-    
+
         :nth-child(1) {
             top: 33%;
-            left: 30%;
+            left: 0%;
         }
-    
+
         :nth-child(2) {
             top: 66%;
-            left: 30%;
+            left: 0%;
         }
-    
+
         :nth-child(3) {
             top: 99%;
-            left: 30%;
+            left: 0%;
         }
-    
+
         :nth-child(4) {
             top: 33%;
-            right: 30%;
+            right: 0%;
         }
-    
+
         :nth-child(5) {
             top: 66%;
-            right: 30%;
+            right: 0%;
         }
-    
+
         :nth-child(6) {
             top: 99%;
-            right: 30%;
+            right: 0%;
         }
     }
 
     .patient-text {
         font-size: 16px;
-        position: absolute;
-        top: 50%;
-        left: -20%;
     }
 
+    .care-starts-with {
+        font-size: 16px;
+    }
+
+    .ecosystem-top-content-title {
+        font-size: 36px;
+    }
+
+    .ecosystem-top-content-subtitle {
+        font-size: 24px;
+    }
+
+    .iclinicmd-text-inside {
+        left: 32.5%;
+        top: 30%;
+        font-size: 10px;
+    }
 }
 
 /*
@@ -873,11 +929,11 @@ TABLET
     }
 
     .arrow-left-svg {
-        left: 35%;
+        left: 36.5%;
     }
 
     .arrow-right-svg {
-        right: 35%;
+        right: 36.5%;
     }
 
     .chart-arrow-div {
@@ -897,7 +953,7 @@ TABLET
     }
 
     .patientDoctor-first-div {
-        padding-top: 30%;
+        padding-top: 15%;
     }
 
     .chart-parts-div {
@@ -972,8 +1028,8 @@ TABLET
     }
 
     .clinic-img {
-        width: 90px;
-        height: 90px;
+        width: 75px;
+        height: 75px;
     }
 
     .patientchart-img {
@@ -1031,16 +1087,92 @@ TABLET
         height: 50px;
     }
 
+    .gsap-card {
+        width: 125px;
+        height: 125px;
+    }
+
+    .gsap-card-front,
+    .gsap-card-back {
+        padding: 15px;
+    }
+
     .flip-card-front,
     .flip-card-back {
-        padding: 20px;
+        padding: 15px;
     }
 
     .flip-card {
-        width: 150px;
+        width: 125px;
         height: 125px;
-        cursor: pointer;
-        perspective: 1000px;
+    }
+
+    .top-div-description-div {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+
+        .top-div-description-text {
+            position: absolute;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        :nth-child(1) {
+            top: 33%;
+            left: 0%;
+        }
+
+        :nth-child(2) {
+            top: 66%;
+            left: 0%;
+        }
+
+        :nth-child(3) {
+            top: 99%;
+            left: 0%;
+        }
+
+        :nth-child(4) {
+            top: 33%;
+            right: 0%;
+        }
+
+        :nth-child(5) {
+            top: 66%;
+            right: 0%;
+        }
+
+        :nth-child(6) {
+            top: 99%;
+            right: 0%;
+        }
+    }
+
+    .patient-text {
+        font-size: 16px;
+    }
+
+    .care-starts-with {
+        font-size: 16px;
+    }
+
+    .ecosystem-top-content-title {
+        font-size: 40px;
+    }
+
+    .ecosystem-top-content-subtitle {
+        font-size: 26px;
+    }
+
+    .iclinicmd-text-inside {
+        left: 32.5%;
+        top: 30%;
+        font-size: 10px;
     }
 }
 
@@ -1057,7 +1189,7 @@ SMALL DESKTOP
     }
 
     .patientDoctor-first-div {
-        padding-top: 5%;
+        padding-top: 15%;
     }
 
     .chart-div-eHealthViewer {
@@ -1084,11 +1216,11 @@ SMALL DESKTOP
     }
 
     .arrow-left-svg {
-        left: 37.5%;
+        left: 40%;
     }
 
     .arrow-right-svg {
-        right: 37.5%;
+        right: 40%;
     }
 
     .external-label {
@@ -1115,8 +1247,8 @@ SMALL DESKTOP
     }
 
     .clinic-img {
-        width: 105px;
-        height: 105px;
+        width: 90px;
+        height: 90px;
     }
 
     .patientchart-img {
@@ -1152,6 +1284,94 @@ SMALL DESKTOP
     .hospital-img {
         width: 50px;
         height: 50px;
+    }
+
+    .gsap-card {
+        width: 125px;
+        height: 125px;
+    }
+
+    .gsap-card-front,
+    .gsap-card-back {
+        padding: 15px;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        padding: 15px;
+    }
+
+    .flip-card {
+        width: 125px;
+        height: 125px;
+    }
+
+    .top-div-description-div {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+
+        .top-div-description-text {
+            position: absolute;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        :nth-child(1) {
+            top: 33%;
+            left: 25%;
+        }
+
+        :nth-child(2) {
+            top: 66%;
+            left: 25%;
+        }
+
+        :nth-child(3) {
+            top: 99%;
+            left: 25%;
+        }
+
+        :nth-child(4) {
+            top: 33%;
+            right: 25%;
+        }
+
+        :nth-child(5) {
+            top: 66%;
+            right: 25%;
+        }
+
+        :nth-child(6) {
+            top: 99%;
+            right: 25%;
+        }
+    }
+
+    .patient-text {
+        font-size: 16px;
+    }
+
+    .care-starts-with {
+        font-size: 16px;
+    }
+
+    .ecosystem-top-content-title {
+        font-size: 36px;
+    }
+
+    .ecosystem-top-content-subtitle {
+        font-size: 26px;
+    }
+
+    .iclinicmd-text-inside {
+        left: 29%;
+        top: 30%;
+        font-size: 12px;
     }
 }
 
@@ -1201,13 +1421,13 @@ DESKTOP
     }
 
     .clinic-img {
-        width: 125px;
-        height: 125px;
+        width: 90px;
+        height: 90px;
     }
 
     .patientchart-img {
-        width: 100px;
-        height: 100px;
+        width: 90px;
+        height: 90px;
     }
 
     .teleplan-img {
@@ -1250,6 +1470,102 @@ DESKTOP
         height: 150px;
         cursor: pointer;
         perspective: 1000px;
+    }
+
+    .arrow-right-svg {
+        right: 41%;
+    }
+
+    .arrow-left-svg {
+        left: 41%;
+    }
+
+    .gsap-card {
+        width: 125px;
+        height: 125px;
+    }
+
+    .gsap-card-front,
+    .gsap-card-back {
+        padding: 15px;
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        padding: 15px;
+    }
+
+    .flip-card {
+        width: 125px;
+        height: 125px;
+    }
+
+    .top-div-description-div {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+
+        .top-div-description-text {
+            position: absolute;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        :nth-child(1) {
+            top: 33%;
+            left: 25%;
+        }
+
+        :nth-child(2) {
+            top: 66%;
+            left: 25%;
+        }
+
+        :nth-child(3) {
+            top: 99%;
+            left: 25%;
+        }
+
+        :nth-child(4) {
+            top: 33%;
+            right: 25%;
+        }
+
+        :nth-child(5) {
+            top: 66%;
+            right: 25%;
+        }
+
+        :nth-child(6) {
+            top: 99%;
+            right: 25%;
+        }
+    }
+
+    .patient-text {
+        font-size: 16px;
+    }
+
+    .care-starts-with {
+        font-size: 16px;
+    }
+
+    .ecosystem-top-content-title {
+        font-size: 40px;
+    }
+
+    .ecosystem-top-content-subtitle {
+        font-size: 26px;
+    }
+
+    .iclinicmd-text-inside {
+        left: 29%;
+        top: 30%;
+        font-size: 12px;
     }
 }
 
