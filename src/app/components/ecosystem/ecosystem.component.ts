@@ -98,7 +98,6 @@ export class EcosystemComponent implements OnInit {
       },
     });
 
-  
     if (window.innerWidth < 576) {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '40%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-35%' });
@@ -107,7 +106,7 @@ export class EcosystemComponent implements OnInit {
         { opacity: 0, x: '-150%', y: '275%' },
         { opacity: 1, x: '-50%', y: '275%', duration: 5 }
       );
-    } else if (window.innerWidth < 768){
+    } else if (window.innerWidth < 768) {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '40%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-35%' });
       clinicVisitTextTimeline.fromTo(
