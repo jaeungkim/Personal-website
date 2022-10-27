@@ -70,20 +70,20 @@ export class HomeComponent implements OnInit {
   `;
   constructor(private router: Router) {}
   public ngOnInit(): void {
-    // setTimeout(() => {
-    //   this.hideVideoAfterPlay = true;
-    // }, 13000);
+    setTimeout(() => {
+      this.hideVideoAfterPlay = true;
+    }, 13000);
 
-    // setTimeout(() => {
-    //   if (this.router.url === '/') {
+    setTimeout(() => {
+      if (this.router.url === '/') {
         this.createScene();
         this.render();
-    //   }
-    // }, 10000);
+      }
+    }, 10000);
 
-    // setTimeout(() => {
-    //   this.aiclinictextappear = true;
-    // }, 9750);
+    setTimeout(() => {
+      this.aiclinictextappear = true;
+    }, 9750);
   }
 
   public createScene(): void {

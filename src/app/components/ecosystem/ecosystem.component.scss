@@ -20,27 +20,73 @@ PATIENT DOCTOR DIV CSS
 }
 
 .ecosystem-top-content-title {
-    font-size: 40px;
+    font-size: 36px;
     text-align: center;
     margin-bottom: 36px;
 }
 
 .ecosystem-top-content-subtitle {
     opacity: 0;
-    font-size: 26px;
+    font-size: 18px;
     text-align: center;
     animation: fadeIn 2s forwards;
 }
 
 .iclinicmd-text-inside {
     position: absolute;
-    color: white;
+    height: 100%;
+    left: 28%;
+    top: 30%;
+    color: black;
     z-index: 2;
-    font-size: 14px;
-    left: 35%;
-    top: 32.5%;
+    font-size: 10px;
 }
+.top-div-description-div {
+    position: absolute;
+    height: 100px;
+    width: 100%;
 
+    .top-div-description-text {
+        position: absolute;
+        width: 200px;
+        display: flex;
+        align-items: center;
+        /** Y-axis align **/
+        justify-content: center;
+        /** X-axis align **/
+        text-align: center;
+    }
+
+    :nth-child(1) {
+        top: 33%;
+        left: 0%;
+    }
+
+    :nth-child(2) {
+        top: 66%;
+        left: 0%;
+    }
+
+    :nth-child(3) {
+        top: 99%;
+        left: 0%;
+    }
+
+    :nth-child(4) {
+        top: 33%;
+        right: 0%;
+    }
+
+    :nth-child(5) {
+        top: 66%;
+        right: 0%;
+    }
+
+    :nth-child(6) {
+        top: 99%;
+        right: 0%;
+    }
+}
 .care-starts-with {
     margin-top: 1.5%;
     margin-bottom: 1.5%;
@@ -57,7 +103,7 @@ PATIENT DOCTOR DIV CSS
     width: 100%;
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 45%;
+    padding-top: 25%;
 }
 
 .clinic-image-div {
@@ -106,53 +152,6 @@ PATIENT DOCTOR DIV CSS
     align-items: center;
 }
 
-.top-div-description-div {
-    position: absolute;
-    height: 100px;
-    width: 100%;
-
-    .top-div-description-text {
-        position: absolute;
-        width: 200px;
-        display: flex;
-        align-items: center;
-        /** Y-axis align **/
-        justify-content: center;
-        /** X-axis align **/
-        text-align: center;
-    }
-
-    :nth-child(1) {
-        top: 33%;
-        left: 30%;
-    }
-
-    :nth-child(2) {
-        top: 66%;
-        left: 30%;
-    }
-
-    :nth-child(3) {
-        top: 99%;
-        left: 30%;
-    }
-
-    :nth-child(4) {
-        top: 33%;
-        right: 30%;
-    }
-
-    :nth-child(5) {
-        top: 66%;
-        right: 30%;
-    }
-
-    :nth-child(6) {
-        top: 99%;
-        right: 30%;
-    }
-}
-
 .patient-div {
     width: 35%;
 }
@@ -161,7 +160,7 @@ PATIENT DOCTOR DIV CSS
     font-size: 16px;
     position: absolute;
     top: 50%;
-    left: -20%;
+    left: -50%;
 }
 
 .doctor-div {
@@ -179,12 +178,12 @@ PATIENT DOCTOR DIV CSS
 
 .arrow-left-svg {
     position: absolute;
-    left: 30%;
+    left: 32.5%;
 }
 
 .arrow-right-svg {
     position: absolute;
-    right: 30%;
+    right: 32.5%;
 }
 
 .svg-div {
@@ -302,31 +301,42 @@ PATIENT DOCTOR DIV CSS
 CHART DIV CSS
 =============================================
 */
-.chart-div-text-onbackground-div{
+.chart-div-text-onbackground-div {
     top: 15%;
     position: absolute;
     width: 100%;
     height: 100px;
-    .chart-div-text-onbackground-text{
+    .chart-div-text-onbackground-text {
         position: absolute;
+        opacity: 0;
     }
-    :nth-child(1){
+    .chart-div-text-onbackground-text2 {
+        position: absolute;
+        opacity: 0;
+    }
+
+
+    :nth-child(1) {
         top: 0%;
         left: 10%;
     }
-    :nth-child(2){
+
+    :nth-child(2) {
         top: 50%;
         left: 15%;
     }
-    :nth-child(3){
+
+    :nth-child(3) {
         top: 0%;
         right: 10%;
     }
-    :nth-child(4){
+
+    :nth-child(4) {
         top: 50%;
         right: 15%;
     }
 }
+
 .chart-div-text-ontop {
     position: absolute;
     top: -50px;
@@ -476,7 +486,7 @@ CHART DIV CSS
 }
 
 .flip-card {
-    width: 85px;
+    width: 100px;
     height: 100px;
     cursor: pointer;
     perspective: 1000px;
@@ -579,8 +589,8 @@ APP DIV CSS
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 2.5%;
-    margin-bottom: 2.5%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
 }
 
 .app-div {
@@ -795,6 +805,61 @@ Mobile
         cursor: pointer;
         perspective: 1000px;
     }
+
+    .top-div-description-div {
+        position: absolute;
+        height: 100px;
+        width: 100%;
+    
+        .top-div-description-text {
+            position: absolute;
+            width: 200px;
+            display: flex;
+            align-items: center;
+            /** Y-axis align **/
+            justify-content: center;
+            /** X-axis align **/
+            text-align: center;
+        }
+    
+        :nth-child(1) {
+            top: 33%;
+            left: 30%;
+        }
+    
+        :nth-child(2) {
+            top: 66%;
+            left: 30%;
+        }
+    
+        :nth-child(3) {
+            top: 99%;
+            left: 30%;
+        }
+    
+        :nth-child(4) {
+            top: 33%;
+            right: 30%;
+        }
+    
+        :nth-child(5) {
+            top: 66%;
+            right: 30%;
+        }
+    
+        :nth-child(6) {
+            top: 99%;
+            right: 30%;
+        }
+    }
+
+    .patient-text {
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: -20%;
+    }
+
 }
 
 /*

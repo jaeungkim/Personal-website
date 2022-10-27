@@ -99,8 +99,8 @@ export class EcosystemComponent implements OnInit {
     });
 
     if (window.innerWidth < 768) {
-      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '50%' });
-      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-50%' });
+      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '40%' });
+      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-40%' });
     } else if (window.innerWidth < 992) {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '60%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-60%' });
@@ -141,6 +141,12 @@ export class EcosystemComponent implements OnInit {
       duration: 0.5,
     });
 
+    chartAnimationTimeline.to('.chart-div-text-onbackground-text', {
+      opacity: 1
+    });
+    chartAnimationTimeline.to('.chart-div-text-onbackground-text2', {
+      opacity: 1
+    });
     chartAnimationTimeline.fromTo(
       '.svg-div-onchart',
       { opacity: 0, y: '-150%' },
