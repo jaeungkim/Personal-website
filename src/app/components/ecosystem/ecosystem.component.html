@@ -9,13 +9,14 @@
       </div>
       <div class="patientDoctor-first-div">
         <div class="patient-div">
-          <!-- <p class="patient-text clinic-visit-gsap">Clinic Visit</p> -->
+          <p class="patient-text clinic-visit-gsap">Clinic Visit</p>
           <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img"
             *ngIf="colorSchemeService.colorScheme === 'light'" />
           <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img"
             *ngIf="colorSchemeService.colorScheme === 'dark'" />
         </div>
-        <svg *ngIf="!mobile" class="arrow-left-svg" viewBox="0 0 30 20" width="45px" height="30px" preserveAspectRatio="none">
+        <svg *ngIf="!mobile" class="arrow-left-svg" viewBox="0 0 30 20" width="45px" height="30px"
+          preserveAspectRatio="none">
           <g transform="translate(15 10) rotate(270)" fill="var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
@@ -34,7 +35,8 @@
             </div>
           </div>
         </div>
-        <svg *ngIf="!mobile" class="arrow-right-svg" viewBox="0 0 30 20" width="45px" height="30px" preserveAspectRatio="none">
+        <svg *ngIf="!mobile" class="arrow-right-svg" viewBox="0 0 30 20" width="45px" height="30px"
+          preserveAspectRatio="none">
           <g transform="translate(15 10) rotate(90)" fill="var(--iclinic-blue-white)">
             <path d="M0 0 9-11 0-8-9-11 0 0"></path>
           </g>
@@ -250,7 +252,8 @@
 
         <div class="chart-div-hospital">
           <p class="chart-div-text-ontop negative-right" *ngIf="largedesktop">Provincial Data Repository</p>
-          <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img-hospital" *ngIf="largedesktop"/>
+          <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img-hospital"
+            *ngIf="largedesktop" />
           <div class="chart-arrow-div">
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear rotate-hospital"
               preserveAspectRatio="none">
@@ -282,7 +285,8 @@
                 <p class="external-label">Hospital</p>
               </div>
               <div class="flip-card-back">
-                <img src="./assets/images/ecosystem/doctor-crw.png" alt=" " class="doctor-img-hospital" />
+                <img src="./assets/images/ecosystem/doctor-crw.png" alt=" " class="doctor-img-hospital"
+                  *ngIf="largedesktop" />
               </div>
             </div>
           </div>

@@ -448,7 +448,8 @@ CHART DIV CSS
 }
 
 .teleplan-img {
-    width: 50px;
+    width: 40px;
+    height: 40px;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -456,7 +457,8 @@ CHART DIV CSS
 }
 
 .eHealth-img {
-    width: 50px;
+    width: 40px;
+    height: 40px;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -464,7 +466,8 @@ CHART DIV CSS
 }
 
 .pharmaNet-img {
-    width: 50px;
+    width: 40px;
+    height: 40px;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -472,7 +475,8 @@ CHART DIV CSS
 }
 
 .hospital-img {
-    width: 50px;
+    width: 40px;
+    height: 40px;
     margin: 0;
     padding: 0;
     margin-left: auto;
@@ -519,8 +523,8 @@ CHART DIV CSS
 }
 
 .flip-card {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     cursor: pointer;
     perspective: 1000px;
 }
@@ -916,6 +920,26 @@ Mobile
         top: 30%;
         font-size: 10px;
     }
+
+    .teleplan-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .eHealth-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .pharmaNet-img {
+        width: 75px;
+        height: 75px;
+    }
+
+    .hospital-img {
+        width: 75px;
+        height: 75px;
+    }
 }
 
 /*
@@ -1068,23 +1092,23 @@ TABLET
     }
 
     .teleplan-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .eHealth-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .pharmaNet-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .hospital-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .gsap-card {
@@ -1103,7 +1127,7 @@ TABLET
     }
 
     .flip-card {
-        width: 125px;
+        width: 150px;
         height: 125px;
     }
 
@@ -1267,23 +1291,23 @@ SMALL DESKTOP
     }
 
     .teleplan-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .eHealth-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .pharmaNet-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .hospital-img {
-        width: 50px;
-        height: 50px;
+        width: 75px;
+        height: 75px;
     }
 
     .gsap-card {
@@ -1302,7 +1326,7 @@ SMALL DESKTOP
     }
 
     .flip-card {
-        width: 125px;
+        width: 150px;
         height: 125px;
     }
 
