@@ -7,13 +7,12 @@
   height: 100%;
 }
 .top-content-text-div{
-  color: #450159 !important;
+  color: var(--text-secondary);
   margin-bottom: 10%;
 }
 .top-content-title{
   font-size: 32px;
   text-align: center;
-  display: flex;
 }
 .top-content-subtitles{
   opacity: 0;
@@ -22,7 +21,7 @@
 }
 
 .top-content-subtitles-div{
-  color: #450159 !important;
+  color: var(--text-secondary);
   margin-bottom: 15%;
   :nth-child(1){
     animation: fadeIn 2s linear forwards;
@@ -72,6 +71,7 @@
 }
 
 .description-solutions {
+  color: var(--text-secondary);
   font-size: 14px;
   text-align: justify;
   margin: 0;
@@ -119,6 +119,15 @@
   .solutions-chart-div {
     margin-top: 0;
   }
+  .top-content-title{
+    font-size: 32px;
+    text-align: center;
+  }
+  .top-content-subtitles{
+    opacity: 0;
+    font-size: 16px;
+    text-align: center;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -132,6 +141,20 @@
     // margin-top: 0;
   }
 
+  .solutions-text-div {
+    width: 37.5%;
+    height: 50vh;
+  }
+
+  .top-content-title{
+    font-size: 28px;
+  }
+  .top-content-subtitles-div{
+    margin-bottom: 10%;
+  }
+  .top-content-subtitles{
+    font-size: 16px;
+  }
   .solutions-title {
     font-size: 24px;
   }
@@ -149,13 +172,6 @@
     display: flex;
     justify-content: space-between;
   }
-
-  .solutions-text-div {
-    padding-top: 10%;
-    width: 35%;
-    height: 50vh;
-  }
-
   .solutions-chart-div {
     margin-top: 5%;
     width: 60%;
@@ -168,14 +184,44 @@
 }
 
 @media only screen and (min-width: 992px) {
-  .top-content-text-div{
-    width: 115%;
-  }
   .solutions-text-div {
-    width: 110%;
+    width: 37.5%;
+    height: 50vh;
   }
   .top-content-title{
-    font-size: 40px;
+    font-size: 32px;
+  }
+  .top-content-subtitles-div{
+    margin-bottom: 10%;
+  }
+  .top-content-subtitles{
+    font-size: 16px;
+  }
+  .solutions-text-div {
+    padding-top: 0;
+  }
+  .solutions-title {
+    font-size: 32px;
+  }
+  .description-solutions {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .solutions-text-div {
+    padding-top: 10%;
+  }
+}
+@media only screen and (min-width: 1400px) {
+  // .top-content-text-div{
+  //   width: 115%;
+  // }
+  // .solutions-text-div {
+  //   width: 110%;
+  // }
+  .top-content-title{
+    font-size: 36px;
     text-align: center;
     display: flex;
   }
@@ -184,20 +230,6 @@
     font-size: 26px;
     text-align: center;
   }
-  .solutions-text-div {
-    padding-top: 20%;
-  }
-
-  .solutions-title {
-    font-size: 32px;
-  }
-
-  .description-solutions {
-    font-size: 16px;
-  }
-}
-
-@media only screen and (min-width: 1400px) {
   .solutions-mainTitle {
     font-size: 40px;
   }
