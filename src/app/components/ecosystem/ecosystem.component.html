@@ -5,7 +5,9 @@
       <div class="ecosystem-top-content-div">
         <p class="ecosystem-top-content-title">iClinic Ecosystem</p>
         <p class="ecosystem-top-content-subtitle fst-italic mb-2">One Patient, One Record</p>
-        <p class="ecosystem-top-content-subtitle fst-italic">End to End Quality Care along Patient Journey, Care Pathway
+        <p class="ecosystem-top-content-subtitle fst-italic mb-2">Unified Offerings</p>
+        <p class="ecosystem-top-content-subtitle fst-italic">Seamless End to End Quality Care along Patient Journey,
+          Managing Care Pathway
         </p>
       </div>
       <div class="patientDoctor-first-div">
@@ -167,7 +169,8 @@
                 <p class="external-label">Teleplan</p>
               </div>
               <div class="flip-card-back">
-                <p class="flip-card-back-text">Provincial Platform for Medical Claims Submission and Processing</p>
+                <p class="flip-card-back-text-title">Teleplan</p>
+                <p class="flip-card-back-text">For Medical Claims Submission and Processing</p>
               </div>
             </div>
           </div>
@@ -179,8 +182,7 @@
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
             <p class="text-over-arrows">Seamless Data Transfer</p>
-            <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear"
-              preserveAspectRatio="none">
+            <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
                 stroke="var(--text-primary)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
@@ -209,7 +211,9 @@
                 <p class="external-label text-nowrap">eHealth <span *ngIf="largedesktop">Viewer</span></p>
               </div>
               <div class="flip-card-back">
-                <p class="flip-card-back-text">Provincial Platform for a View of Clinical Information (Labs, Imaging, Clinical Documents, etc)</p>
+                <p class="flip-card-back-text-title">eHealth Viewer</p>
+                <p class="flip-card-back-text">For a View of Clinical Information (Labs, Imaging, Clinical Documents,
+                  etc)</p>
               </div>
             </div>
           </div>
@@ -248,7 +252,8 @@
                 <p class="external-label">PharmaNet</p>
               </div>
               <div class="flip-card-back">
-                <p class="flip-card-back-text">Provincial Platform for All Prescriptions Dispensed in Pharmacies</p>
+                <p class="flip-card-back-text-title">PharmaNet</p>
+                <p class="flip-card-back-text">For All Prescriptions Dispensed in Pharmacies</p>
               </div>
             </div>
           </div>
@@ -260,8 +265,7 @@
             *ngIf="largedesktop" />
           <div class="chart-arrow-div rotate-hospital">
             <p class="text-over-arrows">Seamless Data Transfer</p>
-            <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear"
-              preserveAspectRatio="none">
+            <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
                 stroke="var(--text-primary)">
                 <path d="M0 0 9-11 0-8-9-11 0 0"></path>
@@ -321,8 +325,9 @@
     <!-- END CHART DIV -->
 
     <!-- APP DIV -->
-    <p class="care-starts-with">iClinic</p>
+    <!-- <p class="care-starts-with">iClinic</p> -->
     <div class="app-outer-div">
+      <p class="app-inside-texts">iClinic</p>
       <div class="app-div">
         <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img"
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
@@ -331,12 +336,13 @@
       </div>
       <div class="app-description-div">
         <p class="app-description-text">Patient Centric</p>
-        <p class="app-description-text">Patient Centric</p>
-        <p class="app-description-text">Patient Centric</p>
-        <p class="app-description-text">Patient Centric</p>
+        <p class="app-description-text">Patient Empowerment</p>
+        <p class="app-description-text">Personalized Care Management Recovery</p>
+        <p class="app-description-text">Improved Clinical Outcomes</p>
       </div>
+      <p class="app-inside-texts">Patient Engagement App</p>
     </div>
-    <p class="care-starts-with">Patient Engagement App</p>
+    <!-- <p class="care-starts-with">Patient Engagement App</p> -->
     <!-- END APP DIV -->
 
     <div class="arrow-div-2">
@@ -351,17 +357,25 @@
           </g>
         </svg>
         <div class="arrow-div-2-left-arrow-div">
-          <svg class="svg-left-appdiv" viewBox="0 0 300 75" width="300px" height="75px">
-            <g transform="translate(302.5, 2.5)" fill="none" stroke="var(--iclinic-blue-white)">
-              <path class="linear-path-reverse" d="M0 0 -300 0 -300 75"></path>
+          <svg class="svg-left-appdiv" viewBox="0 0 300 50" width="300px" height="75px">
+            <g transform="translate(322.5, -10)" fill="none" stroke="var(--iclinic-blue-white)">
+              <path class="linear-path-reverse" d="M0 0 -300 0 -300 55"></path>
+            </g>
+            <g transform="translate(22.5,55) scale(1.5)" fill="var(--iclinic-blue-white)"
+              style="stroke:var(--iclinic-blue-white)">
+              <path d="M0 0 9-11 0-8-9-11 0 0"></path>
             </g>
           </svg>
           <img src="./assets/images/ecosystem/bottomnurse-crw.png" alt=" " class="bottom-nurse-img" />
         </div>
         <div class="arrow-div-2-right-arrow-div">
-          <svg class="svg-right-appdiv" viewBox="0 0 300 75" width="300px" height="75px">
-            <g transform="translate(-2.5, 2.5)" fill="none" stroke="var(--iclinic-blue-white)">
-              <path class="linear-path" d="M0 0 300 0 300 75"></path>
+          <svg class="svg-right-appdiv" viewBox="0 0 300 50" width="300px" height="75px">
+            <g transform="translate(-20, -10)" fill="none" stroke="var(--iclinic-blue-white)">
+              <path class="linear-path" d="M0 0 300 0 300 55"></path>
+            </g>
+            <g transform="translate(280,55) scale(1.5)" fill="var(--iclinic-blue-white)"
+              style="stroke:var(--iclinic-blue-white)">
+              <path d="M0 0 9-11 0-8-9-11 0 0"></path>
             </g>
           </svg>
           <img src="./assets/images/ecosystem/bottomdoctors-crw.png" alt=" " class="bottom-doctors-img" />

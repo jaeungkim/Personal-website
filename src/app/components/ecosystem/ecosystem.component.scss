@@ -17,6 +17,10 @@ PATIENT DOCTOR DIV CSS
   :nth-child(3) {
     animation: fadeIn 2s linear 1s forwards;
   }
+
+  :nth-child(4) {
+    animation: fadeIn 2s linear 2s forwards;
+  }
 }
 
 .ecosystem-top-content-title {
@@ -127,8 +131,12 @@ PATIENT DOCTOR DIV CSS
   height: 100%;
   width: 100%;
 }
-.flip-card-back-text{
-  font-size: 14px;
+.flip-card-back-text-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.flip-card-back-text {
+  font-size: 12px;
 }
 .patientchart-outer-img-div {
   box-shadow: var(--box-shadow);
@@ -343,16 +351,18 @@ CHART DIV CSS
   top: -50px;
   padding: 5px;
   border-radius: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
   box-shadow: var(--box-shadow);
 }
 
-// .negative-left {
-//   left: -25px;
-// }
+.negative-left {
+  left: -16px;
+}
 
-// .negative-right {
-//   right: -27.5px;
-// }
+.negative-right {
+  right: -16px;
+}
 
 .ring-div {
   background-color: transparent;
@@ -584,6 +594,7 @@ APP DIV CSS
     /** X-axis align **/
     text-align: center;
     font-size: 12px;
+    width: 275px;
   }
 
   :nth-child(1) {
@@ -610,19 +621,23 @@ APP DIV CSS
 .app-outer-div {
   box-shadow: var(--box-shadow);
   border: 1.5px solid rgb(192, 192, 255);
-  padding: 15px;
+  // padding: 15px;
   width: 125px;
   height: 125px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   margin-top: 1.5%;
   margin-bottom: 1.5%;
 }
-
+.app-inside-texts{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
 .app-div {
   display: flex;
   box-shadow: 0px 0px 12px 0px rgb(192 192 255);
@@ -700,7 +715,7 @@ BOTTOM PATIENT DIV CSS
 ARROW CSS
 =============================================
 */
-.text-over-arrows{
+.text-over-arrows {
   font-size: 12px;
   position: absolute;
   width: 100%;
@@ -1197,7 +1212,7 @@ TABLET
   }
 
   .app-outer-div {
-    padding: 25px;
+    // padding: 25px;
     width: 125px;
     height: 125px;
   }
@@ -1418,13 +1433,13 @@ SMALL DESKTOP
     width: 90px;
     height: 90px;
     margin-top: 7.5%;
-    right: -85%;
+    right: -75%;
   }
   .bottom-nurse-img {
     width: 90px;
     height: 90px;
     margin-top: 7.5%;
-    left: -85%;
+    left: -75%;
   }
 
   .teleplan-img {
@@ -1458,14 +1473,14 @@ SMALL DESKTOP
   }
 
   .app-div {
-    width: 125px;
-    height: 125px;
+    width: 175px;
+    height: 175px;
   }
 
   .app-outer-div {
-    padding: 25px;
-    width: 150px;
-    height: 150px;
+    // padding: 25px;
+    width: 250px;
+    height: 250px;
   }
 
   .gsap-card {
@@ -1562,22 +1577,22 @@ SMALL DESKTOP
     }
 
     :nth-child(1) {
-      left: 33%;
+      left: 25%;
       top: 33%;
     }
 
     :nth-child(2) {
-      left: 33%;
+      left: 25%;
       top: 66%;
     }
 
     :nth-child(3) {
-      right: 33%;
+      right: 20%;
       top: 33%;
     }
 
     :nth-child(4) {
-      right: 33%;
+      right: 20%;
       top: 66%;
     }
   }
