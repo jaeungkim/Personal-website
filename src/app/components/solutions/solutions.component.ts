@@ -21,7 +21,7 @@ export class SolutionsComponent implements OnInit {
     'Geriatrics',
     'Neurology',
     'Respirology',
-    'iClinic MD',
+    'One Patient, One Record',
   ];
   textColorIndex = 0;
   description: any = `The AF module is used in the clinical care of patients experiencing atrial fibrillation.\n\nHighlight features include organization of the clinical pathway into Rhythm and Rate control strategies.`;
