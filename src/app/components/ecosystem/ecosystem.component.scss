@@ -575,6 +575,7 @@ APP DIV CSS
     position: absolute;
     height: 100px;
     width: 100%;
+
     .app-description-text {
         position: absolute;
         display: flex;
@@ -606,6 +607,7 @@ APP DIV CSS
         top: 66%;
     }
 }
+
 .app-outer-div {
     box-shadow: var(--box-shadow);
     border: 1.5px solid rgb(192, 192, 255);
@@ -640,7 +642,16 @@ APP DIV CSS
     width: 75px;
     height: 75px;
 }
-
+.arrow-div-2-left-arrow-div{
+    position: absolute;
+    top: 47.5%;
+    right: 50%;
+}
+.arrow-div-2-right-arrow-div{
+    position: absolute;
+    top: 47.5%;
+    left: 50%;
+}
 /*
 =============================================
 BOTTOM PATIENT DIV CSS
@@ -706,21 +717,21 @@ ARROW CSS
     stroke-linecap: round;
     stroke-linejoin: miter;
     stroke-miterlimit: 4;
-    stroke-dasharray: 1, 15;
-    stroke: rgb(203, 223, 237);
+    stroke-dasharray: 1, 10;
+    stroke: var(--iclinic-blue);
     fill: transparent;
-    stroke-width: 3;
-    animation: dash 30s linear infinite;
+    stroke-width: 5;
+    animation: reverse-dash 30s linear infinite;
 }
 
 .linear-path-reverse {
     stroke-linecap: round;
     stroke-linejoin: miter;
     stroke-miterlimit: 4;
-    stroke-dasharray: 1, 15;
-    stroke: rgb(203, 223, 237);
+    stroke-dasharray: 1, 10;
+    stroke: var(--iclinic-blue);
     fill: transparent;
-    stroke-width: 3;
+    stroke-width: 5;
     animation: reverse-dash 30s linear infinite;
 }
 
@@ -922,22 +933,27 @@ Mobile
         width: 75px;
         height: 75px;
     }
+
     .app-description-div {
         .app-description-text {
             font-size: 12px;
         }
+
         :nth-child(1) {
             left: 23%;
             top: 33%;
         }
+
         :nth-child(2) {
             left: 23%;
             top: 66%;
         }
+
         :nth-child(3) {
             right: 23%;
             top: 33%;
         }
+
         :nth-child(4) {
             right: 23%;
             top: 66%;
@@ -1222,22 +1238,27 @@ TABLET
         top: 30%;
         font-size: 10px;
     }
+
     .app-description-div {
         .app-description-text {
             font-size: 12px;
         }
+
         :nth-child(1) {
             left: 30%;
             top: 33%;
         }
+
         :nth-child(2) {
             left: 30%;
             top: 66%;
         }
+
         :nth-child(3) {
             right: 30%;
             top: 33%;
         }
+
         :nth-child(4) {
             right: 30%;
             top: 66%;
@@ -1463,22 +1484,27 @@ SMALL DESKTOP
         top: 30%;
         font-size: 12px;
     }
+
     .app-description-div {
         .app-description-text {
             font-size: 12px;
         }
+
         :nth-child(1) {
             left: 33%;
             top: 33%;
         }
+
         :nth-child(2) {
             left: 33%;
             top: 66%;
         }
+
         :nth-child(3) {
             right: 33%;
             top: 33%;
         }
+
         :nth-child(4) {
             right: 33%;
             top: 66%;
@@ -1665,6 +1691,12 @@ DESKTOP
         left: 29%;
         top: 30%;
         font-size: 12px;
+    }
+    .arrow-div-2-left-arrow-div{
+        right: 51%;
+    }
+    .arrow-div-2-right-arrow-div{
+        left: 51%;
     }
 }
 
