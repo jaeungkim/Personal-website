@@ -469,7 +469,7 @@ export class SolutionsComponent implements OnInit {
           height = chart.chart.height,
           ctx = chart.chart.ctx;
         ctx.restore();
-        let fontSize = (height / 550).toFixed(2);
+        let fontSize = (height / 725).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
 
@@ -485,8 +485,12 @@ export class SolutionsComponent implements OnInit {
         ctx.fillStyle = '#450159';
         let text = 'iClinic MD',
           textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textY = height / 2;
+          textX2 = Math.round((width - ctx.measureText(text).width) / 2.4),
+          textY = height / 2.09,
+          textY2 = height / 1.91;
+        let text2 = 'One Patient, One Record'
         ctx.fillText(text, textX, textY);
+        ctx.fillText(text2, textX2, textY2);
         ctx.save();
       },
       onComplete: function (chart) {
@@ -495,7 +499,7 @@ export class SolutionsComponent implements OnInit {
           ctx = chart.chart.ctx;
 
         ctx.restore();
-        let fontSize = (height / 550).toFixed(2);
+        let fontSize = (height / 725).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
  
@@ -516,8 +520,12 @@ export class SolutionsComponent implements OnInit {
         ctx.fillStyle = '#450159';
         let text = 'iClinic MD',
           textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textY = height / 2;
+          textX2 = Math.round((width - ctx.measureText(text).width) / 2.4),
+          textY = height / 2.09,
+          textY2 = height / 1.91;
+        let text2 = 'One Patient, One Record'
         ctx.fillText(text, textX, textY);
+        ctx.fillText(text2, textX2, textY2);
         ctx.save();
       },
     },
