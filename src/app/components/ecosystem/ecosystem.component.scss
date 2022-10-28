@@ -91,7 +91,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .care-starts-with {
-  margin-top: 1.5%;
+  margin-top: 2.5%;
   margin-bottom: 1.5%;
   text-align: center;
   font-size: 14px;
@@ -127,7 +127,9 @@ PATIENT DOCTOR DIV CSS
   height: 100%;
   width: 100%;
 }
-
+.flip-card-back-text{
+  font-size: 14px;
+}
 .patientchart-outer-img-div {
   box-shadow: var(--box-shadow);
   border: 1.5px solid rgb(192 192 255);
@@ -268,7 +270,6 @@ PATIENT DOCTOR DIV CSS
   width: 75px;
   height: 75px;
   right: -100px;
-  bottom: 50px;
 }
 
 .doctor-img {
@@ -281,7 +282,6 @@ PATIENT DOCTOR DIV CSS
 .doctor-img-hospital {
   width: 75px;
   height: 75px;
-  margin-top: 10px;
 }
 
 .clinic-img {
@@ -346,13 +346,13 @@ CHART DIV CSS
   box-shadow: var(--box-shadow);
 }
 
-.negative-left {
-  left: -25px;
-}
+// .negative-left {
+//   left: -25px;
+// }
 
-.negative-right {
-  right: -27.5px;
-}
+// .negative-right {
+//   right: -27.5px;
+// }
 
 .ring-div {
   background-color: transparent;
@@ -700,6 +700,13 @@ BOTTOM PATIENT DIV CSS
 ARROW CSS
 =============================================
 */
+.text-over-arrows{
+  font-size: 12px;
+  position: absolute;
+  width: 100%;
+  top: -25%;
+  left: 10%;
+}
 .dotted-path {
   stroke-dasharray: 3px 14px;
   stroke-linecap: butt;
@@ -732,6 +739,7 @@ ARROW CSS
   stroke-linejoin: miter;
   stroke-miterlimit: 4;
   stroke-dasharray: 1, 15;
+  stroke: var(--text-primary);
   fill: transparent;
   stroke-width: 3;
   animation: reverse-dash 30s linear infinite;
@@ -1760,9 +1768,9 @@ DESKTOP
   }
 
   .iclinicmd-text-inside {
-    left: 29%;
+    left: 27%;
     top: 30%;
-    font-size: 12px;
+    font-size: 16px;
   }
   .arrow-div-2-left-arrow-div {
     right: 51%;

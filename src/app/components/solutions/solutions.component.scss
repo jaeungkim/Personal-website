@@ -32,8 +32,25 @@
   :nth-child(3){
     animation: fadeIn 2s linear 2s forwards;
   }
+  :nth-child(4){
+    animation: fadeIn 2s linear 3s forwards;
+  }
+  :nth-child(5){
+    animation: fadeIn 2s linear 4s forwards;
+  }
+}
+.btn-custom-book-demo {
+  margin-left: 12px;
+  font-style: normal;
+  color: var(--iclinic-blue-white);
+  border: 1px solid #a11f74;
+  font-size: 12px;
+  
 }
 
+.btn-custom-book-demo:hover {
+  background-color: #a11f74;
+}
 .solutions-chart-div {
   position: relative;
   height: 100%;
