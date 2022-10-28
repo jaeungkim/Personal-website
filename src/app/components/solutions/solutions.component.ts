@@ -480,20 +480,20 @@ export class SolutionsComponent implements OnInit {
         grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
         ctx.fillStyle = grd;
         ctx.fill();
-        ctx.font = fontSize + 'em sans-serif';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#450159';
-        let text = 'iClinic MD',
-          textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textX2 = Math.round((width - ctx.measureText(text).width) / 2.05),
-          textY = height / 2.19,
-          textY2 = height / 2,
-          textY3 = height / 1.81
-        let text2 = 'One Patient';
-        let text3 = 'One Record';
-        ctx.fillText(text, textX, textY);
-        ctx.fillText(text2, textX2, textY2);
-        ctx.fillText(text3, textX2, textY3);
+        // ctx.font = fontSize + 'em sans-serif';
+        // ctx.textBaseline = 'middle';
+        // ctx.fillStyle = '#450159';
+        // let text = 'iClinic MD',
+        //   textX = Math.round((width - ctx.measureText(text).width) / 2),
+        //   textX2 = Math.round((width - ctx.measureText(text).width) / 2.05),
+        //   textY = height / 2.19,
+        //   textY2 = height / 2,
+        //   textY3 = height / 1.81
+        // let text2 = 'One Patient';
+        // let text3 = 'One Record';
+        // ctx.fillText(text, textX, textY);
+        // ctx.fillText(text2, textX2, textY2);
+        // ctx.fillText(text3, textX2, textY3);
         ctx.save();
       },
       onComplete: function (chart) {
@@ -518,20 +518,20 @@ export class SolutionsComponent implements OnInit {
 
         ctx.fillStyle = grd;
         ctx.fill();
-        ctx.font = fontSize + 'em sans-serif';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#450159';
-        let text = 'iClinic MD',
-          textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textX2 = Math.round((width - ctx.measureText(text).width) / 2.05),
-          textY = height / 2.19,
-          textY2 = height / 2,
-          textY3 = height / 1.81
-        let text2 = 'One Patient';
-        let text3 = 'One Record';
-        ctx.fillText(text, textX, textY);
-        ctx.fillText(text2, textX2, textY2);
-        ctx.fillText(text3, textX2, textY3);
+        // ctx.font = fontSize + 'em sans-serif';
+        // ctx.textBaseline = 'middle';
+        // ctx.fillStyle = '#450159';
+        // let text = 'iClinic MD',
+        //   textX = Math.round((width - ctx.measureText(text).width) / 2),
+        //   textX2 = Math.round((width - ctx.measureText(text).width) / 2.05),
+        //   textY = height / 2.19,
+        //   textY2 = height / 2,
+        //   textY3 = height / 1.81
+        // let text2 = 'One Patient';
+        // let text3 = 'One Record';
+        // ctx.fillText(text, textX, textY);
+        // ctx.fillText(text2, textX2, textY2);
+        // ctx.fillText(text3, textX2, textY3);
         ctx.save();
       },
     },

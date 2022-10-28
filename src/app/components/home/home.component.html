@@ -14,6 +14,6 @@
 <canvas #rendererCanvas id="renderCanvas" [hidden]="displayAfterVideo"></canvas>
 
 <!-- TEST -->
-<div *ngIf="hideVideoAfterPlay" class="datapoints-div">
+<div *ngIf="hideVideoAfterPlay && largedesktop" class="datapoints-div">
   <p *ngFor="let datapoint of datapoints">{{datapoint.name}}</p>
 </div>

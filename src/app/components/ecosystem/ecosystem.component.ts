@@ -579,13 +579,13 @@ export class EcosystemComponent implements OnInit {
 
         ctx.fillStyle = grd;
         ctx.fill();
-        ctx.font = fontSize + 'em sans-serif';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#450159';
-        let text = 'iClinic MD',
-          textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textY = height / 2;
-        ctx.fillText(text, textX, textY);
+        // ctx.font = fontSize + 'em Roboto sans-serif';
+        // ctx.textBaseline = 'middle';
+        // ctx.fillStyle = '#450159';
+        // let text = 'iClinic MD',
+        //   textX = Math.round((width - ctx.measureText(text).width) / 2),
+        //   textY = height / 2;
+        // ctx.fillText(text, textX, textY);
         ctx.save();
       },
       onComplete: function (chart) {
@@ -604,13 +604,13 @@ export class EcosystemComponent implements OnInit {
         grd.addColorStop(11 / 20, 'rgb(128, 182, 222)');
         ctx.fillStyle = grd;
         ctx.fill();
-        ctx.font = fontSize + 'em sans-serif';
-        ctx.textBaseline = 'middle';
-        ctx.fillStyle = '#450159';
-        let text = 'iClinic MD',
-          textX = Math.round((width - ctx.measureText(text).width) / 2),
-          textY = height / 2;
-        ctx.fillText(text, textX, textY);
+        // ctx.font = fontSize + 'em sans-serif';
+        // ctx.textBaseline = 'middle';
+        // ctx.fillStyle = '#450159';
+        // let text = 'iClinic MD',
+        //   textX = Math.round((width - ctx.measureText(text).width) / 2),
+        //   textY = height / 2;
+        // ctx.fillText(text, textX, textY);
         ctx.save();
       },
     },

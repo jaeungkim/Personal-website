@@ -15,8 +15,9 @@ export class HomeComponent implements OnInit {
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
   hideVideoAfterPlay = false;
-  aiclinictextappear = true;
+  aiclinictextappear = false;
   displayAfterVideo = false;
+  largedesktop: boolean = false;
   datapoints = DATAPOINTS;
   private points: any[] = [];
   private colors: any[] = [];
@@ -70,6 +71,9 @@ export class HomeComponent implements OnInit {
   `;
   constructor(private router: Router) {}
   public ngOnInit(): void {
+    if (window.innerWidth > 1200) {
+      this.largedesktop = true;
+    }
     setTimeout(() => {
       this.hideVideoAfterPlay = true;
     }, 13000);

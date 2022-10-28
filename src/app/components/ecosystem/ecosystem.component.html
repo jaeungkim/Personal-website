@@ -53,12 +53,16 @@
       </div>
       <p class="care-starts-with">Your Care Starts with iClinic</p>
       <div class="top-div-description-div">
-        <p class="top-div-description-text fadein-gsap2">Intuitive User Interface</p>
-        <p class="top-div-description-text fadein-gsap3">Intelligent Filters</p>
-        <p class="top-div-description-text fadein-gsap4">New Insights</p>
-        <p class="top-div-description-text fadein-gsap2">Assissted Data Input</p>
-        <p class="top-div-description-text fadein-gsap3">Smart Data Capture</p>
-        <p class="top-div-description-text fadein-gsap4">Structured Data Points</p>
+        <div class="top-div-left">
+          <p class="top-div-description-text fadein-gsap2">Intuitive User Interface</p>
+          <p class="top-div-description-text fadein-gsap3">Intelligent Filters</p>
+          <p class="top-div-description-text fadein-gsap4">New Insights</p>
+        </div>
+        <div class="top-div-right">
+          <p class="top-div-description-text fadein-gsap2">Assissted Data Input</p>
+          <p class="top-div-description-text fadein-gsap3">Smart Data Capture</p>
+          <p class="top-div-description-text fadein-gsap4">Structured Data Points</p>
+        </div>
       </div>
       <div class="svg-div">
         <svg class="svg-icon" viewBox="0 0 50 300">
@@ -123,7 +127,12 @@
             id="donutchart"></canvas>
           <div class="ring-div"></div>
           <div class="ring-div2"></div>
+          <button class="iclinic-button-inner">
+            <p class="ring-div-inner-text">iClinic MD</p>
+            <p class="ring-div-inner-text">One Patient, One Record</p>
+          </button>
         </div>
+   
       </div>
       <div class="chart-parts-div">
         <!-- <div class="chart-div-text-onbackground-div">
@@ -181,7 +190,7 @@
           <div class="chart-arrow-div rotate-eHealth" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
-            <p class="text-over-arrows">Seamless Data Transfer</p>
+            <!-- <p class="text-over-arrows">Seamless Data Transfer</p> -->
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
                 stroke="var(--text-primary)">
@@ -222,7 +231,7 @@
         <div class="chart-div-pharmanet">
           <p class="chart-div-text-ontop negative-right" *ngIf="largedesktop">Provincial Platform</p>
           <div class="chart-arrow-div">
-            <p class="text-over-arrows">Seamless Data Transfer</p>
+            <!-- <p class="text-over-arrows">Seamless Data Transfer</p> -->
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
                 stroke="var(--text-primary)">
@@ -264,7 +273,7 @@
           <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img-hospital"
             *ngIf="largedesktop" />
           <div class="chart-arrow-div rotate-hospital">
-            <p class="text-over-arrows">Seamless Data Transfer</p>
+            <!-- <p class="text-over-arrows">Seamless Data Transfer</p> -->
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
                 stroke="var(--text-primary)">
@@ -327,20 +336,25 @@
     <!-- APP DIV -->
     <!-- <p class="care-starts-with">iClinic</p> -->
     <div class="app-outer-div">
-      <p class="app-inside-texts">iClinic</p>
       <div class="app-div">
+        <p class="app-inside-texts">iClinic</p>
         <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img"
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
         <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img"
           *ngIf="colorSchemeService.colorScheme === 'light'" />
+          <p class="app-inside-texts">Patient Engagement App</p>
       </div>
       <div class="app-description-div">
-        <p class="app-description-text">Patient Centric</p>
-        <p class="app-description-text">Patient Empowerment</p>
-        <p class="app-description-text">Personalized Care Management Recovery</p>
-        <p class="app-description-text">Improved Clinical Outcomes</p>
+        <div class="app-description-div-left">
+          <p class="app-description-text">Patient Centric</p>
+          <p class="app-description-text">Patient Empowerment</p>
+        </div>
+        <div class="app-description-div-right">
+          <p class="app-description-text">Personalized Care Management Recovery</p>
+          <p class="app-description-text">Improved Clinical Outcomes</p>
+        </div>
       </div>
-      <p class="app-inside-texts">Patient Engagement App</p>
+      
     </div>
     <!-- <p class="care-starts-with">Patient Engagement App</p> -->
     <!-- END APP DIV -->

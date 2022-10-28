@@ -45,7 +45,7 @@
   font-style: normal;
   color: var(--iclinic-blue-white);
   border: 1px solid #a11f74;
-  font-size: 24px;
+  font-size: 20px;
   
 }
 
@@ -242,7 +242,7 @@
   }
   .top-content-subtitles{
     opacity: 0;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
   }
   .solutions-mainTitle {
@@ -274,7 +274,24 @@
     position: relative;
   }
 }
-
+.iclinic-button-inner {
+  position: absolute;
+  height: 33%;
+  border-radius: 50%;
+  width: 33%;
+  top: 33.5%;
+  left: 33.5%;
+  z-index: 5;
+  background: transparent;
+  border: transparent;
+  color: #450159;
+  :nth-child(1){
+    font-size: 1.5vw;
+  }
+  :nth-child(2){
+    font-size: 1vw;
+  }
+}
 .ring-div {
   background-color: transparent;
   border: 3px solid rgba(192, 192, 255, 1);
@@ -464,18 +481,6 @@
 
 .mainiclinicmd {
   color: var(--light-iclinic-blue);
-}
-
-.iclinic-button-inner {
-  position: absolute;
-  width: 137.5px;
-  height: 137.5px;
-  border-radius: 50%;
-  left: 40%;
-  top: 40%;
-  z-index: 5;
-  background: transparent;
-  border: transparent;
 }
 
 @keyframes fadeIn {
