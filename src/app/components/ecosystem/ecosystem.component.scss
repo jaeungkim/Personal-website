@@ -644,11 +644,23 @@ APP DIV CSS
 }
 .arrow-div-2-left-arrow-div{
     position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
     top: 47.5%;
     right: 50%;
 }
+.svg-left-appdiv{
+    width:75%;
+}
+.svg-right-appdiv{
+    width:75%;
+}
 .arrow-div-2-right-arrow-div{
     position: absolute;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
     top: 47.5%;
     left: 50%;
 }
@@ -668,6 +680,20 @@ BOTTOM PATIENT DIV CSS
     margin-left: auto;
     margin-right: auto;
     // width: 15%;
+}
+.bottom-nurse-img{
+    position: relative;
+    margin-top: 6%;
+    left: -50%;
+    width: 75px;
+    height: 75px;
+}
+.bottom-doctors-img{
+    position: relative;
+    margin-top: 6%;
+    right: -50%;
+    width: 75px;
+    height: 75px;
 }
 
 /*
@@ -959,6 +985,20 @@ Mobile
             top: 66%;
         }
     }
+    .svg-left-appdiv{
+        width:90%;
+    }
+    .svg-right-appdiv{
+        width:90%;
+    }
+    .bottom-nurse-img{
+        margin-top: 6%;
+        left: -75%;
+    }
+    .bottom-doctors-img{
+        margin-top: 6%;
+        right: -75%;
+    }
 }
 
 /*
@@ -1089,7 +1129,14 @@ TABLET
         width: 75px;
         height: 75px;
     }
-
+    .bottom-nurse-img{
+        width: 75px;
+        height: 75px;
+    }
+    .bottom-doctors-img{
+        width: 75px;
+        height: 75px;
+    }
     .teleplan-img-div {
         display: flex;
         flex-direction: column;
@@ -1264,6 +1311,7 @@ TABLET
             top: 66%;
         }
     }
+
 }
 
 /*
@@ -1354,6 +1402,26 @@ SMALL DESKTOP
     .endPatient-img {
         width: 90px;
         height: 90px;
+    }
+
+    .svg-left-appdiv{
+        width:100%;
+    }
+    .svg-right-appdiv{
+        width:100%;
+    }
+
+    .bottom-doctors-img{
+        width: 90px;
+        height: 90px;
+        margin-top: 7.5%;
+        right: -85%;
+    }
+    .bottom-nurse-img{
+        width: 90px;
+        height: 90px;
+        margin-top: 7.5%;
+        left: -85%;
     }
 
     .teleplan-img {
@@ -1510,6 +1578,7 @@ SMALL DESKTOP
             top: 66%;
         }
     }
+
 }
 
 /*
@@ -1596,7 +1665,16 @@ DESKTOP
         width: 100px;
         height: 100px;
     }
-
+    .bottom-doctors-img{
+        width: 100px;
+        height: 100px;
+        margin-top: 10%;
+    }
+    .bottom-nurse-img{
+        width: 100px;
+        height: 100px;
+        margin-top: 10%;
+    }
     .flip-card-front,
     .flip-card-back {
         padding: 15px;
