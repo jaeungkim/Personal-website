@@ -163,6 +163,24 @@ PATIENT DOCTOR DIV CSS
 .flip-card-back-text {
   font-size: 12px;
 }
+.patientchart-div{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  .patientchart-div-text-fadein{
+    opacity: 0;
+  }
+  .patientchart-div-left-text{
+    width: 35%;
+    justify-content: flex-end;
+    display:flex;
+  }
+  .patientchart-div-right-text{
+    width: 35%;
+    justify-content: flex-start;
+    display:flex;
+  }
+}
 .patientchart-outer-img-div {
   box-shadow: var(--box-shadow);
   border: 1.5px solid rgb(192 192 255);

@@ -184,7 +184,11 @@ export class EcosystemComponent implements OnInit {
       opacity: 1,
       duration: 0.5,
     });
-
+    patientAnimationTimeline.to('.patientchart-div-text-fadein', {
+      opacity: 1,
+      duration: 0.5,
+    });
+  
     chartAnimationTimeline.fromTo(
       '.svg-div-onchart',
       { opacity: 0, y: '-150%' },
