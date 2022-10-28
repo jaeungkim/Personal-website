@@ -17,8 +17,8 @@ export class LoginComponent implements OnInit {
   roles: string[] = [];
   loginForm: FormGroup;
   //TEMPORARY
-  allowedUsername:any = 'Tristin';
-  allowedPassword:any = '123';
+  allowedUsername:any = 'jaekim';
+  allowedPassword:any = '221028';
   constructor(private fb: FormBuilder, private authService: AuthService, private router: Router, private storageService: StorageService) {
     this.createForm();
   }
