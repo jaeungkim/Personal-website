@@ -18,6 +18,7 @@
     padding: 25px;
     width: 100%;
     box-shadow: var(--box-shadow);
+    margin-bottom: 16px;
 }
 
 .address-form-section{
@@ -64,10 +65,10 @@
     box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
     border: 3px solid rgba(192,192,255,1);
     border-radius: 10px;
-    padding: 25px;
     color: var(--text-thirtiary);
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
+    padding: 15px;
     width: 100%;
 }
 
@@ -322,6 +323,7 @@ MOBILE
     }
 
     .contact-form-text-div-subtitle {
+        padding: 25px;
         font-size: 18px;
     }
 
