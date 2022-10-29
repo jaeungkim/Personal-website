@@ -12,69 +12,34 @@
   text-align: center;
   text-align: justify;
 }
-
-.card-title {
-  font-size: 18px;
-  font-weight: 400;
-  text-align: center;
+.icons-div{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
-
-.card-text {
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300;
-  text-align: left;
-  text-align: justify;
+.icons-row-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 16px;
 }
-
-.card-div {
+.icons-individual-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  width: 150px;
+  width: 150px;
+  box-shadow: var(--box-shadow);
+  border-radius: 10px;
   padding: 15px;
 }
-
-.card-img-div {
-  padding: 25px 65px;
+.icons-individual-img{
+  width: 75%;
 }
-
-.card_icons {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.box
-{
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	padding: 100px;
-}
-.box h2
-{
-	font-size: 3em;
-}
-.box img
-{
-	max-width: 300px;
-}
-
-
-.box2
-{
-	position: relative;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100vh;
-	padding: 100px;
-	// background: #000;
-	// color: #fff;
-	opacity: 1;
-}
-.box2 h2
-{
-	font-size: 3em;
+.icons-individual-text{
+  margin-top: 12px;
+  font-size: 12px;
+  text-align: center;
 }

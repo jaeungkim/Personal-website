@@ -14,67 +14,200 @@
     Health and&nbsp;<span class="fw-bold">Real-World Evidence for Precision</span>,&nbsp;<span
       class="fw-bold">Preventative Medicine and Therapeutic Innovations</span>.
   </p>
+  <div class="icons-div">
+    <div class="icons-row-div">
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-msa.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-msa-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Modern System Architecture</p>
+      </div>
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'"
+          src="./assets/images/aboutus/icons/icon-modulardesign.png" class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'"
+          src="./assets/images/aboutus/icons/icon-modulardesign-blue.png" class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Modular Design</p>
+      </div>
 
-  <div class="row row-cols-1 row-cols-md-3 g-4" #menuSecond>
-    <div class="col">
-      <div class="card h-100 card-div">
-        <div class="card-img-div">
-          <img #imgFirst src="./assets/images/aboutus/workflow.png" class="card-img-top card_icons" alt="..." />
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">To Do / Workflow</h5>
-          <p class="card-text">
-            Convenient task reviews and performances of downstream activities.
-            Real-time notifications of lab results, patient arrivals, secure
-            messages, and more. Intelligent filters for efficient task
-            management.
-          </p>
-        </div>
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-intuitiveinterface.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-intuitiveinterface-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Intuitive Interface</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-betteruserexperience.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-betteruserexperience-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Better User Experience</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-realtimequeries.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-realtimequeries-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Real-time Queries</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-customizable.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-customizable-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Customizable</p>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100 card-div">
-        <div class="card-img-div">
-          <img #imgSecond src="./assets/images/aboutus/clinical_data.png" class="card-img-top card_icons" alt="..." />
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Specialty Specific Clinical Data</h5>
-          <p class="card-text">
-            Customizable clinical data for smart data capture. Automatic
-            inclusion of clinical data, medications and personal history on
-            letters. Smart clinical reporting tools for population health
-            management.
-          </p>
-        </div>
+    <div class="icons-row-div">
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-intelligentalerts.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-intelligentalerts-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Intelligent Alerts</p>
+      </div>
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'"
+          src="./assets/images/aboutus/icons/icon-medications.png" class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'"
+          src="./assets/images/aboutus/icons/icon-medications-blue.png" class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Medications</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-workflowmanagement.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-workflowmanagement-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Workflow Management</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-onepatientonerecord.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-onepatientonerecord-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">One Patient, One Record</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-ecosystem.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-ecosystem-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Ecosystem</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-divisionsharing.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-divisionsharing-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Division Sharing</p>
       </div>
     </div>
-    <div class="col">
-      <div class="card h-100 card-div">
-        <div class="card-img-div">
-          <img src="./assets/images/aboutus/schedular.png" class="card-img-top card_icons" alt="..." />
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Scheduler / iReception / Waitlists</h5>
-          <p class="card-text">
-            Single glance view of multiple calendars, rooms and facilities.
-            Swift patient booking into the next and best available timeslot.
-            Tightly integrated waitlists. Powerful single click appointment
-            booking.
-          </p>
-        </div>
+    <div class="icons-row-div">
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-data.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-data-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Data</p>
+      </div>
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'"
+          src="./assets/images/aboutus/icons/icon-oddc.png" class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'"
+          src="./assets/images/aboutus/icons/icon-oddc-blue.png" class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Omni-Device Data Capture</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-artificialintelligence.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-artificialintelligence-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Artificial Intelligence</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-machinelearning.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-machinelearning-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Machine Learning</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-nlp.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-nlp-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Natural Language Processing</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-deepinsights.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-deepinsights-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Deep Insights</p>
+      </div>
+    </div>
+    <div class="icons-row-div">
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-innovativetools.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-innovativetools-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Innovative Tools</p>
+      </div>
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'"
+          src="./assets/images/aboutus/icons/icon-personalizedmedicine.png" class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'"
+          src="./assets/images/aboutus/icons/icon-personalizedmedicine-blue.png" class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Personalized Medicine</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-improvedqualityofcare.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-improvedqualityofcare-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Improved Quality of Care</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-clinicaldecisionsupport.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-clinicaldecisionsupport-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Clinical Decision Support</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-realworldevidence.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-realworldevidence-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Real World Evidence</p>
+      </div>
+
+      <div class="icons-individual-div">
+        <img *ngIf="colorSchemeService.colorScheme === 'dark'" src="./assets/images/aboutus/icons/icon-populationhealth.png"
+          class="icons-individual-img" alt="..." />
+        <img *ngIf="colorSchemeService.colorScheme === 'light'" src="./assets/images/aboutus/icons/icon-populationhealth-blue.png"
+          class="icons-individual-img" alt="..." />
+        <p class="icons-individual-text">Population Health</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- <div class="top-content-subtitles-div">
-  <p class="top-content-subtitles">at intersection of data science and artistry</p>
-  <p class="top-content-subtitles">smart, innovative and intuitive design</p>
-  <p class="top-content-subtitles">built for medical specialists</p>
-  <p class="top-content-subtitles">custom tailored to specific workflow</p>
-  <p class="top-content-subtitles">smart data capture </p>
-  <p class="top-content-subtitles">featuring clinical intelligence for better care</p>
-  <p class="top-content-subtitles">NLP for deep learning and data extraction</p>
-  <p class="top-content-subtitles">insights and predictive modeling for advanced clinical decision support</p>
-</div> -->
 <app-footer></app-footer>
