@@ -184,6 +184,10 @@ export class EcosystemComponent implements OnInit {
       opacity: 1,
       duration: 0.5,
     });
+    patientAnimationTimeline.to('.fadein-gsap5', {
+      opacity: 1,
+      duration: 0.5,
+    });
     patientAnimationTimeline.to('.patientchart-div-text-fadein', {
       opacity: 1,
       duration: 0.5,
