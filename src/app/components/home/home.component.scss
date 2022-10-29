@@ -136,12 +136,15 @@
     .subtitle-aiclinic {
         font-size: 42px;
     }
+    .datapoints-div{
+        font-size: 10px
+    }
 }
 
 //====================================================DATA POINT========================================================
 .datapoints-div {
     :nth-child(1) {
-        font-size: 10px;
+        font-size: 8px;
         margin: 3rem;
         position: absolute;
         color: rgb(187, 182, 182);
@@ -321,8 +324,8 @@
         margin: 3rem;
         position: absolute;
         color: white;
-        top: 7%;
-        left: 43%;
+        top: 12%;
+        left: 60%;
         z-index: 100;
         opacity: 0;
         animation: fadeInText 10s reverse infinite;
