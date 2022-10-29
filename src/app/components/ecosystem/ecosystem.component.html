@@ -169,7 +169,7 @@
           <p class="chart-div-text-onbackground-text2">Interoperability</p>
         </div> -->
         <div class="chart-div-teleplan">
-          <p class="chart-div-text-ontop negative-left" *ngIf="largedesktop">Provincial Platform</p>
+          <p class="chart-div-text-ontop negative-left" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
@@ -213,7 +213,7 @@
         </div>
 
         <div class="chart-div-eHealthViewer">
-          <p class="chart-div-text-ontop negative-left" *ngIf="largedesktop">Provincial Platform</p>
+          <p class="chart-div-text-ontop negative-left" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <div class="chart-arrow-div rotate-eHealth" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
@@ -256,7 +256,7 @@
         </div>
 
         <div class="chart-div-pharmanet">
-          <p class="chart-div-text-ontop negative-right" *ngIf="largedesktop">Provincial Platform</p>
+          <p class="chart-div-text-ontop negative-right" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <div class="chart-arrow-div">
             <!-- <p class="text-over-arrows">Seamless Data Transfer</p> -->
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
@@ -296,9 +296,9 @@
         </div>
 
         <div class="chart-div-hospital">
-          <p class="chart-div-text-ontop negative-right" *ngIf="largedesktop">Provincial Platform</p>
+          <p class="chart-div-text-ontop negative-right" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img-hospital"
-            *ngIf="largedesktop" />
+          *ngIf="!tablet && !mobile" />
           <div class="chart-arrow-div rotate-hospital">
             <!-- <p class="text-over-arrows">Seamless Data Transfer</p> -->
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
@@ -331,7 +331,7 @@
               </div>
               <div class="flip-card-back">
                 <img src="./assets/images/ecosystem/doctor-crw.png" alt=" " class="doctor-img-hospital"
-                  *ngIf="largedesktop" />
+                *ngIf="!tablet && !mobile" />
               </div>
             </div>
           </div>

@@ -173,7 +173,7 @@ PATIENT DOCTOR DIV CSS
   align-items: flex-end;
   display:flex;
   flex-direction: column;
-  width: 25%;
+  width: 35%;
 }
 .patientchart-div-left-text{
   font-size: 12px;
@@ -182,7 +182,7 @@ PATIENT DOCTOR DIV CSS
   align-items: flex-start;
   display:flex;
   flex-direction: column;
-  width: 25%;
+  width: 35%;
 }
 .patientchart-div-right-text{
   font-size: 12px;
@@ -416,11 +416,11 @@ CHART DIV CSS
 }
 
 .negative-left {
-  left: -16px;
+  left: -32px;
 }
 
 .negative-right {
-  right: -16px;
+  right: -32px;
 }
 
 .iclinic-button-inner {
@@ -829,15 +829,14 @@ BOTTOM PATIENT DIV CSS
 =============================================
 */
 .endPatient-div {
-  width: 60%;
+  width: 100%;
   margin: auto auto;
   margin-top: 2.5%;
   display: flex;
 }
-
 .care-img{
-  width: 50px;
-  height: 50px;
+  width: 35px;
+  height: 35px;
   margin: auto auto;
 }
 .endPatient-img {
@@ -918,7 +917,7 @@ ARROW CSS
   stroke-miterlimit: 4;
   stroke-dasharray: 1, 10;
   fill: transparent;
-  stroke-width: 5;
+  stroke-width: 3;
   animation: reverse-dash 30s linear infinite;
 }
 
@@ -928,7 +927,7 @@ ARROW CSS
   stroke-miterlimit: 4;
   stroke-dasharray: 1, 10;
   fill: transparent;
-  stroke-width: 5;
+  stroke-width: 3;
   animation: reverse-dash 30s linear infinite;
 }
 
@@ -1312,11 +1311,13 @@ TABLET
   }
 
   .care-img{
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     margin: auto auto;
   }
-
+  .endPatient-div {
+    width: 80%;
+  }
   .endPatient-img {
     width: 75px;
     height: 75px;
@@ -1414,7 +1415,7 @@ TABLET
   .iclinicmd-text-inside {
     left: 32.5%;
     top: 30%;
-    font-size: 10px;
+    font-size: 14px;
   }
 
   .app-description-div {
@@ -1530,11 +1531,13 @@ SMALL DESKTOP
   }
 
   .care-img{
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     margin: auto auto;
   }
-
+  .endPatient-div {
+    width: 75%;
+  }
   .endPatient-img {
     width: 90px;
     height: 90px;
@@ -1653,7 +1656,7 @@ SMALL DESKTOP
   .iclinicmd-text-inside {
     left: 29%;
     top: 30%;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .app-description-div {
@@ -1733,6 +1736,14 @@ DESKTOP
     width: 40%;
   }
 
+  .negative-left {
+    left: -16px;
+  }
+  
+  .negative-right {
+    right: -16px;
+  }
+
   .inner-chart {
     // width: 40%;
   }
@@ -1783,9 +1794,13 @@ DESKTOP
   }
 
   .care-img{
-    width: 75px;
-    height: 75px;
+    width: 50px;
+    height: 50px;
     margin: auto auto;
+  }
+
+  .endPatient-div {
+    width: 60%;
   }
 
   .endPatient-img {
