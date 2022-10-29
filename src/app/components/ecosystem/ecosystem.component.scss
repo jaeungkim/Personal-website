@@ -169,16 +169,22 @@ PATIENT DOCTOR DIV CSS
 .flip-card-back-text {
   font-size: 6px;
 }
-.patientchart-div-left-text{
-  width: 25%;
-  justify-content: flex-end;
+.patientchart-div-left-text-div{
+  align-items: flex-end;
   display:flex;
+  flex-direction: column;
+  width: 25%;
+}
+.patientchart-div-left-text{
   font-size: 12px;
 }
-.patientchart-div-right-text{
-  width: 25%;
-  justify-content: flex-start;
+.patientchart-div-right-text-div{
+  align-items: flex-start;
   display:flex;
+  flex-direction: column;
+  width: 25%;
+}
+.patientchart-div-right-text{
   font-size: 12px;
 }
 .patientchart-div{
@@ -823,10 +829,17 @@ BOTTOM PATIENT DIV CSS
 =============================================
 */
 .endPatient-div {
+  width: 60%;
+  margin: auto auto;
   margin-top: 2.5%;
   display: flex;
 }
 
+.care-img{
+  width: 50px;
+  height: 50px;
+  margin: auto auto;
+}
 .endPatient-img {
   width: 75px;
   height: 75px;
@@ -834,20 +847,20 @@ BOTTOM PATIENT DIV CSS
   margin-right: auto;
   // width: 15%;
 }
-.bottom-nurse-img {
-  position: relative;
-  margin-top: 6%;
-  left: -50%;
-  width: 75px;
-  height: 75px;
-}
-.bottom-doctors-img {
-  position: relative;
-  margin-top: 6%;
-  right: -50%;
-  width: 75px;
-  height: 75px;
-}
+// .bottom-nurse-img {
+//   position: relative;
+//   margin-top: 6%;
+//   left: -50%;
+//   width: 75px;
+//   height: 75px;
+// }
+// .bottom-doctors-img {
+//   position: relative;
+//   margin-top: 6%;
+//   right: -50%;
+//   width: 75px;
+//   height: 75px;
+// }
 
 /*
 =============================================
@@ -1134,14 +1147,14 @@ Mobile
   .svg-right-appdiv {
     width: 90%;
   }
-  .bottom-nurse-img {
-    margin-top: 6%;
-    left: -75%;
-  }
-  .bottom-doctors-img {
-    margin-top: 6%;
-    right: -75%;
-  }
+  // .bottom-nurse-img {
+  //   margin-top: 6%;
+  //   left: -75%;
+  // }
+  // .bottom-doctors-img {
+  //   margin-top: 6%;
+  //   right: -75%;
+  // }
 }
 
 /*
@@ -1298,18 +1311,24 @@ TABLET
     height: 75px;
   }
 
+  .care-img{
+    width: 50px;
+    height: 50px;
+    margin: auto auto;
+  }
+
   .endPatient-img {
     width: 75px;
     height: 75px;
   }
-  .bottom-nurse-img {
-    width: 75px;
-    height: 75px;
-  }
-  .bottom-doctors-img {
-    width: 75px;
-    height: 75px;
-  }
+  // .bottom-nurse-img {
+  //   width: 75px;
+  //   height: 75px;
+  // }
+  // .bottom-doctors-img {
+  //   width: 75px;
+  //   height: 75px;
+  // }
   .teleplan-img-div {
     display: flex;
     flex-direction: column;
@@ -1510,6 +1529,12 @@ SMALL DESKTOP
     height: 90px;
   }
 
+  .care-img{
+    width: 75px;
+    height: 75px;
+    margin: auto auto;
+  }
+
   .endPatient-img {
     width: 90px;
     height: 90px;
@@ -1522,18 +1547,18 @@ SMALL DESKTOP
     width: 100%;
   }
 
-  .bottom-doctors-img {
-    width: 90px;
-    height: 90px;
-    margin-top: 7.5%;
-    right: -75%;
-  }
-  .bottom-nurse-img {
-    width: 90px;
-    height: 90px;
-    margin-top: 7.5%;
-    left: -75%;
-  }
+  // .bottom-doctors-img {
+  //   width: 90px;
+  //   height: 90px;
+  //   margin-top: 7.5%;
+  //   right: -75%;
+  // }
+  // .bottom-nurse-img {
+  //   width: 90px;
+  //   height: 90px;
+  //   margin-top: 7.5%;
+  //   left: -75%;
+  // }
 
   .teleplan-img {
     width: 75px;
@@ -1633,7 +1658,7 @@ SMALL DESKTOP
 
   .app-description-div {
     .app-description-text {
-      font-size: 12px;
+      font-size: 16px;
     }
 
     // :nth-child(1) {
@@ -1664,12 +1689,16 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
-  .patientchart-div-left-text{
+  .patientchart-div-left-text-div{
     width: 35%;
+  }
+  .patientchart-div-right-text-div{
+    width: 35%;
+  }
+  .patientchart-div-left-text{
     font-size: 16px;
   }
   .patientchart-div-right-text{
-    width: 35%;
     font-size: 16px;
   }
 
@@ -1753,20 +1782,26 @@ DESKTOP
     height: 100px;
   }
 
+  .care-img{
+    width: 75px;
+    height: 75px;
+    margin: auto auto;
+  }
+
   .endPatient-img {
     width: 100px;
     height: 100px;
   }
-  .bottom-doctors-img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10%;
-  }
-  .bottom-nurse-img {
-    width: 100px;
-    height: 100px;
-    margin-top: 10%;
-  }
+  // .bottom-doctors-img {
+  //   width: 100px;
+  //   height: 100px;
+  //   margin-top: 10%;
+  // }
+  // .bottom-nurse-img {
+  //   width: 100px;
+  //   height: 100px;
+  //   margin-top: 10%;
+  // }
   .flip-card-front,
   .flip-card-back {
     padding: 15px;

@@ -98,6 +98,24 @@
     opacity: 0;
 }
 
+.contact-form-text-div-card4 {
+    display: flex;
+    margin-top: 25px;
+    animation: fadeIn 2s linear 3s forwards;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
+.contact-form-text-div-card5 {
+    display: flex;
+    margin-top: 25px;
+    animation: fadeIn 2s linear 4s forwards;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0;
+}
+
 .contact-form-title {
     color: var(--text-thirtiary);
     font-size: 14px;
@@ -257,15 +275,23 @@ MOBILE
 
 @media only screen and (min-width: 768px) {
     .contact-form-text-div-card {
-        width: 60vw;
+        width: 75vw;
     }
 
     .contact-form-text-div-card2 {
-        width: 60vw;
+        width: 75vw;
     }
 
     .contact-form-text-div-card3 {
-        width: 60vw;
+        width: 75vw;
+    }
+
+    .contact-form-text-div-card4 {
+        width: 75vw;
+    }
+
+    .contact-form-text-div-card5 {
+        width: 75vw;
     }
 
     .sections-div {

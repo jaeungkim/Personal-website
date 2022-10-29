@@ -56,8 +56,8 @@
         <div class="top-div-left">
           <p class="top-div-description-text fadein-gsap2">Intuitive User Interface</p>
           <p class="top-div-description-text fadein-gsap3">Intelligent Alerts</p>
-          <p class="top-div-description-text fadein-gsap4">Efficient Medication Reconciliation</p>
-          <p class="top-div-description-text fadein-gsap5">Real Time Queries</p>
+          <p class="top-div-description-text fadein-gsap4">Efficient Medication Reconciliations</p>
+          <p class="top-div-description-text fadein-gsap5">Real-Time Queries</p>
         </div>
         <div class="top-div-right">
           <p class="top-div-description-text fadein-gsap2">Assissted Data Input via Intelligent Prompts</p>
@@ -79,7 +79,12 @@
       </div>
 
       <div class="patientchart-div">
-        <p class="patientchart-div-left-text patientchart-div-text-fadein">One Patient</p>
+        <div class="patientchart-div-left-text-div mb-4">
+          <p class="patientchart-div-left-text patientchart-div-text-fadein">One Patient</p>
+          <p class="patientchart-div-left-text patientchart-div-text-fadein">Real-time Sharing between Divisions</p>
+          <img src="./assets/images/ecosystem/patientchart-doctor-left.png" alt=" " class="patientchart-div-text-fadein mt-2 mb-4 patientchart-img" />
+        </div>
+        
         <div class="patientchart-outer-img-div">
           <div class="patientchart-img-div">
             <p class="app-inside-texts">iClinic</p>
@@ -90,7 +95,11 @@
             <p class="app-inside-texts">Patient Chart</p>
           </div>
         </div>
-        <p class="patientchart-div-right-text patientchart-div-text-fadein">One Record</p>
+        <div class="patientchart-div-right-text-div mb-4">
+          <p class="patientchart-div-right-text patientchart-div-text-fadein">One Record</p>
+          <p class="patientchart-div-right-text patientchart-div-text-fadein">Advanced Analytics and Deep Insights</p>
+          <img src="./assets/images/ecosystem/patientchart-doctor-right.png" alt=" " class="patientchart-div-text-fadein mt-2 mb-4 patientchart-img" />
+        </div>
       </div>
 
       <div class="svg-div">
@@ -164,7 +173,7 @@
           <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
-            <p class="text-over-arrows">Seamless Data Transfer</p>
+            <!-- <p class="text-over-arrows">Seamless Data Transfer</p> -->
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
                 stroke="var(--text-primary)">
@@ -366,8 +375,10 @@
         <div class="app-description-div-left">
           <p class="app-description-text">Patient Centric</p>
           <p class="app-description-text">Patient Empowerment</p>
+          <p class="app-description-text">Quality Improvement Assessment</p>
         </div>
         <div class="app-description-div-right">
+          <p class="app-description-text">Access to Care Team</p>
           <p class="app-description-text">Personalized Care Management</p>
           <p class="app-description-text">Improved Clinical Outcome</p>
         </div>
@@ -398,7 +409,7 @@
               <path d="M0 0 9-11 0-8-9-11 0 0"></path>
             </g>
           </svg>
-          <img src="./assets/images/ecosystem/bottomnurse-crw.png" alt=" " class="bottom-nurse-img" />
+          
         </div>
         <div class="arrow-div-2-right-arrow-div">
           <svg class="svg-right-appdiv" viewBox="0 0 300 50" width="300px" height="75px">
@@ -410,7 +421,7 @@
               <path d="M0 0 9-11 0-8-9-11 0 0"></path>
             </g>
           </svg>
-          <img src="./assets/images/ecosystem/bottomdoctors-crw.png" alt=" " class="bottom-doctors-img" />
+          
         </div>
         <svg class="svg-icon-down" viewBox="0 0 150 150">
           <g transform="translate(75,50)" style="stroke:var(--iclinic-blue-white)">
@@ -426,7 +437,11 @@
 
     <!-- PATIENT DIV -->
     <div class="endPatient-div">
+      <img src="./assets/images/ecosystem/bottomnurse-crw.png" alt=" " class="endPatient-img" />
+      <img src="./assets/images/ecosystem/endPatient-care-white.png" alt=" " class="care-img" />
       <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="endPatient-img" />
+      <img src="./assets/images/ecosystem/endPatient-care-white.png" alt=" " class="care-img" />
+      <img src="./assets/images/ecosystem/bottomdoctors-crw.png" alt=" " class="endPatient-img" />
     </div>
     <!-- END PATIENTc DIV -->
   </div>
