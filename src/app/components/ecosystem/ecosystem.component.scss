@@ -120,7 +120,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .care-starts-with {
-  margin-top: 8px;
+  margin-top: 16px;
   margin-bottom: 8px;
   text-align: center;
   font-size: 14px;
@@ -157,10 +157,22 @@ PATIENT DOCTOR DIV CSS
   width: 100%;
 }
 .flip-card-back-text-title {
-  font-size: 16px;
+  font-size: 8px;
   margin-bottom: 8px;
 }
 .flip-card-back-text {
+  font-size: 6px;
+}
+.patientchart-div-left-text{
+  width: 25%;
+  justify-content: flex-end;
+  display:flex;
+  font-size: 12px;
+}
+.patientchart-div-right-text{
+  width: 25%;
+  justify-content: flex-start;
+  display:flex;
   font-size: 12px;
 }
 .patientchart-div{
@@ -170,23 +182,13 @@ PATIENT DOCTOR DIV CSS
   .patientchart-div-text-fadein{
     opacity: 0;
   }
-  .patientchart-div-left-text{
-    width: 35%;
-    justify-content: flex-end;
-    display:flex;
-  }
-  .patientchart-div-right-text{
-    width: 35%;
-    justify-content: flex-start;
-    display:flex;
-  }
 }
 .patientchart-outer-img-div {
   box-shadow: var(--box-shadow);
   border: 1.5px solid rgb(192 192 255);
   // padding: 15px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -200,8 +202,8 @@ PATIENT DOCTOR DIV CSS
   box-shadow: 0px 0px 12px 0px rgb(192 192 255);
   border: 3px solid rgb(192 192 255);
   // padding: 15px;
-  width: 85px;
-  height: 85px;
+  width: 135px;
+  height: 135px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -744,39 +746,17 @@ APP DIV CSS
     }
   }
   .app-description-text {
+    font-size: 12px;
     position: absolute;
-    // display: flex;
-    // font-size: 12px;
-    // width: 275px;
   }
-
-  // :nth-child(1) {
-  //   left: 5%;
-  //   top: 33%;
-  // }
-
-  // :nth-child(2) {
-  //   left: 5%;
-  //   top: 66%;
-  // }
-
-  // :nth-child(3) {
-  //   right: 5%;
-  //   top: 33%;
-  // }
-
-  // :nth-child(4) {
-  //   right: 5%;
-  //   top: 66%;
-  // }
 }
 
 .app-outer-div {
   box-shadow: var(--box-shadow);
   border: 1.5px solid rgb(192, 192, 255);
   // padding: 15px;
-  width: 125px;
-  height: 125px;
+  width: 165px;
+  height: 150px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -787,8 +767,9 @@ APP DIV CSS
   margin-bottom: 1.5%;
 }
 .app-inside-texts {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  font-size: 12px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 .app-div {
   display: flex;
@@ -796,9 +777,9 @@ APP DIV CSS
   box-shadow: 0px 0px 12px 0px rgb(192 192 255);
   border: 3px solid rgb(192 192 255);
   border-radius: 10px;
-  padding: 15px;
-  width: 100px;
-  height: 100px;
+  // padding: 15px;
+  width: 150px;
+  height: 135px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -983,6 +964,36 @@ Mobile
 =============================================
 */
 @media only screen and (min-width: 576px) {
+  .app-inside-texts {
+    font-size: 14px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+  }
+  .patientchart-img-div {
+    // padding: 25px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .patientchart-outer-img-div {
+    // padding: 25px;
+    width: 175px;
+    height: 175px;
+  }
+  .app-outer-div{
+    width: 200px;
+    height: 175px;
+  }
+  .app-div{
+    width: 175px;
+    height: 150px;
+  }
+  .patientchart-div-right-text{
+    font-size: 14px;
+  }
+  .patientchart-div-left-text{
+    font-size: 14px;
+  }
   .chart-arrow-div {
     width: 65%;
     margin-bottom: 75px;
@@ -1008,17 +1019,6 @@ Mobile
     padding: 25px;
   }
 
-  .patientchart-img-div {
-    // padding: 25px;
-    width: 100px;
-    height: 100px;
-  }
-
-  .patientchart-outer-img-div {
-    // padding: 25px;
-    width: 125px;
-    height: 125px;
-  }
 
   .patientDoctor-first-div {
     padding-top: 20%;
@@ -1038,6 +1038,12 @@ Mobile
   .flip-card-back {
     padding: 15px;
   }
+  .flip-card-back-text-title {
+    font-size: 14px;
+  }
+  .flip-card-back-text {
+    font-size: 10px;
+  }
 
   .flip-card {
     width: 125px;
@@ -1048,36 +1054,6 @@ Mobile
     .top-div-description-text {
       font-size: 14px;
     }
-
-    // :nth-child(1) {
-    //   top: 33%;
-    //   left: 0%;
-    // }
-
-    // :nth-child(2) {
-    //   top: 66%;
-    //   left: 0%;
-    // }
-
-    // :nth-child(3) {
-    //   top: 99%;
-    //   left: 0%;
-    // }
-
-    // :nth-child(4) {
-    //   top: 33%;
-    //   right: 0%;
-    // }
-
-    // :nth-child(5) {
-    //   top: 66%;
-    //   right: 0%;
-    // }
-
-    // :nth-child(6) {
-    //   top: 99%;
-    //   right: 0%;
-    // }
   }
 
   .patient-text {
@@ -1169,6 +1145,36 @@ TABLET
 =============================================
 */
 @media only screen and (min-width: 768px) {
+  .app-inside-texts {
+    font-size: 14px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+  .patientchart-img-div {
+    // padding: 25px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .patientchart-outer-img-div {
+    // padding: 25px;
+    width: 175px;
+    height: 175px;
+  }
+  .app-outer-div{
+    width: 200px;
+    height: 175px;
+  }
+  .app-div{
+    width: 175px;
+    height: 150px;
+  }
+  .patientchart-div-right-text{
+    font-size: 16px;
+  }
+  .patientchart-div-left-text{
+    font-size: 16px;
+  }
   .svg-div-onchart {
     padding-top: 15%;
   }
@@ -1337,27 +1343,6 @@ TABLET
   .hospital-img {
     width: 75px;
     height: 75px;
-  }
-
-  .patientchart-outer-img-div {
-    width: 125px;
-    height: 125px;
-  }
-
-  .patientchart-img-div {
-    width: 100px;
-    height: 100px;
-  }
-
-  .app-div {
-    width: 100px;
-    height: 100px;
-  }
-
-  .app-outer-div {
-    // padding: 25px;
-    width: 125px;
-    height: 125px;
   }
 
   .gsap-card {
@@ -1601,6 +1586,13 @@ SMALL DESKTOP
     padding: 15px;
   }
 
+  .flip-card-back-text-title {
+    font-size: 14px;
+  }
+  .flip-card-back-text {
+    font-size: 10px;
+  }
+
   .flip-card {
     width: 150px;
     height: 125px;
@@ -1667,9 +1659,24 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
+  .patientchart-div-left-text{
+    width: 35%;
+    font-size: 16px;
+  }
+  .patientchart-div-right-text{
+    width: 35%;
+    font-size: 16px;
+  }
+
   .chart-div-teleplan {
     width: 27.5%;
     gap: 15%;
+  }
+
+  .app-inside-texts {
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
   }
 
   .chart-div-eHealthViewer {
@@ -1758,6 +1765,12 @@ DESKTOP
   .flip-card-front,
   .flip-card-back {
     padding: 15px;
+  }
+  .flip-card-back-text-title {
+    font-size: 16px;
+  }
+  .flip-card-back-text {
+    font-size: 12px;
   }
 
   .flip-card {
