@@ -78,14 +78,14 @@
 
       <div class="patientchart-div">
         <p class="patientchart-div-left-text patientchart-div-text-fadein">One Patient</p>
-        <div class="patientchart-outer-img-div">    
+        <div class="patientchart-outer-img-div">
           <div class="patientchart-img-div">
             <p class="app-inside-texts">iClinic</p>
             <img src="./assets/images/ecosystem/patientchart.png" alt=" " class="patientchart-img"
               *ngIf="colorSchemeService.colorScheme === 'dark'" />
             <img src="./assets/images/ecosystem/patientchart.png" alt=" " class="patientchart-img"
               *ngIf="colorSchemeService.colorScheme === 'light'" />
-              <p class="app-inside-texts">Patient Chart</p>
+            <p class="app-inside-texts">Patient Chart</p>
           </div>
         </div>
         <p class="patientchart-div-right-text patientchart-div-text-fadein">One Record</p>
@@ -121,34 +121,34 @@
         <div *ngIf="mobile" class="ecosystem-chart">
           <canvas baseChart [data]="doughnutChartDataMobile" [type]="doughnutChartType" [options]="chartOptions"
             id="donutchart"></canvas>
-            <div class="ring-div"></div>
-            <div class="ring-div2"></div>
-            <button class="iclinic-button-inner">
-              <p class="ring-div-inner-text">iClinic MD</p>
-              <p class="ring-div-inner-text">One Patient, One Record</p>
-            </button>
+          <div class="ring-div"></div>
+          <div class="ring-div2"></div>
+          <button class="iclinic-button-inner">
+            <p class="ring-div-inner-text">iClinic MD</p>
+            <p class="ring-div-inner-text">One Patient, One Record</p>
+          </button>
         </div>
         <div *ngIf="tablet" class="ecosystem-chart">
           <canvas baseChart [data]="doughnutChartDataTablet" [type]="doughnutChartType" [options]="chartOptions"
             id="donutchart"></canvas>
-            <div class="ring-div"></div>
-            <div class="ring-div2"></div>
-            <button class="iclinic-button-inner">
-              <p class="ring-div-inner-text">iClinic MD</p>
-              <p class="ring-div-inner-text">One Patient, One Record</p>
-            </button>
+          <div class="ring-div"></div>
+          <div class="ring-div2"></div>
+          <button class="iclinic-button-inner">
+            <p class="ring-div-inner-text">iClinic MD</p>
+            <p class="ring-div-inner-text">One Patient, One Record</p>
+          </button>
         </div>
         <div *ngIf="desktop || largedesktop" class="ecosystem-chart">
           <canvas baseChart [data]="doughnutChartData" [type]="doughnutChartType" [options]="chartOptions"
             id="donutchart"></canvas>
-            <div class="ring-div"></div>
-            <div class="ring-div2"></div>
-            <button class="iclinic-button-inner">
-              <p class="ring-div-inner-text">iClinic MD</p>
-              <p class="ring-div-inner-text">One Patient, One Record</p>
-            </button>
+          <div class="ring-div"></div>
+          <div class="ring-div2"></div>
+          <button class="iclinic-button-inner">
+            <p class="ring-div-inner-text">iClinic MD</p>
+            <p class="ring-div-inner-text">One Patient, One Record</p>
+          </button>
         </div>
-   
+
       </div>
       <div class="chart-parts-div">
         <!-- <div class="chart-div-text-onbackground-div">
@@ -358,7 +358,7 @@
           *ngIf="colorSchemeService.colorScheme === 'dark'" />
         <img src="./assets/images/ecosystem/app-iclinicblue.png" alt=" " class="app-phone-img"
           *ngIf="colorSchemeService.colorScheme === 'light'" />
-          <p class="app-inside-texts">Patient Engagement App</p>
+        <p class="app-inside-texts">Patient Engagement App</p>
       </div>
       <div class="app-description-div" *ngIf="!mobile">
         <div class="app-description-div-left">
@@ -370,7 +370,7 @@
           <p class="app-description-text">Improved Clinical Outcome</p>
         </div>
       </div>
-      
+
     </div>
     <!-- <p class="care-starts-with">Patient Engagement App</p> -->
     <!-- END APP DIV -->

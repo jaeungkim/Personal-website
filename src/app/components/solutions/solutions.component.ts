@@ -15,6 +15,7 @@ export class SolutionsComponent implements OnInit {
   desktop: boolean = false;
   showTitle: boolean;
   title: any = 'Atrial Filbrillation';
+  backTitle: any = `Cardiology`;
   mainTitleInitial: any = 'Cardiology';
   mainTitle: any = [
     'Cardiology',
@@ -39,7 +40,7 @@ export class SolutionsComponent implements OnInit {
     `The Frailty module focusses on the clinical care of patients who are at risk of frailty.\n\nHighlight features include the inclusion of multiple frailty scoring as part of the assessment.`,
     `The PD module is used in the clinical care of patients suffering from Parkinson’s Disease.\n\nHighlight features include the focus on medication titration auto-calculator.`,
     `The Asthma/COPD module is used in the clinical care of patients suffering from asthma or COPD.\n\nHighlight features include risk triaging based on aggravating factors and medications history.`,
-    `The iClinic MD module is our flagship product. It is used in both private and public offices of physicians, spanning over multiple specialties, giving power to the concept of One Patient, One Record.\n\nHighlight features include customizable clinical data for smart data capture and inclusion including medications personal history, smart clinical reporting tools and tightly integrated waitlists and other innovative tools to maximize operation efficiency for clinics and better quality of care for patients.`
+    `The iClinic MD module is our flagship platform. It is used by clinicians in both private clinics and in hospital settings, spanning over multiple specialties, achieving the ‘One Patient, One Record’ concept.\n\nHighlight features include customizable clinical data for smart data capture and downstream insights, efficient medications reconciliation, clinical decision support, clinical data analytics, advanced reporting and other innovative tools to maximize operation efficiency for clinics and improved quality of care for patients.`
   ];
   public doughnutChartDataMobile: any = {
     labels: [

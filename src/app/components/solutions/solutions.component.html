@@ -6,9 +6,12 @@
     <div class="top-content-subtitles-div">
       <!-- <p class="top-content-subtitles fst-italic mb-2">At the Intersection of Data Science and Artistry</p> -->
       <p class="top-content-subtitles fst-italic fw-bold mb-2">Smart, Innovative and Intuitively Designed</p>
-      <p class="top-content-subtitles fst-italic mb-2"><span class="fw-bold">Custom Tailored</span> to Specific Diseases</p>
-      <p class="top-content-subtitles fst-italic mb-2">Built<span class="fw-bold">&nbsp;for Medical Specialists</span></p>
-      <p class="top-content-subtitles fst-italic"><span class="btn btn-custom-book-demo text-nowrap fw-bold" routerLink="/connect">Start Today</span>Discover More Solutions in our Pipeline for Other Diseases
+      <p class="top-content-subtitles fst-italic mb-2"><span class="fw-bold">Custom Tailored</span> to Specific Diseases
+      </p>
+      <p class="top-content-subtitles fst-italic mb-2">Built<span class="fw-bold">&nbsp;for Medical Specialists</span>
+      </p>
+      <p class="top-content-subtitles fst-italic"><span class="btn btn-custom-book-demo text-nowrap fw-bold"
+          routerLink="/connect">Start Today</span>Discover More Solutions in<br>Our Pipeline for Other Diseases
       </p>
       <!-- <p class="top-content-subtitles">custom tailored to specific workflow</p>
       <p class="top-content-subtitles">smart data capture </p>
@@ -16,7 +19,7 @@
       <p class="top-content-subtitles">NLP for deep learning and data extraction</p>
       <p class="top-content-subtitles">insights and predictive modeling for advanced clinical decision support</p> -->
     </div>
-    <p class="solutions-mainTitle mb-2" [ngClass]="{
+    <!-- <p class="solutions-mainTitle mb-2" [ngClass]="{
         mainaf: textColorIndex === 0,
         maincr: textColorIndex === 1,
         maincrw: textColorIndex === 2,
@@ -33,9 +36,10 @@
         mainiclinicmd: textColorIndex === 13
       }">
       {{ mainTitleInitial }}
-    </p>
-    <div class="solutions-title-div mb-2">
-      <p class="solutions-title" [ngClass]="{
+    </p> -->
+    <div class="flip-title">
+      <div class="solutions-title-div mb-2">
+        <p class="solutions-title" [ngClass]="{
           af: textColorIndex === 0,
           cr: textColorIndex === 1,
           crw: textColorIndex === 2,
@@ -51,8 +55,25 @@
           ascopd: textColorIndex === 12,
           iclinicmd: textColorIndex === 13
         }">
-        {{ title }}
-      </p>
+          {{ title }}
+        </p>
+        <p class="solutions-title-back" [ngClass]="{
+        af: textColorIndex === 0,
+        cr: textColorIndex === 1,
+        crw: textColorIndex === 2,
+        hcm: textColorIndex === 3,
+        hf: textColorIndex === 4,
+        hfo: textColorIndex === 5,
+        lp: textColorIndex === 6,
+        sc: textColorIndex === 7,
+        scess: textColorIndex === 8,
+        wc: textColorIndex === 9,
+        fr: textColorIndex === 10,
+        pd: textColorIndex === 11,
+        ascopd: textColorIndex === 12,
+        iclinicmd: textColorIndex === 13
+      }">{{ backTitle }}</p>
+      </div>
     </div>
     <div class="d-flex description-div">
       <p class="description-solutions" [innerText]="description"></p>
