@@ -76,6 +76,7 @@ PATIENT DOCTOR DIV CSS
 
   .top-div-description-text {
     position: absolute;
+    color: var(--text-secondary);
     font-size: 10px;
   }
 }
@@ -136,9 +137,14 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-div-left-text {
+  color: var(--text-secondary);
   font-size: 12px;
 }
 
+.patientchart-div-right-text {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
 .patientchart-div-right-text-div {
   position: relative;
   align-items: flex-start;
@@ -172,10 +178,6 @@ PATIENT DOCTOR DIV CSS
 
 .patientchart-arrow-right {
   // position: absolute;
-}
-
-.patientchart-div-right-text {
-  font-size: 12px;
 }
 
 .patientchart-div {
@@ -784,6 +786,7 @@ APP DIV CSS
   .app-description-text {
     font-size: 12px;
     position: absolute;
+    color: var(--text-secondary);
   }
 }
 
@@ -1122,7 +1125,7 @@ Mobile
   }
 
   .care-starts-with {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .iclinicmd-text-inside {
@@ -1449,7 +1452,7 @@ TABLET
   }
 
   .care-starts-with {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .iclinicmd-text-inside {
@@ -1686,7 +1689,7 @@ SMALL DESKTOP
   }
 
   .care-starts-with {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .iclinicmd-text-inside {
@@ -1750,7 +1753,7 @@ DESKTOP
   }
 
   .app-inside-texts {
-    font-size: 16px;
+    font-size: 18px;
     margin-top: 8px;
     margin-bottom: 8px;
   }
@@ -1904,7 +1907,7 @@ DESKTOP
   }
 
   .care-starts-with {
-    font-size: 16px;
+    font-size: 18px;
   }
 
   .iclinicmd-text-inside {
