@@ -60,19 +60,19 @@ PATIENT DOCTOR DIV CSS
     width: 47.5%;
 
     :nth-child(1) {
-      top: 20%;
+      top: 0%;
     }
 
     :nth-child(2) {
-      top: 40%;
+      top: 33%;
     }
 
     :nth-child(3) {
-      top: 60%;
+      top: 66%;
     }
 
     :nth-child(4) {
-      top: 80%;
+      top: 99%;
     }
   }
 
@@ -83,56 +83,26 @@ PATIENT DOCTOR DIV CSS
     width: 47.5%;
 
     :nth-child(1) {
-      top: 20%;
+      top: 0%;
     }
 
     :nth-child(2) {
-      top: 40%;
+      top: 33%;
     }
 
     :nth-child(3) {
-      top: 60%;
+      top: 66%;
     }
 
     :nth-child(4) {
-      top: 80%;
+      top: 99%;
     }
   }
 
   .top-div-description-text {
     position: absolute;
-    font-size: 12px;
+    font-size: 10px;
   }
-
-  // :nth-child(1) {
-  //   top: 33%;
-  //   left: -10%;
-  // }
-
-  // :nth-child(2) {
-  //   top: 66%;
-  //   left: -10%;
-  // }
-
-  // :nth-child(3) {
-  //   top: 99%;
-  //   left: -10%;
-  // }
-
-  // :nth-child(4) {
-  //   top: 33%;
-  //   right: -10%;
-  // }
-
-  // :nth-child(5) {
-  //   top: 66%;
-  //   right: -10%;
-  // }
-
-  // :nth-child(6) {
-  //   top: 99%;
-  //   right: -10%;
-  // }
 }
 
 .care-starts-with {
@@ -201,7 +171,8 @@ PATIENT DOCTOR DIV CSS
   flex-direction: column;
   width: 35%;
 }
-.patientchart-arrow-left-div{
+
+.patientchart-arrow-left-div {
   position: absolute;
   height: 100%;
   display: flex;
@@ -210,10 +181,12 @@ PATIENT DOCTOR DIV CSS
   width: 100%;
   left: 12.5%;
 }
-.patientchart-arrow-right{
+
+.patientchart-arrow-right {
   // position: absolute;
 }
-.patientchart-arrow-right-div{
+
+.patientchart-arrow-right-div {
   position: absolute;
   height: 100%;
   display: flex;
@@ -221,9 +194,11 @@ PATIENT DOCTOR DIV CSS
   width: 100%;
   right: 12.5%;
 }
-.patientchart-arrow-right{
+
+.patientchart-arrow-right {
   // position: absolute;
 }
+
 .patientchart-div-right-text {
   font-size: 12px;
 }
@@ -257,8 +232,8 @@ PATIENT DOCTOR DIV CSS
   box-shadow: 0px 0px 12px 0px rgb(192 192 255);
   border: 3px solid rgb(192 192 255);
   // padding: 15px;
-  width: 135px;
-  height: 135px;
+  width: 105px;
+  height: 125px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
