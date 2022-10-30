@@ -51,14 +51,11 @@
 
 .contact-form-text-title {
     color: var(--text-thirtiary);
-    font-size: 24px;
-    text-align: center;
 }
 
 .contact-form-text-subtitle {
     color: var(--text-thirtiary);
-    font-size: 18px;
-    text-align: center;
+    opacity: 1 !important;
 }
 
 .contact-form-text-div-subtitle {
@@ -279,11 +276,7 @@ MOBILE
 */
 
 @media only screen and (min-width: 768px) {
-    .contact-form-text-title{
-        font-size: 28px;
-    }
     .contact-form-text-subtitle{
-        font-size: 24px;
     }
 
     .sections-div {
@@ -342,12 +335,7 @@ DESKTOP
 */
 
 @media only screen and (min-width: 1200px) {
-    .contact-form-text-title {
-        font-size: 32px;
-    }
-
     .contact-form-text-subtitle {
-        font-size: 28px;
         padding-bottom: 5%;
     }
 
