@@ -96,9 +96,10 @@
   font-size: 24px;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
   width: 100%;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
+  border: 3px solid rgba(192,192,255,1);
+  border-radius: 10px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
@@ -108,9 +109,10 @@
   width: 100%;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px;
   width: 100%;
-  box-shadow: var(--box-shadow);
+  box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
+  border: 3px solid rgba(192,192,255,1);
+  border-radius: 10px;
   text-align: center;
   font-size: 24px;
   -webkit-backface-visibility: hidden;

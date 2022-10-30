@@ -99,7 +99,7 @@ export class HomeComponent implements OnInit {
     this.renderer.setPixelRatio(window.devicePixelRatio);
 
     this.scene = new THREE.Scene();
-    this.scene.background = new THREE.Color(0x151217);
+    this.scene.background = new THREE.Color('black');
     this.camera = new THREE.PerspectiveCamera(
       75,
       window.innerWidth / window.innerHeight,
