@@ -15,7 +15,6 @@ export class SolutionsComponent implements OnInit {
   desktop: boolean = false;
   showTitle: boolean;
   title: any = 'Atrial Filbrillation';
-  backTitle: any = `Cardiology`;
   mainTitleInitial: any = 'Cardiology';
   mainTitle: any = [
     'Cardiology',

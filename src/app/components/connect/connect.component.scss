@@ -51,13 +51,13 @@
 
 .contact-form-text-title {
     color: var(--text-thirtiary);
-    font-size: 14px;
+    font-size: 24px;
     text-align: center;
 }
 
 .contact-form-text-subtitle {
     color: var(--text-thirtiary);
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
 }
 
@@ -70,6 +70,7 @@
     font-size: 12px;
     padding: 15px;
     width: 100%;
+    white-space: nowrap;
 }
 
 .contact-form-text-div-card {
@@ -275,25 +276,31 @@ MOBILE
 */
 
 @media only screen and (min-width: 768px) {
-    .contact-form-text-div-card {
-        width: 75vw;
+    .contact-form-text-title{
+        font-size: 28px;
     }
+    .contact-form-text-subtitle{
+        font-size: 24px;
+    }
+    // .contact-form-text-div-card {
+    //     width: 75vw;
+    // }
 
-    .contact-form-text-div-card2 {
-        width: 75vw;
-    }
+    // .contact-form-text-div-card2 {
+    //     width: 75vw;
+    // }
 
-    .contact-form-text-div-card3 {
-        width: 75vw;
-    }
+    // .contact-form-text-div-card3 {
+    //     width: 75vw;
+    // }
 
-    .contact-form-text-div-card4 {
-        width: 75vw;
-    }
+    // .contact-form-text-div-card4 {
+    //     width: 75vw;
+    // }
 
-    .contact-form-text-div-card5 {
-        width: 75vw;
-    }
+    // .contact-form-text-div-card5 {
+    //     width: 75vw;
+    // }
 
     .sections-div {
         display: flex;
@@ -352,11 +359,11 @@ DESKTOP
 
 @media only screen and (min-width: 1200px) {
     .contact-form-text-title {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .contact-form-text-subtitle {
-        font-size: 36px;
+        font-size: 28px;
         padding-bottom: 5%;
     }
 

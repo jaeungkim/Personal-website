@@ -1,45 +1,83 @@
 .title {
-  font-size: 32px;
+  font-size: 36px;
+  margin-bottom: 36px;
   text-align: center;
 }
 
 .paragraph {
-  margin-top: 20px;
   margin-bottom: 24px;
-  font-size: 18px;
+  font-size: 14px;
   line-height: 26px;
   font-weight: 300;
   text-align: center;
   text-align: justify;
 }
-.icons-div{
+
+.icons-div {
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   gap: 100px;
 }
-.icons-row-div{
+
+.icons-row-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 16px;
+  gap: 8px;
 }
-.icons-individual-div{
+
+.icons-individual-div {
   display: flex;
   flex-direction: column;
   align-items: center;
   // justify-content: center;
-  width: 150px;
-  width: 150px;
+  padding: 5px;
   box-shadow: var(--box-shadow);
   border-radius: 10px;
-  padding: 15px;
+
 }
-.icons-individual-img{
-  width: 75%;
+
+.icons-individual-img {
+  width: 55%;
 }
-.icons-individual-text{
+
+.icons-individual-text {
   margin-top: 12px;
-  font-size: 12px;
+  font-size: 10px;
   text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+  .icons-row-div {
+    gap: 16px;
+  }
+
+  .icons-individual-div {
+    width: 150px;
+    padding: 15px;
+  }
+
+  .icons-individual-img {
+    width: 75%;
+  }
+
+  .icons-individual-text {
+    font-size: 12px;
+  }
+}
+@media only screen and (min-width: 768px){
+  .paragraph{
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 992px){
+  .paragraph{
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 1400px){
+  .paragraph{
+    font-size: 20px;
+  }
 }
