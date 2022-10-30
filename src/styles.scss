@@ -77,11 +77,13 @@ GLOBAL VARIABLES
   text-align: center;
   font-style: italic;
 }
-.description{
+
+.description {
   color: var(--text-secondary);
   font-size: 12px;
   text-align: justify;
 }
+
 //mobile
 @media only screen and (min-width: 576px) {
   .main-title {
@@ -106,7 +108,8 @@ GLOBAL VARIABLES
   .subtitles-fadein-div {
     margin-bottom: 5%;
   }
-  .description{
+
+  .description {
     font-size: 12px;
   }
 }
@@ -123,7 +126,8 @@ GLOBAL VARIABLES
   .subtitles-fadein-div {
     margin-bottom: 10%;
   }
-  .description{
+
+  .description {
     font-size: 16px;
   }
 }
@@ -148,7 +152,8 @@ GLOBAL VARIABLES
   .subtitle-fadein {
     font-size: 24px;
   }
-  .description{
+
+  .description {
     font-size: 20px;
   }
 }
