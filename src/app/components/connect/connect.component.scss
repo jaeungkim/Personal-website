@@ -76,48 +76,51 @@
 .contact-form-text-div-card {
     display: flex;
     margin-top: 25px;
-    animation: fadeIn 2s linear forwards;
+    // animation: fadeIn 2s linear forwards;
     margin-left: auto;
     margin-right: auto;
-    opacity: 0;
+    
 }
-
-.contact-form-text-div-card2 {
-    display: flex;
-    margin-top: 25px;
+.fadein-card{
     animation: fadeIn 2s linear 1s forwards;
-    margin-left: auto;
-    margin-right: auto;
     opacity: 0;
 }
-
-.contact-form-text-div-card3 {
-    display: flex;
-    margin-top: 25px;
+.fadein-card2{
     animation: fadeIn 2s linear 2s forwards;
-    margin-left: auto;
-    margin-right: auto;
     opacity: 0;
 }
-
-.contact-form-text-div-card4 {
-    display: flex;
-    margin-top: 25px;
+.fadein-card3{
     animation: fadeIn 2s linear 3s forwards;
-    margin-left: auto;
-    margin-right: auto;
     opacity: 0;
 }
-
-.contact-form-text-div-card5 {
-    display: flex;
-    margin-top: 25px;
+.fadein-card4{
     animation: fadeIn 2s linear 4s forwards;
-    margin-left: auto;
-    margin-right: auto;
     opacity: 0;
 }
-
+.fadein-card5{
+    animation: fadeIn 2s linear 5s forwards;
+    opacity: 0;
+}
+.fadein-card6{
+    animation: fadeIn 2s linear 6s forwards;
+    opacity: 0;
+}
+.fadein-card7{
+    animation: fadeIn 2s linear 7s forwards;
+    opacity: 0;
+}
+.fadein-card8{
+    animation: fadeIn 2s linear 8s forwards;
+    opacity: 0;
+}
+.fadein-card9{
+    animation: fadeIn 2s linear 9s forwards;
+    opacity: 0;
+}
+.fadein-card10{
+    animation: fadeIn 2s linear 10s forwards;
+    opacity: 0;
+}
 .contact-form-title {
     color: var(--text-thirtiary);
     font-size: 14px;
@@ -282,25 +285,6 @@ MOBILE
     .contact-form-text-subtitle{
         font-size: 24px;
     }
-    // .contact-form-text-div-card {
-    //     width: 75vw;
-    // }
-
-    // .contact-form-text-div-card2 {
-    //     width: 75vw;
-    // }
-
-    // .contact-form-text-div-card3 {
-    //     width: 75vw;
-    // }
-
-    // .contact-form-text-div-card4 {
-    //     width: 75vw;
-    // }
-
-    // .contact-form-text-div-card5 {
-    //     width: 75vw;
-    // }
 
     .sections-div {
         display: flex;
