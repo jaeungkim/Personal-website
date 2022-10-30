@@ -12,51 +12,12 @@
   margin-bottom: 5%;
 }
 
-.top-content-title {
-  white-space: nowrap;
-  font-size: 32px;
-  text-align: center;
-}
-
-.top-content-subtitles {
-  opacity: 0;
-  font-size: 16px;
-  text-align: center;
-}
-
-.top-content-subtitles-div {
-  color: var(--text-secondary);
-  margin-bottom: 10%;
-
-  :nth-child(1) {
-    animation: fadeIn 2s linear forwards;
-  }
-
-  :nth-child(2) {
-    animation: fadeIn 2s linear 1s forwards;
-  }
-
-  :nth-child(3) {
-    animation: fadeIn 2s linear 2s forwards;
-  }
-
-  :nth-child(4) {
-    animation: fadeIn 2s linear 3s forwards;
-  }
-
-  :nth-child(5) {
-    animation: fadeIn 2s linear 4s forwards;
-  }
-}
-
 .btn-custom-book-demo {
-  margin-left: 8px;
   margin-right: 8px;
   font-style: normal;
   color: var(--iclinic-blue-white);
   border: 1px solid #a11f74;
   font-size: 16px;
-
 }
 
 .btn-custom-book-demo:hover {
@@ -97,8 +58,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
-  border: 3px solid rgba(192,192,255,1);
+  box-shadow: 0px 0px 12px 0px rgba(192, 192, 255, 1);
+  border: 3px solid rgba(192, 192, 255, 1);
   border-radius: 10px;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -110,8 +71,8 @@
   margin-left: auto;
   margin-right: auto;
   width: 100%;
-  box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
-  border: 3px solid rgba(192,192,255,1);
+  box-shadow: 0px 0px 12px 0px rgba(192, 192, 255, 1);
+  border: 3px solid rgba(192, 192, 255, 1);
   border-radius: 10px;
   text-align: center;
   font-size: 24px;
@@ -127,15 +88,9 @@
 }
 
 .description-solutions {
-  color: var(--text-secondary);
-  font-size: 14px;
-  text-align: justify;
-  margin: 0;
   height: 22vh;
   margin-top: 15px;
   margin-bottom: 50px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .charts-div {
@@ -175,20 +130,12 @@
   .solutions-chart-div {
     margin-top: 0;
   }
-
-  .top-content-title {
-    font-size: 32px;
-    text-align: center;
-  }
-
-  .top-content-subtitles {
-    opacity: 0;
-    font-size: 16px;
-    text-align: center;
-  }
 }
 
 @media only screen and (min-width: 768px) {
+  .nowrap-maintitle{
+    white-space: nowrap;
+  }
   .solutions-mainTitle {
     font-size: 36px;
     // border-radius: 10px;
@@ -203,19 +150,6 @@
     width: 37.5%;
     height: 50vh;
   }
-
-  .top-content-title {
-    font-size: 24px;
-  }
-
-  .top-content-subtitles-div {
-    margin-bottom: 5%;
-  }
-
-  .top-content-subtitles {
-    font-size: 14px;
-  }
-
   .solutions-title {
     font-size: 20px;
   }
@@ -225,12 +159,8 @@
   }
 
   .description-solutions {
-    font-size: 12px;
     height: auto;
-    margin: 0;
     margin-top: 8px;
-    // border-radius: 10px;
-    // padding: 12px;
   }
 
   .solutions-container {
@@ -249,7 +179,7 @@
   }
 
   .btn-custom-book-demo {
-    font-size: 14px;
+    font-size: 16px;
   }
 }
 
@@ -257,18 +187,6 @@
   .solutions-text-div {
     width: 37.5%;
     height: 50vh;
-  }
-
-  .top-content-title {
-    font-size: 32px;
-  }
-
-  .top-content-subtitles-div {
-    margin-bottom: 10%;
-  }
-
-  .top-content-subtitles {
-    font-size: 16px;
   }
 
   .solutions-text-div {
@@ -284,7 +202,6 @@
   }
 
   .description-solutions {
-    font-size: 16px;
     margin-top: 24px;
   }
 }
@@ -296,27 +213,8 @@
 }
 
 @media only screen and (min-width: 1400px) {
-
-  // .top-content-text-div{
-  //   width: 115%;
-  // }
-  // .solutions-text-div {
-  //   width: 110%;
-  // }
-  .top-content-title {
-    font-size: 36px;
-    text-align: center;
-    display: flex;
-  }
-
-  .top-content-subtitles {
-    opacity: 0;
-    font-size: 20px;
-    text-align: center;
-  }
-
   .btn-custom-book-demo {
-    font-size: 20px;
+    font-size: 24px;
   }
 
   .solutions-mainTitle {
@@ -337,8 +235,6 @@
 
   .description-solutions {
     font-size: 20px;
-    height: auto;
-    margin: 0;
     margin-top: 15px;
   }
 
@@ -567,19 +463,6 @@
 .mainiclinicmd {
   color: var(--light-iclinic-blue);
 }
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    // transform: translate3d(-2000px, 0, 0);
-  }
-
-  100% {
-    opacity: 1;
-    // transform: translate(0,0);
-  }
-}
-
 
 @keyframes randomFlip {
   0% {

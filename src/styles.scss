@@ -23,12 +23,6 @@ p {
   height: 100%;
 }
 
-.max-width-custom {
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .dark-setting-home {
   background-color: black !important;
   color: white !important;
@@ -44,21 +38,130 @@ GLOBAL VARIABLES
   --pd-blue: rgba(201, 255, 251, 1);
   --fr-green: rgba(206, 255, 173, 1);
   --ascopd-beige: rgba(255, 218, 193, 1);
+}
 
-  /*
-=============================================
-LIGHT THEME GLOBAL VARIABLES
-=============================================
-*/
+.main-title {
+  font-size: 20px;
+  margin-bottom: 36px;
+  text-align: center;
+}
 
+.subtitles-fadein-div {
+  color: var(--text-secondary);
+  margin-bottom: 5%;
 
-  /*
-=============================================
-DARK THEME GLOBAL VARIABLES
-=============================================
-*/
-  // --dark-bg-primary: #151217;
+  p:nth-child(1) {
+    animation: fadeInSubtitles 2s linear 1s forwards;
+  }
 
+  p:nth-child(2) {
+    animation: fadeInSubtitles 2s linear 2s forwards;
+  }
+
+  p:nth-child(3) {
+    animation: fadeInSubtitles 2s linear 3s forwards;
+  }
+
+  p:nth-child(4) {
+    animation: fadeInSubtitles 2s linear 4s forwards;
+  }
+
+  p:nth-child(5) {
+    animation: fadeInSubtitles 2s linear 5s forwards;
+  }
+}
+
+.subtitle-fadein {
+  opacity: 0;
+  font-size: 16px;
+  text-align: center;
+  font-style: italic;
+}
+.description{
+  color: var(--text-secondary);
+  font-size: 12px;
+  text-align: justify;
+}
+//mobile
+@media only screen and (min-width: 576px) {
+  .main-title {
+    font-size: 32px;
+  }
+
+  .subtitle-fadein {
+    font-size: 16px;
+  }
+}
+
+//tablet
+@media only screen and (min-width: 768px) {
+  .main-title {
+    font-size: 32px;
+  }
+
+  .subtitle-fadein {
+    font-size: 16px;
+  }
+
+  .subtitles-fadein-div {
+    margin-bottom: 5%;
+  }
+  .description{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .main-title {
+    font-size: 32px;
+  }
+
+  .subtitle-fadein {
+    font-size: 16px;
+  }
+
+  .subtitles-fadein-div {
+    margin-bottom: 10%;
+  }
+  .description{
+    font-size: 16px;
+  }
+}
+
+//desktop
+@media only screen and (min-width: 1200px) {
+  .main-title {
+    font-size: 36px;
+  }
+
+  .subtitle-fadein {
+    font-size: 20px;
+  }
+}
+
+//largedesktop
+@media only screen and (min-width: 1400px) {
+  .main-title {
+    font-size: 40px;
+  }
+
+  .subtitle-fadein {
+    font-size: 24px;
+  }
+  .description{
+    font-size: 20px;
+  }
+}
+
+//ANIMATION
+@keyframes fadeInSubtitles {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 /*

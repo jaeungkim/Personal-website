@@ -1,16 +1,5 @@
-.title {
-  font-size: 36px;
-  margin-bottom: 36px;
-  text-align: center;
-}
-
 .paragraph {
   margin-bottom: 24px;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: 300;
-  text-align: center;
-  text-align: justify;
 }
 
 .icons-div {
@@ -65,20 +54,5 @@
 
   .icons-individual-text {
     font-size: 12px;
-  }
-}
-@media only screen and (min-width: 768px){
-  .paragraph{
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 992px){
-  .paragraph{
-    font-size: 16px;
-  }
-}
-@media only screen and (min-width: 1400px){
-  .paragraph{
-    font-size: 20px;
   }
 }
