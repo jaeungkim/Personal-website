@@ -4,16 +4,16 @@
 }
 
 .icons-div {
-  margin-top: 100px;
   display: flex;
   flex-direction: column;
+  gap: 16px;
 }
 
 .icons-row-div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 8px;
+  gap: 4px;
 }
 
 .icons-individual-div {
@@ -21,15 +21,14 @@
   flex-direction: column;
   align-items: center;
   // justify-content: center;
-  padding: 5px;
+  padding: 2.5px;
   box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
   border: 3px solid rgba(192,192,255,1);
   border-radius: 10px;
-
 }
 
 .icons-individual-img {
-  width: 55%;
+  width: 60%;
 }
 
 .icons-individual-text {
@@ -38,8 +37,30 @@
   text-align: center;
 }
 
+@media only screen and (min-width: 576px){
+  .icons-div{
+    gap: 16px;
+  }
+  .icons-row-div{
+    gap: 8px;
+  }
+  .icons-individual-div {
+    padding: 5px;
+  }
+  
+  .icons-individual-img{
+    width: 75%;
+  }
+  .icons-individual-text {
+    font-size: 12px;
+  }
+}
 @media only screen and (min-width: 768px) {
   .icons-div{
+    display: flex;
+    width: 75%;
+    margin: auto auto;
+    margin-top: 100px;
     gap: 100px;
   }
   .icons-row-div {
@@ -49,13 +70,5 @@
   .icons-individual-div {
     width: 150px;
     padding: 15px;
-  }
-
-  .icons-individual-img {
-    width: 75%;
-  }
-
-  .icons-individual-text {
-    font-size: 12px;
   }
 }
