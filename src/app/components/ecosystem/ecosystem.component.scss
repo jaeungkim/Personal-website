@@ -405,19 +405,12 @@ CHART DIV CSS
 .chart-div-text-ontop {
   position: absolute;
   top: -50px;
-  padding: 5px;
-  border-radius: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   padding-left: 16px;
   padding-right: 16px;
+  border-radius: 10px;
   box-shadow: var(--box-shadow);
-}
-
-.negative-left {
-  left: -32px;
-}
-
-.negative-right {
-  right: -32px;
 }
 
 .iclinic-button-inner {
@@ -1502,7 +1495,6 @@ SMALL DESKTOP
 */
 
 @media only screen and (min-width: 992px) {
-
   .chart-div-teleplan {
     width: 25%;
     gap: 10%;
@@ -1536,11 +1528,11 @@ SMALL DESKTOP
   }
 
   .arrow-left-svg {
-    left: 40%;
+    left: 38%;
   }
 
   .arrow-right-svg {
-    right: 40%;
+    right: 38%;
   }
 
   .external-label {
@@ -1550,6 +1542,14 @@ SMALL DESKTOP
   .ecosystem-chart {
     margin-top: 5%;
     width: 45%;
+  }
+
+  .negative-left {
+    left: -21px;
+  }
+  
+  .negative-right {
+    right: -21px;
   }
 
   .inner-chart {
@@ -1785,11 +1785,11 @@ DESKTOP
   }
 
   .negative-left {
-    left: -16px;
+    left: -11px;
   }
 
   .negative-right {
-    right: -16px;
+    right: -11px;
   }
 
   .inner-chart {
