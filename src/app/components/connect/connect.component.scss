@@ -8,7 +8,7 @@
     box-shadow: var(--box-shadow);
 }
 
-.second-section-div{
+.second-section-div {
     width: 100%;
 }
 
@@ -21,16 +21,18 @@
     margin-bottom: 16px;
 }
 
-.address-form-section{
+.address-form-section {
     position: relative;
     border-radius: 10px;
     padding: 25px;
     width: 100%;
     box-shadow: var(--box-shadow);
 }
-.address-form-subtitle{
+
+.address-form-subtitle {
     color: var(--text-thirtiary);
 }
+
 .contact-form {
     max-width: 830px;
     overflow-x: hidden;
@@ -38,7 +40,7 @@
 }
 
 .contact-form-text-div {
-    padding-top: 10%;
+    // padding-top: 10%;
     padding-bottom: 12.5%;
     position: relative;
     font-size: 27px;
@@ -60,15 +62,14 @@
 }
 
 .contact-form-text-div-subtitle {
-    box-shadow: 0px 0px 12px 0px rgba(192,192,255,1);
-    border: 3px solid rgba(192,192,255,1);
+    box-shadow: 0px 0px 12px 0px rgba(192, 192, 255, 1);
+    border: 3px solid rgba(192, 192, 255, 1);
     border-radius: 10px;
     color: var(--text-thirtiary);
     margin: 0;
     font-size: 12px;
     padding: 15px;
     width: 100%;
-    white-space: nowrap;
 }
 
 .contact-form-text-div-card {
@@ -77,48 +78,59 @@
     // animation: fadeIn 2s linear forwards;
     margin-left: auto;
     margin-right: auto;
-    
+
 }
-.fadein-card{
+
+.fadein-card {
     animation: fadeIn 2s linear 1s forwards;
     opacity: 0;
 }
-.fadein-card2{
+
+.fadein-card2 {
     animation: fadeIn 2s linear 2s forwards;
     opacity: 0;
 }
-.fadein-card3{
+
+.fadein-card3 {
     animation: fadeIn 2s linear 3s forwards;
     opacity: 0;
 }
-.fadein-card4{
+
+.fadein-card4 {
     animation: fadeIn 2s linear 4s forwards;
     opacity: 0;
 }
-.fadein-card5{
+
+.fadein-card5 {
     animation: fadeIn 2s linear 5s forwards;
     opacity: 0;
 }
-.fadein-card6{
+
+.fadein-card6 {
     animation: fadeIn 2s linear 6s forwards;
     opacity: 0;
 }
-.fadein-card7{
+
+.fadein-card7 {
     animation: fadeIn 2s linear 7s forwards;
     opacity: 0;
 }
-.fadein-card8{
+
+.fadein-card8 {
     animation: fadeIn 2s linear 8s forwards;
     opacity: 0;
 }
-.fadein-card9{
+
+.fadein-card9 {
     animation: fadeIn 2s linear 9s forwards;
     opacity: 0;
 }
-.fadein-card10{
+
+.fadein-card10 {
     animation: fadeIn 2s linear 10s forwards;
     opacity: 0;
 }
+
 .contact-form-title {
     color: var(--text-thirtiary);
     font-size: 14px;
@@ -164,9 +176,11 @@
     margin-top: -10px;
     margin-bottom: 10px;
 }
-.customized-width{
+
+.customized-width {
     width: 47.5%;
 }
+
 .contactform-input-box:focus-visible {
     border: 2px solid var(--iclinic-blue) !important;
     outline: none;
@@ -277,7 +291,7 @@ MOBILE
 */
 
 @media only screen and (min-width: 768px) {
-    .contact-form-text-subtitle{
+    .contact-form-text-subtitle {
         font-size: 24px;
     }
 
@@ -291,25 +305,28 @@ MOBILE
         width: 63%;
     }
 
-    .second-section-div{
+    .second-section-div {
         width: 28%;
         display: flex;
         flex-direction: column;
         gap: 10%;
     }
+
     .support-form-section {
         height: 60%;
     }
 
-    .address-form-section{
+    .address-form-section {
         height: 40%;
     }
+
     .contact-form-text-div-title {
         font-size: 18px;
     }
 
     .contact-form-text-div-subtitle {
-        padding: 25px;
+        white-space: nowrap;
+        padding: 15px;
         font-size: 18px;
     }
 
@@ -347,6 +364,7 @@ DESKTOP
     }
 
     .contact-form-text-div-subtitle {
+        padding: 25px;
         font-size: 24px;
     }
 
@@ -380,6 +398,7 @@ ANIMATION
         opacity: 0;
         // transform: translate3d(-2000px, 0, 0);
     }
+
     100% {
         opacity: 1;
         // transform: translate(0,0);
