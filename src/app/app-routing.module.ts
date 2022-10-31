@@ -11,39 +11,30 @@ import { PrivacyComponent } from './components/privacy/privacy.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 
-//LOGIN
-import { LoginComponent } from './components/login/login.component';
-import { AuthGuard } from './services/auth/auth.guard';
-
 const routes: Routes = [
   {
     path: '',
     redirectTo: '',
     pathMatch: 'full',
     component: HomeComponent,
-    canActivate: [AuthGuard],
   },
-  { path: 'login', component: LoginComponent },
-  { path: 'aboutus', component: AboutusComponent, canActivate: [AuthGuard] },
+  { path: 'aboutus', component: AboutusComponent },
   {
     path: 'solutions',
     component: SolutionsComponent,
-    canActivate: [AuthGuard],
   },
   {
     path: 'ecosystem',
     component: EcosystemComponent,
-    canActivate: [AuthGuard],
   },
-  { path: 'support', component: SupportComponent, canActivate: [AuthGuard] },
-  { path: 'connect', component: ConnectComponent, canActivate: [AuthGuard] },
-  { path: 'privacy', component: PrivacyComponent, canActivate: [AuthGuard] },
+  { path: 'support', component: SupportComponent},
+  { path: 'connect', component: ConnectComponent},
+  { path: 'privacy', component: PrivacyComponent},
   {
     path: 'termsofservice',
     component: TermsComponent,
-    canActivate: [AuthGuard],
   },
-  { path: '**', component: NotFoundComponent, canActivate: [AuthGuard] },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

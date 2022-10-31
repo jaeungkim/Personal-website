@@ -26,9 +26,9 @@ import { PrivacyComponent } from './components/privacy/privacy.component';
 import { TermsComponent } from './components/terms/terms.component';
 import { SettingChangeColorSchemeComponent } from './components/setting-change-color-scheme/setting-change-color-scheme.component';
 //AUTH
-import { AuthService } from './services/auth/auth.service';
-import { AuthGuard } from './services/auth/auth.guard';
-import { LoginComponent } from './components/login/login.component';
+// import { AuthService } from './services/auth/auth.service';
+// import { AuthGuard } from './services/auth/auth.guard';
+// import { LoginComponent } from './components/login/login.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +45,6 @@ import { LoginComponent } from './components/login/login.component';
     ModalComponent,
     PrivacyComponent,
     TermsComponent,
-    LoginComponent,
     SettingChangeColorSchemeComponent,
   ],
   imports: [
@@ -60,7 +59,7 @@ import { LoginComponent } from './components/login/login.component';
     RecaptchaModule,
     RecaptchaFormsModule,
   ],
-  providers: [AuthService, AuthGuard, EmailService],
+  providers: [EmailService],
   // providers:[],
   bootstrap: [AppComponent],
 })

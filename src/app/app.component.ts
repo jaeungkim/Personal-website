@@ -1,8 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { transition, style, animate, trigger } from '@angular/animations';
-import { AuthService } from './services/auth/auth.service';
-import { StorageService } from './services/storage/storage.service';
 import { ColorSchemeService } from './services/theme/theme.service';
 import { CookieService } from 'ngx-cookie-service';
 import { v4 as uuidv4 } from 'uuid';
@@ -50,10 +48,8 @@ export class AppComponent implements OnInit, OnDestroy {
   selected: boolean = true;
   constructor(
     public colorSchemeService: ColorSchemeService,
-    public _authService: AuthService,
     public router: Router,
     public cookieService: CookieService,
-    public storageService: StorageService
   ) {
     this.colorSchemeService.load();
     this.cookieValue = this.cookieService.get('X-Auth-Token');
@@ -79,23 +75,6 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy() {}
-
-  // get isAdmin() {
-  //   let is_admin = localStorage.getItem('is_admin');
-  //   if (is_admin === 'on') {
-  //     return true;
-  //   } else {
-  //     return false;
-  //   }
-  // }
-
-  logoutUser() {
-    this.storageService.clean();
-    // localStorage.removeItem('token');
-    // localStorage.removeItem('is_admin');
-    this.router.navigate(['/login']);
-    return true;
-  }
 
   //REACAPTCHA
   resolved(captchaResponse: string) {
