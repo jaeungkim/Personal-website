@@ -1223,7 +1223,7 @@ TABLET
   }
   .ecosystem-chart-div {
     // position: relative;
-    height: 850px;
+    height: 800px;
   }
   .patientchart-div-left-text-div {
     width: 35%;
@@ -1762,6 +1762,14 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
+  .patientDoctor-division {
+    position: relative;
+    height: 1000px;
+  }
+  .ecosystem-chart-div {
+    // position: relative;
+    height: 900px;
+  }
   .iclinic-button-inner {
     :nth-child(1) {
       font-size: 18px;
