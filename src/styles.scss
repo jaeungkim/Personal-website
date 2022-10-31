@@ -180,7 +180,7 @@ DARK THEME VARIABLES
   --text-primary: white;
   --text-secondary: white;
   --text-thirtiary: white;
-  --iclinic-blue-white: white;
+  --text-iclinicblue: white;
   --iclinic-blue-grey: grey;
   --light-iclinic-blue: rgb(203, 223, 237);
   color: white;
@@ -230,12 +230,12 @@ LIGHT THEME VARIABLES
   --light-bg-four: #3F72AF;
   --light-bg-fifth: #112D4E;
   --light-iclinic-blue: rgb(203, 223, 237);
-  --iclinic-blue-white: rgb(128, 182, 222); //#80B6DE
-  --iclinic-blue-grey: rgb(128, 182, 222);
+  --iclinic-blue-grey: rgb(128, 182, 222);//#80B6DE
 
   --text-primary: black;
   --text-thirtiary: black;
   --text-secondary: #450159;
+  --text-iclinicblue: rgb(128, 182, 222);
   // --text-thirtiary: black;
   --box-shadow: 0px 0px 12px 0px rgba(150, 150, 150, 0.35);
   background-color: var(--light-bg-secondary);
