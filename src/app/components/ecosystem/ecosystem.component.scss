@@ -473,7 +473,7 @@ CHART DIV CSS
 
 .ecosystem-chart-div {
   position: relative;
-  height: 100vh;
+  height: 850px;
 }
 
 .main-chart-div {
@@ -579,7 +579,7 @@ CHART DIV CSS
 .gsap-card {
   width: 100px;
   height: 100px;
-  cursor: pointer;
+  // cursor: pointer;
   perspective: 1000px;
 }
 
@@ -1290,9 +1290,8 @@ TABLET
   .patientDoctor-first-div {
     padding-top: 12.5%;
   }
-
   .chart-parts-div {
-    height: 100vh;
+    height: 850px;
     left: 0;
     bottom: 0;
     display: block;
@@ -1741,6 +1740,12 @@ DESKTOP
 @media only screen and (min-width: 1200px) {
   .patientDoctor-division {
     position: relative;
+    height: 950px;
+  }
+  .ecosystem-chart-div {
+    height: 950px;
+  }
+  .chart-parts-div {
     height: 950px;
   }
   .iclinic-button-inner {
