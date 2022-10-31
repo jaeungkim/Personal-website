@@ -6,7 +6,21 @@ GENERAL CSS
 .margin-reset-class {
   margin: 0 !important;
 }
+.patientDoctor-division {
+  position: relative;
+  height: 1000px;
+}
+.chart-parts-div {
+  height: 850px;
+  left: 0;
+  bottom: 0;
+  display: block;
+}
 
+.ecosystem-chart-div {
+  position: relative;
+  height: 850px;
+}
 /*
 =============================================
 PATIENT DOCTOR DIV CSS
@@ -87,11 +101,6 @@ PATIENT DOCTOR DIV CSS
   margin-bottom: 8px;
   text-align: center;
   font-size: 13px;
-}
-
-.patientDoctor-division {
-  position: relative;
-  height: 850px;
 }
 
 .patientDoctor-first-div {
@@ -464,16 +473,6 @@ CHART DIV CSS
   left: 12.5%;
   position: absolute;
   z-index: -1;
-}
-
-// .chart-section-pad {
-//   display: flex;
-//   justify-content: center;
-// }
-
-.ecosystem-chart-div {
-  position: relative;
-  height: 850px;
 }
 
 .main-chart-div {
@@ -1283,20 +1282,13 @@ TABLET
   }
 
   .ecosystem-chart {
-    margin-top: 5%;
+    // margin-top: 5%;
     width: 45%;
   }
 
   .patientDoctor-first-div {
     padding-top: 12.5%;
   }
-  .chart-parts-div {
-    height: 850px;
-    left: 0;
-    bottom: 0;
-    display: block;
-  }
-
   .chart-div-teleplan {
     display: flex;
     flex-direction: row;
@@ -1554,7 +1546,7 @@ SMALL DESKTOP
   }
 
   .ecosystem-chart {
-    margin-top: 5%;
+    // margin-top: 5%;
     width: 45%;
   }
 
