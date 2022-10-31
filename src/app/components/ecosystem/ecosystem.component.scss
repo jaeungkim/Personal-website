@@ -134,7 +134,7 @@ PATIENT DOCTOR DIV CSS
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 30%;
 }
 
 .patientchart-div-left-text {
@@ -152,7 +152,7 @@ PATIENT DOCTOR DIV CSS
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  width: 35%;
+  width: 30%;
 }
 
 .patientchart-arrow-left-div {
@@ -751,7 +751,7 @@ APP DIV CSS
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    width: 37.5%;
+    width: 30%;
 
     :nth-child(1) {
       top: 25%;
@@ -770,7 +770,7 @@ APP DIV CSS
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    width: 37.5%;
+    width: 30%;
 
     :nth-child(1) {
       top: 25%;
@@ -786,7 +786,7 @@ APP DIV CSS
   }
 
   .app-description-text {
-    font-size: 12px;
+    font-size: 10px;
     position: absolute;
     color: var(--text-secondary);
   }
@@ -1022,6 +1022,13 @@ Mobile
 =============================================
 */
 @media only screen and (min-width: 576px) {
+  .patientchart-div-left-text-div {
+    width: 35%;
+  }
+
+  .patientchart-div-right-text-div {
+    width: 35%;
+  }
   .app-inside-texts {
     font-size: 14px;
     margin-top: 4px;
@@ -1157,6 +1164,12 @@ Mobile
   }
 
   .app-description-div {
+    .app-description-div-left{
+      width: 37.5%;
+    }
+    .app-description-div-right{
+      width: 37.5%;
+    }
     .app-description-text {
       font-size: 12px;
     }
@@ -1728,14 +1741,6 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
-  .patientchart-div-left-text-div {
-    width: 35%;
-  }
-
-  .patientchart-div-right-text-div {
-    width: 35%;
-  }
-
   .patientchart-div-left-text {
     font-size: 16px;
   }
