@@ -434,11 +434,11 @@ CHART DIV CSS
   color: #450159;
 
   :nth-child(1) {
-    font-size: 1vw;
+    font-size: 2vw;
   }
 
   :nth-child(2) {
-    font-size: 0.75vw;
+    font-size: 1.5vw;
   }
 }
 
@@ -1206,6 +1206,16 @@ TABLET
 =============================================
 */
 @media only screen and (min-width: 768px) {
+  .iclinic-button-inner {
+    :nth-child(1) {
+      font-size: 1vw;
+    }
+
+    :nth-child(2) {
+      font-size: 0.75vw;
+    }
+  }
+
   .care-starts-with {
     font-size: 14px;
   }
