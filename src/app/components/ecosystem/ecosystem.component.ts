@@ -224,7 +224,7 @@ export class EcosystemComponent implements OnInit {
       { opacity: 0, y: '100%' },
       { opacity: 1, y: '0%', duration: 5 }
     );
-    // chartAnimationTimeline.to('.chart-section-pad', { duration: 1 });
+    chartAnimationTimeline.to('.chart-section-pad', { duration: 10 });
     //END DOCTOR PATIENT ANIMATION
 
     // gsap.to('.dotted-path', {

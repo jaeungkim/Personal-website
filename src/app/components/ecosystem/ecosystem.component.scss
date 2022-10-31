@@ -8,18 +8,26 @@ GENERAL CSS
 }
 .patientDoctor-division {
   position: relative;
-  height: 1000px;
+  height: 775px;
+}
+.ecosystem-chart-div {
+  // position: relative;
+  height: 750px;
+}
+.main-chart-div {
+  height: 100%;
 }
 .chart-parts-div {
-  height: 850px;
+  position: absolute;
+  height: 100%;
   left: 0;
   bottom: 0;
   display: block;
 }
 
-.ecosystem-chart-div {
-  position: relative;
-  height: 850px;
+
+.chart-section-pad{
+  height: 50px;
 }
 /*
 =============================================
@@ -475,10 +483,7 @@ CHART DIV CSS
   z-index: -1;
 }
 
-.main-chart-div {
-  position: relative;
-  height: 100%;
-}
+
 
 .ecosystem-chart {
   position: relative;
@@ -503,30 +508,34 @@ CHART DIV CSS
   position: absolute;
   width: 100%;
   display: flex;
-  bottom: 12.5vh;
+  // bottom: 12.5vh;
   justify-content: space-evenly;
 }
 
 .chart-div-teleplan {
   display: flex;
+  justify-content: flex-end;;
   flex-direction: column;
   align-items: center;
 }
 
 .chart-div-eHealthViewer {
   display: flex;
+  justify-content: flex-end;;
   flex-direction: column;
   align-items: center;
 }
 
 .chart-div-pharmanet {
   display: flex;
+  justify-content: flex-end;;
   flex-direction: column;
   align-items: center;
 }
 
 .chart-div-hospital {
   display: flex;
+  justify-content: flex-end;;
   flex-direction: column;
   align-items: center;
 }
@@ -1098,9 +1107,9 @@ Mobile
     width: 60%;
   }
 
-  .chart-parts-div {
-    bottom: 10vh;
-  }
+  // .chart-parts-div {
+  //   bottom: 10vh;
+  // }
 
   .clinic-image-div {
     padding: 25px;
@@ -1191,6 +1200,14 @@ TABLET
 =============================================
 */
 @media only screen and (min-width: 768px) {
+  .patientDoctor-division {
+    position: relative;
+    height: 900px;
+  }
+  .ecosystem-chart-div {
+    // position: relative;
+    height: 800px;
+  }
   .patientchart-div-left-text-div {
     width: 35%;
   }
@@ -1730,16 +1747,6 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
-  .patientDoctor-division {
-    position: relative;
-    height: 950px;
-  }
-  .ecosystem-chart-div {
-    height: 950px;
-  }
-  .chart-parts-div {
-    height: 950px;
-  }
   .iclinic-button-inner {
     :nth-child(1) {
       font-size: 18px;
