@@ -91,7 +91,7 @@ PATIENT DOCTOR DIV CSS
 
 .patientDoctor-division {
   position: relative;
-  height: 150vh;
+  height: 850px;
 }
 
 .patientDoctor-first-div {
@@ -1739,6 +1739,10 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
+  .patientDoctor-division {
+    position: relative;
+    height: 950px;
+  }
   .iclinic-button-inner {
     :nth-child(1) {
       font-size: 18px;
