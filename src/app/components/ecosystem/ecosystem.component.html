@@ -265,7 +265,7 @@
                   *ngIf="colorSchemeService.colorScheme === 'dark'" />
                 <img src="./assets/images/ecosystem/eHealth-light.png" alt=" " class="eHealth-img"
                   *ngIf="colorSchemeService.colorScheme === 'light'" />
-                <p class="external-label text-nowrap">eHealth V<span *ngIf="largedesktop">Viewer</span></p>
+                <p class="external-label text-nowrap">eHealth&nbsp;<span *ngIf="!largedesktop">V</span><span *ngIf="largedesktop">Viewer</span></p>
               </div>
               <div class="flip-card-back">
                 <p class="flip-card-back-text-title">eHealth V</p>
