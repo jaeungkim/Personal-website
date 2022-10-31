@@ -17,6 +17,10 @@ gsap.registerPlugin(ScrollTrigger);
   styleUrls: ['./aboutus.component.scss'],
 })
 export class AboutusComponent implements OnInit {
+  mobile: boolean = false;
+  tablet: boolean = false;
+  desktop: boolean = false;
+  largedesktop: boolean = false;
   @ViewChild('secondSection', { static: true })
   secondSection: ElementRef<HTMLDivElement>;
   @ViewChild('menu', { static: true }) menu: ElementRef<HTMLDivElement>;
@@ -31,6 +35,16 @@ export class AboutusComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    if (window.innerWidth < 768) {
+      // 768px portrait
+      this.mobile = true;
+    } else if (window.innerWidth < 992) {
+      this.tablet = true;
+    } else if (window.innerWidth < 1200) {
+      this.desktop = true;
+    } else {
+      this.largedesktop = true;
+    }
     this.initialAnimations();
     this.initScrollAnimations();
   }
