@@ -12,7 +12,7 @@ GENERAL CSS
 }
 .ecosystem-chart-div {
   // position: relative;
-  height: 750px;
+  height: 725px;
 }
 .main-chart-div {
   height: 100%;
@@ -1041,6 +1041,10 @@ Mobile
 =============================================
 */
 @media only screen and (min-width: 576px) {
+  .ecosystem-chart-div {
+    // position: relative;
+    height: 800px;
+  }
   .patientchart-div-left-text-div {
     width: 32.5%;
   }
@@ -1215,7 +1219,7 @@ TABLET
 @media only screen and (min-width: 768px) {
   .patientDoctor-division {
     position: relative;
-    height: 900px;
+    height: 950px;
   }
   .ecosystem-chart-div {
     // position: relative;
