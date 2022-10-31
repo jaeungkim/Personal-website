@@ -8,7 +8,7 @@ GENERAL CSS
 }
 .patientDoctor-division {
   position: relative;
-  height: 775px;
+  height: 825px;
 }
 .ecosystem-chart-div {
   // position: relative;
@@ -60,7 +60,7 @@ PATIENT DOCTOR DIV CSS
     text-align: right;
     width: 47.5%;
     height: 100px;
-    margin-top: 25px;
+    margin-top: 50px;
     :nth-child(1) {
       top: 0%;
     }
@@ -85,7 +85,7 @@ PATIENT DOCTOR DIV CSS
     text-align: left;
     width: 47.5%;
     height: 100px;
-    margin-top: 25px;
+    margin-top: 50px;
     :nth-child(1) {
       top: 0%;
     }
@@ -282,7 +282,7 @@ PATIENT DOCTOR DIV CSS
   margin-bottom: 0.5%;
   position: relative;
   width: 100%;
-  height: 200px;
+  height: 250px;
 }
 .svg-div {
   margin-top: 0.5%;
@@ -310,7 +310,7 @@ PATIENT DOCTOR DIV CSS
 }
 .svg-icon-carestart{
   width: 100%;
-  height: 200px;
+  height: 225px;
 }
 
 .svg-icon-down {
@@ -1219,7 +1219,7 @@ TABLET
 @media only screen and (min-width: 768px) {
   .patientDoctor-division {
     position: relative;
-    height: 950px;
+    height: 1000px;
   }
   .ecosystem-chart-div {
     // position: relative;
