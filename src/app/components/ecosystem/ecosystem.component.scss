@@ -139,7 +139,7 @@ PATIENT DOCTOR DIV CSS
 
 .patientchart-div-left-text {
   color: var(--text-secondary);
-  font-size: 12px;
+  font-size: 10px;
 }
 
 .patientchart-div-right-text {
@@ -1023,11 +1023,29 @@ Mobile
 */
 @media only screen and (min-width: 576px) {
   .patientchart-div-left-text-div {
-    width: 35%;
+    width: 32.5%;
   }
 
   .patientchart-div-right-text-div {
-    width: 35%;
+    width: 32.5%;
+  }
+  .patientchart-div-right-text {
+    font-size: 14px;
+  }
+
+  .patientchart-div-left-text {
+    font-size: 14px;
+  }
+  .app-description-div {
+    .app-description-div-left{
+      width: 32.5%;
+    }
+    .app-description-div-right{
+      width: 32.5%;
+    }
+    .app-description-text {
+      font-size: 14px;
+    }
   }
   .app-inside-texts {
     font-size: 14px;
@@ -1059,14 +1077,6 @@ Mobile
   .app-div {
     width: 175px;
     height: 150px;
-  }
-
-  .patientchart-div-right-text {
-    font-size: 14px;
-  }
-
-  .patientchart-div-left-text {
-    font-size: 14px;
   }
 
   .chart-arrow-div {
@@ -1163,38 +1173,6 @@ Mobile
     height: 75px;
   }
 
-  .app-description-div {
-    .app-description-div-left{
-      width: 37.5%;
-    }
-    .app-description-div-right{
-      width: 37.5%;
-    }
-    .app-description-text {
-      font-size: 12px;
-    }
-
-    // :nth-child(1) {
-    //   left: 23%;
-    //   top: 33%;
-    // }
-
-    // :nth-child(2) {
-    //   left: 23%;
-    //   top: 66%;
-    // }
-
-    // :nth-child(3) {
-    //   right: 23%;
-    //   top: 33%;
-    // }
-
-    // :nth-child(4) {
-    //   right: 23%;
-    //   top: 66%;
-    // }
-  }
-
   .svg-left-appdiv {
     width: 90%;
   }
@@ -1203,14 +1181,6 @@ Mobile
     width: 90%;
   }
 
-  // .bottom-nurse-img {
-  //   margin-top: 6%;
-  //   left: -75%;
-  // }
-  // .bottom-doctors-img {
-  //   margin-top: 6%;
-  //   right: -75%;
-  // }
 }
 
 /*
@@ -1219,6 +1189,31 @@ TABLET
 =============================================
 */
 @media only screen and (min-width: 768px) {
+  .patientchart-div-left-text-div {
+    width: 35%;
+  }
+
+  .patientchart-div-right-text-div {
+    width: 35%;
+  }
+  .patientchart-div-right-text {
+    font-size: 14px;
+  }
+
+  .patientchart-div-left-text {
+    font-size: 14px;
+  }
+  .app-description-div {
+    .app-description-div-left{
+      width: 35%;
+    }
+    .app-description-div-right{
+      width: 35%;
+    }
+    .app-description-text {
+      font-size: 14px;
+    }
+  }
   .iclinic-button-inner {
     :nth-child(1) {
       font-size: 1vw;
@@ -1261,14 +1256,6 @@ TABLET
     height: 150px;
   }
 
-  .patientchart-div-right-text {
-    font-size: 16px;
-  }
-
-  .patientchart-div-left-text {
-    font-size: 16px;
-  }
-
   .svg-div-onchart {
     padding-top: 15%;
   }
@@ -1290,11 +1277,6 @@ TABLET
   .ecosystem-chart {
     margin-top: 5%;
     width: 45%;
-  }
-
-  #donutchart {
-    // top: 50%;
-    // transform: translate(0, -50%);
   }
 
   .patientDoctor-first-div {
@@ -1520,6 +1502,7 @@ SMALL DESKTOP
 */
 
 @media only screen and (min-width: 992px) {
+
   .chart-div-teleplan {
     width: 25%;
     gap: 10%;
@@ -1741,14 +1724,31 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
-  .patientchart-div-left-text {
-    font-size: 16px;
+  .patientchart-div-left-text-div {
+    width: 35%;
   }
 
+  .patientchart-div-right-text-div {
+    width: 35%;
+  }
   .patientchart-div-right-text {
     font-size: 16px;
   }
 
+  .patientchart-div-left-text {
+    font-size: 16px;
+  }
+  .app-description-div {
+    .app-description-div-left{
+      width: 35%;
+    }
+    .app-description-div-right{
+      width: 35%;
+    }
+    .app-description-text {
+      font-size: 16px;
+    }
+  }
   .chart-div-teleplan {
     width: 27.5%;
     gap: 15%;
