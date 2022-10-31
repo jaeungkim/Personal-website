@@ -27,7 +27,8 @@ export class HomeComponent implements OnInit {
   color = new THREE.Color();
   private positions: any[] = [];
   private segmentPoints: any[] = [];
-  private radius: number = 240;
+  private numberOfParticles: number = 1000;
+  private radius: number = 125;
   private dots: any;
   private dotsStrokes: any;
   private dotsMaterial: any;
@@ -71,6 +72,11 @@ export class HomeComponent implements OnInit {
   `;
   constructor(private router: Router) {}
   public ngOnInit(): void {
+    if (window.innerWidth > 768){
+      this.radius = 240;
+      this.numberOfParticles = 2500;
+    }
+
     if (window.innerWidth > 1200) {
       this.largedesktop = true;
     }
@@ -149,7 +155,7 @@ export class HomeComponent implements OnInit {
     };
     //DOT MATERIAL DECLARATIONS
     this.dots = new THREE.BufferGeometry();
-    for (var i = 0; i < 2500; i++) {
+    for (var i = 0; i < this.numberOfParticles; i++) {
       let pos: posObject = {
         x: Math.random(),
         y: Math.random(),
