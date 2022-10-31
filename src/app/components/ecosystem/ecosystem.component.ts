@@ -95,6 +95,7 @@ export class EcosystemComponent implements OnInit {
         end: '+=200%',
         scrub: 0.2,
         pin: true,
+        markers: true,
       },
     });
 
@@ -193,6 +194,12 @@ export class EcosystemComponent implements OnInit {
       duration: 0.5,
     });
   
+    patientAnimationTimeline.to('.section-pad',{
+      duration: 1,
+    })
+    // patientAnimationTimeline.to('.section-pad',{
+    //   duration: 1,
+    // })
     chartAnimationTimeline.fromTo(
       '.svg-div-onchart',
       { opacity: 0, y: '-150%' },
@@ -218,7 +225,7 @@ export class EcosystemComponent implements OnInit {
       { opacity: 0, y: '100%' },
       { opacity: 1, y: '0%', duration: 5 }
     );
-    // chartAnimationTimeline.to('.chart-section-pad', { duration: 50 });
+    chartAnimationTimeline.to('.chart-section-pad', { duration: 1 });
     //END DOCTOR PATIENT ANIMATION
 
     // gsap.to('.dotted-path', {
