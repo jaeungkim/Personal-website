@@ -26,7 +26,7 @@ PATIENT DOCTOR DIV CSS
   position: absolute;
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 125px;
   width: 100%;
 
   .top-div-left {
@@ -90,6 +90,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientDoctor-division {
+  position: relative;
   height: 100vh;
 }
 
@@ -276,6 +277,10 @@ PATIENT DOCTOR DIV CSS
 .svg-icon {
   width: 100%;
   height: 150px;
+}
+.svg-icon-carestart{
+  width: 100%;
+  height: 175px;
 }
 
 .svg-icon-down {
@@ -1810,11 +1815,11 @@ DESKTOP
   }
 
   .negative-left {
-    left: -11px;
+    left: -5px;
   }
 
   .negative-right {
-    right: -11px;
+    right: -5px;
   }
 
   .inner-chart {
