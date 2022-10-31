@@ -95,7 +95,6 @@ export class EcosystemComponent implements OnInit {
         end: '+=200%',
         scrub: 0.2,
         pin: true,
-        markers: true,
       },
     });
 
