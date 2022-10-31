@@ -39,7 +39,7 @@ export class SolutionsComponent implements OnInit {
     `The Frailty module focusses on the clinical care of patients who are at risk of frailty.\n\nHighlight features include the inclusion of multiple frailty scoring as part of the assessment.`,
     `The PD module is used in the clinical care of patients suffering from Parkinson’s Disease.\n\nHighlight features include the focus on medication titration auto-calculator.`,
     `The Asthma/COPD module is used in the clinical care of patients suffering from asthma or COPD.\n\nHighlight features include risk triaging based on aggravating factors and medications history.`,
-    `The iClinic MD module is our flagship platform,  used by clinicians in both private clinics and in hospital settings, spanning over multiple specialties.\n\nHighlight features include smart data capture, deep insights, efficient medications reconciliation, CDS and analytics, advanced reporting and other innovative tools to maximize clinic efficiency and quality of care for patients.`
+    `The iClinic MD module is our flagship platform,  used by clinicians in both private clinics and in hospital settings, spanning over multiple specialties.\n\nHighlight features include smart data capture, deep insights, efficient medications reconciliation, CDS and analytics, advanced reporting and other innovative tools to maximize clinic efficiency and quality of care for patients.`,
   ];
   public doughnutChartDataMobile: any = {
     labels: [
@@ -413,24 +413,7 @@ export class SolutionsComponent implements OnInit {
       },
     ],
   };
-  public doughnutChartData2: any = {
-    datasets: [
-      {
-        weight: 1,
-      },
-      {
-        data: [1],
-        borderWidth: [0],
-        backgroundColor: 'transparent',
-        spacing: 0,
-        borderColor: 'rgba(192,192,255,1)',
-      },
-    ],
-  };
   public doughnutChartType: ChartType = 'doughnut';
-  //2nd
-  public doughnutChartType2: ChartType = 'doughnut';
-
   public chartOptions: any = {
     rotation: 14,
     layout: {
@@ -443,7 +426,7 @@ export class SolutionsComponent implements OnInit {
       },
     },
     cutout: function (chart, context) {
-      let width = chart.chart.width;;
+      let width = chart.chart.width;
       if (width < 400) {
         return width / 9;
       }
@@ -506,7 +489,7 @@ export class SolutionsComponent implements OnInit {
         let fontSize = (height / 500).toFixed(2);
         ctx.beginPath();
         ctx.arc(width / 2, height / 2, chart.chart.width / 7.5, 0, 2 * Math.PI);
- 
+
         //GRADIENT
         var grd = ctx.createLinearGradient(0, 0, 0, width);
         // grd.addColorStop(0.4, 'rgba(105,180,250,1)');
@@ -575,72 +558,6 @@ export class SolutionsComponent implements OnInit {
     maintainAspectRatio: true,
   };
 
-  //2nd chart options
-  public chartOptions2: any = {
-    cutout: function (chart, context) {
-      let width = chart.chart.width;
-      let height = chart.chart.height;
-      return width / 8;
-    },
-    hover: {
-      mode: 'nearest',
-    },
-    plugins: {
-      legend: {
-        display: false,
-      },
-      tooltip: {
-        enabled: false,
-        display: false,
-      },
-      datalabels: null,
-      // datalabels: {
-      //   font: function (context) {
-      //     var width = context.chart.width;
-      //     var size = Math.round(width / 60);
-      //     return {
-      //       size: size,
-      //       weight: 'bold',
-      //       family: "Roboto, 'Helvetica Neue', sans-serif",
-      //     };
-      //   },
-      //   align: function (context) {
-      //     if (context.dataIndex === 0) {
-      //       return 'left';
-      //     }
-      //     return 'center';
-      //   },
-      //   offset: function (context) {
-      //     if (context.dataIndex === 0) {
-      //       return 80;
-      //     }
-      //     return 0;
-      //   },
-      //   rotation: function (context) {
-      //     if (context.dataIndex === 2) {
-      //       return 20;
-      //     } else if (context.dataIndex === 4) {
-      //       return 35;
-      //     } else if (context.dataIndex === 6) {
-      //       return 62;
-      //     }
-      //     return 0;
-      //   },
-      //   color: 'transparent', //hide
-
-      //   formatter: (value, context) => {
-      //     if (value !== 0) {
-      //       return context.chart.data.labels![context.dataIndex];
-      //     } else {
-      //       return null;
-      //     }
-      //   },
-      // },
-    },
-
-    responsive: true,
-    maintainAspectRatio: true,
-  };
   constructor() {
     this.showTitle = false;
   }

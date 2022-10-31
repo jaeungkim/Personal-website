@@ -8,7 +8,8 @@
   padding-right: 5%;
   box-shadow: var(--box-shadow);
 }
-.navbar-innerdiv{
+
+.navbar-innerdiv {
   display: flex;
   width: 100%;
   justify-content: between;
@@ -16,6 +17,7 @@
   margin-left: auto;
   margin-right: auto;
 }
+
 .navbar-custom-home {
   z-index: 100;
   width: 100%;
@@ -57,7 +59,7 @@
   padding: 0;
 }
 
-.nav-link{
+.nav-link {
   color: var(--iclinic-blue-white);
 }
 
@@ -115,14 +117,14 @@
 
 
 .aiclinictext {
-  font-size: 24px;
+  font-size: 16px;
   padding-left: 0.5rem;
   margin-top: auto;
   margin-bottom: auto;
 }
 
 .iclinictext {
-  font-size: 24px;
+  font-size: 16px;
   padding-left: 0.5rem;
   margin-top: auto;
   margin-bottom: auto;
@@ -135,7 +137,7 @@
 .btn-custom-book-demo {
   border: 1px solid #a11f74;
   font-size: 12px;
-  
+
 }
 
 .btn-custom-book-demo:hover {
