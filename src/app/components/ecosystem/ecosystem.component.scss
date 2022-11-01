@@ -1055,6 +1055,29 @@ ARROW CSS
 Mobile
 =============================================
 */
+@media only screen and (min-width: 370px) {
+  .patientchart-outer-img-div{
+    padding: 0;
+  }
+  .app-outer-div{
+    padding: 0;
+  }
+  .patientchart-div-left-text-div{
+    width: 30%;
+  }
+  .patientchart-div-right-text-div{
+    width: 30%;
+  }
+  .app-description-div{
+    .app-description-div-left{
+      width: 30%;
+    }
+    .app-description-div-right{
+      width: 30%;
+    }
+  }
+
+}
 @media only screen and (min-width: 576px) {
   .ecosystem-chart-div {
     // position: relative;
@@ -1817,13 +1840,21 @@ DESKTOP
     font-size: 16px;
   }
 
+  .top-div-description-div{
+    .top-div-left{
+      width: 47.5%;
+    }
+    .top-div-right{
+      width: 47.5%;
+    }
+  }
   .app-description-div {
     .app-description-div-left {
-      width: 35%;
+      width: 40%;
     }
 
     .app-description-div-right {
-      width: 35%;
+      width: 40%;
     }
 
     .app-description-text {

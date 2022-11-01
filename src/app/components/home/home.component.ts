@@ -72,28 +72,28 @@ export class HomeComponent implements OnInit {
   `;
   constructor(private router: Router) {}
   public ngOnInit(): void {
-    // if (window.innerWidth > 768){
-    //   this.radius = 240;
-    //   this.numberOfParticles = 2500;
-    // }
+    if (window.innerWidth > 768){
+      this.radius = 240;
+      this.numberOfParticles = 2500;
+    }
 
-    // if (window.innerWidth > 1200) {
-    //   this.largedesktop = true;
-    // }
-    // setTimeout(() => {
+    if (window.innerWidth > 1200) {
+      this.largedesktop = true;
+    }
+    setTimeout(() => {
       this.hideVideoAfterPlay = true;
-    // }, 13000);
+    }, 13000);
 
-    // setTimeout(() => {
-    //   if (this.router.url === '/') {
+    setTimeout(() => {
+      if (this.router.url === '/') {
         this.createScene();
         this.render();
-    //   }
-    // }, 10000);
+      }
+    }, 10000);
 
-    // setTimeout(() => {
+    setTimeout(() => {
       this.aiclinictextappear = true;
-    // }, 9750);
+    }, 9750);
   }
 
   public createScene(): void {
