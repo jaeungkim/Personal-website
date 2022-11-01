@@ -9,6 +9,6 @@ export class EmailService {
 
   sendEmail(input: any) {
     return this.http
-      .post('https://0ffpeiwy24.execute-api.us-east-1.amazonaws.com/default/ContactFormLambda', input,{observe: 'response'})
+      .post('https://12dwurj4sl.execute-api.us-east-1.amazonaws.com/default/contactFormLambda', input,{observe: 'response'})
   }
 }
