@@ -1,8 +1,8 @@
 .title {
+    font-size: 24px;
     position: absolute;
     z-index: 1;
     margin: 0;
-    font-size: 36px;
     display: flex;
     align-items: center;
     color: transparent;
@@ -17,10 +17,10 @@
 }
 
 .title-aiclinic {
+    font-size: 24px;
     position: absolute;
     z-index: 1;
     margin: 0;
-    font-size: 36px;
     display: flex;
     align-items: center;
     color: white;
@@ -66,7 +66,7 @@
 }
 
 .subtitle {
-    font-size: 36px;
+    font-size: 24px;
     position: absolute;
     margin: 0;
     z-index: 1;
@@ -86,7 +86,7 @@
 }
 
 .subtitle-aiclinic {
-    font-size: 36px;
+    font-size: 24px;
     position: absolute;
     margin: 0;
     z-index: 1;
@@ -120,6 +120,20 @@
     object-fit: cover;
 }
 
+@media only screen and (min-width: 400px){
+    .title{
+        font-size: 36px;
+    }
+    .title-aiclinic{
+        font-size: 36px;
+    }
+    .subtitle{
+        font-size: 36px;
+    }
+    .subtitle-aiclinic{
+        font-size: 36px;
+    }
+}
 @media only screen and (min-width: 768px) {
     .title {
         font-size: 60px;
