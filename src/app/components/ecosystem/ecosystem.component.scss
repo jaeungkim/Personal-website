@@ -1079,6 +1079,15 @@ Mobile
 
 }
 @media only screen and (min-width: 576px) {
+  .patientDoctor-division {
+    position: relative;
+    height: 950px;
+  }
+  
+  .ecosystem-chart-div {
+    // position: relative;
+    height: 750px;
+  }
   .ecosystem-chart-div {
     // position: relative;
     height: 800px;
@@ -1091,7 +1100,14 @@ Mobile
   .patientchart-div-right-text-div {
     width: 32.5%;
   }
-
+  .patientchart-img {
+    width: 75px;
+    height: 75px;
+  }
+  .app-phone-img {
+    width: 75px;
+    height: 75px;
+  }
   .patientchart-div-right-text {
     font-size: 14px;
   }
@@ -1430,16 +1446,6 @@ TABLET
   }
 
   .clinic-img {
-    width: 75px;
-    height: 75px;
-  }
-
-  .patientchart-img {
-    width: 75px;
-    height: 75px;
-  }
-
-  .app-phone-img {
     width: 75px;
     height: 75px;
   }
