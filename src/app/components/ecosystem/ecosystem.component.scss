@@ -9,7 +9,7 @@ GENERAL CSS
 
 .patientDoctor-division {
   position: relative;
-  height: 850px;
+  height: 900px;
 }
 
 .ecosystem-chart-div {
@@ -63,7 +63,7 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: flex-end;
     text-align: right;
-    width: 47.5%;
+    width: 42.5%;
     height: 100px;
     margin-top: 50px;
 
@@ -89,7 +89,7 @@ PATIENT DOCTOR DIV CSS
     display: flex;
     justify-content: flex-start;
     text-align: left;
-    width: 47.5%;
+    width: 42.5%;
     height: 100px;
     margin-top: 50px;
 
@@ -165,7 +165,7 @@ PATIENT DOCTOR DIV CSS
   align-items: flex-end;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  // width: 30%;
 }
 
 .patientchart-div-left-text {
@@ -183,7 +183,7 @@ PATIENT DOCTOR DIV CSS
   align-items: flex-start;
   display: flex;
   flex-direction: column;
-  width: 30%;
+  // width: 30%;
 }
 
 .patientchart-arrow-left-div {
@@ -217,7 +217,7 @@ PATIENT DOCTOR DIV CSS
   display: flex;
   flex-direction: row;
   align-items: center;
-
+  gap: 5px;
   .patientchart-div-text-fadein {
     opacity: 0;
   }
@@ -226,9 +226,9 @@ PATIENT DOCTOR DIV CSS
 .patientchart-outer-img-div {
   box-shadow: var(--box-shadow);
   border: 1.5px solid rgb(192 192 255);
-  // padding: 15px;
-  width: 130px;
-  height: 145px;
+  padding: 10px;
+  width: 100px;
+  height: 150px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -242,8 +242,8 @@ PATIENT DOCTOR DIV CSS
   box-shadow: 0px 0px 12px 0px rgb(192 192 255);
   border: 3px solid rgb(192 192 255);
   // padding: 15px;
-  width: 105px;
-  height: 125px;
+  width: 80px;
+  height: 130px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -400,8 +400,8 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patientchart-img {
-  width: 75px;
-  height: 75px;
+  position: relative;
+  width: 100%;
 }
 
 /*
@@ -778,6 +778,7 @@ APP DIV CSS
   justify-content: space-between;
   height: 100px;
   width: 100%;
+  margin-bottom: 20px;
 
   .app-description-div-left {
     display: flex;
@@ -828,8 +829,9 @@ APP DIV CSS
   box-shadow: var(--box-shadow);
   border: 1.5px solid rgb(192, 192, 255);
   // padding: 15px;
-  width: 165px;
-  height: 150px;
+  width: 100px;
+  padding: 10px;
+  height: 160px;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -841,7 +843,8 @@ APP DIV CSS
 }
 
 .app-inside-texts {
-  font-size: 13px;
+  text-align: center;
+  font-size: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
 }
@@ -853,8 +856,8 @@ APP DIV CSS
   border: 3px solid rgb(192 192 255);
   border-radius: 10px;
   // padding: 15px;
-  width: 150px;
-  height: 135px;
+  width: 80px;
+  height: 140px;
   margin-left: auto;
   margin-right: auto;
   justify-content: center;
@@ -862,8 +865,7 @@ APP DIV CSS
 }
 
 .app-phone-img {
-  width: 75px;
-  height: 75px;
+  width: 100%;
 }
 
 .arrow-div-2-left-arrow-div {
