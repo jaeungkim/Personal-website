@@ -54,6 +54,7 @@ export class ConnectComponent implements OnInit {
       },
       (error) => {
         this.buttonerror = true;
+        this.contactUsForm.reset();
         console.log(error);
       }
     );
