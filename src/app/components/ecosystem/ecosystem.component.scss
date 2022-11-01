@@ -6,17 +6,21 @@ GENERAL CSS
 .margin-reset-class {
   margin: 0 !important;
 }
+
 .patientDoctor-division {
   position: relative;
   height: 850px;
 }
+
 .ecosystem-chart-div {
   // position: relative;
   height: 700px;
 }
+
 .main-chart-div {
   height: 100%;
 }
+
 .chart-parts-div {
   position: absolute;
   height: 100%;
@@ -26,9 +30,10 @@ GENERAL CSS
 }
 
 
-.chart-section-pad{
+.chart-section-pad {
   height: 50px;
 }
+
 /*
 =============================================
 PATIENT DOCTOR DIV CSS
@@ -61,6 +66,7 @@ PATIENT DOCTOR DIV CSS
     width: 47.5%;
     height: 100px;
     margin-top: 50px;
+
     :nth-child(1) {
       top: 0%;
     }
@@ -86,6 +92,7 @@ PATIENT DOCTOR DIV CSS
     width: 47.5%;
     height: 100px;
     margin-top: 50px;
+
     :nth-child(1) {
       top: 0%;
     }
@@ -277,13 +284,14 @@ PATIENT DOCTOR DIV CSS
   right: 27.5%;
 }
 
-.svg-div-top{
+.svg-div-top {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
   position: relative;
   width: 100%;
   height: 250px;
 }
+
 .svg-div {
   margin-top: 0.5%;
   margin-bottom: 0.5%;
@@ -308,7 +316,8 @@ PATIENT DOCTOR DIV CSS
   width: 100%;
   height: 150px;
 }
-.svg-icon-carestart{
+
+.svg-icon-carestart {
   width: 100%;
   height: 225px;
 }
@@ -527,28 +536,32 @@ CHART DIV CSS
 
 .chart-div-teleplan {
   display: flex;
-  justify-content: flex-end;;
+  justify-content: flex-end;
+  ;
   flex-direction: column;
   align-items: center;
 }
 
 .chart-div-eHealthViewer {
   display: flex;
-  justify-content: flex-end;;
+  justify-content: flex-end;
+  ;
   flex-direction: column;
   align-items: center;
 }
 
 .chart-div-pharmanet {
   display: flex;
-  justify-content: flex-end;;
+  justify-content: flex-end;
+  ;
   flex-direction: column;
   align-items: center;
 }
 
 .chart-div-hospital {
   display: flex;
-  justify-content: flex-end;;
+  justify-content: flex-end;
+  ;
   flex-direction: column;
   align-items: center;
 }
@@ -1045,6 +1058,7 @@ Mobile
     // position: relative;
     height: 800px;
   }
+
   .patientchart-div-left-text-div {
     width: 32.5%;
   }
@@ -1221,10 +1235,12 @@ TABLET
     position: relative;
     height: 1000px;
   }
+
   .ecosystem-chart-div {
     // position: relative;
     height: 800px;
   }
+
   .patientchart-div-left-text-div {
     width: 35%;
   }
@@ -1323,6 +1339,7 @@ TABLET
   .patientDoctor-first-div {
     padding-top: 12.5%;
   }
+
   .chart-div-teleplan {
     display: flex;
     flex-direction: row;
@@ -1766,10 +1783,12 @@ DESKTOP
     position: relative;
     height: 1000px;
   }
+
   .ecosystem-chart-div {
     // position: relative;
     height: 900px;
   }
+
   .iclinic-button-inner {
     :nth-child(1) {
       font-size: 18px;

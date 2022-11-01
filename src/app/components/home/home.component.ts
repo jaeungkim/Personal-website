@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
   private positions: any[] = [];
   private segmentPoints: any[] = [];
   private numberOfParticles: number = 1000;
-  private radius: number = 125;
+  private radius: number = 135;
   private dots: any;
   private dotsStrokes: any;
   private dotsMaterial: any;
