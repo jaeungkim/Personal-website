@@ -368,30 +368,50 @@
             </div>
           </div>
         </div>
-        <div *ngIf="tablet || desktop || largedesktop" class="d-flex flex-column svg-div-chart-inside">
-          <svg class="svg-icon-down" viewBox="0 0 150 150">
-            <g transform="translate(75,90)" fill="var(--text-iclinicblue)" stroke="var(--text-iclinicblue)">
-              <path class="dotted-path-reverse" d="M0,50 C0,50 0,-50 0,-50"></path>
-            </g>
-            <g transform="translate(75,15) rotate(180) scale(3)" stroke="var(--text-iclinicblue)"
-              fill="var(--text-iclinicblue)">
-              <path d="M0 0 9-11 0-8-9-11 0 0"></path>
-            </g>
-          </svg>
-          <svg class="svg-icon-down" viewBox="0 0 150 150">
-            <g transform="translate(75,50)" style="stroke:var(--text-iclinicblue)">
-              <path class="dotted-path" d="M0,50 C0,50 0,-50 0,-50"></path>
-            </g>
-            <g transform="translate(75,125) scale(3)" fill="var(--text-iclinicblue)">
-              <path d="M0 0 9-11 0-8-9-11 0 0"></path>
-            </g>
-          </svg>
-        </div>
+      </div>
+      <div *ngIf="!smallMobile" class="d-flex flex-column svg-div-chart-inside-absolute">
+        <svg class="svg-icon-down" viewBox="0 0 150 150">
+          <g transform="translate(75,90)" fill="var(--text-iclinicblue)" stroke="var(--text-iclinicblue)">
+            <path class="dotted-path-reverse" d="M0,50 C0,50 0,-50 0,-50"></path>
+          </g>
+          <g transform="translate(75,15) rotate(180) scale(3)" stroke="var(--text-iclinicblue)"
+            fill="var(--text-iclinicblue)">
+            <path d="M0 0 9-11 0-8-9-11 0 0"></path>
+          </g>
+        </svg>
+        <svg class="svg-icon-down" viewBox="0 0 150 150">
+          <g transform="translate(75,50)" style="stroke:var(--text-iclinicblue)">
+            <path class="dotted-path" d="M0,50 C0,50 0,-50 0,-50"></path>
+          </g>
+          <g transform="translate(75,125) scale(3)" fill="var(--text-iclinicblue)">
+            <path d="M0 0 9-11 0-8-9-11 0 0"></path>
+          </g>
+        </svg>
       </div>
     </section>
 
     <section class="chart-section-pad"></section>
     <!-- END CHART DIV -->
+
+    <div *ngIf="smallMobile" class="d-flex flex-column svg-div-chart-inside">
+      <svg class="svg-icon-down" viewBox="0 0 150 150">
+        <g transform="translate(75,90)" fill="var(--text-iclinicblue)" stroke="var(--text-iclinicblue)">
+          <path class="dotted-path-reverse" d="M0,50 C0,50 0,-50 0,-50"></path>
+        </g>
+        <g transform="translate(75,15) rotate(180) scale(3)" stroke="var(--text-iclinicblue)"
+          fill="var(--text-iclinicblue)">
+          <path d="M0 0 9-11 0-8-9-11 0 0"></path>
+        </g>
+      </svg>
+      <svg class="svg-icon-down" viewBox="0 0 150 150">
+        <g transform="translate(75,50)" style="stroke:var(--text-iclinicblue)">
+          <path class="dotted-path" d="M0,50 C0,50 0,-50 0,-50"></path>
+        </g>
+        <g transform="translate(75,125) scale(3)" fill="var(--text-iclinicblue)">
+          <path d="M0 0 9-11 0-8-9-11 0 0"></path>
+        </g>
+      </svg>
+    </div>
 
     <!-- APP DIV -->
     <!-- <p class="care-starts-with">iClinic</p> -->

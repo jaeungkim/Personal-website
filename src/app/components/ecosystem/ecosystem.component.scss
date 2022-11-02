@@ -302,11 +302,18 @@ PATIENT DOCTOR DIV CSS
   width: 100%;
 }
 
-.svg-div-chart-inside {
+.svg-div-chart-inside-absolute{
   position: absolute;
   bottom: 0;
   align-items: center;
   width: 100%;
+}
+.svg-div-chart-inside {
+  position: relative;
+  bottom: 0;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 50px;
 }
 .svg-div-chart {
   position: relative;

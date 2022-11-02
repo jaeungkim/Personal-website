@@ -20,6 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
   providers: [],
 })
 export class EcosystemComponent implements OnInit {
+  smallMobile: boolean = false;
   mobile: boolean = false;
   tablet: boolean = false;
   desktop: boolean = false;
@@ -35,6 +36,11 @@ export class EcosystemComponent implements OnInit {
 
   ngOnInit(): void {
     this.initScrollAnimations();
+    if(window.innerWidth < 768) {
+      this.smallMobile = true;
+    } else {
+      this.smallMobile = false;
+    }
     if (window.innerWidth < 768) {
       // 768px portrait
       this.mobile = true;
