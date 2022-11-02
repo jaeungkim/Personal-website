@@ -10,6 +10,7 @@ Chart.register(ChartDataLabels);
   styleUrls: ['./solutions.component.scss'],
 })
 export class SolutionsComponent implements OnInit {
+  smallmobile: boolean = false;
   mobile: boolean = false;
   tablet: boolean = false;
   desktop: boolean = false;
@@ -571,6 +572,9 @@ export class SolutionsComponent implements OnInit {
   }
   ngOnInit(): void {
     // this.initScrollAnimations();
+    if(window.innerWidth < 380){
+      this.smallmobile = true;
+    }
     if (window.innerWidth < 576) {
       // 768px portrait
       this.mobile = true;

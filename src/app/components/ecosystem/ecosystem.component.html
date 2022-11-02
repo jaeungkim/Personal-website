@@ -190,7 +190,6 @@
           <p class="chart-div-text-onbackground-text2">Interoperability</p>
         </div> -->
         <div class="chart-div-teleplan">
-          <p class="chart-div-text-ontop negative-left" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <div class="chart-arrow-div" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
@@ -212,29 +211,32 @@
               </g>
             </svg>
           </div>
-          <div class="teleplan-img-div flip-card" [ngClass]="
-                        tablet || desktop || largedesktop
-                          ? 'order-1'
-                          : 'd-flex flex-column order-2'
-                      ">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./assets/images/ecosystem/teleplan-white.png" alt=" " class="teleplan-img"
-                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
-                <img src="./assets/images/ecosystem/teleplan-light.png" alt=" " class="teleplan-img"
-                  *ngIf="colorSchemeService.colorScheme === 'light'" />
-                <p class="external-label">Teleplan</p>
-              </div>
-              <div class="flip-card-back">
-                <p class="flip-card-back-text-title">Teleplan</p>
-                <p class="flip-card-back-text">For Medical Claims Submission and Processing</p>
+          <div class="teleplan-img-div" [ngClass]="
+          tablet || desktop || largedesktop
+            ? 'order-1'
+            : 'd-flex flex-column order-2'
+        ">
+            <p class="chart-div-text-ontop" *ngIf="!tablet && !mobile">Provincial Platform</p>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/ecosystem/teleplan-white.png" alt=" " class="teleplan-img"
+                    *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                  <img src="./assets/images/ecosystem/teleplan-light.png" alt=" " class="teleplan-img"
+                    *ngIf="colorSchemeService.colorScheme === 'light'" />
+                  <p class="external-label">Teleplan</p>
+                </div>
+                <div class="flip-card-back">
+                  <p class="flip-card-back-text-title">Teleplan</p>
+                  <p class="flip-card-back-text">For Medical Claims Submission and Processing</p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="chart-div-eHealthViewer">
-          <p class="chart-div-text-ontop negative-left" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <div class="chart-arrow-div rotate-eHealth" [ngClass]="
               tablet || desktop || largedesktop ? 'order-2' : 'order-1'
             ">
@@ -256,31 +258,33 @@
               </g>
             </svg>
           </div>
-          <div class="eHealth-img-div flip-card" [ngClass]="
-              tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
-            ">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./assets/images/ecosystem/eHealth-white.png" alt=" " class="eHealth-img"
-                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
-                <img src="./assets/images/ecosystem/eHealth-light.png" alt=" " class="eHealth-img"
-                  *ngIf="colorSchemeService.colorScheme === 'light'" />
-                <p class="external-label text-nowrap">eHealth&nbsp;<span *ngIf="!desktop">V</span><span
-                    *ngIf="desktop">Viewer</span></p>
-              </div>
-              <div class="flip-card-back">
-                <p class="flip-card-back-text-title">eHealth Viewer</p>
-                <p class="flip-card-back-text">For a View of Clinical Information (Labs, Imaging, Clinical Documents,
-                  etc)</p>
+          <div class="eHealth-img-div" [ngClass]="
+          tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
+        ">
+            <p class="chart-div-text-ontop" *ngIf="!tablet && !mobile">Provincial Platform</p>
+            <div class="flip-card">
+
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/ecosystem/eHealth-white.png" alt=" " class="eHealth-img"
+                    *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                  <img src="./assets/images/ecosystem/eHealth-light.png" alt=" " class="eHealth-img"
+                    *ngIf="colorSchemeService.colorScheme === 'light'" />
+                  <p class="external-label text-nowrap">eHealth&nbsp;<span *ngIf="!desktop">V</span><span
+                      *ngIf="desktop">Viewer</span></p>
+                </div>
+                <div class="flip-card-back">
+                  <p class="flip-card-back-text-title">eHealth Viewer</p>
+                  <p class="flip-card-back-text">For a View of Clinical Information (Labs, Imaging, Clinical Documents,
+                    etc)</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
         <div class="chart-div-pharmanet">
-          <p class="chart-div-text-ontop negative-right" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <div class="chart-arrow-div">
-            <!-- <p class="text-over-arrows">Seamless Data Transfer</p> -->
             <svg viewBox="0 0 300 50" width="100%" height="35px" class="svg-icon-linear" preserveAspectRatio="none">
               <g transform="translate(0 25) rotate(90) scale(1.5)" fill="var(--text-primary)"
                 stroke="var(--text-primary)">
@@ -298,27 +302,30 @@
               </g>
             </svg>
           </div>
-          <div class="pharmanet-img-div flip-card" [ngClass]="
+          <div class="pharmanet-img-div" [ngClass]="
           tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
         ">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./assets/images/ecosystem/pharmaNet-white.png" alt=" " class="pharmaNet-img"
-                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
-                <img src="./assets/images/ecosystem/pharmaNet-light.png" alt=" " class="pharmaNet-img"
-                  *ngIf="colorSchemeService.colorScheme === 'light'" />
-                <p class="external-label">PharmaNet</p>
-              </div>
-              <div class="flip-card-back">
-                <p class="flip-card-back-text-title">PharmaNet</p>
-                <p class="flip-card-back-text">For All Prescriptions Dispensed in Pharmacies</p>
+            <p class="chart-div-text-ontop" *ngIf="!tablet && !mobile">Provincial Platform</p>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/ecosystem/pharmaNet-white.png" alt=" " class="pharmaNet-img"
+                    *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                  <img src="./assets/images/ecosystem/pharmaNet-light.png" alt=" " class="pharmaNet-img"
+                    *ngIf="colorSchemeService.colorScheme === 'light'" />
+                  <p class="external-label">PharmaNet</p>
+                </div>
+                <div class="flip-card-back">
+                  <p class="flip-card-back-text-title">PharmaNet</p>
+                  <p class="flip-card-back-text">For All Prescriptions Dispensed in Pharmacies</p>
+                </div>
               </div>
             </div>
           </div>
+
         </div>
 
         <div class="chart-div-hospital">
-          <p class="chart-div-text-ontop negative-right" *ngIf="!tablet && !mobile">Provincial Platform</p>
           <img src="./assets/images/ecosystem/patient-pd.png" alt=" " class="patient-img-hospital"
             *ngIf="!tablet && !mobile" />
           <div class="chart-arrow-div rotate-hospital">
@@ -340,20 +347,23 @@
               </g>
             </svg>
           </div>
-          <div class="hospital-img-div flip-card" [ngClass]="
-              tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
-            ">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./assets/images/ecosystem/hospital-white.png" alt=" " class="hospital-img"
-                  *ngIf="colorSchemeService.colorScheme === 'dark'" />
-                <img src="./assets/images/ecosystem/hospital-light.png" alt=" " class="hospital-img"
-                  *ngIf="colorSchemeService.colorScheme === 'light'" />
-                <p class="external-label">Hospital</p>
-              </div>
-              <div class="flip-card-back">
-                <img src="./assets/images/ecosystem/doctor-crw.png" alt=" " class="doctor-img-hospital"
-                  *ngIf="!tablet && !mobile" />
+          <div class="hospital-img-div" [ngClass]="
+          tablet || desktop || largedesktop ? 'order-1' : 'd-flex flex-column order-2'
+        ">
+            <p class="chart-div-text-ontop" *ngIf="!tablet && !mobile">Provincial Platform</p>
+            <div class="flip-card">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <img src="./assets/images/ecosystem/hospital-white.png" alt=" " class="hospital-img"
+                    *ngIf="colorSchemeService.colorScheme === 'dark'" />
+                  <img src="./assets/images/ecosystem/hospital-light.png" alt=" " class="hospital-img"
+                    *ngIf="colorSchemeService.colorScheme === 'light'" />
+                  <p class="external-label">Hospital</p>
+                </div>
+                <div class="flip-card-back">
+                  <img src="./assets/images/ecosystem/doctor-crw.png" alt=" " class="doctor-img-hospital"
+                    *ngIf="!tablet && !mobile" />
+                </div>
               </div>
             </div>
           </div>
