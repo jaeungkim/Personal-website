@@ -94,12 +94,12 @@ export class HomeComponent implements OnInit {
   metadataload(e){
     setTimeout(() => {
       this.aiclinictextappear = true;
-    }, 9750);
+    }, e.target.duration * 1000 - 5000);
     setTimeout(() => {
       this.hideVideoAfterPlay = true;
       this.createScene();
       this.render();
-    }, (e.target.duration * 1000)- 2000);
+    }, (e.target.duration * 1000)- 1500);
   }
 
   public createScene(): void {
