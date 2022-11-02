@@ -65,22 +65,25 @@ PATIENT DOCTOR DIV CSS
     text-align: right;
     width: 42.5%;
     height: 100px;
-    margin-top: 50px;
+    margin-top: 35px;
 
     :nth-child(1) {
       top: 0%;
     }
 
     :nth-child(2) {
-      top: 33%;
+      top: 25%;
     }
 
     :nth-child(3) {
-      top: 66%;
+      top: 50%;
     }
 
     :nth-child(4) {
-      top: 99%;
+      top: 75%;
+    }
+    :nth-child(5) {
+      top: 100%;
     }
   }
 
@@ -91,22 +94,25 @@ PATIENT DOCTOR DIV CSS
     text-align: left;
     width: 42.5%;
     height: 100px;
-    margin-top: 50px;
+    margin-top: 35px;
 
     :nth-child(1) {
       top: 0%;
     }
 
     :nth-child(2) {
-      top: 33%;
+      top: 25%;
     }
 
     :nth-child(3) {
-      top: 66%;
+      top: 50%;
     }
 
     :nth-child(4) {
-      top: 99%;
+      top: 75%;
+    }
+    :nth-child(5) {
+      top: 100%;
     }
   }
 
@@ -119,7 +125,7 @@ PATIENT DOCTOR DIV CSS
 
 .care-starts-with {
   margin-top: 16px;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   text-align: center;
   font-size: 13px;
 }
@@ -165,6 +171,7 @@ PATIENT DOCTOR DIV CSS
   align-items: flex-end;
   display: flex;
   flex-direction: column;
+  text-align: right;
   // width: 30%;
 }
 
@@ -193,7 +200,7 @@ PATIENT DOCTOR DIV CSS
   align-items: center;
   justify-content: flex-end;
   width: 100%;
-  left: 12.5%;
+  left: 7.5%;
 }
 
 .patientchart-arrow-right {
@@ -206,7 +213,7 @@ PATIENT DOCTOR DIV CSS
   display: flex;
   align-items: center;
   width: 100%;
-  right: 12.5%;
+  right: 7.5%;
 }
 
 .patientchart-arrow-right {
@@ -218,6 +225,7 @@ PATIENT DOCTOR DIV CSS
   flex-direction: row;
   align-items: center;
   gap: 5px;
+
   .patientchart-div-text-fadein {
     opacity: 0;
   }
@@ -258,6 +266,7 @@ PATIENT DOCTOR DIV CSS
 }
 
 .patient-text {
+  position: absolute;
   font-size: 12px;
 }
 
@@ -305,7 +314,6 @@ PATIENT DOCTOR DIV CSS
   align-items: center;
   width: 100%;
 }
-
 .svg-div-chart {
   position: relative;
   align-items: center;
@@ -382,12 +390,23 @@ PATIENT DOCTOR DIV CSS
 
 .doctor-img {
   width: 75px;
-  width: 75px;
+  height: 75px;
   display: flex;
   margin-left: auto;
 }
 
 .doctor-img-hospital {
+  width: 75px;
+  height: 75px;
+}
+
+.patientchart-left-img {
+  width: 75px;
+  height: 75px;
+  margin-left: auto;
+}
+
+.patientchart-right-img {
   width: 75px;
   height: 75px;
 }
@@ -992,7 +1011,7 @@ ARROW CSS
   stroke-miterlimit: 4;
   stroke-dasharray: 1, 10;
   fill: transparent;
-  stroke-width: 1;
+  stroke-width: 3;
   animation: reverse-dash 30s linear infinite;
 }
 
@@ -1002,7 +1021,7 @@ ARROW CSS
   stroke-miterlimit: 4;
   stroke-dasharray: 1, 10;
   fill: transparent;
-  stroke-width: 1;
+  stroke-width: 3;
   animation: reverse-dash 30s linear infinite;
 }
 
@@ -1056,38 +1075,45 @@ Mobile
 =============================================
 */
 @media only screen and (min-width: 370px) {
-  .patientchart-outer-img-div{
+  .patientchart-outer-img-div {
     padding: 0;
   }
-  .app-outer-div{
+
+  .app-outer-div {
     padding: 0;
   }
-  .patientchart-div-left-text-div{
+
+  .patientchart-div-left-text-div {
     width: 30%;
   }
-  .patientchart-div-right-text-div{
+
+  .patientchart-div-right-text-div {
     width: 30%;
   }
-  .app-description-div{
-    .app-description-div-left{
+
+  .app-description-div {
+    .app-description-div-left {
       width: 30%;
     }
-    .app-description-div-right{
+
+    .app-description-div-right {
       width: 30%;
     }
   }
 
 }
+
 @media only screen and (min-width: 576px) {
   .patientDoctor-division {
     position: relative;
     height: 950px;
   }
-  
+
   .ecosystem-chart-div {
     // position: relative;
     height: 750px;
   }
+
   .ecosystem-chart-div {
     // position: relative;
     height: 800px;
@@ -1100,14 +1126,17 @@ Mobile
   .patientchart-div-right-text-div {
     width: 32.5%;
   }
+
   .patientchart-img {
     width: 75px;
     height: 75px;
   }
+
   .app-phone-img {
     width: 75px;
     height: 75px;
   }
+
   .patientchart-div-right-text {
     font-size: 14px;
   }
@@ -1272,6 +1301,14 @@ TABLET
 =============================================
 */
 @media only screen and (min-width: 768px) {
+  .patientchart-arrow-left-div {
+    left: 12.5%;
+  }
+
+  .patientchart-arrow-right-div {
+    right: 12.5%;
+  }
+
   .patientDoctor-division {
     position: relative;
     height: 1000px;
@@ -1445,6 +1482,17 @@ TABLET
     height: 75px;
   }
 
+  .patientchart-left-img {
+    width: 75px;
+    height: 75px;
+    margin-left: auto;
+  }
+
+  .patientchart-right-img {
+    width: 75px;
+    height: 75px;
+  }
+
   .clinic-img {
     width: 75px;
     height: 75px;
@@ -1583,6 +1631,14 @@ SMALL DESKTOP
 */
 
 @media only screen and (min-width: 992px) {
+  .patientchart-arrow-left-div {
+    left: 9.5%;
+  }
+
+  .patientchart-arrow-right-div {
+    right: 9.5%;
+  }
+
   .chart-div-teleplan {
     width: 25%;
     gap: 10%;
@@ -1650,6 +1706,17 @@ SMALL DESKTOP
   }
 
   .doctor-img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .patientchart-left-img {
+    width: 90px;
+    height: 90px;
+    margin-left: auto;
+  }
+
+  .patientchart-right-img {
     width: 90px;
     height: 90px;
   }
@@ -1810,6 +1877,14 @@ DESKTOP
 =============================================
 */
 @media only screen and (min-width: 1200px) {
+  .patientchart-arrow-left-div {
+    left: 15%;
+  }
+
+  .patientchart-arrow-right-div {
+    right: 15%;
+  }
+
   .patientDoctor-division {
     position: relative;
     height: 1000px;
@@ -1817,7 +1892,7 @@ DESKTOP
 
   .ecosystem-chart-div {
     // position: relative;
-    height: 900px;
+    height: 825px;
   }
 
   .iclinic-button-inner {
@@ -1846,21 +1921,23 @@ DESKTOP
     font-size: 16px;
   }
 
-  .top-div-description-div{
-    .top-div-left{
+  .top-div-description-div {
+    .top-div-left {
       width: 47.5%;
     }
-    .top-div-right{
+
+    .top-div-right {
       width: 47.5%;
     }
   }
+
   .app-description-div {
     .app-description-div-left {
-      width: 40%;
+      width: 35%;
     }
 
     .app-description-div-right {
-      width: 40%;
+      width: 35%;
     }
 
     .app-description-text {
@@ -1921,6 +1998,17 @@ DESKTOP
   }
 
   .doctor-img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .patientchart-left-img {
+    width: 100px;
+    height: 100px;
+    margin-left: auto;
+  }
+
+  .patientchart-right-img {
     width: 100px;
     height: 100px;
   }
@@ -2043,6 +2131,32 @@ DESKTOP
 
   .arrow-div-2-right-arrow-div {
     left: 51%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  // .patientDoctor-division {
+  //   position: relative;
+  //   height: 1000px;
+  // }
+
+  .ecosystem-chart-div {
+    // position: relative;
+    height: 900px;
+  }
+
+  .app-description-div {
+    .app-description-div-left {
+      width: 37.5%;
+    }
+
+    .app-description-div-right {
+      width: 37.5%;
+    }
+
+    .app-description-text {
+      font-size: 16px;
+    }
   }
 }
 

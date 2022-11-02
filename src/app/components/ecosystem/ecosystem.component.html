@@ -66,16 +66,18 @@
         </svg>
         <div class="top-div-description-div">
           <div class="top-div-left">
+            <p class="top-div-description-text fadein-gsap">Intuitive User Interface</p>
             <p class="top-div-description-text fadein-gsap2">Intuitive User Interface</p>
             <p class="top-div-description-text fadein-gsap3">Intelligent Alerts</p>
-            <p class="top-div-description-text fadein-gsap4">Efficient Medication Reconciliations</p>
+            <p class="top-div-description-text fadein-gsap4">Medication Reconciliations</p>
             <p class="top-div-description-text fadein-gsap5">Real-Time Queries</p>
           </div>
           <div class="top-div-right">
-            <p class="top-div-description-text fadein-gsap2">Assissted Data Input via Intelligent Prompts</p>
+            <p class="top-div-description-text fadein-gsap">Assissted Data Input</p>
+            <p class="top-div-description-text fadein-gsap2">Intelligent Prompts</p>
             <p class="top-div-description-text fadein-gsap3">Smart Data Capture</p>
             <p class="top-div-description-text fadein-gsap4">Structured Uniform Data Points</p>
-            <p class="top-div-description-text fadein-gsap5">Data Points Extraction via a NLP Pipeline</p>
+            <p class="top-div-description-text fadein-gsap5">Data Points Extraction via a NLP</p>
           </div>
         </div>
       </div>
@@ -83,9 +85,9 @@
       <div class="patientchart-div">
         <div class="patientchart-div-left-text-div">
           <p class="patientchart-div-left-text patientchart-div-text-fadein">One Patient</p>
-          <p class="patientchart-div-left-text patientchart-div-text-fadein">Real-time Sharing between Divisions</p>
+          <p class="patientchart-div-left-text patientchart-div-text-fadein">Real time Sharing between Divisions</p>
           <img src="./assets/images/ecosystem/patientchart-doctor-left-crw.png" alt=" "
-            class="patientchart-div-text-fadein mt-2 patientchart-img" />
+            class="patientchart-div-text-fadein mt-2 patientchart-left-img" />
           <div class="patientchart-arrow-left-div patientchart-div-text-fadein">
             <svg *ngIf="!mobile" class="patientchart-arrow-left" viewBox="0 0 30 20" width="45px" height="30px"
               preserveAspectRatio="none">
@@ -110,7 +112,7 @@
           <p class="patientchart-div-right-text patientchart-div-text-fadein">One Record</p>
           <p class="patientchart-div-right-text patientchart-div-text-fadein">Advanced Analytics and Deep Insights</p>
           <img src="./assets/images/ecosystem/patientchart-doctor-right-crw.png" alt=" "
-            class="patientchart-div-text-fadein mt-2 patientchart-img" />
+            class="patientchart-div-text-fadein mt-2 patientchart-right-img" />
           <div class="patientchart-arrow-right-div patientchart-div-text-fadein">
             <svg *ngIf="!mobile" class="patientchart-arrow-right" viewBox="0 0 30 20" width="45px" height="30px"
               preserveAspectRatio="none">
@@ -265,8 +267,8 @@
                   *ngIf="colorSchemeService.colorScheme === 'dark'" />
                 <img src="./assets/images/ecosystem/eHealth-light.png" alt=" " class="eHealth-img"
                   *ngIf="colorSchemeService.colorScheme === 'light'" />
-                <p class="external-label text-nowrap">eHealth&nbsp;<span *ngIf="!largedesktop">V</span><span
-                    *ngIf="largedesktop">Viewer</span></p>
+                <p class="external-label text-nowrap">eHealth&nbsp;<span *ngIf="!desktop">V</span><span
+                    *ngIf="desktop">Viewer</span></p>
               </div>
               <div class="flip-card-back">
                 <p class="flip-card-back-text-title">eHealth Viewer</p>
@@ -398,12 +400,12 @@
         <div class="app-description-div-left">
           <p class="app-description-text">Patient Centric</p>
           <p class="app-description-text">Patient Empowerment</p>
-          <p class="app-description-text">Quality Improvement Assessment</p>
+          <p class="app-description-text">Quality Assessment</p>
         </div>
         <div class="app-description-div-right">
           <p class="app-description-text">Access to Care Team</p>
-          <p class="app-description-text">Personalized Care Management</p>
-          <p class="app-description-text">Improved Clinical Outcome</p>
+          <p class="app-description-text">Personalized Care</p>
+          <p class="app-description-text">Improved Outcome</p>
         </div>
       </div>
 

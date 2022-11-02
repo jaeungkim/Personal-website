@@ -99,28 +99,28 @@ export class EcosystemComponent implements OnInit {
     });
 
     if (window.innerWidth < 576) {
-      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '40%' });
-      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-35%' });
+      patientAnimationTimeline.to('.patient-div', { duration: 1, x: '20%' });
+      doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-25%' });
       clinicVisitTextTimeline.fromTo(
         '.clinic-visit-gsap',
-        { opacity: 0, x: '-150%', y: '275%' },
-        { opacity: 1, x: '-50%', y: '275%', duration: 5 }
+        { opacity: 0, x: '-150%', y: '175%' },
+        { opacity: 1, x: '-50%', y: '175%', duration: 5 }
       );
     } else if (window.innerWidth < 768) {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '40%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-35%' });
       clinicVisitTextTimeline.fromTo(
         '.clinic-visit-gsap',
-        { opacity: 0, x: '-150%', y: '235%' },
-        { opacity: 1, x: '-40%', y: '235%', duration: 5 }
+        { opacity: 0, x: '-150%', y: '135%' },
+        { opacity: 1, x: '-120%', y: '135%', duration: 5 }
       );
     } else if (window.innerWidth < 992) {
       patientAnimationTimeline.to('.patient-div', { duration: 1, x: '60%' });
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-60%' });
       clinicVisitTextTimeline.fromTo(
         '.clinic-visit-gsap',
-        { opacity: 0, x: '-150%', y: '235%' },
-        { opacity: 1, x: '-30%', y: '235%', duration: 5 }
+        { opacity: 0, x: '-150%', y: '135%' },
+        { opacity: 1, x: '-120%', y: '135%', duration: 5 }
       );
       chartAnimationTimeline.to('.chart-div-text-onbackground-text', {
         opacity: 1,
@@ -133,8 +133,8 @@ export class EcosystemComponent implements OnInit {
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-70%' });
       clinicVisitTextTimeline.fromTo(
         '.clinic-visit-gsap',
-        { opacity: 0, x: '-150%', y: '250%' },
-        { opacity: 1, x: '-30%', y: '250%', duration: 5 }
+        { opacity: 0, x: '-150%', y: '150%' },
+        { opacity: 1, x: '-120%', y: '150%', duration: 5 }
       );
       chartAnimationTimeline.to('.chart-div-text-onbackground-text', {
         opacity: 1,
@@ -147,8 +147,8 @@ export class EcosystemComponent implements OnInit {
       doctorAnimationTimeline.to('.doctor-div', { duration: 1, x: '-75%' });
       clinicVisitTextTimeline.fromTo(
         '.clinic-visit-gsap',
-        { opacity: 0, x: '-150%', y: '275%' },
-        { opacity: 1, x: '-20%', y: '275%', duration: 5 }
+        { opacity: 0, x: '-150%', y: '175%' },
+        { opacity: 1, x: '-100%', y: '175%', duration: 5 }
       );
       chartAnimationTimeline.to('.chart-div-text-onbackground-text', {
         opacity: 1,
