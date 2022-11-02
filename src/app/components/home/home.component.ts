@@ -1,6 +1,5 @@
 import * as THREE from 'three';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { DATAPOINTS } from './datapoints';
 
 @Component({
@@ -28,8 +27,8 @@ export class HomeComponent implements OnInit {
   color = new THREE.Color();
   private positions: any[] = [];
   private segmentPoints: any[] = [];
-  private numberOfParticles: number = 1000;
-  private radius: number = 135;
+  private numberOfParticles: number = 2500;
+  private radius: number = 240;
   private dots: any;
   private dotsStrokes: any;
   private dotsMaterial: any;
@@ -71,19 +70,27 @@ export class HomeComponent implements OnInit {
     if ( gl_FragColor.a < alphaTest ) discard;
   }
   `;
-  constructor(private router: Router) {}
+  constructor() {}
   public ngOnInit(): void {
-    if (window.innerWidth > 576){
+    if (window.innerWidth < 425){
+      this.radius = 140;
+      this.numberOfParticles = 1000;
+    } else if (window.innerWidth < 576){
       this.radius = 175;
       this.numberOfParticles = 2000;
-    } else if(window.innerWidth > 768){
-      this.radius = 240;
+    } else if(window.innerWidth < 992){
+      this.radius = 200;
+      this.numberOfParticles = 2500;
+    } else {
+      this.radius = 240;  
       this.numberOfParticles = 2500;
     }
+
     if (window.innerWidth > 1200) {
       this.largedesktop = true;
     }
   }
+
   metadataload(e){
     setTimeout(() => {
       this.aiclinictextappear = true;
@@ -94,6 +101,7 @@ export class HomeComponent implements OnInit {
       this.render();
     }, (e.target.duration * 1000)- 2000);
   }
+
   public createScene(): void {
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.rendererCanvas.nativeElement,
