@@ -11,6 +11,7 @@ import { DATAPOINTS } from './datapoints';
 export class HomeComponent implements OnInit {
   @ViewChild('rendererCanvas', { static: true })
   public rendererCanvas: ElementRef<HTMLCanvasElement>;
+  @ViewChild('myVideo') backgroundVideo: ElementRef;
   private renderer: THREE.WebGLRenderer;
   private camera: THREE.PerspectiveCamera;
   private scene: THREE.Scene;
@@ -72,30 +73,27 @@ export class HomeComponent implements OnInit {
   `;
   constructor(private router: Router) {}
   public ngOnInit(): void {
-    if (window.innerWidth > 768){
+    if (window.innerWidth > 576){
+      this.radius = 175;
+      this.numberOfParticles = 2000;
+    } else if(window.innerWidth > 768){
       this.radius = 240;
       this.numberOfParticles = 2500;
     }
-
     if (window.innerWidth > 1200) {
       this.largedesktop = true;
     }
-    setTimeout(() => {
-      this.hideVideoAfterPlay = true;
-    }, 13000);
-
-    setTimeout(() => {
-      if (this.router.url === '/') {
-        this.createScene();
-        this.render();
-      }
-    }, 10000);
-
+  }
+  metadataload(e){
     setTimeout(() => {
       this.aiclinictextappear = true;
     }, 9750);
+    setTimeout(() => {
+      this.hideVideoAfterPlay = true;
+      this.createScene();
+      this.render();
+    }, (e.target.duration * 1000)- 2000);
   }
-
   public createScene(): void {
     this.renderer = new THREE.WebGLRenderer({
       canvas: this.rendererCanvas.nativeElement,

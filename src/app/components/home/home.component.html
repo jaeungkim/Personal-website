@@ -7,7 +7,7 @@
   <p class="subtitle-aiclinic">Data Driven Healthcare</p>
 </div>
 <video *ngIf="!hideVideoAfterPlay" autoplay muted playsinline preload="auto" onloadedmetadata="this.muted = true"
-  id="myVideo">
+  id="myVideo" (loadedmetadata)="metadataload($event)">
   <source src="https://storage.googleapis.com/iclinic-website-aiclinicca/aicliniccaVideoBackground.mp4"
     type="video/mp4" />
 </video>
