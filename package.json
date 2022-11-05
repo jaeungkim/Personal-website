@@ -15,10 +15,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "build:prod": "npm build --configuration production",
-    "test:headless": "npm test --watch=false --browsers=ChromeHeadless",
-    "server": "json-server --watch db.json --port 5000"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
