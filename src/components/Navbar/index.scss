@@ -1,0 +1,40 @@
+@use '../../styles/partials/variables' as *;
+@use '../../styles/partials/mixins' as *;
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: $mobile-padding-after;
+    border-bottom: 1px solid black;
+    &__brand {
+        // padding-left: $mobile-padding-after;
+    }
+    &__logo {
+        // background-color: black;
+    }
+
+    &__logo-text {
+        // color: white;
+    }
+
+    &__collapse {
+
+    }
+
+    &__list-div{
+        display: flex;
+        gap: 15px;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    &__list-item{
+
+    }
+
+    &__list-link{
+        text-decoration: none;
+    }
+}
