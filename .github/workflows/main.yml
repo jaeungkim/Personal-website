@@ -43,7 +43,7 @@ jobs:
 
     - name: Deploy
       if: success()
-      run: aws s3 sync ./build s3://www.jaeungkim.ca
+      run: aws s3 sync ./dist s3://www.jaeungkim.ca
 
     - name: Invalidate CloudFront
       uses: chetan/invalidate-cloudfront-action@v2
