@@ -31,7 +31,7 @@ export default class Resources extends EventEmitter {
     startLoading() {
         for (const asset of this.assets) {
             if (asset.type === "glbModel") {
-                this.loaders.gltfLoader.load(asset.path, (file) => {
+                this.loaders.gltfLoader.load("https://storage.googleapis.com/video-background-iclinic/Finale%20Version%2016.glb", (file) => {
                     this.singleAssetLoaded(asset, file);
                 });
             } else if (asset.type === "videoTexture") {
@@ -47,7 +47,7 @@ export default class Resources extends EventEmitter {
 
                 this.video[asset.name] = document.createElement("video");
                 document.body.appendChild(this.video[asset.name]);
-                addSourceToVideo(this.video[asset.name],"https://iclinic-website-aiclinicca.storage.googleapis.com/videoBackground.mp4", 'video/mp4');
+                addSourceToVideo(this.video[asset.name],"https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4", 'video/mp4');
                 this.video[asset.name].muted = true;
                 this.video[asset.name].playsInline = true;
                 this.video[asset.name].autoplay = true;
