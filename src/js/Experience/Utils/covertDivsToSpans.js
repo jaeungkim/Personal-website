@@ -1,3 +1,4 @@
+/* eslint-disable import/no-anonymous-default-export */
 export default function (element) {
     element.style.overflow = "hidden";
     element.innerHTML = element.innerText
