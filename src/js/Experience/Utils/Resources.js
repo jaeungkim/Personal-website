@@ -35,15 +35,24 @@ export default class Resources extends EventEmitter {
                     this.singleAssetLoaded(asset, file);
                 });
             } else if (asset.type === "videoTexture") {
+                function addSourceToVideo(element, src, type) {
+                    var source = document.createElement('source');
+                    source.src = src;
+                    source.type = type;
+                    element.appendChild(source);
+                }
+
                 this.video = {};
                 this.videoTexture = {};
 
                 this.video[asset.name] = document.createElement("video");
-                this.video[asset.name].src = asset.path;
+                document.body.appendChild(this.video[asset.name]);
+                addSourceToVideo(this.video[asset.name],"https://iclinic-website-aiclinicca.storage.googleapis.com/videoBackground.mp4", 'video/mp4');
                 this.video[asset.name].muted = true;
                 this.video[asset.name].playsInline = true;
                 this.video[asset.name].autoplay = true;
                 this.video[asset.name].loop = true;
+                this.video[asset.name].crossOrigin=asset.crossorigin;
                 this.video[asset.name].play();
 
                 this.videoTexture[asset.name] = new THREE.VideoTexture(
