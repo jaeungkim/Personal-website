@@ -5,7 +5,7 @@ function ExperienceComponent() {
   const ref = useRef(null);
   useEffect(() => {
     const experienceSelector = ref.current;
-    const experience = new Experience(experienceSelector);
+    new Experience(experienceSelector);
   }, []);
 
   return (
