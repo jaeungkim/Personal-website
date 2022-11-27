@@ -12,7 +12,8 @@
 
 html,
 body {
-    font-family: "Montserrat", sans-serif;
+    // font-family: "Montserrat", sans-serif;
+    font-family: "Avenir Next";
 }
 
 /* body{
@@ -83,7 +84,7 @@ svg {
     left: 50%;
     font-weight: 500;
     font-size: 16px;
-    color: var(--color-text);
+    color: var(--color-pink);
     transform: translate(-50%, -50%);
 }
 
@@ -105,61 +106,6 @@ svg {
     100% {
         transform: translateY(8px)
     }
-}
-
-/* Toggle Bar --------------------------------------------- */
-.toggle-bar {
-    position: fixed;
-    display: flex;
-    opacity: 0;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    top: 48px;
-    right: 48px;
-    z-index: 99999999999999;
-}
-
-.sun-wrapper,
-.moon-wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    color: var(--color-text);
-}
-
-.toggle-button {
-    cursor: pointer;
-    position: relative;
-    width: 56px;
-    height: 28px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color-pink);
-    border-radius: 999px;
-    margin: 0px 16px;
-    border: none;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-}
-
-.toggle-circle {
-    position: absolute;
-    left: 6px;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-    background-color: var(--color-background);
-    transition: all 0.2s ease-in-out;
-}
-
-.toggle-button:hover .toggle-circle {
-    transform: scale(0.9);
-}
-
-.slide {
-    left: 31px;
 }
 
 /* Section Formatting --------------------------------------------- */
@@ -217,7 +163,6 @@ svg {
 }
 
 /* Sections -------------- */
-
 .section-intro-wrapper {
     position: relative;
     padding: 20% 5%;
@@ -300,53 +245,6 @@ svg {
     color: var(--color-pink);
     font-size: 24px;
 }
-
-
-/* Hero section -------------------------------- */
-
-.hero {
-    width: 100vw;
-    height: 100vh;
-}
-
-.hero-wrapper {
-    position: relative;
-    height: 100%;
-    width: 100%;
-    margin: 0 auto;
-    max-width: 1100px;
-}
-
-.hero-main {
-    position: absolute;
-    bottom: 168px;
-    left: 0;
-    color: var(--color-text);
-}
-
-.hero-second {
-    position: absolute;
-    top: calc(50% - 120px);
-    right: 0;
-    color: var(--color-text);
-}
-
-.hero-main-title {
-    font-size: 64px;
-    color: var(--color-text);
-}
-
-.hero-main-description {
-    font-size: 18px;
-    color: var(--color-text);
-}
-
-.hero-second-subheading {
-    font-size: 32px;
-    text-transform: uppercase;
-    color: var(--color-text);
-}
-
 
 /* Other colors override */
 
