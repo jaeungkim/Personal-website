@@ -65,6 +65,7 @@ svg {
     height: 100vh;
     overflow: hidden;
     height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
 }
 
 .page-wrapper {
@@ -163,6 +164,7 @@ svg {
     transform-origin: top center;
     transform: scaleY(1);
     height: -webkit-fill-available;
+    min-height: -webkit-fill-available;
 }
 
 /* Sections -------------- */
