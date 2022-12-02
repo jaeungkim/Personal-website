@@ -64,7 +64,7 @@ svg {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    // height: -webkit-fill-available;
+    height: -webkit-fill-available;
     min-height: -webkit-fill-available;
 }
 
@@ -163,7 +163,7 @@ svg {
     background-color: var(--color-pink);
     transform-origin: top center;
     transform: scaleY(1);
-    // height: -webkit-fill-available;
+    height: -webkit-fill-available;
     min-height: -webkit-fill-available;
 }
 
