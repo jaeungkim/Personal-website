@@ -40,6 +40,11 @@ svg {
     /* Dark Theme Variables */
     --color-text-dark: #FAF4E5;
     --color-background-dark: #8395CD;
+
+    --vw: 4.14px;
+    --vh: 8.96px;
+    --larger-vh: 8.96px;
+    --initial-vh: 8.96px;
 }
 
 .light-theme {
@@ -62,10 +67,8 @@ svg {
 .page {
     z-index: 99999;
     width: 100%;
-    height: 100vh;
+    height: max(var(--larger-vh,1vh)*100,100vh);
     overflow: hidden;
-    // height: -webkit-fill-available;
-    // min-height: -webkit-fill-available;
 }
 
 .page-wrapper {
