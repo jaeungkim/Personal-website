@@ -25,6 +25,7 @@ export default class Controls {
     GSAP.registerPlugin(ScrollTrigger);
 
     document.querySelector(".page").style.overflow = "visible";
+    document.querySelector(".page").style.position = "relative";
 
     if (
       !/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(

@@ -19,16 +19,21 @@ function AboutComponent() {
 
       <div className="section-detail-wrapper">
         <p className="section-text">
-          Hi there 👋! Lorem Ipsum is simply dummy text of the printing and
-          typesetting industry. Lorem Ipsum has been the industry's standard
-          dummy text ever since the 1500s, when an unknown printer took a galley
-          of type and scrambled it to make a type specimen book.
+          Hi there 👋! My name is Jaeung Kim, but I go by the name Jae. I am a
+          full stack web developer with 2 years of working experience. I have
+          planned, developed, distributed, and maintained software for startup
+          companies.
         </p>
         <p className="section-text">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
+          I believe that actively communicating is one of the most important
+          factors in making a big impact in software development. Therefore, I
+          love to engage in proactive communications among team members. By
+          doing so, I am able to grow as a better developer constantly.
+        </p>
+        <p className="section-text">
+          During my free time, I love exploring latest 3D technologies like
+          Three.js, WebGL and Blender. In fact, this website was created using
+          these technologies.
         </p>
       </div>
     </section>
