@@ -18,40 +18,24 @@
     height: 100%;
 }
 
-.loading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.loader {
+    font-size: 48px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    animation: smokeOut 1s ease-in-out infinite alternate;
+    text-shadow: 0 0 1px black;
 }
 
-.circle {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    margin: 6px;
-    background-color: var(--color-pink-light);
-    animation: load 1s ease-in-out infinite;
+.loader:before {
+    content: "Loading";
 }
 
-.circle:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.circle:nth-child(3) {
-    animation-delay: 0.2s;
-}
-
-@keyframes load {
-    0% {
-        transform: translateY(0)
+@keyframes smokeOut {
+    100% {
+        opacity: 0.08;
+        filter: blur(5px);
+        letter-spacing: 4px;
     }
-
-    20% {
-        transform: translateY(-12px)
-    }
-
-    40% {
-        transform: translateY(0)
-    }
-
 }

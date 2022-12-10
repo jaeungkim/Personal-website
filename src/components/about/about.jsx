@@ -19,21 +19,29 @@ function AboutComponent() {
 
       <div className="section-detail-wrapper">
         <p className="section-text">
-          Hi there 👋! My name is Jaeung Kim, but I go by the name Jae. I am a
-          full stack web developer with 2 years of working experience. I have
-          planned, developed, distributed, and maintained software for startup
-          companies.
+          <span className="section-text-title">
+            Hi there 👋! My name is Jaeung Kim
+          </span>
+          <br></br>
+          You can also call me <strong>Jae</strong> 🙂.
+          <br></br>
+          <br></br>I am an ambitious, creative, and collaboriative software
+          engineer with 2 years of experience in planning, developin,
+          distributing, and maintaining software for startup companies. I
+          primarily focused on full-stack web development but I also have
+          experiences working as a designer and product owners dependings on the
+          needs of the company. software for startup companies.
         </p>
         <p className="section-text">
-          I believe that actively communicating is one of the most important
-          factors in making a big impact in software development. Therefore, I
-          love to engage in proactive communications among team members. By
-          doing so, I am able to grow as a better developer constantly.
+          When I work, I believe that actively communicating is one of the most
+          important factors in making a big impact and being successful. Thus, I
+          am always tryingto engage in proactive communications among team
+          members. And by doing so, I am able to grow as a better developer
+          constantly.
         </p>
         <p className="section-text">
-          During my free time, I love exploring latest 3D technologies like
-          Three.js, WebGL and Blender. In fact, this website was created using
-          these technologies.
+          These days, during my free time, I love working on my 3D projects
+          using latest 3D technologies like Three.js, WebGL and Blender.
         </p>
       </div>
     </section>

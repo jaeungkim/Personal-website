@@ -32,14 +32,14 @@ svg {
 :root {
     /* Light Theme Variables */
     --color-text-light: #333332;
-    --color-background-light: #FAF4E5;
-    --color-pink-light: #e5a1aa;
-    --color-green-light: #7AD0AC;
-    --color-blue-light: #8395CD;
+    --color-background-light: #f3f3f4;
+    --color-pink-light: #eac4d5;
+    --color-green-light: #87c38f;
+    --color-blue-light: #22223B;
 
     /* Dark Theme Variables */
-    --color-text-dark: #FAF4E5;
-    --color-background-dark: #8395CD;
+    --color-text-dark: #f3f3f4;
+    --color-background-dark: #22223B;
 
     --vw: 4.14px;
     --vh: 8.96px;
@@ -67,7 +67,7 @@ svg {
 .page {
     z-index: 99999;
     width: 100%;
-    height: max(var(--larger-vh,1vh)*100,100vh);
+    height: max(var(--larger-vh, 1vh)*100, 100vh);
     overflow: hidden;
 }
 
@@ -91,7 +91,6 @@ svg {
     left: 50%;
     font-weight: 500;
     font-size: 16px;
-    color: var(--color-pink);
     transform: translate(-50%, -50%);
 }
 
@@ -189,7 +188,7 @@ svg {
 }
 
 .section-heading {
-    font-size: 18px;
+    font-size: 24px;
     font-weight: 700;
     line-height: 1.8;
     margin-top: 64px;

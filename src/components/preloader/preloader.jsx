@@ -1,16 +1,11 @@
 import React from "react";
-import './index.scss';
+import "./index.scss";
 function PreloaderComponent() {
-
   return (
     <div className="preloader">
-    <div className="preloader-wrapper">
-      <div className="loading">
-        <div className="circle"></div>
-        <div className="circle"></div>
-        <div className="circle"></div>
+      <div className="preloader-wrapper">
+        <span className="loader"></span>
       </div>
-    </div>
     </div>
   );
 }
