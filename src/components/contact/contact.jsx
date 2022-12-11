@@ -14,7 +14,7 @@ function ContactComponent() {
           <div className="section-title-decoration styleTwo green-border"></div>
           <div className="section-title-decoration styleThree green-background green-border"></div>
         </h1>
-        <span className="section-number green-text">03</span>
+        <span className="section-number green-text">04</span>
       </div>
 
       <div className="section-detail-wrapper">

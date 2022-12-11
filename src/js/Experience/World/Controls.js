@@ -21,6 +21,7 @@ export default class Controls {
     this.circleFirst = this.experience.world.floor.circleFirst;
     this.circleSecond = this.experience.world.floor.circleSecond;
     this.circleThird = this.experience.world.floor.circleThird;
+    // this.circleFourth = this.experience.world.floor.circleFourth;
 
     GSAP.registerPlugin(ScrollTrigger);
 
@@ -104,7 +105,6 @@ export default class Controls {
             start: "top top",
             end: "bottom bottom",
             scrub: 0.6,
-            // markers: true,
             invalidateOnRefresh: true,
           },
         });
@@ -158,7 +158,7 @@ export default class Controls {
             "same"
           );
 
-        // Third section -----------------------------------------
+        // THIRD section -----------------------------------------
         this.thirdMoveTimeline = new GSAP.timeline({
           scrollTrigger: {
             trigger: ".third-move",
@@ -167,10 +167,46 @@ export default class Controls {
             scrub: 0.6,
             invalidateOnRefresh: true,
           },
-        }).to(this.camera.orthographicCamera.position, {
-          y: 1.5,
-          x: -4.1,
-        });
+        }).to(
+          this.room.position,
+          {
+            x: () => {
+              return this.sizes.height * -0.0001;
+            },
+            z: () => {
+              return this.sizes.height * 0.01;
+            },
+          },
+          "same"
+        );
+
+        // Fourth section -----------------------------------------
+        this.fourthMoveTimeline = new GSAP.timeline({
+          scrollTrigger: {
+            trigger: ".fourth-move",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.6,
+            invalidateOnRefresh: true,
+          },
+        })
+          .to(
+            this.room.position,
+            {
+              x: () => {
+                return this.sizes.height * 0.0001;
+              },
+              z: () => {
+                return this.sizes.height * -0.0003;
+              },
+            },
+            "same"
+          )
+          .to(this.camera.orthographicCamera.position, {
+            y: 1.5,
+            x: -4.1,
+            z: 8.5,
+          });
       },
 
       // Mobile
@@ -234,7 +270,7 @@ export default class Controls {
             "same"
           );
 
-        // Third section -----------------------------------------
+        // THIRD section -----------------------------------------
         this.thirdMoveTimeline = new GSAP.timeline({
           scrollTrigger: {
             trigger: ".third-move",
@@ -243,7 +279,26 @@ export default class Controls {
             scrub: 0.6,
             invalidateOnRefresh: true,
           },
+        }).to(
+          this.room.position,
+          {
+            x: -1.5,
+            z: 6.5,
+          },
+          "same"
+        );
+
+        // Fourth section -----------------------------------------
+        this.fourthMoveTimeline = new GSAP.timeline({
+          scrollTrigger: {
+            trigger: ".fourth-move",
+            start: "top top",
+            end: "bottom bottom",
+            scrub: 0.6,
+            invalidateOnRefresh: true,
+          },
         }).to(this.room.position, {
+          x: 1.5,
           z: -4.5,
         });
       },
@@ -351,7 +406,7 @@ export default class Controls {
         // Third section -----------------------------------------
         this.thirdCircle = new GSAP.timeline({
           scrollTrigger: {
-            trigger: ".third-move",
+            trigger: ".fourth-move",
             start: "top top",
             end: "bottom bottom",
             scrub: 0.6,
@@ -362,10 +417,24 @@ export default class Controls {
           z: 3,
         });
 
+        // Fourth section -----------------------------------------
+        // this.fourthCircle = new GSAP.timeline({
+        //   scrollTrigger: {
+        //     trigger: ".fourth-move",
+        //     start: "top top",
+        //     end: "bottom bottom",
+        //     scrub: 0.6,
+        //   },
+        // }).to(this.circleFourth.scale, {
+        //   x: 3,
+        //   y: 3,
+        //   z: 3,
+        // });
+
         // Mini Platform Animations
         this.secondPartTimeline = new GSAP.timeline({
           scrollTrigger: {
-            trigger: ".third-move",
+            trigger: ".fourth-move",
             start: "center center",
           },
         });

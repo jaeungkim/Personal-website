@@ -25,7 +25,7 @@ export default class Preloader extends EventEmitter {
   }
 
   setAssets() {
-    convert(document.querySelector(".intro-text"));
+    // convert(document.querySelector(".intro-text"));
     convert(document.querySelector(".hero-main-title"));
     convert(document.querySelector(".hero-main-description"));
     convert(document.querySelector(".hero-second-subheading"));
@@ -77,11 +77,11 @@ export default class Preloader extends EventEmitter {
           });
       }
       this.timeline
-        .to(".intro-text .animatedis", {
-          yPercent: 0,
-          stagger: 0.05,
-          ease: "back.out(1.7)",
-        })
+        // .to(".intro-text .animatedis", {
+        //   yPercent: 0,
+        //   stagger: 0.05,
+        //   ease: "back.out(1.7)",
+        // })
         .to(
           ".arrow-svg-wrapper",
           {
@@ -105,15 +105,15 @@ export default class Preloader extends EventEmitter {
       this.secondTimeline = new GSAP.timeline();
 
       this.secondTimeline
-        .to(
-          ".intro-text .animatedis",
-          {
-            yPercent: 100,
-            stagger: 0.05,
-            ease: "back.in(1.7)",
-          },
-          "fadeout"
-        )
+        // .to(
+        //   ".intro-text .animatedis",
+        //   {
+        //     yPercent: 100,
+        //     stagger: 0.05,
+        //     ease: "back.in(1.7)",
+        //   },
+        //   "fadeout"
+        // )
         .to(
           ".arrow-svg-wrapper",
           {

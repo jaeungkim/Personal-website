@@ -6,6 +6,7 @@ import WorkComponent from "./components/work/work";
 import ContactComponent from "./components/contact/contact";
 import ThemeComponent from "./components/theme/theme";
 import HeroComponent from "./components/hero/hero";
+import ProjectComponent from "./components/project/project";
 import "./App.scss";
 
 function App() {
@@ -22,6 +23,8 @@ function App() {
           <div className="second-move section-margin"></div>
           <WorkComponent />
           <div className="third-move section-margin"></div>
+          <ProjectComponent />
+          <div className="fourth-move section-margin"></div>
           <ContactComponent />
         </div>
       </div>

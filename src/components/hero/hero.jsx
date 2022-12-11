@@ -4,7 +4,6 @@ function HeroComponent() {
   return (
     <section className="hero">
       <div className="hero-wrapper">
-        <div className="intro-text">Welcome to my portfolio!</div>
         <div className="arrow-svg-wrapper">
           <svg xmlns="http://www.w3.org/2000/svg" height="24" width="24">
             <path
