@@ -44,8 +44,8 @@ export default class Resources extends EventEmitter {
         this.video[asset.name].playsInline = true;
         this.video[asset.name].autoplay = true;
         this.video[asset.name].loop = true;
-        this.video[asset.name].src =
-          "https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4";
+        // this.video[asset.name].src =
+        //   "https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4";
         this.video[asset.name].crossOrigin = asset.crossorigin;
         this.video[asset.name].play();
 
