@@ -6,77 +6,69 @@ import { DRACOLoader } from "three/examples/jsm/loaders/DRACOLoader.js";
 import Experience from "../Experience.js";
 
 export default class Resources extends EventEmitter {
-    constructor(assets) {
-        super();
-        this.experience = new Experience();
-        this.renderer = this.experience.renderer;
+  constructor(assets) {
+    super();
+    this.experience = new Experience();
+    this.renderer = this.experience.renderer;
 
-        this.assets = assets;
+    this.assets = assets;
 
-        this.items = {};
-        this.queue = this.assets.length;
-        this.loaded = 0;
+    this.items = {};
+    this.queue = this.assets.length;
+    this.loaded = 0;
 
-        this.setLoaders();
-        this.startLoading();
+    this.setLoaders();
+    this.startLoading();
+  }
+
+  setLoaders() {
+    this.loaders = {};
+    this.loaders.gltfLoader = new GLTFLoader();
+    this.loaders.dracoLoader = new DRACOLoader();
+    this.loaders.dracoLoader.setDecoderPath("/draco/");
+    this.loaders.gltfLoader.setDRACOLoader(this.loaders.dracoLoader);
+  }
+  startLoading() {
+    for (const asset of this.assets) {
+      if (asset.type === "glbModel") {
+        // this.loaders.gltfLoader.load("https://storage.googleapis.com/video-background-iclinic/Finale%20Version%2016.glb", (file) => {
+        this.loaders.gltfLoader.load(asset.path, (file) => {
+          this.singleAssetLoaded(asset, file);
+        });
+      } else if (asset.type === "videoTexture") {
+        this.video = {};
+        this.videoTexture = {};
+
+        this.video[asset.name] = document.createElement("video");
+        this.video[asset.name].muted = true;
+        this.video[asset.name].playsInline = true;
+        this.video[asset.name].autoplay = true;
+        this.video[asset.name].loop = true;
+        this.video[asset.name].src =
+          "https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4";
+        this.video[asset.name].crossOrigin = asset.crossorigin;
+        this.video[asset.name].play();
+
+        this.videoTexture[asset.name] = new THREE.VideoTexture(
+          this.video[asset.name]
+        );
+        // this.videoTexture[asset.name].flipY = false;
+        this.videoTexture[asset.name].minFilter = THREE.NearestFilter;
+        this.videoTexture[asset.name].magFilter = THREE.NearestFilter;
+        this.videoTexture[asset.name].generateMipmaps = false;
+        this.videoTexture[asset.name].encoding = THREE.sRGBEncoding;
+
+        this.singleAssetLoaded(asset, this.videoTexture[asset.name]);
+      }
     }
+  }
 
-    setLoaders() {
-        this.loaders = {};
-        this.loaders.gltfLoader = new GLTFLoader();
-        this.loaders.dracoLoader = new DRACOLoader();
-        this.loaders.dracoLoader.setDecoderPath("/draco/");
-        this.loaders.gltfLoader.setDRACOLoader(this.loaders.dracoLoader);
+  singleAssetLoaded(asset, file) {
+    this.items[asset.name] = file;
+    this.loaded++;
+
+    if (this.loaded === this.queue) {
+      this.emit("ready");
     }
-    startLoading() {
-        for (const asset of this.assets) {
-            if (asset.type === "glbModel") {
-                // this.loaders.gltfLoader.load("https://storage.googleapis.com/video-background-iclinic/Finale%20Version%2016.glb", (file) => {
-                   this.loaders.gltfLoader.load(asset.path, (file) => {
-                    this.singleAssetLoaded(asset, file);
-                });
-            } else if (asset.type === "videoTexture") {
-                // function addSourceToVideo(element, src, type) {
-                //     var source = document.createElement('source');
-                //     source.src = src;
-                //     source.type = type;
-                //     element.appendChild(source);
-                // }
-
-                this.video = {};
-                this.videoTexture = {};
-
-                this.video[asset.name] = document.createElement("video");
-                // document.body.appendChild(this.video[asset.name]);
-                // addSourceToVideo(this.video[asset.name],asset.path, 'video/mp4');
-                this.video[asset.name].muted = true;
-                this.video[asset.name].playsInline = true;
-                this.video[asset.name].autoplay = true;
-                this.video[asset.name].loop = true;
-                this.video[asset.name].src="https://storage.googleapis.com/video-background-iclinic/videoBackground.mp4";
-                this.video[asset.name].crossOrigin=asset.crossorigin;
-                this.video[asset.name].play();
-
-                this.videoTexture[asset.name] = new THREE.VideoTexture(
-                    this.video[asset.name]
-                );
-                // this.videoTexture[asset.name].flipY = false;
-                this.videoTexture[asset.name].minFilter = THREE.NearestFilter;
-                this.videoTexture[asset.name].magFilter = THREE.NearestFilter;
-                this.videoTexture[asset.name].generateMipmaps = false;
-                this.videoTexture[asset.name].encoding = THREE.sRGBEncoding;
-
-                this.singleAssetLoaded(asset, this.videoTexture[asset.name]);
-            }
-        }
-    }
-
-    singleAssetLoaded(asset, file) {
-        this.items[asset.name] = file;
-        this.loaded++;
-
-        if (this.loaded === this.queue) {
-            this.emit("ready");
-        }
-    }
+  }
 }

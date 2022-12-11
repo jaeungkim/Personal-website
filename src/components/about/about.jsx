@@ -26,16 +26,16 @@ function AboutComponent() {
           You can also call me <strong>Jae</strong> 🙂.
           <br></br>
           <br></br>I am an ambitious, creative, and collaboriative software
-          engineer with 2 years of experience in planning, developin,
+          engineer with 2 years of experience in planning, developing,
           distributing, and maintaining software for startup companies. I
-          primarily focused on full-stack web development but I also have
+          primarily focuse on full-stack web development but I also have
           experiences working as a designer and product owners dependings on the
-          needs of the company. software for startup companies.
+          needs of the company.
         </p>
         <p className="section-text">
           When I work, I believe that actively communicating is one of the most
           important factors in making a big impact and being successful. Thus, I
-          am always tryingto engage in proactive communications among team
+          am always trying to engage in proactive communications among team
           members. And by doing so, I am able to grow as a better developer
           constantly.
         </p>
