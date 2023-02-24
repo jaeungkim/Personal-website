@@ -24,9 +24,7 @@ function ContactComponent() {
           sort it out a little bit!
         </p>
         <h3 className="section-heading">Instagram</h3>
-        <p className="section-text">
-         Lorem Ipsums
-        </p>
+        <p className="section-text">Lorem Ipsums</p>
         <h3 className="section-heading">LinkedIn</h3>
         <p className="section-text">Career updates and so much more!</p>
       </div>

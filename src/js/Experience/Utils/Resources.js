@@ -31,7 +31,6 @@ export default class Resources extends EventEmitter {
   startLoading() {
     for (const asset of this.assets) {
       if (asset.type === "glbModel") {
-        // this.loaders.gltfLoader.load("https://storage.googleapis.com/video-background-iclinic/Finale%20Version%2016.glb", (file) => {
         this.loaders.gltfLoader.load(asset.path, (file) => {
           this.singleAssetLoaded(asset, file);
         });
@@ -52,7 +51,6 @@ export default class Resources extends EventEmitter {
         this.videoTexture[asset.name] = new THREE.VideoTexture(
           this.video[asset.name]
         );
-        // this.videoTexture[asset.name].flipY = false;
         this.videoTexture[asset.name].minFilter = THREE.NearestFilter;
         this.videoTexture[asset.name].magFilter = THREE.NearestFilter;
         this.videoTexture[asset.name].generateMipmaps = false;

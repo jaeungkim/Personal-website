@@ -36,67 +36,53 @@ export default class Preloader extends EventEmitter {
     // console.log(this.roomChildren);
   }
 
-  firstIntro() {
+  async firstIntro() {
+    const timeline = GSAP.timeline();
+    timeline.set(".animatedis", { y: 0, yPercent: 100 });
+    timeline.to(".preloader", {
+      opacity: 0,
+      delay: 1,
+      onComplete: () => {
+        document.querySelector(".preloader").classList.add("hidden");
+      },
+    });
+    const scale = 1.4;
+    const duration = 0.7;
+    const ease = "back.out(2.5)";
+    const z = this.device === "desktop" ? -1 : -0.5;
+    timeline.to(this.roomChildren.cube.scale, {
+      x: scale,
+      y: scale,
+      z: scale,
+      ease: ease,
+      duration: duration,
+    });
+    timeline.to(this.room.position, {
+      z: z,
+      ease: "power1.out",
+      duration: duration,
+    });
+    timeline.to(
+      ".arrow-svg-wrapper",
+      {
+        opacity: 1,
+      },
+      "same"
+    );
+    timeline.to(
+      ".toggle-bar",
+      {
+        opacity: 1,
+      },
+      "same"
+    );
     return new Promise((resolve) => {
-      this.timeline = new GSAP.timeline();
-      this.timeline.set(".animatedis", { y: 0, yPercent: 100 });
-      this.timeline.to(".preloader", {
-        opacity: 0,
-        delay: 1,
-        onComplete: () => {
-          document.querySelector(".preloader").classList.add("hidden");
-        },
+      timeline.to(".intro-text .animatedis", {
+        yPercent: 0,
+        stagger: 0.05,
+        ease: "back.out(1.7)",
+        onComplete: resolve,
       });
-      if (this.device === "desktop") {
-        this.timeline
-          .to(this.roomChildren.cube.scale, {
-            x: 1.4,
-            y: 1.4,
-            z: 1.4,
-            ease: "back.out(2.5)",
-            duration: 0.7,
-          })
-          .to(this.room.position, {
-            z: -1,
-            ease: "power1.out",
-            duration: 0.7,
-          });
-      } else {
-        this.timeline
-          .to(this.roomChildren.cube.scale, {
-            x: 1.4,
-            y: 1.4,
-            z: 1.4,
-            ease: "back.out(2.5)",
-            duration: 0.7,
-          })
-          .to(this.room.position, {
-            z: -0.5,
-            ease: "power1.out",
-            duration: 0.7,
-          });
-      }
-      this.timeline
-        // .to(".intro-text .animatedis", {
-        //   yPercent: 0,
-        //   stagger: 0.05,
-        //   ease: "back.out(1.7)",
-        // })
-        .to(
-          ".arrow-svg-wrapper",
-          {
-            opacity: 1,
-          },
-          "same"
-        )
-        .to(
-          ".toggle-bar",
-          {
-            opacity: 1,
-            onComplete: resolve,
-          },
-          "same"
-        );
     });
   }
 
@@ -105,15 +91,6 @@ export default class Preloader extends EventEmitter {
       this.secondTimeline = new GSAP.timeline();
 
       this.secondTimeline
-        // .to(
-        //   ".intro-text .animatedis",
-        //   {
-        //     yPercent: 100,
-        //     stagger: 0.05,
-        //     ease: "back.in(1.7)",
-        //   },
-        //   "fadeout"
-        // )
         .to(
           ".arrow-svg-wrapper",
           {

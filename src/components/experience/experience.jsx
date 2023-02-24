@@ -6,6 +6,7 @@ function ExperienceComponent() {
   const ref = useRef(null);
   useEffect(() => {
     const experienceSelector = ref.current;
+
     new Experience(experienceSelector);
   }, []);
 

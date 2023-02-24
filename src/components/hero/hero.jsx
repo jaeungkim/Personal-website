@@ -15,9 +15,7 @@ function HeroComponent() {
 
         <div className="hero-main">
           <h1 className="hero-main-title">Jaeung Kim</h1>
-          <p className="hero-main-description">
-            Full Stack Developer
-          </p>
+          <p className="hero-main-description">Full Stack Developer</p>
         </div>
 
         <div className="hero-second">
