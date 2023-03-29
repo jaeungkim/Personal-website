@@ -14,13 +14,13 @@ function HeroComponent() {
         </div>
 
         <div className="hero-main">
-          <h1 className="hero-main-title">Jaeung Kim</h1>
-          <p className="hero-main-description">Full Stack Developer</p>
+          <h1 className="hero-main-title"></h1>
+          <p className="hero-main-description"></p>
         </div>
 
         <div className="hero-second">
-          <p className="hero-second-subheading first-sub">Jaeung</p>
-          <p className="hero-second-subheading second-sub">Portfolio</p>
+          <p className="hero-second-subheading first-sub"></p>
+          <p className="hero-second-subheading second-sub"></p>
         </div>
       </div>
     </section>
